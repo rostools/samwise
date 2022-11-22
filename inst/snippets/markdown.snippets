@@ -1,0 +1,63 @@
+snippet reading_task
+	::: callout-info
+	## Reading task: \~${1:minutes} minutes
+
+	${0}
+	:::
+
+snippet instructor_details
+	::: {.callout-note appearance="minimal" collapse="true"}
+	## Instructor note
+
+	${0}
+	:::
+
+snippet purl_only
+	```{r purl-only-${1:label}}
+	#| eval: false
+	#| echo: false
+	#| purl: true
+	${0}
+	```
+
+snippet purl_chunk
+	```{r ${1:label}}
+	#| eval: false
+	#| purl: true
+	${0}
+	```
+
+snippet solution_chunk
+	```{r solution-${1:label}}
+	#| eval: false
+	#| code-fold: true
+	#| code-summary: "**Click for the solution**. Only click if you are struggling or are out of time."
+	${0}
+	```
+
+snippet execute_chunk
+	```{r exec-only-${1:label}}
+	#| include: false
+	# Used to build the underlying project for the book
+	${0}
+	```
+
+snippet r
+	```{r ${1:label}, ${2:options}}
+	${0}
+	```
+
+snippet p
+	`{${0}}`
+
+snippet setup_chunk
+	```{r setup}
+	#| include: false
+	${0}
+	```
+
+snippet fix
+	<!-- FIXME: ${0} -->
+
+snippet todo
+	<!-- TODO: ${0} -->
