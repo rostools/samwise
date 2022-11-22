@@ -1,11 +1,22 @@
 
-#' RStudio snippets to help with teaching
+#' RStudio snippets to help with teaching (in dev.)
 #'
 #' @return Nothing. Used for the side effect of installing snippets for teaching.
 #' @export
 #'
 install_snippets <- function() {
-    snippets::install_snippets_from_package("r3admin")
-    return(invisible(NULL))
+  warning("In development")
+  return(invisible(NULL))
+}
+
+#' Copy snippets from package to clipboard.
+#'
+#' @return Paste snippets.
+#' @export
+#'
+copy_snippets <- function() {
+  fs::path_package("r3admin", "inst", "snippets", "markdown.snippets") |>
+    readr::read_lines() |>
+    clipr::write_clip()
 }
 

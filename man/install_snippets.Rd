@@ -2,7 +2,7 @@
 % Please edit documentation in R/snippets.R
 \name{install_snippets}
 \alias{install_snippets}
-\title{RStudio snippets to help with teaching}
+\title{RStudio snippets to help with teaching (in dev.)}
 \usage{
 install_snippets()
 }
@@ -10,5 +10,5 @@ install_snippets()
 Nothing. Used for the side effect of installing snippets for teaching.
 }
 \description{
-RStudio snippets to help with teaching
+RStudio snippets to help with teaching (in dev.)
 }
