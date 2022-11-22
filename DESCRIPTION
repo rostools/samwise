@@ -22,3 +22,5 @@ Imports:
     xml2
 Remotes: 
     GegznaV/snippets
+URL: https://github.com/rostools/r3admin
+BugReports: https://github.com/rostools/r3admin/issues
