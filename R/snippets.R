@@ -15,7 +15,7 @@ install_snippets <- function() {
 #' @export
 #'
 copy_snippets <- function() {
-  fs::path_package("r3admin", "inst", "snippets", "markdown.snippets") |>
+  fs::path_package("r3admin", "snippets", "markdown.snippets") |>
     readr::read_lines() |>
     clipr::write_clip()
 }
