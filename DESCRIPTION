@@ -18,8 +18,27 @@ RoxygenNote: 7.2.1
 Imports: 
     clipr,
     commonmark,
+    datapasta,
+    dplyr,
     fs,
+    glue,
+    googledrive,
+    googlesheets4,
+    magrittr,
+    pdftools,
+    praise,
+    randomizr,
     readr,
+    stringr,
+    tibble,
+    tidyr,
+    tidyselect,
+    tidytext,
+    withr,
     xml2
 URL: https://github.com/rostools/r3admin
 BugReports: https://github.com/rostools/r3admin/issues
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
