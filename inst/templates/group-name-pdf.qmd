@@ -1,0 +1,16 @@
+---
+format: 
+  pdf:
+    papersize: a4
+    fontsize: 56pt
+    pagestyle: empty
+    geometry: 
+      - top=6cm
+      - landscape
+params:
+  name: "PLACEHOLDER"
+---
+
+# Group name:
+
+# `r params$name`

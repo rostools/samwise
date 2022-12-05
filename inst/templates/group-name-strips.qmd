@@ -1,0 +1,23 @@
+---
+format: 
+  html:
+    embed-resources: true
+    minimal: true
+    theme: none 
+params:
+  name: "PLACEHOLDER"
+  number_participants: 20
+---
+
+```{r}
+#| echo: false
+library(gt)
+matrix(rep(params$name, times = params$number_participants * 3),
+       ncol = 3) %>% 
+  as.data.frame() %>% 
+  gt() %>% 
+  tab_style(style = cell_borders(color = "black"),
+            locations = cells_body()) %>% 
+  cols_label(V1 = "", V2 = "", V3 = "") %>% 
+  tab_options(column_labels.hidden = TRUE)
+```
