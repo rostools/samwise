@@ -82,27 +82,6 @@ tidy_presurvey <- function(data, metadata_dates) {
     ))
 }
 
-#' Assign the version of the course that the survey response comes from.
-#'
-#' @param date The date of the survey response.
-#'
-#' @return A numeric value.
-#' @keywords internal
-#'
-#' @examples
-#' assign_course_version_by_date("2020-06-20", metadata$dates$introduction)
-assign_course_version_by_date <- function(date, metadata_dates) {
-  dates_between_courses <- lubridate::interval(
-    c("2018-01-01", metadata_dates),
-    c(metadata_dates, as.character(lubridate::today()))
-  )
-  course_version <- which(lubridate::ymd(date) %within% dates_between_courses)
-  if (length(course_version) == 0) {
-    course_version <- NA_integer_
-  }
-  course_version
-}
-
 tidy_cols_skills_to_character <- function(x) {
   x |>
     stringr::str_replace_all(c(
@@ -206,12 +185,6 @@ extract_presurvey_feedback <- function(data, column_renaming_df) {
     dplyr::arrange(Questions, Responses) |>
     join_original_column_names(column_renaming_df)
 }
-
-save_csv <- function(data, csv_name) {
-  data |>
-    readr::write_csv(here::here("data", filename))
-}
-# write_csv(precourse_feedback, here::here(glue::glue("feedback/{course_date}-precourse-feedback.csv")))
 
 # Checks ------------------------------------------------------------------
 
