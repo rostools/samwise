@@ -2,3 +2,5 @@
 ^\.Rproj\.user$
 ^LICENSE\.md$
 ^vignettes/articles$
+^_ignore$
+^data-raw$
