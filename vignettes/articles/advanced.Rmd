@@ -51,11 +51,11 @@ copy_reminder_email_text()
 
 Quickly check whether everyone has their setups done correctly.
 
-```{r}
+```{r, results='asis'}
 cat(check_setup(presurvey))
 ```
 
-```{r}
+```{r, results='asis'}
 cat(check_project_setup(presurvey))
 ```
 
@@ -63,7 +63,7 @@ cat(check_project_setup(presurvey))
 
 List those who have problems and print their setups.
 
-```{r}
+```{r, results='asis'}
 problems <- presurvey %>% 
   check_precourse_problems() 
 
