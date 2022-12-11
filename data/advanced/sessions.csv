@@ -1,0 +1,136 @@
+course_version,day,session,worked_well,could_be_improved
+1,Day 1,Networking Activities,It was great to meet others and hear about their collaboration practices,"It was too loud, perhaps the group could be split into two and do the ""speed dating"" activity in separate rooms"
+1,Day 1,Networking Activities,talking to different people,would be nice to know participants' own projects
+1,Day 1,Networking Activities,quickly learned peoples purpose of attending course,smaller groups
+1,Day 1,Networking Activities,Good to talk to different people,I would have liked to not have been constrained by the set questions - though i understand they are helpful to some
+1,Day 1,Networking Activities,Nice doing some talking after lunch,Nothing really. 15-20 minutes is enough
+1,Day 1,Networking Activities,It was nice to quickly introduce to many people.,Figuring out how to rotate (:
+1,Day 1,Networking Activities,"Illuminated how others in similar/different fields collaborate, use R and how their workflows are.",Nothing!
+1,Day 1,Networking Activities,It was fun! Also good to discuss the questions with several different people,One needed to shout quite a bit :D
+1,Day 1,Networking Activities,They were fun.,NA
+1,Day 1,Networking Activities,Nice having lunch with people we didn't sit with during the lessons.,Maybe to repetitive in the circle saying the same things but still nice to talk with some other people
+1,Day 1,Networking Activities,Everything worked well,Nothing to add
+1,Day 1,Networking Activities,Nice to share experiences,A bit too long.
+1,Day 1,Networking Activities,"It was fun, worked well.",Shorter questions maybe.
+1,Day 1,Networking Activities,Hearing about the others work and challenges,NA
+1,Day 1,Networking Activities,blood flow in the legs,Nothing fancy
+1,Day 1,Networking Activities,"there was a bit of cunfusion at first, but it turned out fine in th end. It worked well that people had to be standing, so we wouldnt just be slumped at the tables, and it worked that it was right after lunch. M","Maybe the 2 mins per person is a bit long, since you wont get to speak to that many people."
+1,Day 1,Networking Activities,It was a good networking activity to talk to each other but still on a course-related subject. Got some good ideas to what to improve,Remember the acoustics when we are so many talking at once. Maybe better to divide into smaller groups and do the same in two separate rooms now that we actually had that
+1,Day 1,Networking Activities,It was fun and refreshing,Maybe to spread the lines a bit more so you can hear the other person better
+1,Day 1,Networking Activities,like it!,more group exercise!
+1,Day 1,Networking Activities,Provided questions stimulated the discussion,No suggestions - worked well
+1,Day 1,Networking Activities,Social activity was a nice start to meet other participants and share thoughts,NA
+1,Day 1,Networking Activities,Nice to get moving after lunch and chat to new people.,"SOme more questions to discuss would be good, it got a bit repetitive.I think a timed chat would be better than 2 mins per person."
+1,Day 1,Networking Activities,"It was nice speaking to some other participants on the course. The ""talking line"" worked well.",Went well
+1,Day 1,Networking Activities,The chance to get a different perspective on the reasons of why people attended the course,Maybe a broader set of questions that we could talk about?
+1,Day 1,Smoother Collaboration,The live coding worked really well and it was easy to follow,"It was difficult to concentrate when some people encountered errors and needed to troubleshoot them with the instructors while we moved on, but I understand that that is unavoidable"
+1,Day 1,Smoother Collaboration,interactive exercises,pre-reading about the topic would be better to understand
+1,Day 1,Smoother Collaboration,rmarkdown yaml header and lintr,have participants use Gitdesktop to increase speed of repo pushing to github
+1,Day 1,Smoother Collaboration,Really well explained. Luke is an outstanding teacher and the support website is super helpful.,The speed was a little slow - though i understand that is designed to allow for troubleshooting at different moments
+1,Day 1,Smoother Collaboration,It's a nice walk through a robust setup for projects,"Maybe it will come the following days, but maybe a ""rundown file""/cheat sheet for setting up a project with proper settings, packages and conditions."
+1,Day 1,Smoother Collaboration,I like the focus on project level dependancies as I have had this problem in the past.,maybe some more example on why it could be useful to people's workflow and projects. To understand the importance.
+1,Day 1,Smoother Collaboration,Nice overview of the environment using renv,"Was a bit confusing at first that packages need re-loading in renv, and maybe exactly how linting is used in practice."
+1,Day 1,Smoother Collaboration,Generally I think everything works well - loving the code-along sessions,I do not think I have anything on my mind that needs changing
+1,Day 1,Smoother Collaboration,I thin the session was fine.,NA
+1,Day 1,Smoother Collaboration,"It was great that we could follow code on the big screen and course material, help was great fixed a lot of problems. Overall gave a good introduction",NA
+1,Day 1,Smoother Collaboration,That is was possible to follow along reading the website with instructions,Not sure
+1,Day 1,Smoother Collaboration,The stylr worked good for me. Not sure what to use lintr for yet,A lot of time waiting because technical issue. Could be nice with more exercise or activities.
+1,Day 1,Smoother Collaboration,"I did not run into any specific issues, most things were very straight forward.","Maybe considering adding a common mistakes section, to help troubleshoot. Sometimes, i also miss a bit more of an depper explaination of how things work or what happends ""underneath the hood"""
+1,Day 1,Smoother Collaboration,Getting to think about better ways to collaborate,NA
+1,Day 1,Smoother Collaboration,"for me, renv and self contained packages library is one of the important things",Not sure at this stage
+1,Day 1,Smoother Collaboration,"network activities, lunch and code along went smooth","there was a lot of breaks due to errors, but thats natural being so many people together and dificult to."
+1,Day 1,Smoother Collaboration,"I think it worked realy well. Good help when needed, good explanation",Not sure I have anything right now
+1,Day 1,Smoother Collaboration,"It was a good session, really enjoyed learning about renv","Not much, I think it was quite good"
+1,Day 1,Smoother Collaboration,no error,more exercise
+1,Day 1,Smoother Collaboration,"The nice illustrations, examples",Maybe it would be nice to add a narrative of a project group - to illustrate how it could be beneficial to set up the project like this
+1,Day 1,Smoother Collaboration,Setup in groups. I also like the use of stickers,NA
+1,Day 1,Smoother Collaboration,The website with the course content was really informative and the code all ran well.Loads of really useful content covered!!,The pace was quite slow- but I am not sure how/if it is possible to speed it up
+1,Day 1,Smoother Collaboration,Good walkthrough on renv and git/github. Will need to run through the renv again to fully understand.,Sometimes we ran code without much explanation of what the code did.
+1,Day 1,Smoother Collaboration,"The code-alongs, and the exercise to see for oneself how the code changes with styler etc",NA
+1,Day 2,A general approach to doing statistical analyses,Worked well.,Nothing to add.
+1,Day 2,A general approach to doing statistical analyses,"We only just began, so hard to say. But seems very transferable to daily work",Hard to tell quite yet
+1,Day 2,A general approach to doing statistical analyses,adding relevance to the pipeline,a faster work pace
+1,Day 2,A general approach to doing statistical analyses,So far it's a very interesting approach and I am looking forward to learn more.,Could be gone through a bit faster in the beginning as parsnip functions are quite simple in the beginning.
+1,Day 2,A general approach to doing statistical analyses,It was a brief introduction today. Let's see tomorrow.,NA
+1,Day 2,A general approach to doing statistical analyses,very usable - more time to this session,flow
+1,Day 2,A general approach to doing statistical analyses,we have not done it yet,we will se it tomorrow
+1,Day 2,A general approach to doing statistical analyses,"i think the beginning went very well, with a clear explanation of the different packages to be used, and briefly going over modelling in general etc.","again, maybe the last bit because of it being late."
+1,Day 2,A general approach to doing statistical analyses,It was cool to be introduced to tinymodels and new ways of doing regression as I have never used this before,"It was a little difficult to pay attention to ""theory"" so late in the day, but Louise did it in such a way that was VERY engaging"
+1,Day 2,A general approach to doing statistical analyses,Discussing the model and then applying using the dataset we had,Also would like to get more practice
+1,Day 2,A general approach to doing statistical analyses,explanation and exercises,it is good as it is
+1,Day 2,A general approach to doing statistical analyses,the analogies and the workflow to explaining the concepts,The beginning of the session was abit 'lecture heavy'
+1,Day 2,A general approach to doing statistical analyses,"So far it is very smooth, and simple to define models. Could reinforce adding code as a function, since it was very quick on Day 1.",A bit too much background maybe? Just keep relevant workflows for the dataset we are working with.
+1,Day 2,A general approach to doing statistical analyses,easily understandable,"Maybe started a little bit to basic, but at least you get everyone onboard"
+1,Day 2,A general approach to doing statistical analyses,I think it was a very simplified way of explaining the models,"explain more snakecase, I didn't fully understand."
+1,Day 2,A general approach to doing statistical analyses,Concrete example,NA
+1,Day 2,A general approach to doing statistical analyses,everything worked good,using the correct data set
+1,Day 2,A general approach to doing statistical analyses,"Again, the content seemed like the most useful topics to us were covered!",NA
+1,Day 2,A general approach to doing statistical analyses,Coding part explained very detail.,A intro of different widely used statistical analyses tool/packages in R
+1,Day 2,A general approach to doing statistical analyses,It was a nice introduction to modeling.,It can be a bit confusing at some times but mostly because of the implementation of new packages that I was not aware of but nothing that could be considered frustrating
+1,Day 2,Creating automatic analysis pipelines,It all worked well.,Nothing to add.
+1,Day 2,Creating automatic analysis pipelines,Gives a nice workflow for future data handling,Maybe a little more applicability to get an overview
+1,Day 2,Creating automatic analysis pipelines,new concept really well explained,not a lot
+1,Day 2,Creating automatic analysis pipelines,Amazing to know about these tools that help so much with automating our workflows. Will definitely aim to use it daily,"maybe unnecessary to spell out the code right away in the webpage, could be hidden - less temptation to just copy the code and not follow the code-along :)"
+1,Day 2,Creating automatic analysis pipelines,The coding along was good. Good tempo.,We could do more exercise with creating automatic analysis
+1,Day 2,Creating automatic analysis pipelines,A lot of code along,"a little less reading and ""background"""
+1,Day 2,Creating automatic analysis pipelines,targets session was good,for it is enough
+1,Day 2,Creating automatic analysis pipelines,the tempo for the code along were nice. Everyone seemed to catch on much quicker than yesterday.,"i think everything went fine. Maybe in the last bit it was a lot of talk and not so much coding, which was  a little bit tought since it was late in the day, but besides that i would say nothing"
+1,Day 2,Creating automatic analysis pipelines,I really enjoyed spending so much time coding along and making functions,Nothing
+1,Day 2,Creating automatic analysis pipelines,the structure of the session was well done,Give more examples to practice
+1,Day 2,Creating automatic analysis pipelines,exercises,more comprehensive explanation of targets package or prereading task about this session
+1,Day 2,Creating automatic analysis pipelines,the code-along (and including the functions as a reminder from the intermediate course!),NA
+1,Day 2,Creating automatic analysis pipelines,"Targets was completely new for me, and was introduced in a straightforward manner.",Nothing!
+1,Day 2,Creating automatic analysis pipelines,"if not all, then most of it worked well. And if any problems they were quickly solved. Very nice to get hands on the how to make functions work in a pipeline",For now I don't really know
+1,Day 2,Creating automatic analysis pipelines,"The pace for speed of going through material, very easy to follow",I think small errors that you noticed will be updated in the course material :P
+1,Day 2,Creating automatic analysis pipelines,Visuals,NA
+1,Day 2,Creating automatic analysis pipelines,Everything work smoothly,no comments
+1,Day 2,Creating automatic analysis pipelines,The session covered some really useful content!,NA
+1,Day 2,Creating automatic analysis pipelines,well designed! Coding part explained very in detail,More dataset/visualization
+1,Day 2,Creating automatic analysis pipelines,"It was a fantastic session, never heard about targets but the functionalities look amazing",It worked very well considering the amount of information. Maybe this course could be 4 days insetead of three?
+1,Day 2,Networking Activities,Was nice.,"Worked well, but more guidelines maybe."
+1,Day 2,Networking Activities,Very cozy!,Nothing really
+1,Day 2,Networking Activities,nice to chat informally with new people,coffee
+1,Day 2,Networking Activities,It was really nice to go out for a walk after lunch and not just sit there - kudos to that!,NA
+1,Day 2,Networking Activities,Nice to walk outside.,Shorter time for that
+1,Day 2,Networking Activities,nice with a walk after lunch.,Could be cut by 10 min
+1,Day 2,Networking Activities,one of the most important session,nothing
+1,Day 2,Networking Activities,"it was nice being outside and walking around, so you dont get completely tired after lunch.",i think it was fine
+1,Day 2,Networking Activities,"Unfortunately, I wasn't able to make it","Unfortunately, I wasn't able to make it"
+1,Day 2,Networking Activities,It was nice to have a session where we can go for a walk and discuss,NA
+1,Day 2,Networking Activities,browsing around with local people was nice,"because my group mates already know each other, I could not interact with them enough although I am a real extrovert person."
+1,Day 2,Networking Activities,Being able to walk,Maybe we didn't have to just talk about R?
+1,Day 2,Networking Activities,Great to get outside! :D,Nothing! More tuborg apparently?!
+1,Day 2,Networking Activities,It was very refreshing and nice way to network with others,You could provide heated jackets in this cold ;)
+1,Day 2,Networking Activities,Super nice with a walk outside,"Half of the group left for other reasons, so maybe asking bigger groups?"
+1,Day 2,Networking Activities,Going for a walk,Questions to discuss
+1,Day 2,Networking Activities,it was a good networking session,nothing
+1,Day 2,Networking Activities,It was great to get some fresh air before the next session! Great idea to have us go for a walk instead of discuss things in the venue.,"Not much, it was great!"
+1,Day 2,Networking Activities,Love it,Use R coding to co-play game/fun things etc
+1,Day 2,Networking Activities,I enjoyed the fact that the activity involved going out for a walk. Very necessary after spending so many hours in the computer,"Nothing, I really enjoyed it"
+1,Day 3,Efficiently running many models at once,AMAZINGGGGGGGGG session. Just what I need for my projects - very very happy with this session,maybe shorter time for writing code / exercises ourselves - it's pretty repetitive so I feel we can do it faster :)
+1,Day 3,Efficiently running many models at once,it all made sence.,a little too little time
+1,Day 3,Efficiently running many models at once,It was nice tying everything we talked about yesterday into a pipeline,"Not much, it worked very well"
+1,Day 3,Efficiently running many models at once,We made lots of functions and now I FINALLY understand them,"Maybe you could add something similar to the intermediate course, where we have an opportunity to apply this to our own data/work - It might help to consolidate our learning"
+1,Day 3,Efficiently running many models at once,well the session is great,statistics models running at same time was not well prepared
+1,Day 3,Efficiently running many models at once,Everything!,Nothing!
+1,Day 3,Efficiently running many models at once,Most things,Maybe try to write out the exercises a bit more clearly.
+1,Day 3,Efficiently running many models at once,Nice examples with an applicable dataset,Cut down on the exercises done in class
+1,Day 3,Efficiently running many models at once,nice tempo through the code along. Nice explanation for the different functions,"i think we were a bit behind, but maybe go a little slower in some places"
+1,Day 3,Efficiently running many models at once,coding with me,more case studies for making function
+1,Day 3,Efficiently running many models at once,How it was structured,"Maybe not as fast, because it is quite difficult to catch up and still understand what you actually are doing"
+1,Day 3,Efficiently running many models at once,The structure of the session,NA
+1,Day 3,Efficiently running many models at once,Good walk through,"We were a little pressed for time. A little extra time would have helped, but not a big deal."
+1,Day 3,Efficiently running many models at once,"great that it's possible to follow the instructor on the big screen, understands very well the material and nicely communicated it to us. quick help",NA
+1,Day 3,Publicizing your analyses with a website,I wasn't able to stay in this session sorry :(,I wasn't able to stay in this session sorry :(
+1,Day 3,Publicizing your analyses with a website,I have to leave early today so I haven t taken it yet but I have high expectations :),Not know yet
+1,Day 3,Publicizing your analyses with a website,It was easy to follow along,The index/default content at the start was a little hard to follow
+1,Day 3,Publicizing your analyses with a website,making a website,"Well this was selling point for the course, however it did not work well. I think there need to be better preparation for the material,  and execution, there were several issues"
+1,Day 3,Publicizing your analyses with a website,"Cool tools, overall.","Just ran out of time, and a lot of de-bugging that we could used another day :) .. also more time for customization."
+1,Day 3,Publicizing your analyses with a website,Most things,Maybe try to write out the exercises a bit more clearly. Some times the directions were a bit unclear.
+1,Day 3,Publicizing your analyses with a website,It was nice to learn how to make a website,Getting the website to go public
+1,Day 3,Publicizing your analyses with a website,i think everything went fine,"i think everything was good.  Naturally ill be going through this part again, to make sure i got everything."
+1,Day 3,Publicizing your analyses with a website,coding with me,more case studies for making function
+1,Day 3,Publicizing your analyses with a website,Great to have hands on and see how your website builds,I don't think there was enough time for this. At least I found it very difficult to catch up when it takes some time for some of the stuff to work
+1,Day 3,Publicizing your analyses with a website,It worked well but had some issues,NA
+1,Day 3,Publicizing your analyses with a website,Good only material and presentation,"Also time. Specifically because the way to code yaml headers etc. is a bit finnicky and it went a little bit fast. Nice that the study material is only, though"
+1,Day 3,Publicizing your analyses with a website,"great that it's possible to follow the instructor on the big screen, understands very well the material and nicely communicated it to us. quick help - love the energy!",NA
