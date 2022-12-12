@@ -14,6 +14,12 @@ devtools::load_all()
 
 # Pre-course admin tasks
 
+Create the planning issue in the GitHub/GitLab repository.
+
+```{r, eval=FALSE}
+admin_create_planning_issue("r-cubed-intermediate", "2022-06-21")
+```
+
 ## Fetch (and save) pre-survey responses
 
 First thing, need to get the presurvey results.
@@ -22,7 +28,7 @@ First thing, need to get the presurvey results.
 # TODO: How to get these authenticated? Run first and then build vignette?
 googledrive::drive_auth()
 googlesheets4::gs4_auth()
-presurvey <- fetch_presurvey_advanced()
+presurvey <- fetch_precourse_advanced()
 ```
 
 ## Who didn't finish survey
@@ -119,16 +125,10 @@ group_names_final %>%
 copy_emails_for_slack_invite(presurvey$email)
 ```
 
-## Save output data
+## Post course admin
 
-TODO: Maybe use targets instead for this.
+Need to run these inside the project.
 
 ```{r, eval=FALSE}
-presurvey %>% 
-  extract_presurvey_overview(advanced_survey_column_renaming) %>% 
-  save_csv("participant-overview.csv")
 
-presurvey %>% 
-  extract_presurvey_feedback(advanced_survey_column_renaming) %>% 
-  save_csv("precourse-feedback.csv")
 ```
