@@ -93,7 +93,6 @@ remove_newlines <- function(data, col) {
 #' @param data The feedback data.
 #'
 #' @return A tibble.
-#' @export
 #'
 NULL
 
