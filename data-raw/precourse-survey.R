@@ -1,8 +1,6 @@
 
 devtools::load_all()
 
-# Advanced feedback -------------------------------------------------------
-
 # Advanced pre-course survey ----------------------------------------------
 
 advanced_precourse <- fetch_precourse_advanced()
