@@ -152,7 +152,13 @@ extract_precourse_overview <- function(data, column_renaming_df) {
     ) |>
     dplyr::count(.data$Questions, .data$Responses, name = "Count") |>
     dplyr::arrange(.data$Questions, .data$Responses, Count) |>
-    join_original_column_names(column_renaming_df)
+    join_original_column_names(column_renaming_df) %>%
+    dplyr::mutate(
+      Questions = .data$Questions %>%
+        stringr::str_replace("^How .* perceive .*\\.\\.\\. \\[(.*)\\]$",
+                             "Perceived skill/knowledge in \\1") %>%
+        stringr::str_remove_all("\\[|\\]")
+    )
 }
 
 #' @describeIn extract_precourse Extract and tidy up the pre-course feedback
