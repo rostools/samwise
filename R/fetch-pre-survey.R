@@ -3,37 +3,41 @@
 
 #' Fetch the pre-course survey responses.
 #'
-#' @name fetch_presurvey
-#' @rdname fetch_presurvey
+#' @name fetch_precourse
+#' @rdname fetch_precourse
 #' @param survey_id Google Forms ID for the survey.
 #'
 #' @return Data from survey, slightly tidied up.
 #'
 #' @examples
-#' fetch_presurvey_intro()
-#' fetch_presurvey_advanced()
+#' \dontrun{
+#' fetch_precourse_intro()
+#' fetch_precourse_advanced()
+#' }
 #'
 NULL
 
-#' @describeIn fetch_presurvey Fetch the pre-course survey data for the **introduction** course.
+#' @describeIn fetch_precourse Fetch the pre-course survey data for the **introduction** course.
 #' @export
-fetch_presurvey_intro <- function(survey_id = Sys.getenv("INTRO_PRE_SURVEY_ID")) {
+fetch_precourse_intro <- function(survey_id = Sys.getenv("INTRO_PRE_SURVEY_ID")) {
   survey_id |>
-    fetch_presurvey_sheet() |>
+    fetch_precourse_sheet() |>
     rename_columns_sentence_to_snakecase(intro_survey_column_renaming) |>
-    tidy_presurvey(metadata$dates$introduction)
+    check_duplicate_timestamps() %>%
+    tidy_precourse(metadata$dates$introduction)
 }
 
-#' @describeIn fetch_presurvey Fetch the pre-course survey data for the **advanced** course.
+#' @describeIn fetch_precourse Fetch the pre-course survey data for the **advanced** course.
 #' @export
-fetch_presurvey_advanced <- function(survey_id = Sys.getenv("ADVANCED_PRE_SURVEY_ID")) {
+fetch_precourse_advanced <- function(survey_id = Sys.getenv("ADVANCED_PRE_SURVEY_ID")) {
   survey_id |>
-    fetch_presurvey_sheet() |>
+    fetch_precourse_sheet() |>
     rename_columns_sentence_to_snakecase(advanced_survey_column_renaming) |>
-    tidy_presurvey(metadata$dates$advanced)
+    check_duplicate_timestamps() %>%
+    tidy_precourse(metadata$dates$advanced)
 }
 
-fetch_presurvey_sheet <- function(survey_id) {
+fetch_precourse_sheet <- function(survey_id) {
   googledrive::drive_get(id = survey_id) |>
     googlesheets4::read_sheet()
 }
@@ -50,7 +54,7 @@ rename_columns_sentence_to_snakecase <- function(data, column_renaming_df) {
     dplyr::select(renaming_vector)
 }
 
-tidy_presurvey <- function(data, metadata_dates) {
+tidy_precourse <- function(data, metadata_dates) {
   data |>
     dplyr::mutate(dplyr::across(
       tidyselect::where(is.list),
@@ -111,20 +115,26 @@ tidy_cols_skills <- function(x) {
     tidy_cols_skills_relevel()
 }
 
-
 # Extract overview and feedback data --------------------------------------
 
-#' Extract overview data from survey and convert to long form.
+#' Extract overview data from pre-course survey.
+#'
+#' @name extract_precourse
+#' @rdname extract_precourse
 #'
 #' @param data Pre-survey data.
 #' @param column_renaming_df Column that contains the renaming data.
 #'
-#' @return A data frame.
-#' @export
+#' @return A tibble.
 #'
-extract_presurvey_overview <- function(data, column_renaming_df) {
+NULL
+
+#' @describeIn extract_precourse Extract and tidy up the pre-course survey
+#'   participant overview data.
+#' @export
+extract_precourse_overview <- function(data, column_renaming_df) {
   data |>
-    sanitize_presurvey() |>
+    sanitize_precourse() |>
     dplyr::select(
       .data$course_version,
       tidyselect::starts_with("perceived"),
@@ -132,7 +142,8 @@ extract_presurvey_overview <- function(data, column_renaming_df) {
       .data$gender_identity,
       .data$research_position,
       .data$city_work_in,
-      .data$previously_used_stat_programs
+      .data$previously_used_stat_programs,
+      .data$accept_conduct
     ) |>
     tidyr::pivot_longer(
       -.data$course_version,
@@ -144,12 +155,34 @@ extract_presurvey_overview <- function(data, column_renaming_df) {
     join_original_column_names(column_renaming_df)
 }
 
-sanitize_presurvey <- function(data) {
+#' @describeIn extract_precourse Extract and tidy up the pre-course feedback
+#'  data.
+#' @export
+extract_precourse_feedback <- function(data, column_renaming_df) {
+  data |>
+    sanitize_precourse() |>
+    dplyr::select(
+      .data$course_version,
+      tidyselect::contains("feedback"),
+      .data$describe_problems,
+      tidyselect::contains("course_expectations"),
+      tidyselect::contains("why_attend_course")
+    ) |>
+    tidyr::pivot_longer(
+      -.data$course_version,
+      names_to = "Questions",
+      values_to = "Responses"
+    ) |>
+    dplyr::arrange(Questions, Responses) |>
+    join_original_column_names(column_renaming_df)
+}
+
+sanitize_precourse <- function(data) {
   data |>
     dplyr::select(
       -tidyselect::contains("email"),
       -tidyselect::contains("name"),
-      -github_username,
+      -tidyselect::contains("github_username"),
       -timestamp
     ) |>
     dplyr::mutate(dplyr::across(
@@ -167,28 +200,7 @@ join_original_column_names <- function(data, column_renaming_df) {
     dplyr::relocate(.data$Questions)
 }
 
-extract_presurvey_feedback <- function(data, column_renaming_df) {
-  data |>
-    sanitize_presurvey() |>
-    dplyr::select(
-      .data$course_version,
-      tidyselect::contains("feedback"),
-      .data$describe_problems,
-      tidyselect::contains("course_expectations"),
-      .data$why_attend_course
-    ) |>
-    tidyr::pivot_longer(
-      -.data$course_version,
-      names_to = "Questions",
-      values_to = "Responses"
-    ) |>
-    dplyr::arrange(Questions, Responses) |>
-    join_original_column_names(column_renaming_df)
-}
-
 # Checks ------------------------------------------------------------------
-
-# any(duplicated(feedback_survey$Timestamp))
 
 # Renaming pre-course columns ---------------------------------------------
 
