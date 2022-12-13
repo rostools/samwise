@@ -1,0 +1,62 @@
+---
+title: "Introduction course admin tasks"
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  eval = FALS,
+  collapse = TRUE,
+  comment = "#>"
+)
+devtools::load_all()
+course_date <- "2023-01-16"
+course_type <- "r-cubed"
+```
+
+# Pre-course admin tasks
+
+```{r, eval=FALSE}
+admin_create_planning_issue(course_type, course_date, host = "gitlab")
+```
+
+```{r}
+gitcreds::gitcreds_set()
+github_set_token(gitcreds::gitcreds_get(use_cache = FALSE)$password)
+
+# Choose n number of teams, based on number of participants.
+# 30/4 # Is about 8 teams
+
+# ghclass::org_teams(org_gh_course_name)
+# Course name for GitHub. YYYY-MM is when the course takes place.
+org_gh_course_name <- "r-cubed-2022-03"
+instructors <- c("Anders", "Helene", "Luke", "Isabell", "Sufyan", "Stine")
+
+count(teams_assigned, team)
+View(teams_assigned)
+
+# Manually change if need be.
+teams_assigned <- edit(teams_assigned)
+```
+
+# Need to create the organization on GitHub.
+
+```{r}
+# org_invite(org_gh_course_name, gh_teams_prep$github_username)
+org_members(org_gh_course_name)
+org_pending(org_gh_course_name)
+
+team_create(org_gh_course_name, team_names_final)
+# org_invite(org_gh_course_name, need_to_invite)
+count(gh_teams_assigned, team)
+team_invite(org_gh_course_name,
+            gh_teams_assigned$github_username,
+            gh_teams_assigned$team)
+gh_repos <- repo_create(org_gh_course_name, team_names_final)
+repo_add_team(sort(gh_repos), sort(unique(gh_teams_assigned$team)))
+org_team_repos <- org_repos(org_gh_course_name)
+instructor_assigned_teams %>%
+    mutate(teams = glue::glue("[{teams}](https://github.com/{org_team_repos})")) %>%
+    rename_with(str_to_sentence) %>%
+    knitr::kable() %>%
+    clipr::write_clip()
+```
