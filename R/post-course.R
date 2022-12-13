@@ -36,7 +36,7 @@ create_course_tag <- function(start_date, message) {
     stringr::str_extract("(github|gitlab)")
 
   repo_name <- remote_host %>%
-    stringr::str_extract("[:/](.*/.*)\\.git$") %>%
+    stringr::str_extract("(github|gitlab)\\.com[:/](.*/.*)\\.git$", group = 2) %>%
     stringr::str_remove_all(":|\\.git")
 
   url_release <- switch(remote_host_name,
