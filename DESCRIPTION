@@ -14,31 +14,45 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.3
 Imports: 
+    checkmate,
     clipr,
     commonmark,
     datapasta,
+    desc,
     dplyr,
     fs,
+    gert,
+    githubr (>= 0.1.0.9000),
+    gitlabr,
     glue,
     googledrive,
     googlesheets4,
+    ids,
+    lubridate,
     magrittr,
     pdftools,
     praise,
+    purrr,
     randomizr,
     readr,
+    rversions,
     stringr,
+    targets,
     tibble,
     tidyr,
     tidyselect,
     tidytext,
+    whisker,
     withr,
-    xml2
+    xml2,
+    zen4R
 URL: https://github.com/rostools/r3admin
 BugReports: https://github.com/rostools/r3admin/issues
 Suggests: 
     knitr,
     rmarkdown
 VignetteBuilder: knitr
+Remotes: 
+    rostools/githubr

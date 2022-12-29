@@ -38,6 +38,13 @@
 
 # TODO: check if all images are used. Check directly from md and include_graphics?
 
+check_duplicate_timestamps <- function(data) {
+  if (any(duplicated(data$timestamp))) {
+    rlang::abort("There are duplicate timestamps, please investigate.")
+  }
+  data
+}
+
 # Check who hasn't finished the survey ------------------------------------
 
 check_who_not_finish_survey <- function(data, participant_list) {
