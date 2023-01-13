@@ -49,15 +49,16 @@ check_duplicate_timestamps <- function(data) {
 
 check_who_not_finish_survey <- function(data, participant_list) {
   data %>%
-    dplyr::select(.data$full_name, email_from_survey = .data$email) %>%
-    dplyr::mutate(name_from_survey = .data$full_name) %>%
+    dplyr::select(.data$full_name, .data$email) %>%
+    dplyr::mutate(name_from_survey = .data$full_name,
+                  email_from_survey = .data$email) %>%
     dplyr::full_join(
       participant_list %>%
-        dplyr::mutate(name_from_list = .data$full_name) %>%
-        dplyr::rename(email_from_list = .data$email),
-      by = "full_name"
+        dplyr::select(.data$email) %>%
+        dplyr::mutate(email_from_list = .data$email),
+      by = "email"
     ) %>%
-    dplyr::select(full_name, name_from_survey, name_from_list, contains("email"))
+    dplyr::select(full_name, contains("name"), contains("email"))
 }
 
 copy_emails_for_reminder <- function(data) {
@@ -78,12 +79,13 @@ copy_reminder_email_text <- function() {
 check_precourse_problems <- function(data) {
   data %>%
     dplyr::filter(.data$encounter_problems == "Yes") %>%
-    dplyr::select(tidyselect::all_of(c(
+    dplyr::select(tidyselect::any_of(c(
       "full_name",
       "email",
       "check_setup_output",
       "check_project_setup_output",
-      "describe_problems"
+      "describe_problems",
+      "when_available_for_help"
     )))
 }
 
@@ -108,20 +110,46 @@ copy_names_with_problems <- function(full_name) {
 
 # Setup checks ------------------------------------------------------------
 
-pretty_setup_checks <- function(name, check) {
-  glue::glue("\n### {unique(name)}\n\n```\n{check}\n```\n\n")
+pretty_code_checks <- function(name, email, check) {
+  glue::glue("\n#### {unique(name)}  ({unique(email)})\n\n```\n{check}\n```\n\n")
+}
+
+pretty_text_checks <- function(name, email, check) {
+  glue::glue("\n#### {unique(name)} ({unique(email)})\n\n{check}\n\n")
 }
 
 check_setup <- function(data) {
   data %>%
     dplyr::group_split(.data$full_name) %>%
-    purrr::map_chr(~pretty_setup_checks(.x$full_name, .x$check_setup_output)) %>%
+    purrr::map_chr(~pretty_code_checks(
+      .x$full_name,
+      .x$email,
+      .x$check_setup_output
+      )
+    ) %>%
     stringr::str_c(collapse = "\n\n")
 }
 
 check_project_setup <- function(data) {
   data %>%
     dplyr::group_split(.data$full_name) %>%
-    purrr::map_chr(~pretty_setup_checks(.x$full_name, .x$check_project_setup_output)) %>%
+    purrr::map_chr(~pretty_code_checks(
+      .x$full_name,
+      .x$email,
+      .x$check_setup_output
+      )
+    ) %>%
     stringr::str_c(collapse = "\n\n\n")
+}
+
+check_problem_description <- function(data) {
+  data %>%
+    dplyr::group_split(.data$full_name) %>%
+    purrr::map_chr(~pretty_text_checks(
+      .x$full_name,
+      .x$email,
+      paste0(.x$describe_problems, "\n\n", .x$when_available_for_help)
+      )
+    ) %>%
+    stringr::str_c(collapse = "\n\n")
 }
