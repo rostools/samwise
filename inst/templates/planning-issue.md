@@ -19,13 +19,15 @@ Conduct, and the Tips for instructors or helpers in the
 
 ### Assigned teams
 
-| Teams | Primary | Secondary |
-|:------|:--------|:----------|
-|       |         |           |
+| Team | Instructor/helper |
+|:-----|:------------------|
+|      |                   |
 
 ## To do before course
 
 -   [ ] Go briefly over Instructor Guide with new instructors
+-   [ ] {{tasks_remind_date}}: Send a reminder to everyone to complete
+    tasks. See `r3admin/vignettes/articles/`.
 -   [ ] {{tasks_check_end_date}}: Check that all participants have
     completed pre-course material. See `r3admin/vignettes/articles/`.
 -   [ ] {{tasks_prep_end_date}}: Get participants into groups (on GitHub
@@ -54,4 +56,3 @@ Conduct, and the Tips for instructors or helpers in the
 
 -   DDA will reimburse travel expenses
     [here](https://www.danishdiabetesacademy.dk/content/online-compensation-form-events)
-
