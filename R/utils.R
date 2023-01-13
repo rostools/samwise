@@ -37,12 +37,12 @@ assign_course_version_by_date <- function(date, metadata_dates) {
   metadata_dates <- as.character(metadata_dates)
   dates_between_courses <- lubridate::interval(
     c("2018-01-01", metadata_dates),
-    c(metadata_dates, as.character(lubridate::today()))
+    c(metadata_dates, as.character(lubridate::today() + lubridate::weeks(4)))
   )
   course_version <- date %>%
     lubridate::as_date() %>%
     lubridate::ymd() %>%
-    purrr::map_int(~ which(.x %within% dates_between_courses))
+    purrr::map_int(~ head(which(.x %within% dates_between_courses), 1))
   if (length(course_version) == 0) {
     course_version <- NA_integer_
   }
