@@ -86,32 +86,32 @@ group_names_as_strips_html <- function(group_names,
 #'
 assign_learners_to_groups <- function(data, group_names, score_cutoff = 3) {
   data %>%
-    dplyr::select(.data$full_name, tidyselect::matches("^perceived")) %>%
+    dplyr::select(
+      .data$full_name,
+      tidyselect::any_of("github_username"),
+      tidyselect::matches("^perceived")
+    ) %>%
     dplyr::rowwise() %>%
     dplyr::mutate(perceived_skill_score = sum(dplyr::c_across(tidyselect::starts_with("perceived")))) %>%
+    dplyr::ungroup() %>%
     dplyr::mutate(team = (.data$perceived_skill_score >= score_cutoff) %>%
       randomizr::block_ra(conditions = group_names) %>%
       as.character()) %>%
-    dplyr::select(.data$team, .data$full_name, .data$perceived_skill_score) %>%
+    dplyr::select(
+      .data$team,
+      .data$full_name,
+      tidyselect::any_of("github_username"),
+      .data$perceived_skill_score
+    ) %>%
     dplyr::arrange(.data$team, .data$perceived_skill_score)
 }
 
 assign_instructors_to_groups <- function(group_names, instructors) {
+  if (length(instructors) != length(instructors)) {
+    instructors <- rep(instructors, times = 2)
+  }
   tibble::tibble(
-    teams = group_names,
-    primary = sample(rep(instructors, times = 2), 6),
-    secondary = sample(rep(instructors, times = 2), 6)
+    team = group_names,
+    instructor = sample(instructors, length(group_names))
   )
 }
-# instructor_assigned_teams
-#
-
-# gh_teams_prep <- presurvey_tidy %>%
-#   select(full_name, github_username, matches("^perceived_.*_updated$")) %>%
-#   mutate(across(-c(full_name, github_username), ~ as.numeric(.x) > 1)) %>%
-#   mutate(
-#     perceived_skill_score =
-#       perceived_skill_r_updated + perceived_skill_data_analysis_updated +
-#         perceived_skill_programming_updated + perceived_skill_git_updated
-#   ) %>%
-#   select(full_name, github_username, perceived_skill_score)
