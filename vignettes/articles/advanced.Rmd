@@ -22,13 +22,13 @@ admin_create_planning_issue("r-cubed-intermediate", "2022-06-21")
 
 ## Fetch (and save) pre-survey responses
 
-First thing, need to get the presurvey results.
+First thing, need to get the precourse results.
 
 ```{r}
 # TODO: How to get these authenticated? Run first and then build vignette?
 googledrive::drive_auth()
 googlesheets4::gs4_auth()
-presurvey <- fetch_precourse_advanced()
+precourse <- fetch_precourse_advanced()
 ```
 
 ## Who didn't finish survey
@@ -38,7 +38,7 @@ to compare with, which can be deleted after the course.
 
 ```{r, eval=FALSE}
 participants <- check_who_not_finish_survey(
-  presurvey, 
+  precourse, 
   readr::read_csv(here::here("_ignore/official-participant-list-emails-2022-12-07.csv"))
 )
 nrow(participants)
@@ -58,11 +58,11 @@ copy_reminder_email_text()
 Quickly check whether everyone has their setups done correctly.
 
 ```{r, results='asis'}
-cat(check_setup(presurvey))
+cat(check_setup(precourse))
 ```
 
 ```{r, results='asis'}
-cat(check_project_setup(presurvey))
+cat(check_project_setup(precourse))
 ```
 
 ## Who has problems
@@ -70,7 +70,7 @@ cat(check_project_setup(presurvey))
 List those who have problems and print their setups.
 
 ```{r, results='asis'}
-problems <- presurvey %>% 
+problems <- precourse %>% 
   check_precourse_problems() 
 
 problems %>% 
@@ -122,7 +122,7 @@ group_names_final %>%
 ## Invite to Slack group
 
 ```{r, eval=FALSE}
-copy_emails_for_slack_invite(presurvey$email)
+copy_emails_for_slack_invite(precourse$email)
 ```
 
 ## Post course admin
