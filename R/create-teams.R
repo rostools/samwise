@@ -62,12 +62,13 @@ group_names_to_html_table <- function(group_name, number_participants, output_di
 }
 
 group_names_as_strips_html <- function(group_names,
-                                      number_participants,
-                                      output_dir = here::here("_ignore/group-names")) {
+                                       number_participants,
+                                       output_dir = here::here("_ignore/group-names")) {
   group_names %>%
     purrr::walk(group_names_to_html_table,
-                output_dir = output_dir,
-                number_participants = number_participants)
+      output_dir = output_dir,
+      number_participants = number_participants
+    )
   # fs::dir_ls(output_dir, glob = "*.html") %>%
   #   purrr::walk(webshot2::webshot) %>%
   #   fs::file_delete()
