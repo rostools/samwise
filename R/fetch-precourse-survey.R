@@ -76,7 +76,7 @@ tidy_precourse <- function(data, metadata_dates) {
       course_version = assign_course_version_by_date(.data$timestamp, metadata_dates)
     ) |>
     dplyr::mutate(dplyr::across(
-      tidyselect::matches("^perceived_skill_$"),
+      tidyselect::matches("^perceived_skill_"),
       tidy_cols_skills
     )) |>
     dplyr::mutate(dplyr::across(
@@ -86,15 +86,20 @@ tidy_precourse <- function(data, metadata_dates) {
     ))
 }
 
+skills_df <- tibble::tribble(
+  ~number, ~text,
+      "1", "Beginner",
+      "2", "Beginner-Intermediate",
+      "3", "Intermediate",
+      "4", "Intermediate-Advanced",
+      "5", "Advanced"
+)
+
 tidy_cols_skills_to_character <- function(x) {
   x |>
-    stringr::str_replace_all(c(
-      "1" = "Beginner",
-      "2" = "Beginner-Intermediate",
-      "3" = "Intermediate",
-      "4" = "Intermediate-Advanced",
-      "5" = "Advanced"
-    ))
+    stringr::str_replace_all(
+      rlang::set_names(skills_df$text, skills_df$number)
+    )
 }
 
 tidy_cols_skills_relevel <- function(x) {
