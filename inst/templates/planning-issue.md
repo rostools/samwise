@@ -25,7 +25,10 @@ Conduct, and the Tips for instructors or helpers in the
 
 ## To do before course
 
--   [ ] Go briefly over Instructor Guide with new instructors
+-   [ ] {{tasks_start_date}}: Send an calendar invite with link to
+    pre-course tasks and website.
+-   [ ] During pre-course meeting: Go briefly over Instructor Guide with
+    new instructors
 -   [ ] {{tasks_remind_date}}: Send a reminder to everyone to complete
     tasks. See `r3admin/vignettes/articles/`.
 -   [ ] {{tasks_check_end_date}}: Check that all participants have
