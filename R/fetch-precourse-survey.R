@@ -88,11 +88,11 @@ tidy_precourse <- function(data, metadata_dates) {
 
 skills_df <- tibble::tribble(
   ~number, ~text,
-      "1", "Beginner",
-      "2", "Beginner-Intermediate",
-      "3", "Intermediate",
-      "4", "Intermediate-Advanced",
-      "5", "Advanced"
+  "1", "Beginner",
+  "2", "Beginner-Intermediate",
+  "3", "Intermediate",
+  "4", "Intermediate-Advanced",
+  "5", "Advanced"
 )
 
 tidy_cols_skills_to_character <- function(x) {
@@ -160,8 +160,10 @@ extract_precourse_overview <- function(data, column_renaming_df) {
     join_original_column_names(column_renaming_df) %>%
     dplyr::mutate(
       Questions = .data$Questions %>%
-        stringr::str_replace("^How .* perceive .*\\.\\.\\. \\[(.*)\\]$",
-                             "Perceived skill/knowledge in \\1") %>%
+        stringr::str_replace(
+          "^How .* perceive .*\\.\\.\\. \\[(.*)\\]$",
+          "Perceived skill/knowledge in \\1"
+        ) %>%
         stringr::str_remove_all("\\[|\\]")
     )
 }
@@ -232,9 +234,9 @@ join_original_column_names <- function(data, column_renaming_df) {
 #' fetch_survey_field_titles(Sys.getenv("ADVANCED_FEEDBACK_SURVEY_ID"))
 #' }
 fetch_survey_field_titles <- function(survey_id) {
-  presurvey <- googledrive::drive_get(id = survey_id) |>
+  precourse <- googledrive::drive_get(id = survey_id) |>
     googlesheets4::read_sheet(n_max = 1)
-  datapasta::vector_construct_vertical(names(presurvey)) |>
+  datapasta::vector_construct_vertical(names(precourse)) |>
     stringr::str_replace("^c\\(", "tibble::tribble(\n~original_column_names, ~new_column_names,\n") |>
     clipr::write_clip()
 }
@@ -322,7 +324,7 @@ advanced_survey_column_renaming <- tibble::tribble(
   "Very briefly, what is your research topic(s)?", "research_topic",
   "How do you perceive your skill/knowledge of... [using R?]", "perceived_skill_r",
   "How do you perceive your skill/knowledge of... [data analysis in general?]", "perceived_skill_data_analysis",
-  "How do you perceive your skill/knowledge of... [programming in general?]",  "perceived_skill_programming",
+  "How do you perceive your skill/knowledge of... [programming in general?]", "perceived_skill_programming",
   "How do you perceive your skill/knowledge of... [writing reproducible code in general?]", "perceived_skill_repro_code",
   "How do you perceive your skill/knowledge of... [formal version control (e.g. Git)?]", "perceived_skill_git",
   "How do you perceive your skill/knowledge of... [collaborating through Git?]", "perceived_skill_git_collab",
@@ -338,7 +340,7 @@ advanced_survey_column_renaming <- tibble::tribble(
   "How often do you currently use: [tidymodels]", "uses_tidymodels",
   "What programs have you previously used for data analysis?", "previously_used_stat_programs",
   "Copy and paste the results of your \"r3::check_setup()\" into the text box below.", "check_setup_output",
-  "Copy and paste the results of your \"r3::check_project_setup_advanced()\" into the text box below.",  "check_project_setup_output",
+  "Copy and paste the results of your \"r3::check_project_setup_advanced()\" into the text box below.", "check_project_setup_output",
   "What do you expect to learn from this course and what would you like to be able to do afterwards with what you've learned?", "course_expectations",
   "Do your expectations match with what is described in the syllabus?", "expectations_match_syllabus",
   "Does our \"Is this for you?\" (in the syllabus) match with who you actually are? Why or why not?", "matched_assumptions",

@@ -50,8 +50,10 @@ check_duplicate_timestamps <- function(data) {
 check_who_not_finish_survey <- function(data, participant_list) {
   data %>%
     dplyr::select(.data$full_name, .data$email) %>%
-    dplyr::mutate(name_from_survey = .data$full_name,
-                  email_from_survey = .data$email) %>%
+    dplyr::mutate(
+      name_from_survey = .data$full_name,
+      email_from_survey = .data$email
+    ) %>%
     dplyr::full_join(
       participant_list %>%
         dplyr::select(.data$email) %>%
@@ -121,35 +123,32 @@ pretty_text_checks <- function(name, email, check) {
 check_setup <- function(data) {
   data %>%
     dplyr::group_split(.data$full_name) %>%
-    purrr::map_chr(~pretty_code_checks(
+    purrr::map_chr(~ pretty_code_checks(
       .x$full_name,
       .x$email,
       .x$check_setup_output
-      )
-    ) %>%
+    )) %>%
     stringr::str_c(collapse = "\n\n")
 }
 
 check_project_setup <- function(data) {
   data %>%
     dplyr::group_split(.data$full_name) %>%
-    purrr::map_chr(~pretty_code_checks(
+    purrr::map_chr(~ pretty_code_checks(
       .x$full_name,
       .x$email,
       .x$check_setup_output
-      )
-    ) %>%
+    )) %>%
     stringr::str_c(collapse = "\n\n\n")
 }
 
 check_problem_description <- function(data) {
   data %>%
     dplyr::group_split(.data$full_name) %>%
-    purrr::map_chr(~pretty_text_checks(
+    purrr::map_chr(~ pretty_text_checks(
       .x$full_name,
       .x$email,
       paste0(.x$describe_problems, "\n\n", .x$when_available_for_help)
-      )
-    ) %>%
+    )) %>%
     stringr::str_c(collapse = "\n\n")
 }

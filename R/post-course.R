@@ -91,7 +91,7 @@ created_at_stamp <- function() {
 }
 
 zen_title_from_desc <- function(path = ".") {
-lesson_title <- desc::desc_get_field("Title", file = path) %>%
+  lesson_title <- desc::desc_get_field("Title", file = path) %>%
     stringr::str_remove_all("\"|\n") %>%
     stringr::str_replace_all(" +", " ") %>%
     stringr::str_replace(":", " -")

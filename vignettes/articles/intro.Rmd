@@ -119,8 +119,10 @@ set.seed(154)
 group_names <- create_group_names()
 
 ceiling(nrow(precourse) / 4)
-group_names_final <- group_names[c(10, 11, 12, 14, 19,
-                                   24, 27, 32, 53, 54)]
+group_names_final <- group_names[c(
+  10, 11, 12, 14, 19,
+  24, 27, 32, 53, 54
+)]
 group_names_final
 ```
 
@@ -207,7 +209,7 @@ Markdown table to paste into the planning issue.
 # TODO: Convert to a function.
 org_team_repos <- sort(org_repos(org_gh_course_name))
 instructors_to_groups %>%
-  arrange(team) %>% 
+  arrange(team) %>%
   mutate(team = glue::glue("[{team}](https://github.com/{org_team_repos})")) %>%
   rename_with(str_to_sentence) %>%
   knitr::kable() %>%
