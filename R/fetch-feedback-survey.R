@@ -22,7 +22,7 @@ fetch_feedback_advanced <- function(survey_id = Sys.getenv("ADVANCED_FEEDBACK_SU
 
 fetch_feedback_generic <- function(survey_id) {
   survey_id %>%
-    fetch_presurvey_sheet() %>%
+    fetch_feedback_sheet() %>%
     convert_to_long() %>%
     drop_missing_responses() %>%
     remove_newlines("response") %>%
