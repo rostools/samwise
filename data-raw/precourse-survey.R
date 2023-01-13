@@ -3,6 +3,18 @@ devtools::load_all()
 
 # Advanced pre-course survey ----------------------------------------------
 
+intro_precourse <- fetch_precourse_intro()
+
+intro_precourse %>%
+  extract_precourse_overview(intro_survey_column_renaming) %>%
+  save_as_csv("data/intro/participant-overview.csv")
+
+intro_precourse %>%
+  extract_precourse_feedback(intro_survey_column_renaming) %>%
+  save_as_csv("data/intro/precourse-feedback.csv")
+
+# Advanced pre-course survey ----------------------------------------------
+
 advanced_precourse <- fetch_precourse_advanced()
 
 advanced_precourse %>%
