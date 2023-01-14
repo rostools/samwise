@@ -1,26 +1,24 @@
-Package: r3admin
 Type: Package
+Package: r3admin
 Title: R-Cubed Teaching Helper Functions.
 Version: 0.0.1
 Authors@R: 
-    person(given = "Luke",
-           family = "Johnston",
-           role = c("aut", "cre"),
-           email = "lwjohnst@gmail.com",
+    person("Luke", "Johnston", , "lwjohnst@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-4169-2616"))
-Description: 
-    Contains functions to help with managing, running, and developing the r-cubed courses.
+Description: Contains functions to help with managing, running, and
+    developing the r-cubed courses.
 License: MIT + file LICENSE
-Encoding: UTF-8
-LazyData: true
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+URL: https://github.com/rostools/r3admin
+BugReports: https://github.com/rostools/r3admin/issues
+Depends: 
+    R (>= 2.10)
 Imports: 
     checkmate,
     clipr,
     commonmark,
     datapasta,
     desc,
+    downlit,
     dplyr,
     fs,
     gert,
@@ -49,11 +47,14 @@ Imports:
     withr,
     xml2,
     zen4R
-URL: https://github.com/rostools/r3admin
-BugReports: https://github.com/rostools/r3admin/issues
 Suggests: 
     knitr,
     rmarkdown
-VignetteBuilder: knitr
+VignetteBuilder: 
+    knitr
 Remotes: 
     rostools/githubr
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
