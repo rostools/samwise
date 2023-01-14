@@ -251,7 +251,7 @@ intro_survey_column_renaming <-
     "What city do you work in or near?", "city_work_in",
     "Very briefly, what is your research topic(s)?", "research_topic",
     "How do you perceive your skill/knowledge of [using R?]", "perceived_skill_r",
-    "What programs have you previously used for data analysis?", "previously_used_programs",
+    "What programs have you previously used for data analysis?", "previously_used_stat_programs",
     "What is your GitHub user name?", "github_username",
     "Copy and paste the results of your \"r3::check_setup()\" into the text box below.", "check_setup_output",
     "Why do you want to attend this course?", "why_attend_course",
