@@ -12,11 +12,24 @@ copy_emails_for_slack_invite <- function(emails) {
     clipr::write_clip()
 }
 
-# copy_instructor_groups_for_gh_issue <-
-# instructor_assigned_teams %>%
-#     rename_with(str_to_sentence) %>%
-#     knitr::kable() %>%
-#     clipr::write_clip()
+#' Copy to clipboard the team-assigned instructors data as a Markdown table.
+#'
+#' @param data The data that contains the team names and the assigned
+#'   instructors.
+#' @param gh_org The name of the course's GitHub organizaton, usually in the
+#'   form of `NAME-YYYY-MM`.
+#'
+#' @return Used for side effect of copying Markdown table to clipboard.
+#' @export
+#'
+copy_instructors_to_groups_table <- function(data, gh_org) {
+  data %>%
+    dplyr::arrange(.data$team) %>%
+    dplyr::mutate(team = glue::glue("[{team}](https://github.com/{gh_org}/{team})")) %>%
+    dplyr::rename_with(stringr::str_to_sentence) %>%
+    knitr::kable() %>%
+    clipr::write_clip()
+}
 
 copy_tidy_names_by_team <- function(data) {
   data %>%
