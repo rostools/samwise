@@ -208,14 +208,8 @@ Then take instructors and assigned teams and convert them into a
 Markdown table to paste into the planning issue.
 
 ```{r, eval=FALSE}
-# TODO: Convert to a function.
-org_team_repos <- sort(org_repos(org_gh_course_name))
 instructors_to_groups %>%
-  arrange(team) %>%
-  mutate(team = glue::glue("[{team}](https://github.com/{org_team_repos})")) %>%
-  rename_with(str_to_sentence) %>%
-  knitr::kable() %>%
-  clipr::write_clip()
+  copy_instructors_to_groups_table(org_gh_course_name)
 ```
 
 ## Invite to Slack group
@@ -225,6 +219,10 @@ copy_emails_for_slack_invite(precourse$email)
 ```
 
 ## Create projects to push to repos
+
+```{r, eval=FALSE}
+setup_team_repos(org_gh_course_name)
+```
 
 ## Post course admin
 
