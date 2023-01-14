@@ -1,7 +1,7 @@
 
 devtools::load_all()
 
-# Advanced pre-course survey ----------------------------------------------
+# Introductory pre-course survey ----------------------------------------------
 
 intro_precourse <- fetch_precourse_intro()
 
