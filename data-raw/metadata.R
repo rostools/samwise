@@ -1,4 +1,5 @@
 
+# Add the dates to the courses here and then update the internal database.
 metadata <- list(
   dates = list(
     introduction = c("2019-03-04", "2020-06-22", "2021-06-15", "2022-03-01", "2023-01-16"),
@@ -6,3 +7,5 @@ metadata <- list(
     advanced = c("2022-12-07")
   )
 )
+
+usethis::use_data(metadata, internal = TRUE, overwrite = TRUE)
