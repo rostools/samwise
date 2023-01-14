@@ -196,7 +196,7 @@ repo_add_team(sort(gh_repos), sort(unique(learners_in_groups$team)))
 Make a table for the planning issue to put the instructors in groups.
 There might be some manual tinkering here.
 
-```{r}
+```{r, eval=FALSE}
 instructors <- c(
   "Anders", "Elise", "Luke", "Anders", "Menghan", "Mudit", "Núria",
   "Marcus", "Samah", "Vi"
