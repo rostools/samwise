@@ -52,25 +52,48 @@ formatted_names_by_team <- function(data) {
 
 # Setup project and other settings for teams ------------------------------
 
-#   create_team_projects() <- function(repo_path, parent_directory) {
-#   project_folder <- fs::path(parent_directory, repo_path)
-#   ghclass::local_repo_clone(
-#     repo_path,
-#     fs::path_dir(project_folder)
-#   )
-#   prodigenr::setup_project(project_folder)
-#   withr::local_dir(project_folder)
-#   usethis::use_blank_slate("project")
-#   usethis::use_data_raw("original-data", open = FALSE)
-#   gert::git_status()$file %>%
-#     gert::git_add()
-#   gert::git_commit("Setup project")
-#   gert::git_push()
-# }
-#
-# course_team_repos <- org_repos(org_gh_course_name)
-# fs::dir_create(fs::path("~", "Desktop", org_gh_course_name))
-# course_team_repos %>%
-#   walk(create_team_projects,
-#     parent_directory = fs::path("~", "Desktop")
-#   )
+#' Clone a GitHub repo, setup the project with prodigenr, then commit and push.
+#'
+#' This function is used as a helper for `setup_team_repos()`.
+#'
+#' @param repo_path The GitHub style repo path (`orgname/reponame`).
+#' @param clone_directory Where to clone the repository.
+#'
+#' @return Used for the side effects of creating the project, committing, and
+#'   pushing.
+#' @export
+#'
+create_team_project <- function(repo_path,
+                                clone_directory = fs::path("~", "Desktop")) {
+  project_folder <- fs::path(clone_directory, repo_path)
+  ghclass::local_repo_clone(
+    repo_path,
+    fs::path_dir(project_folder)
+  )
+  prodigenr::setup_project(project_folder)
+  withr::local_dir(project_folder)
+  usethis::use_blank_slate("project")
+  usethis::use_data_raw("original-data", open = FALSE)
+  gert::git_status()$file %>%
+    gert::git_add()
+  gert::git_commit("Setup project")
+  gert::git_push()
+}
+
+#' Setup all team repositories to be ready for the assignment.
+#'
+#' @param gh_org The name of the course's GitHub organizaton, usually in the
+#'   form of `NAME-YYYY-MM`.
+#'
+#' @return Used for the side effect of selecting on all repos and setting up
+#'   projects for them.
+#' @export
+#'
+setup_team_repos <- function(gh_org) {
+  course_team_repos <- ghclass::org_repos(gh_org)
+  fs::dir_create(fs::path("~", "Desktop", gh_org))
+  course_team_repos %>%
+    purrr::walk(create_team_project,
+      clone_directory = fs::path("~", "Desktop")
+    )
+}
