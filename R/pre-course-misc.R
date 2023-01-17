@@ -70,8 +70,11 @@ create_team_project <- function(repo_path,
     repo_path,
     fs::path_dir(project_folder)
   )
-  prodigenr::setup_project(project_folder)
-  withr::local_dir(project_folder)
+  usethis::local_project(project_folder)
+  rlang::catch_cnd(fs::file_delete(fs::path(project_folder, ".gitignore")))
+  tmp_proj_dir <- fs::path_temp(repo_path)
+  prodigenr::setup_project(tmp_proj_dir)
+  fs::dir_copy(tmp_proj_dir, project_folder, overwrite = TRUE)
   usethis::use_blank_slate("project")
   usethis::use_data_raw("original-data", open = FALSE)
   gert::git_status()$file %>%
@@ -91,9 +94,7 @@ create_team_project <- function(repo_path,
 #'
 setup_team_repos <- function(gh_org) {
   course_team_repos <- ghclass::org_repos(gh_org)
-  fs::dir_create(fs::path("~", "Desktop", gh_org))
   course_team_repos %>%
-    purrr::walk(create_team_project,
-      clone_directory = fs::path("~", "Desktop")
-    )
+    stringr::str_subset("NameLess") %>%
+    purrr::walk(create_team_project)
 }
