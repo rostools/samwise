@@ -98,6 +98,20 @@ create_team_project <- function(repo_path,
 setup_team_repos <- function(gh_org) {
   course_team_repos <- ghclass::org_repos(gh_org)
   course_team_repos %>%
-    stringr::str_subset("NameLess") %>%
     purrr::walk(create_team_project)
+}
+
+clone_team_repos <- function(gh_org) {
+  course_team_repos <- ghclass::org_repos(gh_org)
+  course_team_repos %>%
+    purrr::walk(clone_project_repo)
+}
+
+clone_project_repo <- function(repo_path,
+                               clone_directory = fs::path("~", "Desktop")) {
+  project_folder <- fs::path(clone_directory, repo_path)
+  ghclass::local_repo_clone(
+    repo_path,
+    fs::path_dir(project_folder)
+  )
 }
