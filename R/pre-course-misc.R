@@ -76,7 +76,10 @@ create_team_project <- function(repo_path,
   prodigenr::setup_project(tmp_proj_dir)
   fs::dir_copy(tmp_proj_dir, project_folder, overwrite = TRUE)
   usethis::use_blank_slate("project")
-  usethis::use_data_raw("original-data", open = FALSE)
+  readr::write_lines(
+    x = "# Write code here that cleans up/prepares your data for analysis",
+    file = "data-raw/original-data.R"
+  )
   gert::git_status()$file %>%
     gert::git_add()
   gert::git_commit("Setup project")
