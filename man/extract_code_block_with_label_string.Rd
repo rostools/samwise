@@ -12,6 +12,9 @@ extract_code_block_with_label_string(md_file, string_match)
 \item{string_match}{The string to look for that is inside the label. For
 instance, if the label has word "function" inside the label.}
 }
+\value{
+Text within the code blocks.
+}
 \description{
 Extract code blocks from a Markdown file that have a label that contains a specific string.
 }
