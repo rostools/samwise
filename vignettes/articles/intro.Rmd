@@ -224,6 +224,10 @@ copy_emails_for_slack_invite(precourse$email)
 setup_team_repos(org_gh_course_name)
 ```
 
+```{r, eval=FALSE}
+clone_team_repos(org_gh_course_name)
+```
+
 ## Post course admin
 
 Need to run these inside the project.
