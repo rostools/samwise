@@ -11,7 +11,7 @@ intro_precourse %>%
 
 intro_precourse %>%
   extract_precourse_feedback(intro_survey_column_renaming) %>%
-  save_as_csv("data/intro/precourse-feedback.csv")
+  save_as_csv("data/intro/feedback-precourse.csv")
 
 # Advanced pre-course survey ----------------------------------------------
 
@@ -23,4 +23,4 @@ advanced_precourse %>%
 
 advanced_precourse %>%
   extract_precourse_feedback(advanced_survey_column_renaming) %>%
-  save_as_csv("data/advanced/precourse-feedback.csv")
+  save_as_csv("data/advanced/feedback-precourse.csv")
