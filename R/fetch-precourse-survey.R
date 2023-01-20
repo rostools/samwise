@@ -152,20 +152,21 @@ extract_precourse_overview <- function(data, column_renaming_df) {
     ) |>
     tidyr::pivot_longer(
       -.data$course_version,
-      names_to = "Questions",
-      values_to = "Responses"
+      names_to = "questions",
+      values_to = "responses"
     ) |>
-    dplyr::count(.data$Questions, .data$Responses, name = "Count") |>
-    dplyr::arrange(.data$Questions, .data$Responses, Count) |>
+    dplyr::count(.data$course_version, .data$questions, .data$responses, name = "count") |>
+    dplyr::arrange(.data$course_version, .data$questions, .data$responses, .data$count) |>
     join_original_column_names(column_renaming_df) %>%
     dplyr::mutate(
-      Questions = .data$Questions %>%
+      questions = .data$questions %>%
         stringr::str_replace(
           "^How .* perceive .*\\.\\.\\. \\[(.*)\\]$",
           "Perceived skill/knowledge in \\1"
         ) %>%
         stringr::str_remove_all("\\[|\\]")
-    )
+    ) |>
+    dplyr::relocate(.data$course_version, .data$questions, .data$responses, .data$count)
 }
 
 #' @describeIn extract_precourse Extract and tidy up the pre-course feedback
@@ -183,11 +184,12 @@ extract_precourse_feedback <- function(data, column_renaming_df) {
     ) |>
     tidyr::pivot_longer(
       -.data$course_version,
-      names_to = "Questions",
-      values_to = "Responses"
+      names_to = "questions",
+      values_to = "responses"
     ) |>
-    dplyr::arrange(Questions, Responses) |>
-    join_original_column_names(column_renaming_df)
+    dplyr::arrange(course_version, questions, responses) |>
+    join_original_column_names(column_renaming_df) |>
+    dplyr::relocate(course_version, questions, responses)
 }
 
 sanitize_precourse <- function(data) {
@@ -207,10 +209,10 @@ sanitize_precourse <- function(data) {
 
 join_original_column_names <- function(data, column_renaming_df) {
   data |>
-    dplyr::left_join(column_renaming_df, by = c("Questions" = "new_column_names")) |>
+    dplyr::left_join(column_renaming_df, by = c("questions" = "new_column_names")) |>
     tidyr::drop_na() |>
-    dplyr::select(-.data$Questions, Questions = .data$original_column_names) |>
-    dplyr::relocate(.data$Questions)
+    dplyr::select(-.data$questions, questions = .data$original_column_names) |>
+    dplyr::relocate(.data$questions)
 }
 
 # Checks ------------------------------------------------------------------

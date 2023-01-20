@@ -14,6 +14,12 @@
 #'
 NULL
 
+#' @describeIn fetch_feedback Fetch the session feedback survey data for the **introductory** course.
+#' @export
+fetch_feedback_intro <- function(survey_id = Sys.getenv("INTRO_FEEDBACK_SURVEY_ID")) {
+  fetch_feedback_generic(survey_id = survey_id)
+}
+
 #' @describeIn fetch_feedback Fetch the session feedback survey data for the **advanced** course.
 #' @export
 fetch_feedback_advanced <- function(survey_id = Sys.getenv("ADVANCED_FEEDBACK_SURVEY_ID")) {
