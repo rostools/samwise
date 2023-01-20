@@ -1,98 +1,98 @@
-Questions,Responses,Count
-Do you accept the conditions laid out in the Code of Conduct?,Yes,26
-What city do you work in or nearest to?,Aarhus,4
-What city do you work in or nearest to?,Copenhagen,18
-What city do you work in or nearest to?,Odense,2
-What city do you work in or nearest to?,Potsdam / Germany,1
-What city do you work in or nearest to?,Stockholm,1
-What gender do you identify with?,Man,13
-What gender do you identify with?,Woman,13
-Perceived skill/knowledge in data analysis in general?,Beginner,3
-Perceived skill/knowledge in data analysis in general?,Beginner-Intermediate,6
-Perceived skill/knowledge in data analysis in general?,Intermediate,9
-Perceived skill/knowledge in data analysis in general?,Intermediate-Advanced,8
-Perceived skill/knowledge in formal version control (e.g. Git)?,Beginner,10
-Perceived skill/knowledge in formal version control (e.g. Git)?,Beginner-Intermediate,12
-Perceived skill/knowledge in formal version control (e.g. Git)?,Intermediate,3
-Perceived skill/knowledge in formal version control (e.g. Git)?,Intermediate-Advanced,1
-Perceived skill/knowledge in collaborating through Git?,Beginner,13
-Perceived skill/knowledge in collaborating through Git?,Beginner-Intermediate,10
-Perceived skill/knowledge in collaborating through Git?,Intermediate,3
-Perceived skill/knowledge in programming in general?,Beginner,4
-Perceived skill/knowledge in programming in general?,Beginner-Intermediate,11
-Perceived skill/knowledge in programming in general?,Intermediate,8
-Perceived skill/knowledge in programming in general?,Intermediate-Advanced,3
-Perceived skill/knowledge in using R?,Advanced,1
-Perceived skill/knowledge in using R?,Beginner,1
-Perceived skill/knowledge in using R?,Beginner-Intermediate,9
-Perceived skill/knowledge in using R?,Intermediate,12
-Perceived skill/knowledge in using R?,Intermediate-Advanced,3
-Perceived skill/knowledge in writing reproducible code in general?,Beginner,5
-Perceived skill/knowledge in writing reproducible code in general?,Beginner-Intermediate,9
-Perceived skill/knowledge in writing reproducible code in general?,Intermediate,8
-Perceived skill/knowledge in writing reproducible code in general?,Intermediate-Advanced,4
-Perceived skill/knowledge in writing in or using R Markdown?,Advanced,1
-Perceived skill/knowledge in writing in or using R Markdown?,Beginner,7
-Perceived skill/knowledge in writing in or using R Markdown?,Beginner-Intermediate,11
-Perceived skill/knowledge in writing in or using R Markdown?,Intermediate,4
-Perceived skill/knowledge in writing in or using R Markdown?,Intermediate-Advanced,3
-What programs have you previously used for data analysis?,Excel,1
-What programs have you previously used for data analysis?,"Excel, GraphPad Prism",2
-What programs have you previously used for data analysis?,"Excel, GraphPad Prism, Perseus",1
-What programs have you previously used for data analysis?,"Excel, R",1
-What programs have you previously used for data analysis?,GraphPad Prism,1
-What programs have you previously used for data analysis?,"GraphPad Prism, Rstudio",1
-What programs have you previously used for data analysis?,None,1
-What programs have you previously used for data analysis?,"Python, Excel, GraphPad Prism",3
-What programs have you previously used for data analysis?,"SAS/SAS JMP, SPSS",1
-What programs have you previously used for data analysis?,"SAS/SAS JMP, SPSS, GraphPad Prism",1
-What programs have you previously used for data analysis?,"SAS/SAS JMP, Stata, Matlab",1
-What programs have you previously used for data analysis?,SPSS,2
-What programs have you previously used for data analysis?,"SPSS, Excel",1
-What programs have you previously used for data analysis?,"SPSS, Excel, GraphPad Prism",2
-What programs have you previously used for data analysis?,"SPSS, GraphPad Prism",2
-What programs have you previously used for data analysis?,"SPSS, Python, Excel, GraphPad Prism",1
-What programs have you previously used for data analysis?,"SPSS, Stata, Excel",1
-What programs have you previously used for data analysis?,"SPSS, Stata, Python, Excel, GraphPad Prism",1
-What programs have you previously used for data analysis?,Stata,1
-What programs have you previously used for data analysis?,"Stata, GraphPad Prism",1
-What is your formal position?,Assistant professor,1
-What is your formal position?,PhD student,9
-What is your formal position?,Postdoc,15
-What is your formal position?,Research assistant,1
-How often do you currently use: GitHub/GitLab and Git,Daily,1
-How often do you currently use: GitHub/GitLab and Git,Few times a month,8
-How often do you currently use: GitHub/GitLab and Git,Few times a week,1
-How often do you currently use: GitHub/GitLab and Git,Never,10
-How often do you currently use: GitHub/GitLab and Git,Once a month,1
-How often do you currently use: GitHub/GitLab and Git,Once a week,5
-How often do you currently use: lintr,Never,25
-How often do you currently use: lintr,Once a month,1
-How often do you currently use: purrr,Daily,2
-How often do you currently use: purrr,Few times a month,5
-How often do you currently use: purrr,Never,11
-How often do you currently use: purrr,Once a month,7
-How often do you currently use: purrr,Once a week,1
-How often do you currently use: renv,Few times a month,2
-How often do you currently use: renv,Never,23
-How often do you currently use: renv,Once a month,1
-How often do you currently use: R Markdown/Quarto,Daily,6
-How often do you currently use: R Markdown/Quarto,Few times a month,3
-How often do you currently use: R Markdown/Quarto,Few times a week,2
-How often do you currently use: R Markdown/Quarto,Never,8
-How often do you currently use: R Markdown/Quarto,Once a month,3
-How often do you currently use: R Markdown/Quarto,Once a week,4
-How often do you currently use: styler,Never,23
-How often do you currently use: styler,Once a month,3
-How often do you currently use: targets,Never,25
-How often do you currently use: targets,Once a month,1
-How often do you currently use: tidymodels,Few times a month,2
-How often do you currently use: tidymodels,Never,21
-How often do you currently use: tidymodels,Once a month,2
-How often do you currently use: tidymodels,Once a week,1
-How often do you currently use: tidyverse,Daily,9
-How often do you currently use: tidyverse,Few times a month,4
-How often do you currently use: tidyverse,Few times a week,5
-How often do you currently use: tidyverse,Never,2
-How often do you currently use: tidyverse,Once a month,1
-How often do you currently use: tidyverse,Once a week,5
+course_version,questions,responses,count
+1,Do you accept the conditions laid out in the Code of Conduct?,Yes,26
+1,What city do you work in or nearest to?,Aarhus,4
+1,What city do you work in or nearest to?,Copenhagen,18
+1,What city do you work in or nearest to?,Odense,2
+1,What city do you work in or nearest to?,Potsdam / Germany,1
+1,What city do you work in or nearest to?,Stockholm,1
+1,What gender do you identify with?,Man,13
+1,What gender do you identify with?,Woman,13
+1,Perceived skill/knowledge in data analysis in general?,Beginner,3
+1,Perceived skill/knowledge in data analysis in general?,Beginner-Intermediate,6
+1,Perceived skill/knowledge in data analysis in general?,Intermediate,9
+1,Perceived skill/knowledge in data analysis in general?,Intermediate-Advanced,8
+1,Perceived skill/knowledge in formal version control (e.g. Git)?,Beginner,10
+1,Perceived skill/knowledge in formal version control (e.g. Git)?,Beginner-Intermediate,12
+1,Perceived skill/knowledge in formal version control (e.g. Git)?,Intermediate,3
+1,Perceived skill/knowledge in formal version control (e.g. Git)?,Intermediate-Advanced,1
+1,Perceived skill/knowledge in collaborating through Git?,Beginner,13
+1,Perceived skill/knowledge in collaborating through Git?,Beginner-Intermediate,10
+1,Perceived skill/knowledge in collaborating through Git?,Intermediate,3
+1,Perceived skill/knowledge in programming in general?,Beginner,4
+1,Perceived skill/knowledge in programming in general?,Beginner-Intermediate,11
+1,Perceived skill/knowledge in programming in general?,Intermediate,8
+1,Perceived skill/knowledge in programming in general?,Intermediate-Advanced,3
+1,Perceived skill/knowledge in using R?,Advanced,1
+1,Perceived skill/knowledge in using R?,Beginner,1
+1,Perceived skill/knowledge in using R?,Beginner-Intermediate,9
+1,Perceived skill/knowledge in using R?,Intermediate,12
+1,Perceived skill/knowledge in using R?,Intermediate-Advanced,3
+1,Perceived skill/knowledge in writing reproducible code in general?,Beginner,5
+1,Perceived skill/knowledge in writing reproducible code in general?,Beginner-Intermediate,9
+1,Perceived skill/knowledge in writing reproducible code in general?,Intermediate,8
+1,Perceived skill/knowledge in writing reproducible code in general?,Intermediate-Advanced,4
+1,Perceived skill/knowledge in writing in or using R Markdown?,Advanced,1
+1,Perceived skill/knowledge in writing in or using R Markdown?,Beginner,7
+1,Perceived skill/knowledge in writing in or using R Markdown?,Beginner-Intermediate,11
+1,Perceived skill/knowledge in writing in or using R Markdown?,Intermediate,4
+1,Perceived skill/knowledge in writing in or using R Markdown?,Intermediate-Advanced,3
+1,What programs have you previously used for data analysis?,Excel,1
+1,What programs have you previously used for data analysis?,"Excel, GraphPad Prism",2
+1,What programs have you previously used for data analysis?,"Excel, GraphPad Prism, Perseus",1
+1,What programs have you previously used for data analysis?,"Excel, R",1
+1,What programs have you previously used for data analysis?,GraphPad Prism,1
+1,What programs have you previously used for data analysis?,"GraphPad Prism, Rstudio",1
+1,What programs have you previously used for data analysis?,None,1
+1,What programs have you previously used for data analysis?,"Python, Excel, GraphPad Prism",3
+1,What programs have you previously used for data analysis?,"SAS/SAS JMP, SPSS",1
+1,What programs have you previously used for data analysis?,"SAS/SAS JMP, SPSS, GraphPad Prism",1
+1,What programs have you previously used for data analysis?,"SAS/SAS JMP, Stata, Matlab",1
+1,What programs have you previously used for data analysis?,SPSS,2
+1,What programs have you previously used for data analysis?,"SPSS, Excel",1
+1,What programs have you previously used for data analysis?,"SPSS, Excel, GraphPad Prism",2
+1,What programs have you previously used for data analysis?,"SPSS, GraphPad Prism",2
+1,What programs have you previously used for data analysis?,"SPSS, Python, Excel, GraphPad Prism",1
+1,What programs have you previously used for data analysis?,"SPSS, Stata, Excel",1
+1,What programs have you previously used for data analysis?,"SPSS, Stata, Python, Excel, GraphPad Prism",1
+1,What programs have you previously used for data analysis?,Stata,1
+1,What programs have you previously used for data analysis?,"Stata, GraphPad Prism",1
+1,What is your formal position?,Assistant professor,1
+1,What is your formal position?,PhD student,9
+1,What is your formal position?,Postdoc,15
+1,What is your formal position?,Research assistant,1
+1,How often do you currently use: GitHub/GitLab and Git,Daily,1
+1,How often do you currently use: GitHub/GitLab and Git,Few times a month,8
+1,How often do you currently use: GitHub/GitLab and Git,Few times a week,1
+1,How often do you currently use: GitHub/GitLab and Git,Never,10
+1,How often do you currently use: GitHub/GitLab and Git,Once a month,1
+1,How often do you currently use: GitHub/GitLab and Git,Once a week,5
+1,How often do you currently use: lintr,Never,25
+1,How often do you currently use: lintr,Once a month,1
+1,How often do you currently use: purrr,Daily,2
+1,How often do you currently use: purrr,Few times a month,5
+1,How often do you currently use: purrr,Never,11
+1,How often do you currently use: purrr,Once a month,7
+1,How often do you currently use: purrr,Once a week,1
+1,How often do you currently use: renv,Few times a month,2
+1,How often do you currently use: renv,Never,23
+1,How often do you currently use: renv,Once a month,1
+1,How often do you currently use: R Markdown/Quarto,Daily,6
+1,How often do you currently use: R Markdown/Quarto,Few times a month,3
+1,How often do you currently use: R Markdown/Quarto,Few times a week,2
+1,How often do you currently use: R Markdown/Quarto,Never,8
+1,How often do you currently use: R Markdown/Quarto,Once a month,3
+1,How often do you currently use: R Markdown/Quarto,Once a week,4
+1,How often do you currently use: styler,Never,23
+1,How often do you currently use: styler,Once a month,3
+1,How often do you currently use: targets,Never,25
+1,How often do you currently use: targets,Once a month,1
+1,How often do you currently use: tidymodels,Few times a month,2
+1,How often do you currently use: tidymodels,Never,21
+1,How often do you currently use: tidymodels,Once a month,2
+1,How often do you currently use: tidymodels,Once a week,1
+1,How often do you currently use: tidyverse,Daily,9
+1,How often do you currently use: tidyverse,Few times a month,4
+1,How often do you currently use: tidyverse,Few times a week,5
+1,How often do you currently use: tidyverse,Never,2
+1,How often do you currently use: tidyverse,Once a month,1
+1,How often do you currently use: tidyverse,Once a week,5
