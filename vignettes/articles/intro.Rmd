@@ -11,9 +11,9 @@ knitr::opts_chunk$set(
 library(tidyverse)
 library(ghclass)
 devtools::load_all()
-course_date <- "2023-01-16"
+course_date <- "2023-04-25"
 course_type <- "r-cubed"
-org_gh_course_name <- "r-cubed-2023-01"
+org_gh_course_name <- "r-cubed-2023-04"
 ```
 
 ```{r, eval=FALSE}
