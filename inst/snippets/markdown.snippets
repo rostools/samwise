@@ -18,6 +18,15 @@ snippet instructor_details
 	${0}
 	:::
 
+snippet temp_with_project
+	```{r admin-${1:label}}
+	#| echo: false
+	usethis::with_project(
+		path = project_path,
+		{${0}}
+	)
+	```
+
 snippet purl_only
 	```{r purl-only-${1:label}}
 	#| eval: false
