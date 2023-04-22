@@ -44,7 +44,34 @@ group_name_to_pdf <- function(group_name, output_dir) {
     input = fs::path_package("r3admin", "templates", "group-name-pdf.qmd"),
     output_file = fs::path_ext_set(group_name, "pdf"),
     execute_params = list(
-      name = group_name
+      team_name = group_name
+    )
+  )
+}
+
+teams_with_members_to_one_pdf <- function(team_names_with_members, output_dir = here::here("_ignore/group-names")) {
+  team_names_with_members %>%
+    dplyr::group_split(.data$team_name) %>%
+    purrr::walk(~ {
+      teams_with_members_to_pdf(
+        team_name = unique(.x$team_name),
+        team_members = .x$team_members,
+        output_dir = output_dir
+      )
+    })
+  single_files <- fs::dir_ls(output_dir, glob = "*.pdf")
+  pdftools::pdf_combine(single_files, output = fs::path(output_dir, "_all-groups.pdf"))
+  fs::file_delete(single_files)
+}
+
+teams_with_members_to_pdf <- function(team_name, team_members, output_dir) {
+  withr::local_dir(output_dir)
+  quarto::quarto_render(
+    input = fs::path_package("r3admin", "templates", "teams-with-members-pdf.qmd"),
+    output_file = fs::path_ext_set(team_name, "pdf"),
+    execute_params = list(
+      team_name = team_name,
+      team_members = team_members
     )
   )
 }
@@ -92,6 +119,7 @@ assign_learners_to_groups <- function(data, group_names, score_cutoff = 3) {
       tidyselect::matches("^perceived")
     ) %>%
     dplyr::rowwise() %>%
+    dplyr::mutate(dplyr::across(tidyselect::starts_with("perceived"), as.numeric)) %>%
     dplyr::mutate(perceived_skill_score = sum(dplyr::c_across(tidyselect::starts_with("perceived")))) %>%
     dplyr::ungroup() %>%
     dplyr::mutate(team = (.data$perceived_skill_score >= score_cutoff) %>%
