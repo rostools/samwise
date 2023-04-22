@@ -1,0 +1,22 @@
+---
+format: 
+  pdf:
+    papersize: a4
+    fontsize: 42pt
+    pagestyle: empty
+    geometry: 
+      - top=3cm
+      - right= 1cm
+      - landscape
+params:
+  team_name: "PLACEHOLDER"
+  team_members: ["PERSON", "PERSON", "PERSON"]
+---
+
+# Team: `r params$team_name`
+
+```{r}
+#| echo: false
+#| results: asis
+cat(paste("- ", params$team_members), sep = "\n")
+```
