@@ -27,9 +27,18 @@ Conduct, and the Tips for instructors or helpers in the
 
 -   [ ] {{tasks_start_date}}: (Optional) Send an calendar invite to
     registered participants with link to pre-course tasks and website.
--   [ ] Pre-course instructor meeting (\~2 weeks before):
-    -   Go briefly over Instructor Guide with new instructors
-    -   
+-   [ ] {{instructors_precourse_meeting}}: Send a calendar invite to
+    instructors/helpers for course location (with planning issue link),
+    dinner locations, and post-course debrief. registered participants
+    with link to pre-course tasks and website.
+-   [ ] \~{{instructors_precourse_meeting}}: Pre-course instructor
+    meeting:
+    -   Go briefly over
+        [Instructor](https://guides.rostools.org/instructors.html) and
+        [Helper](https://guides.rostools.org/helpers.html) with new
+        instructors.
+    -   Mention about post-course debrief (described in the
+        [Guides](https://github.com/github/rest-api-description) site).
 -   [ ] {{tasks_remind_date}}: Send a reminder to everyone to complete
     tasks. See `r3admin/vignettes/articles/`.
 -   [ ] {{tasks_check_end_date}}: Check that all participants have
