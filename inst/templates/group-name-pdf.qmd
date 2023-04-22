@@ -8,9 +8,9 @@ format:
       - top=6cm
       - landscape
 params:
-  name: "PLACEHOLDER"
+  team_name: "PLACEHOLDER"
 ---
 
 # Group name:
 
-# `r params$name`
+# `r params$team_name`
