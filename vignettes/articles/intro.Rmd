@@ -70,10 +70,6 @@ Quickly check whether everyone has their setups done correctly.
 cat(check_setup(precourse))
 ```
 
-```{r, results='asis'}
-cat(check_project_setup(precourse))
-```
-
 ## Who has problems
 
 List those who have problems and print their setups.
