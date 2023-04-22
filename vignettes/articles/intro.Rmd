@@ -1,5 +1,5 @@
 ---
-title: "Introduction course admin tasks"
+title: "Admin tasks for the introduction course"
 ---
 
 ```{r setup, include = FALSE}
@@ -11,10 +11,17 @@ knitr::opts_chunk$set(
 library(tidyverse)
 library(ghclass)
 devtools::load_all()
+```
+
+These are the constants used for later functions.
+
+```{r constants}
 course_date <- "2023-04-25"
-course_type <- "r-cubed"
+course_type <- "r-cubed-intro"
 org_gh_course_name <- "r-cubed-2023-04"
 ```
+
+The `{ghclass}` package requires a GitHub PAT in order to work.
 
 ```{r, eval=FALSE}
 # Set GitHub PAT
@@ -24,13 +31,19 @@ ghclass::github_set_token(gitcreds::gitcreds_get(use_cache = FALSE)$password)
 
 # Pre-course admin tasks
 
+## Creating the planning issue
+
+There are several tasks that need to be done before hand for each
+course, and this function below creates that on either GitHub or GitLab.
+
 ```{r, eval=FALSE}
 admin_create_planning_issue(course_type, course_date, host = "gitlab")
 ```
 
 ## Fetch (and save) pre-survey responses
 
-First thing, need to get the precourse results.
+Any admin task that requires participant information, we need to first
+get that information from the precourse survey.
 
 ```{r}
 # TODO: How to get these authenticated? Run first and then build vignette?
@@ -56,6 +69,8 @@ View(participants)
 
 Then need to send a reminder email to those who didn't complete the
 survey or tasks yet.
+
+<!-- TODO: Create function to create an email directly? https://gmailr.r-lib.org/ -->
 
 ```{r, eval=FALSE}
 copy_emails_for_reminder(participants)
@@ -89,6 +104,8 @@ problems %>%
 
 ### Setup of those with problems
 
+<!-- TODO: Convert this in a way that it shows the setups and problems together? -->
+
 ```{r, results='asis'}
 problems %>%
   check_setup() %>%
@@ -113,23 +130,15 @@ here to select the names I think are interesting or funky. Make groups
 with about 4 people per group.
 
 ```{r}
-set.seed(154)
+set.seed(54323)
 group_names <- create_group_names()
 
+# Use this number to determine how many groups to have.
 ceiling(nrow(precourse) / 4)
 group_names_final <- group_names[c(
-  10, 11, 12, 14, 19,
-  24, 27, 32, 53, 54
+  43, 4, 3, 65, 51, 68, 13
 )]
 group_names_final
-```
-
-Create PDF files of the group names, so we can print the files before
-the first day and put one of them on each table.
-
-```{r, eval=FALSE, results='hide'}
-group_names_final %>%
-  group_names_to_one_pdf()
 ```
 
 ### Assigning members to groups
@@ -145,38 +154,54 @@ count(learners_in_groups, team)
 View(learners_in_groups)
 
 # Manually change if need be.
-learners_in_groups <- edit(learners_in_groups)
+# learners_in_groups <- edit(learners_in_groups)
+```
+
+Create a PDF file of the team names with members, so we can print the
+file before the first day and put each sheet of paper with the team name
+and members on each table.
+
+```{r, eval=FALSE, results='hide'}
+learners_in_groups %>% 
+  select(team_name = team, team_members = full_name) %>% 
+  teams_with_members_to_one_pdf()
 ```
 
 ## Creating the GitHub org and groups
 
 Follow the instructions on the [ghclass
-vignette](https://rundel.github.io/ghclass/articles/ghclass.html) First,
-you need to create the organization manually. Use the value in here as
-the name:
+vignette](https://rundel.github.io/ghclass/articles/ghclass.html).
+First, you need to create the organization manually. Use the value in
+here as the name:
 
 ```{r}
 # Name for organization.
 org_gh_course_name
 ```
 
+Check details of the organization and set permissions:
+
+```{r, eval=FALSE}
+org_set_repo_permission(org_gh_course_name, permission = "none")
+org_sitrep(org_gh_course_name)
+```
+
 Invite participants onto GitHub:
 
 ```{r, eval=FALSE}
-# org_invite(org_gh_course_name, precourse$github_username)
+org_invite(org_gh_course_name, precourse$github_username)
 org_members(org_gh_course_name)
 org_pending(org_gh_course_name)
 ```
 
 Then we can create the teams based on the group names:
 
-```{r}
-# team_create(org_gh_course_name, group_names_final)
+```{r, eval=FALSE}
+team_create(org_gh_course_name, group_names_final)
 org_teams(org_gh_course_name)
 ```
 
-Then assign the people to the teams followed by making repos for each
-team.
+Then assign the people to the teams.
 
 ```{r, eval=FALSE}
 team_invite(
@@ -184,7 +209,11 @@ team_invite(
   learners_in_groups$github_username,
   learners_in_groups$team
 )
+```
 
+We need to create repos for each team.
+
+```{r, eval=FALSE}
 gh_repos <- repo_create(org_gh_course_name, group_names_final)
 repo_add_team(sort(gh_repos), sort(unique(learners_in_groups$team)))
 ```
@@ -193,11 +222,17 @@ Make a table for the planning issue to put the instructors in groups.
 There might be some manual tinkering here.
 
 ```{r, eval=FALSE}
-instructors <- c(
-  "Anders", "Elise", "Luke", "Anders", "Menghan", "Mudit", "Núria",
-  "Marcus", "Samah", "Vi"
+instructors <- tibble::tribble(
+  ~name, ~github_username,
+  "Luke", "lwjohnst86",
+  "Luke", "lwjohnst86",
+  "Anders", "AndersAskeland",
+  "Sara", "sarastinson",
+  "Roger", "",
+  "Malene", "MaleneRevsbech",
+  "Evelina", "evelinastankevic",
 )
-instructors_to_groups <- assign_instructors_to_groups(group_names_final, instructors)
+instructors_to_groups <- assign_instructors_to_groups(group_names_final, instructors$name)
 ```
 
 Then take instructors and assigned teams and convert them into a
@@ -208,6 +243,30 @@ instructors_to_groups %>%
   copy_instructors_to_groups_table(org_gh_course_name)
 ```
 
+```{r, eval=FALSE}
+org_invite(org_gh_course_name, instructors$github_username)
+team_create(org_gh_course_name, "Helpers")
+team_invite(
+  org_gh_course_name,
+  instructors$github_username,
+  "Helpers"
+)
+```
+
+Add helpers and instructors team to all repos and set permissions to
+admin.
+
+```{r, eval=FALSE}
+org_repos(org_gh_course_name) %>% 
+  walk(~ {
+    repo_team_permission(
+      repo = .x,
+      team = "Helpers",
+      permission = "admin"
+    )
+  })
+```
+
 ## Invite to Slack group
 
 ```{r, eval=FALSE}
@@ -215,6 +274,8 @@ copy_emails_for_slack_invite(precourse$email)
 ```
 
 ## Create projects to push to repos
+
+Setting up the repos to have all the folders and files.
 
 ```{r, eval=FALSE}
 setup_team_repos(org_gh_course_name)
