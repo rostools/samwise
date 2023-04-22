@@ -18,7 +18,7 @@ org_gh_course_name <- "r-cubed-2023-04"
 
 ```{r, eval=FALSE}
 # Set GitHub PAT
-gitcreds::gitcreds_set()
+# gitcreds::gitcreds_set()
 ghclass::github_set_token(gitcreds::gitcreds_get(use_cache = FALSE)$password)
 ```
 
