@@ -39,6 +39,8 @@ Conduct, and the Tips for instructors or helpers in the
         instructors.
     -   Mention about post-course debrief (described in the
         [Guides](https://github.com/github/rest-api-description) site).
+    -   (For intro course) Have all instructors/helpers give their
+        GitHub user names.
 -   [ ] {{tasks_remind_date}}: Send a reminder to everyone to complete
     tasks. See `r3admin/vignettes/articles/`.
 -   [ ] {{tasks_check_end_date}}: Check that all participants have
@@ -69,3 +71,4 @@ Conduct, and the Tips for instructors or helpers in the
 
 -   DDA will reimburse travel expenses
     [here](https://www.danishdiabetesacademy.dk/content/online-compensation-form-events)
+
