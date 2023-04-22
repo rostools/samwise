@@ -48,7 +48,7 @@ to compare with, which can be deleted after the course.
 ```{r, eval=FALSE}
 participants <- check_who_not_finish_survey(
   precourse,
-  readr::read_csv(here::here("_ignore/official-participant-list-emails-2023-01-16.csv"))
+  readr::read_csv(here::here("_ignore/official-participant-list.csv"))
 )
 nrow(participants)
 View(participants)
