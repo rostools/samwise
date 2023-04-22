@@ -16,6 +16,7 @@ admin_create_planning_issue <- function(repo, course_date, host = c("gitlab", "g
     data = list(
       repo_name = repo,
       course_date = course_date,
+      instructors_precourse_meeting = stamp_format(as.Date(course_date) - lubridate::days(14)),
       tasks_start_date = stamp_format(as.Date(course_date) - months(1)),
       tasks_remind_date = stamp_format(as.Date(course_date) - lubridate::days(8)),
       tasks_check_end_date = stamp_format(as.Date(course_date) - lubridate::days(5)),
