@@ -151,7 +151,7 @@ learners_in_groups <- assign_learners_to_groups(
   group_names_final
 )
 count(learners_in_groups, team)
-View(learners_in_groups)
+# View(learners_in_groups)
 
 # Manually change if need be.
 # learners_in_groups <- edit(learners_in_groups)
@@ -182,14 +182,14 @@ org_gh_course_name
 Check details of the organization and set permissions:
 
 ```{r, eval=FALSE}
-org_set_repo_permission(org_gh_course_name, permission = "none")
+# org_set_repo_permission(org_gh_course_name, permission = "none")
 org_sitrep(org_gh_course_name)
 ```
 
 Invite participants onto GitHub:
 
 ```{r, eval=FALSE}
-org_invite(org_gh_course_name, precourse$github_username)
+# org_invite(org_gh_course_name, precourse$github_username)
 org_members(org_gh_course_name)
 org_pending(org_gh_course_name)
 ```
@@ -250,6 +250,9 @@ instructors_to_groups %>%
   copy_instructors_to_groups_table(org_gh_course_name)
 ```
 
+Create a Helpers only team, so the team can be assigned to all the
+repos.
+
 ```{r, eval=FALSE}
 org_invite(org_gh_course_name, instructors$github_username)
 team_create(org_gh_course_name, "Helpers")
@@ -298,3 +301,4 @@ Need to run these inside the project.
 
 ```{r, eval=FALSE}
 ```
+
