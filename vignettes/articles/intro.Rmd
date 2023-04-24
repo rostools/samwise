@@ -235,7 +235,7 @@ instructors <- tibble::tribble(
   "Luke", "lwjohnst86",
   "Anders", "AndersAskeland",
   "Sara", "sarastinson",
-  "Roger", "",
+  "Roger", "rmj822",
   "Malene", "MaleneRevsbech",
   "Evelina", "evelinastankevic",
 )
