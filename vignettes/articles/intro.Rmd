@@ -204,6 +204,13 @@ org_teams(org_gh_course_name)
 Then assign the people to the teams.
 
 ```{r, eval=FALSE}
+# Use this to remove users from teams, if you mess up.
+# bind_rows(
+#   team_members(org_gh_course_name),
+#   team_pending(org_gh_course_name)
+# ) %>% 
+#   distinct() %>% 
+#   pwalk(\(team, user) team_remove(org = org_gh_course_name, user = user, team = team, team_type = "slug"))
 team_invite(
   org_gh_course_name,
   learners_in_groups$github_username,
