@@ -1,0 +1,115 @@
+person:
+  # - id: ""
+  #   name: ""
+  #   affiliation: ""
+  #   orcid: ""
+  - id: lwj
+    name: Luke W. Johnston
+    affiliation:
+      - ref: sdca
+      - ref: au
+    orcid: 0000-0003-4169-2616
+
+  - id: drw
+    name: Daniel R. Witte
+    affiliation:
+      - ref: sdca
+      - ref: au
+    orcid: 0000-0002-0769-2922
+
+  - id: js
+    name: João Santiago
+    affiliation: ""
+    orcid: ""
+
+  - id: as
+    name: Anna Schritz
+    affiliation:
+      - ref:lih
+    orcid: ""
+
+  - id: osr
+    name: Omar Silverman-Retana
+    affiliation:
+      - ref: au
+      - ref: sdca
+    orcid: 0000-0002-2744-9698
+
+  - id: lb
+    name: Lasse Bjerg
+    affiliation:
+      - ref: au
+      - ref: sdca
+    orcid: ""
+
+  - id: mrc
+    name: Malene Revsbech Christiansen
+    affiliation:
+      - cbmr
+    orcid: 0000-0002-9772-3576
+
+  - id: aai
+    name: Anders Aasted Isaksen
+    affiliation:
+      - ref: au
+    orcid: 0000-0001-8457-5466
+
+  - id: bl
+    name: Bettina Lengger
+    affiliation:
+      - ref: dtu
+    orcid: 0000-0001-9997-7011
+
+  - id: hbj
+    name: Helene Bæk Juel
+    affiliation:
+      - ref: cbmr
+    orcid: 0000-0002-5763-8545
+
+  - id: ssch
+    name: Stine Scheuer
+    affiliation:
+      - ref: sdcc
+    orcid: 0000-0002-1244-9871
+
+  - id: aa
+    name: Anders Askeland
+    affiliation:
+      - ref: aauh
+    orcid: 0000-0002-2996-129X
+
+  - id: ssul
+    name: Sufyan Suleman
+    affiliation:
+      - ref: cbmr
+    orcid: 0000-0001-6612-6915
+
+  - id: ivse
+    name: Isabell Victoria Strandby Ernst
+    affiliation:
+      - ref: sdu
+    orcid: ""
+
+  - id: sstin
+    name: Sara Stinson
+    affiliation:
+      - ref: cbmr
+    orcid: ""
+
+  - id: es
+    name: Evelina Stankevic
+    affiliation:
+      - ref: cbmr
+    orcid: 0000-0002-1491-9179
+
+  - id: hc
+    name: Hannah Chatwin
+    affiliation:
+      - ref: ou
+    orcid: 0000-0001-7248-8568
+
+  - id: rm
+    name: Roger Moreno
+    affiliation:
+      - ref: cbmr
+    orcid: 0000-0002-8587-4772

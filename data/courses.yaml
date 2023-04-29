@@ -1,0 +1,110 @@
+course:
+  - id: intro
+    name: Introductory
+    url: https://r-cubed-intro.rostools.org/
+    contributors:
+      - ref: lwj
+      - ref: drw
+      - ref: js
+      - ref: as
+      - ref: osr
+      - ref: mrc
+      - ref: aai
+      - ref: hbj
+      - ref: ssch
+      - ref: aa
+      - ref: hc
+    events:
+      - date: 2019-03-04
+        host: "Danish Diabetes Academy"
+        instructors:
+          - ref: lwj
+          - ref: drw
+          - ref: js
+          - ref: as
+        helpers:
+          - ref: osr
+          - ref: lb
+      - date: 2020-06-22
+        instructors:
+          - ref: lwj
+          - ref: drw
+          - ref: bl
+          - ref: hbj
+        helpers:
+          - ref: mrc
+          - ref: aai
+      - date: 2021-06-15
+        instructors:
+          - ref: lwj
+          - ref: drw
+          - ref: bl
+          - ref: hbj
+        helpers:
+          - ref: hc
+      - date: 2022-03-01
+        host: Danish Diabetes Academy
+        instructors:
+          - ref: lwj
+          - ref: ssch
+          - ref: ssul
+          - ref: ivse
+        helpers:
+          - ref: sstin
+          - ref: es
+      - date: 2023-01-16
+        host: Chalmers
+        instructors:
+          - ref: lwj
+          - ref: aa
+        helpers: "" # Add Vi and Nuria and maybe Esther? If they help again? This was a confusing time for organizing helpers.
+      - date: 2023-04-25
+        host: Danish Diabetes Academy
+        instructors:
+          - ref: lwj
+          - ref: mcr
+          - ref: aa
+          - ref: es
+          - ref: rm
+        helpers:
+          - ref: sstin
+
+  - id: inter
+    name: Intermediate
+    url: https://r-cubed-intermediate.rostools.org/
+    contributors:
+      - ref: lwj
+    events:
+      - date: 2020-09-08
+        host: ref: dda
+        instructors:
+          - ref: lwj
+        helpers:
+          - ref:
+      - date: 2021-06-28
+        instructors:
+          - ref: lwj
+        helpers:
+          - ref:
+      - date: 2021-10-11
+        instructors:
+          - ref: lwj
+        helpers:
+          - ref:
+      - date: 2022-06-21
+        instructors:
+          - ref: lwj
+        helpers:
+          - ref:
+
+  - id: adv
+    name: Advanced
+    url: https://r-cubed-advanced.rostools.org/
+    contributors:
+      - ref: lwj
+    events:
+      - date: 2022-12-07
+        instructors:
+          - ref: lwj
+        helpers:
+          - ref:
