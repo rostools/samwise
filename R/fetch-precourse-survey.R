@@ -24,7 +24,17 @@ fetch_precourse_intro <- function(survey_id = Sys.getenv("INTRO_PRE_SURVEY_ID"))
     fetch_precourse_sheet() |>
     rename_columns_sentence_to_snakecase(intro_survey_column_renaming) |>
     check_duplicate_timestamps() %>%
-    tidy_precourse(metadata$dates$introduction)
+    tidy_precourse(metadata_course_dates("intro"))
+}
+
+#' @describeIn fetch_precourse Fetch the pre-course survey data for the **intermediate** course.
+#' @export
+fetch_precourse_inter <- function(survey_id = Sys.getenv("INTERMEDIATE_PRE_SURVEY_ID")) {
+  survey_id |>
+    fetch_precourse_sheet() |>
+    rename_columns_sentence_to_snakecase(intermediate_survey_column_renaming) |>
+    check_duplicate_timestamps() %>%
+    tidy_precourse(metadata_course_dates("inter"))
 }
 
 #' @describeIn fetch_precourse Fetch the pre-course survey data for the **advanced** course.
@@ -34,7 +44,7 @@ fetch_precourse_advanced <- function(survey_id = Sys.getenv("ADVANCED_PRE_SURVEY
     fetch_precourse_sheet() |>
     rename_columns_sentence_to_snakecase(advanced_survey_column_renaming) |>
     check_duplicate_timestamps() %>%
-    tidy_precourse(metadata$dates$advanced)
+    tidy_precourse(metadata_course_dates("adv"))
 }
 
 fetch_precourse_sheet <- function(survey_id) {
