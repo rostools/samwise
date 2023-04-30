@@ -16,6 +16,6 @@ A numeric value.
 Assign the version of the course that the survey response comes from.
 }
 \examples{
-assign_course_version_by_date(c("2020-06-20", "2019-06-10"), metadata$dates$introduction)
+assign_course_version_by_date(c("2020-06-20", "2019-06-10"), metadata_course_dates("intro"))
 }
 \keyword{internal}
