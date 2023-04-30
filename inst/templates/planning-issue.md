@@ -52,23 +52,23 @@ Conduct, and the Tips for instructors or helpers in the
 -   [ ] {{tasks_prep_end_date}}: Add everyone to Slack channel. See
     `r3admin/vignettes/articles/`.
 -   [ ] {{tasks_prep_end_date}}: Open up the Google Forms feedback
-    survey
+    survey.
 
 ## To do during course
 
--   [ ] Set up repo to host code-along that instructors will use
+-   [ ] Set up repo to host code-along that instructors will use (course
+    dependent).
 
 ## To do after course
 
--   [ ] Close the Google Forms feedback survey
--   [ ] Update instructor file with instructors who taught the course
-    (put into `data/_people.csv`)
+-   [ ] Close the Google Forms feedback survey.
 -   [ ] Update git tag (use [CalVer](https://calver.org/) `YYYY-0M-0D`
-    style) and release it (`r3admin::create_course_tag()`)
--   [ ] Update Zenodo DOI
+    style) and release it (`r3admin::create_course_tag()`).
+-   [ ] Update course metadata in `r3admin/data-raw/`.
+-   [ ] Update instructor/helper metadata in `r3admin/data-raw/`.
+-   [ ] Update Zenodo DOI.
 
 ## Other details
 
 -   DDA will reimburse travel expenses
-    [here](https://www.danishdiabetesacademy.dk/content/online-compensation-form-events)
-
+    [here](https://www.ddeacademy.dk/content/online-compensation-form-events)
