@@ -76,7 +76,7 @@ course:
       - ref: lwj
     events:
       - date: 2020-09-08
-        host: ref: dda
+        host: Danish Diabetes Academy
         instructors:
           - ref: lwj
         helpers:
