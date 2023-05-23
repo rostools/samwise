@@ -83,31 +83,21 @@ teams_with_members_to_pdf <- function(team_name, team_members, output_dir) {
   )
 }
 
-group_names_to_html_table <- function(group_name, number_participants, output_dir) {
-  withr::local_dir(output_dir)
-  quarto::quarto_render(
-    input = fs::path_package("r3admin", "templates", "group-name-strips.qmd"),
-    output_file = fs::path_ext_set(group_name, "html"),
-    execute_params = list(
-      name = group_name,
-      number_participants = number_participants
+group_names_as_strips_html <-
+  function(group_names,
+           number_participants,
+           output_dir = here::here("_ignore/group-names")) {
+    fs::dir_create(output_dir)
+    withr::local_dir(output_dir)
+    quarto::quarto_render(
+      input = fs::path_package("r3admin", "templates", "group-name-strips.qmd"),
+      output_file = "group-names-to-cut.html",
+      execute_params = list(
+        name = group_names,
+        number_participants = number_participants
+      )
     )
-  )
-}
-
-group_names_as_strips_html <- function(group_names,
-                                       number_participants,
-                                       output_dir = here::here("_ignore/group-names")) {
-  group_names %>%
-    purrr::walk(group_names_to_html_table,
-      output_dir = output_dir,
-      number_participants = number_participants
-    )
-  # fs::dir_ls(output_dir, glob = "*.html") %>%
-  #   purrr::walk(webshot2::webshot) %>%
-  #   fs::file_delete()
-}
-
+  }
 
 #' Assign learners into groups.
 #'
