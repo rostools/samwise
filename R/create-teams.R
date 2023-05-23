@@ -34,7 +34,14 @@ group_names_to_one_pdf <- function(group_names, output_dir = here::here("_ignore
   group_names %>%
     purrr::walk(group_name_to_pdf, output_dir = output_dir)
   single_files <- fs::dir_ls(output_dir, glob = "*.pdf")
-  pdftools::pdf_combine(single_files, output = fs::path(output_dir, "_all-groups.pdf"))
+  combined_pdf_file <- fs::path(output_dir, "_all-groups.pdf")
+  Sys.sleep(1)
+  pdftools::pdf_combine(single_files, output = combined_pdf_file)
+  if (!fs::file_exists(combined_pdf_file)) {
+    cli::cli_warn("The file {.path {fs::path_file(combined_pdf_file)}} wasn't actually created, try again?")
+  } else {
+    cli::cli_alert_success("The group names PDF file ({.path {fs::path_file(combined_pdf_file)}}) was created!")
+  }
   fs::file_delete(single_files)
 }
 
