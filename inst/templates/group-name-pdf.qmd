@@ -2,7 +2,7 @@
 format: 
   pdf:
     papersize: a4
-    fontsize: 56pt
+    fontsize: 52pt
     pagestyle: empty
     geometry: 
       - top=6cm
@@ -11,6 +11,11 @@ params:
   team_name: "PLACEHOLDER"
 ---
 
-# Group name:
+```{r}
+#| echo: false
+# To trigger use of R?
+```
 
-# `r params$team_name`
+# Group:
+
+## `r params$team_name`
