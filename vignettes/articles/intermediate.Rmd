@@ -116,13 +116,15 @@ here to select the names I think are interesting or funky. Make groups
 with about 4 people per group.
 
 ```{r}
-set.seed(154)
+set.seed(223)
 group_names <- create_group_names()
 
-ceiling(nrow(precourse) / 4)
+# ceiling(nrow(precourse) / 4)
+32 / 4
+group_names
 group_names_final <- group_names[c(
-  10, 11, 12, 14, 19,
-  24, 27, 32, 53, 54
+  7, 21, 41, 45,
+  47, 52, 57, 59
 )]
 group_names_final
 ```
