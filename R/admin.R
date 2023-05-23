@@ -12,7 +12,8 @@ admin_create_planning_issue <- function(repo, course_date, host = c("gitlab", "g
   stamp_format <- lubridate::stamp_date("Mar. 1, 2021", quiet = TRUE)
   template_path <- fs::path_package("r3admin", "templates", "planning-issue.md")
   issue_description <- whisker::whisker.render(
-    readr::read_lines(template_path),
+    # Skip the yaml metadata
+    readr::read_lines(template_path, skip = 7),
     data = list(
       repo_name = repo,
       course_date = course_date,
