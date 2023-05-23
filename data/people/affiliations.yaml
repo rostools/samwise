@@ -1,0 +1,19 @@
+affiliation:
+  - id: sdca
+    name: Steno Diabetes Center Aarhus
+  - id: au
+    name: Aarhus University
+  - id: lih
+    name: Luxembourg Institute of Health
+  - id: cbmr
+    name: Novo Nordisk Foundation Center for Basic Metabolic Research
+  - id: dtu
+    name: Technical University of Denmark
+  - id: sdcc
+    name: Steno Diabetes Center Copenhagen
+  - id: aauh
+    name: Aalborg University Hospital
+  - id: sdu
+    name: University of Southern Denmark
+  - id: ou
+    name: Odense University

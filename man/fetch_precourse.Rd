@@ -3,10 +3,13 @@
 \name{fetch_precourse}
 \alias{fetch_precourse}
 \alias{fetch_precourse_intro}
+\alias{fetch_precourse_inter}
 \alias{fetch_precourse_advanced}
 \title{Fetch the pre-course survey responses.}
 \usage{
 fetch_precourse_intro(survey_id = Sys.getenv("INTRO_PRE_SURVEY_ID"))
+
+fetch_precourse_inter(survey_id = Sys.getenv("INTERMEDIATE_PRE_SURVEY_ID"))
 
 fetch_precourse_advanced(survey_id = Sys.getenv("ADVANCED_PRE_SURVEY_ID"))
 }
@@ -22,6 +25,8 @@ Fetch the pre-course survey responses.
 \section{Functions}{
 \itemize{
 \item \code{fetch_precourse_intro()}: Fetch the pre-course survey data for the \strong{introduction} course.
+
+\item \code{fetch_precourse_inter()}: Fetch the pre-course survey data for the \strong{intermediate} course.
 
 \item \code{fetch_precourse_advanced()}: Fetch the pre-course survey data for the \strong{advanced} course.
 

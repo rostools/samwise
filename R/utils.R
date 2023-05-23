@@ -32,7 +32,7 @@ save_as_csv <- function(data, path) {
 #' @keywords internal
 #'
 #' @examples
-#' assign_course_version_by_date(c("2020-06-20", "2019-06-10"), metadata$dates$introduction)
+#' assign_course_version_by_date(c("2020-06-20", "2019-06-10"), metadata_course_dates("intro"))
 assign_course_version_by_date <- function(date, metadata_dates) {
   metadata_dates <- as.character(metadata_dates)
   dates_between_courses <- lubridate::interval(

@@ -44,15 +44,16 @@ Before the course, please review the CONTRIBUTING guide, Code of Conduct, and th
 
 ## To do during course
 
--   [ ] Set up repo to host code-along that instructors will use
+-   [ ] Set up repo to host code-along that instructors will use (course dependent).
 
 ## To do after course
 
 -   [ ] Close the Google Forms feedback survey
--   [ ] Update instructor file with instructors who taught the course (put into `data/_people.csv`)
 -   [ ] Update git tag (use [CalVer](https://calver.org/) `YYYY-0M-0D` style) and release it (`r3admin::create_course_tag()`)
+-   [ ] Update course metadata in `r3admin/data-raw/`.
+-   [ ] Update instructor/helper metadata in `r3admin/data-raw/`.
 -   [ ] Update Zenodo DOI
 
 ## Other details
 
--   DDA will reimburse travel expenses [here](https://www.danishdiabetesacademy.dk/content/online-compensation-form-events)
+-   DDA will reimburse travel expenses [here](https://www.ddeacademy.dk/content/online-compensation-form-events)

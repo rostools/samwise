@@ -17,22 +17,28 @@ NULL
 #' @describeIn fetch_feedback Fetch the session feedback survey data for the **introductory** course.
 #' @export
 fetch_feedback_intro <- function(survey_id = Sys.getenv("INTRO_FEEDBACK_SURVEY_ID")) {
-  fetch_feedback_generic(survey_id = survey_id)
+  fetch_feedback_generic(survey_id = survey_id, course_id = "intro")
+}
+
+#' @describeIn fetch_feedback Fetch the session feedback survey data for the **intermediate** course.
+#' @export
+fetch_feedback_intermediate <- function(survey_id = Sys.getenv("INTERMEDIATE_FEEDBACK_SURVEY_ID")) {
+  fetch_feedback_generic(survey_id = survey_id, course_id = "inter")
 }
 
 #' @describeIn fetch_feedback Fetch the session feedback survey data for the **advanced** course.
 #' @export
 fetch_feedback_advanced <- function(survey_id = Sys.getenv("ADVANCED_FEEDBACK_SURVEY_ID")) {
-  fetch_feedback_generic(survey_id = survey_id)
+  fetch_feedback_generic(survey_id = survey_id, course_id = "adv")
 }
 
-fetch_feedback_generic <- function(survey_id) {
+fetch_feedback_generic <- function(survey_id, course_id) {
   survey_id %>%
     fetch_feedback_sheet() %>%
     convert_to_long() %>%
     drop_missing_responses() %>%
     remove_newlines("response") %>%
-    add_course_version()
+    add_course_version(course_id)
 }
 
 fetch_feedback_sheet <- function(survey_id) {
@@ -42,8 +48,8 @@ fetch_feedback_sheet <- function(survey_id) {
 
 # Tidy up feedback data ---------------------------------------------------
 
-add_course_version <- function(data) {
-  few_days_after_course <- lubridate::as_date(metadata$dates$advanced) +
+add_course_version <- function(data, course_id) {
+  few_days_after_course <- lubridate::as_date(metadata_course_dates(course_id)) +
     lubridate::days(3)
   data %>%
     dplyr::mutate(
