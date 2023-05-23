@@ -135,6 +135,14 @@ group_names_final %>%
   group_names_to_one_pdf()
 ```
 
+Then to create some HTML files (that I will print to file manually for
+now) of strips of group names to cut out of on a paper.
+
+```{r, eval=FALSE}
+group_names_final %>%
+  group_names_as_strips_html(number_participants = 32)
+```
+
 ### Assigning members to groups
 
 Now we need to assign the learners to the groups.
