@@ -37,6 +37,8 @@ Imports:
     purrr,
     randomizr,
     readr,
+    rlang,
+    rprojroot,
     rversions,
     stringr,
     targets,
