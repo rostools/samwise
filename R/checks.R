@@ -137,7 +137,7 @@ check_project_setup <- function(data) {
     purrr::map_chr(~ pretty_code_checks(
       .x$full_name,
       .x$email,
-      .x$check_setup_output
+      .x$check_project_setup_output
     )) %>%
     stringr::str_c(collapse = "\n\n\n")
 }
