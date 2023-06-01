@@ -74,28 +74,39 @@ course:
     url: https://r-cubed-intermediate.rostools.org/
     contributors:
       - ref: lwj
+      - ref: osr
+      - ref: ae
+      - ref: sstor
+      - ref: ssch
+      - ref: mrc
+      - ref: aai
+      - ref: aa
     events:
       - date: 2020-09-08
         host: Danish Diabetes Academy
         instructors:
           - ref: lwj
-        helpers:
-          - ref:
+          - ref: osr
+          - ref: ae
+          - ref: sstor
       - date: 2021-06-28
         instructors:
           - ref: lwj
-        helpers:
-          - ref:
+          - ref: ssch
+          - ref: aai
+          - ref: mrc
       - date: 2021-10-11
         instructors:
           - ref: lwj
-        helpers:
-          - ref:
+          - ref: mgu
+          - ref: aa
+          - ref: mrc
       - date: 2022-06-21
         instructors:
           - ref: lwj
-        helpers:
-          - ref:
+          - ref: aa
+          - ref: ssul
+          - ref: ivse
 
   - id: adv
     name: Advanced

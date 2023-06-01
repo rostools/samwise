@@ -3,6 +3,24 @@ person:
   #   name: ""
   #   affiliation: ""
   #   orcid: ""
+  - id: mgu
+    name: Mario Garcia Ureña
+    affiliation:
+      - ref: cbmr
+    orcid: 0000-0002-3376-9460
+
+  - id: sstor
+    name: Signe Storgaard
+    affiliation:
+      - ref: au
+    orcid: 0000-0003-0014-8868
+
+  - id: ae
+    name: Andreas Eiset
+    affiliation:
+      - ref: au
+    orcid: 0000-0002-5487-8359
+
   - id: lwj
     name: Luke W. Johnston
     affiliation:
@@ -25,7 +43,7 @@ person:
   - id: as
     name: Anna Schritz
     affiliation:
-      - ref:lih
+      - ref: lih
     orcid: ""
 
   - id: osr
@@ -45,7 +63,7 @@ person:
   - id: mrc
     name: Malene Revsbech Christiansen
     affiliation:
-      - cbmr
+      - ref: cbmr
     orcid: 0000-0002-9772-3576
 
   - id: aai
