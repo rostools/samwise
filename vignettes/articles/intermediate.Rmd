@@ -12,6 +12,7 @@ library(tidyverse)
 library(ghclass)
 devtools::load_all()
 course_date <- "2023-06-06"
+# course_date <- "2023-06-19"
 course_type <- "r-cubed-intermediate"
 ```
 
@@ -21,13 +22,13 @@ course_type <- "r-cubed-intermediate"
 ghclass::github_set_token(gitcreds::gitcreds_get(use_cache = FALSE)$password)
 ```
 
-# Pre-course admin tasks
+## Pre-course admin tasks
 
 ```{r, eval=FALSE}
 admin_create_planning_issue(course_type, course_date, host = "github")
 ```
 
-## Fetch (and save) pre-survey responses
+### Fetch (and save) pre-survey responses
 
 First thing, need to get the precourse results.
 
@@ -35,11 +36,12 @@ First thing, need to get the precourse results.
 # TODO: How to get these authenticated? Run first and then build vignette?
 googledrive::drive_auth()
 googlesheets4::gs4_auth()
-precourse <- fetch_precourse_intro() %>%
-  filter(course_version == max(course_version))
+precourse <- fetch_precourse_inter() %>%
+  filter(course_version == max(course_version)) %>% 
+  filter(!str_detect(email, "\\.se$"))
 ```
 
-## Who didn't finish survey
+### Who didn't finish survey
 
 Check those who didn't finish the survey yet. Do need the official list
 to compare with, which can be deleted after the course.
@@ -47,7 +49,7 @@ to compare with, which can be deleted after the course.
 ```{r, eval=FALSE}
 participants <- check_who_not_finish_survey(
   precourse,
-  readr::read_csv(here::here("_ignore/official-participant-list-emails-2023-01-16.csv"))
+  readr::read_csv(here::here("_ignore/official-participant-list.csv"))
 )
 nrow(participants)
 View(participants)
@@ -61,7 +63,7 @@ copy_emails_for_reminder(participants)
 copy_reminder_email_text()
 ```
 
-## Basic setup checks
+### Basic setup checks
 
 Quickly check whether everyone has their setups done correctly.
 
@@ -73,7 +75,7 @@ cat(check_setup(precourse))
 cat(check_project_setup(precourse))
 ```
 
-## Who has problems
+### Who has problems
 
 List those who have problems and print their setups.
 
@@ -82,7 +84,7 @@ problems <- precourse %>%
   check_precourse_problems()
 ```
 
-### Description of the problems
+#### Description of the problems
 
 ```{r, results='asis'}
 problems %>%
@@ -90,7 +92,7 @@ problems %>%
   cat()
 ```
 
-### Setup of those with problems
+#### Setup of those with problems
 
 ```{r, results='asis'}
 problems %>%
@@ -98,7 +100,7 @@ problems %>%
   cat()
 ```
 
-### Copy names to address in first day
+#### Copy names to address in first day
 
 Copy the names of those who have problems so I can paste it to something
 like Telegram so I know who to seek out on the first day.
@@ -109,7 +111,7 @@ problems %>%
   copy_names_with_problems()
 ```
 
-## Create group names
+### Create group names
 
 Create some fun group names for the course. There is some manual action
 here to select the names I think are interesting or funky. Make groups
@@ -145,96 +147,10 @@ group_names_final %>%
   group_names_as_strips_html(number_participants = 32)
 ```
 
-### Assigning members to groups
-
-Now we need to assign the learners to the groups.
-
-```{r}
-learners_in_groups <- assign_learners_to_groups(
-  precourse,
-  group_names_final
-)
-count(learners_in_groups, team)
-View(learners_in_groups)
-
-# Manually change if need be.
-learners_in_groups <- edit(learners_in_groups)
-```
-
-## Creating the GitHub org and groups
-
-Follow the instructions on the [ghclass
-vignette](https://rundel.github.io/ghclass/articles/ghclass.html) First,
-you need to create the organization manually. Use the value in here as
-the name:
-
-```{r}
-# Name for organization.
-org_gh_course_name
-```
-
-Invite participants onto GitHub:
-
-```{r, eval=FALSE}
-# org_invite(org_gh_course_name, precourse$github_username)
-org_members(org_gh_course_name)
-org_pending(org_gh_course_name)
-```
-
-Then we can create the teams based on the group names:
-
-```{r}
-# team_create(org_gh_course_name, group_names_final)
-org_teams(org_gh_course_name)
-```
-
-Then assign the people to the teams followed by making repos for each
-team.
-
-```{r, eval=FALSE}
-team_invite(
-  org_gh_course_name,
-  learners_in_groups$github_username,
-  learners_in_groups$team
-)
-
-gh_repos <- repo_create(org_gh_course_name, group_names_final)
-repo_add_team(sort(gh_repos), sort(unique(learners_in_groups$team)))
-```
-
-Make a table for the planning issue to put the instructors in groups.
-There might be some manual tinkering here.
-
-```{r, eval=FALSE}
-instructors <- c(
-  "Anders", "Elise", "Luke", "Anders", "Menghan", "Mudit", "Núria",
-  "Marcus", "Samah", "Vi"
-)
-instructors_to_groups <- assign_instructors_to_groups(group_names_final, instructors)
-```
-
-Then take instructors and assigned teams and convert them into a
-Markdown table to paste into the planning issue.
-
-```{r, eval=FALSE}
-instructors_to_groups %>%
-  copy_instructors_to_groups_table(org_gh_course_name)
-```
-
-## Invite to Slack group
+### Invite to Slack group
 
 ```{r, eval=FALSE}
 copy_emails_for_slack_invite(precourse$email)
-```
-
-## Create projects to push to repos
-
-```{r, eval=FALSE}
-setup_team_repos(org_gh_course_name)
-```
-
-```{r, eval=FALSE}
-clone_team_repos(org_gh_course_name)
 ```
 
 ## Post course admin
