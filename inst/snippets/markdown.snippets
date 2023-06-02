@@ -11,7 +11,7 @@ snippet reading_task
 	${0}
 	:::
 
-snippet instructor_details
+snippet instructor_note
 	::: {.callout-note appearance="minimal" collapse="true"}
 	## Instructor note
 
@@ -26,22 +26,6 @@ snippet temp_with_project
 		{${0}}
 	)
 	```
-
-snippet purl_only
-	```{r purl-only-${1:label}}
-	#| eval: false
-	#| echo: false
-	#| purl: true
-	${0}
-	```
-
-snippet purl_chunk
-	```{r ${1:label}}
-	#| eval: false
-	#| purl: true
-	${0}
-	```
-
 snippet solution_chunk
 	```{r solution-${1:label}}
 	#| eval: false
