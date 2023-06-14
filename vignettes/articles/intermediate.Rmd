@@ -68,11 +68,11 @@ copy_reminder_email_text()
 Quickly check whether everyone has their setups done correctly.
 
 ```{r, results='asis'}
-cat(check_setup(precourse))
+cat(check_setup(precourse), file = here::here("_ignore/setup.txt"))
 ```
 
 ```{r, results='asis'}
-cat(check_project_setup(precourse))
+cat(check_project_setup(precourse), file = here::here("_ignore/project-setup.txt"))
 ```
 
 ### Who has problems
