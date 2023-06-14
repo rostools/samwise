@@ -3,6 +3,30 @@ person:
   #   name: ""
   #   affiliation: ""
   #   orcid: ""
+  - id: vv
+    name: Vi Varga
+    affiliation:
+      - ref: cut
+    orcid: ""
+
+  - id: net
+    name: Núria Estanyol-Torres
+    affiliation:
+      - ref: cut
+    orcid: ""
+
+  - id: md
+    name: Morten Dall
+    affiliation:
+      - ref: cmbr
+    orcid: 0000-0002-8577-3162
+
+  - id: lb
+    name: Louise Bechmann
+    affiliation:
+      - ref: rh
+    orcid: ""
+
   - id: mgu
     name: Mario Garcia Ureña
     affiliation:
