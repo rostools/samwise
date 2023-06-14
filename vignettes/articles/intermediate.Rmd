@@ -11,8 +11,7 @@ knitr::opts_chunk$set(
 library(tidyverse)
 library(ghclass)
 devtools::load_all()
-course_date <- "2023-06-06"
-# course_date <- "2023-06-19"
+course_date <- "2023-06-19"
 course_type <- "r-cubed-intermediate"
 ```
 
@@ -37,8 +36,7 @@ First thing, need to get the precourse results.
 googledrive::drive_auth()
 googlesheets4::gs4_auth()
 precourse <- fetch_precourse_inter() %>%
-  filter(course_version == max(course_version)) %>% 
-  filter(!str_detect(email, "\\.se$"))
+  filter(course_version == max(course_version)) 
 ```
 
 ### Who didn't finish survey
