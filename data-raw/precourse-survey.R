@@ -13,7 +13,19 @@ intro_precourse %>%
   extract_precourse_feedback(intro_survey_column_renaming) %>%
   save_as_csv("data/intro/feedback-precourse.csv")
 
-# Advanced pre-course survey ----------------------------------------------
+# Intermediate pre-course survey ----------------------------------------------
+
+inter_precourse <- fetch_precourse_inter()
+
+inter_precourse %>%
+  extract_precourse_overview(intermediate_survey_column_renaming) %>%
+  save_as_csv("data/inter/participant-overview.csv")
+
+inter_precourse %>%
+  extract_precourse_feedback(intermediate_survey_column_renaming) %>%
+  save_as_csv("data/inter/feedback-precourse.csv")
+
+# Advanced pre-course survey --------------------------------------------------
 
 advanced_precourse <- fetch_precourse_advanced()
 
