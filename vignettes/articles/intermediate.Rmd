@@ -118,15 +118,14 @@ here to select the names I think are interesting or funky. Make groups
 with about 4 people per group.
 
 ```{r}
-set.seed(223)
+set.seed(3245)
 group_names <- create_group_names()
 
 # ceiling(nrow(precourse) / 4)
-32 / 4
+19 / 4
 group_names
 group_names_final <- group_names[c(
-  7, 21, 41, 45,
-  47, 52, 57, 59
+  20, 34, 22, 58, 2
 )]
 group_names_final
 ```
@@ -144,7 +143,7 @@ now) of strips of group names to cut out of on a paper.
 
 ```{r, eval=FALSE}
 group_names_final %>%
-  group_names_as_strips_html(number_participants = 32)
+  group_names_as_strips_html(number_participants = 19)
 ```
 
 ### Invite to Slack group
