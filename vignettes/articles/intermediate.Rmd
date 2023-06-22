@@ -11,8 +11,7 @@ knitr::opts_chunk$set(
 library(tidyverse)
 library(ghclass)
 devtools::load_all()
-course_date <- "2023-06-06"
-# course_date <- "2023-06-19"
+course_date <- "2023-06-19"
 course_type <- "r-cubed-intermediate"
 ```
 
@@ -37,8 +36,7 @@ First thing, need to get the precourse results.
 googledrive::drive_auth()
 googlesheets4::gs4_auth()
 precourse <- fetch_precourse_inter() %>%
-  filter(course_version == max(course_version)) %>% 
-  filter(!str_detect(email, "\\.se$"))
+  filter(course_version == max(course_version)) 
 ```
 
 ### Who didn't finish survey
@@ -68,11 +66,11 @@ copy_reminder_email_text()
 Quickly check whether everyone has their setups done correctly.
 
 ```{r, results='asis'}
-cat(check_setup(precourse))
+cat(check_setup(precourse), file = here::here("_ignore/setup.txt"))
 ```
 
 ```{r, results='asis'}
-cat(check_project_setup(precourse))
+cat(check_project_setup(precourse), file = here::here("_ignore/project-setup.txt"))
 ```
 
 ### Who has problems
@@ -118,15 +116,14 @@ here to select the names I think are interesting or funky. Make groups
 with about 4 people per group.
 
 ```{r}
-set.seed(223)
+set.seed(3245)
 group_names <- create_group_names()
 
 # ceiling(nrow(precourse) / 4)
-32 / 4
+19 / 4
 group_names
 group_names_final <- group_names[c(
-  7, 21, 41, 45,
-  47, 52, 57, 59
+  20, 34, 22, 58, 2
 )]
 group_names_final
 ```
@@ -144,7 +141,7 @@ now) of strips of group names to cut out of on a paper.
 
 ```{r, eval=FALSE}
 group_names_final %>%
-  group_names_as_strips_html(number_participants = 32)
+  group_names_as_strips_html(number_participants = 19)
 ```
 
 ### Invite to Slack group

@@ -107,15 +107,31 @@ course:
           - ref: aa
           - ref: ssul
           - ref: ivse
+      - date: 2023-06-06
+        instructors:
+          - ref: lwj
+          - ref: rm
+          - ref: lb
+      - date: 2023-06-19
+        instructors:
+          - ref: lwj
+          - ref: lb
+        helpers:
+          - ref: vv
+          - ref: net
 
   - id: adv
     name: Advanced
     url: https://r-cubed-advanced.rostools.org/
     contributors:
       - ref: lwj
+      - ref: aa
+      - ref: md
+      - ref: lb
     events:
       - date: 2022-12-07
         instructors:
           - ref: lwj
-        helpers:
-          - ref:
+          - ref: aa
+          - ref: md
+          - ref: lb

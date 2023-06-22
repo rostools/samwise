@@ -17,3 +17,8 @@ affiliation:
     name: University of Southern Denmark
   - id: ou
     name: Odense University
+  - id: rh
+    name: Rigshospitalet
+  - id: cut
+    name: Chalmers University of Technology
+

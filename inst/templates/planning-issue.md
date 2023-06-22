@@ -30,7 +30,8 @@ Before the course, please review the CONTRIBUTING guide, Code of Conduct, and th
 ## To do before course
 
 -   [ ] {{tasks_start_date}}: (Optional) Send an calendar invite to registered participants with link to pre-course tasks and website.
--   [ ] {{instructors_precourse_meeting}}: Send a calendar invite to instructors/helpers for course location (with planning issue link), dinner locations, and post-course debrief. registered participants with link to pre-course tasks and website.
+-   [ ] {{instructors_precourse_meeting}}: Send a calendar invite to instructors/helpers for course location (with planning issue link), dinner locations, and post-course debrief.
+    -   Include registered participants with link to pre-course tasks and website.
 -   [ ] \~{{instructors_precourse_meeting}}: Pre-course instructor meeting:
     -   Go briefly over [Instructor](https://guides.rostools.org/instructors.html) and [Helper](https://guides.rostools.org/helpers.html) with new instructors.
     -   Mention about post-course debrief (described in the [Guides](https://github.com/github/rest-api-description) site).
