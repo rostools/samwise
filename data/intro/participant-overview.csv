@@ -217,3 +217,46 @@ course_version,questions,responses,count
 5,What is your formal position?,Postdoc,6
 5,What is your formal position?,Researcher,5
 5,What is your formal position?,Visiting researcher,1
+6,Do you accept the conditions laid out in the Code of Conduct?,Yes,28
+6,What city do you work in or near?,Aarhus,14
+6,What city do you work in or near?,Berlin,1
+6,What city do you work in or near?,Copenhagen,7
+6,What city do you work in or near?,Odense,6
+6,What gender do you identify with?,Man,11
+6,What gender do you identify with?,Woman,17
+6,How do you perceive your skill/knowledge of data analysis in general?,Beginner,12
+6,How do you perceive your skill/knowledge of data analysis in general?,Beginner-Intermediate,9
+6,How do you perceive your skill/knowledge of data analysis in general?,Intermediate,5
+6,How do you perceive your skill/knowledge of data analysis in general?,Intermediate-Advanced,2
+6,How do you perceive your skill/knowledge of formal version control (e.g. Git)?,Beginner,27
+6,How do you perceive your skill/knowledge of formal version control (e.g. Git)?,Intermediate-Advanced,1
+6,How do you perceive your skill/knowledge of programming in general?,Beginner,19
+6,How do you perceive your skill/knowledge of programming in general?,Beginner-Intermediate,5
+6,How do you perceive your skill/knowledge of programming in general?,Intermediate,3
+6,How do you perceive your skill/knowledge of programming in general?,Intermediate-Advanced,1
+6,How do you perceive your skill/knowledge of using R?,Beginner,15
+6,How do you perceive your skill/knowledge of using R?,Beginner-Intermediate,11
+6,How do you perceive your skill/knowledge of using R?,Intermediate,1
+6,How do you perceive your skill/knowledge of using R?,Intermediate-Advanced,1
+6,What programs have you previously used for data analysis?,Excel,5
+6,What programs have you previously used for data analysis?,"Excel, GraphPad Prism",6
+6,What programs have you previously used for data analysis?,"Excel, GraphPad Prism, R",1
+6,What programs have you previously used for data analysis?,"Excel, None",1
+6,What programs have you previously used for data analysis?,"Excel, Python",1
+6,What programs have you previously used for data analysis?,"Excel, R",1
+6,What programs have you previously used for data analysis?,"Excel, R and Python",1
+6,What programs have you previously used for data analysis?,GraphPad Prism,1
+6,What programs have you previously used for data analysis?,None,1
+6,What programs have you previously used for data analysis?,"SAS/SAS JMP, Excel",1
+6,What programs have you previously used for data analysis?,"SPSS, Excel, Python, R",1
+6,What programs have you previously used for data analysis?,Stata,1
+6,What programs have you previously used for data analysis?,"Stata, Excel",1
+6,What programs have you previously used for data analysis?,"Stata, Excel, GraphPad Prism",4
+6,What programs have you previously used for data analysis?,"Stata, Excel, SigmaPlot, GraphPad Prism",1
+6,What programs have you previously used for data analysis?,"Stata, R",1
+6,What is your formal position?,PhD student,19
+6,What is your formal position?,Postdoc,2
+6,What is your formal position?,Pre phd (starting june 2023),1
+6,What is your formal position?,Research assistant,3
+6,What is your formal position?,Research year student,1
+6,What is your formal position?,"Research year student (medical student, masters degree)",1
