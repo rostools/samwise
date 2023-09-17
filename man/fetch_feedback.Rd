@@ -3,15 +3,13 @@
 \name{fetch_feedback}
 \alias{fetch_feedback}
 \alias{fetch_feedback_intro}
-\alias{fetch_feedback_intermediate}
+\alias{fetch_feedback_inter}
 \alias{fetch_feedback_advanced}
 \title{Fetch the session and overall course feedback survey responses.}
 \usage{
 fetch_feedback_intro(survey_id = Sys.getenv("INTRO_FEEDBACK_SURVEY_ID"))
 
-fetch_feedback_intermediate(
-  survey_id = Sys.getenv("INTERMEDIATE_FEEDBACK_SURVEY_ID")
-)
+fetch_feedback_inter(survey_id = Sys.getenv("INTERMEDIATE_FEEDBACK_SURVEY_ID"))
 
 fetch_feedback_advanced(survey_id = Sys.getenv("ADVANCED_FEEDBACK_SURVEY_ID"))
 }
@@ -28,7 +26,7 @@ Fetch the session and overall course feedback survey responses.
 \itemize{
 \item \code{fetch_feedback_intro()}: Fetch the session feedback survey data for the \strong{introductory} course.
 
-\item \code{fetch_feedback_intermediate()}: Fetch the session feedback survey data for the \strong{intermediate} course.
+\item \code{fetch_feedback_inter()}: Fetch the session feedback survey data for the \strong{intermediate} course.
 
 \item \code{fetch_feedback_advanced()}: Fetch the session feedback survey data for the \strong{advanced} course.
 
