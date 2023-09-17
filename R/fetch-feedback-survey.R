@@ -43,7 +43,8 @@ fetch_feedback_generic <- function(survey_id, course_id) {
 
 fetch_feedback_sheet <- function(survey_id) {
   googledrive::drive_get(id = survey_id) %>%
-    googlesheets4::read_sheet()
+    googlesheets4::read_sheet(col_types = "c") %>%
+    dplyr::mutate(Timestamp = lubridate::mdy_hms(.data$Timestamp))
 }
 
 # Tidy up feedback data ---------------------------------------------------
