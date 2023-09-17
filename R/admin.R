@@ -45,7 +45,7 @@ admin_create_planning_issue <- function(repo, course_date, host = c("gitlab", "g
       labels = "Admin"
     )
   } else if (host == "github") {
-    githubr::gh_new_issue(
+    ghclass::issue_create(
       repo = paste0("rostools/", repo),
       title = paste0("Course planning and details - ", course_date),
       body = paste0(issue_description, collapse = "\n")
