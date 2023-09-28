@@ -4,7 +4,7 @@
 \alias{copy_common_file}
 \title{Copy commonly used files for r-cubed courses.}
 \usage{
-copy_common_file(file = c("_variables.yml"))
+copy_common_file(file)
 }
 \arguments{
 \item{template}{Name of common file.}

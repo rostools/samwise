@@ -22,7 +22,7 @@ fetch_feedback_intro <- function(survey_id = Sys.getenv("INTRO_FEEDBACK_SURVEY_I
 
 #' @describeIn fetch_feedback Fetch the session feedback survey data for the **intermediate** course.
 #' @export
-fetch_feedback_intermediate <- function(survey_id = Sys.getenv("INTERMEDIATE_FEEDBACK_SURVEY_ID")) {
+fetch_feedback_inter <- function(survey_id = Sys.getenv("INTERMEDIATE_FEEDBACK_SURVEY_ID")) {
   fetch_feedback_generic(survey_id = survey_id, course_id = "inter")
 }
 
@@ -43,7 +43,8 @@ fetch_feedback_generic <- function(survey_id, course_id) {
 
 fetch_feedback_sheet <- function(survey_id) {
   googledrive::drive_get(id = survey_id) %>%
-    googlesheets4::read_sheet()
+    googlesheets4::read_sheet(col_types = "c") %>%
+    dplyr::mutate(Timestamp = lubridate::mdy_hms(.data$Timestamp))
 }
 
 # Tidy up feedback data ---------------------------------------------------

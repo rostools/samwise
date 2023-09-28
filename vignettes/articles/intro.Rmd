@@ -1,5 +1,5 @@
 ---
-title: "Admin tasks for the introduction course"
+title: "Admin tasks for the R courses"
 ---
 
 ```{r setup, include = FALSE}
@@ -16,9 +16,16 @@ devtools::load_all()
 These are the constants used for later functions.
 
 ```{r constants}
-course_date <- "2023-04-25"
-course_type <- "r-cubed-intro"
-org_gh_course_name <- "r-cubed-2023-04"
+course_date <- "2023-11-08"
+course_level <- "advanced"
+course_name <- glue::glue("r-cubed-{course_level}")
+fetch_precourse <- switch(
+  course_level,
+  intro = fetch_precourse_intro,
+  inter = fetch_precourse_inter,
+  advanced = fetch_precourse_advanced
+)
+org_gh_course_name <- glue::glue("{course_name}-{str_sub(course_date, end = 7)}")
 ```
 
 The `{ghclass}` package requires a GitHub PAT in order to work.
@@ -37,7 +44,8 @@ There are several tasks that need to be done before hand for each
 course, and this function below creates that on either GitHub or GitLab.
 
 ```{r, eval=FALSE}
-admin_create_planning_issue(course_type, course_date, host = "gitlab")
+admin_create_planning_issue(course_name, course_date, host = "github")
+browseURL(glue::glue("https://github.com/rostools/{course_name}"))
 ```
 
 ## Fetch (and save) pre-survey responses
@@ -49,7 +57,7 @@ get that information from the precourse survey.
 # TODO: How to get these authenticated? Run first and then build vignette?
 googledrive::drive_auth()
 googlesheets4::gs4_auth()
-precourse <- fetch_precourse_intro() %>%
+precourse <- fetch_precourse() %>%
   filter(course_version == max(course_version))
 ```
 
@@ -82,7 +90,15 @@ copy_reminder_email_text()
 Quickly check whether everyone has their setups done correctly.
 
 ```{r, results='asis'}
-cat(check_setup(precourse))
+cat(check_setup(precourse), file = here::here("_ignore/setup.txt"))
+```
+
+Then check their project setup
+
+```{r, results='asis'}
+if (course_level %in% c("inter", "advanced")) {
+  cat(check_project_setup(precourse), file = here::here("_ignore/project-setup.txt"))
+}
 ```
 
 ## Who has problems
@@ -112,6 +128,16 @@ problems %>%
   cat()
 ```
 
+### Setup of their projects
+
+```{r, results='asis'}
+if (course_level %in% c("inter", "advanced")) {
+  problems %>%
+    check_project_setup() %>%
+    cat()
+}
+```
+
 ### Copy names to address in first day
 
 Copy the names of those who have problems so I can paste it to something
@@ -135,17 +161,37 @@ group_names <- create_group_names()
 
 # Use this number to determine how many groups to have.
 ceiling(nrow(precourse) / 4)
+group_names
 group_names_final <- group_names[c(
   43, 4, 3, 65, 51, 68, 13
 )]
 group_names_final
 ```
 
+Create PDF files of the group names, so we can print the files before
+the first day and put one of them on each table.
+
+```{r, eval=FALSE, results='hide'}
+group_names_final %>%
+  group_names_to_one_pdf()
+```
+
+Then to create some HTML files (that I will print to file manually for
+now) of strips of group names to cut out of on a paper.
+
+```{r, eval=FALSE}
+group_names_final %>%
+  group_names_as_strips_html(number_participants = nrow(precourse))
+```
+
 ### Assigning members to groups
+
+> Note: Intro course only.
 
 Now we need to assign the learners to the groups.
 
 ```{r}
+if (course_level %in% c("intro")) {
 learners_in_groups <- assign_learners_to_groups(
   precourse,
   group_names_final
@@ -155,6 +201,7 @@ count(learners_in_groups, team)
 
 # Manually change if need be.
 # learners_in_groups <- edit(learners_in_groups)
+}
 ```
 
 Create a PDF file of the team names with members, so we can print the
@@ -162,9 +209,11 @@ file before the first day and put each sheet of paper with the team name
 and members on each table.
 
 ```{r, eval=FALSE, results='hide'}
+if (course_level %in% c("intro")) {
 learners_in_groups %>% 
   select(team_name = team, team_members = full_name) %>% 
   teams_with_members_to_one_pdf()
+}
 ```
 
 ## Creating the GitHub org and groups
@@ -301,4 +350,3 @@ Need to run these inside the project.
 
 ```{r, eval=FALSE}
 ```
-

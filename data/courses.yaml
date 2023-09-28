@@ -16,7 +16,7 @@ course:
       - ref: hc
     events:
       - date: 2019-03-04
-        host: "Danish Diabetes Academy"
+        host: Danish Diabetes Academy
         instructors:
           - ref: lwj
           - ref: drw
@@ -26,6 +26,7 @@ course:
           - ref: osr
           - ref: lb
       - date: 2020-06-22
+        host: Danish Diabetes Academy
         instructors:
           - ref: lwj
           - ref: drw
@@ -35,6 +36,7 @@ course:
           - ref: mrc
           - ref: aai
       - date: 2021-06-15
+        host: Danish Diabetes Academy
         instructors:
           - ref: lwj
           - ref: drw
@@ -53,11 +55,13 @@ course:
           - ref: sstin
           - ref: es
       - date: 2023-01-16
-        host: Chalmers
+        host: Chalmers University of Technology
         instructors:
           - ref: lwj
           - ref: aa
-        helpers: "" # Add Vi and Nuria and maybe Esther? If they help again? This was a confusing time for organizing helpers.
+        helpers:
+          - ref: vv
+          - ref: net
       - date: 2023-04-25
         host: Danish Diabetes Academy
         instructors:
@@ -81,6 +85,7 @@ course:
       - ref: mrc
       - ref: aai
       - ref: aa
+      - ref: vv
     events:
       - date: 2020-09-08
         host: Danish Diabetes Academy
@@ -90,29 +95,34 @@ course:
           - ref: ae
           - ref: sstor
       - date: 2021-06-28
+        host: Danish Diabetes Academy
         instructors:
           - ref: lwj
           - ref: ssch
           - ref: aai
           - ref: mrc
       - date: 2021-10-11
+        host: Danish Diabetes Academy
         instructors:
           - ref: lwj
           - ref: mgu
           - ref: aa
           - ref: mrc
       - date: 2022-06-21
+        host: Danish Diabetes Academy
         instructors:
           - ref: lwj
           - ref: aa
           - ref: ssul
           - ref: ivse
       - date: 2023-06-06
+        host: Danish Diabetes Academy
         instructors:
           - ref: lwj
           - ref: rm
           - ref: lb
       - date: 2023-06-19
+        host: Chalmers University of Technology
         instructors:
           - ref: lwj
           - ref: lb
@@ -130,6 +140,7 @@ course:
       - ref: lb
     events:
       - date: 2022-12-07
+        host: Chalmers University of Technology
         instructors:
           - ref: lwj
           - ref: aa

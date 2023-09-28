@@ -40,7 +40,8 @@
 
 check_duplicate_timestamps <- function(data) {
   if (any(duplicated(data$timestamp))) {
-    rlang::abort("There are duplicate timestamps, please investigate.")
+    locations <- which(duplicated(.data$timestamp))
+    cli::cli_abort("There are duplicate timestamps at rows {locations}, please investigate or fix.")
   }
   data
 }
