@@ -23,7 +23,6 @@ Imports:
     fs,
     gert,
     ghclass,
-    githubr (>= 0.1.0.9000),
     gitlabr,
     glue,
     googledrive,
