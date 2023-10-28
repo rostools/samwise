@@ -63,7 +63,7 @@ course:
           - ref: vv
           - ref: net
       - date: 2023-04-25
-        host: Danish Diabetes Academy
+        host: Danish Diabetes and Endocrinology Academy
         instructors:
           - ref: lwj
           - ref: mcr
@@ -116,7 +116,7 @@ course:
           - ref: ssul
           - ref: ivse
       - date: 2023-06-06
-        host: Danish Diabetes Academy
+        host: Danish Diabetes and Endocrinology Academy
         instructors:
           - ref: lwj
           - ref: rm
@@ -140,7 +140,7 @@ course:
       - ref: lb
     events:
       - date: 2022-12-07
-        host: Chalmers University of Technology
+        host: Danish Diabetes Academy
         instructors:
           - ref: lwj
           - ref: aa
