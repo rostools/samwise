@@ -55,8 +55,6 @@ get that information from the precourse survey.
 
 ```{r}
 # TODO: How to get these authenticated? Run first and then build vignette?
-googledrive::drive_auth()
-googlesheets4::gs4_auth()
 precourse <- fetch_precourse() %>%
   filter(course_version == max(course_version))
 ```
