@@ -2,13 +2,13 @@
 format: 
   pdf:
     papersize: a4
-    fontsize: 52pt
+    fontsize: 48pt
     pagestyle: empty
     geometry: 
-      - top=6cm
+      - top=3cm
       - landscape
 params:
-  team_name: "PLACEHOLDER"
+  team_name: "placeholder.testing.name"
 ---
 
 ```{r}
@@ -16,6 +16,8 @@ params:
 # To trigger use of R?
 ```
 
-# Group:
+## Group:
 
-## `r params$team_name`
+### `r params$team_name`
+
+Write your group name into the site what3words to see where you are!
