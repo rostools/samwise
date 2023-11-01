@@ -156,23 +156,16 @@ here to select the names I think are interesting or funky. Make groups
 with about 4 people per group.
 
 ```{r}
-set.seed(54323)
-group_names <- create_group_names()
-
-# Use this number to determine how many groups to have.
-ceiling(nrow(precourse) / 4)
+number_groups <- ceiling(nrow(precourse) / 4)
+group_names <- create_group_names(number_groups)
 group_names
-group_names_final <- group_names[c(
-  43, 4, 3, 65, 51, 68, 13
-)]
-group_names_final
 ```
 
 Create PDF files of the group names, so we can print the files before
 the first day and put one of them on each table.
 
 ```{r, eval=FALSE, results='hide'}
-group_names_final %>%
+group_names %>%
   group_names_to_one_pdf()
 ```
 
@@ -180,7 +173,7 @@ Then to create some HTML files (that I will print to file manually for
 now) of strips of group names to cut out of on a paper.
 
 ```{r, eval=FALSE}
-group_names_final %>%
+group_names %>%
   group_names_as_strips_html(number_participants = nrow(precourse))
 ```
 

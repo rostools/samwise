@@ -31,8 +31,8 @@ Imports:
     ids,
     lubridate,
     magrittr,
+    maps,
     pdftools,
-    praise,
     purrr,
     randomizr,
     readr,
@@ -44,7 +44,7 @@ Imports:
     tibble,
     tidyr,
     tidyselect,
-    tidytext,
+    whatthreewords (>= 0.1.3),
     whisker,
     withr,
     xml2,
@@ -58,3 +58,5 @@ Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
+Remotes:  
+    DavidASmith/whatthreewords

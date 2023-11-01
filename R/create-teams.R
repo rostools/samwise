@@ -1,33 +1,27 @@
-
-#' Create randomly generated group names.
+#' Create randomly generated group names based on city coordinating from what3words.
 #'
-#' Set a seed before hand to fix the names generated.
+#' From all cities globally, get the [what3words](https://what3words.com/)
+#' coordinates to use as fun group names.
 #'
-#' @param max_name_length Longest characters that the group name should be.
+#' @param number_groups The number of group names to create.
 #'
 #' @return A character vector of names.
 #' @export
 #'
 #' @examples
 #' create_group_names(20)
-create_group_names <- function(max_name_length = 18) {
-  name_prefix <- tibble::tibble(adjective = praise::praise_parts$adjective) %>%
-    dplyr::filter(nchar(.data$adjective) <= (max_name_length / 2)) %>%
-    dplyr::pull(.data$adjective) %>%
-    stringr::str_to_sentence() %>%
-    sample()
+create_group_names <- function(number_groups) {
+  if (Sys.getenv("WTW_API_KEY") == "") {
+    cli::cli_abort("You need to add the WTW API key in the {.val .Renviron} file to use this function.")
+  }
+  random_cities <- maps::world.cities |>
+    tibble::as_tibble() |>
+    dplyr::sample_n(number_groups)
 
-  name_suffix <- tidytext::parts_of_speech %>%
-    dplyr::filter(
-      stringr::str_detect(.data$pos, "^Noun$"),
-      nchar(.data$word) <= (max_name_length / 2),
-      !stringr::str_detect(.data$word, "\\d|/|-")
-    ) %>%
-    dplyr::sample_n(length(name_prefix)) %>%
-    dplyr::pull(.data$word) %>%
-    stringr::str_to_sentence()
-
-  stringr::str_c(name_prefix, name_suffix)
+  whatthreewords::words_from_coords(
+    lat = random_cities$lat,
+    lon = random_cities$long
+  )
 }
 
 group_names_to_one_pdf <- function(group_names, output_dir = here::here("_ignore/group-names")) {
@@ -47,9 +41,11 @@ group_names_to_one_pdf <- function(group_names, output_dir = here::here("_ignore
 
 group_name_to_pdf <- function(group_name, output_dir) {
   withr::local_dir(output_dir)
+  output_file <- stringr::str_replace_all(group_name, "\\.", "-")
+  output_file <- fs::path_ext_set(output_file, "pdf")
   quarto::quarto_render(
     input = fs::path_package("r3admin", "templates", "group-name-pdf.qmd"),
-    output_file = fs::path_ext_set(group_name, "pdf"),
+    output_file = output_file,
     execute_params = list(
       team_name = group_name
     )
