@@ -273,13 +273,7 @@ There might be some manual tinkering here.
 ```{r, eval=FALSE}
 instructors <- tibble::tribble(
   ~name, ~github_username,
-  "Luke", "lwjohnst86",
-  "Luke", "lwjohnst86",
-  "Anders", "AndersAskeland",
-  "Sara", "sarastinson",
-  "Roger", "rmj822",
-  "Malene", "MaleneRevsbech",
-  "Evelina", "evelinastankevic",
+  "Luke", "lwjohnst86"
 )
 instructors_to_groups <- assign_instructors_to_groups(group_names_final, instructors$name)
 ```
