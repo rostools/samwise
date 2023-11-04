@@ -4,3 +4,4 @@
 ^vignettes/articles$
 ^_ignore$
 ^data-raw$
+^_targets\.R$
