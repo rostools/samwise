@@ -2,11 +2,12 @@
 #'
 #' @param template Name of common file.
 #'
-#' @return Path to created `_variables.yml` file.
+#' @return Path to created common file.
 #' @export
 #'
 copy_common_file <- function(file) {
-  common_path <- rlang::arg_match(file, fs::path_file(list_common_files()))
+  file <- rlang::arg_match(file, fs::path_file(list_common_files()))
+  common_path <- fs::path_package("r3admin", "common", file)
   header_text <- glue::glue("# Automatically created by `r3admin::copy_common_file('{file}')` on {lubridate::today()}.")
   if (rprojroot::is_rstudio_project$testfun[[1]](".")) {
     readr::write_lines(
