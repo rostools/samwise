@@ -146,3 +146,12 @@ course:
           - ref: aa
           - ref: md
           - ref: lb
+      - date: 2023-10-08
+        host: Danish Diabetes and Endocrinology Academy
+        instructors:
+          - ref: lwj
+          - ref: aa
+          - ref: ssti
+          - ref: es
+          - ref: rm
+          - ref: skb
