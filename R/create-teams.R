@@ -54,7 +54,7 @@ group_name_to_pdf <- function(group_name, output_dir) {
 
 teams_with_members_to_one_pdf <- function(team_names_with_members, output_dir = here::here("_ignore/group-names")) {
   team_names_with_members %>%
-    dplyr::group_split(.data$team_name) %>%
+    dplyr::group_split(team_name) %>%
     purrr::walk(~ {
       teams_with_members_to_pdf(
         team_name = unique(.x$team_name),
@@ -107,7 +107,7 @@ group_names_as_strips_html <-
 assign_learners_to_groups <- function(data, group_names, score_cutoff = 3) {
   data %>%
     dplyr::select(
-      .data$full_name,
+      full_name,
       tidyselect::any_of("github_username"),
       tidyselect::matches("^perceived")
     ) %>%
@@ -115,16 +115,16 @@ assign_learners_to_groups <- function(data, group_names, score_cutoff = 3) {
     dplyr::mutate(dplyr::across(tidyselect::starts_with("perceived"), as.numeric)) %>%
     dplyr::mutate(perceived_skill_score = sum(dplyr::c_across(tidyselect::starts_with("perceived")))) %>%
     dplyr::ungroup() %>%
-    dplyr::mutate(team = (.data$perceived_skill_score >= score_cutoff) %>%
+    dplyr::mutate(team = (perceived_skill_score >= score_cutoff) %>%
       randomizr::block_ra(conditions = group_names) %>%
       as.character()) %>%
     dplyr::select(
-      .data$team,
-      .data$full_name,
+      team,
+      full_name,
       tidyselect::any_of("github_username"),
-      .data$perceived_skill_score
+      perceived_skill_score
     ) %>%
-    dplyr::arrange(.data$team, .data$perceived_skill_score)
+    dplyr::arrange(team, perceived_skill_score)
 }
 
 assign_instructors_to_groups <- function(group_names, instructors) {

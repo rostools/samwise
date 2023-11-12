@@ -71,19 +71,19 @@ tidy_precourse <- function(data, metadata_dates) {
       ~ purrr::map_chr(.x, as.character)
     )) |>
     dplyr::mutate(
-      research_position = .data$research_position |>
+      research_position = research_position |>
         stringr::str_to_sentence() |>
         stringr::str_replace("-", " ") |>
         stringr::str_replace("Phd", "PhD") |>
         stringr::str_replace("^PhD$", "PhD student"),
-      city_work_in = .data$city_work_in |>
+      city_work_in = city_work_in |>
         stringr::str_replace("København", "Copenhagen") |>
         stringr::str_replace(".*(Copenhagen|Odense).*", "\\1"),
-      expectations_match_syllabus = .data$expectations_match_syllabus |>
+      expectations_match_syllabus = expectations_match_syllabus |>
         stringr::str_to_sentence() |>
         stringr::str_remove_all("\\.") |>
         stringr::str_replace(".*(Yes).*", "\\1"),
-      course_version = assign_course_version_by_date(.data$timestamp, metadata_dates)
+      course_version = assign_course_version_by_date(timestamp, metadata_dates)
     ) |>
     dplyr::mutate(dplyr::across(
       tidyselect::matches("^perceived_skill_"),
@@ -151,32 +151,32 @@ extract_precourse_overview <- function(data, column_renaming_df) {
   data |>
     sanitize_precourse() |>
     dplyr::select(
-      .data$course_version,
+      course_version,
       tidyselect::starts_with("perceived"),
       tidyselect::starts_with("uses"),
-      .data$gender_identity,
-      .data$research_position,
-      .data$city_work_in,
-      .data$previously_used_stat_programs,
-      .data$accept_conduct
+      gender_identity,
+      research_position,
+      city_work_in,
+      previously_used_stat_programs,
+      accept_conduct
     ) |>
     tidyr::pivot_longer(
-      -.data$course_version,
+      -course_version,
       names_to = "questions",
       values_to = "responses"
     ) |>
-    dplyr::count(.data$course_version, .data$questions, .data$responses, name = "count") |>
-    dplyr::arrange(.data$course_version, .data$questions, .data$responses, .data$count) |>
+    dplyr::count(course_version, questions, responses, name = "count") |>
+    dplyr::arrange(course_version, questions, responses, count) |>
     join_original_column_names(column_renaming_df) %>%
     dplyr::mutate(
-      questions = .data$questions %>%
+      questions = questions %>%
         stringr::str_replace(
           "^How .* perceive .*\\.\\.\\. \\[(.*)\\]$",
           "Perceived skill/knowledge in \\1"
         ) %>%
         stringr::str_remove_all("\\[|\\]")
     ) |>
-    dplyr::relocate(.data$course_version, .data$questions, .data$responses, .data$count)
+    dplyr::relocate(course_version, questions, responses, count)
 }
 
 #' @describeIn extract_precourse Extract and tidy up the pre-course feedback
@@ -186,14 +186,14 @@ extract_precourse_feedback <- function(data, column_renaming_df) {
   data |>
     sanitize_precourse() |>
     dplyr::select(
-      .data$course_version,
+      course_version,
       tidyselect::contains("feedback"),
-      .data$describe_problems,
+      describe_problems,
       tidyselect::contains("course_expectations"),
       tidyselect::contains("why_attend_course")
     ) |>
     tidyr::pivot_longer(
-      -.data$course_version,
+      -course_version,
       names_to = "questions",
       values_to = "responses"
     ) |>
@@ -221,8 +221,8 @@ join_original_column_names <- function(data, column_renaming_df) {
   data |>
     dplyr::left_join(column_renaming_df, by = c("questions" = "new_column_names")) |>
     tidyr::drop_na() |>
-    dplyr::select(-.data$questions, questions = .data$original_column_names) |>
-    dplyr::relocate(.data$questions)
+    dplyr::select(-questions, questions = original_column_names) |>
+    dplyr::relocate(questions)
 }
 
 # Checks ------------------------------------------------------------------

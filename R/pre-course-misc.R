@@ -24,7 +24,7 @@ copy_emails_for_slack_invite <- function(emails) {
 #'
 copy_instructors_to_groups_table <- function(data, gh_org) {
   data %>%
-    dplyr::arrange(.data$team) %>%
+    dplyr::arrange(team) %>%
     dplyr::mutate(team = glue::glue("[{team}](https://github.com/{gh_org}/{team})")) %>%
     dplyr::rename_with(stringr::str_to_sentence) %>%
     knitr::kable() %>%
@@ -33,7 +33,7 @@ copy_instructors_to_groups_table <- function(data, gh_org) {
 
 copy_tidy_names_by_team <- function(data) {
   data %>%
-    dplyr::select(.data$team, .data$full_name) %>%
+    dplyr::select(team, full_name) %>%
     dplyr::group_split(team) %>%
     dplyr::pmap_chr(formatted_names_by_team) %>%
     stringr::str_c(collapse = "\n\n") %>%

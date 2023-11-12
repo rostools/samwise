@@ -29,7 +29,7 @@ create_course_tag <- function(start_date, message) {
   gert::git_tag_push(repo_version)
 
   remote_host <- gert::git_remote_list() %>%
-    dplyr::filter(.data$name == "origin") %>%
+    dplyr::filter(name == "origin") %>%
     dplyr::pull(url)
 
   remote_host_name <- remote_host %>%

@@ -44,7 +44,7 @@ fetch_feedback_generic <- function(survey_id, course_id) {
 fetch_feedback_sheet <- function(survey_id) {
   googledrive::drive_get(id = survey_id) %>%
     googlesheets4::read_sheet(col_types = "c") %>%
-    dplyr::mutate(Timestamp = lubridate::mdy_hms(.data$Timestamp))
+    dplyr::mutate(Timestamp = lubridate::mdy_hms(Timestamp))
 }
 
 # Tidy up feedback data ---------------------------------------------------
@@ -55,27 +55,27 @@ add_course_version <- function(data, course_id) {
   data %>%
     dplyr::mutate(
       course_version = assign_course_version_by_date(
-        .data$timestamp,
+        timestamp,
         few_days_after_course
       )
     ) %>%
-    dplyr::relocate(.data$course_version, tidyselect::everything())
+    dplyr::relocate(course_version, tidyselect::everything())
 }
 
 convert_to_long <- function(data) {
   data %>%
     dplyr::rename(
-      day = .data$`Which of the days is the feedback for?`,
-      timestamp = .data$Timestamp
+      day = "Which of the days is the feedback for?",
+      timestamp = "Timestamp"
     ) %>%
     check_duplicate_timestamps() %>%
     tidyr::pivot_longer(
-      cols = -c(.data$timestamp, .data$day),
+      cols = -c(timestamp, day),
       names_to = "question",
       values_to = "response"
     ) %>%
     dplyr::mutate(question = stringr::str_remove_all(
-      .data$question,
+      question,
       "\\.\\.\\.[0-9][0-9]?"
     ))
 }
@@ -83,8 +83,8 @@ convert_to_long <- function(data) {
 drop_missing_responses <- function(data) {
   data %>%
     dplyr::filter(
-      !is.na(.data$response),
-      !.data$response %in% c("na", "NA", ".", "-")
+      !is.na(response),
+      !response %in% c("na", "NA", ".", "-")
     )
 }
 
@@ -115,9 +115,9 @@ NULL
 extract_feedback_quantitative <- function(data) {
   data %>%
     dplyr::filter(stringr::str_detect(question, "Please complete these .*")) %>%
-    dplyr::group_by(.data$timestamp) %>%
+    dplyr::group_by(timestamp) %>%
     dplyr::mutate(
-      statement = stringr::str_remove(.data$question, "Please .* course. ") %>%
+      statement = stringr::str_remove(question, "Please .* course. ") %>%
         stringr::str_remove_all("\\[|\\]"),
       id = ids::random_id(1, 5)
     ) %>%
@@ -133,13 +133,13 @@ extract_feedback_quantitative <- function(data) {
 extract_feedback_overall <- function(data) {
   data %>%
     dplyr::filter(stringr::str_detect(
-      .data$question,
+      question,
       ".*any other comments .*"
     )) %>%
-    dplyr::rename(overall_comments = .data$response) %>%
-    dplyr::select(-.data$timestamp, -.data$question) %>%
+    dplyr::rename(overall_comments = response) %>%
+    dplyr::select(-timestamp, -question) %>%
     dplyr::filter(stringr::str_detect(
-      .data$overall_comments,
+      overall_comments,
       "^No$",
       negate = TRUE
     ))
@@ -150,26 +150,26 @@ extract_feedback_overall <- function(data) {
 #' @export
 extract_feedback_sessions <- function(data) {
   data %>%
-    dplyr::filter(stringr::str_detect(.data$question,
+    dplyr::filter(stringr::str_detect(question,
       "Please complete these .*|any other comments .*",
       negate = TRUE
     )) %>%
-    dplyr::mutate(question = .data$question %>%
+    dplyr::mutate(question = question %>%
       stringr::str_remove_all('What|session|\\"|\\?') %>%
       stringr::str_trim()) %>%
     tidyr::separate(
-      col = .data$question,
+      col = question,
       into = c("worked_or_improve", "session"),
       sep = "for the"
     ) %>%
     dplyr::mutate(
-      worked_or_improve = snakecase::to_snake_case(.data$worked_or_improve),
-      session = stringr::str_trim(.data$session)
+      worked_or_improve = snakecase::to_snake_case(worked_or_improve),
+      session = stringr::str_trim(session)
     ) %>%
     tidyr::pivot_wider(
-      names_from = .data$worked_or_improve,
-      values_from = .data$response
+      names_from = worked_or_improve,
+      values_from = response
     ) %>%
-    dplyr::select(-.data$timestamp) %>%
-    dplyr::arrange(.data$day, .data$session)
+    dplyr::select(-timestamp) %>%
+    dplyr::arrange(day, session)
 }

@@ -40,7 +40,7 @@
 
 check_duplicate_timestamps <- function(data) {
   if (any(duplicated(data$timestamp))) {
-    locations <- which(duplicated(.data$timestamp))
+    locations <- which(duplicated(data$timestamp))
     cli::cli_abort("There are duplicate timestamps at rows {locations}, please investigate or fix.")
   }
   data
@@ -50,15 +50,15 @@ check_duplicate_timestamps <- function(data) {
 
 check_who_not_finish_survey <- function(data, participant_list) {
   data %>%
-    dplyr::select(.data$full_name, .data$email) %>%
+    dplyr::select(full_name, email) %>%
     dplyr::mutate(
-      name_from_survey = .data$full_name,
-      email_from_survey = .data$email
+      name_from_survey = full_name,
+      email_from_survey = email
     ) %>%
     dplyr::full_join(
       participant_list %>%
-        dplyr::select(.data$email) %>%
-        dplyr::mutate(email_from_list = .data$email),
+        dplyr::select(email) %>%
+        dplyr::mutate(email_from_list = email),
       by = "email"
     ) %>%
     dplyr::select(full_name, contains("name"), contains("email"))
@@ -81,7 +81,7 @@ copy_reminder_email_text <- function() {
 
 check_precourse_problems <- function(data) {
   data %>%
-    dplyr::filter(.data$encounter_problems == "Yes") %>%
+    dplyr::filter(encounter_problems == "Yes") %>%
     dplyr::select(tidyselect::any_of(c(
       "full_name",
       "email",
@@ -123,7 +123,7 @@ pretty_text_checks <- function(name, email, check) {
 
 check_setup <- function(data) {
   data %>%
-    dplyr::group_split(.data$full_name) %>%
+    dplyr::group_split(full_name) %>%
     purrr::map_chr(~ pretty_code_checks(
       .x$full_name,
       .x$email,
@@ -134,7 +134,7 @@ check_setup <- function(data) {
 
 check_project_setup <- function(data) {
   data %>%
-    dplyr::group_split(.data$full_name) %>%
+    dplyr::group_split(full_name) %>%
     purrr::map_chr(~ pretty_code_checks(
       .x$full_name,
       .x$email,
@@ -145,7 +145,7 @@ check_project_setup <- function(data) {
 
 check_problem_description <- function(data) {
   data %>%
-    dplyr::group_split(.data$full_name) %>%
+    dplyr::group_split(full_name) %>%
     purrr::map_chr(~ pretty_text_checks(
       .x$full_name,
       .x$email,
