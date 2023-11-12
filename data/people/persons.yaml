@@ -155,3 +155,10 @@ person:
     affiliation:
       - ref: cbmr
     orcid: 0000-0002-8587-4772
+
+  - id: skb
+    name: "Signe Kirk Brødbæk"
+    affiliation:
+      - ref: sdca
+      - ref: au
+    orcid: ""
