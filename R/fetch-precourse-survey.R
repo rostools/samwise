@@ -23,7 +23,7 @@ fetch_precourse_intro <- function(survey_id = Sys.getenv("INTRO_PRE_SURVEY_ID"))
   survey_id |>
     fetch_precourse_sheet() |>
     rename_columns_sentence_to_snakecase(intro_survey_column_renaming) |>
-    check_duplicate_timestamps() %>%
+    # check_duplicate_timestamps() %>%
     tidy_precourse(metadata_course_dates("intro"))
 }
 
@@ -33,7 +33,7 @@ fetch_precourse_inter <- function(survey_id = Sys.getenv("INTERMEDIATE_PRE_SURVE
   survey_id |>
     fetch_precourse_sheet() |>
     rename_columns_sentence_to_snakecase(intermediate_survey_column_renaming) |>
-    check_duplicate_timestamps() %>%
+    # check_duplicate_timestamps() %>%
     tidy_precourse(metadata_course_dates("inter"))
 }
 
@@ -43,7 +43,7 @@ fetch_precourse_advanced <- function(survey_id = Sys.getenv("ADVANCED_PRE_SURVEY
   survey_id |>
     fetch_precourse_sheet() |>
     rename_columns_sentence_to_snakecase(advanced_survey_column_renaming) |>
-    check_duplicate_timestamps() %>%
+    # check_duplicate_timestamps() %>%
     tidy_precourse(metadata_course_dates("adv"))
 }
 
@@ -91,8 +91,7 @@ tidy_precourse <- function(data, metadata_dates) {
     )) |>
     dplyr::mutate(dplyr::across(
       tidyselect::matches("^github_username$"),
-      stringr::str_remove,
-      pattern = "\\@"
+      ~ stringr::str_remove(.x, pattern = "\\@")
     ))
 }
 

@@ -32,19 +32,28 @@ fetch_feedback_advanced <- function(survey_id = Sys.getenv("ADVANCED_FEEDBACK_SU
   fetch_feedback_generic(survey_id = survey_id, course_id = "adv")
 }
 
+#' @describeIn fetch_feedback Fetch the session feedback survey data for all
+#'   courses (from the updated single survey).
+#' @export
+fetch_feedback_general <- function(survey_id = Sys.getenv("GENERAL_FEEDBACK_SURVEY_ID")) {
+  fetch_feedback_generic(survey_id = survey_id, course_id = "general")
+}
+
 fetch_feedback_generic <- function(survey_id, course_id) {
   survey_id %>%
     fetch_feedback_sheet() %>%
     convert_to_long() %>%
     drop_missing_responses() %>%
     remove_newlines("response") %>%
-    add_course_version(course_id)
+    add_course_version(course_id) |>
+    dplyr::select(-timestamp)
 }
 
 fetch_feedback_sheet <- function(survey_id) {
   googledrive::drive_get(id = survey_id) %>%
     googlesheets4::read_sheet(col_types = "c") %>%
-    dplyr::mutate(Timestamp = lubridate::mdy_hms(Timestamp))
+    dplyr::mutate(Timestamp = lubridate::mdy_hms(Timestamp),
+                  date = lubridate::as_date(Timestamp))
 }
 
 # Tidy up feedback data ---------------------------------------------------
@@ -68,9 +77,10 @@ convert_to_long <- function(data) {
       day = "Which of the days is the feedback for?",
       timestamp = "Timestamp"
     ) %>%
-    check_duplicate_timestamps() %>%
+    dplyr::mutate(id = ids::random_id(n = dplyr::n())) |>
+    # check_duplicate_timestamps() %>%
     tidyr::pivot_longer(
-      cols = -c(timestamp, day),
+      cols = -c(timestamp, day, date, id),
       names_to = "question",
       values_to = "response"
     ) %>%
@@ -84,7 +94,7 @@ drop_missing_responses <- function(data) {
   data %>%
     dplyr::filter(
       !is.na(response),
-      !response %in% c("na", "NA", ".", "-")
+      !response %in% c("na", "NA", ".", "-", "?", "N/A", "Nil")
     )
 }
 
@@ -92,8 +102,7 @@ remove_newlines <- function(data, col) {
   data %>%
     dplyr::mutate(dplyr::across(
       tidyselect::all_of(col),
-      stringr::str_remove_all,
-      pattern = "\n"
+      ~ stringr::str_remove_all(.x, pattern = "\n")
     ))
 }
 
@@ -115,16 +124,15 @@ NULL
 extract_feedback_quantitative <- function(data) {
   data %>%
     dplyr::filter(stringr::str_detect(question, "Please complete these .*")) %>%
-    dplyr::group_by(timestamp) %>%
     dplyr::mutate(
       statement = stringr::str_remove(question, "Please .* course. ") %>%
-        stringr::str_remove_all("\\[|\\]"),
-      id = ids::random_id(1, 5)
+        stringr::str_remove_all("\\[|\\]")
     ) %>%
-    dplyr::ungroup() %>%
     dplyr::select(tidyselect::all_of(c(
-      "course_version", "id", "statement", "response"
-    )))
+      "course_version", "date", "statement", "response"
+    ))) |>
+    dplyr::count(course_version, date, statement, response) |>
+    dplyr::arrange(course_version, date)
 }
 
 #' @describeIn extract_feedback Extract and tidy up the overall comments
@@ -134,15 +142,16 @@ extract_feedback_overall <- function(data) {
   data %>%
     dplyr::filter(stringr::str_detect(
       question,
-      ".*any other comments .*"
+      ".*any other (feedback|comments) .*"
     )) %>%
     dplyr::rename(overall_comments = response) %>%
-    dplyr::select(-timestamp, -question) %>%
+    dplyr::select(-question, -id, -day) %>%
     dplyr::filter(stringr::str_detect(
       overall_comments,
       "^No$",
       negate = TRUE
-    ))
+    )) %>%
+    dplyr::arrange(course_version, date)
 }
 
 #' @describeIn extract_feedback Extract and tidy up the session specific
@@ -151,7 +160,7 @@ extract_feedback_overall <- function(data) {
 extract_feedback_sessions <- function(data) {
   data %>%
     dplyr::filter(stringr::str_detect(question,
-      "Please complete these .*|any other comments .*",
+      "Please complete these .*|any other (feedback|comments) .*",
       negate = TRUE
     )) %>%
     dplyr::mutate(question = question %>%
@@ -170,6 +179,6 @@ extract_feedback_sessions <- function(data) {
       names_from = worked_or_improve,
       values_from = response
     ) %>%
-    dplyr::select(-timestamp) %>%
-    dplyr::arrange(day, session)
+    dplyr::select(-id) %>%
+    dplyr::arrange(course_version, date, day, session)
 }
