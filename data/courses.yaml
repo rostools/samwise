@@ -72,6 +72,14 @@ course:
           - ref: rm
         helpers:
           - ref: sstin
+      - date: 2024-01-23
+        host: Danish Diabetes and Endocrinology Academy
+        instructors:
+          - ref: lwj
+          - ref: aa
+          - ref: mab
+          - ref: kb
+          - ref: zzh
 
   - id: inter
     name: Intermediate
