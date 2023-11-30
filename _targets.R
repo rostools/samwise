@@ -5,12 +5,12 @@
 # Load packages required to define the pipeline:
 library(targets)
 library(magrittr)
-# library(tarchetypes) # Load other packages as needed.
+library(tarchetypes)
 
 # Set target options:
 tar_option_set(
-  packages = c("tibble") # packages that your targets need to run
-  # format = "qs", # Optionally set the default storage format. qs is fast.
+  # packages that your targets need to run
+  packages = c("lubridate")
 )
 
 # Run the R scripts in the R/ folder with your custom functions:
@@ -22,15 +22,11 @@ set.seed(125643)
 
 # Replace the target list below with your own:
 list(
-  tar_target(
-    name = data,
-    command = tibble(x = rnorm(100), y = rnorm(100))
-  ),
-
   # Introduction course -----------------------------------------------------
-  tar_target(
+  tar_force(
     name = intro_feedback,
-    command = fetch_feedback_intro()
+    command = fetch_feedback_intro(),
+    force = TRUE
   ),
   tar_target(
     name = intro_feedback_quantitative,
@@ -51,6 +47,87 @@ list(
     command = intro_feedback %>%
       extract_feedback_overall() %>%
       save_as_csv("data/intro/feedback-overall.csv"),
+    format = "file"
+  ),
+  # Intermediate course -----------------------------------------------------
+  tar_force(
+    name = inter_feedback,
+    command = fetch_feedback_inter(),
+    force = TRUE
+  ),
+  tar_target(
+    name = inter_feedback_quantitative,
+    command = inter_feedback %>%
+      extract_feedback_quantitative() %>%
+      save_as_csv("data/inter/feedback-quantitative.csv"),
+    format = "file"
+  ),
+  tar_target(
+    name = inter_feedback_sessions,
+    command = inter_feedback %>%
+      extract_feedback_sessions() %>%
+      save_as_csv("data/inter/feedback-sessions.csv"),
+    format = "file"
+  ),
+  tar_target(
+    name = inter_feedback_overall,
+    command = inter_feedback %>%
+      extract_feedback_overall() %>%
+      save_as_csv("data/inter/feedback-overall.csv"),
+    format = "file"
+  ),
+  # Advanced course -----------------------------------------------------
+  tar_force(
+    name = advanced_feedback,
+    command = fetch_feedback_advanced(),
+    force = TRUE
+  ),
+  tar_target(
+    name = advanced_feedback_quantitative,
+    command = advanced_feedback %>%
+      extract_feedback_quantitative() %>%
+      save_as_csv("data/advanced/feedback-quantitative.csv"),
+    format = "file"
+  ),
+  tar_target(
+    name = advanced_feedback_sessions,
+    command = advanced_feedback %>%
+      extract_feedback_sessions() %>%
+      save_as_csv("data/advanced/feedback-sessions.csv"),
+    format = "file"
+  ),
+  tar_target(
+    name = advanced_feedback_overall,
+    command = advanced_feedback %>%
+      extract_feedback_overall() %>%
+      save_as_csv("data/advanced/feedback-overall.csv"),
+    format = "file"
+  ),
+  # Advanced course -----------------------------------------------------
+  tar_force(
+    name = advanced_feedback,
+    command = fetch_feedback_advanced(),
+    force = TRUE
+  ),
+  tar_target(
+    name = advanced_feedback_quantitative,
+    command = advanced_feedback %>%
+      extract_feedback_quantitative() %>%
+      save_as_csv("data/advanced/feedback-quantitative.csv"),
+    format = "file"
+  ),
+  tar_target(
+    name = advanced_feedback_sessions,
+    command = advanced_feedback %>%
+      extract_feedback_sessions() %>%
+      save_as_csv("data/advanced/feedback-sessions.csv"),
+    format = "file"
+  ),
+  tar_target(
+    name = advanced_feedback_overall,
+    command = advanced_feedback %>%
+      extract_feedback_overall() %>%
+      save_as_csv("data/advanced/feedback-overall.csv"),
     format = "file"
   )
 )
