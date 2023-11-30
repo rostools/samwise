@@ -1,0 +1,8 @@
+group:
+  - files:
+      - source: inst/common/_variables.yml
+        dest: _variables.yml
+    repos: |
+      rostools/r-cubed-advanced
+      rostools/r-cubed-intro
+      rostools/r-cubed-intermediate
