@@ -21,4 +21,6 @@ affiliation:
     name: Rigshospitalet
   - id: cut
     name: Chalmers University of Technology
+  - id: sdu
+    name: University of Southern Denmark
 

@@ -162,3 +162,21 @@ person:
       - ref: sdca
       - ref: au
     orcid: ""
+
+  - id: kd
+    name: "Kaja Madsen"
+    affiliation:
+      - ref: sdu
+    orcid: ""
+
+  - id: zzh
+    name: "Ziping Zhang"
+    affiliation:
+      - ref: au
+    orcid: ""
+
+  - id: mab
+    name: "Marie Anneberg Brahe"
+    affiliation:
+      - ref: au
+    orcid: ""
