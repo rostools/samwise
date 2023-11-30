@@ -38,13 +38,14 @@
 
 # TODO: check if all images are used. Check directly from md and include_graphics?
 
-check_duplicate_timestamps <- function(data) {
-  if (any(duplicated(data$timestamp))) {
-    locations <- which(duplicated(data$timestamp))
-    cli::cli_abort("There are duplicate timestamps at rows {locations}, please investigate or fix.")
-  }
-  data
-}
+# TODO: Not sure this is the best way to detect duplicates...
+# check_duplicate_timestamps <- function(data) {
+#   if (any(duplicated(data$timestamp))) {
+#     locations <- which(duplicated(data$timestamp))
+#     cli::cli_abort("There are duplicate timestamps at rows {locations}, please investigate or fix.")
+#   }
+#   data
+# }
 
 # Check who hasn't finished the survey ------------------------------------
 
