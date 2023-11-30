@@ -22,6 +22,7 @@ save_as_csv <- function(data, path) {
   fs::dir_create(fs::path_dir(path))
   data |>
     readr::write_csv(here::here(path))
+  path
 }
 
 #' Assign the version of the course that the survey response comes from.
