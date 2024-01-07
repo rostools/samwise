@@ -85,14 +85,14 @@ section on [Installing Git for
 Windows](https://happygitwithr.com/install-git.html#install-git-windows)
 for help.
 
-::: callout-note
+::: {.callout-note appearance="default"}
 Some pictures may show a Git pane in RStudio, but you may not see it. If
 you haven't created or opened an RStudio R Project (which is taught in
 the introductory course), the Git pane *does not* show up. It only shows
 up in R Projects that use Git to track file changes.
 :::
 
-::: callout-note
+::: {.callout-note appearance="default"}
 *A note to those who have or use work laptops with restrictive
 administrative privileges*: You may encounter problems installing
 software due to administrative reasons (e.g. you don't have permission
