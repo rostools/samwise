@@ -8,7 +8,7 @@
 #' @return NULL. Used only for the side effects of posting an issue.
 #' @export
 #'
-admin_create_planning_issue <- function(repo, course_date, host = c("gitlab", "github")) {
+admin_create_planning_issue <- function(repo, course_date) {
   stamp_format <- lubridate::stamp_date("Mar. 1, 2021", quiet = TRUE)
   template_path <- fs::path_package("r3admin", "templates", "planning-issue.md")
   issue_description <- whisker::whisker.render(
@@ -25,32 +25,11 @@ admin_create_planning_issue <- function(repo, course_date, host = c("gitlab", "g
     )
   )
 
-  host <- rlang::arg_match(host)
+  gh_api_results <- ghclass::issue_create(
+    repo = paste0("rostools/", repo),
+    title = paste0("Course planning and details - ", course_date),
+    body = paste0(issue_description, collapse = "\n")
+  )
 
-  if (host == "gitlab") {
-    gitlabr::set_gitlab_connection(
-      gitlab_url = "https://gitlab.com/",
-      private_token = askpass::askpass("Provide your GitLab PAT.")
-    )
-
-    project_id <- switch(repo,
-      "r-cubed-intermediate" = "20120886",
-      "r-cubed" = "15345313"
-    )
-
-    gitlabr::gl_new_issue(
-      project = project_id,
-      title = paste0("Course planning and details - ", course_date),
-      description = paste0(issue_description, collapse = "\n"),
-      labels = "Admin"
-    )
-  } else if (host == "github") {
-    ghclass::issue_create(
-      repo = paste0("rostools/", repo),
-      title = paste0("Course planning and details - ", course_date),
-      body = paste0(issue_description, collapse = "\n")
-    )
-  }
-
-  return(invisible(NULL))
+  return(invisible(gh_api_results))
 }
