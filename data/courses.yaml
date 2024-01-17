@@ -2,6 +2,7 @@ course:
   - id: intro
     name: Introductory
     url: https://r-cubed-intro.rostools.org/
+    repo: r-cubed-intro
     contributors:
       - ref: lwj
       - ref: drw
@@ -84,6 +85,7 @@ course:
   - id: inter
     name: Intermediate
     url: https://r-cubed-intermediate.rostools.org/
+    repo: r-cubed-intermediate
     contributors:
       - ref: lwj
       - ref: osr
@@ -141,6 +143,7 @@ course:
   - id: adv
     name: Advanced
     url: https://r-cubed-advanced.rostools.org/
+    repo: r-cubed-advanced
     contributors:
       - ref: lwj
       - ref: aa
