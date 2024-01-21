@@ -3,12 +3,11 @@
 #'
 #' @param repo Either "r-cubed" or "r-cubed-intermediate"
 #' @param course_date The date of the first day of the course, as YYYY-MM-DD
-#' @param host Whether it is GitHub or GitLab
 #'
 #' @return NULL. Used only for the side effects of posting an issue.
 #' @export
 #'
-admin_create_planning_issue <- function(repo, course_date) {
+admin_create_planning_issue <- function(repo, course_date, org = "rostools") {
   stamp_format <- lubridate::stamp_date("Mar. 1, 2021", quiet = TRUE)
   template_path <- fs::path_package("r3admin", "templates", "planning-issue.md")
   issue_description <- whisker::whisker.render(
@@ -26,7 +25,7 @@ admin_create_planning_issue <- function(repo, course_date) {
   )
 
   gh_api_results <- ghclass::issue_create(
-    repo = paste0("rostools/", repo),
+    repo = paste0(org, "/", repo),
     title = paste0("Course planning and details - ", course_date),
     body = paste0(issue_description, collapse = "\n")
   )
