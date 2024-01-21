@@ -1,52 +1,3 @@
-# html_files <- dir_ls(path = "public",
-#                      glob = "*.html",
-#                      recurse = TRUE)
-# stop("To prevent accidental sourcing.")
-#
-# # Test URL is active or alive ---------------------------------------------
-#
-# # URLs change over time or get removed from the internet. This code
-# # runs gets all http(s) links and does a simple "GET" to see if it
-# # is active or not. It isn't always correct, but its a good starting
-# # point.
-#
-# get_href_links <- function(x) {
-#     x %>%
-#         read_html() %>%
-#         html_nodes("a") %>%
-#         html_attr("href")
-# }
-#
-# url_links <- map(html_files, get_href_links) %>%
-#     flatten_chr() %>%
-#     str_subset("^https?.*$") %>%
-#     str_subset(".*\\.(exe|zip)$", negate = TRUE) %>%
-#     str_remove("%3E") %>%
-#     unique()
-#
-# bad_url <- function(x) {
-#     bad_url <- NA_character_
-#     if (http_error(x))
-#         bad_url <- x
-#     bad_url
-# }
-#
-# url_tested <- map_chr(url_links, bad_url) %>%
-#     na.omit()
-#
-# url_tested
-
-# TODO: check if all images are used. Check directly from md and include_graphics?
-
-# TODO: Not sure this is the best way to detect duplicates...
-# check_duplicate_timestamps <- function(data) {
-#   if (any(duplicated(data$timestamp))) {
-#     locations <- which(duplicated(data$timestamp))
-#     cli::cli_abort("There are duplicate timestamps at rows {locations}, please investigate or fix.")
-#   }
-#   data
-# }
-
 # Check who hasn't finished the survey ------------------------------------
 
 check_who_not_finish_survey <- function(data, participant_list) {
@@ -100,17 +51,6 @@ copy_names_with_problems <- function(full_name) {
     stringr::str_c(collapse = " \n") %>%
     clipr::write_clip()
 }
-
-# # Who to still invite (those that finished pre-course tasks later).
-# currently_invited <- c(
-#     org_members(org_gh_course_name) %>%
-#         str_subset("lwjohnst86", negate = TRUE) %>%
-#         str_to_lower(),
-#     str_to_lower(org_pending(org_gh_course_name))
-# )
-# need_to_invite <- gh_teams_prep$github_username %>%
-#     str_to_lower() %>%
-#     setdiff(currently_invited)
 
 # Setup checks ------------------------------------------------------------
 
