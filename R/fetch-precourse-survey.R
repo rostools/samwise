@@ -17,6 +17,44 @@
 #'
 NULL
 
+#' Get the (slightly cleaned) pre-course survey from Google Sheets.
+#'
+#' @param id The ID of the course, found by running [list_course_ids()].
+#'
+#' @return A [tibble::tibble()].
+#' @export
+#'
+#' @examples
+#' get_precourse_survey("intro")
+get_precourse_survey <- function(id) {
+  id <- rlang::arg_match(id, list_course_ids())
+
+  # Get the Google Sheet ID from the environment variable via `Sys.getenv()`
+  survey_id <- switch(
+    id,
+    intro = "INTRO_PRE_SURVEY_ID",
+    inter = "INTERMEDIATE_PRE_SURVEY_ID",
+    adv = "ADVANCED_PRE_SURVEY_ID"
+  )
+  survey_id <- Sys.getenv(survey_id)
+  if (survey_id == "") {
+    cli::cli_abort("{.fn Sys.genenv} can't find the Google Sheet ID, do you have an {.val .Renviron} set up with the ID?")
+  }
+
+  # Assign column renaming based on course given with `id`
+  column_renaming <- switch(
+    id,
+    intro = intro_survey_column_renaming,
+    inter = intermediate_survey_column_renaming,
+    adv = advanced_survey_column_renaming
+  )
+
+  survey_id |>
+    get_precourse_survey_google_sheet() |>
+    rename_columns_sentence_to_snakecase(column_renaming) |>
+    tidy_precourse(get_course_dates(id))
+}
+
 #' @describeIn fetch_precourse Fetch the pre-course survey data for the **introduction** course.
 #' @export
 fetch_precourse_intro <- function(survey_id = Sys.getenv("INTRO_PRE_SURVEY_ID")) {
