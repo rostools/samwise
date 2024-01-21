@@ -59,7 +59,7 @@ fetch_feedback_sheet <- function(survey_id) {
 # Tidy up feedback data ---------------------------------------------------
 
 add_course_version <- function(data, course_id) {
-  few_days_after_course <- lubridate::as_date(metadata_course_dates(course_id)) +
+  few_days_after_course <- lubridate::as_date(get_course_dates(course_id)) +
     lubridate::days(3)
   data %>%
     dplyr::mutate(

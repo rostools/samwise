@@ -42,7 +42,7 @@ fetch_feedback_sheet|function|617b62176f9c22dd|||||||||||||||
 fetch_precourse_advanced|function|15e39eae2b937b2d|||||||||||||||
 fetch_precourse_inter|function|b74f96aa931e053d|||||||||||||||
 fetch_precourse_intro|function|59456e483b2ae84d|||||||||||||||
-fetch_precourse_sheet|function|fe3ae415047720f3|||||||||||||||
+get_precourse_survey_google_sheet|function|fe3ae415047720f3|||||||||||||||
 fetch_survey_field_titles|function|3ad758effa8199e1|||||||||||||||
 formatted_names_by_team|function|f1b66d2108c06abc|||||||||||||||
 group_name_to_pdf|function|8aee722486a5ee03|||||||||||||||
@@ -64,7 +64,7 @@ intro_survey_column_renaming|object|4e08ee2feb503944|||||||||||||||
 join_original_column_names|function|92fe1ef6813dc038|||||||||||||||
 list_common_files|function|3758eecb2ccc3e19|||||||||||||||
 list_template_files|function|cb512c2602946298|||||||||||||||
-metadata_course_dates|function|d4d285b420cc5862|||||||||||||||
+get_course_dates|function|d4d285b420cc5862|||||||||||||||
 pretty_code_checks|function|31c0003b49b99880|||||||||||||||
 pretty_text_checks|function|9e0fff6fc3c32ff4|||||||||||||||
 read_common|function|41aa67a4550fb8ca|||||||||||||||

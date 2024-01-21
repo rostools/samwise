@@ -3,7 +3,7 @@ devtools::load_all()
 
 # Introductory pre-course survey ----------------------------------------------
 
-intro_precourse <- fetch_precourse_intro()
+intro_precourse <- get_precourse_survey("intro")
 
 intro_precourse %>%
   extract_precourse_overview(intro_survey_column_renaming) %>%
@@ -15,7 +15,7 @@ intro_precourse %>%
 
 # Intermediate pre-course survey ----------------------------------------------
 
-inter_precourse <- fetch_precourse_inter()
+inter_precourse <- get_precourse_survey("inter")
 
 inter_precourse %>%
   extract_precourse_overview(intermediate_survey_column_renaming) %>%
@@ -27,7 +27,7 @@ inter_precourse %>%
 
 # Advanced pre-course survey --------------------------------------------------
 
-advanced_precourse <- fetch_precourse_advanced()
+advanced_precourse <- get_precourse_survey("adv")
 
 advanced_precourse %>%
   extract_precourse_overview(advanced_survey_column_renaming) %>%
