@@ -165,10 +165,19 @@ group_names %>%
 Now we need to assign the learners to the groups.
 
 ```{r}
+round_down_to_even <- function(x) {
+  if ((x %% 2) == 1){
+    x <- x - 1
+  }
+  x
+}
+project_groups <- expand_grid(prefix = group_names, suffix = 1:2) |> 
+  slice_head(n = round_down_to_even(nrow(precourse)) / 2) |> 
+  glue::glue_data("{prefix}-{suffix}")
 if (course_level %in% c("intro")) {
 learners_in_groups <- assign_learners_to_groups(
   precourse,
-  group_names_final
+  project_groups
 )
 count(learners_in_groups, team)
 # View(learners_in_groups)
