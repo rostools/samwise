@@ -217,7 +217,7 @@ org_pending(org_gh_course_name)
 Then we can create the teams based on the group names:
 
 ```{r, eval=FALSE}
-team_create(org_gh_course_name, group_names_final)
+team_create(org_gh_course_name, project_groups)
 org_teams(org_gh_course_name)
 ```
 
@@ -241,7 +241,7 @@ team_invite(
 We need to create repos for each team.
 
 ```{r, eval=FALSE}
-gh_repos <- repo_create(org_gh_course_name, group_names_final)
+gh_repos <- repo_create(org_gh_course_name, project_groups)
 repo_add_team(sort(gh_repos), sort(unique(learners_in_groups$team)))
 ```
 
