@@ -251,9 +251,13 @@ There might be some manual tinkering here.
 ```{r, eval=FALSE}
 instructors <- tibble::tribble(
   ~name, ~github_username,
-  "Luke", "lwjohnst86"
+  "Luke", "lwjohnst86",
+  "Luke", "lwjohnst86",
+  "Anders Askeland", "AndersAskeland",
+  "Kaja Madsen", "KWMadsen",
+  "Marie Anneberg", "MarieAnneberg"
 )
-instructors_to_groups <- assign_instructors_to_groups(group_names_final, instructors$name)
+instructors_to_groups <- assign_instructors_to_groups(project_groups, instructors$name)
 ```
 
 Then take instructors and assigned teams and convert them into a
