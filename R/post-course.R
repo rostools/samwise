@@ -33,16 +33,13 @@ create_course_tag <- function(start_date, message) {
     dplyr::pull(url)
 
   remote_host_name <- remote_host %>%
-    stringr::str_extract("(github|gitlab)")
+    stringr::str_extract("github")
 
   repo_name <- remote_host %>%
-    stringr::str_extract("(github|gitlab)\\.com[:/](.*/.*)\\.git$", group = 2) %>%
+    stringr::str_extract("github\\.com[:/](.*/.*)\\.git$", group = 1) %>%
     stringr::str_remove_all(":|\\.git")
 
-  url_release <- switch(remote_host_name,
-    github = glue::glue("https://github.com/{repo_name}/releases/new"),
-    gitlab = glue::glue("https://gitlab.com/{repo_name}/-/releases/new")
-  )
+  url_release <- glue::glue("https://github.com/{repo_name}/releases/new")
 
   if (interactive()) {
     browseURL(url_release)
