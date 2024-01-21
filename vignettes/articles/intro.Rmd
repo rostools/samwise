@@ -32,16 +32,6 @@ ghclass::github_set_token(gitcreds::gitcreds_get(use_cache = FALSE)$password)
 
 # Pre-course admin tasks
 
-## Creating the planning issue
-
-There are several tasks that need to be done before hand for each
-course, and this function below creates that on either GitHub or GitLab.
-
-```{r, eval=FALSE}
-admin_create_planning_issue(course_name, course_date, host = "github")
-browseURL(glue::glue("https://github.com/rostools/{course_name}"))
-```
-
 ## Fetch (and save) pre-survey responses
 
 Any admin task that requires participant information, we need to first
@@ -49,7 +39,7 @@ get that information from the precourse survey.
 
 ```{r}
 # TODO: How to get these authenticated? Run first and then build vignette?
-precourse <- fetch_precourse() %>%
+precourse <- get_precourse_survey(course_level) %>%
   filter(course_version == max(course_version))
 ```
 
