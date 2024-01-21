@@ -16,15 +16,9 @@ devtools::load_all()
 These are the constants used for later functions.
 
 ```{r constants}
-course_date <- "2023-11-08"
-course_level <- "advanced"
-course_name <- glue::glue("r-cubed-{course_level}")
-fetch_precourse <- switch(
-  course_level,
-  intro = fetch_precourse_intro,
-  inter = fetch_precourse_inter,
-  advanced = fetch_precourse_advanced
-)
+course_date <- get_upcoming_course_dates("intro")[1]
+course_level <- "intro" # list_course_ids()
+course_name <- get_course_repo("intro")
 org_gh_course_name <- glue::glue("{course_name}-{str_sub(course_date, end = 7)}")
 ```
 
