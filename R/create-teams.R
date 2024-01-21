@@ -53,6 +53,7 @@ group_name_to_pdf <- function(group_name, output_dir) {
 }
 
 teams_with_members_to_one_pdf <- function(team_names_with_members, output_dir = here::here("_ignore/group-names")) {
+  lifecycle::deprecate_stop("Now", "teams_with_members_to_one_pdf()")
   team_names_with_members %>%
     dplyr::group_split(team_name) %>%
     purrr::walk(~ {
