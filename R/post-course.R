@@ -58,6 +58,7 @@ create_course_tag <- function(start_date, message) {
 #' @examples
 #' fs::path_package("r3admin", "extdata", "_people.csv") %>% zen_creators_from_csv()
 zen_creators_from_csv <- function(path) {
+  # TODO: Need to update this.
   readr::read_csv(
     path,
     col_types = readr::cols_only(
