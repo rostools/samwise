@@ -187,18 +187,6 @@ count(learners_in_groups, team)
 }
 ```
 
-Create a PDF file of the team names with members, so we can print the
-file before the first day and put each sheet of paper with the team name
-and members on each table.
-
-```{r, eval=FALSE, results='hide'}
-if (course_level %in% c("intro")) {
-learners_in_groups %>% 
-  select(team_name = team, team_members = full_name) %>% 
-  teams_with_members_to_one_pdf()
-}
-```
-
 ## Creating the GitHub org and groups
 
 Follow the instructions on the [ghclass
