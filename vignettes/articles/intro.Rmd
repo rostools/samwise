@@ -133,9 +133,8 @@ problems %>%
 
 ## Create group names
 
-Create some fun group names for the course. There is some manual action
-here to select the names I think are interesting or funky. Make groups
-with about 4 people per group.
+Create some fun group names for the course using the
+[what3words](https://what3words.com/) API.
 
 ```{r}
 number_groups <- ceiling(nrow(precourse) / 4)
