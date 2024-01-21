@@ -11,7 +11,7 @@ fetch_precourse_intro(survey_id = Sys.getenv("INTRO_PRE_SURVEY_ID"))
 
 fetch_precourse_inter(survey_id = Sys.getenv("INTERMEDIATE_PRE_SURVEY_ID"))
 
-fetch_precourse_advanced(survey_id = Sys.getenv("ADVANCED_PRE_SURVEY_ID"))
+fetch_precourse_advanced()
 }
 \arguments{
 \item{survey_id}{Google Forms ID for the survey.}

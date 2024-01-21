@@ -4,14 +4,12 @@
 \alias{admin_create_planning_issue}
 \title{Post a Course Planning issue on the course repo.}
 \usage{
-admin_create_planning_issue(repo, course_date, host = c("gitlab", "github"))
+admin_create_planning_issue(repo, course_date, org = "rostools")
 }
 \arguments{
 \item{repo}{Either "r-cubed" or "r-cubed-intermediate"}
 
 \item{course_date}{The date of the first day of the course, as YYYY-MM-DD}
-
-\item{host}{Whether it is GitHub or GitLab}
 }
 \value{
 NULL. Used only for the side effects of posting an issue.

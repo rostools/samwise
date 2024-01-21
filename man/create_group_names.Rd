@@ -2,18 +2,19 @@
 % Please edit documentation in R/create-teams.R
 \name{create_group_names}
 \alias{create_group_names}
-\title{Create randomly generated group names.}
+\title{Create randomly generated group names based on city coordinating from what3words.}
 \usage{
-create_group_names(max_name_length = 18)
+create_group_names(number_groups)
 }
 \arguments{
-\item{max_name_length}{Longest characters that the group name should be.}
+\item{number_groups}{The number of group names to create.}
 }
 \value{
 A character vector of names.
 }
 \description{
-Set a seed before hand to fix the names generated.
+From all cities globally, get the \href{https://what3words.com/}{what3words}
+coordinates to use as fun group names.
 }
 \examples{
 create_group_names(20)

@@ -10,7 +10,7 @@ copy_common_file(file)
 \item{template}{Name of common file.}
 }
 \value{
-Path to created \verb{_variables.yml} file.
+Path to created common file.
 }
 \description{
 Copy commonly used files for r-cubed courses.

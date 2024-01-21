@@ -5,6 +5,7 @@
 \alias{fetch_feedback_intro}
 \alias{fetch_feedback_inter}
 \alias{fetch_feedback_advanced}
+\alias{fetch_feedback_general}
 \title{Fetch the session and overall course feedback survey responses.}
 \usage{
 fetch_feedback_intro(survey_id = Sys.getenv("INTRO_FEEDBACK_SURVEY_ID"))
@@ -12,6 +13,8 @@ fetch_feedback_intro(survey_id = Sys.getenv("INTRO_FEEDBACK_SURVEY_ID"))
 fetch_feedback_inter(survey_id = Sys.getenv("INTERMEDIATE_FEEDBACK_SURVEY_ID"))
 
 fetch_feedback_advanced(survey_id = Sys.getenv("ADVANCED_FEEDBACK_SURVEY_ID"))
+
+fetch_feedback_general(survey_id = Sys.getenv("GENERAL_FEEDBACK_SURVEY_ID"))
 }
 \arguments{
 \item{survey_id}{Google Forms ID for the survey.}
@@ -29,6 +32,9 @@ Fetch the session and overall course feedback survey responses.
 \item \code{fetch_feedback_inter()}: Fetch the session feedback survey data for the \strong{intermediate} course.
 
 \item \code{fetch_feedback_advanced()}: Fetch the session feedback survey data for the \strong{advanced} course.
+
+\item \code{fetch_feedback_general()}: Fetch the session feedback survey data for all
+courses (from the updated single survey).
 
 }}
 \examples{
