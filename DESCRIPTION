@@ -29,6 +29,7 @@ Imports:
     googlesheets4,
     here,
     ids,
+    lifecycle,
     lubridate,
     magrittr,
     maps,
