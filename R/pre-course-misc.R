@@ -112,3 +112,25 @@ clone_project_repo <- function(repo_path,
     fs::path_dir(project_folder)
   )
 }
+
+pull_project_repo <- function(repo_path, local_directory = fs::path("~", "Desktop")) {
+  project_folder <- fs::path(local_directory, repo_path)
+  ghclass::local_repo_pull(
+    project_folder
+  )
+}
+
+pull_team_repos <- function(gh_org) {
+  course_team_repos <- ghclass::org_repos(gh_org)
+  course_team_repos %>%
+    purrr::walk(pull_project_repo)
+}
+
+render_team_qmds <- function(gh_org, local_directory = fs::path("~", "Desktop")) {
+  course_team_repos <- ghclass::org_repos(gh_org)
+  qmd_path <- fs::path("~", "Desktop", course_team_repos, "doc", "report.qmd")
+  qmd_path |>
+    purrr::walk(~{
+      cli::cli_inform("Using {.val {.x}}")
+      quarto::quarto_render(.x, quiet = TRUE)})
+}
