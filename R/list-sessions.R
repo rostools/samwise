@@ -1,0 +1,26 @@
+
+get_schedule_sessions <- function(id = list_course_ids()) {
+  id <- rlang::arg_match(id, list_course_ids())
+  course_repo <- get_course_repo(id = id)
+  base_url <- "https://raw.githubusercontent.com/rostools"
+  schedule_path <- "preamble/schedule.csv"
+  full_url <- glue::glue("{base_url}/{course_repo}/main/{schedule_path}")
+  readr::read_csv(full_url, show_col_types = FALSE) |>
+    dplyr::filter(icon %in% c("laptop-code", "person-chalkboard")) |>
+    dplyr::select(day = Day, topic = `Session topic`) |>
+    dplyr::mutate(topic = stringr::str_remove(topic, "\\(with short break\\)") |>
+                    stringr::str_trim()) |>
+    dplyr::distinct(day, topic)
+}
+
+planning_issue_sessions_table <- function(course = list_course_metadata("repo")) {
+  course_repo <- rlang::arg_match(course, list_course_metadata("repo"))
+  sessions <- list_sessions(course_repo) |>
+    dplyr::rename_with(stringr::str_to_sentence) |>
+    dplyr::mutate(Instructor = "") |>
+    knitr::kable()
+
+  cli::cli_alert_info("Pasted output to clipboard!")
+  clipr::write_clip(sessions)
+  sessions
+}
