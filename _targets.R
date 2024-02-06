@@ -101,33 +101,7 @@ list(
       save_as_csv("data/inter/feedback-overall.csv"),
     format = "file"
   ),
-  # Advanced course -----------------------------------------------------
-  tar_force(
-    name = advanced_feedback,
-    command = fetch_feedback_advanced(),
-    force = TRUE
-  ),
-  tar_target(
-    name = advanced_feedback_quantitative,
-    command = advanced_feedback %>%
-      extract_feedback_quantitative() %>%
-      save_as_csv("data/advanced/feedback-quantitative.csv"),
-    format = "file"
-  ),
-  tar_target(
-    name = advanced_feedback_sessions,
-    command = advanced_feedback %>%
-      extract_feedback_sessions() %>%
-      save_as_csv("data/advanced/feedback-sessions.csv"),
-    format = "file"
-  ),
-  tar_target(
-    name = advanced_feedback_overall,
-    command = advanced_feedback %>%
-      extract_feedback_overall() %>%
-      save_as_csv("data/advanced/feedback-overall.csv"),
-    format = "file"
-  ),
+
   # Advanced course -----------------------------------------------------
   tar_force(
     name = advanced_feedback,
