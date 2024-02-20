@@ -21,12 +21,6 @@ Before the course, please review the CONTRIBUTING guide, Code of Conduct, and th
 |---------|-------|------------|
 |         |       |            |
 
-### Assigned teams
-
-| Team | Instructor/helper |
-|:-----|:------------------|
-|      |                   |
-
 ## To do before course
 
 -   [ ] {{tasks_start_date}}: (Optional) Send an calendar invite to registered participants with link to pre-course tasks and website.
