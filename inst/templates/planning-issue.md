@@ -40,7 +40,7 @@ Before the course, please review the CONTRIBUTING guide, Code of Conduct, and th
 -   [ ] {{tasks_check_end_date}}: Check that all participants have completed pre-course material. See `r3admin/vignettes/articles/`.
 -   [ ] {{tasks_prep_end_date}}: Get participants into groups (on GitHub too?) (\~3-4 people per group). See `r3admin/vignettes/articles/`.
 -   [ ] {{tasks_prep_end_date}}: Assign instructors to groups. See `r3admin/vignettes/articles/`.
--   [ ] {{tasks_prep_end_date}}: Add everyone to Slack channel. See `r3admin/vignettes/articles/`.
+-   [ ] {{tasks_prep_end_date}}: Invite everyone to Discord channel. See `r3admin/vignettes/articles/`.
 -   [ ] {{tasks_prep_end_date}}: Open up the Google Forms feedback survey
 
 ## To do during course
