@@ -25,17 +25,8 @@ get_precourse_survey <- function(id) {
     cli::cli_abort("{.fn Sys.genenv} can't find the Google Sheet ID, do you have an {.val .Renviron} set up with the ID?")
   }
 
-  # Assign column renaming based on course given with `id`
-  column_renaming <- switch(
-    id,
-    intro = intro_survey_column_renaming,
-    inter = intermediate_survey_column_renaming,
-    adv = advanced_survey_column_renaming
-  )
-
   survey_id |>
     get_precourse_survey_google_sheet() |>
-    rename_columns_sentence_to_snakecase(column_renaming) |>
     tidy_precourse(get_course_dates(id)) |>
     dplyr::mutate(course_id = id, .before = tidyselect::everything())
 }
@@ -49,39 +40,20 @@ get_precourse_survey_google_sheet <- function(survey_id) {
 
 # Tidy up the survey data -------------------------------------------------
 
-rename_columns_sentence_to_snakecase <- function(data, column_renaming_df) {
-  renaming_vector <- column_renaming_df[
-    c("new_column_names", "original_column_names")
-  ] |>
-    tibble::deframe()
-
-  data |>
-    dplyr::select(renaming_vector)
-}
-
 tidy_precourse <- function(data, metadata_dates) {
   data |>
     dplyr::mutate(dplyr::across(
       tidyselect::where(is.list),
       ~ purrr::map_chr(.x, as.character)
     )) |>
+    dplyr::rename_with(snakecase::to_snake_case) |>
+    dplyr::rename(github_username = what_is_your_git_hub_user_name,
+                  email = email_address) |>
     dplyr::mutate(
-      research_position = research_position |>
-        stringr::str_to_sentence() |>
-        stringr::str_replace("-", " ") |>
-        stringr::str_replace("Phd", "PhD") |>
-        stringr::str_replace("^PhD$", "PhD student"),
-      city_work_in = city_work_in |>
-        stringr::str_replace("København", "Copenhagen") |>
-        stringr::str_replace(".*(Copenhagen|Odense).*", "\\1"),
-      expectations_match_syllabus = expectations_match_syllabus |>
-        stringr::str_to_sentence() |>
-        stringr::str_remove_all("\\.") |>
-        stringr::str_replace(".*(Yes).*", "\\1"),
       course_version = assign_course_version_by_date(timestamp, metadata_dates)
     ) |>
     dplyr::mutate(dplyr::across(
-      tidyselect::matches("^perceived_skill_"),
+      tidyselect::contains("_perceive_your_skill_"),
       tidy_cols_skills
     )) |>
     dplyr::mutate(dplyr::across(
@@ -218,140 +190,3 @@ join_original_column_names <- function(data, column_renaming_df) {
     dplyr::select(-questions, questions = original_column_names) |>
     dplyr::relocate(questions)
 }
-
-# Renaming pre-course columns ---------------------------------------------
-
-#' Fetch the column headers/titles and copy to the clipboard to tidy up.
-#'
-#' @param survey_id The ID for the Google Forms survey.
-#'
-#' @return Used for side effect of copying to clipboard.
-#' @export
-#'
-#' @examples
-#' \dontrun{
-#' fetch_survey_field_titles(Sys.getenv("INTRO_PRE_SURVEY_ID"))
-#' fetch_survey_field_titles(Sys.getenv("INTERMEDIATE_PRE_SURVEY_ID"))
-#' fetch_survey_field_titles(Sys.getenv("ADVANCED_PRE_SURVEY_ID"))
-#' fetch_survey_field_titles(Sys.getenv("INTRO_FEEDBACK_SURVEY_ID"))
-#' fetch_survey_field_titles(Sys.getenv("INTERMEDIATE_FEEDBACK_SURVEY_ID"))
-#' fetch_survey_field_titles(Sys.getenv("ADVANCED_FEEDBACK_SURVEY_ID"))
-#' }
-fetch_survey_field_titles <- function(survey_id) {
-  precourse <- googledrive::drive_get(id = survey_id) |>
-    googlesheets4::read_sheet(n_max = 1)
-  datapasta::vector_construct_vertical(names(precourse)) |>
-    stringr::str_replace("^c\\(", "tibble::tribble(\n~original_column_names, ~new_column_names,\n") |>
-    clipr::write_clip()
-}
-
-intro_survey_column_renaming <-
-  tibble::tribble(
-    ~original_column_names, ~new_column_names,
-    "Timestamp", "timestamp",
-    "Email Address", "email",
-    "What is your full name?", "full_name",
-    "What is your formal position?", "research_position",
-    "What city do you work in or near?", "city_work_in",
-    "Very briefly, what is your research topic(s)?", "research_topic",
-    "How do you perceive your skill/knowledge of [using R?]", "perceived_skill_r",
-    "What programs have you previously used for data analysis?", "previously_used_stat_programs",
-    "What is your GitHub user name?", "github_username",
-    "Copy and paste the results of your \"r3::check_setup()\" into the text box below.", "check_setup_output",
-    "Why do you want to attend this course?", "why_attend_course",
-    "Do your expectations match with what is described in the syllabus?", "expectations_match_syllabus",
-    "Does our \"assumptions about who you are\" (in the syllabus) match with who you actually are? Why or why not?", "matched_assumptions",
-    "Do you accept the conditions laid out in the Code of Conduct?", "accept_conduct",
-    "In your opinion, what worked well?", "feedback_worked_well",
-    "In your opinion, what could be improved?", "feedback_to_improve",
-    "Did you encounter any problems during the pre-course tasks?", "encounter_problems",
-    "Please describe the problems you've had.", "describe_problems",
-    "Which dates would you be available for a video call to help with the problems?", "when_available_for_help",
-    "How do you perceive your skill/knowledge of [data analysis in general?]", "perceived_skill_data_analysis",
-    "How do you perceive your skill/knowledge of [programming in general?]", "perceived_skill_programming",
-    "How do you perceive your skill/knowledge of [formal version control (e.g. Git)?]", "perceived_skill_git",
-    "How often do you currently use: [dplyr]", "uses_dplyr",
-    "How often do you currently use: [tidyr]", "uses_tidyr",
-    "How often do you currently use: [pipe (%>%)]", "uses_pipe",
-    "How often do you currently use: [GitHub/GitLab and Git]", "uses_git_github",
-    "How often do you currently use: [R Markdown]", "uses_rmarkdown",
-    "How often do you currently use: [ggplot2]", "uses_ggplot2",
-    "What gender do you identify with?", "gender_identity",
-    "What do you expect to learn and what would you like to be able to do with what you've learned?", "course_expectations"
-  )
-
-intermediate_survey_column_renaming <- tibble::tribble(
-  ~original_column_names, ~new_column_names,
-  "Timestamp", "timestamp",
-  "Email Address", "email",
-  "What is your full name?", "full_name",
-  "What is your formal position?", "research_position",
-  "What city do you work in or nearest to?", "city_work_in",
-  "Very briefly, what is your research topic(s)?", "research_topic",
-  "How do you perceive your skill/knowledge of... [using R?]", "perceived_skill_r",
-  "How do you perceive your skill/knowledge of... [data analysis in general?]", "perceived_skill_data_analysis",
-  "How do you perceive your skill/knowledge of... [programming in general?]", "perceived_skill_programming",
-  "How do you perceive your skill/knowledge of... [managing data in general?]", "perceived_skill_manage_data",
-  "How do you perceive your skill/knowledge of... [formal version control (e.g. Git)?]", "perceived_skill_git",
-  "How do you perceive your skill/knowledge of... [writing in or using R Markdown?]", "perceived_skill_rmd",
-  "What programs have you previously used for data analysis?", "previously_used_stat_programs",
-  "Copy and paste the results of your \"r3::check_setup()\" into the text box below.", "check_setup_output",
-  "Copy and paste the results of your \"r3::check_project_setup()\" into the text box below.", "check_project_setup_output",
-  "What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?", "course_expectations",
-  "Do your expectations match with what is described in the syllabus?", "expectations_match_syllabus",
-  "Does our \"assumptions about who you are\" (in the syllabus) match with who you actually are? Why or why not?", "matched_assumptions",
-  "Do you accept the conditions laid out in the Code of Conduct?", "accept_conduct",
-  "In your opinion, what worked well?", "feedback_worked_well",
-  "In your opinion, what could be improved?", "feedback_to_improve",
-  "Did you encounter any problems during the pre-course tasks?", "encounter_problems",
-  "Please describe the problems you've had.", "describe_problems",
-  "Which dates would you be available for a video call to help with the problems?", "when_available_for_help",
-  "What gender do you identify with?", "gender_identity",
-  "How often do you currently use: [dplyr]", "uses_dplyr",
-  "How often do you currently use: [tidyr]", "uses_tidyr",
-  "How often do you currently use: [pipe (%>%)]", "uses_pipe",
-  "How often do you currently use: [GitHub/GitLab and Git]", "uses_git_github",
-  "How often do you currently use: [R Markdown]", "uses_rmarkdown",
-  "How often do you currently use: [purrr]", "uses_purrr",
-  "How often do you currently use: [tidyverse]", "uses_tidyverse",
-  "How often do you currently use: [vroom/readr]", "uses_vroom"
-)
-
-advanced_survey_column_renaming <- tibble::tribble(
-  ~original_column_names, ~new_column_names,
-  "Timestamp", "timestamp",
-  "Email Address", "email",
-  "What is your full name?", "full_name",
-  "What gender do you identify with?", "gender_identity",
-  "What is your formal position?", "research_position",
-  "What city do you work in or nearest to?", "city_work_in",
-  "Very briefly, what is your research topic(s)?", "research_topic",
-  "How do you perceive your skill/knowledge of... [using R?]", "perceived_skill_r",
-  "How do you perceive your skill/knowledge of... [data analysis in general?]", "perceived_skill_data_analysis",
-  "How do you perceive your skill/knowledge of... [programming in general?]", "perceived_skill_programming",
-  "How do you perceive your skill/knowledge of... [writing reproducible code in general?]", "perceived_skill_repro_code",
-  "How do you perceive your skill/knowledge of... [formal version control (e.g. Git)?]", "perceived_skill_git",
-  "How do you perceive your skill/knowledge of... [collaborating through Git?]", "perceived_skill_git_collab",
-  "How do you perceive your skill/knowledge of... [writing in or using R Markdown?]", "perceived_skill_rmd",
-  "How often do you currently use: [tidyverse]", "uses_tidyverse",
-  "How often do you currently use: [GitHub/GitLab and Git]", "uses_git_github",
-  "How often do you currently use: [R Markdown/Quarto]", "uses_rmd_quarto",
-  "How often do you currently use: [purrr]", "uses_purrr",
-  "How often do you currently use: [renv]", "uses_renv",
-  "How often do you currently use: [targets]", "uses_targets",
-  "How often do you currently use: [styler]", "uses_styler",
-  "How often do you currently use: [lintr]", "uses_lintr",
-  "How often do you currently use: [tidymodels]", "uses_tidymodels",
-  "What programs have you previously used for data analysis?", "previously_used_stat_programs",
-  "Copy and paste the results of your \"r3::check_setup()\" into the text box below.", "check_setup_output",
-  "Copy and paste the results of your \"r3::check_project_setup_advanced()\" into the text box below.", "check_project_setup_output",
-  "What do you expect to learn from this course and what would you like to be able to do afterwards with what you've learned?", "course_expectations",
-  "Do your expectations match with what is described in the syllabus?", "expectations_match_syllabus",
-  "Does our \"Is this for you?\" (in the syllabus) match with who you actually are? Why or why not?", "matched_assumptions",
-  "Do you accept the conditions laid out in the Code of Conduct?", "accept_conduct",
-  "In your opinion, what worked well?", "feedback_worked_well",
-  "In your opinion, what could be improved?", "feedback_to_improve",
-  "Did you encounter any problems during the pre-course tasks?", "encounter_problems",
-  "Please describe the problems you've had.", "describe_problems",
-  "Which dates would you be available for a video call to help with the problems?", "when_available_for_help"
-)
