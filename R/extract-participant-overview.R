@@ -7,7 +7,7 @@
 #'
 extract_participant_overview <- function(data) {
   data |>
-    sanitize_precourse() |>
+    anonymize_precourse() |>
     dplyr::select(
       course_version,
       tidyselect::starts_with("perceived"),
@@ -60,7 +60,7 @@ extract_precourse_feedback <- function(data, column_renaming_df) {
     dplyr::relocate(course_version, questions, responses)
 }
 
-sanitize_precourse <- function(data) {
+anonymize_precourse <- function(data) {
   data |>
     dplyr::select(
       -tidyselect::contains("email"),
