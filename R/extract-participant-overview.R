@@ -1,19 +1,11 @@
-#' Extract overview data from pre-course survey.
+#' Extract participant overview data from pre-course survey.
 #'
-#' @name extract_precourse
-#' @rdname extract_precourse
-#'
-#' @param data Pre-survey data.
-#' @param column_renaming_df Column that contains the renaming data.
+#' @param data Pre-course survey data.
 #'
 #' @return A tibble.
-#'
-NULL
-
-#' @describeIn extract_precourse Extract and tidy up the pre-course survey
-#'   participant overview data.
 #' @export
-extract_precourse_overview <- function(data, column_renaming_df) {
+#'
+extract_participant_overview <- function(data) {
   data |>
     sanitize_precourse() |>
     dplyr::select(
