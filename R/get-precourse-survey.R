@@ -33,9 +33,9 @@ get_precourse_survey <- function(id) {
 
 # Get survey from Google --------------------------------------------------
 
-get_precourse_survey_google_sheet <- function(survey_id) {
+get_precourse_survey_google_sheet <- function(survey_id, n_max = Inf) {
   googledrive::drive_get(id = survey_id) |>
-    googlesheets4::read_sheet()
+    googlesheets4::read_sheet(n_max = n_max)
 }
 
 # Tidy up the survey data -------------------------------------------------
