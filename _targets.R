@@ -24,28 +24,37 @@ set.seed(125643)
 list(
 
   # Upcoming (soonest) ------------------------------------------------------
-  tar_target(
-    name = precourse_survey,
-    command = get_precourse_survey(get_upcoming_course()),
-  ),
-  tar_target(
-    name = participants_not_complete_survey,
-    command =
-  ),
-  tar_target(
-    name = participants_with_problems,
-    command =
-  ),
-  tar_target(
-    name = check_setups
-    command =
-  ),
-  tar_target(
-    name = create_team_pdfs,
-    command = ,
-    format = "file"
-  )
+  # tar_target(
+  #   name = precourse_survey,
+  #   command = get_precourse_survey(get_upcoming_course()),
+  # ),
+  # tar_target(
+  #   name = participants_not_complete_survey,
+  #   command =
+  # ),
+  # tar_target(
+  #   name = participants_with_problems,
+  #   command =
+  # ),
+  # tar_target(
+  #   name = check_setups,
+  #   command =
+  # ),
+  # tar_target(
+  #   name = create_team_pdfs,
+  #   command = ,
+  #   format = "file"
+  # ),
 
+  tar_target(
+    name = course_ids,
+    command = list_course_ids()
+  ),
+  tar_target(
+    name = precourse_surveys,
+    command = get_precourse_survey(course_ids),
+    pattern = map(course_ids)
+  ),
 
   # Introduction course -----------------------------------------------------
   tar_force(
@@ -74,6 +83,7 @@ list(
       save_as_csv("data/intro/feedback-overall.csv"),
     format = "file"
   ),
+
   # Intermediate course -----------------------------------------------------
   tar_force(
     name = inter_feedback,

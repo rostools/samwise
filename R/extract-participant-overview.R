@@ -67,7 +67,11 @@ anonymize_precourse <- function(data) {
       -tidyselect::contains("name"),
       -tidyselect::contains("github_username"),
       -timestamp
-    ) |>
+    )
+}
+
+
+  data |>
     dplyr::mutate(dplyr::across(
       tidyselect::everything(),
       ~ stringr::str_remove_all(.x, '\\n|\\"')

@@ -6,6 +6,7 @@ install-package:
 
 draft-reminder-email: install-package
   #!/usr/bin/Rscript
+  participant_emails <- get_participant_emails()
   r3admin::create_draft_reminder_email()
 
 create-org-in-gh:
