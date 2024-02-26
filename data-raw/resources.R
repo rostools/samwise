@@ -21,6 +21,7 @@ useful_pkgs <- c(
   "haven",
   "readxl",
   "googledrive",
+  "googlesheets4",
   "rio",
   "datapasta",
   "patchwork",
@@ -30,8 +31,7 @@ useful_pkgs <- c(
   "broom",
   "fs",
   "here",
-  "knitr",
-  "bookdown"
+  "knitr"
 )
 
 package_metadata <- useful_pkgs %>%
