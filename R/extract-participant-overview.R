@@ -1,13 +1,13 @@
 #' Extract participant overview data from pre-course survey.
 #'
 #' @param data Pre-course survey data.
+#' @inheritParams get_course_metadata_field
 #'
-#' @return A tibble.
+#' @return A [tibble::tibble()].
 #' @export
 #'
 #' @examples
 #' survey <- get_precourse_survey("intro")
-#' names(survey)
 #' extract_participant_overview(survey, "intro")
 #'
 extract_participant_overview <- function(data, id) {
@@ -38,28 +38,7 @@ extract_participant_overview <- function(data, id) {
     dplyr::relocate(course_id, course_version, questions, responses, count)
 }
 
-#' @describeIn extract_precourse Extract and tidy up the pre-course feedback
-#'  data.
-#' @export
-extract_precourse_feedback <- function(data, course_id) {
-  data |>
-    sanitize_precourse() |>
-    dplyr::select(
-      course_version,
-      tidyselect::contains("feedback"),
-      describe_problems,
-      tidyselect::contains("course_expectations"),
-      tidyselect::contains("why_attend_course")
-    ) |>
-    tidyr::pivot_longer(
-      -course_version,
-      names_to = "questions",
-      values_to = "responses"
-    ) |>
-    dplyr::arrange(course_version, questions, responses) |>
-    join_original_column_names(id = course_id) |>
-    dplyr::relocate(course_version, questions, responses)
-}
+# Helpers -----------------------------------------------------------------
 
 anonymize_precourse <- function(data) {
   data |>
