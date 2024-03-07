@@ -63,6 +63,13 @@ list(
     pattern = map(course_ids)
   ),
 
+  # Feedback ----------------------------------------------------------------
+  tar_target(
+    name = precourse_feedback,
+    command = extract_precourse_feedback(precourse_surveys, course_ids),
+    pattern = map(course_ids)
+  ),
+
   # Introduction course -----------------------------------------------------
   tar_force(
     name = intro_feedback,
