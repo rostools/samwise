@@ -1,6 +1,4 @@
-# Import feedback survey data ---------------------------------------------
-
-#' Fetch the session and overall course feedback survey responses.
+#' Get the responses from the feedback survey.
 #'
 #' @inheritParams get_course_metadata_field
 #'
@@ -47,7 +45,7 @@ get_feedback_survey_google_sheet <- function(id = "general") {
     )
 }
 
-# Tidy up feedback data ---------------------------------------------------
+# Helpers -----------------------------------------------------------------
 
 add_course_version <- function(data, id) {
   id <- rlang::arg_match(id, c("general", list_course_ids()))
