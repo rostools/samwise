@@ -2,88 +2,117 @@
 
 #' Fetch the session and overall course feedback survey responses.
 #'
-#' @name fetch_feedback
-#' @rdname fetch_feedback
-#' @param survey_id Google Forms ID for the survey.
+#' @inheritParams get_course_metadata_field
 #'
-#' @return Data from survey, slightly tidied up.
+#' @return A [tibble::tibble].
 #'
 #' @examples
-#' fetch_feedback_intro()
-#' fetch_feedback_advanced()
 #'
-NULL
+#' get_feedback_survey("intro")
+#' get_feedback_survey("general")
+#'
+get_feedback_survey <- function(id = "general") {
+  # "general" is the newer, generic feedback survey.
+  id <- rlang::arg_match(id, c("general", list_course_ids()))
 
-#' @describeIn fetch_feedback Fetch the session feedback survey data for the **introductory** course.
-#' @export
-fetch_feedback_intro <- function(survey_id = Sys.getenv("INTRO_FEEDBACK_SURVEY_ID")) {
-  fetch_feedback_generic(survey_id = survey_id, course_id = "intro")
-}
-
-#' @describeIn fetch_feedback Fetch the session feedback survey data for the **intermediate** course.
-#' @export
-fetch_feedback_inter <- function(survey_id = Sys.getenv("INTERMEDIATE_FEEDBACK_SURVEY_ID")) {
-  fetch_feedback_generic(survey_id = survey_id, course_id = "inter")
-}
-
-#' @describeIn fetch_feedback Fetch the session feedback survey data for the **advanced** course.
-#' @export
-fetch_feedback_advanced <- function(survey_id = Sys.getenv("ADVANCED_FEEDBACK_SURVEY_ID")) {
-  fetch_feedback_generic(survey_id = survey_id, course_id = "adv")
-}
-
-#' @describeIn fetch_feedback Fetch the session feedback survey data for all
-#'   courses (from the updated single survey).
-#' @export
-fetch_feedback_general <- function(survey_id = Sys.getenv("GENERAL_FEEDBACK_SURVEY_ID")) {
-  fetch_feedback_generic(survey_id = survey_id, course_id = "general")
-}
-
-fetch_feedback_generic <- function(survey_id, course_id) {
-  survey_id %>%
-    fetch_feedback_sheet() %>%
-    convert_to_long() %>%
+  get_feedback_survey_google_sheet(id) %>%
+    convert_to_long(id) %>%
     drop_missing_responses() %>%
     remove_newlines("response") %>%
-    add_course_version(course_id) |>
+    add_course_version(id) |>
     dplyr::select(-timestamp)
 }
 
-fetch_feedback_sheet <- function(survey_id) {
+get_feedback_survey_google_sheet <- function(id = "general") {
+  id <- rlang::arg_match(id, c("general", list_course_ids()))
+
+  # Get the Google Sheet ID from the environment variable via `Sys.getenv()`
+  survey_id <- switch(id,
+    intro = "INTRO_FEEDBACK_SURVEY_ID",
+    inter = "INTERMEDIATE_FEEDBACK_SURVEY_ID",
+    adv = "ADVANCED_FEEDBACK_SURVEY_ID",
+    general = "GENERAL_FEEDBACK_SURVEY_ID"
+  )
+  survey_id <- Sys.getenv(survey_id)
+
+  if (survey_id == "") {
+    cli::cli_abort("{.fn Sys.genenv} can't find the Google Sheet ID, do you have an {.val .Renviron} set up with the ID?")
+  }
+
   googledrive::drive_get(id = survey_id) %>%
     googlesheets4::read_sheet(col_types = "c") %>%
-    dplyr::mutate(Timestamp = lubridate::mdy_hms(Timestamp),
-                  date = lubridate::as_date(Timestamp))
+    dplyr::mutate(
+      Timestamp = lubridate::mdy_hms(Timestamp),
+      date = lubridate::as_date(Timestamp)
+    )
 }
 
 # Tidy up feedback data ---------------------------------------------------
 
-add_course_version <- function(data, course_id) {
-  few_days_after_course <- lubridate::as_date(get_course_dates(course_id)) +
-    lubridate::days(3)
-  data %>%
-    dplyr::mutate(
-      course_version = assign_course_version_by_date(
+add_course_version <- function(data, id) {
+  id <- rlang::arg_match(id, c("general", list_course_ids()))
+
+  if (id == "general") {
+    data <- tibble::tibble(
+      course_id = list_course_ids(),
+      course_name = purrr::map_chr(course_id, ~ get_course_metadata_field(.x, "name"))
+    ) |>
+      dplyr::right_join(data, by = "course_name") |>
+      dplyr::mutate(course_version = purrr::map2_int(
         timestamp,
-        few_days_after_course
-      )
-    ) %>%
-    dplyr::relocate(course_version, tidyselect::everything())
+        course_id,
+        ~ assign_course_version_by_date(
+          .x,
+          # In case people submit a few days afterwards.
+          lubridate::as_date(get_course_dates(.y)) + lubridate::days(3)
+        )
+      ))
+  } else if (id %in% c("intro", "inter", "adv")) {
+    data <- data %>%
+      dplyr::mutate(
+        course_version = assign_course_version_by_date(
+          timestamp,
+          # In case people submit a few days afterwards.
+          lubridate::as_date(get_course_dates(id)) +
+            lubridate::days(3)
+        )
+      ) |>
+      dplyr::mutate(course_id = id)
+  }
+
+  data |>
+    dplyr::relocate(course_id, course_version)
 }
 
-convert_to_long <- function(data) {
+convert_to_long <- function(data, id) {
+  id <- rlang::arg_match(id, c("general", list_course_ids()))
+
+  if (id == "general") {
+    data <- data %>%
+      dplyr::rename(
+        course_name = "Which course is the feedback for?",
+        session_name = "Which session is the feedback for?",
+        timestamp = "Timestamp"
+      ) |>
+      tidyr::pivot_longer(
+        cols = -c(timestamp, date, course_name, session_name),
+        names_to = "question",
+        values_to = "response"
+      )
+  } else if (id %in% c("intro", "inter", "adv")) {
+    data <- data %>%
+      dplyr::rename(
+        day = "Which of the days is the feedback for?",
+        timestamp = "Timestamp"
+      ) |>
+      tidyr::pivot_longer(
+        cols = -c(timestamp, day, date),
+        names_to = "question",
+        values_to = "response"
+      )
+  }
+
   data %>%
-    dplyr::rename(
-      day = "Which of the days is the feedback for?",
-      timestamp = "Timestamp"
-    ) %>%
-    dplyr::mutate(id = ids::random_id(n = dplyr::n())) |>
-    # check_duplicate_timestamps() %>%
-    tidyr::pivot_longer(
-      cols = -c(timestamp, day, date, id),
-      names_to = "question",
-      values_to = "response"
-    ) %>%
     dplyr::mutate(question = stringr::str_remove_all(
       question,
       "\\.\\.\\.[0-9][0-9]?"
