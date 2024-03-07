@@ -34,7 +34,8 @@ extract_participant_overview <- function(data, id) {
     dplyr::arrange(course_version, questions, responses, count) |>
     join_original_column_names(id) |>
     tidyr::drop_na() |>
-    dplyr::relocate(course_version, questions, responses, count)
+    dplyr::mutate(course_id = id) |>
+    dplyr::relocate(course_id, course_version, questions, responses, count)
 }
 
 #' @describeIn extract_precourse Extract and tidy up the pre-course feedback
