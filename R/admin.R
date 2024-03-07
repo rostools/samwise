@@ -39,3 +39,10 @@ admin_create_planning_issue <- function(id) {
 
   return(invisible(gh_api_results))
 }
+
+planning_issue_sessions_table <- function(id) {
+  get_schedule_sessions(id) |>
+    dplyr::rename_with(stringr::str_to_sentence) |>
+    dplyr::mutate(Instructor = "") |>
+    knitr::kable() |>
+    as.character()

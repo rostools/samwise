@@ -23,14 +23,4 @@ get_schedule_sessions <- function(id) {
     dplyr::distinct(day, topic)
 }
 
-planning_issue_sessions_table <- function(course = list_course_metadata("repo")) {
-  course_repo <- rlang::arg_match(course, list_course_metadata("repo"))
-  sessions <- list_sessions(course_repo) |>
-    dplyr::rename_with(stringr::str_to_sentence) |>
-    dplyr::mutate(Instructor = "") |>
-    knitr::kable()
 
-  cli::cli_alert_info("Pasted output to clipboard!")
-  clipr::write_clip(sessions)
-  sessions
-}
