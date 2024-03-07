@@ -70,11 +70,25 @@ list(
     pattern = map(course_ids)
   ),
 
+  # Older, course specific feedback surveys
+  # TODO: This will probably need to be deleted after moving fully into the newer feedback survey.
+  tar_target(
+    name = feedback_survey_by_course,
+    command = get_feedback_survey(course_ids),
+    pattern = map(course_ids)
+  ),
+
+  # The newer, generic feedback survey
+  tar_target(
+    name = feedback_survey_general,
+    command = get_feedback_survey("general")
+  ),
+
   # Introduction course -----------------------------------------------------
   tar_force(
     name = intro_feedback,
     command = get_feedback_survey(course_ids),
-    pattern = map(course_ids)
+    pattern = map(course_ids),
     force = TRUE
   ),
   tar_target(
