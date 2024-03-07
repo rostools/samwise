@@ -1,13 +1,20 @@
 
 #' Post a Course Planning issue on the course repo.
 #'
-#' @param repo Either "r-cubed" or "r-cubed-intermediate"
-#' @param course_date The date of the first day of the course, as YYYY-MM-DD
+#' @inheritParams get_course_metadata_field
 #'
-#' @return NULL. Used only for the side effects of posting an issue.
+#' @return A GitHub API response. Used for the side effects of posting an issue.
 #' @export
 #'
-admin_create_planning_issue <- function(repo, course_date, org = "rostools") {
+admin_create_planning_issue <- function(id) {
+  id <- rlang::arg_match(id, list_course_ids())
+  repo <- get_course_repo(id)
+  course_date <- get_upcoming_course_dates(id)
+
+  if (length(course_date) == 0) {
+    cli::cli_abort("There are no upcoming dates for this course. Are you sure course {.val id} is the correct course and the metadata has been updated?")
+  }
+
   stamp_format <- lubridate::stamp_date("Mar. 1, 2021", quiet = TRUE)
   template_path <- fs::path_package("r3admin", "templates", "planning-issue.md")
   issue_description <- whisker::whisker.render(
@@ -25,7 +32,7 @@ admin_create_planning_issue <- function(repo, course_date, org = "rostools") {
   )
 
   gh_api_results <- ghclass::issue_create(
-    repo = paste0(org, "/", repo),
+    repo = paste0("rostools/", repo),
     title = paste0("Course planning and details - ", course_date),
     body = paste0(issue_description, collapse = "\n")
   )
