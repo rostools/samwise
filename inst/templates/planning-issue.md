@@ -21,6 +21,8 @@ Before the course, please review the CONTRIBUTING guide, Code of Conduct, and th
 
 ## To do before course
 
+Several of the below tasks (for the admin/lead instructor) can be done using the r3admin package.
+
 -   [ ] {{tasks_start_date}}: (Optional) Send an calendar invite to registered participants with link to pre-course tasks and website.
 -   [ ] {{instructors_precourse_meeting}}: Send a calendar invite to instructors/helpers for course location (with planning issue link), dinner locations, and post-course debrief.
     -   Include registered participants with link to pre-course tasks and website.
@@ -28,11 +30,10 @@ Before the course, please review the CONTRIBUTING guide, Code of Conduct, and th
     -   Go briefly over [Instructor](https://guides.rostools.org/instructors.html) and [Helper](https://guides.rostools.org/helpers.html) with new instructors.
     -   Mention about post-course debrief (described in the [Guides](https://github.com/github/rest-api-description) site).
     -   (For intro course) Have all instructors/helpers give their GitHub user names.
--   [ ] {{tasks_remind_date}}: Send a reminder to everyone to complete tasks. See `r3admin/vignettes/articles/`.
--   [ ] {{tasks_check_end_date}}: Check that all participants have completed pre-course material. See `r3admin/vignettes/articles/`.
--   [ ] {{tasks_prep_end_date}}: Get participants into groups (on GitHub too?) (\~3-4 people per group). See `r3admin/vignettes/articles/`.
--   [ ] {{tasks_prep_end_date}}: Assign instructors to groups. See `r3admin/vignettes/articles/`.
--   [ ] {{tasks_prep_end_date}}: Invite everyone to Discord channel. See `r3admin/vignettes/articles/`.
+-   [ ] {{tasks_remind_date}}: Send a reminder to everyone to complete tasks.
+-   [ ] {{tasks_check_end_date}}: Check that all participants have completed pre-course material.
+-   [ ] {{tasks_prep_end_date}}: Get participants into groups (\~3-4 people per group).
+-   [ ] {{tasks_prep_end_date}}: Assign instructors to groups.
 -   [ ] {{tasks_prep_end_date}}: Open up the Google Forms feedback survey
 
 ## To do during course
@@ -42,9 +43,9 @@ Before the course, please review the CONTRIBUTING guide, Code of Conduct, and th
 ## To do after course
 
 -   [ ] Close the Google Forms feedback survey
--   [ ] Update git tag (use [CalVer](https://calver.org/) `YYYY-0M-0D` style) and release it (`r3admin::create_course_tag()`)
--   [ ] Update course metadata in `r3admin/data-raw/`.
--   [ ] Update instructor/helper metadata in `r3admin/data-raw/`.
+-   [ ] Update git tag and release it (`r3admin::create_course_tag()`)
+-   [ ] Update course metadata in `r3admin/data/courses.yaml`
+-   [ ] Update instructor/helper metadata in `r3admin/data/courses.yaml` and `r3admin/data/people/`
 -   [ ] Update Zenodo DOI
 
 ## Other details
