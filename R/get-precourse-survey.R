@@ -3,7 +3,7 @@
 
 #' Get the (slightly cleaned) pre-course survey from Google Sheets.
 #'
-#' @param id The ID of the course, found by running [list_course_ids()].
+#' @inheritParams get_course_metadata_field
 #'
 #' @return A [tibble::tibble()].
 #' @export
