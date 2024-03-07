@@ -5,42 +5,42 @@
 #' @return A tibble.
 #' @export
 #'
-extract_participant_overview <- function(data) {
+#' @examples
+#' survey <- get_precourse_survey("intro")
+#' names(survey)
+#' extract_participant_overview(survey, "intro")
+#'
+extract_participant_overview <- function(data, id) {
+  id <- rlang::arg_match(id, list_course_ids())
   data |>
     anonymize_precourse() |>
     dplyr::select(
       course_version,
-      tidyselect::starts_with("perceived"),
-      tidyselect::starts_with("uses"),
-      gender_identity,
-      research_position,
-      city_work_in,
-      previously_used_stat_programs,
-      accept_conduct
+      tidyselect::contains("perceive"),
+      tidyselect::contains("currently_use"),
+      tidyselect::contains("gender"),
+      tidyselect::contains("position"),
+      tidyselect::contains("city"),
+      tidyselect::contains("programs"),
+      tidyselect::contains("code_of_conduct")
     ) |>
     tidyr::pivot_longer(
       -course_version,
       names_to = "questions",
       values_to = "responses"
     ) |>
+    remove_newlines("responses") |>
     dplyr::count(course_version, questions, responses, name = "count") |>
     dplyr::arrange(course_version, questions, responses, count) |>
-    join_original_column_names(column_renaming_df) %>%
-    dplyr::mutate(
-      questions = questions %>%
-        stringr::str_replace(
-          "^How .* perceive .*\\.\\.\\. \\[(.*)\\]$",
-          "Perceived skill/knowledge in \\1"
-        ) %>%
-        stringr::str_remove_all("\\[|\\]")
-    ) |>
+    join_original_column_names(id) |>
+    tidyr::drop_na() |>
     dplyr::relocate(course_version, questions, responses, count)
 }
 
 #' @describeIn extract_precourse Extract and tidy up the pre-course feedback
 #'  data.
 #' @export
-extract_precourse_feedback <- function(data, column_renaming_df) {
+extract_precourse_feedback <- function(data, course_id) {
   data |>
     sanitize_precourse() |>
     dplyr::select(
@@ -56,7 +56,7 @@ extract_precourse_feedback <- function(data, column_renaming_df) {
       values_to = "responses"
     ) |>
     dplyr::arrange(course_version, questions, responses) |>
-    join_original_column_names(column_renaming_df) |>
+    join_original_column_names(id = course_id) |>
     dplyr::relocate(course_version, questions, responses)
 }
 
@@ -70,19 +70,19 @@ anonymize_precourse <- function(data) {
     )
 }
 
-
-  data |>
-    dplyr::mutate(dplyr::across(
-      tidyselect::everything(),
-      ~ stringr::str_remove_all(.x, '\\n|\\"')
-    )) |>
-    dplyr::select(tidyselect::where(~ !all(is.na(.x))))
+get_precourse_survey_column_names <- function(id) {
+  column_names <- get_precourse_survey_google_sheet(id, n_max = 0)
+  names(column_names)
 }
 
-join_original_column_names <- function(data, column_renaming_df) {
-  data |>
-    dplyr::left_join(column_renaming_df, by = c("questions" = "new_column_names")) |>
-    tidyr::drop_na() |>
-    dplyr::select(-questions, questions = original_column_names) |>
-    dplyr::relocate(questions)
+join_original_column_names <- function(data, id) {
+  tibble::tibble(
+    original = get_precourse_survey_column_names(id),
+    converted = snakecase::to_snake_case(original)
+  ) |>
+    dplyr::right_join(
+      data,
+      by = c("converted" = "questions")
+    ) |>
+    dplyr::select(-converted, questions = original)
 }
