@@ -17,9 +17,7 @@ Instructors/helpers:
 
 Before the course, please review the CONTRIBUTING guide, Code of Conduct, and the Tips for instructors or helpers in the [Guides](https://guides.rostools.org/) website.
 
-| Session | Topic | Instructor |
-|---------|-------|------------|
-|         |       |            |
+{{session_schedule_table}}
 
 ## To do before course
 

@@ -27,7 +27,9 @@ admin_create_planning_issue <- function(id) {
       tasks_start_date = stamp_format(as.Date(course_date) - months(1)),
       tasks_remind_date = stamp_format(as.Date(course_date) - lubridate::days(8)),
       tasks_check_end_date = stamp_format(as.Date(course_date) - lubridate::days(5)),
-      tasks_prep_end_date = stamp_format(as.Date(course_date) - lubridate::days(3))
+      tasks_prep_end_date = stamp_format(as.Date(course_date) - lubridate::days(3)),
+      session_schedule_table = planning_issue_sessions_table(id) |>
+        stringr::str_c(collapse = "\n")
     )
   )
 
@@ -46,3 +48,4 @@ planning_issue_sessions_table <- function(id) {
     dplyr::mutate(Instructor = "") |>
     knitr::kable() |>
     as.character()
+}
