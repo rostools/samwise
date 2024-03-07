@@ -50,16 +50,24 @@ list(
     name = course_ids,
     command = list_course_ids()
   ),
+
+  # Pre-course survey -------------------------------------------------------
   tar_target(
     name = precourse_surveys,
     command = get_precourse_survey(course_ids),
+    pattern = map(course_ids)
+  ),
+  tar_target(
+    name = participant_overview,
+    command = extract_participant_overview(precourse_surveys, course_ids),
     pattern = map(course_ids)
   ),
 
   # Introduction course -----------------------------------------------------
   tar_force(
     name = intro_feedback,
-    command = fetch_feedback_intro(),
+    command = get_feedback_survey(course_ids),
+    pattern = map(course_ids)
     force = TRUE
   ),
   tar_target(
