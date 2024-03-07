@@ -12,6 +12,16 @@
 #' get_precourse_survey("intro")
 get_precourse_survey <- function(id) {
   id <- rlang::arg_match(id, list_course_ids())
+  id |>
+    get_precourse_survey_google_sheet() |>
+    tidy_precourse(get_course_dates(id)) |>
+    dplyr::mutate(course_id = id, .before = tidyselect::everything())
+}
+
+# Get survey from Google --------------------------------------------------
+
+get_precourse_survey_google_sheet <- function(id, n_max = Inf) {
+  id <- rlang::arg_match(id, list_course_ids())
 
   # Get the Google Sheet ID from the environment variable via `Sys.getenv()`
   survey_id <- switch(
@@ -25,15 +35,6 @@ get_precourse_survey <- function(id) {
     cli::cli_abort("{.fn Sys.genenv} can't find the Google Sheet ID, do you have an {.val .Renviron} set up with the ID?")
   }
 
-  survey_id |>
-    get_precourse_survey_google_sheet() |>
-    tidy_precourse(get_course_dates(id)) |>
-    dplyr::mutate(course_id = id, .before = tidyselect::everything())
-}
-
-# Get survey from Google --------------------------------------------------
-
-get_precourse_survey_google_sheet <- function(survey_id, n_max = Inf) {
   googledrive::drive_get(id = survey_id) |>
     googlesheets4::read_sheet(n_max = n_max)
 }
