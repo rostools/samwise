@@ -76,8 +76,7 @@ read_common <- function(file) {
 #' read_template_pkg_install("intro")
 read_template_pkg_install <- function(course_type = c("intro", "inter", "advanced")) {
   course_type <- rlang::arg_match(course_type)
-  course_install_fn <- switch(
-    course_type,
+  course_install_fn <- switch(course_type,
     intro = "install_packages_introduction()",
     inter = "install_packages_intermediate()",
     advanced = "install_packages_advanced()"
