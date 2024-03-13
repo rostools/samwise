@@ -8,16 +8,19 @@
 copy_common_file <- function(file) {
   file <- rlang::arg_match(file, fs::path_file(list_common_files()))
   common_path <- fs::path_package("r3admin", "common", file)
-  header_text <- glue::glue("# Automatically created by `r3admin::copy_common_file('{file}')` on {lubridate::today()}.")
+  header_text <- ""
+  if (file == "_variables.yml") {
+    header_text <- glue::glue("# Automatically created by `r3admin::copy_common_file('{file}')` on {lubridate::today()}.")
+  }
   if (rprojroot::is_rstudio_project$testfun[[1]](".")) {
     readr::write_lines(
       x = c(header_text, readr::read_lines(common_path)),
-      file = "_variables.yml"
+      file = file
     )
   } else {
     rlang::abort("You aren't in an R Project.")
   }
-  return(fs::path_abs("_variables.yml"))
+  return(usethis::proj_path(file))
 }
 
 #' List files in the common directory.
