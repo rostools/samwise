@@ -15,9 +15,7 @@ create-org-in-gh:
 create-upcoming-planning-issue: install-package
   #!/usr/bin/Rscript
   r3admin::admin_create_planning_issue(
-    repo = r3admin::get_upcoming_course() |>
-      r3admin::get_course_repo(),
-    course_date =
+    id = r3admin::get_upcoming_course()
   )
 
 
