@@ -20,5 +20,7 @@ Create a tag after finishing a course and release on GitHub/GitLab
 }
 \examples{
 
+\dontrun{
 # create_course_tag(get_course_dates()[1], "First version of the advanced course material for December 2022.")
+}
 }

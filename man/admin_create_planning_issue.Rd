@@ -4,15 +4,13 @@
 \alias{admin_create_planning_issue}
 \title{Post a Course Planning issue on the course repo.}
 \usage{
-admin_create_planning_issue(repo, course_date, org = "rostools")
+admin_create_planning_issue(id)
 }
 \arguments{
-\item{repo}{Either "r-cubed" or "r-cubed-intermediate"}
-
-\item{course_date}{The date of the first day of the course, as YYYY-MM-DD}
+\item{id}{The ID of the course, found by running \code{\link[=list_course_ids]{list_course_ids()}}.}
 }
 \value{
-NULL. Used only for the side effects of posting an issue.
+A GitHub API response. Used for the side effects of posting an issue.
 }
 \description{
 Post a Course Planning issue on the course repo.

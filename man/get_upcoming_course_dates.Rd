@@ -2,15 +2,18 @@
 % Please edit documentation in R/course-metadata.R
 \name{get_upcoming_course_dates}
 \alias{get_upcoming_course_dates}
-\title{Title}
+\title{Get the dates for the next course.}
 \usage{
-get_upcoming_course_dates(id = list_course_ids())
+get_upcoming_course_dates(id)
 }
 \arguments{
-\item{id}{}
+\item{id}{The ID of the course, found by running \code{\link[=list_course_ids]{list_course_ids()}}.}
+}
+\value{
+A character vector.
 }
 \description{
-Title
+Get the dates for the next course.
 }
 \examples{
 

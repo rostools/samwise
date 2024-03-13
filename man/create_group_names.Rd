@@ -17,5 +17,7 @@ From all cities globally, get the \href{https://what3words.com/}{what3words}
 coordinates to use as fun group names.
 }
 \examples{
+\dontrun{
 create_group_names(20)
+}
 }

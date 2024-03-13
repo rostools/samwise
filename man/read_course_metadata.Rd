@@ -2,7 +2,8 @@
 % Please edit documentation in R/course-metadata.R
 \name{read_course_metadata}
 \alias{read_course_metadata}
-\title{Title}
+\title{Read in the course's metadata (as a YAML) saved in the package's \verb{data/}
+folder.}
 \usage{
 read_course_metadata()
 }
@@ -10,11 +11,9 @@ read_course_metadata()
 A (heavily nested) list.
 }
 \description{
-Title
+Read in the course's metadata (as a YAML) saved in the package's \verb{data/}
+folder.
 }
 \examples{
-library(purrr)
-read_course_metadata() |>
-  purrr::map(names) |>
-  unique()
+read_course_metadata()
 }

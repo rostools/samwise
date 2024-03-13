@@ -14,7 +14,7 @@ assign_learners_to_groups(data, group_names, score_cutoff = 3)
 \item{score_cutoff}{Point at which to split persons into "low" vs "high" skill (completely arbitrary).}
 }
 \value{
-A data frame with team, name, and skill score.
+A \link[tibble:tibble]{tibble::tibble}.
 }
 \description{
 Assign learners into groups.

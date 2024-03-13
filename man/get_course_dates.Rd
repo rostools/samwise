@@ -4,10 +4,10 @@
 \alias{get_course_dates}
 \title{Metadata on the dates the courses have started on.}
 \usage{
-get_course_dates(id = list_course_ids())
+get_course_dates(id)
 }
 \arguments{
-\item{course_id}{ID for the course (found in the \code{courses.yaml} file).}
+\item{id}{The ID of the course, found by running \code{\link[=list_course_ids]{list_course_ids()}}.}
 }
 \value{
 Character vector of dates.
