@@ -3,7 +3,7 @@
 #'
 #' @inheritParams get_course_metadata_field
 #'
-#' @return
+#' @return A [tibble::tibble].
 #' @export
 #'
 #' @examples

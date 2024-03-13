@@ -11,7 +11,9 @@
 #'
 #' @examples
 #'
+#' \dontrun{
 #' # create_course_tag(get_course_dates()[1], "First version of the advanced course material for December 2022.")
+#' }
 create_course_tag <- function(start_date, message) {
   checkmate::assert_character(start_date)
   checkmate::assert_character(message)
@@ -56,7 +58,9 @@ create_course_tag <- function(start_date, message) {
 #' @noRd
 #'
 #' @examples
+#' \dontrun{
 #' fs::path_package("r3admin", "extdata", "_people.csv") %>% zen_creators_from_csv()
+#' }
 zen_creators_from_csv <- function(path) {
   # TODO: Need to update this.
   readr::read_csv(

@@ -6,6 +6,16 @@
 #'
 #' @return A tibble.
 #'
+#' @examples
+#'
+#' \dontrun{
+#' intro_feedback <- get_feedback_survey("intro")
+#' general_feedback <- get_feedback_survey("general")
+#'
+#' extract_feedback_quantitative(intro_feedback)
+#' extract_feedback_quantitative(general_feedback)
+#' }
+#'
 NULL
 
 #' @describeIn extract_feedback Extract and tidy up the quantitative responses
@@ -18,11 +28,8 @@ extract_feedback_quantitative <- function(data) {
       statement = stringr::str_remove(question, "Please .* course. ") %>%
         stringr::str_remove_all("\\[|\\]")
     ) %>%
-    dplyr::select(tidyselect::all_of(c(
-      "course_version", "date", "statement", "response"
-    ))) |>
-    dplyr::count(course_version, date, statement, response) |>
-    dplyr::arrange(course_version, date)
+    dplyr::count(course_id, course_version, date, response, statement) |>
+    dplyr::arrange(course_id, course_version, date)
 }
 
 #' @describeIn extract_feedback Extract and tidy up the overall comments

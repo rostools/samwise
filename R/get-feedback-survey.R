@@ -6,8 +6,10 @@
 #'
 #' @examples
 #'
+#' \dontrun{
 #' get_feedback_survey("intro")
 #' get_feedback_survey("general")
+#' }
 #'
 get_feedback_survey <- function(id = "general") {
   # "general" is the newer, generic feedback survey.

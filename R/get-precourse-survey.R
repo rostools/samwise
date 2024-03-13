@@ -5,11 +5,14 @@
 #'
 #' @inheritParams get_course_metadata_field
 #'
-#' @return A [tibble::tibble()].
+#' @return A [tibble::tibble].
 #' @export
 #'
 #' @examples
+#'
+#' \dontrun{
 #' get_precourse_survey("intro")
+#' }
 get_precourse_survey <- function(id) {
   id <- rlang::arg_match(id, list_course_ids())
   id |>

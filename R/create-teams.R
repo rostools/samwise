@@ -9,7 +9,9 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' create_group_names(20)
+#' }
 create_group_names <- function(number_groups) {
   if (Sys.getenv("WTW_API_KEY") == "") {
     cli::cli_abort("You need to add the WTW API key in the {.val .Renviron} file to use this function.")
@@ -102,7 +104,7 @@ group_names_as_strips_html <-
 #' @param group_names Character vector that has the names to group into.
 #' @param score_cutoff Point at which to split persons into "low" vs "high" skill (completely arbitrary).
 #'
-#' @return A data frame with team, name, and skill score.
+#' @return A [tibble::tibble].
 #' @export
 #'
 assign_learners_to_groups <- function(data, group_names, score_cutoff = 3) {

@@ -3,13 +3,15 @@
 #' @param data Pre-course survey data.
 #' @inheritParams get_course_metadata_field
 #'
-#' @return A [tibble::tibble()].
+#' @return A [tibble::tibble].
 #' @export
 #'
 #' @examples
+#'
+#' \dontrun{
 #' survey <- get_precourse_survey("intro")
 #' extract_participant_overview(survey, "intro")
-#'
+#' }
 extract_participant_overview <- function(data, id) {
   id <- rlang::arg_match(id, list_course_ids())
   data |>

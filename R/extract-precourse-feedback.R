@@ -3,14 +3,15 @@
 #'
 #' @inheritParams extract_participant_overview
 #'
-#' @return A [tibble::tibble()].
+#' @return A [tibble::tibble].
 #' @export
 #'
 #' @examples
 #'
+#' \dontrun{
 #' survey <- get_precourse_survey("intro")
 #' extract_precourse_feedback(survey, "intro")
-#'
+#' }
 extract_precourse_feedback <- function(data, id) {
   id <- rlang::arg_match(id, list_course_ids())
   data |>
