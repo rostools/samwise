@@ -51,18 +51,12 @@ tidy_precourse <- function(data, metadata_dates) {
       ~ purrr::map_chr(.x, as.character)
     )) |>
     dplyr::rename_with(snakecase::to_snake_case) |>
-    dplyr::rename(github_username = what_is_your_git_hub_user_name,
-                  email = email_address) |>
     dplyr::mutate(
       course_version = assign_course_version_by_date(timestamp, metadata_dates)
     ) |>
     dplyr::mutate(dplyr::across(
       tidyselect::contains("_perceive_your_skill_"),
       tidy_cols_skills
-    )) |>
-    dplyr::mutate(dplyr::across(
-      tidyselect::matches("^github_username$"),
-      ~ stringr::str_remove(.x, pattern = "\\@")
     ))
 }
 

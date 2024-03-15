@@ -111,7 +111,7 @@ assign_learners_to_groups <- function(data, group_names, score_cutoff = 3) {
   data %>%
     dplyr::select(
       full_name,
-      tidyselect::any_of("github_username"),
+      tidyselect::contains("github"),
       tidyselect::matches("^perceived")
     ) %>%
     dplyr::rowwise() %>%
@@ -124,7 +124,7 @@ assign_learners_to_groups <- function(data, group_names, score_cutoff = 3) {
     dplyr::select(
       team,
       full_name,
-      tidyselect::any_of("github_username"),
+      tidyselect::contains("github"),
       perceived_skill_score
     ) %>%
     dplyr::arrange(team, perceived_skill_score)
