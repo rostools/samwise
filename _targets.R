@@ -17,12 +17,8 @@ tar_option_set(
 tar_source()
 # source("other_functions.R") # Source other scripts as needed.
 
-# Set seed for random id generation
-set.seed(125643)
-
 # Replace the target list below with your own:
 list(
-
   # Upcoming (soonest) ------------------------------------------------------
   # tar_target(
   #   name = precourse_survey,
@@ -69,103 +65,28 @@ list(
     command = extract_precourse_feedback(precourse_surveys, course_ids),
     pattern = map(course_ids)
   ),
-
-  # Older, course specific feedback surveys
-  # TODO: This will probably need to be deleted after moving fully into the newer feedback survey.
   tar_target(
-    name = feedback_survey_by_course,
-    command = get_feedback_survey(course_ids),
-    pattern = map(course_ids)
-  ),
-
-  # The newer, generic feedback survey
-  tar_target(
-    name = feedback_survey_general,
-    command = get_feedback_survey("general")
-  ),
-
-  # Introduction course -----------------------------------------------------
-  tar_force(
-    name = intro_feedback,
-    command = get_feedback_survey(course_ids),
-    pattern = map(course_ids),
-    force = TRUE
+    name = course_ids_feedback,
+    command = c(list_course_ids(), "general")
   ),
   tar_target(
-    name = intro_feedback_quantitative,
-    command = intro_feedback %>%
-      extract_feedback_quantitative() %>%
-      save_as_csv("data/intro/feedback-quantitative.csv"),
-    format = "file"
+    name = feedback_survey,
+    command = get_feedback_survey(course_ids_feedback),
+    pattern = map(course_ids_feedback)
   ),
   tar_target(
-    name = intro_feedback_sessions,
-    command = intro_feedback %>%
-      extract_feedback_sessions() %>%
-      save_as_csv("data/intro/feedback-sessions.csv"),
-    format = "file"
+    name = feedback_survey_overall,
+    command = extract_feedback_overall(feedback_survey),
+    pattern = map(feedback_survey)
   ),
   tar_target(
-    name = intro_feedback_overall,
-    command = intro_feedback %>%
-      extract_feedback_overall() %>%
-      save_as_csv("data/intro/feedback-overall.csv"),
-    format = "file"
-  ),
-
-  # Intermediate course -----------------------------------------------------
-  tar_force(
-    name = inter_feedback,
-    command = fetch_feedback_inter(),
-    force = TRUE
+    name = feedback_survey_quantitative,
+    command = extract_feedback_quantitative(feedback_survey),
+    pattern = map(feedback_survey)
   ),
   tar_target(
-    name = inter_feedback_quantitative,
-    command = inter_feedback %>%
-      extract_feedback_quantitative() %>%
-      save_as_csv("data/inter/feedback-quantitative.csv"),
-    format = "file"
-  ),
-  tar_target(
-    name = inter_feedback_sessions,
-    command = inter_feedback %>%
-      extract_feedback_sessions() %>%
-      save_as_csv("data/inter/feedback-sessions.csv"),
-    format = "file"
-  ),
-  tar_target(
-    name = inter_feedback_overall,
-    command = inter_feedback %>%
-      extract_feedback_overall() %>%
-      save_as_csv("data/inter/feedback-overall.csv"),
-    format = "file"
-  ),
-
-  # Advanced course -----------------------------------------------------
-  tar_force(
-    name = advanced_feedback,
-    command = fetch_feedback_advanced(),
-    force = TRUE
-  ),
-  tar_target(
-    name = advanced_feedback_quantitative,
-    command = advanced_feedback %>%
-      extract_feedback_quantitative() %>%
-      save_as_csv("data/advanced/feedback-quantitative.csv"),
-    format = "file"
-  ),
-  tar_target(
-    name = advanced_feedback_sessions,
-    command = advanced_feedback %>%
-      extract_feedback_sessions() %>%
-      save_as_csv("data/advanced/feedback-sessions.csv"),
-    format = "file"
-  ),
-  tar_target(
-    name = advanced_feedback_overall,
-    command = advanced_feedback %>%
-      extract_feedback_overall() %>%
-      save_as_csv("data/advanced/feedback-overall.csv"),
-    format = "file"
+    name = feedback_survey_sessions,
+    command = extract_feedback_sessions(feedback_survey),
+    pattern = map(feedback_survey)
   )
 )
