@@ -7,13 +7,16 @@
 #' @return A tibble.
 #'
 #' @examples
-#'
 #' \dontrun{
 #' intro_feedback <- get_feedback_survey("intro")
 #' general_feedback <- get_feedback_survey("general")
 #'
 #' extract_feedback_quantitative(intro_feedback)
 #' extract_feedback_quantitative(general_feedback)
+#' extract_feedback_overall(intro_feedback)
+#' extract_feedback_overall(general_feedback)
+#' extract_feedback_sessions(intro_feedback)
+#' extract_feedback_sessions(general_feedback)
 #' }
 #'
 NULL
@@ -37,18 +40,20 @@ extract_feedback_quantitative <- function(data) {
 #' @export
 extract_feedback_overall <- function(data) {
   data %>%
+    dplyr::rename_with(~ stringr::str_replace(.x, "^day$", "session_name")) |>
+    dplyr::filter(
+      session_name %in% c("Day 3", "End of course"),
+      stringr::str_detect(
+        question,
+        ".*any other (general )?comments or feedback.*"
+      )
+    ) %>%
+    dplyr::select(-question, -session_name) %>%
     dplyr::filter(stringr::str_detect(
-      question,
-      ".*any other (feedback|comments) .*"
-    )) %>%
-    dplyr::rename(overall_comments = response) %>%
-    dplyr::select(-question, -id, -day) %>%
-    dplyr::filter(stringr::str_detect(
-      overall_comments,
+      response,
       "^No$",
       negate = TRUE
-    )) %>%
-    dplyr::arrange(course_version, date)
+    ))
 }
 
 #' @describeIn extract_feedback Extract and tidy up the session specific
@@ -56,26 +61,13 @@ extract_feedback_overall <- function(data) {
 #' @export
 extract_feedback_sessions <- function(data) {
   data %>%
+    dplyr::rename_with(~ stringr::str_replace(.x, "^day$", "session_name")) |>
     dplyr::filter(stringr::str_detect(question,
-      "Please complete these .*|any other (feedback|comments) .*",
-      negate = TRUE
+      "^(What could be improved|What worked well).*"
     )) %>%
     dplyr::mutate(question = question %>%
-      stringr::str_remove_all('What|session|\\"|\\?') %>%
+      stringr::str_remove_all("What|(this )?session|\"|\\?") %>%
       stringr::str_trim()) %>%
-    tidyr::separate(
-      col = question,
-      into = c("worked_or_improve", "session"),
-      sep = "for the"
-    ) %>%
-    dplyr::mutate(
-      worked_or_improve = snakecase::to_snake_case(worked_or_improve),
-      session = stringr::str_trim(session)
-    ) %>%
-    tidyr::pivot_wider(
-      names_from = worked_or_improve,
-      values_from = response
-    ) %>%
-    dplyr::select(-id) %>%
-    dplyr::arrange(course_version, date, day, session)
+    # Drop any duplicate comments (like repeats of "great!")
+    dplyr::distinct()
 }
