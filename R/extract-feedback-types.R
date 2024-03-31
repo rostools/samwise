@@ -31,8 +31,8 @@ extract_feedback_quantitative <- function(data) {
       statement = stringr::str_remove(question, "Please .* course. ") %>%
         stringr::str_remove_all("\\[|\\]")
     ) %>%
-    dplyr::count(course_id, course_version, date, response, statement) |>
-    dplyr::arrange(course_id, course_version, date)
+    dplyr::count(course_id, course_date, date, response, statement) |>
+    dplyr::arrange(course_id, course_date, date)
 }
 
 #' @describeIn extract_feedback Extract and tidy up the overall comments

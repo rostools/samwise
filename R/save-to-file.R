@@ -11,8 +11,9 @@
 #' library(dplyr)
 #' general_feedback <- get_feedback_survey("general")
 #' extract_feedback_quantitative(general_feedback)
-#' extract_feedback_sessions(general_feedback) |>
-#'   save_feedback_to_csv(c("course_id", "course_version", "date"))
+#' extract_feedback_sessions(general_feedback)
+#' |>
+#'   save_feedback_to_csv(c("course_id", "course_date", "date"))
 #'
 save_to_csv <- function(data, path) {
   fs::dir_create(fs::path_dir(path))

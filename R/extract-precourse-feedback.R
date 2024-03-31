@@ -17,7 +17,7 @@ extract_precourse_feedback <- function(data, id) {
   data |>
     anonymize_precourse() |>
     dplyr::select(
-      course_version,
+      course_date,
       tidyselect::matches("worked.*well"),
       tidyselect::matches("could.*improved"),
       tidyselect::matches("describe.*problems"),
@@ -25,15 +25,15 @@ extract_precourse_feedback <- function(data, id) {
       tidyselect::matches("why.*attend")
     ) |>
     tidyr::pivot_longer(
-      -course_version,
+      -course_date,
       names_to = "questions",
       values_to = "responses"
     ) |>
     remove_newlines("responses") |>
-    dplyr::arrange(course_version, questions, responses) |>
+    dplyr::arrange(course_date, questions, responses) |>
     join_original_column_names(id = id) |>
     tidyr::drop_na() |>
     dplyr::mutate(course_id = id) |>
-    dplyr::relocate(course_id, course_version, questions, responses)
+    dplyr::relocate(course_id, course_date, questions, responses)
 }
 

@@ -19,7 +19,7 @@ get_feedback_survey <- function(id = "general") {
     convert_to_long(id) %>%
     drop_missing_responses() %>%
     remove_newlines("response") %>%
-    add_course_version(id) |>
+    add_course_date(id) |>
     dplyr::select(-timestamp)
 }
 
@@ -49,7 +49,7 @@ get_feedback_survey_google_sheet <- function(id = "general") {
 
 # Helpers -----------------------------------------------------------------
 
-add_course_version <- function(data, id) {
+add_course_date <- function(data, id) {
   id <- rlang::arg_match(id, c("general", list_course_ids()))
 
   if (id == "general") {
@@ -58,10 +58,10 @@ add_course_version <- function(data, id) {
       course_name = purrr::map_chr(course_id, ~ get_course_metadata_field(.x, "name"))
     ) |>
       dplyr::right_join(data, by = "course_name") |>
-      dplyr::mutate(course_version = purrr::map2_int(
+      dplyr::mutate(course_date = purrr::map2_int(
         timestamp,
         course_id,
-        ~ assign_course_version_by_date(
+        ~ assign_course_date_by_date(
           .x,
           # In case people submit a few days afterwards.
           lubridate::as_date(get_course_dates(.y)) + lubridate::days(3)
@@ -70,7 +70,7 @@ add_course_version <- function(data, id) {
   } else if (id %in% c("intro", "inter", "adv")) {
     data <- data %>%
       dplyr::mutate(
-        course_version = assign_course_version_by_date(
+        course_date = assign_course_date_by_date(
           timestamp,
           # In case people submit a few days afterwards.
           lubridate::as_date(get_course_dates(id)) +
@@ -81,7 +81,7 @@ add_course_version <- function(data, id) {
   }
 
   data |>
-    dplyr::relocate(course_id, course_version)
+    dplyr::relocate(course_id, course_date)
 }
 
 convert_to_long <- function(data, id) {

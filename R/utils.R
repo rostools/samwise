@@ -10,27 +10,28 @@
 #' @return A logical vector.
 NULL
 
-#' Assign the version of the course that the survey response comes from.
+#' Assign the date of the course that the survey response comes from.
 #'
 #' @param date The date of the survey response.
 #'
-#' @return A numeric value.
+#' @return A character value.
 #' @keywords internal
 #'
 #' @examples
-#' assign_course_version_by_date(c("2020-06-20", "2019-06-10"), get_course_dates("intro"))
-assign_course_version_by_date <- function(date, metadata_dates) {
+#' assign_course_date_by_date(c("2020-06-20", "2019-06-10", "2021-06-10"),
+#'   get_course_dates("intro"))
+assign_course_date_by_date <- function(date, metadata_dates) {
   metadata_dates <- as.character(metadata_dates)
   dates_between_courses <- lubridate::interval(
     c("2018-01-01", metadata_dates),
     c(metadata_dates, as.character(lubridate::today() + lubridate::weeks(4)))
   )
-  course_version <- date %>%
+  course_date <- date %>%
     lubridate::as_date() %>%
     lubridate::ymd() %>%
-    purrr::map_int(~ head(which(.x %within% dates_between_courses), 1))
-  if (length(course_version) == 0) {
-    course_version <- NA_integer_
+    purrr::map_chr(~ metadata_dates[which(.x %within% dates_between_courses)])
+  if (length(course_date) == 0) {
+    course_date <- NA_integer_
   }
-  course_version
+  course_date
 }

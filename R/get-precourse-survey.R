@@ -52,7 +52,7 @@ tidy_precourse <- function(data, metadata_dates) {
     )) |>
     dplyr::rename_with(snakecase::to_snake_case) |>
     dplyr::mutate(
-      course_version = assign_course_version_by_date(timestamp, metadata_dates)
+      course_date = assign_course_date_by_date(timestamp, metadata_dates)
     ) |>
     dplyr::mutate(dplyr::across(
       tidyselect::contains("_perceive_your_skill_"),

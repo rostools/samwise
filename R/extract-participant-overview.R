@@ -17,7 +17,7 @@ extract_participant_overview <- function(data, id) {
   data |>
     anonymize_precourse() |>
     dplyr::select(
-      course_version,
+      course_date,
       tidyselect::contains("perceive"),
       tidyselect::contains("currently_use"),
       tidyselect::contains("gender"),
@@ -27,17 +27,17 @@ extract_participant_overview <- function(data, id) {
       tidyselect::contains("code_of_conduct")
     ) |>
     tidyr::pivot_longer(
-      -course_version,
+      -course_date,
       names_to = "questions",
       values_to = "responses"
     ) |>
     remove_newlines("responses") |>
-    dplyr::count(course_version, questions, responses, name = "count") |>
-    dplyr::arrange(course_version, questions, responses, count) |>
+    dplyr::count(course_date, questions, responses, name = "count") |>
+    dplyr::arrange(course_date, questions, responses, count) |>
     join_original_column_names(id) |>
     tidyr::drop_na() |>
     dplyr::mutate(course_id = id) |>
-    dplyr::relocate(course_id, course_version, questions, responses, count)
+    dplyr::relocate(course_id, course_date, questions, responses, count)
 }
 
 # Helpers -----------------------------------------------------------------
