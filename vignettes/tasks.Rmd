@@ -32,7 +32,7 @@ get that information from the precourse survey.
 ```{r}
 # TODO: How to get these authenticated? Run first and then build vignette?
 precourse <- get_precourse_survey(course_level) %>%
-  filter(course_version == max(course_version))
+  filter(course_date == max(course_date))
 ```
 
 ## Who didn't finish survey
