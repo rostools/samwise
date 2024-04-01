@@ -35,13 +35,16 @@ comments from the feedback survey data.
 
 }}
 \examples{
-
 \dontrun{
 intro_feedback <- get_feedback_survey("intro")
 general_feedback <- get_feedback_survey("general")
 
 extract_feedback_quantitative(intro_feedback)
 extract_feedback_quantitative(general_feedback)
+extract_feedback_overall(intro_feedback)
+extract_feedback_overall(general_feedback)
+extract_feedback_sessions(intro_feedback)
+extract_feedback_sessions(general_feedback)
 }
 
 }
