@@ -41,7 +41,6 @@ list(
   #   command = ,
   #   format = "file"
   # ),
-
   tar_target(
     name = course_ids,
     command = list_course_ids()
@@ -55,15 +54,15 @@ list(
   ),
   tar_target(
     name = participant_overview,
-    command = extract_participant_overview(precourse_surveys, course_ids),
-    pattern = map(course_ids)
+    command = extract_participant_overview(precourse_surveys),
+    pattern = map(precourse_surveys)
   ),
 
   # Feedback ----------------------------------------------------------------
   tar_target(
     name = precourse_feedback,
-    command = extract_precourse_feedback(precourse_surveys, course_ids),
-    pattern = map(course_ids)
+    command = extract_precourse_feedback(precourse_surveys),
+    pattern = map(precourse_surveys)
   ),
   tar_target(
     name = course_ids_feedback,

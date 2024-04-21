@@ -1,7 +1,6 @@
 #' Extract participant overview data from pre-course survey.
 #'
 #' @param data Pre-course survey data.
-#' @inheritParams get_course_metadata_field
 #'
 #' @return A [tibble::tibble].
 #' @export
@@ -12,11 +11,11 @@
 #' survey <- get_precourse_survey("intro")
 #' extract_participant_overview(survey, "intro")
 #' }
-extract_participant_overview <- function(data, id) {
-  id <- rlang::arg_match(id, list_course_ids())
+extract_participant_overview <- function(data) {
   data |>
     anonymize_precourse() |>
     dplyr::select(
+      course_id,
       course_date,
       tidyselect::contains("perceive"),
       tidyselect::contains("currently_use"),
@@ -27,16 +26,15 @@ extract_participant_overview <- function(data, id) {
       tidyselect::contains("code_of_conduct")
     ) |>
     tidyr::pivot_longer(
-      -course_date,
+      -c(course_id, course_date),
       names_to = "questions",
       values_to = "responses"
     ) |>
     remove_newlines("responses") |>
-    dplyr::count(course_date, questions, responses, name = "count") |>
+    dplyr::count(course_id, course_date, questions, responses, name = "count") |>
     dplyr::arrange(course_date, questions, responses, count) |>
-    join_original_column_names(id) |>
+    join_original_column_names(id = unique(data$course_id)) |>
     tidyr::drop_na() |>
-    dplyr::mutate(course_id = id) |>
     dplyr::relocate(course_id, course_date, questions, responses, count)
 }
 
