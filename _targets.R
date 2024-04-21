@@ -87,5 +87,41 @@ list(
     name = feedback_survey_sessions,
     command = extract_feedback_sessions(feedback_survey),
     pattern = map(feedback_survey)
+  ),
+
+  # Save to file -----------------------------------------------------------
+  tar_target(
+    name = combined_feedback,
+    command = list(
+      list(
+        data = feedback_survey_overall |>
+          dplyr::mutate(type = "feedback-overall"),
+        columns = c("course_id", "course_date", "type")
+      ),
+      list(
+        data = feedback_survey_quantitative |>
+          dplyr::mutate(type = "feedback-quantitative"),
+        columns = c("course_id", "course_date", "type")
+      ),
+      list(
+        data = feedback_survey_sessions |>
+          dplyr::mutate(type = "feedback-sessions"),
+        columns = c("course_id", "course_date", "type", "date")
+      ),
+      list(
+        data = precourse_feedback |>
+          dplyr::mutate(type = "feedback-precourse"),
+        columns = c("course_id", "course_date", "type")
+      )
+    )
+  ),
+  tar_target(
+    name = saved_feedback_sessions_paths,
+    command = combined_feedback |>
+      purrr::map(\(feedback) save_feedback_to_csv(feedback$data, feedback$columns)) |>
+      unlist(),
+    pattern = map(combined_feedback),
+    iteration = "list",
+    format = "file"
   )
 )

@@ -37,9 +37,11 @@ save_feedback_to_csv <- function(data, columns) {
     dplyr::ungroup() |>
     dplyr::select(data, path)
 
-  purrr::walk2(
+  purrr::map2_chr(
     data_to_save$data,
     fs::path_ext_set(data_to_save$path, "csv"),
     save_to_csv
-  )
+  ) |>
+    fs::path_rel(usethis::proj_path(".")) |>
+    as.character()
 }
