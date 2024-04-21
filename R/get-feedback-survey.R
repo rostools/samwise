@@ -58,7 +58,7 @@ add_course_date <- function(data, id) {
       course_name = purrr::map_chr(course_id, ~ get_course_metadata_field(.x, "name"))
     ) |>
       dplyr::right_join(data, by = "course_name") |>
-      dplyr::mutate(course_date = purrr::map2_int(
+      dplyr::mutate(course_date = purrr::map2_chr(
         timestamp,
         course_id,
         ~ assign_course_date_by_date(
@@ -81,6 +81,8 @@ add_course_date <- function(data, id) {
   }
 
   data |>
+    # Correct the course date from the assigning function.
+    dplyr::mutate(course_date = lubridate::as_date(course_date) - lubridate::days(3)) |>
     dplyr::relocate(course_id, course_date)
 }
 
