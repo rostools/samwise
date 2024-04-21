@@ -1,0 +1,23 @@
+questions,responses
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,"Become more organised in my research projects. Learn tools to aid data management, including more efficient data management. Lear Quarto."
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,"From the start of my work with R, I hope to be aware of how to set the project up in an easy and intuitive way, so that both myself and others can understand and use/share the code"
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,I had no prior experience with using R and reproducibility. Participated in the introduction course and gained a lot of new knowledge. Hope to expand my skills and tools.
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,I would like to be able to use R for data wrangling and analysis of my data in REDCAP with API token and CSV files etc.
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,"Improve my R skills, especially creating functions"
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,"Learn more advanced function of R, both regarding coding, project management and reproducibility. Learn to process data faster, more efficient and more ""tidy"". Hopefully advance further as a scientist and  as a natural extension of the introduction course."
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,Writing functions in R and better understanding how to better organize and document my code
+"In your opinion, what worked well?",Describing text and codes worked well.
+"In your opinion, what worked well?",Easy to follow
+"In your opinion, what worked well?",Including images and easy-to-copy Rcode made it quite easy to follow along. Links to the basic course was helpfull as well.
+"In your opinion, what worked well?",Interesting to use some packages and functions I haven't used before
+"In your opinion, what worked well?","The clear step by step instructions and the provided code. It is nice to have the task provided as a text you can do while reading along. However, it is very important that the ""check up"" outputs are provided to make sure everything went as supposed.Further, i love the simple look."
+"In your opinion, what worked well?",The explanations of the tasks and pre-course coding language
+"In your opinion, what worked well?",Very readable and understandable in simple terms.
+"In your opinion, what could be improved?",Having a task-list to keep track of the tasks that have been completed and what still needs to be done
+"In your opinion, what could be improved?","I dont know, but i had some trouble running the code from # Remove/tidy up left over files, maybe something wrong with file_delete and file_move in fs ?"
+"In your opinion, what could be improved?",None
+"In your opinion, what could be improved?",Not all what is written is seen in my R studio
+"In your opinion, what could be improved?",Not much.
+"In your opinion, what could be improved?","Not that much to be fair. Might consider shorten the amount of text, as it sometimes can be confusing with ""too much"" text information. Otherwise a small note or mark of which of the precourse task can be skipped if you participated in the recent R3 intro course. (e.g. ""if you have participated in R3 intro, you can go directly X.X and check setup)."
+"In your opinion, what could be improved?","The set up of the website was a bit confusing. I.e., sometimes linking to new pages, even though the same text was further down the page"
+Please describe the problems you've had.,Described beforeError: [ENOTEMPTY] Failed to move '/Users/christianthorup/Desktop/Andet/LearningR/LearnR3/data-raw/DataPaper' to '/Users/christianthorup/Desktop/Andet/LearningR/LearnR3/data-raw/mmash/DataPaper': directory not empty

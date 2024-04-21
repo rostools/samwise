@@ -1,0 +1,97 @@
+questions,responses
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,A systematic way to do projects in R and save it.
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,"At the end of this course, I hope I will be able to confidently create and make use of functions. Basically, just get a better workflow and grasp of R and how it can be used optimally for data cleaning and management"
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,Be better at functions and work in Markdown with Git
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,"Become more proefficient in writing code in R, especially using loops and functions"
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,"Better understand of R, Rstudio and Git and learning to use it more systematically in data analysis and management"
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,Functions baby! I just hope to expand my R knowledge and learn new ways to optimize my coding while keeping it reproducible.
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,Hopefully I will be more confident in using different tools to ensure proper reproducibility in my research
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,"How to do data science in a way that is more orderly and robust and a little less ""cowboy style"""
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,"I am expected to learn a better way to write reproducible codes, make and use efficient functions"
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,I expect to get greater knowledge on R language and reproducible data to use for my own reproducible analyses. I got a good insight and understanding of R and Git/GitHub connection at the intro course and therefore anticipate to get even more knowledge and understanding from the intermediate course. I am to start my own analyses soon and hopefully I can apply this knowledge when working with my data.
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,"I expect to learn how I can work with datasets; download, cleaning up and processing. And how this is done in a reproducible and open way."
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,"I expect to learn the tools of how to start analysing my data in R (which I will do over the summer). As I will be collaborating with others, it will be great to expand my knowledge in reproducibility, data tidying and sharing via Git."
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,I hope to gain basic skills in reproducible data management and data analysis for my research year project.
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,"I hope to learn to write more clear scripts, that are easier to get back to and understand"
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,"I learnt a lot from the introduction course, and I hope to be able to add on to the skills learned there. I am currently working with data analysis, and I hope to learn how to optimize my work."
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,"I would just like to continue on my R and reproducibility journey as I thought the first course was absolutely excellent, and I've been able to use a lot of the tools I learned from that course in my research. I don't think I have a specific goal in mind for what I'd like to learn."
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,I would like be more comfortable writing code in R and rely less on copy pasting old code that I know works.
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,"I would like to learn and pratice cleaning up my data. Using tidyverse. I often struggle with analyzing my results, what does my results show, and what can i conclude."
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,"Learn how to use functionals and not repeat my self a 1000 times in one script, learn better R-workflow and more efficient coding and learn why GitHub is so nice"
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,Managing and analyzing data using R
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,Store and share data within our research group in a proper manner. More systematic approach in my own research projects with working with data
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,"The basics of data analysis and how to be organized while doing it, so I can better take advantage of what R offers and garantee data reproducibility"
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,Tidying and storing datasets and documenting this in the most sensible way so that my process is reproducible. Also documenting my analysis-process.
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,"To be able to use more functions in R, besides basic R. To more effectively run codes. To be more structured. To save time on data management and analysis."
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,To be better at processing and cleaning data in R studio. To improve my R coding in general.
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,"To improve my skills in reproducible research in R, which I started learning in the beginner level course. I would like to conduct my analyses in a reproducible way."
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,"Tools to download, analyse and safe data."
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,Version control and unwrangling/tidying datasets in the easiest and most precise way
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,"data cleaning, managing and setting up data, tidyverse, dplyr"
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,make my coding etc. smarter
+"In your opinion, what worked well?","All of it, it was easy to follow and gave source for further reading if interested."
+"In your opinion, what worked well?","As I already participated in the introduction course, I used what I had learned to make minor alterations to the code in the setup of the project. This is to separate the introduction and intermediate course, and also practice what I have worked with before. This explains my project setup, as I called the project IntermediateR3 instead of LearnR3. With the intro-knowledge I could already follow the structure of setting up the project and connection to Git/GitHub."
+"In your opinion, what worked well?",Everything worked well for me
+"In your opinion, what worked well?",Great that you had an pre-course were you actually had to hand in a task or product. Great idea in order to 'start on the same page' so to speak.
+"In your opinion, what worked well?",I like how the pre-course tasks material is structured.
+"In your opinion, what worked well?","I like that it is structured, and the ""how to read the code"" is very helpful to understand what exactly are we commanding"
+"In your opinion, what worked well?","I really think it works well the overall structure, as we get an introduction to the code, then the actual code and the expected output"
+"In your opinion, what worked well?","I think it all worked well, I'm especially fond of the fact that there's really nothing left to confusion, as is so often the case in other courses where you're left to figure out for yourself."
+"In your opinion, what worked well?",I wasn't able to install the necessary package. May be a problem on my end. Will try to troubleshoot before the course
+"In your opinion, what worked well?",In general the structure and information regarding the precourse assignments.
+"In your opinion, what worked well?",Installing R
+"In your opinion, what worked well?",It was a really nice tutorial. It all worked and I learned something along the tutorial.
+"In your opinion, what worked well?",It was well structured and informative
+"In your opinion, what worked well?","It worked really well. I got a little lost in the Git setup and did way to many tasks compared to what was asked, but that might be me not reading the directions properly."
+"In your opinion, what worked well?",Nice to be sure all is installed and downloaded before. Nice information load.
+"In your opinion, what worked well?","No complaints, easy to read and follow along."
+"In your opinion, what worked well?",Task where you have to do the tings you just read about. I like that you show examples of everything - in this way you are sure that you did it right.
+"In your opinion, what worked well?",The codes
+"In your opinion, what worked well?","The descriptions are nice and thorough, ensuring that everyone can follow along, regardless of their level of skill going in"
+"In your opinion, what worked well?",The detailed descriptions.
+"In your opinion, what worked well?",The guided code
+"In your opinion, what worked well?",The material is very detailed and prepares you for the course as well as you find out what you need to read up on before hand
+"In your opinion, what worked well?","The step-by-step and elaborate description for each pre-course tasks (including ""it should now look like this, et cetera) is great for a ""beginner"" like me to ensure everything is right :)"
+"In your opinion, what worked well?",The survey is a good way to make sure that we did it
+"In your opinion, what worked well?",The tasks are super fine. It was for me very confusing that the preparation/website for the beginner course was visually such a like. I havent done that course and had to jump back and forth between the two sites during preparation but I find I hard to figure out which one of them I was during (hope it make sense)
+"In your opinion, what worked well?",The website guide is super well thought out and easy to navigate in. Good w the pre-course tasks so setup does not take time out of the course (+ the tasks gives you an idea of the course/programs you will use)
+"In your opinion, what worked well?",Very clear and nice to be able to read up on everything.
+"In your opinion, what worked well?",Very detailed and understandable description of the task
+"In your opinion, what worked well?",Very nice to be able to copy the code directly.. it would have taken huge amounts of time to write the code myself at the stage I am at right now and that would just be frustrating and demoralizing. I loved the step-wise guide to what was needed to be done and where the ressources were.
+"In your opinion, what worked well?",good to make sure that everyone is on the same level. have the right installations. nice that it wasn't hardcore statistic tasks
+"In your opinion, what could be improved?",A little bit hard to get an overview in the sections. But then again I did not take the beginner course and therefore were a little behind in the way of doing things.
+"In your opinion, what could be improved?",All in one document so you do not have to jump from one to another and back again
+"In your opinion, what could be improved?","As I have the LearnR3 project on my desktop from the first course, I couldn't just follow the pre-course tasks to setup the project folder. Maybe you could add, that if one had already participated in the introduction, they could either open that project and then download data for intermediate, or they should rename the project directory to something else."
+"In your opinion, what could be improved?",I do not have any suggestions
+"In your opinion, what could be improved?",I do not know.
+"In your opinion, what could be improved?",I don't have any improvement suggestions
+"In your opinion, what could be improved?",I found it a bit confusing with the references to previos course material although I get that it makes sense not to repeat it.
+"In your opinion, what could be improved?",I have no opinion yet.
+"In your opinion, what could be improved?","I lost the overview. I was not sure if i was doing it right through out the tasks. more clear, more simple."
+"In your opinion, what could be improved?","I sometimes got a little confused on how much should be read from the introductory course, but this was minor things. The red dots when running some of the functions also confused me at the beginning"
+"In your opinion, what could be improved?",Instructions to install Git
+"In your opinion, what could be improved?","It is a lot of jumping back and forth betweens different tabs and it is a little easy to lose sight of where you've come to. If there is any way to improve that, that would be really great."
+"In your opinion, what could be improved?",It's a lot of material and I currently have 7 tabs open that relates to the precourse work. It's a bit overwhelming
+"In your opinion, what could be improved?",Maybe some excercises we can do before the course on storing data and working with zip-files. I am not familiar with the way we have done this in the pre cpurse material so would be fun to be able to do a small excercise after we have followed your instuctions and downloaded the data for the course.
+"In your opinion, what could be improved?","Maybe some trouble shooting, if something goes wrong? And there is a small mistake download data section. In the last part of this section you show how our mmash.R script should look, but you have forgotten to comment out the # download.file(mmash_link, destfile = here(""data-raw/mmash-data.zip""))"
+"In your opinion, what could be improved?",NA
+"In your opinion, what could be improved?",NA
+"In your opinion, what could be improved?",No comments here :-)
+"In your opinion, what could be improved?","No complaints. I guess it would be easier, for me, if Luke came to my computer and installed the packages for me, but I will manage for now."
+"In your opinion, what could be improved?",Nothing
+"In your opinion, what could be improved?",Nothing
+"In your opinion, what could be improved?",Nothing
+"In your opinion, what could be improved?",Nothing I can think of.
+"In your opinion, what could be improved?",Nothing to comment on
+"In your opinion, what could be improved?","Nothing, it was really good."
+"In your opinion, what could be improved?","Nothing, very nice website."
+"In your opinion, what could be improved?",Nothing:)
+"In your opinion, what could be improved?",Se above.
+"In your opinion, what could be improved?","The only thing I noticed was that the reference to a reading section from the introductory course, did not always match in terms of section number (ex. reference to section 7.1 was actually section 5.1). Hope this makes sense. :)"
+"In your opinion, what could be improved?","its a bit messy, when you click on a link, you get to a new website, and need to go back, to continue. It would be better if a new one opened instead."
+Please describe the problems you've had.,"Couldn't download the mmash dataset from the physio-website (I tried several times). Download was too slow, so it timed out after 60 secs. The alternative link provided for when physio website was slow did not work for me"
+Please describe the problems you've had.,I could not install r3
+Please describe the problems you've had.,"I got error with the following: pak::pak(""rostools/r3""); r3::install_packages_intermediate(); r3::create_qmd_doc()"
+Please describe the problems you've had.,I had to restart R to make the r3::check_setup() to work
+Please describe the problems you've had.,"I know my r3::check_project_setup() doesn't look exactly as it should because even though I deleted the files I was meant to, somehow they were put into another folder named ""multilevel-monitoring-of-activity-and-sleep-in-healthy-people-1.0.0"". At that point though I didn't have time to do the whole thing again, and figured that at least all the files were contained in one spot and I could perhaps easily delete that later."
+Please describe the problems you've had.,"When running ""pak::pak(""rostools/r3"") it mostly seems to work until I get an error: ! error in pak subprocessCaused by error in `process_initialize(self, private, command, args, stdin, stdout, …`:! Native call to `processx_exec` failedType .Last.error to see the more details."

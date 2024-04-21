@@ -1,0 +1,46 @@
+session_name,question,response,course_name
+Day 2,worked well for the Data management and wrangling,"Good introduction of all the basics stuff, and good expertise in the more advance pipelines",NA
+Day 2,could be improved for the Data management and wrangling,Don't have anything on the top of my head,NA
+Day 2,worked well for the Creating reproducible documents,"Everything, started simple and then go more complicated. I feel very suited for using Markdown.",NA
+Day 2,could be improved for the Creating reproducible documents,I think the advanced exercise could be better described. More specific what and why we are doing?,NA
+Day 3,worked well for the Data visualization,learned lots about plottings,NA
+Day 3,could be improved for the Data visualization,nothing,NA
+Day 3,worked well for the Data visualization,Everything,NA
+Day 3,could be improved for the Data visualization,Nothing,NA
+Day 3,worked well for the Data visualization,code-along,NA
+Day 3,could be improved for the Data visualization,Worked well,NA
+Day 3,worked well for the Data visualization,everything,NA
+Day 3,worked well for the Data visualization,There was time to look into the figures.,NA
+Day 3,could be improved for the Data visualization,x,NA
+Day 3,worked well for the Data visualization,Code along and exercises,NA
+Day 3,worked well for the Data visualization,Data visualization with coding along was great!!!,NA
+Day 3,could be improved for the Data visualization,Learning how to changed name of columns e.g. diabetes yes no,NA
+Day 3,worked well for the Data visualization,Covered a lot of graphs and how and when to make them. I like how it was organized,NA
+Day 3,could be improved for the Data visualization,"I think we need more resources for how to customize graphs. Maybe an ""optional"" thing with a few key ways to modify graphs? Because otherwise I feel it is hard to convince people to move from something like Prism.",NA
+Day 3,worked well for the Data visualization,It provides with a great overall skill in data visualization.,NA
+Day 3,could be improved for the Data visualization,"Get to know how choose specific colors, fond and the design of figure",NA
+Day 3,worked well for the Data visualization,"Super cool. It was nice to see the feature, and the possibilities.",NA
+Day 3,could be improved for the Data visualization,It was just perfect. The pace and details were appropiate,NA
+Day 3,worked well for the Data visualization,very pretty graphs,NA
+Day 3,could be improved for the Data visualization,"it sometimes went a little fast and then the screen moved to the image, so we couldnt see the code",NA
+Day 3,worked well for the Data visualization,Individual assignments,NA
+Day 3,could be improved for the Data visualization,Maybe do a little less repitition - many of the graphs in the code along was very similar.,NA
+Day 3,worked well for the Data visualization,Hands-on was great! All of it was nice,NA
+Day 3,could be improved for the Data visualization,Nothing specific,NA
+Day 3,worked well for the Data visualization,Instructions were very clear and it was really nice to make the figures,NA
+Day 3,could be improved for the Data visualization,can't think of anything,NA
+Day 3,worked well for the Data visualization,Again I really like the code-along sections. It works very well.,NA
+Day 3,could be improved for the Data visualization,I do not have any feedback.,NA
+Day 3,worked well for the Data visualization,Code-along,NA
+Day 3,could be improved for the Data visualization,all good,NA
+Day 3,worked well for the Data visualization,Good to see all the examples of different data visualization in R. Coding along is good.,NA
+Day 3,worked well for the Data visualization,"Nice to try a lot of different plots, grams etc. with both discrete and continuous variables. Code-along sessions worked very well",NA
+Day 3,worked well for the Data visualization,That we were through so many different figure styles,NA
+Day 3,worked well for the Data visualization,The code along was super nice. Very excited to implement ggplot2 in my work.,NA
+Day 3,could be improved for the Data visualization,Nothing comes to mind.,NA
+Day 3,worked well for the Data visualization,"The instructor was good at saying what she typed, i.e. ""this is the package, this is the function in the package"" etc.",NA
+Day 3,could be improved for the Data visualization,can't come up with anything,NA
+Day 3,worked well for the Data visualization,Showing how to utilize the %>% together with geom_ . Working directly in the R markdown was also great,NA
+Day 3,could be improved for the Data visualization,"More a general thing; it could also be practical if some of the scripts did not work, and one would have to figure out why/how to fix it.",NA
+Day 3,worked well for the Data visualization,"As for the previous sessions and days, the code-along format works very well!",NA
+Day 3,could be improved for the Data visualization,"Perhaps a few practical examples of why it's better to use ggplot instead of base R plotting? And in general,  a short explanation of how and when different packages work together and when they don't?",NA

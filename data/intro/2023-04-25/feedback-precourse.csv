@@ -1,0 +1,127 @@
+questions,responses
+Why do you want to attend this course?,"As a new researcher, I appreciate the opportunity to get a basic introduction to R and RStudio, while I am learning to conduct research during my research year. In addition, I am excited to meet fellow researchers and get a deeper insight into the community"
+Why do you want to attend this course?,I am to work on UK Biobank data in R for my main studies during the PhD and thus need to know how to use R for the different analyses
+Why do you want to attend this course?,I don't have much experience with git and tidyverse and the whole approach to reproducibility appealed to me. This seems like a good course to learn “how to do R the right way” instead of me just messing around.
+Why do you want to attend this course?,"I need to work in R to conduct my research, and I wanted a proper introduction to the basics of the program."
+Why do you want to attend this course?,"I really want to be able to use R and be better at data-analysis, I am to use it in my PhD and right now I know nothing."
+Why do you want to attend this course?,I want to get better at R so I can use it to process my own sequencing (+other) data
+Why do you want to attend this course?,"I want to learn to use R in a structured and reprodusible way, in order to be better at doing statistical analyses and to be able to share research with collaborators."
+Why do you want to attend this course?,I want to see if I can use R as my preferred statistical program in my research career
+Why do you want to attend this course?,"I want to understand the black box I feel using R is now and after reading the introduction and I also very excited to get to know Git and understand GitHub (Before reading this I was not aware of the differences, but looks forward to have a great way to track changes)"
+Why do you want to attend this course?,I want to use R in dataanalysis in my phd project and i future research
+Why do you want to attend this course?,I work with Basic Science and this course will allow me to analyse my data in a proper and independent way
+Why do you want to attend this course?,I would like to learn to perform reproducible and sharable data analysis.
+Why do you want to attend this course?,To be able to write R code for my future statistical analyses
+Why do you want to attend this course?,To become better/more familiar in using R code. R will be used as statistical package when doing the data analyses for my PhD thesis.
+Why do you want to attend this course?,To become more familiar with R and R-studio
+Why do you want to attend this course?,To gain basic knowledge on R (and data analysis) for my PhD project
+Why do you want to attend this course?,To get a better understanding of how to use R for my own research
+Why do you want to attend this course?,To improve my R coding and research skills ahead of data management and analyses on my research year project.
+Why do you want to attend this course?,"To improve my methods of data preparation, analysis and reporting in a more reproducible way."
+Why do you want to attend this course?,"To learn R basics, specifically how to make sure my process and analyses are reproducible (and reversible, if I make mistakes). Also how to create tidy data from RedCAP data, if possible."
+Why do you want to attend this course?,To learn how to better use R to analyse my data
+Why do you want to attend this course?,To learn how to use R
+Why do you want to attend this course?,"To learn more about structuring projects, and hopefully learn some new tricks in R"
+Why do you want to attend this course?,"To optimise my data analysis, and giving me to tools to analyse larger data sets."
+Why do you want to attend this course?,"To recap how to use R (have not used for 3 years).To become more aware on how to use it in a smart and reproducible way, that is transparrent to my collaborators but also those looking at my work in the future.To feel more secure to engage in conversations about coding/repositories at my work place."
+Why do you want to attend this course?,"To strengthen my knowledge of using the R environment, smart solutions for automation processes and track record of scientific processes."
+Why do you want to attend this course?,To use r for my data
+Why do you want to attend this course?,what to learn git version control
+"In your opinion, what worked well?","A very nice, short and concise Pre-Course chapter. I loved the r3 package functions for installing all the needed packages in one go."
+"In your opinion, what worked well?",Everything was explained clearly
+"In your opinion, what worked well?",Great pre course intro - straight to the point
+"In your opinion, what worked well?",Great with an webpage based syllabus and task environment.
+"In your opinion, what worked well?",I had a lot of problems installing homebrew due to that my computer has MacOS Ventura and I needed to use another code to install homebrew in the terminal (that took quite a while to figure it out).
+"In your opinion, what worked well?","I haven't made considerable progress yet, and I believe it's too soon to make any remarks."
+"In your opinion, what worked well?",I liked the format of the html and how the sites were set up.
+"In your opinion, what worked well?","I really enjoyed reading the code of conduct, I think all courses should include that."
+"In your opinion, what worked well?",I think the R code for installing packages worked well.
+"In your opinion, what worked well?","I think the structure worked quite well, and the interactiveness"
+"In your opinion, what worked well?",It is nice to get a general introduction and make sure we all have installed the programs in order to not waste time.
+"In your opinion, what worked well?",It is structured and consise. Easy to follow up.
+"In your opinion, what worked well?",It was interactive in the way of guiding me through how to setup R.
+"In your opinion, what worked well?",It was very easy to follow and gave access to further knowledge if interested.
+"In your opinion, what worked well?","Super easy to understand, and well written. Nice to be guided through the setup."
+"In your opinion, what worked well?",The codes presented worked as they were supposed. It was nice with a video illustrating some of the things needed to be done in R.
+"In your opinion, what worked well?","The detailed run though of "" and setup was nice. I like the references with links to other sections in the pre-course section, so I could easily find the sections referred to without leaving the pre-course section."
+"In your opinion, what worked well?","The guides for installing packages, finding Git etc. worked well / were easy to follow. The amount of pre-course preparations are doable."
+"In your opinion, what worked well?",The introduction and the general
+"In your opinion, what worked well?","The introduction was very well described. I learned some and is even more excited for the course. It is great that we are on the same page when starting the course, and to feel prepared for the course."
+"In your opinion, what worked well?",The pre-course material was laid out in a well-organized and understable matter.
+"In your opinion, what worked well?",The step by step instructions and the codes written up clear so there arent any doubts of when to do something
+"In your opinion, what worked well?",The web-based introductory steps and short videos
+"In your opinion, what worked well?","Very well written text material, not too complicated codes. It is nice to feel prepared going into a course, and these pre-course tasks helped me prioritize preparation in-between a lot of other working tasks."
+"In your opinion, what worked well?",Well written and structured material.
+"In your opinion, what worked well?",Well written material that is easy to understand and easy to navigate online
+"In your opinion, what worked well?",all fine
+"In your opinion, what worked well?",the instructions for instaling git etc are super clear
+"In your opinion, what could be improved?","For me, it would be okay to introduce basic commands for practice."
+"In your opinion, what could be improved?","From my experience, troubleshooting in the package installation process could be helpful"
+"In your opinion, what could be improved?",I don't enjoy having to use your custom package to install packages (but I think I might not be the target). I also am curious why we are not creating an environment with renv::
+"In your opinion, what could be improved?","I got an error message that the r3 package did not exist. I use the newest R, and I could not solve this problem. This made it hard to figure out if I configured Git correct. Also, I have no ""Git"" tab in my R Studio - also unable to find out why"
+"In your opinion, what could be improved?","I had some issues with some command in the installation of r3 from rostools and had to use alternative commands to make it work. The pak::pkg_install command did not work, so I used: install_github(""rostools/r3"") instead, but were unable to update 12 of the packages"
+"In your opinion, what could be improved?",I think all was good
+"In your opinion, what could be improved?","I think there could be a much more thorough explanation as to how to install Homebrew and Git - I've never used the terminal, and I suspect a lot of other people haven't either, so this really took me longer than it should have. Also if it hadn't been for ChatGPT I think I'd still be in the weeds."
+"In your opinion, what could be improved?",It could be better if everything was in a sequence so there isnt links to follow and then go back and forth
+"In your opinion, what could be improved?","It is quite text heavy. Also, eventhough I followed the given instructions, my Rstudio could not perform the commands. Some setups on my laptop had to be altered, which chatGTP helped me with. Then it worked fine :-)"
+"In your opinion, what could be improved?","It was a bit confusing having to jump between diffent sections in the pre-course material. Maybe it would be preferable, if all the precourse material came in one gathered document or at one contineous webpage."
+"In your opinion, what could be improved?","Maybe I overlooked, but I never saw a statement about how to install R or make sure that you had the latest version. There was now sound on the videos, what that intended? If so, please state that the video does not include sound."
+"In your opinion, what could be improved?","Maybe highlight the sections that we need to read beforehand - yes it says it in the pre-course task, but you can quickly end up reading something you are not suppose to"
+"In your opinion, what could be improved?",Maybe screenshots of the procedure of accessing  your Github account via r could be helpful for those who have no previous experience with R.
+"In your opinion, what could be improved?",My experience so far has not been good because I encountered difficulties running some of the codes. It would be great if we could receive assistance before starting the course to ensure the successful installation of the libraries.
+"In your opinion, what could be improved?",No comments
+"In your opinion, what could be improved?",No current idea.
+"In your opinion, what could be improved?",Nothing :)
+"In your opinion, what could be improved?",Nothing as of now
+"In your opinion, what could be improved?",Nothing comes to my mind. Great work.
+"In your opinion, what could be improved?","Nothing, it was a very nice introduction"
+"In your opinion, what could be improved?",Somehow I missed the requirement of pre-course responsibility and found about in the last email. Maybe the info about the prerequirements and deadline could be highlighted more.
+"In your opinion, what could be improved?","The code of conduct, although commendable, is a litte long winded and could perhaps be a little less verbose."
+"In your opinion, what could be improved?","The orientation on the website(s) was a bit confusing. Specifically when you were clicking links that went between these two main sites with very similar layout:https://r-cubed-intro.rostools.org/preamble/pre-course.htmlandhttps://guides.rostools.org/pre-course.htmlI don't have a good way to fix this...Further, you might profit from adding the following:1. screenshots/video guide to the installation process of each program in Windows (I don't know about MacOS and Linux). I was asked during installation, what text editor i should use as the default, with some text explaining that i probably shouldn't choose the one already selected (vim). 2. A general remark along the lines of ""if the code provide in the introduction doesn't work in R studio , restart the session and try again""3. As students/course attendants report issues, if possible add the most common issues and their solution in the instructionsThe link to Rtools for windows (https://guides.rostools.org/pre-course.html#installation-instructions) led me only to a website where i could get version 4.3, which doesn't work with the rest. It has been changed now it seems, so no worries."
+"In your opinion, what could be improved?","The survey should be open earlier, couldn't fill it out when doing pre-course tasks early on."
+"In your opinion, what could be improved?",There is a lot of different links when you read through the sites and even new ones when you follow some of them. Maybe there could be some check-boxes or something for you to see if you have done what is expected and to keep track of where you are when you get back to the main pre-course site. Also everything in the sessions that we are not expected to have a look at before the course start can maybe be locked and then opened after the pre-course task deadline.Just some ideas :-)
+"In your opinion, what could be improved?",i might tell you after the course - right now nothing props into my mind
+"In your opinion, what could be improved?",no cooments to make
+"In your opinion, what could be improved?","the many links and some in a different webpage made it difficult to track where I was in the progress, and if I had done all the steps...There were no sound on the short videos.More short videos or screen dumps is very helpfull.The part about install Git was difficult in windows and difficult to understand where to write the different commands."
+Please describe the problems you've had.,"After running the code ""r3::install_packages_introduction()"" I got an error as follows: Error in loadNamespace(i, c(lib.loc, .libPaths()), versionCheck = vI[[i]]) :   navnerum ‘rlang’ 1.0.6 er indlæst, men >= 1.1.0 er krævet.Similarly, after running the script ""r3::setup_git_config()"" and ""r3::check_setup()"" I got the following error: Error in loadNamespace(i, c(lib.loc, .libPaths()), versionCheck = vI[[i]]) :   navnerum ‘rlang’ 1.0.6 er indlæst, men >= 1.1.0 er krævet"
+Please describe the problems you've had.,"As mentioned before, I could not get the pak::pkg_install command to work, but I have solved the issue myself by using the install_github(""rostools/r3"") command"
+Please describe the problems you've had.,I could not do the pak-command.
+Please describe the problems you've had.,"I get several 'warning messages' in my R console. They are not errors and I am able to run the codes but the warning is there and I don't know what to do with it.Warning message:In normalizePath(path.expand(path), winslash, mustWork) :  path[1]=""//regsj.intern/homedir$/m/mamala"": Adgang nægtetDo I have a wrong setup of RStudio?"
+Please describe the problems you've had.,"I had accedently installed Rtools 4.3 insted of 4.2, but i incounted the problem and soved it."
+Please describe the problems you've had.,"I had trouble installing the r3 tool, but a colleague helped me to do so through the devtools. Hope that is ok."
+Please describe the problems you've had.,I wasn't able to install pak package
+Please describe the problems you've had.,"Installing homebrew, not intuitive to connect to Github."
+Please describe the problems you've had.,"Installing this r3::install_packages_introduction(). It was solved by creating a new session.I have trouble following the instructions for setting up git with Rstudio. I installed it following the instructions, and Rstudios recognizes it as you can see from the ""setup"" code line earlier in the surveyThe following line leads to error (i can enter my name and email just fine)>  r3::setup_git_config()Error in libgit2::git_config_set_string :   failed to rename lockfile to 'U:\/.gitconfig': Adgang nægtet.I think it is because git has placed the file called "".gitconfig"" in my personal AU-folder on the U: drive of aarhus university. I could imagine some sort of security in AU blocking the attempt to access it? I don't know what consequences this has for the function.If possible, i would like help with moving that file to a folder on the C: drive of my computer instead."
+Please describe the problems you've had.,"It was just the aforenmentioned problems with installation of Homebrew and Git, but I worked it out."
+Please describe the problems you've had.,"One or two of the packages included in tidy verse wouldn't install, but none of the ones that are stated were going to use."
+Please describe the problems you've had.,"R could not find the r3 package. I tried restarting the session, searching for the package etc., but did not work."
+Please describe the problems you've had.,"When using:  pak::pkg_install(""rostools/r3"", upgrade = TRUE)It gave me an error and said ""Bad GitHub credentials, make sure that your GitHub token is valid"". However, I managed to use the following code and install r3.install_github(""DeveloperName/PackageName"")githubinstall::gh_install_packages(""rostools/r3"")I therefore do not need a video call for help and managed to complete the pre-course tasks."
+Please describe the problems you've had.,my git hub
+What do you expect to learn and what would you like to be able to do with what you've learned?,"Basic R commandsUtilize R for in paired, non paired and repeated data analysis relevant for my PhD study"
+What do you expect to learn and what would you like to be able to do with what you've learned?,"Basic tasks, and to translate this knowledge to my own research."
+What do you expect to learn and what would you like to be able to do with what you've learned?,"Data analysis, create publishing-adequate graphs"
+What do you expect to learn and what would you like to be able to do with what you've learned?,Have a better foundation for using R and be more aware of what I can use it for and how
+What do you expect to learn and what would you like to be able to do with what you've learned?,"How to use R, including understanding the many different options of use."
+What do you expect to learn and what would you like to be able to do with what you've learned?,"I already have some basic knowledge, but I'd like to further expand my toolbox. I especially would like help with wrangling and visualization of data in interesting ways."
+What do you expect to learn and what would you like to be able to do with what you've learned?,"I expect to be more confident working in R, enabling me to start my on coding and statistical analyses for my projects."
+What do you expect to learn and what would you like to be able to do with what you've learned?,"I expect to become familiar with the fundamentals of R, including data cleaning and visualisation."
+What do you expect to learn and what would you like to be able to do with what you've learned?,I expect to become more familiar with git and tidyverse and want to implement them in my current workflow. You also speak highly of markdown so I hope to see it in a new light.
+What do you expect to learn and what would you like to be able to do with what you've learned?,I expect to learn basic R coding and version control that I can use for my phd data and other research projects.
+What do you expect to learn and what would you like to be able to do with what you've learned?,"I expect to learn how to start doing statistical analysis of data from human experimental studies in metabolism using R, and to get strategies for figuring out how to do it.I also expect to learn to do so in a manner that is transparent, ie that i can go back 1-2 years after and see what i did and why"
+What do you expect to learn and what would you like to be able to do with what you've learned?,"I expect to learn how to use R, RStudio and RMarkdown/Quarto to achieve the goals mentioned in the previous question."
+What do you expect to learn and what would you like to be able to do with what you've learned?,I expect to learn more about R and the use ind statistical analysis. I expect to be able to work with R independently after this course.
+What do you expect to learn and what would you like to be able to do with what you've learned?,I expect to learn to make scripts that can be used by other users to reproduce my analysis with the same data.
+What do you expect to learn and what would you like to be able to do with what you've learned?,"I expect to learn where to find and how to use different packages and code to conduct my analyses. Further, I hope that using the version control can help me better organise my scripts and analyses"
+What do you expect to learn and what would you like to be able to do with what you've learned?,"I hope to get more knowledge about Git, and hopefully use it in the future for projects"
+What do you expect to learn and what would you like to be able to do with what you've learned?,I hope to get the fundamental understanding of R so that I can find and use the code I need specific for my research questions.
+What do you expect to learn and what would you like to be able to do with what you've learned?,"I hope to learn basic R commands and get an understanding of how it works, while being able to make reproducible research."
+What do you expect to learn and what would you like to be able to do with what you've learned?,"Learn about R basics, open science and reproducibility in research to be able to apply what I learned while conducting my own research"
+What do you expect to learn and what would you like to be able to do with what you've learned?,Same as above.
+What do you expect to learn and what would you like to be able to do with what you've learned?,To be able to perform the basic statistical test and visualization of data
+What do you expect to learn and what would you like to be able to do with what you've learned?,To be familiar with basic/tidy R coding and be able to visualize my data by quality figures.
+What do you expect to learn and what would you like to be able to do with what you've learned?,To do basic statistical tasks in R.Learn how to make reproducible data analysis workflows.
+What do you expect to learn and what would you like to be able to do with what you've learned?,To give me an in-depth basic foundation of coding with r. My goal is from this week is to analyse simple datasets (like qPCR analysis).
+What do you expect to learn and what would you like to be able to do with what you've learned?,To handle my data in a reproducible way. Learning how to tidy it and form pipelines I can reuse when I get more data sets
+What do you expect to learn and what would you like to be able to do with what you've learned?,Understanding how R works and be able to set up at project proberly
+What do you expect to learn and what would you like to be able to do with what you've learned?,basic statistics and creating figures
+What do you expect to learn and what would you like to be able to do with what you've learned?,use and write code for analysing the data in reproducible way

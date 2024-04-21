@@ -1,0 +1,117 @@
+session_name,question,response,course_name
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals","Technical problems, but teaching was fine",NA
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals",More time,NA
+Day 2,worked well for the Processing and joining datasets for cleaning,Worked well,NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,More time,NA
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",code alongs,NA
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals",If first introducing the session and then perform the exercise,NA
+Day 2,worked well for the Processing and joining datasets for cleaning,code alongs,NA
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals","In general, just a really nice course day. I learned so much!",NA
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals","I could use a shorten overview of what we have done. Like 1) Make a function to import data, 2) make a function that import multiple files, 3) import datasets, 4) make a function that extract user_id, 5) join dataset....",NA
+Day 2,worked well for the Processing and joining datasets for cleaning,"In general, just a really nice course day. I learned so much!",NA
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",web material,NA
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals","presentation by instructor, more structure and slower pace",NA
+Day 2,worked well for the Processing and joining datasets for cleaning,most,NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,no idea,NA
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",intersting topic,NA
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals","very difficult, hard to keep a proper pace to be able to code along. Not sure I totally understand it yet",NA
+Day 2,worked well for the Processing and joining datasets for cleaning,"Clear presented, time enough to code along",NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,Maybe just start the day with spending 10 min to repeat what we learned yesterday,NA
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",That we wrote several functions,NA
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals","More excersises where you need to ""think"" more and solve a question that is not only repetation",NA
+Day 2,worked well for the Processing and joining datasets for cleaning,That I got a good introduction to the reduce function,NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,Maybe an exercise were you have to think about which join you should make,NA
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",Great with emphasis on not moving functions to functions.R before we were sure everything worked.,NA
+Day 2,worked well for the Processing and joining datasets for cleaning,Good to show an illustration of the joining concepts.,NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,Things felt a little rushed at the end.,NA
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",it was fine,NA
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals","please, just add more details on the sessions into the program as I felt little lost in exercises. Further, please try to use standard English and be more clear as it was little hard to understand the aim or what is required to perform the tasks.",NA
+Day 2,worked well for the Processing and joining datasets for cleaning,It was fine,NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,"As mentioned earlier: please, just add more details on the sessions into the program as I felt little lost in exercises. Further, please try to use standard English and be more clear as it was little hard to understand the aim or what is required to perform the tasks.",NA
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",The topic was useful,NA
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals","It was hard to follow. There was a lot of going back and forth between programs and there if you fell behind it was difficult to catch up. So better structure and slower, please:)",NA
+Day 2,worked well for the Processing and joining datasets for cleaning,Good structure and pace.,NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,nothing,NA
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",I think the explanation of map was spot on. Never really understood how it worked before.,NA
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals",Was good.,NA
+Day 2,worked well for the Processing and joining datasets for cleaning,Getting an overview of the entire workflow and deleting a lot from the lesson.rmd file,NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,Maybe a recap at the end of the day of the two days.,NA
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",That it was a next step from the previous day continuing with the import of data,NA
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals","Online, there was a good description of the difference between loops and map, but the presentation of it was not very clear",NA
+Day 2,worked well for the Processing and joining datasets for cleaning,Excercise 10.3 was a fun challenge and regex a new thing to me.,NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,For me the spring cleaning and importing data again went too fast,NA
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",Repeating making functions! Really git it into your fingers.,NA
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals",Perfect!,NA
+Day 2,worked well for the Processing and joining datasets for cleaning,Showing examples for when something is not as it is supposed to be and how to fix it.,NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,Going a little more into why we separate the Rmd and script file,NA
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals","Packages for managing data. In general, it is not the methods as much as it is seeing how a project can be set up.",NA
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals",The speed. Less time on how to code (as much of it is just repeating code just written) and more git and project setup.,NA
+Day 2,worked well for the Processing and joining datasets for cleaning,"Again, the packages that ease coding and gives short-cuts.",NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,The answer is the same. Less basic about coding and more on how to project manage in R.,NA
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",The time where we work alone with exercises.,NA
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals",I would like to also practise creating functions with more data analysis related issues and not just importing - in order to apply it more to my own projects.,NA
+Day 2,worked well for the Processing and joining datasets for cleaning,Really nice to learn to joing all files to one and also the fact that some of the files needed summary stats before joining.,NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,Not specifically for this session but I forgot to add to day 1 that it would be nice to see how to import multiple csv files to project folder (and not just from the link)..,NA
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",Session worked well. Even more examples would have been nice before starting eith the exercises though.,NA
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals",See above.,NA
+Day 2,worked well for the Processing and joining datasets for cleaning,Clear explanations of concepts.,NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,"Some tools used (eg. regex) feels rather advanced (I could probably not apply it on my own data without help). Nice to have the concept explained, but is there a simpler way of doing the task solved by the regex that could have been applied?",NA
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals","The introduction to functionals was really good and also the exercises, where we had to try it out.",NA
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals",More time could have been spent on introduction to the tidyverse operators. Also the code-alongs went a little too fast in this section.,NA
+Day 2,worked well for the Processing and joining datasets for cleaning,The text on the website and the presentation The part with erasing everything in the lesson document and cleaning up was also very good.,NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,A bit more introduction in the code-along on the overall purpose.,NA
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals","organized well, easy to follow",NA
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals","I would like to suggest to reduce the similar practice, I feel it is not very necessary to use same method work on different datasets.",NA
+Day 2,worked well for the Processing and joining datasets for cleaning,"organized well, clear and understandable",NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,"same issue, I suggest to reduce same practice or reduce time.",NA
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals","The outline of the material was great, learned a good bit of useful workflow",NA
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals","It was really really slow - a lot of repetition of the same exercises, which in general is useful, but in my opinion was quite elongated this time - an exercise that was 'assigned' 15 min extended to 45 min and then additional 30 min to go through it on the screen, and then after lunch repeat some of it again",NA
+Day 2,worked well for the Processing and joining datasets for cleaning,"Same as above, really good material, easily understandable and useful",NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,"Again, could increase the pace a bit, as its easy to loose focus throughout the sessions",NA
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals","Good explanations, getting help fast when needed",NA
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals","Sometimes it was quite fast, I lost track what of what we are doing",NA
+Day 2,worked well for the Processing and joining datasets for cleaning,"Good explanations, getting help fast when needed",NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,It was good,NA
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",using map to see import multiple files and to get introduced to functionals,NA
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals",nothing,NA
+Day 2,worked well for the Processing and joining datasets for cleaning,good to learn about joining and also putting it in functions,NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,"It helps seeing the overall workflow but perhaps more words on why its done like that, why deleting everything  and  using mmash and not lesson",NA
+Day 3,worked well for the Quickly re-arranging data with pivots,Nice explanation,NA
+Day 3,could be improved for the Quickly re-arranging data with pivots,do a couple of excercises as assigments (to proactice mostly),NA
+Day 3,worked well for the Quickly re-arranging data with pivots,It was fine,NA
+Day 3,could be improved for the Quickly re-arranging data with pivots,similar comment like for day 1 and day 2,NA
+Day 3,worked well for the Quickly re-arranging data with pivots,presentation about what next is very good in providing perspective how this fits in the data analysis workflow in a real life situation,NA
+Day 3,could be improved for the Quickly re-arranging data with pivots,explanation of the last part of exercise 11.7 is a bit unclear.,NA
+Day 3,worked well for the Quickly re-arranging data with pivots,The description of what pivots does,NA
+Day 3,could be improved for the Quickly re-arranging data with pivots,Perhaps some additional exercises with pivots to further understand the concept.,NA
+Day 3,worked well for the Quickly re-arranging data with pivots,Good with pictures on the webpage so I could see difference between longer and wider.,NA
+Day 3,could be improved for the Quickly re-arranging data with pivots,It could be good to have another example of two datasets where pivot longer and wider could be used that we have to type out ourself.,NA
+Day 3,worked well for the Quickly re-arranging data with pivots,online material,NA
+Day 3,could be improved for the Quickly re-arranging data with pivots,session go-through,NA
+Day 3,worked well for the Quickly re-arranging data with pivots,Fun session,NA
+Day 3,could be improved for the Quickly re-arranging data with pivots,Even more tricks for R markdown - but that is maybe outside the course scope,NA
+Day 3,worked well for the Quickly re-arranging data with pivots,Good session and exercises.,NA
+Day 3,could be improved for the Quickly re-arranging data with pivots,I bit more optional exercises.,NA
+Day 3,worked well for the Quickly re-arranging data with pivots,"All of it, essentially",NA
+Day 3,could be improved for the Quickly re-arranging data with pivots,"Would be nice if you could find out and explain why ""-29"" shows up in the day-column - or at least inform participants that it could happen so they don't get confused.Explain why ungroup() isn't necessary when using group_by() in the functions here.",NA
+Day 3,worked well for the Quickly re-arranging data with pivots,Nice with the example illustrations and explanations!,NA
+Day 3,could be improved for the Quickly re-arranging data with pivots,"Perhaps a bit more elaboration on the ""workflow"" of pivoting when summarizing and creating tables.",NA
+Day 3,worked well for the Quickly re-arranging data with pivots,"Good online instructions, teachers help and explanations",NA
+Day 3,could be improved for the Quickly re-arranging data with pivots,It was good,NA
+Day 3,worked well for the Quickly re-arranging data with pivots,The exercise was find.Good to see that you can use both pivot-longer and wider in one code.,NA
+Day 3,could be improved for the Quickly re-arranging data with pivots,There could perhaps have been more examples,NA
+Day 3,worked well for the Quickly re-arranging data with pivots,"Fine, I'm used to doing it with reshape, but this is easier",NA
+Day 3,could be improved for the Quickly re-arranging data with pivots,Ot was fine,NA
+Day 3,worked well for the Quickly re-arranging data with pivots,Learning data structure-stuff and the speed.,NA
+Day 3,could be improved for the Quickly re-arranging data with pivots,"Not much, I liked the pace.",NA
+Day 3,worked well for the Quickly re-arranging data with pivots,Repeating what we learned is great,NA
+Day 3,could be improved for the Quickly re-arranging data with pivots,more exercises,NA
+Day 3,worked well for the Quickly re-arranging data with pivots,Everything!! it was a really great and applicable session,NA
+Day 3,could be improved for the Quickly re-arranging data with pivots,nothing really - day 3 was very good!! Thanks so much :),NA
+Day 3,worked well for the Quickly re-arranging data with pivots,Everything was fine,NA
+Day 3,worked well for the Quickly re-arranging data with pivots,Code alongs are just amazing,NA
+Day 3,could be improved for the Quickly re-arranging data with pivots,It works perfect,NA
+Day 3,worked well for the Quickly re-arranging data with pivots,Very useful,NA
+Day 3,could be improved for the Quickly re-arranging data with pivots,"If possible standig up and looking at audience is very powerful when presenting (I know you also have to type, but maybe mixing it a bit?)",NA
+Day 3,worked well for the Quickly re-arranging data with pivots,Easy to follow,NA
+Day 3,could be improved for the Quickly re-arranging data with pivots,Nothing,NA

@@ -1,0 +1,114 @@
+questions,responses
+Why do you want to attend this course?,1. To build on my knowledge and experience of using R more reproducibly. 2. This course appears to be practical and interactive.3. I hope to meet other researchers in my area of interest and learn from them.
+Why do you want to attend this course?,Because I lack a basic understanding of how R works and what it can do. I can work in R but I definitely do not exploit the full potential of R. My basic R training have been in base R so I lack experience with using tidyverse (though all my colleagues work in tidyverse).
+Why do you want to attend this course?,Because i'm gonna use R in my research project.
+Why do you want to attend this course?,"I have a working knowledge on coding in general, but i am lacking consistent methodologies. I lack basic knowledge on the anatomy of R as well as some basic coding knowhow."
+Why do you want to attend this course?,"I have never done any programming, and just recently started learning R. I'm going to do large epidemiological studies, so I want to get a good start on programming. Others have recommended the course."
+Why do you want to attend this course?,"I started as a PhD student with little to none knowledge about programming and data analysis of large data sets. Working as a researcher i think it is important, especially in epidemiology, to know and understand quantitative data analysis. Furthermore, i like the concept of R compared to other options as it is largely community based, free to use and enhance  reproducible research.I want to attend this course to learn more about R, programming in R, basic concepts and antimanagement as well as reproducible research as version control. I see it as a huge opportunity with hands-on learning and exercises."
+Why do you want to attend this course?,I started my PhD 4 months ago and I need to learn how to use R in order to collaborate with another team and perform data analyses on large data sets
+Why do you want to attend this course?,"I want to learn R, but after reading some of the introduction texts, I get interested in Git/GitHub and the possibilities to learn how to use it too. I have previously downloaded some files from GitHub, but the structure of it and working within it was a mystery."
+Why do you want to attend this course?,I want to make sure my work practices in R are up to par and learn to use Git
+Why do you want to attend this course?,"I want to start using R for data management, analysis and visualisation in my research. Many of my collaborators do so and would like to be able to follow along and contribute to that part of our work."
+Why do you want to attend this course?,I want to upskill myself with Basic R programing for advanced data analytics and future job opportunities
+Why do you want to attend this course?,I want to use R for my upcoming research projects
+Why do you want to attend this course?,Im in the start of my PhD-study and have worked as a medical doctor for the previous 6 years. Im at a beginner level with data management and use of statistical programs (including R).
+Why do you want to attend this course?,Improving my R skills
+Why do you want to attend this course?,"Learn about using R and data analysis in general - in a reproducible, structured and educational manner based on my very basic level"
+Why do you want to attend this course?,"This course provides insights on data processing in R in a reproducible manner. I am beginner to R, and to coding in general and I would like to gain more knowledge on the ways I can better streamline data analysis with my bioinformatician colleague."
+Why do you want to attend this course?,To advance my skills in R and develop better habits in coding for reproducibility
+Why do you want to attend this course?,To get confidential with R and learn how to use it.
+Why do you want to attend this course?,To improve my skills with R and make my workflows better
+Why do you want to attend this course?,"To learn basic skills in order to perform reproducible research and become familiar with R, Git and GitHub. In addition, the course was recommended to me by a colleague."
+Why do you want to attend this course?,To learn how to use R
+Why do you want to attend this course?,To learn more about R and version control
+Why do you want to attend this course?,"To learn to perform reproducible science, as well as cover my basics in R, as this is where I do most of my data analysis"
+Why do you want to attend this course?,"To move from using Stata to R, and to strengthen the reproducibility (and transparency) of my work."
+Why do you want to attend this course?,Want to be able to perform data analysis in R. Especially working with large datasets.
+Why do you want to attend this course?,i want to learn new data analysis with R
+Why do you want to attend this course?,to improve my overall coding skills
+"In your opinion, what worked well?",Clear descriptions. Good to have pictures/videos.
+"In your opinion, what worked well?","Honestly, all of it. I feel prepared, and I did not encounter any problems with the material."
+"In your opinion, what worked well?",I really like this setup. It's easy to navigate and clearly described
+"In your opinion, what worked well?","I think its a really great idea to make people prepare their programme, so this doesn't take time."
+"In your opinion, what worked well?","I think the pre-course task material is pretty good. I have had a single cell genomics course previously, during which we used half of the time to update packages and solve computer issues. I think it is a smart way to get everyone to be on the same page."
+"In your opinion, what worked well?","It is very nice and thorough developed material. Good with examples of commands and screen shots of windows with explanations.However, it was a little bit difficult to navigate what to do first/next, especially when diving into downloads, installations and initial commands-running."
+"In your opinion, what worked well?",It was very easy to follow the instructions - even for one totally new to this part of research.
+"In your opinion, what worked well?",It was very easy to follow the steps and guides. The videos was a nice touch.
+"In your opinion, what worked well?","It was very well described and the instructions was easy to follow as a beginner. It works well that installation of the programs are already in place before the course, so that there won't be spend unnecessary time on this on the course."
+"In your opinion, what worked well?",It works nice that we download all the right versions and everything is setup before the course.
+"In your opinion, what worked well?",It's nice to know that everyone will come prepared. Everything has been setup in a very neat and tidy way.
+"In your opinion, what worked well?",Precise and concise. Was very reader friendly. Enjoyed it!
+"In your opinion, what worked well?",The format of the course materials is very nice and easy to navigate.
+"In your opinion, what worked well?",The instructions very straightforward.
+"In your opinion, what worked well?",The language is easy to understand. Videos were good.
+"In your opinion, what worked well?","The pre-course material is easy to read, easy to follow, and easy to understand or work through. It is not too advanced to make meaning and relevance. I was able to do the assignments without significant difficulties."
+"In your opinion, what worked well?","The pre-course tasks were very easy to follow, and the order of the tasks was logical."
+"In your opinion, what worked well?",The precourse tasks were easy to follow and understand
+"In your opinion, what worked well?",To be guided in loading all up to date versions of R and R Studio and the required tools.
+"In your opinion, what worked well?",To be sure R is ready to use when the course starts
+"In your opinion, what worked well?",Very good instructions on setting up R and github.
+"In your opinion, what worked well?","Very well structured,  easy to follow instructions, clear introduction to the course"
+"In your opinion, what worked well?","Yes, the structure, the videos, the nice overview/layout and examples"
+"In your opinion, what worked well?","everything is simple and clear, thank you"
+"In your opinion, what worked well?","happygitwithr was a very useful site and helped me set up git and connect to github. but some steps were still confusing, so I am hoping during the course the whole workflow will make more sense."
+"In your opinion, what worked well?","step by step, easy to understand and do"
+"In your opinion, what worked well?","well organized, easy to perform"
+"In your opinion, what could be improved?","1) I think that you might improve the above mentioned navigation difficulties by dedicated and separated, platform-specific workarounds (one for Mac, one for Windows, one for Linux, etc).2) Apropos email communications: I suggest that you should highlight in the first email that a) the pre-course tasks takes several hours to complete and b) the possible need for timely contact to IT department regarding download and installation of programs."
+"In your opinion, what could be improved?","As I did not encounter any problems, I do not have any suggestions for improvement. As mentioned, I feel throughly prepared for the course, and it was a very pleasant and easy way to go about it."
+"In your opinion, what could be improved?",Have the instruction for reading parts 6.1 to 6.3 after the instruction of configuring Git
+"In your opinion, what could be improved?",I do not have any suggestions here (yet). might be easier to come with suggestions for improvement of pre-course tasks after the course.
+"In your opinion, what could be improved?",I don't know
+"In your opinion, what could be improved?",I had trouble with RStudio loading old versions even though I downloaded the new one. Maybe a comment about deleting old versions before installing e.g. Rtools could have helped.
+"In your opinion, what could be improved?",I was content
+"In your opinion, what could be improved?","I watched a ""code along"" introduction on youtube which took 20-30 min. Afterwards a read the precourse material again, and it made much more sense to me the second time. Maybe it is possible to incorporate something like that."
+"In your opinion, what could be improved?",Maybe a bit confusing with all the links. Sometimes difficult to remember which section you were at.
+"In your opinion, what could be improved?",Maybe some videos with explainations with audio.
+"In your opinion, what could be improved?","My observation trying to learn programming and data analysis is that even as a beginner you require so much background knowledge to be able to follow even the simplest videos or instructions. Even though the material is easy to follow, there are always several links one has to click to read, to understand certain concepts and in those links, you find even more links for further reading. This makes it sometimes challenging to follow one specific task or material to its end and get back to exactly where you were and why you ended up on some page. A general beginner's guide could be provided for us beginners to study before starting with the pre-course material."
+"In your opinion, what could be improved?",None
+"In your opinion, what could be improved?",Not applicable.
+"In your opinion, what could be improved?",Nothing
+"In your opinion, what could be improved?",Nothing
+"In your opinion, what could be improved?",Nothing so far
+"In your opinion, what could be improved?","One thing I think is not great, is that the r3 help package cannot be dowloaded by the ""install.package(""r3"") command . It said that this package didn't work with my R-version."
+"In your opinion, what could be improved?",So far so good
+"In your opinion, what could be improved?",Some aspects were a bit jumpy in the sequence of doing things. Not a dealbreaker though
+"In your opinion, what could be improved?","The output of the codes I was asked to run was different and much longer than the examples in the material, which confused me a bit. This could be handled by stating that it may look different (if that is the case)."
+"In your opinion, what could be improved?","The part of installing R, Rstudio, ect.: A note on whether you just have to choose the recommended options in the installation guide."
+"In your opinion, what could be improved?",The pre-course survey should be available earlier.
+"In your opinion, what could be improved?",eventually small exercices
+"In your opinion, what could be improved?",everything is fine
+"In your opinion, what could be improved?",no
+"In your opinion, what could be improved?",none
+"In your opinion, what could be improved?",none
+Please describe the problems you've had.,"> install.packages(""pak"")Installing package into ‘C:/Users/SriramThoppeRajendra/AppData/Local/R/win-library/4.3’(as ‘lib’ is unspecified)trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.3/pak_0.7.1.zip'Content type 'application/zip' length 8623820 bytes (8.2 MB)downloaded 8.2 MB> install.packages(""tidyverse"")Installing package into ‘C:/Users/SriramThoppeRajendra/AppData/Local/R/win-library/4.3’(as ‘lib’ is unspecified)trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.3/tidyverse_2.0.0.zip'Content type 'application/zip' length 430820 bytes (420 KB)downloaded 420 KB"
+Please describe the problems you've had.,"I had trouble configuring the R-tools with my R-studio version. It was hard to get great information on how to configure this correctly. The R-environment was confusing to me, and it wasn't easy to configure with github."
+Please describe the problems you've had.,I had trouble running Rtools - probably because R loaded the old version.
+Please describe the problems you've had.,"The Git tab did not show up in my R studios, but I manage by making a new project"
+Please describe the problems you've had.,"some problems in navigating order of downloads and tasks, especially with Git"
+What do you expect to learn and what would you like to be able to do with what you've learned?,A better understanding of working with R and tools for my data analysis i R
+What do you expect to learn and what would you like to be able to do with what you've learned?,How to use R to be able to use it for the statistical analysis in my ph.d.
+What do you expect to learn and what would you like to be able to do with what you've learned?,I expect an introduction to R so that i can begin my journey in the world of data management and analysis.
+What do you expect to learn and what would you like to be able to do with what you've learned?,I expect to learn about reproducibility and best practices that I can incorporate into my daily workflow
+What do you expect to learn and what would you like to be able to do with what you've learned?,I expect to learn good practices for reproducible science and I want to make higher quality scripts and instructions for future users
+What do you expect to learn and what would you like to be able to do with what you've learned?,"I expect to learn how to use basic R functionalities and how to use Git. As I come towards finalizing my Ph.D. project, a GitHub repository of the code used in the study should be deposited. As such, this course is of great importance for my project and future work."
+What do you expect to learn and what would you like to be able to do with what you've learned?,"I expect to learn the basics of R, and learn how best to use it."
+What do you expect to learn and what would you like to be able to do with what you've learned?,"I expect to learn to use Git, as well as a better understanding of working with tidyverse. Following the course I would like to be able to use what I learned when generating new data analysis workflows during my PhD, where I am going to do various kinds of data analysis in R."
+What do you expect to learn and what would you like to be able to do with what you've learned?,I expect to learn what R is and how it works. Furthermore I hope to find out how I can include into my research.
+What do you expect to learn and what would you like to be able to do with what you've learned?,"I general learn more about the basics and how to use reproducibility in practice as well as basic insights to the programs used in the course. I aim to use this, when analyzing my own research results."
+What do you expect to learn and what would you like to be able to do with what you've learned?,"I hope to learn some ""good manners"" in programming and data analysis, and coding with R and other cool stuff."
+What do you expect to learn and what would you like to be able to do with what you've learned?,"I learned R by watching online videos, reading articles, and finally attending some introductory courses. I used the knowledge in analyzing RNA-seq data, but I would not be able to replicate or reproduce the results. I hope this course will help me consolidate my knowledge of R and the field of data analysis in biomedical research."
+What do you expect to learn and what would you like to be able to do with what you've learned?,"I want to improve my R-skills and get a basic understanding of how R works, so I can fix any issues that I might run into. I want to be able to mainly work independently on my analyses now and in my future carrier where I do not necessarily have R ""experts"" as colleagues."
+What do you expect to learn and what would you like to be able to do with what you've learned?,I would like to be able to use R for data analyses and gain better skills in reproducible research
+What do you expect to learn and what would you like to be able to do with what you've learned?,"I would like to learn more about R in general and how to use it, as it will help me to see new possibilities and projects in my current and future research environment. I hope to learn basic programming and data management in RStudio, and understand how to use different function in R.Having tried R in a small scale on fictive projects, i would like to learn how to use Scripts and Markdown to make my research more clear.I hope to learn basic illustration and graphs, and to become better at handling large amounts of data in a more suitable way. I hope to learn tips on better version control as my documents tends to accumulate with many numbers."
+What do you expect to learn and what would you like to be able to do with what you've learned?,"I would like to learn the basic syntax used in R, and how to find and use the basic packages for data analysis and visualisation."
+What do you expect to learn and what would you like to be able to do with what you've learned?,Independently perform simple data analysis and later self-learn more complex aspects
+What do you expect to learn and what would you like to be able to do with what you've learned?,"Introduction to R as well as version control and reproducible research, and then implement that in my research projects"
+What do you expect to learn and what would you like to be able to do with what you've learned?,Learn to use R for my data analysis and learn the basics. Be able to use what I have learned on my own data.
+What do you expect to learn and what would you like to be able to do with what you've learned?,"Overall, to manage and analyse data more effectively and with strengthened reproducibility."
+What do you expect to learn and what would you like to be able to do with what you've learned?,"To be able to fulfill my PhD project, and continue using data analysis further on (as an MD)"
+What do you expect to learn and what would you like to be able to do with what you've learned?,"To gain insight in reproducible research and basic introduction to the use of R targeted to beginners.Also looking forward to the use of Github and ""version control"". The skills will be very useful since im doing a clinical trial with 200 patients and will have a large dataset."
+What do you expect to learn and what would you like to be able to do with what you've learned?,To have proper R etiquette and to make my code version controlled and easier to manage
+What do you expect to learn and what would you like to be able to do with what you've learned?,To learn how to consistent repreducible workflows with R - a better knowledge on how to write more smooth code and have a foundation to use R for more complex analysis.
+What do you expect to learn and what would you like to be able to do with what you've learned?,learn and understand how to use R for data analyses
+What do you expect to learn and what would you like to be able to do with what you've learned?,the next scientific project will already be fully analyzed with R
+What do you expect to learn and what would you like to be able to do with what you've learned?,to learn more about version control and get better at setting git up for individual projects so I can keep a better track of changes/progress which would facilitate collaborative work. I would like to be able to apply them directly into my own research and data analysis

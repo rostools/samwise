@@ -1,0 +1,78 @@
+session_name,question,response,course_name
+Day 2,worked well for the Processing and joining datasets for cleaning,learned important ways to sort data,NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,"good lesson, was pretty clear",NA
+Day 2,worked well for the Processing and joining datasets for cleaning,Logical order and progression,NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,Nothing,NA
+Day 2,worked well for the Processing and joining datasets for cleaning,All of it,NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,nothing,NA
+Day 2,worked well for the Processing and joining datasets for cleaning,nice tools that can be used also for my own data,NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,was a bit too slow...a lot of waiting time....,NA
+Day 2,worked well for the Processing and joining datasets for cleaning,"code along, recap",NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,maybe a little too fast ;),NA
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",_,NA
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals",_,NA
+Day 2,worked well for the Processing and joining datasets for cleaning,code working without problem. Satisfying to see everything coming together.,NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,It worked well,NA
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",already answered,NA
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals",already answered,NA
+Day 2,worked well for the Processing and joining datasets for cleaning,the examples,NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,nothing :),NA
+Day 2,worked well for the Processing and joining datasets for cleaning,"almost everything worked, great",NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,course is alreday good enough,NA
+Day 2,worked well for the Processing and joining datasets for cleaning,"Good session. Learning how to build on existing functions, elaborate these, were good. Good pace and instructions.",NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,More of those exercises where you yourself have to complete a piece of code.,NA
+Day 2,worked well for the Processing and joining datasets for cleaning,the visual join example made it a lot easier to understand what we were going to do. Exercises and type-alongs,NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,No comment,NA
+Day 2,worked well for the Processing and joining datasets for cleaning,Exercises and code-alongs. I also like the visual examples in the book!,NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,Not sure :-),NA
+Day 2,worked well for the Processing and joining datasets for cleaning,"This was very good - to me it went a bit slow, but I used sparetime to setup my own project in this folderstructure.",NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,In general it would be good on the course to have a bit parallel work on your own data eventhough I know it is a bit diffucult to arrange when not everybody do have own data.,NA
+Day 2,worked well for the Processing and joining datasets for cleaning,"Good stuff to know, well explained",NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,"Honestly a bit slow, with all the 5 min. breaks for showing post-its for every single line",NA
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",NA :-),NA
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals",NA :-),NA
+Day 2,worked well for the Processing and joining datasets for cleaning,"All the sessions so far, has had the same set up. And I think it works well, with coding along, and then trying on your own afterwards. Good pace.",NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,"General comment: At day 1, maybe explain what we want to end up with in the end? We have been working with a lot of different documents such as lessons.R and mmash.R, so e.g. we want to end up creating a script in mmsah.R that can load and prepare all of our data for us. We achive this by using the lessons.R document to create and test our functions. :-)",NA
+Day 2,worked well for the Processing and joining datasets for cleaning,That we worked with data that we already knew,NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,write the code with us instead of just explaining it,NA
+Day 2,worked well for the Processing and joining datasets for cleaning,Leaning all the steps in the merging of datasets and also conditioning (fx on special age groups) - really good,NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,Maybe an overall comment: extra tasks or links to other good material (the links to cheat sheets are nice),NA
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",done,NA
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals",done,NA
+Day 2,worked well for the Processing and joining datasets for cleaning,There was enough time to do the exercises / reading  and for questions,NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,"The coding went a little bit too fast, so it was hard to ""code along"" and I was feeling a little bit ""behind"" all the time - so I would suggest to take down the speed and explain while coding instead of having it ready and then you have to do it yourself afterwards. the session felt a little bit stressingNot related to the session but in general: it would have been nice to have a short description of the dataset, to understand e.g. that day 1 and day 2 in the saliva dataset are coded as night and next morning. so background to the dataset, what is it that we are looking at? and why did we have to summarise the rr dataset? what was it we did here? But otherwise really good :)",NA
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",2,NA
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals",2,NA
+Day 2,worked well for the Processing and joining datasets for cleaning,The book helped me alot when I fell behind.,NA
+Day 2,could be improved for the Processing and joining datasets for cleaning,"Mario is a bit to quick at typing compared to me, so I could not follow, besides you might want to change the description for the course""- know a little to a moderate amount of R (or computing in general);- know how to use R and have some familiarity with the tidyverse and RStudio.""Even though I have completed a statistic course where we did everything in R, I can feel that I am not at the same level as the remaining participants.",NA
+Day 3,worked well for the Quickly re-arranging data with pivots,All of it,NA
+Day 3,could be improved for the Quickly re-arranging data with pivots,nothing,NA
+Day 3,worked well for the Quickly re-arranging data with pivots,very helpful ideas,NA
+Day 3,could be improved for the Quickly re-arranging data with pivots,would be cool to learn even more ways of making the tables look nice,NA
+Day 3,worked well for the Quickly re-arranging data with pivots,"repetition of function, quick recap of pivots",NA
+Day 3,worked well for the Quickly re-arranging data with pivots,The extra insights that Luke provided were great,NA
+Day 3,could be improved for the Quickly re-arranging data with pivots,Including more uses: e.g. applying hypothesis testing etc,NA
+Day 3,worked well for the Quickly re-arranging data with pivots,Following along with writing the code and then trying it yourself. Also good pace.,NA
+Day 3,could be improved for the Quickly re-arranging data with pivots,No comments for this.,NA
+Day 3,worked well for the Quickly re-arranging data with pivots,good information and nice explenations,NA
+Day 3,worked well for the Quickly re-arranging data with pivots,Doing the exercises,NA
+Day 3,could be improved for the Quickly re-arranging data with pivots,nothing :),NA
+Day 3,worked well for the Quickly re-arranging data with pivots,"Code along sessions - pivoting, especially understanding what long format can do",NA
+Day 3,could be improved for the Quickly re-arranging data with pivots,"I would have liked to use more time on making great tables, but I could learn it myself now.",NA
+Day 3,worked well for the Quickly re-arranging data with pivots,"well structured, easy to understand, relevant",NA
+Day 3,could be improved for the Quickly re-arranging data with pivots,I would say it was really good. comment on the last session about what next: I really liked this one .,NA
+Day 3,worked well for the Quickly re-arranging data with pivots,Code-along and exercises. Getting an idea of how much you can actually do.,NA
+Day 3,could be improved for the Quickly re-arranging data with pivots,I can't think of anything,NA
+Day 3,worked well for the Quickly re-arranging data with pivots,i really liked the figures in the course material and the exercises,NA
+Day 3,could be improved for the Quickly re-arranging data with pivots,no comment,NA
+Day 3,worked well for the Quickly re-arranging data with pivots,"A goog mis between reading, code-along, and exercises",NA
+Day 3,worked well for the Quickly re-arranging data with pivots,everything :),NA
+Day 3,worked well for the Quickly re-arranging data with pivots,The figures were really nice,NA
+Day 3,could be improved for the Quickly re-arranging data with pivots,the list exercise could link to part 8 for someone link me who can't remember what i did yesterday,NA
+Day 3,worked well for the Quickly re-arranging data with pivots,"Nice with close to real world management/re-arranging of data, and creating a nice table at the end",NA
+Day 3,worked well for the Quickly re-arranging data with pivots,all in all a great course. Everything wrapped-up on last day.,NA
+Day 3,could be improved for the Quickly re-arranging data with pivots,Can't fnd any,NA
+Day 3,worked well for the Quickly re-arranging data with pivots,everything worked well,NA
+Day 3,could be improved for the Quickly re-arranging data with pivots,no to add more,NA
+Day 3,worked well for the Quickly re-arranging data with pivots,"tidying the data with ""simple"" code - the walkthrough worked well. In general, learning to generate functions that are more generic to apply to data was one of the highlights. And remembering the pipes - I will have to use these more :)",NA
+Day 3,could be improved for the Quickly re-arranging data with pivots,Would always like more exercises - to improve on my own thinking.,NA

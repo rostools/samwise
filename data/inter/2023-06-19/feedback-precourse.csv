@@ -1,0 +1,49 @@
+questions,responses
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,Become faster at writing functions and learn some shortcuts for my scripts
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,Deeper knowledge about R and how to use GIT
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,How to organise and analyse data in R
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,I am planning to learn and apply R for my research which I never had to do it before.
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,I want to further develop my skills in R and get a better understanding of version control and how to better process my data. Afterwards I want to feel more comfortable working in R.
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,"I want to learn to be more reproducible, store the data in a core folder and then use R to manipulate and arrange it further. I do a lot of data wrangling in my day to day and I'd like to be more efficient and faster."
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,"I will like to improve my performence when coding in R, be agile and understand better what I code."
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,"I would like to be more efficient in storing (e.g., save an environment to GitHub) and writing my data analysis (e.g., use of functions)"
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,"Improve my data science and analysis skills, and learn to do it in a reproducible way."
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,"Learn how to produce more reproducible code, learn how to make my own functions, learn more about the purrr package, useful tools for tidying up datasets"
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,"Workflow management and data manipulation in R. Presently, I do most of my data analysis in Python, and then do plotting in R. I would like to minimize the amount of back-and-forth, and do more of my work in R."
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,Workflow strategies for data analysis
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,"better, more structured ways of working, I would like to be able to have a more reproducible way of coding in general"
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,make reproducible code
+What do you expect to learn from this course and what would you like to be able to do afterward with what you've learned?,"tidier, more reproducible, and more efficient data management and processing with R"
+"In your opinion, what worked well?",All worked well
+"In your opinion, what worked well?",Clear instructions.
+"In your opinion, what worked well?",Clear tasks and instructions
+"In your opinion, what worked well?","Everything is explained in detail, i think it works"
+"In your opinion, what worked well?",Everything went so smooth
+"In your opinion, what worked well?",I have to say that takes time and is a bit more complicated than I though
+"In your opinion, what worked well?",I think the instructions are clear and when I encountered problems there were links where I could read about suggestion of how to solve problems if they appear
+"In your opinion, what worked well?","I was able to install everything well. I even had problems with the installation of the  r3 package but I was able to use the alternative method with ""remotes""."
+"In your opinion, what worked well?",It is easy to follow and to understand what is requested
+"In your opinion, what worked well?",Nice to have everything step by step!
+"In your opinion, what worked well?",The procedure was very clearly laid out for what needed to be done in the pre-course preparation tasks.
+"In your opinion, what worked well?","Truly I am very happy with the course materials. If (as a very beginner) I understand and can apply whatever you ask for/guide, anybody can."
+"In your opinion, what worked well?",Very clear instructions and step were well explained
+"In your opinion, what worked well?",no problems
+"In your opinion, what worked well?",the syllabus and most of the links work well
+"In your opinion, what could be improved?",-
+"In your opinion, what could be improved?",All good
+"In your opinion, what could be improved?","I already have an R version and RStudio from the beginner course. However, it is not clear how to update it. Should I uninstall RStudio and R and then install them again? Do I risk to loose some of my work?"
+"In your opinion, what could be improved?","I am not sure, sometimes it is faster do it all in class."
+"In your opinion, what could be improved?","I honestly don't know, for me the whole process took 30 minutes, cannot ask for anything better!"
+"In your opinion, what could be improved?",I wouldn't know.
+"In your opinion, what could be improved?","In both the R courses I have had issues with getting the git symbol in RStudio. After a lot of struggle of trying all instructions I managed, but I dont know why so I did not learn so much more about it! I dont know if this can be clearer!"
+"In your opinion, what could be improved?",No suggestions.
+"In your opinion, what could be improved?",Nothing
+"In your opinion, what could be improved?",Nothing that I can relate
+"In your opinion, what could be improved?","Right now, I am super happy with them."
+"In your opinion, what could be improved?","While we did set up Git, it was unclear to me whether I was supposed to actually create a repository at this stage. I assume that I didn't, and the repository creation will come later."
+"In your opinion, what could be improved?","a tip to run update.packages(ask = FALSE) and install.packages(""rlang"") just after starting up Rstudio. I had to do this to get everything running without errors, even though I hade the latest version of Rstudio."
+"In your opinion, what could be improved?","not much, all looks quite explained"
+"In your opinion, what could be improved?",the link to https://r-cubed-intermediate.rostools.org/preamble/#licensing doesnt work
+Please describe the problems you've had.,"I had some problems, still have on this r3::install_packages_intermediate()"
+Please describe the problems you've had.,"When installing R packages, the pak::pak(""rostools/r3"") command gave me an error, but running remotes::install_github(""rostools/r3"") instead helped."
+Please describe the problems you've had.,"i got an error message when i tried to install pak::pak(""rostools/r3""), but it doesnt work because i havent generated personal account token in Github before that. after i generated the personal token, link it with my GIt (googled a bit how to do it because i dont remember), restarted the R, then did it again, it worked. perhaps these steps can be made clearer in the pre-course task."
