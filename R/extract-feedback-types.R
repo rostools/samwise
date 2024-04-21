@@ -31,8 +31,8 @@ extract_feedback_quantitative <- function(data) {
       statement = stringr::str_remove(question, "Please .* course. ") %>%
         stringr::str_remove_all("\\[|\\]")
     ) %>%
-    dplyr::count(course_id, course_date, date, response, statement) |>
-    dplyr::arrange(course_id, course_date, date)
+    dplyr::count(course_id, course_date, statement, response) |>
+    dplyr::arrange(course_id, course_date)
 }
 
 #' @describeIn extract_feedback Extract and tidy up the overall comments
@@ -45,10 +45,10 @@ extract_feedback_overall <- function(data) {
       session_name %in% c("Day 3", "End of course"),
       stringr::str_detect(
         question,
-        ".*any other (general )?comments or feedback.*"
+        ".*any other (general )?(comments or feedback|feedback or comments).*"
       )
     ) %>%
-    dplyr::select(-question, -session_name) %>%
+    dplyr::select(-question, -session_name, -dplyr::contains("course_name")) %>%
     dplyr::filter(stringr::str_detect(
       response,
       "^No$",
