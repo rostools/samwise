@@ -3,6 +3,9 @@ title: "Admin tasks for the R courses"
 ---
 
 ```{r setup, include = FALSE}
+targets::tar_config_set(
+  store = here::here("_targets")
+)
 knitr::opts_chunk$set(
   eval = FALSE,
   collapse = TRUE,
@@ -24,23 +27,13 @@ org_gh_course_name <- glue::glue("{course_name}-{str_sub(course_date, end = 7)}"
 
 # Pre-course admin tasks
 
-## Fetch (and save) pre-survey responses
-
-Any admin task that requires participant information, we need to first
-get that information from the precourse survey.
-
-```{r}
-# TODO: How to get these authenticated? Run first and then build vignette?
-precourse <- get_precourse_survey(course_level) %>%
-  filter(course_date == max(course_date))
-```
-
 ## Who didn't finish survey
 
 Check those who didn't finish the survey yet. Do need the official list
 to compare with, which can be deleted after the course.
 
 ```{r, eval=FALSE}
+precourse <- targets::tar_read(upcoming_precourse_survey)
 participants <- check_who_not_finish_survey(
   precourse,
   readr::read_csv(here::here("_ignore/official-participant-list.csv"))
