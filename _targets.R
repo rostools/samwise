@@ -20,10 +20,11 @@ tar_source()
 # Replace the target list below with your own:
 list(
   # Upcoming (soonest) ------------------------------------------------------
-  # tar_target(
-  #   name = precourse_survey,
-  #   command = get_precourse_survey(get_upcoming_course()),
-  # ),
+  tar_target(
+    name = upcoming_precourse_survey,
+    command = get_precourse_survey(get_upcoming_course()) |>
+      dplyr::filter(course_date == max(course_date))
+  ),
   # tar_target(
   #   name = participants_not_complete_survey,
   #   command =
