@@ -203,21 +203,6 @@ gh_repos <- repo_create(org_gh_course_name, project_groups)
 repo_add_team(sort(gh_repos), sort(unique(learners_in_groups$team)))
 ```
 
-Make a table for the planning issue to put the instructors in groups.
-There might be some manual tinkering here.
-
-```{r, eval=FALSE}
-instructors <- tibble::tribble(
-  ~name, ~github_username,
-  "Luke", "lwjohnst86",
-  "Luke", "lwjohnst86",
-  "Anders Askeland", "AndersAskeland",
-  "Kaja Madsen", "KWMadsen",
-  "Marie Anneberg", "MarieAnneberg"
-)
-instructors_to_groups <- assign_instructors_to_groups(project_groups, instructors$name)
-```
-
 Then take instructors and assigned teams and convert them into a
 Markdown table to paste into the planning issue.
 
@@ -253,12 +238,6 @@ org_repos(org_gh_course_name) %>%
   })
 ```
 
-## Invite to Slack group
-
-```{r, eval=FALSE}
-copy_emails_for_slack_invite(precourse$email)
-```
-
 ## Create projects to push to repos
 
 Setting up the repos to have all the folders and files.
@@ -269,16 +248,4 @@ setup_team_repos(org_gh_course_name)
 
 ```{r, eval=FALSE}
 clone_team_repos(org_gh_course_name)
-```
-
-## Post course admin
-
-Need to run these inside the project.
-
-```{r, eval=FALSE}
-```
-
-```         
-precourse -- temp_df
-temp_df -- participants_overview
 ```
