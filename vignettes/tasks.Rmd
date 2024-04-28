@@ -123,33 +123,6 @@ problems %>%
   copy_names_with_problems()
 ```
 
-## Create group names
-
-Create some fun group names for the course using the
-[what3words](https://what3words.com/) API.
-
-```{r}
-number_groups <- ceiling(nrow(precourse) / 4)
-group_names <- create_group_names(number_groups)
-group_names
-```
-
-Create PDF files of the group names, so we can print the files before
-the first day and put one of them on each table.
-
-```{r, eval=FALSE, results='hide'}
-group_names %>%
-  group_names_to_one_pdf()
-```
-
-Then to create some HTML files (that I will print to file manually for
-now) of strips of group names to cut out of on a paper.
-
-```{r, eval=FALSE}
-group_names %>%
-  group_names_as_strips_html(number_participants = nrow(precourse))
-```
-
 ### Assigning members to groups
 
 > Note: Intro course only.
