@@ -2,10 +2,11 @@
 
 check_who_not_finish_survey <- function(data, participant_list) {
   data %>%
-    dplyr::select(full_name, email) %>%
-    dplyr::mutate(
-      name_from_survey = full_name,
-      email_from_survey = email
+    dplyr::select(
+      full_name = what_is_your_full_name,
+      name_from_survey = what_is_your_full_name,
+      email_from_survey = email_address,
+      email = email_address
     ) %>%
     dplyr::full_join(
       participant_list %>%
@@ -13,7 +14,7 @@ check_who_not_finish_survey <- function(data, participant_list) {
         dplyr::mutate(email_from_list = email),
       by = "email"
     ) %>%
-    dplyr::select(full_name, contains("name"), contains("email"))
+    dplyr::select(full_name, tidyselect::contains("name"), tidyselect::contains("email"))
 }
 
 copy_emails_for_reminder <- function(data) {
