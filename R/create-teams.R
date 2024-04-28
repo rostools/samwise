@@ -50,7 +50,8 @@ group_name_to_pdf <- function(group_name, output_dir) {
     output_file = output_file,
     execute_params = list(
       team_name = group_name
-    )
+    ),
+    quiet = TRUE
   )
 }
 
@@ -78,7 +79,8 @@ teams_with_members_to_pdf <- function(team_name, team_members, output_dir) {
     execute_params = list(
       team_name = team_name,
       team_members = team_members
-    )
+    ),
+    quiet = TRUE
   )
 }
 
@@ -94,7 +96,8 @@ group_names_as_strips_html <-
       execute_params = list(
         name = group_names,
         number_participants = number_participants
-      )
+      ),
+      quiet = TRUE
     )
   }
 
