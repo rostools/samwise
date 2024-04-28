@@ -93,22 +93,25 @@ get_upcoming_course_dates <- function(id) {
 }
 
 get_upcoming_course <- function() {
-  # course_metadata <- read_course_metadata()
+  course_metadata <- read_course_metadata()
 
-  # upcoming <-
-    # course_metadata |>
-    # map_depth(3, "date", .ragged = TRUE) |>
-    # map("events") |>
-    # map(unlist) |>
-    # map(\(x) x[x >= lubridate::today()])
-    # |>
-    # unlist()
-    # |>
-    # map(\(x) x == min(x)
+  upcoming <-
+    course_metadata |>
+    purrr::map("events") |>
+    purrr::map_depth(2, "date", .ragged = TRUE) |>
+    purrr::map(unlist) |>
+    purrr::map_lgl(\(x) {
+      x <- x[x >= lubridate::today()]
+      if (!length(x)) {
+        x <- NA
+      }
+      !is.na(min(x))
+    })
 
   read_course_metadata() |>
-    map("id") |>
-    keep(upcoming_dates)
+    purrr::map("id") |>
+    purrr::keep(upcoming) |>
+    unlist()
 }
 
 get_course_repo <- function(id) {
