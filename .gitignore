@@ -5,3 +5,4 @@
 inst/doc
 _ignore
 .Renviron
+_targets.yaml
