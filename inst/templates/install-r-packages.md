@@ -24,7 +24,7 @@ running these commands in the R Console:
     r3::{{course_install_fn}}
     ```
 
-::: callout-warning
+::: {.callout-warning appearance="default"}
 You might encounter an error when running this code. That's ok, you can
 fix it if you restart R by going to `Sessions -> Restart R` and re-run
 the code in items 2 and 3, it should work. If it still doesn't, try to
@@ -34,23 +34,21 @@ running:
 remotes::install_github("rostools/r3")
 ```
 
-If that also doesn't work, try to
-complete the other tasks, complete the survey, and let us know you have
-a problem in the survey.
+If that also doesn't work, try to complete the other tasks, complete the
+survey, and let us know you have a problem in the survey.
 :::
 
 *Note*: When you see a command like `something::something()`, for
-example with `r3::{{course_install_fn}}`, you would "read"
-this as:
+example with `r3::{{course_install_fn}}`, you would "read" this as:
 
-> R, can you please use the `{{course_install_fn}}` function
-> from the r3 package.
+> R, can you please use the `{{course_install_fn}}` function from the r3
+> package.
 
 The normal way of doing this would be to load the package with
-`library(r3)` and then running the command
-(`{{course_install_fn}}`). But by using the `::`, we tell R to
-directly use a function from a package, without needing to load the
-package and all of its other functions too. We use this trick because we
-only want to use the `{{course_install_fn}}` command from the
-r3 package and not have to load all the other functions as well. In this
-course we will be using `::` often.
+`library(r3)` and then running the command (`{{course_install_fn}}`).
+But by using the `::`, we tell R to directly use a function from a
+package, without needing to load the package and all of its other
+functions too. We use this trick because we only want to use the
+`{{course_install_fn}}` command from the r3 package and not have to load
+all the other functions as well. In this course we will be using `::`
+often.
