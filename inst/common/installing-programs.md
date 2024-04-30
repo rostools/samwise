@@ -31,7 +31,7 @@ them.
     Terminal and running:
 
     ``` bash
-    brew install r
+    brew install --cask r
     ```
 
 2.  [RStudio](https://www.rstudio.com/products/rstudio/download/#download):
