@@ -15,16 +15,30 @@ tar_option_set(
 
 # Run the R scripts in the R/ folder with your custom functions:
 tar_source()
-# source("other_functions.R") # Source other scripts as needed.
+
+# Force re-running everything
+# targets::tar_destroy()
+
+run_if_course_month_away <- function() {
+  closest_date <- get_upcoming_course() |>
+    get_upcoming_course_dates() |>
+    lubridate::ymd()
+  dplyr::between(
+    lubridate::today(),
+    closest_date - months(1),
+    closest_date
+  )
+}
 
 # Replace the target list below with your own:
 list(
   # Upcoming (soonest) ------------------------------------------------------
-  tar_target(
+  tar_force(
     name = upcoming_precourse_survey,
     command = get_precourse_survey(get_upcoming_course()) |>
-      dplyr::filter(course_date == max(course_date))
-  ),
+      dplyr::filter(course_date == max(course_date)),
+    force = run_if_course_month_away()
+    ),
   # tar_target(
   #   name = participants_not_complete_survey,
   #   command =
