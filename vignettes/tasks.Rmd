@@ -56,14 +56,10 @@ copy_reminder_email_text()
 
 Quickly check whether everyone has their setups done correctly.
 
-```{r, results='asis'}
+```{r}
 cat(check_setup(precourse), file = here::here("_ignore/setup.txt"))
-```
 
-Then check their project setup
-
-```{r, results='asis'}
-if (course_level %in% c("inter", "advanced")) {
+if (get_upcoming_course() %in% c("inter", "advanced")) {
   cat(check_project_setup(precourse), file = here::here("_ignore/project-setup.txt"))
 }
 ```
@@ -72,7 +68,7 @@ if (course_level %in% c("inter", "advanced")) {
 
 List those who have problems and print their setups.
 
-```{r, results='asis'}
+```{r}
 problems <- precourse %>%
   check_precourse_problems()
 ```
@@ -105,6 +101,17 @@ if (course_level %in% c("inter", "advanced")) {
 }
 ```
 
+```{r}
+precourse |>
+  select(contains(c("full_name", "city"))) |>
+  rename_with(~ c("name", "city")) |>
+  pwalk(\(name, city) {
+    Sys.sleep(1)
+    glue::glue("https://www.google.com/search?q={name}+{city}") |>
+      browseURL()
+  })
+```
+
 ### Copy names to address in first day
 
 Copy the names of those who have problems so I can paste it to something
@@ -124,24 +131,24 @@ Now we need to assign the learners to the groups.
 
 ```{r}
 round_down_to_even <- function(x) {
-  if ((x %% 2) == 1){
+  if ((x %% 2) == 1) {
     x <- x - 1
   }
   x
 }
-project_groups <- expand_grid(prefix = group_names, suffix = 1:2) |> 
-  slice_head(n = round_down_to_even(nrow(precourse)) / 2) |> 
+project_groups <- expand_grid(prefix = group_names, suffix = 1:2) |>
+  slice_head(n = round_down_to_even(nrow(precourse)) / 2) |>
   glue::glue_data("{prefix}-{suffix}")
 if (course_level %in% c("intro")) {
-learners_in_groups <- assign_learners_to_groups(
-  precourse,
-  project_groups
-)
-count(learners_in_groups, team)
-# View(learners_in_groups)
+  learners_in_groups <- assign_learners_to_groups(
+    precourse,
+    project_groups
+  )
+  count(learners_in_groups, team)
+  # View(learners_in_groups)
 
-# Manually change if need be.
-# learners_in_groups <- edit(learners_in_groups)
+  # Manually change if need be.
+  # learners_in_groups <- edit(learners_in_groups)
 }
 ```
 
@@ -186,8 +193,8 @@ Then assign the people to the teams.
 # bind_rows(
 #   team_members(org_gh_course_name),
 #   team_pending(org_gh_course_name)
-# ) %>% 
-#   distinct() %>% 
+# ) %>%
+#   distinct() %>%
 #   pwalk(\(team, user) team_remove(org = org_gh_course_name, user = user, team = team, team_type = "slug"))
 team_invite(
   org_gh_course_name,
@@ -228,7 +235,7 @@ Add helpers and instructors team to all repos and set permissions to
 admin.
 
 ```{r, eval=FALSE}
-org_repos(org_gh_course_name) %>% 
+org_repos(org_gh_course_name) %>%
   walk(~ {
     repo_team_permission(
       repo = .x,
