@@ -1,0 +1,14 @@
+---
+title: "feedback"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(r3admin)
+```
