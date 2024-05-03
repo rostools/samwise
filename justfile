@@ -4,7 +4,11 @@ install-package:
   #!/usr/bin/Rscript
   devtools::install()
 
-draft-reminder-email: install-package
+run-targets: install-package
+  #!/usr/bin/Rscript
+  targets::tar_make()
+
+draft-reminder-email: run-targets
   #!/usr/bin/Rscript
   participant_emails <- get_participant_emails()
   r3admin::create_draft_reminder_email()
@@ -18,7 +22,7 @@ create-upcoming-planning-issue: install-package
     id = r3admin::get_upcoming_course()
   )
 
-create-group-names: install-package
+create-group-names: run-targets
   #!/usr/bin/Rscript
   devtools::load_all()
   precourse <- targets::tar_read(upcoming_precourse_survey)
