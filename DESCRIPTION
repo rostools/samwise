@@ -51,6 +51,7 @@ Imports:
     xml2,
     yaml
 Suggests: 
+    gt,
     knitr,
     rmarkdown,
     tarchetypes
