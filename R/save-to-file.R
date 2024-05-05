@@ -28,7 +28,7 @@ create_path_from_columns <- function(columns) {
     purrr::map_chr(~ usethis::proj_path("data", .x))
 }
 
-save_feedback_to_csv <- function(data, columns) {
+save_responses_to_csv <- function(data, columns) {
   data_to_save <- data |>
     tidyr::nest(.by = {{ columns }}) |>
     dplyr::mutate(dplyr::across({{ columns }}, as.character)) |>

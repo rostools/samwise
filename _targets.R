@@ -133,7 +133,7 @@ list(
   tar_target(
     name = saved_feedback_sessions_paths,
     command = combined_feedback |>
-      purrr::map(\(feedback) save_feedback_to_csv(feedback$data, feedback$columns)) |>
+      purrr::map(\(feedback) save_responses_to_csv(feedback$data, feedback$columns)) |>
       unlist(),
     pattern = map(combined_feedback),
     iteration = "list",
