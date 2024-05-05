@@ -72,6 +72,13 @@ list(
     command = extract_participant_overview(precourse_surveys),
     pattern = map(precourse_surveys)
   ),
+  tar_target(
+    name = saved_participant_overview,
+    command = participant_overview |>
+      dplyr::mutate(type = "overview") |>
+      save_responses_to_csv(c("course_id", "course_date", "type")),
+    format = "file"
+  ),
 
   # Feedback ----------------------------------------------------------------
   tar_target(
