@@ -42,10 +42,14 @@ list(
   # Upcoming (soonest) ------------------------------------------------------
   tar_force(
     name = upcoming_precourse_survey,
-    command = get_precourse_survey(get_upcoming_course()) |>
-      dplyr::filter(course_date == max(course_date)),
+    command = if (!is.na(get_upcoming_course())) {
+      get_precourse_survey(get_upcoming_course()) |>
+        dplyr::filter(course_date == max(course_date))
+    } else {
+      NA
+    },
     force = run_if_course_month_away()
-    ),
+  ),
   # tar_target(
   #   name = participants_not_complete_survey,
   #   command =
