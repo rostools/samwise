@@ -20,9 +20,16 @@ tar_source()
 # targets::tar_destroy()
 
 run_if_course_month_away <- function() {
-  closest_date <- get_upcoming_course() |>
+  upcoming <- get_upcoming_course()
+
+  if (is.na(upcoming)) {
+    return(FALSE)
+  }
+
+  closest_date <- upcoming |>
     get_upcoming_course_dates() |>
     lubridate::ymd()
+
   dplyr::between(
     lubridate::today(),
     closest_date - months(1),
