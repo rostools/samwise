@@ -171,3 +171,8 @@ course:
           - ref: es
           - ref: rm
           - ref: skb
+      - date: 2024-12-10
+        host: Danish Diabetes Academy
+        instructors:
+          - ref: lwj
+          - ref: aa
