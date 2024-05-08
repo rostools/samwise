@@ -1,40 +1,39 @@
 questions,responses,count
-What is your formal position?,Lægevikar,1
+What is your formal position?,Other,1
 What is your formal position?,PhD student,24
 What is your formal position?,Postdoc,2
-What is your formal position?,Research assistant,4
-What is your formal position?,Researcher,2
-What is your formal position?,Scientist,1
+What is your formal position?,Research assistant,3
+What is your formal position?,Researcher,3
 What city do you work in or nearest to?,Aalborg,1
 What city do you work in or nearest to?,Aarhus,12
-What city do you work in or nearest to?,Copenhagen,9
-What city do you work in or nearest to?,Graz (Austria),1
+What city do you work in or nearest to?,Copenhagen,8
+What city do you work in or nearest to?,"Graz, Austria",1
 What city do you work in or nearest to?,Hjørring,1
 What city do you work in or nearest to?,Odense,9
-What city do you work in or nearest to?,Riga,1
-How do you perceive your skill/knowledge of... [using R?],Beginner,7
+What city do you work in or nearest to?,Latvia,1
+How do you perceive your skill/knowledge of... [using R?],Beginner,6
 How do you perceive your skill/knowledge of... [using R?],Beginner-Intermediate,15
 How do you perceive your skill/knowledge of... [using R?],Intermediate,7
 How do you perceive your skill/knowledge of... [using R?],Intermediate-Advanced,5
 How do you perceive your skill/knowledge of... [data analysis in general?],Advanced,1
-How do you perceive your skill/knowledge of... [data analysis in general?],Beginner,7
+How do you perceive your skill/knowledge of... [data analysis in general?],Beginner,6
 How do you perceive your skill/knowledge of... [data analysis in general?],Beginner-Intermediate,10
 How do you perceive your skill/knowledge of... [data analysis in general?],Intermediate,14
 How do you perceive your skill/knowledge of... [data analysis in general?],Intermediate-Advanced,2
 How do you perceive your skill/knowledge of... [programming in general?],Advanced,1
-How do you perceive your skill/knowledge of... [programming in general?],Beginner,14
+How do you perceive your skill/knowledge of... [programming in general?],Beginner,13
 How do you perceive your skill/knowledge of... [programming in general?],Beginner-Intermediate,12
 How do you perceive your skill/knowledge of... [programming in general?],Intermediate,6
 How do you perceive your skill/knowledge of... [programming in general?],Intermediate-Advanced,1
-How do you perceive your skill/knowledge of... [managing data in general?],Beginner,9
+How do you perceive your skill/knowledge of... [managing data in general?],Beginner,8
 How do you perceive your skill/knowledge of... [managing data in general?],Beginner-Intermediate,14
 How do you perceive your skill/knowledge of... [managing data in general?],Intermediate,8
 How do you perceive your skill/knowledge of... [managing data in general?],Intermediate-Advanced,3
-How do you perceive your skill/knowledge of... [formal version control (e.g. Git)?],Beginner,23
+How do you perceive your skill/knowledge of... [formal version control (e.g. Git)?],Beginner,22
 How do you perceive your skill/knowledge of... [formal version control (e.g. Git)?],Beginner-Intermediate,8
 How do you perceive your skill/knowledge of... [formal version control (e.g. Git)?],Intermediate,3
 How do you perceive your skill/knowledge of... [writing in or using R Markdown?],Advanced,1
-How do you perceive your skill/knowledge of... [writing in or using R Markdown?],Beginner,13
+How do you perceive your skill/knowledge of... [writing in or using R Markdown?],Beginner,12
 How do you perceive your skill/knowledge of... [writing in or using R Markdown?],Beginner-Intermediate,10
 How do you perceive your skill/knowledge of... [writing in or using R Markdown?],Intermediate,5
 How do you perceive your skill/knowledge of... [writing in or using R Markdown?],Intermediate-Advanced,5
@@ -46,7 +45,7 @@ What programs have you previously used for data analysis?,GraphPad Prism,1
 What programs have you previously used for data analysis?,None,3
 What programs have you previously used for data analysis?,Python,1
 What programs have you previously used for data analysis?,"Python, Excel",1
-What programs have you previously used for data analysis?,"Python, Excel, GraphPad Prism",2
+What programs have you previously used for data analysis?,"Python, Excel, GraphPad Prism",1
 What programs have you previously used for data analysis?,"Python, GraphPad Prism",1
 What programs have you previously used for data analysis?,SAS/SAS JMP,1
 What programs have you previously used for data analysis?,SPSS,1
@@ -58,18 +57,18 @@ What programs have you previously used for data analysis?,"SPSS, Stata, Python, 
 What programs have you previously used for data analysis?,Stata,1
 What programs have you previously used for data analysis?,"Stata, Excel, GraphPad Prism",1
 What programs have you previously used for data analysis?,"Stata, GraphPad Prism",1
-Do you accept the conditions laid out in the Code of Conduct?,Yes,34
+Do you accept the conditions laid out in the Code of Conduct?,Yes,33
 What gender do you identify with?,Man,8
-What gender do you identify with?,Woman,26
+What gender do you identify with?,Woman,25
 How often do you currently use: [dplyr],Daily,4
-How often do you currently use: [dplyr],Few times a month,9
+How often do you currently use: [dplyr],Few times a month,8
 How often do you currently use: [dplyr],Few times a week,5
 How often do you currently use: [dplyr],Haven't used R,3
 How often do you currently use: [dplyr],Never,4
 How often do you currently use: [dplyr],Once a month,8
 How often do you currently use: [dplyr],Once a week,1
 How often do you currently use: [tidyr],Daily,3
-How often do you currently use: [tidyr],Few times a month,10
+How often do you currently use: [tidyr],Few times a month,9
 How often do you currently use: [tidyr],Few times a week,4
 How often do you currently use: [tidyr],Haven't used R,3
 How often do you currently use: [tidyr],Never,5
@@ -80,27 +79,27 @@ How often do you currently use: [pipe (%>%)],Few times a month,5
 How often do you currently use: [pipe (%>%)],Few times a week,4
 How often do you currently use: [pipe (%>%)],Haven't used R,3
 How often do you currently use: [pipe (%>%)],Never,5
-How often do you currently use: [pipe (%>%)],Once a month,11
+How often do you currently use: [pipe (%>%)],Once a month,10
 How often do you currently use: [pipe (%>%)],Once a week,1
 How often do you currently use: [GitHub/GitLab and Git],Daily,2
 How often do you currently use: [GitHub/GitLab and Git],Few times a month,2
 How often do you currently use: [GitHub/GitLab and Git],Haven't used R,3
-How often do you currently use: [GitHub/GitLab and Git],Never,20
+How often do you currently use: [GitHub/GitLab and Git],Never,19
 How often do you currently use: [GitHub/GitLab and Git],Once a month,7
 How often do you currently use: [R Markdown],Daily,1
 How often do you currently use: [R Markdown],Few times a month,8
 How often do you currently use: [R Markdown],Few times a week,1
 How often do you currently use: [R Markdown],Haven't used R,3
-How often do you currently use: [R Markdown],Never,11
+How often do you currently use: [R Markdown],Never,10
 How often do you currently use: [R Markdown],Once a month,8
 How often do you currently use: [R Markdown],Once a week,2
 How often do you currently use: [purrr],Few times a month,2
 How often do you currently use: [purrr],Few times a week,2
 How often do you currently use: [purrr],Haven't used R,3
-How often do you currently use: [purrr],Never,24
+How often do you currently use: [purrr],Never,23
 How often do you currently use: [purrr],Once a month,3
 How often do you currently use: [tidyverse],Daily,4
-How often do you currently use: [tidyverse],Few times a month,10
+How often do you currently use: [tidyverse],Few times a month,9
 How often do you currently use: [tidyverse],Few times a week,5
 How often do you currently use: [tidyverse],Haven't used R,3
 How often do you currently use: [tidyverse],Never,4
@@ -110,6 +109,6 @@ How often do you currently use: [vroom/readr],Daily,1
 How often do you currently use: [vroom/readr],Few times a month,3
 How often do you currently use: [vroom/readr],Few times a week,3
 How often do you currently use: [vroom/readr],Haven't used R,3
-How often do you currently use: [vroom/readr],Never,16
+How often do you currently use: [vroom/readr],Never,15
 How often do you currently use: [vroom/readr],Once a month,7
 How often do you currently use: [vroom/readr],Once a week,1
