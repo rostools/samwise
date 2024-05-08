@@ -108,10 +108,15 @@ get_upcoming_course <- function() {
       !is.na(min(x))
     })
 
-  read_course_metadata() |>
-    purrr::map("id") |>
-    purrr::keep(upcoming) |>
-    unlist()
+  course_id <- NA
+  if (all(upcoming)) {
+    course_id <- read_course_metadata() |>
+      purrr::map("id") |>
+      purrr::keep(upcoming) |>
+      unlist()
+  }
+
+  course_id
 }
 
 get_course_repo <- function(id) {
