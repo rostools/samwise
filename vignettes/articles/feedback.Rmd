@@ -10,5 +10,47 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup}
-library(r3admin)
+#library(r3admin)
+targets::tar_config_set(
+  store = here::here()
+)
+participant_overview <- fs::dir_ls(here::here("data"),
+           regexp = "overview\\.csv$",
+           recurse = TRUE) |> 
+  purrr::map(\(filename) {
+    folder <- filename |> 
+      fs::path_dir()
+    course_date <- fs::path_file(folder)
+    course_id <- folder |> 
+      fs::path_dir() |> 
+      fs::path_file()
+    
+    filename |> 
+      readr::read_csv(
+        col_types = readr::cols(
+          questions = readr::col_character(),
+          responses = readr::col_character(),
+          count = readr::col_double(),
+        )
+      ) |> 
+      dplyr::mutate(course_id = course_id,
+                    course_date = course_date)
+  }) |> 
+  purrr::list_rbind()
+
+library(tidyverse)
+participant_overview |> 
+  filter(str_detect(questions, "gender")) |> 
+  ggplot(aes(x = course_date, y = count, fill = responses)) +
+  geom_col(position = position_dodge(), width = 0.8) +
+  scale_fill_viridis_d(option = "viridis", begin = 0.1, end = 0.9) + 
+  facet_grid(rows = vars(course_id))
+
+participant_overview |> 
+  count(questions)
+
+
+fs::dir_ls(here::here("data"),
+           regexp = "feedback-quantitative\\.csv$",
+           recurse = TRUE)
 ```
