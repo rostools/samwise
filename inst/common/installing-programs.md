@@ -75,9 +75,8 @@ them.
 
 All these programs are required for the course, even Git. Git, which is
 a software program to formally manage versions of files, is used because
-of it's popularity and the amount of documentation available for it. At
-the end of the course, you will be using Git and GitHub to manage your
-group assignment. Check out the online book [Happy Git with
+of it's popularity and the amount of documentation available for it.
+Check out the online book [Happy Git with
 R](https://happygitwithr.com/), especially the "Why Git" section, for an
 understanding on why we are teaching Git. Windows users tend to have
 more trouble with installing Git than macOS or Linux users. See the
@@ -121,3 +120,4 @@ technical issues, you can use Posit Cloud (to use RStudio on the cloud)
 as a final solution in order to participate in the course. For help
 setting up Posit Cloud for this course, refer to the [Posit Cloud setup
 guide](https://guides.rostools.org/posit-cloud).
+
