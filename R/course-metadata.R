@@ -92,6 +92,13 @@ get_upcoming_course_dates <- function(id) {
     purrr::keep(~ .x >= lubridate::today())
 }
 
+#' Get the ID of the course that is upcoming.
+#'
+#' @return A character scalar.
+#' @export
+#'
+#' @examples
+#' get_upcoming_course()
 get_upcoming_course <- function() {
   course_metadata <- read_course_metadata()
 
