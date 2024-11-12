@@ -1,13 +1,32 @@
 # These are for admin tasks that really only need to be done once or twice
 
+@_default:
+  just --list --unsorted
+
+# Run build recipes and install the package
+build: style document install-package
+
+# Install the package and its dependencies
 install-package:
   #!/usr/bin/Rscript
   devtools::install()
 
-run-targets: install-package
+# Re-build Roxygen docs
+document:
+  #!/usr/bin/Rscript
+  devtools::document()
+
+# Run style formatter
+style:
+  #!/usr/bin/Rscript
+  styler::style_pkg()
+
+# Run the targets pipeline
+run-targets: build
   #!/usr/bin/Rscript
   targets::tar_make()
 
+# Create the draft email to participants
 draft-reminder-email: run-targets
   #!/usr/bin/Rscript
   participant_emails <- get_participant_emails()
@@ -16,7 +35,8 @@ draft-reminder-email: run-targets
 create-org-in-gh:
   xdg-open https://github.com/account/organizations/new?plan=free
 
-create-upcoming-planning-issue: install-package
+# Create the planning issue for the upcoming course
+create-upcoming-planning-issue: build
   #!/usr/bin/Rscript
   r3admin::admin_create_planning_issue(
     id = r3admin::get_upcoming_course()
