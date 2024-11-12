@@ -1,4 +1,3 @@
-
 #' Post a Course Planning issue on the course repo.
 #'
 #' @inheritParams get_course_metadata_field

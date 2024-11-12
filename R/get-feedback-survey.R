@@ -5,7 +5,6 @@
 #' @return A [tibble::tibble].
 #'
 #' @examples
-#'
 #' \dontrun{
 #' get_feedback_survey("intro")
 #' get_feedback_survey("general")

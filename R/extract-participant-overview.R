@@ -6,7 +6,6 @@
 #' @export
 #'
 #' @examples
-#'
 #' \dontrun{
 #' survey <- get_precourse_survey("intro")
 #' extract_participant_overview(survey, "intro")

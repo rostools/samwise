@@ -1,4 +1,3 @@
-
 #' Extract and tidy up the pre-course feedback data.
 #'
 #' @inheritParams extract_participant_overview
@@ -7,7 +6,6 @@
 #' @export
 #'
 #' @examples
-#'
 #' \dontrun{
 #' survey <- get_precourse_survey("intro")
 #' extract_precourse_feedback(survey, "intro")
@@ -35,4 +33,3 @@ extract_precourse_feedback <- function(data) {
     tidyr::drop_na() |>
     dplyr::relocate(course_id, course_date, questions, responses)
 }
-

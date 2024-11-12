@@ -1,4 +1,3 @@
-
 # Import pre-survey data --------------------------------------------------
 
 #' Get the (slightly cleaned) pre-course survey from Google Sheets.
@@ -9,7 +8,6 @@
 #' @export
 #'
 #' @examples
-#'
 #' \dontrun{
 #' get_precourse_survey("intro")
 #' }
@@ -27,8 +25,7 @@ get_precourse_survey_google_sheet <- function(id, n_max = Inf) {
   id <- rlang::arg_match(id, list_course_ids())
 
   # Get the Google Sheet ID from the environment variable via `Sys.getenv()`
-  survey_id <- switch(
-    id,
+  survey_id <- switch(id,
     intro = "INTRO_PRE_SURVEY_ID",
     inter = "INTERMEDIATE_PRE_SURVEY_ID",
     adv = "ADVANCED_PRE_SURVEY_ID"
@@ -93,4 +90,3 @@ tidy_cols_skills <- function(x) {
     tidy_cols_skills_to_character() |>
     tidy_cols_skills_relevel()
 }
-

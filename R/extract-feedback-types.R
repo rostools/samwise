@@ -62,7 +62,8 @@ extract_feedback_overall <- function(data) {
 extract_feedback_sessions <- function(data) {
   data %>%
     dplyr::rename_with(~ stringr::str_replace(.x, "^day$", "session_name")) |>
-    dplyr::filter(stringr::str_detect(question,
+    dplyr::filter(stringr::str_detect(
+      question,
       "^(What could be improved|What worked well).*"
     )) %>%
     dplyr::mutate(question = question %>%

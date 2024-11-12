@@ -1,4 +1,3 @@
-
 #' RStudio snippets to help with teaching (in dev.)
 #'
 #' @return Nothing. Used for the side effect of installing snippets for teaching.
@@ -19,4 +18,3 @@ copy_snippets <- function() {
     readr::read_lines() |>
     clipr::write_clip()
 }
-

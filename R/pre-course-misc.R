@@ -1,4 +1,3 @@
-
 #' Paste emails from survey to send invites to join Slack.
 #'
 #' @param emails List of emails to format.
@@ -130,7 +129,8 @@ render_team_qmds <- function(gh_org, local_directory = fs::path("~", "Desktop"))
   course_team_repos <- ghclass::org_repos(gh_org)
   qmd_path <- fs::path("~", "Desktop", course_team_repos, "doc", "report.qmd")
   qmd_path |>
-    purrr::walk(~{
+    purrr::walk(~ {
       cli::cli_inform("Using {.val {.x}}")
-      quarto::quarto_render(.x, quiet = TRUE)})
+      quarto::quarto_render(.x, quiet = TRUE)
+    })
 }
