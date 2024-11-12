@@ -16,4 +16,4 @@ jobs:
         uses: BetaHuhn/repo-file-sync-action@v1
         with:
           # Not the default GITHUB_PAT, but a created one with full repo scope.
-          GH_PAT: ${{ secrets.GH_PAT }}
+          GH_PAT: ${{ secrets.SYNC_PAT }}
