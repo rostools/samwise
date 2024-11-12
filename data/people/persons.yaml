@@ -180,3 +180,9 @@ person:
     affiliation:
       - ref: au
     orcid: ""
+
+  - id: jfi
+    name: "Jo Frøkjær Iversen"
+    affiliation:
+      - ref: ku
+    orcid: ""

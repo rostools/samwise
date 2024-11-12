@@ -81,6 +81,13 @@ course:
           - ref: mab
           - ref: kb
           - ref: zzh
+      - date: 2025-01-14
+        host: Danish Diabetes and Endocrinology Academy
+        instructors:
+          - ref: lwj
+          - ref: aa
+          - ref: zzh
+          - ref: jfi
 
   - id: inter
     name: Intermediate

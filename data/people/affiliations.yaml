@@ -23,4 +23,6 @@ affiliation:
     name: Chalmers University of Technology
   - id: sdu
     name: University of Southern Denmark
+  - id: ku
+    name: University of Copenhagen
 
