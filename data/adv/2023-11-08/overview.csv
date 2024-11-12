@@ -1,0 +1,104 @@
+questions,responses,count
+What gender do you identify with?,Man,10
+What gender do you identify with?,Woman,15
+What is your formal position?,PhD student,18
+What is your formal position?,Postdoc,4
+What is your formal position?,Research Year Student,1
+What is your formal position?,Research year student,1
+What is your formal position?,Scientist,1
+What city do you work in or nearest to?,Aarhus,7
+What city do you work in or nearest to?,Berlin,1
+What city do you work in or nearest to?,Copenhagen,6
+What city do you work in or nearest to?,Gothenburg,2
+What city do you work in or nearest to?,Göteborg,1
+What city do you work in or nearest to?,Odense,8
+How do you perceive your skill/knowledge of... [using R?],Beginner,1
+How do you perceive your skill/knowledge of... [using R?],Beginner-Intermediate,3
+How do you perceive your skill/knowledge of... [using R?],Intermediate,13
+How do you perceive your skill/knowledge of... [using R?],Intermediate-Advanced,8
+How do you perceive your skill/knowledge of... [data analysis in general?],Beginner-Intermediate,3
+How do you perceive your skill/knowledge of... [data analysis in general?],Intermediate,10
+How do you perceive your skill/knowledge of... [data analysis in general?],Intermediate-Advanced,12
+How do you perceive your skill/knowledge of... [programming in general?],Beginner,2
+How do you perceive your skill/knowledge of... [programming in general?],Beginner-Intermediate,13
+How do you perceive your skill/knowledge of... [programming in general?],Intermediate,7
+How do you perceive your skill/knowledge of... [programming in general?],Intermediate-Advanced,3
+How do you perceive your skill/knowledge of... [writing reproducible code in general?],Beginner,1
+How do you perceive your skill/knowledge of... [writing reproducible code in general?],Beginner-Intermediate,8
+How do you perceive your skill/knowledge of... [writing reproducible code in general?],Intermediate,13
+How do you perceive your skill/knowledge of... [writing reproducible code in general?],Intermediate-Advanced,3
+How do you perceive your skill/knowledge of... [formal version control (e.g. Git)?],Advanced,1
+How do you perceive your skill/knowledge of... [formal version control (e.g. Git)?],Beginner,2
+How do you perceive your skill/knowledge of... [formal version control (e.g. Git)?],Beginner-Intermediate,12
+How do you perceive your skill/knowledge of... [formal version control (e.g. Git)?],Intermediate,9
+How do you perceive your skill/knowledge of... [formal version control (e.g. Git)?],Intermediate-Advanced,1
+How do you perceive your skill/knowledge of... [collaborating through Git?],Beginner,7
+How do you perceive your skill/knowledge of... [collaborating through Git?],Beginner-Intermediate,9
+How do you perceive your skill/knowledge of... [collaborating through Git?],Intermediate,8
+How do you perceive your skill/knowledge of... [collaborating through Git?],Intermediate-Advanced,1
+How do you perceive your skill/knowledge of... [writing in or using R Markdown?],Beginner,1
+How do you perceive your skill/knowledge of... [writing in or using R Markdown?],Beginner-Intermediate,6
+How do you perceive your skill/knowledge of... [writing in or using R Markdown?],Intermediate,12
+How do you perceive your skill/knowledge of... [writing in or using R Markdown?],Intermediate-Advanced,6
+How often do you currently use: [tidyverse],Daily,9
+How often do you currently use: [tidyverse],Few times a month,2
+How often do you currently use: [tidyverse],Few times a week,8
+How often do you currently use: [tidyverse],Once a month,3
+How often do you currently use: [tidyverse],Once a week,3
+How often do you currently use: [GitHub/GitLab and Git],Daily,3
+How often do you currently use: [GitHub/GitLab and Git],Few times a month,4
+How often do you currently use: [GitHub/GitLab and Git],Few times a week,6
+How often do you currently use: [GitHub/GitLab and Git],Never,4
+How often do you currently use: [GitHub/GitLab and Git],Once a month,6
+How often do you currently use: [GitHub/GitLab and Git],Once a week,2
+How often do you currently use: [R Markdown/Quarto],Daily,4
+How often do you currently use: [R Markdown/Quarto],Few times a month,4
+How often do you currently use: [R Markdown/Quarto],Few times a week,8
+How often do you currently use: [R Markdown/Quarto],Once a month,5
+How often do you currently use: [R Markdown/Quarto],Once a week,4
+How often do you currently use: [purrr],Daily,2
+How often do you currently use: [purrr],Few times a month,3
+How often do you currently use: [purrr],Few times a week,2
+How often do you currently use: [purrr],Never,9
+How often do you currently use: [purrr],Once a month,2
+How often do you currently use: [purrr],Once a week,7
+How often do you currently use: [renv],Daily,2
+How often do you currently use: [renv],Few times a month,2
+How often do you currently use: [renv],Few times a week,1
+How often do you currently use: [renv],Never,14
+How often do you currently use: [renv],Once a month,6
+How often do you currently use: [targets],Haven't used R,1
+How often do you currently use: [targets],Never,21
+How often do you currently use: [targets],Once a month,3
+How often do you currently use: [styler],Daily,2
+How often do you currently use: [styler],Few times a month,6
+How often do you currently use: [styler],Few times a week,2
+How often do you currently use: [styler],Never,8
+How often do you currently use: [styler],Once a month,6
+How often do you currently use: [styler],Once a week,1
+How often do you currently use: [lintr],Haven't used R,1
+How often do you currently use: [lintr],Never,21
+How often do you currently use: [lintr],Once a month,3
+How often do you currently use: [tidymodels],Daily,1
+How often do you currently use: [tidymodels],Few times a month,2
+How often do you currently use: [tidymodels],Few times a week,1
+How often do you currently use: [tidymodels],Haven't used R,1
+How often do you currently use: [tidymodels],Never,16
+How often do you currently use: [tidymodels],Once a month,3
+How often do you currently use: [tidymodels],Once a week,1
+What programs have you previously used for data analysis?,Excel,3
+What programs have you previously used for data analysis?,"Excel, Excel, but only for minor, non-advanced tasks",1
+What programs have you previously used for data analysis?,"Excel, GraphPad Prism",2
+What programs have you previously used for data analysis?,"Excel, R",2
+What programs have you previously used for data analysis?,None,1
+What programs have you previously used for data analysis?,Python,1
+What programs have you previously used for data analysis?,"Python, Excel",2
+What programs have you previously used for data analysis?,"Python, Excel, GraphPad Prism",1
+What programs have you previously used for data analysis?,"Python, Excel, R",1
+What programs have you previously used for data analysis?,"Python, Matlab, Excel",3
+What programs have you previously used for data analysis?,"Python, Matlab, Excel, GraphPad Prism, PERL/Linux/Bash/Cellranger/Rstudio",1
+What programs have you previously used for data analysis?,R,2
+What programs have you previously used for data analysis?,"SAS/SAS JMP, Excel",1
+What programs have you previously used for data analysis?,Stata,3
+What programs have you previously used for data analysis?,"Stata, Excel, GraphPad Prism",1
+Do you accept the conditions laid out in the Code of Conduct?,Yes,25

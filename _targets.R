@@ -20,9 +20,16 @@ tar_source()
 # targets::tar_destroy()
 
 run_if_course_month_away <- function() {
-  closest_date <- get_upcoming_course() |>
+  upcoming <- get_upcoming_course()
+
+  if (is.na(upcoming)) {
+    return(FALSE)
+  }
+
+  closest_date <- upcoming |>
     get_upcoming_course_dates() |>
     lubridate::ymd()
+
   dplyr::between(
     lubridate::today(),
     closest_date - months(1),
@@ -35,10 +42,14 @@ list(
   # Upcoming (soonest) ------------------------------------------------------
   tar_force(
     name = upcoming_precourse_survey,
-    command = get_precourse_survey(get_upcoming_course()) |>
-      dplyr::filter(course_date == max(course_date)),
+    command = if (!is.na(get_upcoming_course())) {
+      get_precourse_survey(get_upcoming_course()) |>
+        dplyr::filter(course_date == max(course_date))
+    } else {
+      NA
+    },
     force = run_if_course_month_away()
-    ),
+  ),
   # tar_target(
   #   name = participants_not_complete_survey,
   #   command =
@@ -71,6 +82,13 @@ list(
     name = participant_overview,
     command = extract_participant_overview(precourse_surveys),
     pattern = map(precourse_surveys)
+  ),
+  tar_target(
+    name = saved_participant_overview,
+    command = participant_overview |>
+      dplyr::mutate(type = "overview") |>
+      save_responses_to_csv(c("course_id", "course_date", "type")),
+    format = "file"
   ),
 
   # Feedback ----------------------------------------------------------------
@@ -133,7 +151,7 @@ list(
   tar_target(
     name = saved_feedback_sessions_paths,
     command = combined_feedback |>
-      purrr::map(\(feedback) save_feedback_to_csv(feedback$data, feedback$columns)) |>
+      purrr::map(\(feedback) save_responses_to_csv(feedback$data, feedback$columns)) |>
       unlist(),
     pattern = map(combined_feedback),
     iteration = "list",

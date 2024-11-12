@@ -105,8 +105,9 @@ precourse |>
   select(contains(c("full_name", "city"))) |>
   rename_with(~ c("name", "city")) |>
   pwalk(\(name, city) {
-    Sys.sleep(2)
+    Sys.sleep(runif(1, 0.5, 2.5))
     glue::glue("https://www.google.com/search?q={name}+{city}") |>
+      # use `system("chromium-browser {ALL_WEBSITE_URLS})` to open all tabs at once
       browseURL()
   })
 ```
