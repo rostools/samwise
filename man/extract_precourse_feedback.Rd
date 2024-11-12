@@ -4,12 +4,10 @@
 \alias{extract_precourse_feedback}
 \title{Extract and tidy up the pre-course feedback data.}
 \usage{
-extract_precourse_feedback(data, id)
+extract_precourse_feedback(data)
 }
 \arguments{
 \item{data}{Pre-course survey data.}
-
-\item{id}{The ID of the course, found by running \code{\link[=list_course_ids]{list_course_ids()}}.}
 }
 \value{
 A \link[tibble:tibble]{tibble::tibble}.
@@ -18,7 +16,6 @@ A \link[tibble:tibble]{tibble::tibble}.
 Extract and tidy up the pre-course feedback data.
 }
 \examples{
-
 \dontrun{
 survey <- get_precourse_survey("intro")
 extract_precourse_feedback(survey, "intro")

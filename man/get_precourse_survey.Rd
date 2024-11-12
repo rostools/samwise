@@ -16,7 +16,6 @@ A \link[tibble:tibble]{tibble::tibble}.
 Get the (slightly cleaned) pre-course survey from Google Sheets.
 }
 \examples{
-
 \dontrun{
 get_precourse_survey("intro")
 }

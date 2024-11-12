@@ -16,7 +16,6 @@ A \link[tibble:tibble]{tibble::tibble}.
 Get the responses from the feedback survey.
 }
 \examples{
-
 \dontrun{
 get_feedback_survey("intro")
 get_feedback_survey("general")

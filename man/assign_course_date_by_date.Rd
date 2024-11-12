@@ -16,7 +16,9 @@ A character value.
 Assign the date of the course that the survey response comes from.
 }
 \examples{
-assign_course_date_by_date(c("2020-06-20", "2019-06-10", "2021-06-10"),
-  get_course_dates("intro"))
+assign_course_date_by_date(
+  c("2020-06-20", "2019-06-10", "2021-06-10"),
+  get_course_dates("intro")
+)
 }
 \keyword{internal}

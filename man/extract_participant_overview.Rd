@@ -4,12 +4,10 @@
 \alias{extract_participant_overview}
 \title{Extract participant overview data from pre-course survey.}
 \usage{
-extract_participant_overview(data, id)
+extract_participant_overview(data)
 }
 \arguments{
 \item{data}{Pre-course survey data.}
-
-\item{id}{The ID of the course, found by running \code{\link[=list_course_ids]{list_course_ids()}}.}
 }
 \value{
 A \link[tibble:tibble]{tibble::tibble}.
@@ -18,7 +16,6 @@ A \link[tibble:tibble]{tibble::tibble}.
 Extract participant overview data from pre-course survey.
 }
 \examples{
-
 \dontrun{
 survey <- get_precourse_survey("intro")
 extract_participant_overview(survey, "intro")
