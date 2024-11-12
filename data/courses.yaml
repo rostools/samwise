@@ -171,3 +171,10 @@ course:
           - ref: es
           - ref: rm
           - ref: skb
+      - date: 2024-12-10
+        host: Danish Diabetes and Endocrinology Academy
+        instructors:
+          - ref: lwj
+          - ref: aa
+          - ref: skb
+          - ref: ivse
