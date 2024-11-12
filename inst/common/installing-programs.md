@@ -10,7 +10,7 @@ them.
     above `4.1.2`. If you have used R before, you can confirm the
     version by running `R.version.string` in the Console.
 2.  [RStudio](https://www.rstudio.com/products/rstudio/download/#download):
-    Any version above `v2021.09.0+351`. If you have installed it before,
+    Any version above `2023.06.2`. If you have installed it before,
     check the current version by going to the menu
     `Help -> About RStudio`.
 3.  [Git](https://git-scm.com/download/win): Select the "Click here for
@@ -35,7 +35,7 @@ them.
     ```
 
 2.  [RStudio](https://www.rstudio.com/products/rstudio/download/#download):
-    Any version above `v2021.09.0+351`. If you have installed it before,
+    Any version above `2023.06.2`. If you have installed it before,
     check the current version by going to the menu
     `Help -> About RStudio`. With Homebrew:
 
@@ -61,7 +61,7 @@ them.
     ```
 
 2.  [RStudio](https://www.rstudio.com/products/rstudio/download/#download):
-    Any version above `v2021.09.0+351`. If you have installed it before,
+    Any version above `2023.06.2`. If you have installed it before,
     check the current version by going to the menu
     `Help -> About RStudio`.
 
