@@ -49,7 +49,7 @@ store, and create passwords.
 You very likely haven't set up a PAT, but if you are uncertain, you can
 always check with:
 
-``` r
+``` {.r filename="Console"}
 usethis::gh_token_help()
 ```
 
@@ -67,7 +67,7 @@ that means we need to make Git and `{usethis}` aware of the token. We do
 that by typing the next function in the Console to create the token on
 GitHub (if you haven't created one already).
 
-``` r
+``` {.r filename="Console"}
 usethis::create_github_token()
 ```
 
@@ -85,7 +85,7 @@ lost it, or if you've changed to a new computer.
 
 In the Console, run:
 
-``` r
+``` {.r filename="Console"}
 gitcreds::gitcreds_set()
 ```
 
@@ -103,7 +103,7 @@ changes) that you are who you claim to digitally be.
 There is another great helper function that runs a lot of checks and
 gives some advice when it finds potential problems.
 
-``` r
+``` {.r filename="Console"}
 usethis::git_sitrep()
 ```
 
