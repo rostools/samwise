@@ -4,7 +4,12 @@
   just --list --unsorted
 
 # Run build recipes and install the package
-build: style document install-package
+build: install-package-dependencies style document install-package
+
+# Install package dependencies
+install-package-dependencies:
+  #!/usr/bin/Rscript
+  pak::pak(ask = FALSE)
 
 # Install the package and its dependencies
 install-package:
