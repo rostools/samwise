@@ -107,16 +107,23 @@ get_upcoming_course <- function() {
     purrr::map("events") |>
     purrr::map_depth(2, "date", .ragged = TRUE) |>
     purrr::map(unlist) |>
-    purrr::map_lgl(\(x) {
+    purrr::map_chr(\(x) {
       x <- x[x >= lubridate::today()]
       if (!length(x)) {
-        x <- NA
+        # When no date exists, set to NA
+        NA
+      } else {
+        # Get the nearest date from future dates
+        min(x)
       }
-      !is.na(min(x))
-    })
+    }) |>
+    lubridate::as_date()
 
   course_id <- NA
-  if (all(upcoming)) {
+  # If there are any upcoming dates
+  if (any(!is.na(upcoming))) {
+    # The date should be the soonest of the upcoming dates
+    upcoming <- upcoming == min(upcoming, na.rm = TRUE)
     course_id <- read_course_metadata() |>
       purrr::map("id") |>
       purrr::keep(upcoming) |>
