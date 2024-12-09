@@ -13,7 +13,7 @@ them.
     Any version above `2023.06.2`. If you have installed it before,
     check the current version by going to the menu
     `Help -> About RStudio`.
-3.  [Git](https://git-scm.com/download/win): Select the "Click here for
+3.  [Git](https://git-scm.com/download/win): Select the "Click here to
     download" link. Git is used throughout many sessions in the courses.
     When installing, it will ask for a selecting a "Text Editor" and
     while we won't be using this in the course, Git needs to know this
