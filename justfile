@@ -27,7 +27,7 @@ style:
   styler::style_pkg()
 
 # Run the targets pipeline
-run-targets: build
+run-targets:
   #!/usr/bin/Rscript
   targets::tar_make()
 
