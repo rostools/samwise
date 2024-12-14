@@ -83,10 +83,11 @@ check_setup <- function(data) {
 
 check_project_setup <- function(data) {
   data %>%
+    dplyr::rename_with(\(cols) stringr::str_replace(cols, "copy_and_paste_the_results_of_your_r_3_check_project_setup.*", "check_project_setup")) %>%
     dplyr::select(
       full_name = what_is_your_full_name,
       email = email_address,
-      check_project_setup = copy_and_paste_the_results_of_your_r_3_check_project_setup_into_the_text_box_below
+      check_project_setup
     ) |>
     dplyr::group_split(full_name) %>%
     purrr::map_chr(~ pretty_code_checks(
