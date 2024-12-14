@@ -1,0 +1,103 @@
+session_name,question,response
+"Day 2, afternoon",could be improved for,An example from your work that shows why this is more efficient and how it can be used.
+"Day 2, afternoon",could be improved for,But maybe a bit too slowly. A lot of repetition doing similar things like creating functions that has been done many times before and hence could have gone through faster - especially writing everything from scratch each time creating the function instead of re-using what already had done. Still have a hard time of seeing the great idea of doing things so detailed and use prespecified functions when a lot of this could be coded a lot faster otherwise.
+"Day 2, afternoon",could be improved for,"Get the overview of why this is more efficient than e.g., script-based approach"
+"Day 2, afternoon",could be improved for,I don't understand yet how I can implement this for my own data analysis
+"Day 2, afternoon",could be improved for,"I feel like I don't know in which order and what all things I need to remember, so it could be useful to have a type of pseudo code like step 1. add packages to _targets.R, 2. add function to _targets.R and so on"
+"Day 2, afternoon",could be improved for,I had trouble following the logic of the reading sections more in this session than previous. That could also be my poor knowledge of statistics but I missed a bit of the explanation here.
+"Day 2, afternoon",could be improved for,I think all the steps from pivoting data into lipidomics_wide to the final stage to get a final tidy model output is a bit confusing. So a workflow with a focus on saving all the step would be nice.
+"Day 2, afternoon",could be improved for,"It got a bit boring, with all respect. Maybe a bit less code along, and instead we could make more of the functions as exercises?"
+"Day 2, afternoon",could be improved for,"It was a little slow and a difficult to understand. I ended up having a lot of extra time, where I tried to understand what we were doing"
+"Day 2, afternoon",could be improved for,"It went a bit too fast for me, struggling to see the different applications of the targets function vs workflows"
+"Day 2, afternoon",could be improved for,It would be nice to get more into why this workflow/targets approch is meaningful. It seems that we create a lot of code to do something very simple. Is it because it scales well or something else? Right now it is hard to understand why this approch is smart.
+"Day 2, afternoon",could be improved for,"Maybe it took a long time to do the exercises, and they were repetitive at some point. Maybe could try to include extra exercises for those who finish faster with extra learning competences - but making them optional, so no one feels force to do them"
+"Day 2, afternoon",could be improved for,Not ideas right now :)
+"Day 2, afternoon",could be improved for,Nothing
+"Day 2, afternoon",could be improved for,Nothing comes to mind.
+"Day 2, afternoon",could be improved for,"Personally, i think the time alotted to the reading sections was a but too much time, and then you became a bit restless. I started spending time putting the functions into the _targets file everytime we had to read. Which i also wondered why we didnt do? :)"
+"Day 2, afternoon",could be improved for,So we did not use github commit all day although we it was emphasized a lot yesterday :)
+"Day 2, afternoon",could be improved for,"The pace was a bit slow, I think the instructor could go fasterIt was a bit too silent as wellIt was emphasized (more than once) that we will not learn statistical analysis methods/interpretation, however significant amount of time was spent doing that (explaining models, meaning of the final results)"
+"Day 2, afternoon",could be improved for,"as previously mentioned, I would appreciate if we could have a greater picture of how the different parts of the session will be used in a real world project"
+"Day 2, afternoon",could be improved for,my effort - I was a bit inattentive
+"Day 2, afternoon",could be improved for,nothing
+"Day 2, afternoon",could be improved for,"overall, it worked well, I do not have any points."
+"Day 2, afternoon",could be improved for,"this felt a lot like the intermediate course, where we learned how to make functions. I feel like there was a bit too much emphasis on this, and we definitely could have gone a little faster in the 'making a functions' part, since we (assumably) already know this.I would have appreciated including other workflow examples, aside from stats."
+"Day 2, afternoon",could be improved for,"to much code along, better with exercisesI do not understand the reason for the choice of setting up the model this way, why use parsnipe, recipe and workflows?"
+"Day 2, afternoon",worked well for,Both nice to go through things stepwise and slowly.
+"Day 2, afternoon",worked well for,Code a long sessions are nice
+"Day 2, afternoon",worked well for,Great help during the session
+"Day 2, afternoon",worked well for,"I really appreciate all the making functions, this is good practice."
+"Day 2, afternoon",worked well for,"I think there is a good workflow, and it is nice with the code along sessions!"
+"Day 2, afternoon",worked well for,Interesting new functions and approaches to apply standard statistical methods
+"Day 2, afternoon",worked well for,"Isabell is an absolute queen—like, literal royalty in the classroom. Her teaching is so fabulous it deserves its own runway show, and her knowledge sparkles brighter than a diamond tiara. 10/10 would enroll in another course just to bask in her brilliance. Long live Queen Isabell!"
+"Day 2, afternoon",worked well for,It was very easy to follow the documentation throughout the session. Having time to do the exercises on our own was nice.
+"Day 2, afternoon",worked well for,It worked well to follow up the instructor through the coding sessions
+"Day 2, afternoon",worked well for,"Nice tempo, nice to see different packages and functions (like tidy from the broom package)"
+"Day 2, afternoon",worked well for,Nice to learn workflow
+"Day 2, afternoon",worked well for,Nice to start with a walk and talk. Great to go through the codes together. Great with a lot of experience in functions.
+"Day 2, afternoon",worked well for,No one left behind
+"Day 2, afternoon",worked well for,The code-alongs
+"Day 2, afternoon",worked well for,The overview of workflows
+"Day 2, afternoon",worked well for,"The pace was a bit faster, which was nice"
+"Day 2, afternoon",worked well for,The pace was good
+"Day 2, afternoon",worked well for,The pace was nice when we worked through the code
+"Day 2, afternoon",worked well for,"The reading exercises. It would be nice, if it was followed  by an explanation using other words than used in the reading task."
+"Day 2, afternoon",worked well for,Very excellent instructor
+"Day 2, afternoon",worked well for,code along as usual
+"Day 2, afternoon",worked well for,good flow
+"Day 2, afternoon",worked well for,good with a lot of functions
+"Day 2, afternoon",worked well for,i liked the introduction to targets; seems like a very useful package.
+"Day 2, afternoon",worked well for,many new and potentially useful things - like the options to specify model and transform variables for this one specific model
+"Day 2, afternoon",worked well for,nice tempo
+"Day 2, afternoon",worked well for,"very smooth, clearly moderated"
+"Day 2, morning",could be improved for,"Difficult to understand target, but I guess that is just how it is. Maybe you could try to make it more clear why targets is useful. You could try to show the ""final result"" or were we will end up earlier on."
+"Day 2, morning",could be improved for,Explain a bit earlier what the purpose of targets are and when you would use it
+"Day 2, morning",could be improved for,I would like see an example for how to add exporting files or figures to a corresponding folder and adding this steps to our framework in targets.
+"Day 2, morning",could be improved for,I would love to be able to setup my own foundation for my own data projekt on the side or to make the necessary code to do it. I have tried and as a lot is in the r3 package it is a little difficult to start yourself
+"Day 2, morning",could be improved for,"I'm not quite sure if i get ""targets"" in generel. Maybe, you could start the session with zzooming out and explain it: ""if this was a project, this target thing could help me by xxxxxx"""
+"Day 2, morning",could be improved for,"In general I miss a greater picture / overview how this is to be implemented in our daily work and what purpose (as an overview) of the specific section is. I understand this can not be easy since we will build more and more as we proceed during the course, but still I miss some greater picture/overview of what we are doing in a specific course section. I hope it makes sense"
+"Day 2, morning",could be improved for,"It is difficult to see the purpose, it is very much set up, and difficult to redo later on other projects"
+"Day 2, morning",could be improved for,Maybe a more thorough description of the advantages compared to a script-based approach.
+"Day 2, morning",could be improved for,Maybe add an example of the delete functions. The reading task did not leave me with a full understanding of how they work in practice.
+"Day 2, morning",could be improved for,Maybe having more links on the documentation on how to format the quarto output documents more nicely
+"Day 2, morning",could be improved for,Maybe include some more on how we can use this in our own projects?
+"Day 2, morning",could be improved for,"Maybe try and explain or visualize from one of your own projects in the beginning, how this is effective in the long run."
+"Day 2, morning",could be improved for,"Maybe try to explain the overall aim beforehand, e.g., by drawing the tar_visnetwork() on the board."
+"Day 2, morning",could be improved for,"Not necessarily a comment on this session, but I wonder if you would ever consider to do a course on data visualization? I think it would be very interesting and useful!"
+"Day 2, morning",could be improved for,Nothing
+"Day 2, morning",could be improved for,"Perhaps we could have some time, where we would ourselves try to add things to either the descriptive tables, or to the figure. I know it is not a course on figures or tables, however(!), it helps you understand the structure of the target list together with the functions file. Just a bit of practice in adding things to the pipeline, on our own or in small teams, and then we could ask for help if we were completely lost :)"
+"Day 2, morning",could be improved for,Quicker pace and would be nice to know how the target function actually works
+"Day 2, morning",could be improved for,"Ran into some errors related to the quarto file during Day2 morning session. Nothing you can do about this, but might be good to look into it for next time :)"
+"Day 2, morning",could be improved for,Saving your figure/table as a png/pdf seperately
+"Day 2, morning",could be improved for,"The structure was a bit messy on day 2 morning. Anders is a good teacher/presenter, but he is wiggling/stepping from side to side and that is a bit stressful to look at."
+"Day 2, morning",could be improved for,"This mostly goes for the morning session: But 1,5 hours of teaching without a small break is too long so consider adding in more small breaks."
+"Day 2, morning",could be improved for,tar_visnetwork() didn't work with R version 4.4.0
+"Day 2, morning",could be improved for,the pace of this could go a  bit slower
+"Day 2, morning",worked well for,A nice stepwise introduction into creating the functions and then adding them to the pipeline.
+"Day 2, morning",worked well for,"A very good introduction to the targets world, building it step by step."
+"Day 2, morning",worked well for,Better pace this time. It was neither too slow nor too fast.
+"Day 2, morning",worked well for,Code-alongs
+"Day 2, morning",worked well for,Describing the overall vision with using pipelines and targets
+"Day 2, morning",worked well for,Easy to follow sessions (both Day1 afternoon and Day2 morning)
+"Day 2, morning",worked well for,Everything
+"Day 2, morning",worked well for,Going through the codes together.
+"Day 2, morning",worked well for,Having time to do the exercises on our own - to find what is it that we struggle with
+"Day 2, morning",worked well for,I really appreciate the combination of code-along and trying on our own. Using targets seems a very useful tool and one I probably never would have known without this course.
+"Day 2, morning",worked well for,I think you did a good job explain that many of the steps doesn't make sense at first but will later on. Using targets for the first time is a little bit confusing
+"Day 2, morning",worked well for,"In general, it is really nice to code along. The speed is perfect and the explanation is good."
+"Day 2, morning",worked well for,"It worked well to follow up instructions and also coding meanwhile. The text was informative enough so when I missed something from the instructor, I could go back to the course material and catch up."
+"Day 2, morning",worked well for,Learned targets and automating functions
+"Day 2, morning",worked well for,"More coding, less reading (and talking)"
+"Day 2, morning",worked well for,Nice coding sessions
+"Day 2, morning",worked well for,Nice to get a feel for the automated pipeline.
+"Day 2, morning",worked well for,Nice with more code along session
+"Day 2, morning",worked well for,The instructions were clear and the pace was good.
+"Day 2, morning",worked well for,The pace was quite nice.
+"Day 2, morning",worked well for,"There is a good workflow, and it is nice that there is a large part of code-along."
+"Day 2, morning",worked well for,"This was really interesting session, almost everything worked well. Need to think about and acquire pipeline concepts, but they were amazing"
+"Day 2, morning",worked well for,Very clear
+"Day 2, morning",worked well for,clear instructions
+"Day 2, morning",worked well for,everything but the content in particular: these targets are really fascinating stuff!
+"Day 2, morning",worked well for,good instruction and help and moving forward
+"Day 2, morning",worked well for,nice code along
+"Day 2, morning",worked well for,the curriculum is useful and matches my level.
