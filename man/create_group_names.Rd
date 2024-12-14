@@ -2,7 +2,7 @@
 % Please edit documentation in R/create-teams.R
 \name{create_group_names}
 \alias{create_group_names}
-\title{Create randomly generated group names based on city coordinating from what3words.}
+\title{Create randomly generated group names.}
 \usage{
 create_group_names(number_groups)
 }
@@ -13,11 +13,10 @@ create_group_names(number_groups)
 A character vector of names.
 }
 \description{
-From all cities globally, get the \href{https://what3words.com/}{what3words}
-coordinates to use as fun group names.
+Create randomly generated group names.
 }
 \examples{
 \dontrun{
-create_group_names(20)
+create_group_names(26)
 }
 }

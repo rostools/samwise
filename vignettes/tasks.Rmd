@@ -144,9 +144,9 @@ round_down_to_even <- function(x) {
 set.seed(12)
 teams <- tibble(
   username = sample(usernames, length(usernames)),
-  team_names = sample(praise::praise_parts$adjective, length(usernames) / 2) |> 
-    rep(times = 2) |> 
-    sample() |> 
+  team_names = sample(praise::praise_parts$adjective, length(usernames) / 2) |>
+    rep(times = 2) |>
+    sample() |>
     str_c("-project")
 )
 count(teams, team_names)
@@ -231,7 +231,6 @@ setup_team_projects <- function(
 }
 
 setup_team_projects(teams, "r-cubed-advanced-2024-12")
-
 ```
 
 ```{r}
