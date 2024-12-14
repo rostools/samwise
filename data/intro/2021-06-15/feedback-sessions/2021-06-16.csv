@@ -1,93 +1,93 @@
-session_name,question,response,course_name
-Day 2,worked well for the Data management and wrangling,Everything,NA
-Day 2,could be improved for the Data management and wrangling,Nothing,NA
-Day 2,worked well for the Creating reproducible documents,Everything,NA
-Day 2,could be improved for the Creating reproducible documents,Nothing,NA
-Day 2,worked well for the Data management and wrangling,We have lots of time to fulfill every exercise,NA
-Day 2,could be improved for the Data management and wrangling,x,NA
-Day 2,worked well for the Creating reproducible documents,x,NA
-Day 2,could be improved for the Creating reproducible documents,We didn't have time enough to go through all the exercises,NA
-Day 2,worked well for the Data management and wrangling,easy to follow along,NA
-Day 2,could be improved for the Data management and wrangling,not much,NA
-Day 2,worked well for the Creating reproducible documents,"really thorough explaination by Hannah, very pedagogical",NA
-Day 2,could be improved for the Creating reproducible documents,a little long in the end,NA
-Day 2,worked well for the Data management and wrangling,"It was very clear how to use the code, and pipe operators were really great",NA
-Day 2,could be improved for the Data management and wrangling,That session went very slow for me. I think we could have gone faster.,NA
-Day 2,worked well for the Creating reproducible documents,That was a fun and useful session.,NA
-Day 2,could be improved for the Creating reproducible documents,It would be good to explain a bit more exactly how that goes into your workflow (like getting stuff right in the scripts and then pasting the relevant bit to the markdown as an example),NA
-Day 2,worked well for the Data management and wrangling,Individual exercises,NA
-Day 2,could be improved for the Data management and wrangling,"More exercises, maybe on group-level, and less code along.",NA
-Day 2,worked well for the Creating reproducible documents,Individual exercises,NA
-Day 2,could be improved for the Creating reproducible documents,Information on how to cooperate with non-R users (ie. supervisors).,NA
-Day 2,worked well for the Data management and wrangling,Exercises,NA
-Day 2,could be improved for the Data management and wrangling,Nothing specific,NA
-Day 2,worked well for the Creating reproducible documents,repetitive exercises,NA
-Day 2,could be improved for the Creating reproducible documents,nothing specific,NA
-Day 2,worked well for the Data management and wrangling,It was nice to start working with data,NA
-Day 2,could be improved for the Data management and wrangling,Went a bit slow,NA
-Day 2,worked well for the Creating reproducible documents,"As we went along it started to make sense, why you should do this",NA
-Day 2,could be improved for the Creating reproducible documents,Long day....,NA
-Day 2,worked well for the Data management and wrangling,learned tons of hands on data,NA
-Day 2,could be improved for the Data management and wrangling,too much time for some and too little for other tasks,NA
-Day 2,worked well for the Creating reproducible documents,learned lots,NA
-Day 2,could be improved for the Creating reproducible documents,explain pipes again,NA
-Day 2,worked well for the Data management and wrangling,Code along,NA
-Day 2,could be improved for the Data management and wrangling,More breaks,NA
-Day 2,worked well for the Creating reproducible documents,code along and lecture,NA
-Day 2,could be improved for the Creating reproducible documents,More time,NA
-Day 2,worked well for the Data management and wrangling,The code-along sessions were very good,NA
-Day 2,could be improved for the Data management and wrangling,We could have sped up a little to finish the exercises,NA
-Day 2,worked well for the Creating reproducible documents,Very interesting to learn the knit function to see what we can do,NA
-Day 2,could be improved for the Creating reproducible documents,Perhaps spend more time on this section as it was much harder that the earlier session (or could be that we are tired at the end of the day),NA
-Day 2,worked well for the Data management and wrangling,We had some data to work with.,NA
-Day 2,worked well for the Creating reproducible documents,Code-along is working well,NA
-Day 2,worked well for the Data management and wrangling,Code-along is nice,NA
-Day 2,could be improved for the Data management and wrangling,Less time on 9.1,NA
-Day 2,worked well for the Creating reproducible documents,Code-along,NA
-Day 2,could be improved for the Creating reproducible documents,"Clearer overview, many details",NA
-Day 2,worked well for the Data management and wrangling,everything,NA
-Day 2,could be improved for the Data management and wrangling,nothing,NA
-Day 2,worked well for the Creating reproducible documents,everything,NA
-Day 2,could be improved for the Creating reproducible documents,nothing,NA
-Day 2,worked well for the Data management and wrangling,"NIce, slow and clear code-along!",NA
-Day 2,worked well for the Creating reproducible documents,Nice lecture by Daniel. Very clear rmarkdown session.,NA
-Day 2,worked well for the Data management and wrangling,It worked very well with coding along and trying it on a real data set. Everything was very concrete and I understood how R could be useful.,NA
-Day 2,worked well for the Creating reproducible documents,Coding along,NA
-Day 2,could be improved for the Creating reproducible documents,I was very tired at the end of the day. Maybe the days should not be this long.,NA
-Day 2,worked well for the Data management and wrangling,That we worked on a real data set,NA
-Day 2,worked well for the Creating reproducible documents,code-along,NA
-Day 2,could be improved for the Creating reproducible documents,It was difficult to do the exercises,NA
-Day 2,worked well for the Data management and wrangling,Things are starting to fall into place. Doing code-along and then exercises works very well.,NA
-Day 2,could be improved for the Data management and wrangling,I do not have any suggestions.,NA
-Day 2,worked well for the Creating reproducible documents,Same answer as above: Doing code-along and then exercises works very well.,NA
-Day 2,could be improved for the Creating reproducible documents,I do not have any suggestions.,NA
-Day 2,worked well for the Data management and wrangling,"Getting to know how to alter/change your dataset, and make simple calculations. This worked well for all session: the stickies :)",NA
-Day 2,could be improved for the Data management and wrangling,"The ungroup part made sense, but it still threw an ""error"". Learning how to add error-terms (SDs, CI95%) to the table would be nice",NA
-Day 2,worked well for the Creating reproducible documents,The walk-thought was good,NA
-Day 2,could be improved for the Creating reproducible documents,"The lack of time, meant that parts were skipped - sadly.",NA
-Day 2,worked well for the Data management and wrangling,Code-along was nice.,NA
-Day 2,could be improved for the Data management and wrangling,It's a bit too bad that you visually couldn't see the console output during the wrangling code-along. It's very nice to physically see that you added e.g. the log_height column.,NA
-Day 2,worked well for the Creating reproducible documents,Really useful and cool thing to learn R markdown.,NA
-Day 2,could be improved for the Creating reproducible documents,It went a bit too fast for me/too bad we had to skip some sections due to time. But then again one can just play around later since it's open source learning material B-),NA
-Day 2,worked well for the Data management and wrangling,It was nice to get some basic feeling of R-codes and to have focus on the basic Things to do before actually making dataanalysis/figures,NA
-Day 2,could be improved for the Data management and wrangling,"a bit more on why the coding is as it is, i.e. when do we have a function and what is arguments and how do the link to each other",NA
-Day 2,worked well for the Creating reproducible documents,It was nice to finally get an idea of what markdown is,NA
-Day 2,could be improved for the Creating reproducible documents,"a bit more on how it is actually ""build""/structured before starting to add text/code to the document.",NA
-Day 2,worked well for the Data management and wrangling,It was really good to code along. It could be nice to also get an example why it is ness for clean the data.,NA
-Day 2,could be improved for the Data management and wrangling,It is good - no comments,NA
-Day 2,worked well for the Creating reproducible documents,Good lecture but I prefer the code-alongs,NA
-Day 2,could be improved for the Creating reproducible documents,See comments above,NA
-Day 2,worked well for the Data management and wrangling,Getting help anytime you need,NA
-Day 2,could be improved for the Data management and wrangling,more Translating R language to our language,NA
-Day 2,worked well for the Creating reproducible documents,following,NA
-Day 2,worked well for the Data management and wrangling,"Good introduction of all the basics stuff, and good expertise in the more advance pipelines",NA
-Day 2,could be improved for the Data management and wrangling,Don't have anything on the top of my head,NA
-Day 2,worked well for the Creating reproducible documents,"Everything, started simple and then go more complicated. I feel very suited for using Markdown.",NA
-Day 2,could be improved for the Creating reproducible documents,I think the advanced exercise could be better described. More specific what and why we are doing?,NA
-Day 2,worked well for the Data management and wrangling,It worked well with the examples on messy and tidy data sets. Really helpful with all renaming tasks etc. - the basics are soo good!,NA
-Day 2,could be improved for the Data management and wrangling,"It may be just me, but I was missing a bit more explanation on the pipe",NA
-Day 2,worked well for the Creating reproducible documents,Very helpful introduction to RMarkdown. Good examples and it makes great sense as a tool.,NA
-Day 2,could be improved for the Creating reproducible documents,A bit more time,NA
-Day 1,worked well for the Management of R projects,following the instructions,NA
-Day 1,could be improved for the Management of R projects,understanding what the instructions more- why exactly we put the code the way we do. There could be like slide presentation with few examples where arrows indicate what is what - pre course material for the very beginners,NA
-Day 1,worked well for the Version control and collaborative practices,communicating with the server,NA
+session_name,question,response
+Day 1,could be improved for the Management of R projects,understanding what the instructions more- why exactly we put the code the way we do. There could be like slide presentation with few examples where arrows indicate what is what - pre course material for the very beginners
+Day 1,worked well for the Management of R projects,following the instructions
+Day 1,worked well for the Version control and collaborative practices,communicating with the server
+Day 2,could be improved for the Creating reproducible documents,A bit more time
+Day 2,could be improved for the Creating reproducible documents,"Clearer overview, many details"
+Day 2,could be improved for the Creating reproducible documents,I do not have any suggestions.
+Day 2,could be improved for the Creating reproducible documents,I think the advanced exercise could be better described. More specific what and why we are doing?
+Day 2,could be improved for the Creating reproducible documents,I was very tired at the end of the day. Maybe the days should not be this long.
+Day 2,could be improved for the Creating reproducible documents,Information on how to cooperate with non-R users (ie. supervisors).
+Day 2,could be improved for the Creating reproducible documents,It was difficult to do the exercises
+Day 2,could be improved for the Creating reproducible documents,It went a bit too fast for me/too bad we had to skip some sections due to time. But then again one can just play around later since it's open source learning material B-)
+Day 2,could be improved for the Creating reproducible documents,It would be good to explain a bit more exactly how that goes into your workflow (like getting stuff right in the scripts and then pasting the relevant bit to the markdown as an example)
+Day 2,could be improved for the Creating reproducible documents,Long day....
+Day 2,could be improved for the Creating reproducible documents,More time
+Day 2,could be improved for the Creating reproducible documents,Nothing
+Day 2,could be improved for the Creating reproducible documents,Perhaps spend more time on this section as it was much harder that the earlier session (or could be that we are tired at the end of the day)
+Day 2,could be improved for the Creating reproducible documents,See comments above
+Day 2,could be improved for the Creating reproducible documents,"The lack of time, meant that parts were skipped - sadly."
+Day 2,could be improved for the Creating reproducible documents,We didn't have time enough to go through all the exercises
+Day 2,could be improved for the Creating reproducible documents,"a bit more on how it is actually ""build""/structured before starting to add text/code to the document."
+Day 2,could be improved for the Creating reproducible documents,a little long in the end
+Day 2,could be improved for the Creating reproducible documents,explain pipes again
+Day 2,could be improved for the Creating reproducible documents,nothing
+Day 2,could be improved for the Creating reproducible documents,nothing specific
+Day 2,could be improved for the Data management and wrangling,Don't have anything on the top of my head
+Day 2,could be improved for the Data management and wrangling,I do not have any suggestions.
+Day 2,could be improved for the Data management and wrangling,It is good - no comments
+Day 2,could be improved for the Data management and wrangling,"It may be just me, but I was missing a bit more explanation on the pipe"
+Day 2,could be improved for the Data management and wrangling,It's a bit too bad that you visually couldn't see the console output during the wrangling code-along. It's very nice to physically see that you added e.g. the log_height column.
+Day 2,could be improved for the Data management and wrangling,Less time on 9.1
+Day 2,could be improved for the Data management and wrangling,More breaks
+Day 2,could be improved for the Data management and wrangling,"More exercises, maybe on group-level, and less code along."
+Day 2,could be improved for the Data management and wrangling,Nothing
+Day 2,could be improved for the Data management and wrangling,Nothing specific
+Day 2,could be improved for the Data management and wrangling,That session went very slow for me. I think we could have gone faster.
+Day 2,could be improved for the Data management and wrangling,"The ungroup part made sense, but it still threw an ""error"". Learning how to add error-terms (SDs, CI95%) to the table would be nice"
+Day 2,could be improved for the Data management and wrangling,We could have sped up a little to finish the exercises
+Day 2,could be improved for the Data management and wrangling,Went a bit slow
+Day 2,could be improved for the Data management and wrangling,"a bit more on why the coding is as it is, i.e. when do we have a function and what is arguments and how do the link to each other"
+Day 2,could be improved for the Data management and wrangling,more Translating R language to our language
+Day 2,could be improved for the Data management and wrangling,not much
+Day 2,could be improved for the Data management and wrangling,nothing
+Day 2,could be improved for the Data management and wrangling,too much time for some and too little for other tasks
+Day 2,could be improved for the Data management and wrangling,x
+Day 2,worked well for the Creating reproducible documents,"As we went along it started to make sense, why you should do this"
+Day 2,worked well for the Creating reproducible documents,Code-along
+Day 2,worked well for the Creating reproducible documents,Code-along is working well
+Day 2,worked well for the Creating reproducible documents,Coding along
+Day 2,worked well for the Creating reproducible documents,Everything
+Day 2,worked well for the Creating reproducible documents,"Everything, started simple and then go more complicated. I feel very suited for using Markdown."
+Day 2,worked well for the Creating reproducible documents,Good lecture but I prefer the code-alongs
+Day 2,worked well for the Creating reproducible documents,Individual exercises
+Day 2,worked well for the Creating reproducible documents,It was nice to finally get an idea of what markdown is
+Day 2,worked well for the Creating reproducible documents,Nice lecture by Daniel. Very clear rmarkdown session.
+Day 2,worked well for the Creating reproducible documents,Really useful and cool thing to learn R markdown.
+Day 2,worked well for the Creating reproducible documents,Same answer as above: Doing code-along and then exercises works very well.
+Day 2,worked well for the Creating reproducible documents,That was a fun and useful session.
+Day 2,worked well for the Creating reproducible documents,The walk-thought was good
+Day 2,worked well for the Creating reproducible documents,Very helpful introduction to RMarkdown. Good examples and it makes great sense as a tool.
+Day 2,worked well for the Creating reproducible documents,Very interesting to learn the knit function to see what we can do
+Day 2,worked well for the Creating reproducible documents,code along and lecture
+Day 2,worked well for the Creating reproducible documents,code-along
+Day 2,worked well for the Creating reproducible documents,everything
+Day 2,worked well for the Creating reproducible documents,following
+Day 2,worked well for the Creating reproducible documents,learned lots
+Day 2,worked well for the Creating reproducible documents,"really thorough explaination by Hannah, very pedagogical"
+Day 2,worked well for the Creating reproducible documents,repetitive exercises
+Day 2,worked well for the Creating reproducible documents,x
+Day 2,worked well for the Data management and wrangling,Code along
+Day 2,worked well for the Data management and wrangling,Code-along is nice
+Day 2,worked well for the Data management and wrangling,Code-along was nice.
+Day 2,worked well for the Data management and wrangling,Everything
+Day 2,worked well for the Data management and wrangling,Exercises
+Day 2,worked well for the Data management and wrangling,Getting help anytime you need
+Day 2,worked well for the Data management and wrangling,"Getting to know how to alter/change your dataset, and make simple calculations. This worked well for all session: the stickies :)"
+Day 2,worked well for the Data management and wrangling,"Good introduction of all the basics stuff, and good expertise in the more advance pipelines"
+Day 2,worked well for the Data management and wrangling,Individual exercises
+Day 2,worked well for the Data management and wrangling,It was nice to get some basic feeling of R-codes and to have focus on the basic Things to do before actually making dataanalysis/figures
+Day 2,worked well for the Data management and wrangling,It was nice to start working with data
+Day 2,worked well for the Data management and wrangling,It was really good to code along. It could be nice to also get an example why it is ness for clean the data.
+Day 2,worked well for the Data management and wrangling,"It was very clear how to use the code, and pipe operators were really great"
+Day 2,worked well for the Data management and wrangling,It worked very well with coding along and trying it on a real data set. Everything was very concrete and I understood how R could be useful.
+Day 2,worked well for the Data management and wrangling,It worked well with the examples on messy and tidy data sets. Really helpful with all renaming tasks etc. - the basics are soo good!
+Day 2,worked well for the Data management and wrangling,"NIce, slow and clear code-along!"
+Day 2,worked well for the Data management and wrangling,That we worked on a real data set
+Day 2,worked well for the Data management and wrangling,The code-along sessions were very good
+Day 2,worked well for the Data management and wrangling,Things are starting to fall into place. Doing code-along and then exercises works very well.
+Day 2,worked well for the Data management and wrangling,We had some data to work with.
+Day 2,worked well for the Data management and wrangling,We have lots of time to fulfill every exercise
+Day 2,worked well for the Data management and wrangling,easy to follow along
+Day 2,worked well for the Data management and wrangling,everything
+Day 2,worked well for the Data management and wrangling,learned tons of hands on data

@@ -1,51 +1,51 @@
-session_name,question,response,course_name
-"Day 1, morning",worked well for,Nice Pace. Great coverage of the basics,Introductory
-"Day 1, morning",could be improved for,Nothing,Introductory
-"Day 1, morning",worked well for,step-by-step progress,Introductory
-"Day 1, morning",could be improved for,a little bit faster progress,Introductory
-"Day 1, morning",worked well for,Blue notes system.,Introductory
-"Day 1, morning",could be improved for,"Consider giving more post-it notes, mine stopped being sticky.",Introductory
-"Day 1, morning",worked well for,"Very well structured, perfect working pace, very clear explanation",Introductory
-"Day 1, morning",could be improved for,No further comments,Introductory
-"Day 1, morning",worked well for,Even with base to intermediate knowledge of R i really liked the pace and structure of this part of the course.,Introductory
-"Day 1, morning",could be improved for,None,Introductory
-"Day 1, morning",worked well for,Everything basically :),Introductory
-"Day 1, morning",could be improved for,I think it's a pretty decent session. Love that we went over the very basic things; sort of easing into the course.,Introductory
-"Day 1, morning",worked well for,Slow and basic,Introductory
-"Day 1, morning",could be improved for,"More perspective on how it is supposed to be applied to our own data (but might be covered in later sessions - I am a beginner, so kind of clueless still)",Introductory
-"Day 1, morning",worked well for,The instructions and explanations were clear. The sticky notes are a great way of communicating problems or being ready.,Introductory
-"Day 1, morning",worked well for,Good introduction to R,Introductory
-"Day 1, morning",could be improved for,A better explanation of why this is a good way,Introductory
-"Day 1, morning",worked well for,"I think, allthough i personally found it a bit slow, that it is important that everyone is following along.",Introductory
-"Day 1, morning",could be improved for,"Not much, it is hard to adjust tempo at this early point :)",Introductory
-"Day 1, morning",worked well for,All good!,Introductory
-"Day 1, morning",could be improved for,"So far, everything seems to be just fine, thanks.",Introductory
-"Day 1, morning",worked well for,"Combination of code-along, reading and group work + quick help from instructors when needed",Introductory
-"Day 1, morning",could be improved for,Don't know,Introductory
-"Day 1, morning",worked well for,all was great,Introductory
-"Day 1, morning",could be improved for,nothing,Introductory
-"Day 1, morning",worked well for,Volunteers helping,Introductory
-"Day 1, morning",could be improved for,looks good. we are just starting!,Introductory
-"Day 1, morning",worked well for,Good learning environment. Many instructors to get quick help from. Luke very good at explaining things in an understandable way. Stickies work very well.,Introductory
-"Day 1, morning",worked well for,Good explaining and showing and it is easy to get help :),Introductory
-"Day 1, morning",could be improved for,0,Introductory
-"Day 1, morning",worked well for,"i like that it's very slow and welcome beginners :-) Works well to ""code"" together",Introductory
-"Day 1, morning",could be improved for,maybe a very short coffee break :-),Introductory
-"Day 1, morning",worked well for,"Detailed description of the steps and what the different coding meant. Provided a basic overview of console, script, files etc in R.",Introductory
-"Day 1, morning",could be improved for,Do not know,Introductory
-"Day 1, morning",worked well for,"The structure/program, the interaction with us, the teaching while being active yourself",Introductory
-"Day 1, morning",could be improved for,No comments,Introductory
-"Day 1, morning",worked well for,Learning how to structure your work in R,Introductory
-"Day 1, morning",worked well for,"The code-along was at a nice pace (not to slow for me, and not to fast for my group mates, which had not worked in R before). The introduction set the scene for the course in a nice way, promising relevancy even though you are experienced in R.",Introductory
-"Day 1, morning",could be improved for,"The sticky notes are a great idea, but after a couple of times, they no longer stick to your laptop. Maybe use an alternative for next time?",Introductory
-"Day 1, morning",worked well for,how to start a project was well explained.,Introductory
-"Day 1, morning",could be improved for,"still not much on R itself especially for beginners. before we can use R for open science we must first know how to use R, otherwise, most of the stuff is theoretical in their actual use.",Introductory
-"Day 1, morning",worked well for,The very structured outline showing how to make an r project,Introductory
-"Day 1, morning",worked well for,Very basic and perfect tempo. Easy to get help and ask questions.,Introductory
-"Day 1, morning",could be improved for,Very basic and perfect tempo. Easy to get help and ask questions.,Introductory
-"Day 1, morning",worked well for,all was good. especially how to start a new project was very useful.,Introductory
-"Day 1, morning",could be improved for,"perhaps it could be a bit quicker. reading the material and going through it was very good, but I don't know if some sections could have been skipped. overall it was a very good start to this course.",Introductory
-"Day 1, morning",worked well for,Getting to try everything out in R - and starting at the very basics.,Introductory
-"Day 1, morning",could be improved for,"I don't know how to improve this, but I lost focus a bit while waiting for others' technical issues to be solved.",Introductory
-"Day 1, afternoon",worked well for,"Hands-on, nice and slow tempo",Introductory
-"Day 1, afternoon",could be improved for,I liked it,Introductory
+session_name,question,response
+"Day 1, afternoon",could be improved for,I liked it
+"Day 1, afternoon",worked well for,"Hands-on, nice and slow tempo"
+"Day 1, morning",could be improved for,0
+"Day 1, morning",could be improved for,A better explanation of why this is a good way
+"Day 1, morning",could be improved for,"Consider giving more post-it notes, mine stopped being sticky."
+"Day 1, morning",could be improved for,Do not know
+"Day 1, morning",could be improved for,Don't know
+"Day 1, morning",could be improved for,"I don't know how to improve this, but I lost focus a bit while waiting for others' technical issues to be solved."
+"Day 1, morning",could be improved for,I think it's a pretty decent session. Love that we went over the very basic things; sort of easing into the course.
+"Day 1, morning",could be improved for,"More perspective on how it is supposed to be applied to our own data (but might be covered in later sessions - I am a beginner, so kind of clueless still)"
+"Day 1, morning",could be improved for,No comments
+"Day 1, morning",could be improved for,No further comments
+"Day 1, morning",could be improved for,None
+"Day 1, morning",could be improved for,"Not much, it is hard to adjust tempo at this early point :)"
+"Day 1, morning",could be improved for,Nothing
+"Day 1, morning",could be improved for,"So far, everything seems to be just fine, thanks."
+"Day 1, morning",could be improved for,"The sticky notes are a great idea, but after a couple of times, they no longer stick to your laptop. Maybe use an alternative for next time?"
+"Day 1, morning",could be improved for,Very basic and perfect tempo. Easy to get help and ask questions.
+"Day 1, morning",could be improved for,a little bit faster progress
+"Day 1, morning",could be improved for,looks good. we are just starting!
+"Day 1, morning",could be improved for,maybe a very short coffee break :-)
+"Day 1, morning",could be improved for,nothing
+"Day 1, morning",could be improved for,"perhaps it could be a bit quicker. reading the material and going through it was very good, but I don't know if some sections could have been skipped. overall it was a very good start to this course."
+"Day 1, morning",could be improved for,"still not much on R itself especially for beginners. before we can use R for open science we must first know how to use R, otherwise, most of the stuff is theoretical in their actual use."
+"Day 1, morning",worked well for,All good!
+"Day 1, morning",worked well for,Blue notes system.
+"Day 1, morning",worked well for,"Combination of code-along, reading and group work + quick help from instructors when needed"
+"Day 1, morning",worked well for,"Detailed description of the steps and what the different coding meant. Provided a basic overview of console, script, files etc in R."
+"Day 1, morning",worked well for,Even with base to intermediate knowledge of R i really liked the pace and structure of this part of the course.
+"Day 1, morning",worked well for,Everything basically :)
+"Day 1, morning",worked well for,Getting to try everything out in R - and starting at the very basics.
+"Day 1, morning",worked well for,Good explaining and showing and it is easy to get help :)
+"Day 1, morning",worked well for,Good introduction to R
+"Day 1, morning",worked well for,Good learning environment. Many instructors to get quick help from. Luke very good at explaining things in an understandable way. Stickies work very well.
+"Day 1, morning",worked well for,"I think, allthough i personally found it a bit slow, that it is important that everyone is following along."
+"Day 1, morning",worked well for,Learning how to structure your work in R
+"Day 1, morning",worked well for,Nice Pace. Great coverage of the basics
+"Day 1, morning",worked well for,Slow and basic
+"Day 1, morning",worked well for,"The code-along was at a nice pace (not to slow for me, and not to fast for my group mates, which had not worked in R before). The introduction set the scene for the course in a nice way, promising relevancy even though you are experienced in R."
+"Day 1, morning",worked well for,The instructions and explanations were clear. The sticky notes are a great way of communicating problems or being ready.
+"Day 1, morning",worked well for,"The structure/program, the interaction with us, the teaching while being active yourself"
+"Day 1, morning",worked well for,The very structured outline showing how to make an r project
+"Day 1, morning",worked well for,Very basic and perfect tempo. Easy to get help and ask questions.
+"Day 1, morning",worked well for,"Very well structured, perfect working pace, very clear explanation"
+"Day 1, morning",worked well for,Volunteers helping
+"Day 1, morning",worked well for,all was good. especially how to start a new project was very useful.
+"Day 1, morning",worked well for,all was great
+"Day 1, morning",worked well for,how to start a project was well explained.
+"Day 1, morning",worked well for,"i like that it's very slow and welcome beginners :-) Works well to ""code"" together"
+"Day 1, morning",worked well for,step-by-step progress

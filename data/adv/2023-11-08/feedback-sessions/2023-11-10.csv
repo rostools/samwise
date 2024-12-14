@@ -1,110 +1,110 @@
-session_name,question,response,course_name
-"Day 2, afternoon",worked well for,Very informative,Advanced
-"Day 2, afternoon",could be improved for,A little busy,Advanced
-"Day 3, morning",worked well for,Interactive sessions,Advanced
-"Day 3, morning",could be improved for,1. Assignment 8.4 was a bit weird. 2. It was quite confusing with pipes in the pipes in the pipes.,Advanced
-"Day 3, morning",worked well for,It was nice with more exercises.,Advanced
-"Day 3, morning",worked well for,Everything ran smoothly and the session had a nice pace,Advanced
-"Day 3, morning",could be improved for,Lecturer seemed a bit unfamiliar with the topic she presented,Advanced
-"Day 3, morning",worked well for,"It was pretty easily understandable, and very useful",Advanced
-"Day 3, morning",could be improved for,A bit slow at some points,Advanced
-"Day 3, morning",worked well for,"Really made yesterdays session clear, and showe cased the strength of targets.",Advanced
-"Day 3, morning",could be improved for,Repetition on df transformation from the previous session,Advanced
-"Day 3, morning",worked well for,good workflow,Advanced
-"Day 3, morning",could be improved for,maybe work in teams will building the workflow,Advanced
-"Day 3, morning",worked well for,visualizing the results,Advanced
-"Day 3, morning",could be improved for,plot design could be updated,Advanced
-"Day 3, morning",worked well for,"The balance between reading tasks, code along and excercises was very well",Advanced
-"Day 3, morning",could be improved for,"Nothing, it was very good",Advanced
-"Day 3, morning",worked well for,nice and clear explanation during the coding along,Advanced
-"Day 3, morning",could be improved for,no points,Advanced
-"Day 3, morning",worked well for,nicely presented by instructor.,Advanced
-"Day 3, morning",could be improved for,a little bit confusing that we had all the chuncks from yesterday left and didn't deleate on the go.,Advanced
-"Day 3, morning",worked well for,I think the coding cohered very well with the rules we previously have used! I enjoyed that there were more coding,Advanced
-"Day 3, morning",could be improved for,"I think it gets a little bit hard to remember the functionality of all the functions, and thus becomes confusing",Advanced
-"Day 3, morning",worked well for,Getting the repetitions with the whole workflow of making something in the learning document and then making it into a function and finally add it to targets,Advanced
-"Day 3, morning",could be improved for,All good,Advanced
-"Day 3, morning",worked well for,The split - join and function recap,Advanced
-"Day 3, morning",could be improved for,"targets make everything a little complicated to keep track of. I got a bit confused as to what function did what to the data, especially as we did something similar yesterday and some of those exercises remained in the quarto",Advanced
-"Day 3, morning",worked well for,"I think the topic was broken down well, easy to understand what we are doing.",Advanced
-"Day 3, morning",could be improved for,"The learning qmd started to get messy, maybe it could have been a bit clearer what was going to be deleted vs. what was not.",Advanced
-"Day 3, morning",worked well for,Everything,Advanced
-"Day 3, morning",could be improved for,"I have nothing to add. The session worked well over discord. Although, it is best to physically be there.",Advanced
-"Day 3, morning",worked well for,reading and code along,Advanced
-"Day 3, morning",could be improved for,"I though this session was abit confusing, not due to the instructor, but due to the switching back and forth between making functions and using functions we made in another function. As well as I think we should have started up this morning by cleaning up the markdown document, and ensure everybody had the same in that document, as it caused problems for some during the first exercise where we had to run targets on our own",Advanced
-"Day 3, morning",worked well for,It was nice to get continued hands on experience with the different tools we learned in the beginning of yesterday.,Advanced
-"Day 3, morning",could be improved for,"One doesn't really think to much in these sessions, as it is just code-along all the way, without really learning anything new. So it would be nice with some more explanation for the analyses or otherwise maybe groupwork on how to solve an exercise like this. Or making a different session learning different/new tools like in the beginning of yesterday (Wednesday).",Advanced
-"Day 3, morning",worked well for,Nice and concise explanations. Valuable tools and good introduction to using lists and map().,Advanced
-"Day 3, morning",could be improved for,"Maybe it would be relevant to work with your own project, and try to implement to tools for your own projects.",Advanced
-"Day 3, morning",worked well for,Starting with the recap for day 2 afternoon session,Advanced
-"Day 3, morning",could be improved for,"Build in some ways of minimizing despair! It is SOOOO confusing with the almost-but-not-quite-the-same names for dfs and objects when moving between the quarto code and functions, testing the function in quarto, then writing it into targets. Maybe having some prefix/suffix to the naming to indicate that this is a preliminary name while building the code, which corresponds EXACTLY to the final name used in the function code? Also it is extremely frustrating that the instructor continues when you are working on an issue with a helper, then you are continuously behind and might not have done all steps of the next chunk, which then gives an issue for the next chunk, then you are behind again etc. etc.",Advanced
-"Day 3, afternoon",worked well for,Really informative,Advanced
-End of course,worked well for the Networking Activities s,It was nice to get a chance to talk to the other participants on the course,Advanced
-End of course,could be improved for the Networking Activities s,"The questions could, IMO, be less R/course centered. Would also be nice just to have some random and more personal questions",Advanced
-"Day 3, afternoon",worked well for,Hard stuff explained in a really good way.,Advanced
-"Day 3, afternoon",could be improved for,Was faster than what was in the programme.. or maybe we just skipped the networking.,Advanced
-"Day 3, afternoon",worked well for,"It was nice, glad to be early done",Advanced
-"Day 3, afternoon",could be improved for,Lets do RShiny now :-)),Advanced
-"Day 3, afternoon",worked well for,It was a very good pace and description of the _quarto.yml as it could otherwise be tricky,Advanced
-"Day 3, afternoon",could be improved for,nothing :),Advanced
-"Day 3, afternoon",worked well for,I really enjoy the session,Advanced
-"Day 3, afternoon",could be improved for,a bit more time to explore github,Advanced
-"Day 3, afternoon",worked well for,"Very cool session, good there is plenty of time as the content is very different from the rest of the course",Advanced
-"Day 3, afternoon",could be improved for,"I could be cool to see what possibilities there are for the webpage, e.g. drop down menus, buttons and more",Advanced
-"Day 3, afternoon",worked well for,It was very nice to see that it worked,Advanced
-"Day 3, afternoon",could be improved for,"Nothing, it was all really well",Advanced
-"Day 3, afternoon",worked well for,"This was so clear, useful and good!",Advanced
-"Day 3, afternoon",could be improved for,nothing!,Advanced
-"Day 3, afternoon",worked well for,The pace and clear instruction,Advanced
-"Day 3, afternoon",could be improved for,I think it worked well and had a suitable length,Advanced
-"Day 3, afternoon",worked well for,learning how to share our work using a website was quire helpful,Advanced
-"Day 3, afternoon",could be improved for,a bit more detail on how to add/delete/edit website could be nice,Advanced
-"Day 3, afternoon",worked well for,Really very relevant and brilliant tool.,Advanced
-"Day 3, afternoon",could be improved for,"We skipped the discussion about why we should share. That would have been nice, but maybe a bit of a tangent.",Advanced
-"Day 3, afternoon",worked well for,I think this session worked well for the most part,Advanced
-"Day 3, afternoon",could be improved for,first part of the session was a bit messy with the lecturer keep asking if we have been able to do it instead of using the sticker system. She picked it up later however! :),Advanced
-"Day 3, afternoon",worked well for,Everything worked fine. So cool to learn how to publish our analyses in websites,Advanced
-"Day 3, afternoon",could be improved for,Everything went fine,Advanced
-End of course,worked well for the Networking Activities s,"It was nice to get to talk to people, we were a lot from Odense, glad i got mixed with a lot from Aarhus and Copenhagen",Advanced
-End of course,could be improved for the Networking Activities s,Better weather,Advanced
-"Day 3, afternoon",worked well for,"Genereally the workflow here was easier to follow, good explanation of why do we do what we do, and how we do it",Advanced
-"Day 3, afternoon",could be improved for,Some parts went a little fast,Advanced
-End of course,worked well for the Networking Activities s,Good with the walk and talk.,Advanced
-End of course,could be improved for the Networking Activities s,Could use it to have a broader discussion on implementation of the methods when you get home.,Advanced
-"Day 3, afternoon",worked well for,"Everything worked well, I had no issues with getting the website up.",Advanced
-"Day 3, afternoon",could be improved for,"How everything integrates together to build the website is still a little unclear to me, I might have problems customizing it. Maybe some examples of different options you could put on the website might be helpful?",Advanced
-"Day 3, afternoon",worked well for,well explained and it really makes it exciting to see the work we did through the course in a website format.,Advanced
-"Day 3, afternoon",could be improved for,no comments,Advanced
-End of course,worked well for the Networking Activities s,That we could walk and talk.,Advanced
-End of course,could be improved for the Networking Activities s,"One on the last day. AAnddn maybe just more personal things, like who we are etc.",Advanced
-End of course,worked well for the Networking Activities s,Get to know other attendees.,Advanced
-End of course,could be improved for the Networking Activities s,no suggestions,Advanced
-"Day 3, afternoon",worked well for,"All worked well, and was well instructed. It worked great over discord",Advanced
-"Day 3, afternoon",could be improved for,Reference(s) to design and tailor your website in quarto would be nice :),Advanced
-"Day 3, afternoon",worked well for,Instructions were clear,Advanced
-"Day 3, afternoon",could be improved for,"A few things was not updated in the course page, but otherwise good session",Advanced
-End of course,worked well for the Networking Activities s,"I found it hard to notice when a networking activity had started or not, and it felt a bit tossed on in the end",Advanced
-End of course,could be improved for the Networking Activities s,activities them selves were nice,Advanced
-"Day 3, afternoon",worked well for,Was really useful information!,Advanced
-"Day 3, afternoon",could be improved for,"Maybe it would be useful/nice to get more general knowledge of how to write the _quarto.yml file (indentation, hyphens (how, what, why) and all the different options for how to build a website).",Advanced
-End of course,worked well for the Networking Activities s,It was good to get some fresh air!,Advanced
-End of course,could be improved for the Networking Activities s,I think the 2nd day social activities were a little random..,Advanced
-End of course,worked well for the Networking Activities s,Was good to hear other people's experiences in similar situations. Now i have a better understanding on how other people deal with certain situations that I used to struggle with,Advanced
-End of course,could be improved for the Networking Activities s,Not really,Advanced
-End of course,worked well for the Networking Activities s,It was easy to approach other participants and instructors,Advanced
-End of course,worked well for the Networking Activities s,It is good to have the questions to start the conversation,Advanced
-End of course,could be improved for the Networking Activities s,"Nothing, it works well to get the conversation going",Advanced
-End of course,worked well for the Networking Activities s,Having them around lunch time was good because we were already kind of chatting with each other. It was a good way to find out what other people are working on.,Advanced
-End of course,could be improved for the Networking Activities s,"There are still some people I didn't interact with, purely out of chance due to the seating arrangements.",Advanced
-End of course,worked well for the Networking Activities s,I was not so good at using them I must admit.,Advanced
-End of course,could be improved for the Networking Activities s,I think the most useful networking for me was during the meals and the daily mixing of groups (and that was very good). I think you could consider cutting the networking and maybe change it to reflection questions done in the groups during the sessions,Advanced
-End of course,worked well for the Networking Activities s,It was nice to have time set of to here about others projects and work in general,Advanced
-End of course,could be improved for the Networking Activities s,I was good as is,Advanced
-End of course,worked well for the Networking Activities s,questions were very easy to initiate conversation and get  into getting a more personal opinion/experience,Advanced
-End of course,could be improved for the Networking Activities s,no comments,Advanced
-End of course,worked well for the Networking Activities s,I think it was some very nice questions - I liked the work and talk,Advanced
-End of course,could be improved for the Networking Activities s,I don't really have any ideas,Advanced
-"Day 3, afternoon",worked well for,"Easy to follow, because: logical, clear aim",Advanced
-"Day 3, afternoon",could be improved for,"Some mistakes in the website text, including the freeze: true option",Advanced
-End of course,worked well for the Networking Activities s,Conversation starter?,Advanced
-End of course,could be improved for the Networking Activities s,Depends on what the aim is exactly - but it would be nice with something a bit more active. Maybe during a session rather than right after lunch?,Advanced
+session_name,question,response
+"Day 2, afternoon",could be improved for,A little busy
+"Day 2, afternoon",worked well for,Very informative
+"Day 3, afternoon",could be improved for,"A few things was not updated in the course page, but otherwise good session"
+"Day 3, afternoon",could be improved for,Everything went fine
+"Day 3, afternoon",could be improved for,"How everything integrates together to build the website is still a little unclear to me, I might have problems customizing it. Maybe some examples of different options you could put on the website might be helpful?"
+"Day 3, afternoon",could be improved for,"I could be cool to see what possibilities there are for the webpage, e.g. drop down menus, buttons and more"
+"Day 3, afternoon",could be improved for,I think it worked well and had a suitable length
+"Day 3, afternoon",could be improved for,Lets do RShiny now :-))
+"Day 3, afternoon",could be improved for,"Maybe it would be useful/nice to get more general knowledge of how to write the _quarto.yml file (indentation, hyphens (how, what, why) and all the different options for how to build a website)."
+"Day 3, afternoon",could be improved for,"Nothing, it was all really well"
+"Day 3, afternoon",could be improved for,Reference(s) to design and tailor your website in quarto would be nice :)
+"Day 3, afternoon",could be improved for,"Some mistakes in the website text, including the freeze: true option"
+"Day 3, afternoon",could be improved for,Some parts went a little fast
+"Day 3, afternoon",could be improved for,Was faster than what was in the programme.. or maybe we just skipped the networking.
+"Day 3, afternoon",could be improved for,"We skipped the discussion about why we should share. That would have been nice, but maybe a bit of a tangent."
+"Day 3, afternoon",could be improved for,a bit more detail on how to add/delete/edit website could be nice
+"Day 3, afternoon",could be improved for,a bit more time to explore github
+"Day 3, afternoon",could be improved for,first part of the session was a bit messy with the lecturer keep asking if we have been able to do it instead of using the sticker system. She picked it up later however! :)
+"Day 3, afternoon",could be improved for,no comments
+"Day 3, afternoon",could be improved for,nothing :)
+"Day 3, afternoon",could be improved for,nothing!
+"Day 3, afternoon",worked well for,"All worked well, and was well instructed. It worked great over discord"
+"Day 3, afternoon",worked well for,"Easy to follow, because: logical, clear aim"
+"Day 3, afternoon",worked well for,Everything worked fine. So cool to learn how to publish our analyses in websites
+"Day 3, afternoon",worked well for,"Everything worked well, I had no issues with getting the website up."
+"Day 3, afternoon",worked well for,"Genereally the workflow here was easier to follow, good explanation of why do we do what we do, and how we do it"
+"Day 3, afternoon",worked well for,Hard stuff explained in a really good way.
+"Day 3, afternoon",worked well for,I really enjoy the session
+"Day 3, afternoon",worked well for,I think this session worked well for the most part
+"Day 3, afternoon",worked well for,Instructions were clear
+"Day 3, afternoon",worked well for,It was a very good pace and description of the _quarto.yml as it could otherwise be tricky
+"Day 3, afternoon",worked well for,"It was nice, glad to be early done"
+"Day 3, afternoon",worked well for,It was very nice to see that it worked
+"Day 3, afternoon",worked well for,Really informative
+"Day 3, afternoon",worked well for,Really very relevant and brilliant tool.
+"Day 3, afternoon",worked well for,The pace and clear instruction
+"Day 3, afternoon",worked well for,"This was so clear, useful and good!"
+"Day 3, afternoon",worked well for,"Very cool session, good there is plenty of time as the content is very different from the rest of the course"
+"Day 3, afternoon",worked well for,Was really useful information!
+"Day 3, afternoon",worked well for,learning how to share our work using a website was quire helpful
+"Day 3, afternoon",worked well for,well explained and it really makes it exciting to see the work we did through the course in a website format.
+"Day 3, morning",could be improved for,1. Assignment 8.4 was a bit weird. 2. It was quite confusing with pipes in the pipes in the pipes.
+"Day 3, morning",could be improved for,A bit slow at some points
+"Day 3, morning",could be improved for,All good
+"Day 3, morning",could be improved for,"Build in some ways of minimizing despair! It is SOOOO confusing with the almost-but-not-quite-the-same names for dfs and objects when moving between the quarto code and functions, testing the function in quarto, then writing it into targets. Maybe having some prefix/suffix to the naming to indicate that this is a preliminary name while building the code, which corresponds EXACTLY to the final name used in the function code? Also it is extremely frustrating that the instructor continues when you are working on an issue with a helper, then you are continuously behind and might not have done all steps of the next chunk, which then gives an issue for the next chunk, then you are behind again etc. etc."
+"Day 3, morning",could be improved for,"I have nothing to add. The session worked well over discord. Although, it is best to physically be there."
+"Day 3, morning",could be improved for,"I think it gets a little bit hard to remember the functionality of all the functions, and thus becomes confusing"
+"Day 3, morning",could be improved for,"I though this session was abit confusing, not due to the instructor, but due to the switching back and forth between making functions and using functions we made in another function. As well as I think we should have started up this morning by cleaning up the markdown document, and ensure everybody had the same in that document, as it caused problems for some during the first exercise where we had to run targets on our own"
+"Day 3, morning",could be improved for,Lecturer seemed a bit unfamiliar with the topic she presented
+"Day 3, morning",could be improved for,"Maybe it would be relevant to work with your own project, and try to implement to tools for your own projects."
+"Day 3, morning",could be improved for,"Nothing, it was very good"
+"Day 3, morning",could be improved for,"One doesn't really think to much in these sessions, as it is just code-along all the way, without really learning anything new. So it would be nice with some more explanation for the analyses or otherwise maybe groupwork on how to solve an exercise like this. Or making a different session learning different/new tools like in the beginning of yesterday (Wednesday)."
+"Day 3, morning",could be improved for,Repetition on df transformation from the previous session
+"Day 3, morning",could be improved for,"The learning qmd started to get messy, maybe it could have been a bit clearer what was going to be deleted vs. what was not."
+"Day 3, morning",could be improved for,a little bit confusing that we had all the chuncks from yesterday left and didn't deleate on the go.
+"Day 3, morning",could be improved for,maybe work in teams will building the workflow
+"Day 3, morning",could be improved for,no points
+"Day 3, morning",could be improved for,plot design could be updated
+"Day 3, morning",could be improved for,"targets make everything a little complicated to keep track of. I got a bit confused as to what function did what to the data, especially as we did something similar yesterday and some of those exercises remained in the quarto"
+"Day 3, morning",worked well for,Everything
+"Day 3, morning",worked well for,Everything ran smoothly and the session had a nice pace
+"Day 3, morning",worked well for,Getting the repetitions with the whole workflow of making something in the learning document and then making it into a function and finally add it to targets
+"Day 3, morning",worked well for,I think the coding cohered very well with the rules we previously have used! I enjoyed that there were more coding
+"Day 3, morning",worked well for,"I think the topic was broken down well, easy to understand what we are doing."
+"Day 3, morning",worked well for,Interactive sessions
+"Day 3, morning",worked well for,It was nice to get continued hands on experience with the different tools we learned in the beginning of yesterday.
+"Day 3, morning",worked well for,It was nice with more exercises.
+"Day 3, morning",worked well for,"It was pretty easily understandable, and very useful"
+"Day 3, morning",worked well for,Nice and concise explanations. Valuable tools and good introduction to using lists and map().
+"Day 3, morning",worked well for,"Really made yesterdays session clear, and showe cased the strength of targets."
+"Day 3, morning",worked well for,Starting with the recap for day 2 afternoon session
+"Day 3, morning",worked well for,"The balance between reading tasks, code along and excercises was very well"
+"Day 3, morning",worked well for,The split - join and function recap
+"Day 3, morning",worked well for,good workflow
+"Day 3, morning",worked well for,nice and clear explanation during the coding along
+"Day 3, morning",worked well for,nicely presented by instructor.
+"Day 3, morning",worked well for,reading and code along
+"Day 3, morning",worked well for,visualizing the results
+End of course,could be improved for the Networking Activities s,Better weather
+End of course,could be improved for the Networking Activities s,Could use it to have a broader discussion on implementation of the methods when you get home.
+End of course,could be improved for the Networking Activities s,Depends on what the aim is exactly - but it would be nice with something a bit more active. Maybe during a session rather than right after lunch?
+End of course,could be improved for the Networking Activities s,I don't really have any ideas
+End of course,could be improved for the Networking Activities s,I think the 2nd day social activities were a little random..
+End of course,could be improved for the Networking Activities s,I think the most useful networking for me was during the meals and the daily mixing of groups (and that was very good). I think you could consider cutting the networking and maybe change it to reflection questions done in the groups during the sessions
+End of course,could be improved for the Networking Activities s,I was good as is
+End of course,could be improved for the Networking Activities s,Not really
+End of course,could be improved for the Networking Activities s,"Nothing, it works well to get the conversation going"
+End of course,could be improved for the Networking Activities s,"One on the last day. AAnddn maybe just more personal things, like who we are etc."
+End of course,could be improved for the Networking Activities s,"The questions could, IMO, be less R/course centered. Would also be nice just to have some random and more personal questions"
+End of course,could be improved for the Networking Activities s,"There are still some people I didn't interact with, purely out of chance due to the seating arrangements."
+End of course,could be improved for the Networking Activities s,activities them selves were nice
+End of course,could be improved for the Networking Activities s,no comments
+End of course,could be improved for the Networking Activities s,no suggestions
+End of course,worked well for the Networking Activities s,Conversation starter?
+End of course,worked well for the Networking Activities s,Get to know other attendees.
+End of course,worked well for the Networking Activities s,Good with the walk and talk.
+End of course,worked well for the Networking Activities s,Having them around lunch time was good because we were already kind of chatting with each other. It was a good way to find out what other people are working on.
+End of course,worked well for the Networking Activities s,"I found it hard to notice when a networking activity had started or not, and it felt a bit tossed on in the end"
+End of course,worked well for the Networking Activities s,I think it was some very nice questions - I liked the work and talk
+End of course,worked well for the Networking Activities s,I was not so good at using them I must admit.
+End of course,worked well for the Networking Activities s,It is good to have the questions to start the conversation
+End of course,worked well for the Networking Activities s,It was easy to approach other participants and instructors
+End of course,worked well for the Networking Activities s,It was good to get some fresh air!
+End of course,worked well for the Networking Activities s,It was nice to get a chance to talk to the other participants on the course
+End of course,worked well for the Networking Activities s,"It was nice to get to talk to people, we were a lot from Odense, glad i got mixed with a lot from Aarhus and Copenhagen"
+End of course,worked well for the Networking Activities s,It was nice to have time set of to here about others projects and work in general
+End of course,worked well for the Networking Activities s,That we could walk and talk.
+End of course,worked well for the Networking Activities s,Was good to hear other people's experiences in similar situations. Now i have a better understanding on how other people deal with certain situations that I used to struggle with
+End of course,worked well for the Networking Activities s,questions were very easy to initiate conversation and get  into getting a more personal opinion/experience

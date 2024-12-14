@@ -1,41 +1,41 @@
-session_name,question,response,course_name
-"Day 1, morning",worked well for,Great that I could follow although remotely although I had to cancel the in-person participation in short notice. Thanks!,Advanced
-"Day 1, morning",could be improved for,I could not see Anders screen in Discord (which worked very well in the earlier sessions).,Advanced
-"Day 1, afternoon",worked well for,The interaction between instructors and attendees,Advanced
-"Day 1, afternoon",could be improved for,So far I can only complain about the gasoline smell,Advanced
-"Day 1, afternoon",worked well for,"The introduction part to why we learn what we learn, and the pictures and metaphors to help understand the material.",Advanced
-"Day 1, afternoon",could be improved for,"Nothing, it was really well",Advanced
-"Day 1, afternoon",worked well for,The reading session + code along,Advanced
-"Day 1, afternoon",could be improved for,I don't have anything to add.,Advanced
-"Day 1, afternoon",worked well for,The introductions to the many possibilities on package tracking and text styling,Advanced
-"Day 1, afternoon",could be improved for,A little slow,Advanced
-"Day 1, afternoon",worked well for,The comedic relief of giving a mac to a Windows user;) Also the mix of reading and code-alongs.,Advanced
-"Day 1, afternoon",could be improved for,"I don't really know! The concept of renv is a bit hard to understand, but I don't know how it could be improven",Advanced
-"Day 1, afternoon",worked well for,Learning about dependencies and project based collaborations,Advanced
-"Day 1, afternoon",could be improved for,Could be a bit more explanation about the dependencies,Advanced
-"Day 1, afternoon",worked well for,"Great with reading, writing and exercise. Good with the amounts of breaks.",Advanced
-"Day 1, afternoon",could be improved for,It was somehow slightly abstract.,Advanced
-"Day 1, afternoon",worked well for,"Sticker system, code-along worked great. Everthing ran very smoothly and great in my opinion",Advanced
-"Day 1, afternoon",could be improved for,"Had some issues with packages being un-installable, would have been nice if these incompatibilites were picked up in the ""check setup"" during the precourse setup.",Advanced
-"Day 1, afternoon",worked well for,Really nice with code alongs and the website. The pace was really nice in general.,Advanced
-"Day 1, afternoon",could be improved for,I liked the discussion after lunch but we could have made something more concrete or summarized the discussion everyone together.,Advanced
-"Day 1, afternoon",worked well for,Mostly everything ran smoothly; lots of helpers,Advanced
-"Day 1, afternoon",could be improved for,A few places the exercises were not completely clearly worded (some updates happened live upon request),Advanced
-"Day 1, afternoon",worked well for,- Friendly environment- Nice code-along- Great with some extra explanation behind the code on the website- Very useful tools,Advanced
-"Day 1, afternoon",could be improved for,Nothing in my opinion,Advanced
-"Day 1, afternoon",worked well for,"For me everything worked at ones, and i was in good time.",Advanced
-"Day 1, afternoon",could be improved for,It seemed like many people were having trouble with packages and githGitHubub etc. Perhaps it is time to have people run on VM in a closed environment where everything works,Advanced
-"Day 1, afternoon",worked well for,"It was nice to get an introduction to renv, styler and other good functions. Also good to practice some of the elements from previous courses, that I personally haven't used since then",Advanced
-"Day 1, afternoon",could be improved for,"I had a hard time understanding whether the renv and the description file just ran/sourced every time we restarted our R session, or how it worked. Basically, I think I didn't understand what we were doing in the background. A bit more emphasis on what level we are working on would be appreciated for me at least",Advanced
-"Day 1, afternoon",worked well for,"Stickers for getting help, type allong sessions, webpage very descriptive and helpfull",Advanced
-"Day 1, afternoon",could be improved for,Examples on descriptions texts in the README files - an example om how a collaboration works well to see the greater picture.,Advanced
-"Day 1, afternoon",worked well for,The content on the website worked perfectly for me. I also liked the social initiatives. I appreciated the explanations of why we are doing what we are doing.,Advanced
-"Day 1, afternoon",could be improved for,There was a bit of waiting around but everything worked seamlessly for me whereas some people had technical issues.. Not sure what could be improved here as I didn't encounter those issues myself..,Advanced
-"Day 1, afternoon",worked well for,The code-alongs were really great!,Advanced
-"Day 1, afternoon",could be improved for,We need to have a whole session with Anders having a Windows computer / international keyboard!,Advanced
-"Day 1, morning",worked well for,coding along and the nice introduction to renv,Advanced
-"Day 1, morning",could be improved for,no comments,Advanced
-"Day 1, afternoon",worked well for,"Good walkthrough. I'll surely use renv in the future, but I also think we saw why people would think it's a little cumbersome as the setup takes some time. But a good foundation is important!",Advanced
-"Day 1, afternoon",could be improved for,Ensure everything in the examples is up to date and corresponds to what is seen when running a new project.,Advanced
-"Day 1, afternoon",worked well for,Good material and explanation.Nice to have so many helpers.It was nice to have some time for networking after lunch.,Advanced
-"Day 1, afternoon",could be improved for,"If you could do your exercices without having any trouble or getting stuck in errors, the whole session felt a bit slow as there was a lot of waiting time for all the errors in the room be solved.Maybe we need a more clear context of why we do certain steps before doing it, sometimes it feels like entering strings of code and not knowing why.",Advanced
+session_name,question,response
+"Day 1, afternoon",could be improved for,A few places the exercises were not completely clearly worded (some updates happened live upon request)
+"Day 1, afternoon",could be improved for,A little slow
+"Day 1, afternoon",could be improved for,Could be a bit more explanation about the dependencies
+"Day 1, afternoon",could be improved for,Ensure everything in the examples is up to date and corresponds to what is seen when running a new project.
+"Day 1, afternoon",could be improved for,Examples on descriptions texts in the README files - an example om how a collaboration works well to see the greater picture.
+"Day 1, afternoon",could be improved for,"Had some issues with packages being un-installable, would have been nice if these incompatibilites were picked up in the ""check setup"" during the precourse setup."
+"Day 1, afternoon",could be improved for,I don't have anything to add.
+"Day 1, afternoon",could be improved for,"I don't really know! The concept of renv is a bit hard to understand, but I don't know how it could be improven"
+"Day 1, afternoon",could be improved for,"I had a hard time understanding whether the renv and the description file just ran/sourced every time we restarted our R session, or how it worked. Basically, I think I didn't understand what we were doing in the background. A bit more emphasis on what level we are working on would be appreciated for me at least"
+"Day 1, afternoon",could be improved for,I liked the discussion after lunch but we could have made something more concrete or summarized the discussion everyone together.
+"Day 1, afternoon",could be improved for,"If you could do your exercices without having any trouble or getting stuck in errors, the whole session felt a bit slow as there was a lot of waiting time for all the errors in the room be solved.Maybe we need a more clear context of why we do certain steps before doing it, sometimes it feels like entering strings of code and not knowing why."
+"Day 1, afternoon",could be improved for,It seemed like many people were having trouble with packages and githGitHubub etc. Perhaps it is time to have people run on VM in a closed environment where everything works
+"Day 1, afternoon",could be improved for,It was somehow slightly abstract.
+"Day 1, afternoon",could be improved for,Nothing in my opinion
+"Day 1, afternoon",could be improved for,"Nothing, it was really well"
+"Day 1, afternoon",could be improved for,So far I can only complain about the gasoline smell
+"Day 1, afternoon",could be improved for,There was a bit of waiting around but everything worked seamlessly for me whereas some people had technical issues.. Not sure what could be improved here as I didn't encounter those issues myself..
+"Day 1, afternoon",could be improved for,We need to have a whole session with Anders having a Windows computer / international keyboard!
+"Day 1, afternoon",worked well for,- Friendly environment- Nice code-along- Great with some extra explanation behind the code on the website- Very useful tools
+"Day 1, afternoon",worked well for,"For me everything worked at ones, and i was in good time."
+"Day 1, afternoon",worked well for,Good material and explanation.Nice to have so many helpers.It was nice to have some time for networking after lunch.
+"Day 1, afternoon",worked well for,"Good walkthrough. I'll surely use renv in the future, but I also think we saw why people would think it's a little cumbersome as the setup takes some time. But a good foundation is important!"
+"Day 1, afternoon",worked well for,"Great with reading, writing and exercise. Good with the amounts of breaks."
+"Day 1, afternoon",worked well for,"It was nice to get an introduction to renv, styler and other good functions. Also good to practice some of the elements from previous courses, that I personally haven't used since then"
+"Day 1, afternoon",worked well for,Learning about dependencies and project based collaborations
+"Day 1, afternoon",worked well for,Mostly everything ran smoothly; lots of helpers
+"Day 1, afternoon",worked well for,Really nice with code alongs and the website. The pace was really nice in general.
+"Day 1, afternoon",worked well for,"Sticker system, code-along worked great. Everthing ran very smoothly and great in my opinion"
+"Day 1, afternoon",worked well for,"Stickers for getting help, type allong sessions, webpage very descriptive and helpfull"
+"Day 1, afternoon",worked well for,The code-alongs were really great!
+"Day 1, afternoon",worked well for,The comedic relief of giving a mac to a Windows user;) Also the mix of reading and code-alongs.
+"Day 1, afternoon",worked well for,The content on the website worked perfectly for me. I also liked the social initiatives. I appreciated the explanations of why we are doing what we are doing.
+"Day 1, afternoon",worked well for,The interaction between instructors and attendees
+"Day 1, afternoon",worked well for,"The introduction part to why we learn what we learn, and the pictures and metaphors to help understand the material."
+"Day 1, afternoon",worked well for,The introductions to the many possibilities on package tracking and text styling
+"Day 1, afternoon",worked well for,The reading session + code along
+"Day 1, morning",could be improved for,I could not see Anders screen in Discord (which worked very well in the earlier sessions).
+"Day 1, morning",could be improved for,no comments
+"Day 1, morning",worked well for,Great that I could follow although remotely although I had to cancel the in-person participation in short notice. Thanks!
+"Day 1, morning",worked well for,coding along and the nice introduction to renv

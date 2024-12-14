@@ -1,162 +1,162 @@
-session_name,question,response,course_name
-"Day 2, afternoon",worked well for,Everything,Intermediate
-"Day 2, afternoon",could be improved for,Nothing :),Intermediate
-"Day 2, afternoon",worked well for,Useful to learn,Intermediate
-"Day 2, afternoon",could be improved for,slow progress,Intermediate
-"Day 2, afternoon",worked well for,everything,Intermediate
-"Day 2, afternoon",could be improved for,nothing :),Intermediate
-"Day 2, afternoon",worked well for,The topic - the progress - makes sense,Intermediate
-"Day 2, afternoon",could be improved for,No comments,Intermediate
-"Day 2, afternoon",worked well for,The tempo was quite nice. Really cool to see everything come together.,Intermediate
-"Day 2, afternoon",could be improved for,Bigger hats!,Intermediate
-"Day 2, afternoon",worked well for,it was very informative and useful,Intermediate
-"Day 2, afternoon",could be improved for,I think the pace is still a bit slow even if I understand we are all on the different levels,Intermediate
-"Day 2, afternoon",worked well for,Nice seeing the streamlined data handling process,Intermediate
-"Day 2, afternoon",worked well for,To go through the whole code together so that we catch errors along the way,Intermediate
-"Day 2, afternoon",could be improved for,It's going a little slow,Intermediate
-"Day 2, afternoon",worked well for,Support from organizers,Intermediate
-"Day 2, afternoon",could be improved for,"It was a bit too long, difficult to focus the last 30 min",Intermediate
-"Day 2, afternoon",worked well for,"Despite having used case_when before, it was cool having it explained more in depth. Moreover, introducing the reduce function was super.",Intermediate
-"Day 2, afternoon",could be improved for,Not much.,Intermediate
-"Day 2, afternoon",worked well for,functions combining the joining of several datasets at once; checking whether everyone got the right amount of rows,Intermediate
-"Day 2, afternoon",could be improved for,do it a bit faster,Intermediate
-"Day 2, afternoon",worked well for,Useful content :),Intermediate
-"Day 2, afternoon",could be improved for,"a bit too many breaks, which is necessary to help people but makes the course a bit slow",Intermediate
-"Day 2, afternoon",worked well for,Nice to get the data sorted.,Intermediate
-"Day 2, afternoon",could be improved for,"Good session, clear instructions and quick help when needed",Intermediate
-"Day 2, afternoon",worked well for,everything was good,Intermediate
-"Day 2, afternoon",could be improved for,cannot think about something,Intermediate
-"Day 2, afternoon",worked well for,Cleaning with nested conditions and joining the datasets and merging into one was excellently taught.,Intermediate
-"Day 2, afternoon",could be improved for,This is simply great!,Intermediate
-"Day 2, afternoon",worked well for,having different breaks in between the steps.,Intermediate
-"Day 2, afternoon",could be improved for,Going slowing through the steps,Intermediate
-"Day 2, afternoon",worked well for,Great overview of Processing and joining datasets. Easy to follow the code along and tempo was fine,Intermediate
-"Day 2, afternoon",could be improved for,None,Intermediate
-"Day 2, afternoon",worked well for,Good explanations. When I needed help I found it very useful (though challenging) when the instructor actually made me explain why I was doing what I was doing. Very good practice,Intermediate
-"Day 2, afternoon",could be improved for,"I liked this session, can't think of anything",Intermediate
-"Day 2, afternoon",worked well for,Code along sessions are nice.,Intermediate
-"Day 2, afternoon",could be improved for,"Functions are hard to understand, i don't know if it might be helpful with more simple functions to begin with to become used to the idea. Like the added function.",Intermediate
-"Day 2, afternoon",worked well for,Nice to see how the data is being combined,Intermediate
-"Day 2, afternoon",could be improved for,"The illustrations with colors green/blue is very confusing. Maybe a more ""clinical""/Real world example would help for the understanding",Intermediate
-"Day 2, afternoon",worked well for,The code along was good. Also it was nice that there is always time to get help,Intermediate
-"Day 2, afternoon",could be improved for,dont know,Intermediate
-"Day 2, afternoon",worked well for,Super relevant topics.,Intermediate
-"Day 2, afternoon",worked well for,super good and quick help when problem occuredeasy and clear to follow,Intermediate
-"Day 2, afternoon",worked well for,"Nice to get to know more about data cleaning, and merging data.",Intermediate
-"Day 2, afternoon",could be improved for,Would love for this session to be even longer.,Intermediate
-"Day 2, afternoon",worked well for,Summarized the work from the day before.,Intermediate
-"Day 2, afternoon",could be improved for,Good job,Intermediate
-"Day 2, afternoon",worked well for,"nice to piece by piece see the dataset form. Nice with the little mistake (day /sample), that we had to fix. Makes you aware of the df.",Intermediate
-"Day 2, afternoon",worked well for,"This session was particularly useful I think, when considering working with all kinds of big datasets. I think the explanations were very clear and it went slowly enough to keep up with all steps.",Intermediate
-"Day 2, afternoon",could be improved for,The regex section was  a bit confusing - maybe we could have spent more time on it?,Intermediate
-"Day 2, afternoon",could be improved for,nothing,Intermediate
-"Day 2, afternoon",worked well for,It worked fine.,Intermediate
-"Day 3, morning",worked well for,exercise,Intermediate
-"Day 3, morning",could be improved for,"Pivot is difficult to get, and difficult to understand the use of",Intermediate
-"Day 3, morning",worked well for,"Worked well, clear instructions.",Intermediate
-"Day 3, morning",could be improved for,not much I'm satisfied,Intermediate
-"Day 3, morning",worked well for,made a lot of sense,Intermediate
-"Day 3, morning",could be improved for,Anders could have explained anonymous functions better,Intermediate
-"Day 3, morning",worked well for,Super cool to always see the output of what we are doing in the html - starting to see the bigger picture here,Intermediate
-"Day 3, morning",could be improved for,shorter break,Intermediate
-"Day 3, morning",worked well for,You get to see the data transform into a more usefull dataframe,Intermediate
-"Day 3, morning",could be improved for,The lunch break could have been shorter. The recap/summary of what we have done and why that is important/smart could be elaborated.,Intermediate
-"Day 3, morning",worked well for,Very nice workflow. Great tempo.,Intermediate
-"Day 3, morning",could be improved for,Maybe some explanation of why we are tidying up our functions.,Intermediate
-"Day 3, morning",worked well for,"Super nice session - more advanced, but nice to try many things and then be able to look at it later and use some of it",Intermediate
-"Day 3, morning",could be improved for,Can the pivot task be visualized more in some way?,Intermediate
-"Day 3, morning",worked well for,nice function work,Intermediate
-"Day 3, morning",could be improved for,"more kable work, i hope more is comming",Intermediate
-"Day 3, morning",worked well for,"practical tools, everybody could follow and got help right away.",Intermediate
-"Day 3, morning",could be improved for,it was a bit slow sometimes,Intermediate
-"Day 3, morning",worked well for,"Overall, the function building worked quite well",Intermediate
-"Day 3, morning",could be improved for,I would love an overall guide for function creation,Intermediate
-"Day 3, morning",worked well for,everything was perfect,Intermediate
-"Day 3, morning",worked well for,Same as the other sessions,Intermediate
-"Day 3, morning",could be improved for,Maybe a bit more room for independent exploration.,Intermediate
-"Day 3, morning",worked well for,It was very informative and quite great to see all those tools to summarise your data,Intermediate
-"Day 3, morning",could be improved for,i think it everything was quite nice,Intermediate
-"Day 3, morning",worked well for,The code along is fun!,Intermediate
-"Day 3, morning",could be improved for,"not much I think, you focused more on the overview/what the goal was, which was nice",Intermediate
-"Day 3, morning",worked well for,Good flow between reading and exercise,Intermediate
-"Day 3, morning",could be improved for,Better visual illustrations of what we are doing,Intermediate
-"Day 3, morning",worked well for,Great code along. Good pace.,Intermediate
-"Day 3, morning",worked well for,Doing the exercise all together and stopping when we get issues,Intermediate
-"Day 3, morning",could be improved for,ok,Intermediate
-"Day 3, morning",worked well for,Great introduction to pivots! Easy understandable,Intermediate
-"Day 3, morning",could be improved for,none,Intermediate
-"Day 3, morning",worked well for,Useful content,Intermediate
-"Day 3, morning",could be improved for,"The flow could be improved. For example, reading tasks could be done while setting up the instructor´s laptop or similar to better use the time",Intermediate
-"Day 3, morning",worked well for,nice step by step,Intermediate
-"Day 3, morning",could be improved for,maybe short group discussion end of day,Intermediate
-"Day 3, morning",worked well for,I got immediate help in case I had an error in m y code and could not continue.,Intermediate
-"Day 3, morning",could be improved for,Time stress to finish in time,Intermediate
-"Day 3, morning",worked well for,questions were answered nicely,Intermediate
-"Day 3, morning",could be improved for,"When you refer to the previous topics, it is better to briefly over-explain it first and continue, other than that it was all good",Intermediate
-"Day 3, morning",worked well for,I liked learning the ways to pivot data. This seems very useful for manipulating data to make plots as well as presenting summary tables.,Intermediate
-"Day 3, morning",could be improved for,The tidy_summary_by_day function became very long in the end and sometimes I got a bit lost in what was changing or staying the same. But honestly not sure if it makes sense to do it any differently.,Intermediate
-"Day 3, morning",worked well for,The session was well balanced and very helpful,Intermediate
-"Day 3, morning",could be improved for,do not have much to say except that in overall we could be a bit faster,Intermediate
-End of course,worked well for the Networking Activities s,Good with the random group selection and quite unsorted topics to mix it around a bit.,Intermediate
-End of course,could be improved for the Networking Activities s,Some clearer instructions on when to start and end the networking parts. Sometimes participants of the groups got a bit lost,Intermediate
-"Day 3, morning",worked well for,Worked good.,Intermediate
-"Day 3, morning",could be improved for,Documentation of the content of the functions would be great,Intermediate
-"Day 3, morning",worked well for,same than in the morning Day 3,Intermediate
-"Day 3, morning",worked well for,Code along sessions are nice.,Intermediate
-"Day 3, morning",could be improved for,"Maybe 2-3 min at some intervals to talk to your side partner about what the function is ""telling R to do"". Sort of translate code to words.Furthermore, might specifiy the input in the function to get a better understanding like function (data = mmash, ...). So it is more transparent. Then ofc. remove it again after because it is more tidy :)",Intermediate
-End of course,worked well for the Networking Activities s,It was amazing to get to go outside for 30min! The tasks were relevant. The social dinners went well and it was possible to meet new people.,Intermediate
-End of course,could be improved for the Networking Activities s,"At the second dinner, the group could not sit together.",Intermediate
-"Day 3, morning",worked well for,everything :-),Intermediate
-"Day 3, morning",could be improved for,It gets a bit more difficult so maybe more explanation and time for questions,Intermediate
-"Day 3, morning",worked well for,"Again good explanations, good with a lot of exercises.",Intermediate
-"Day 3, morning",could be improved for,"I found some of the exercises quite difficult, as they had less guiding than yesterday. I realize that this was because we had to use som of the stuff we learned yesterday, but for someone who is very new to this and therefore receive A LOT of new information, I struggle remembering how to do the things we learned the day before. Of course there was the solution, but maybe there could be a help step before the solution e.g. where you had to fill out some of the blanks yourself. I realize we are a lot of people on a different level, but maybe it could help other people in my situation, so we do not have to go straight to the solution  :-)",Intermediate
-"Day 3, morning",worked well for,The ways of using different statistics and making a tidier dataset worked excellently,Intermediate
-"Day 3, morning",could be improved for,This is completely fine but too much on the plate becomes a bit overwhelming at times. But that's okay.,Intermediate
-End of course,worked well for the Networking Activities s,Nice with fresh air outside,Intermediate
-End of course,could be improved for the Networking Activities s,The talk was more about other stuff than the questions,Intermediate
-"Day 3, morning",worked well for,Explaining the pivot functions was cool - they are so difficult to understand .. :) And getting some tips on renaming the columns as well. So a great skill for data management.,Intermediate
-"Day 3, morning",could be improved for,"Some had difficulties in understanding the call:mmash |> tidy_summarise_by_day()Particularly when the summary_fn was introduced.I think it could help to use the function as we did the previous day, like:tidy_summarise_by_day(data = mmash, summary_fn = ....)Just a thought.",Intermediate
-"Day 3, morning",worked well for,help from staff,Intermediate
-"Day 3, morning",could be improved for,I feel like I don't have enough knowledge to understand what I am doing during this course even though I have studied thoroughly the Introductory course.,Intermediate
-End of course,worked well for the Networking Activities s,Great to emphasis to sit beside someone you don't know.,Intermediate
-End of course,could be improved for the Networking Activities s,Not much,Intermediate
-End of course,worked well for the Networking Activities s,"Compared to the introductory course, it was really nice that we didn't have a list of topics to go through. Good with inspiration on what to use to get the conversation going, but still allowing for at ""natural"" conversation to occur.",Intermediate
-End of course,could be improved for the Networking Activities s,"Nothing, it was quite good.",Intermediate
-End of course,worked well for the Networking Activities s,"Talking with ""strangers"". Nice with your advice on sitting next to a person, you dont know. This makes it easier and less weird to do so. Good to learn from other peoples experience",Intermediate
-End of course,could be improved for the Networking Activities s,Nothing. I like the simple way of networking without pressure and games.,Intermediate
-End of course,worked well for the Networking Activities s,I liked the possibility of going a bit outside and taking some fresh air. I think the idea with the tiny papers and sitting in a different group everyday is nice.,Intermediate
-End of course,could be improved for the Networking Activities s,Something to make starting a conversation easier,Intermediate
-End of course,worked well for the Networking Activities s,The new tables/groups every day --> getting to know more people,Intermediate
-End of course,could be improved for the Networking Activities s,"Maybe a 10 min. presentation of all participants to know research area, name, etc.",Intermediate
-End of course,worked well for the Networking Activities s,Nice to get out and get some fresh air :) Good way to talk with others in a more informal way.,Intermediate
-End of course,worked well for the Networking Activities s,Meeting new people,Intermediate
-End of course,worked well for the Networking Activities s,nice to talk about expectations and how others understand coding and how they do it/use it,Intermediate
-End of course,could be improved for the Networking Activities s,dont know,Intermediate
-End of course,worked well for the Networking Activities s,Good way to mingle.,Intermediate
-End of course,could be improved for the Networking Activities s,Maybe something more physically active rather than just a discussion of the coding sessions. Could be combined with the lunch break too shorten the amount of break time.,Intermediate
-End of course,worked well for the Networking Activities s,Mix up of groups was successful. I also like that we had to change the tables every day!,Intermediate
-End of course,could be improved for the Networking Activities s,always nice to have more time for that,Intermediate
-End of course,worked well for the Networking Activities s,Nice with a bit of fresh air in the sun :),Intermediate
-End of course,could be improved for the Networking Activities s,"I'm at the beginning of working with my data, so I don't really have that many examples to contribute",Intermediate
-End of course,worked well for the Networking Activities s,"It was nice to have time to ""clear"" your head from coding.",Intermediate
-End of course,could be improved for the Networking Activities s,"I think they are perfect. The questions are not needed, but nice to start a conversation with.",Intermediate
-End of course,worked well for the Networking Activities s,walking in a fresh air and getting to know other people were nice,Intermediate
-End of course,could be improved for the Networking Activities s,was all good,Intermediate
-End of course,worked well for the Networking Activities s,Nice to get to know other people on the course.,Intermediate
-End of course,could be improved for the Networking Activities s,"There could be a networking activity for all, like a morning run.",Intermediate
-End of course,worked well for the Networking Activities s,Nice to have some topics to talk about in the start.,Intermediate
-End of course,could be improved for the Networking Activities s,"They were a bit too long and we had many of them. We network a lot in the evenings and during dinner/lunch, so we could have either made the networking activities shorter or skipped them entirely, so that we could finish the sessions earlier.",Intermediate
-End of course,worked well for the Networking Activities s,"As someone who came here not knowing anyone beforehand, I appreciated that everyone was sort of forced to talk to their group or get to know new people. It was always nice having a walk after lunch.",Intermediate
-End of course,worked well for the Networking Activities s,"Fair amount of time. That was excellent. So important to have time for some more ""loose"" networking.",Intermediate
-End of course,could be improved for the Networking Activities s,I think it was nice that the networking sessions was not too formally scheduled. That can sometimes be somewhat painful... :),Intermediate
-End of course,worked well for the Networking Activities s,"Overall gode, good with talking points to get started. Nice you skip it day 3, as we already talk well about projects and code - ""just for fun"".",Intermediate
-End of course,could be improved for the Networking Activities s,"In general the ""introduce your self"" session at our tables - and/or as the first part of networking sessions.",Intermediate
-End of course,worked well for the Networking Activities s,"I liked a lot that random selection of seats each day; so people really can communicate with others. And walking after lunches was also fine, even if conversations sometimes were off the topics about coding",Intermediate
-End of course,worked well for the Networking Activities s,"It was a nice break and nice to be able to talk to some of the other participants. We did not use the questions a lot, but nice to have something to start out the conversation.",Intermediate
-End of course,could be improved for the Networking Activities s,Maybe some other questions that are a bit broader?,Intermediate
-End of course,worked well for the Networking Activities s,"Good to do networking - nice to get to know each other, when we are spending three days together.",Intermediate
-End of course,could be improved for the Networking Activities s,I think they were fine. Did not need more or less,Intermediate
-End of course,worked well for the Networking Activities s,Is was nice to have some time to mingle - especially also mixing up the group but then making sure to get some time to talk,Intermediate
-End of course,could be improved for the Networking Activities s,"maybe some more ""light"" questions as it is a good way to start discussions",Intermediate
-End of course,worked well for the Networking Activities s,The Networking activities seems fine but I think it should be made in groups (Walk & Talk) in such a way where the instructors can a part of each group and move the discussion to another level.,Intermediate
-End of course,could be improved for the Networking Activities s,"I think Networking activities and frequent breaks consumed much time and made it long days. If we start by 9am with one long break and one short tea break, we could have made the same within 3-3:30pm.",Intermediate
+session_name,question,response
+"Day 2, afternoon",could be improved for,Bigger hats!
+"Day 2, afternoon",could be improved for,"Functions are hard to understand, i don't know if it might be helpful with more simple functions to begin with to become used to the idea. Like the added function."
+"Day 2, afternoon",could be improved for,Going slowing through the steps
+"Day 2, afternoon",could be improved for,Good job
+"Day 2, afternoon",could be improved for,"Good session, clear instructions and quick help when needed"
+"Day 2, afternoon",could be improved for,"I liked this session, can't think of anything"
+"Day 2, afternoon",could be improved for,I think the pace is still a bit slow even if I understand we are all on the different levels
+"Day 2, afternoon",could be improved for,"It was a bit too long, difficult to focus the last 30 min"
+"Day 2, afternoon",could be improved for,It's going a little slow
+"Day 2, afternoon",could be improved for,No comments
+"Day 2, afternoon",could be improved for,None
+"Day 2, afternoon",could be improved for,Not much.
+"Day 2, afternoon",could be improved for,Nothing :)
+"Day 2, afternoon",could be improved for,"The illustrations with colors green/blue is very confusing. Maybe a more ""clinical""/Real world example would help for the understanding"
+"Day 2, afternoon",could be improved for,The regex section was  a bit confusing - maybe we could have spent more time on it?
+"Day 2, afternoon",could be improved for,This is simply great!
+"Day 2, afternoon",could be improved for,Would love for this session to be even longer.
+"Day 2, afternoon",could be improved for,"a bit too many breaks, which is necessary to help people but makes the course a bit slow"
+"Day 2, afternoon",could be improved for,cannot think about something
+"Day 2, afternoon",could be improved for,do it a bit faster
+"Day 2, afternoon",could be improved for,dont know
+"Day 2, afternoon",could be improved for,nothing
+"Day 2, afternoon",could be improved for,nothing :)
+"Day 2, afternoon",could be improved for,slow progress
+"Day 2, afternoon",worked well for,Cleaning with nested conditions and joining the datasets and merging into one was excellently taught.
+"Day 2, afternoon",worked well for,Code along sessions are nice.
+"Day 2, afternoon",worked well for,"Despite having used case_when before, it was cool having it explained more in depth. Moreover, introducing the reduce function was super."
+"Day 2, afternoon",worked well for,Everything
+"Day 2, afternoon",worked well for,Good explanations. When I needed help I found it very useful (though challenging) when the instructor actually made me explain why I was doing what I was doing. Very good practice
+"Day 2, afternoon",worked well for,Great overview of Processing and joining datasets. Easy to follow the code along and tempo was fine
+"Day 2, afternoon",worked well for,It worked fine.
+"Day 2, afternoon",worked well for,Nice seeing the streamlined data handling process
+"Day 2, afternoon",worked well for,Nice to get the data sorted.
+"Day 2, afternoon",worked well for,"Nice to get to know more about data cleaning, and merging data."
+"Day 2, afternoon",worked well for,Nice to see how the data is being combined
+"Day 2, afternoon",worked well for,Summarized the work from the day before.
+"Day 2, afternoon",worked well for,Super relevant topics.
+"Day 2, afternoon",worked well for,Support from organizers
+"Day 2, afternoon",worked well for,The code along was good. Also it was nice that there is always time to get help
+"Day 2, afternoon",worked well for,The tempo was quite nice. Really cool to see everything come together.
+"Day 2, afternoon",worked well for,The topic - the progress - makes sense
+"Day 2, afternoon",worked well for,"This session was particularly useful I think, when considering working with all kinds of big datasets. I think the explanations were very clear and it went slowly enough to keep up with all steps."
+"Day 2, afternoon",worked well for,To go through the whole code together so that we catch errors along the way
+"Day 2, afternoon",worked well for,Useful content :)
+"Day 2, afternoon",worked well for,Useful to learn
+"Day 2, afternoon",worked well for,everything
+"Day 2, afternoon",worked well for,everything was good
+"Day 2, afternoon",worked well for,functions combining the joining of several datasets at once; checking whether everyone got the right amount of rows
+"Day 2, afternoon",worked well for,having different breaks in between the steps.
+"Day 2, afternoon",worked well for,it was very informative and useful
+"Day 2, afternoon",worked well for,"nice to piece by piece see the dataset form. Nice with the little mistake (day /sample), that we had to fix. Makes you aware of the df."
+"Day 2, afternoon",worked well for,super good and quick help when problem occuredeasy and clear to follow
+"Day 3, morning",could be improved for,Anders could have explained anonymous functions better
+"Day 3, morning",could be improved for,Better visual illustrations of what we are doing
+"Day 3, morning",could be improved for,Can the pivot task be visualized more in some way?
+"Day 3, morning",could be improved for,Documentation of the content of the functions would be great
+"Day 3, morning",could be improved for,I feel like I don't have enough knowledge to understand what I am doing during this course even though I have studied thoroughly the Introductory course.
+"Day 3, morning",could be improved for,"I found some of the exercises quite difficult, as they had less guiding than yesterday. I realize that this was because we had to use som of the stuff we learned yesterday, but for someone who is very new to this and therefore receive A LOT of new information, I struggle remembering how to do the things we learned the day before. Of course there was the solution, but maybe there could be a help step before the solution e.g. where you had to fill out some of the blanks yourself. I realize we are a lot of people on a different level, but maybe it could help other people in my situation, so we do not have to go straight to the solution  :-)"
+"Day 3, morning",could be improved for,I would love an overall guide for function creation
+"Day 3, morning",could be improved for,It gets a bit more difficult so maybe more explanation and time for questions
+"Day 3, morning",could be improved for,"Maybe 2-3 min at some intervals to talk to your side partner about what the function is ""telling R to do"". Sort of translate code to words.Furthermore, might specifiy the input in the function to get a better understanding like function (data = mmash, ...). So it is more transparent. Then ofc. remove it again after because it is more tidy :)"
+"Day 3, morning",could be improved for,Maybe a bit more room for independent exploration.
+"Day 3, morning",could be improved for,Maybe some explanation of why we are tidying up our functions.
+"Day 3, morning",could be improved for,"Pivot is difficult to get, and difficult to understand the use of"
+"Day 3, morning",could be improved for,"Some had difficulties in understanding the call:mmash |> tidy_summarise_by_day()Particularly when the summary_fn was introduced.I think it could help to use the function as we did the previous day, like:tidy_summarise_by_day(data = mmash, summary_fn = ....)Just a thought."
+"Day 3, morning",could be improved for,"The flow could be improved. For example, reading tasks could be done while setting up the instructor´s laptop or similar to better use the time"
+"Day 3, morning",could be improved for,The lunch break could have been shorter. The recap/summary of what we have done and why that is important/smart could be elaborated.
+"Day 3, morning",could be improved for,The tidy_summary_by_day function became very long in the end and sometimes I got a bit lost in what was changing or staying the same. But honestly not sure if it makes sense to do it any differently.
+"Day 3, morning",could be improved for,This is completely fine but too much on the plate becomes a bit overwhelming at times. But that's okay.
+"Day 3, morning",could be improved for,Time stress to finish in time
+"Day 3, morning",could be improved for,"When you refer to the previous topics, it is better to briefly over-explain it first and continue, other than that it was all good"
+"Day 3, morning",could be improved for,do not have much to say except that in overall we could be a bit faster
+"Day 3, morning",could be improved for,i think it everything was quite nice
+"Day 3, morning",could be improved for,it was a bit slow sometimes
+"Day 3, morning",could be improved for,maybe short group discussion end of day
+"Day 3, morning",could be improved for,"more kable work, i hope more is comming"
+"Day 3, morning",could be improved for,none
+"Day 3, morning",could be improved for,"not much I think, you focused more on the overview/what the goal was, which was nice"
+"Day 3, morning",could be improved for,not much I'm satisfied
+"Day 3, morning",could be improved for,ok
+"Day 3, morning",could be improved for,shorter break
+"Day 3, morning",worked well for,"Again good explanations, good with a lot of exercises."
+"Day 3, morning",worked well for,Code along sessions are nice.
+"Day 3, morning",worked well for,Doing the exercise all together and stopping when we get issues
+"Day 3, morning",worked well for,Explaining the pivot functions was cool - they are so difficult to understand .. :) And getting some tips on renaming the columns as well. So a great skill for data management.
+"Day 3, morning",worked well for,Good flow between reading and exercise
+"Day 3, morning",worked well for,Great code along. Good pace.
+"Day 3, morning",worked well for,Great introduction to pivots! Easy understandable
+"Day 3, morning",worked well for,I got immediate help in case I had an error in m y code and could not continue.
+"Day 3, morning",worked well for,I liked learning the ways to pivot data. This seems very useful for manipulating data to make plots as well as presenting summary tables.
+"Day 3, morning",worked well for,It was very informative and quite great to see all those tools to summarise your data
+"Day 3, morning",worked well for,"Overall, the function building worked quite well"
+"Day 3, morning",worked well for,Same as the other sessions
+"Day 3, morning",worked well for,Super cool to always see the output of what we are doing in the html - starting to see the bigger picture here
+"Day 3, morning",worked well for,"Super nice session - more advanced, but nice to try many things and then be able to look at it later and use some of it"
+"Day 3, morning",worked well for,The code along is fun!
+"Day 3, morning",worked well for,The session was well balanced and very helpful
+"Day 3, morning",worked well for,The ways of using different statistics and making a tidier dataset worked excellently
+"Day 3, morning",worked well for,Useful content
+"Day 3, morning",worked well for,Very nice workflow. Great tempo.
+"Day 3, morning",worked well for,Worked good.
+"Day 3, morning",worked well for,"Worked well, clear instructions."
+"Day 3, morning",worked well for,You get to see the data transform into a more usefull dataframe
+"Day 3, morning",worked well for,everything :-)
+"Day 3, morning",worked well for,everything was perfect
+"Day 3, morning",worked well for,exercise
+"Day 3, morning",worked well for,help from staff
+"Day 3, morning",worked well for,made a lot of sense
+"Day 3, morning",worked well for,nice function work
+"Day 3, morning",worked well for,nice step by step
+"Day 3, morning",worked well for,"practical tools, everybody could follow and got help right away."
+"Day 3, morning",worked well for,questions were answered nicely
+"Day 3, morning",worked well for,same than in the morning Day 3
+End of course,could be improved for the Networking Activities s,"At the second dinner, the group could not sit together."
+End of course,could be improved for the Networking Activities s,"I think Networking activities and frequent breaks consumed much time and made it long days. If we start by 9am with one long break and one short tea break, we could have made the same within 3-3:30pm."
+End of course,could be improved for the Networking Activities s,I think it was nice that the networking sessions was not too formally scheduled. That can sometimes be somewhat painful... :)
+End of course,could be improved for the Networking Activities s,"I think they are perfect. The questions are not needed, but nice to start a conversation with."
+End of course,could be improved for the Networking Activities s,I think they were fine. Did not need more or less
+End of course,could be improved for the Networking Activities s,"I'm at the beginning of working with my data, so I don't really have that many examples to contribute"
+End of course,could be improved for the Networking Activities s,"In general the ""introduce your self"" session at our tables - and/or as the first part of networking sessions."
+End of course,could be improved for the Networking Activities s,"Maybe a 10 min. presentation of all participants to know research area, name, etc."
+End of course,could be improved for the Networking Activities s,Maybe some other questions that are a bit broader?
+End of course,could be improved for the Networking Activities s,Maybe something more physically active rather than just a discussion of the coding sessions. Could be combined with the lunch break too shorten the amount of break time.
+End of course,could be improved for the Networking Activities s,Not much
+End of course,could be improved for the Networking Activities s,"Nothing, it was quite good."
+End of course,could be improved for the Networking Activities s,Nothing. I like the simple way of networking without pressure and games.
+End of course,could be improved for the Networking Activities s,Some clearer instructions on when to start and end the networking parts. Sometimes participants of the groups got a bit lost
+End of course,could be improved for the Networking Activities s,Something to make starting a conversation easier
+End of course,could be improved for the Networking Activities s,The talk was more about other stuff than the questions
+End of course,could be improved for the Networking Activities s,"There could be a networking activity for all, like a morning run."
+End of course,could be improved for the Networking Activities s,"They were a bit too long and we had many of them. We network a lot in the evenings and during dinner/lunch, so we could have either made the networking activities shorter or skipped them entirely, so that we could finish the sessions earlier."
+End of course,could be improved for the Networking Activities s,always nice to have more time for that
+End of course,could be improved for the Networking Activities s,dont know
+End of course,could be improved for the Networking Activities s,"maybe some more ""light"" questions as it is a good way to start discussions"
+End of course,could be improved for the Networking Activities s,was all good
+End of course,worked well for the Networking Activities s,"As someone who came here not knowing anyone beforehand, I appreciated that everyone was sort of forced to talk to their group or get to know new people. It was always nice having a walk after lunch."
+End of course,worked well for the Networking Activities s,"Compared to the introductory course, it was really nice that we didn't have a list of topics to go through. Good with inspiration on what to use to get the conversation going, but still allowing for at ""natural"" conversation to occur."
+End of course,worked well for the Networking Activities s,"Fair amount of time. That was excellent. So important to have time for some more ""loose"" networking."
+End of course,worked well for the Networking Activities s,"Good to do networking - nice to get to know each other, when we are spending three days together."
+End of course,worked well for the Networking Activities s,Good way to mingle.
+End of course,worked well for the Networking Activities s,Good with the random group selection and quite unsorted topics to mix it around a bit.
+End of course,worked well for the Networking Activities s,Great to emphasis to sit beside someone you don't know.
+End of course,worked well for the Networking Activities s,"I liked a lot that random selection of seats each day; so people really can communicate with others. And walking after lunches was also fine, even if conversations sometimes were off the topics about coding"
+End of course,worked well for the Networking Activities s,I liked the possibility of going a bit outside and taking some fresh air. I think the idea with the tiny papers and sitting in a different group everyday is nice.
+End of course,worked well for the Networking Activities s,Is was nice to have some time to mingle - especially also mixing up the group but then making sure to get some time to talk
+End of course,worked well for the Networking Activities s,"It was a nice break and nice to be able to talk to some of the other participants. We did not use the questions a lot, but nice to have something to start out the conversation."
+End of course,worked well for the Networking Activities s,It was amazing to get to go outside for 30min! The tasks were relevant. The social dinners went well and it was possible to meet new people.
+End of course,worked well for the Networking Activities s,"It was nice to have time to ""clear"" your head from coding."
+End of course,worked well for the Networking Activities s,Meeting new people
+End of course,worked well for the Networking Activities s,Mix up of groups was successful. I also like that we had to change the tables every day!
+End of course,worked well for the Networking Activities s,Nice to get out and get some fresh air :) Good way to talk with others in a more informal way.
+End of course,worked well for the Networking Activities s,Nice to get to know other people on the course.
+End of course,worked well for the Networking Activities s,Nice to have some topics to talk about in the start.
+End of course,worked well for the Networking Activities s,Nice with a bit of fresh air in the sun :)
+End of course,worked well for the Networking Activities s,Nice with fresh air outside
+End of course,worked well for the Networking Activities s,"Overall gode, good with talking points to get started. Nice you skip it day 3, as we already talk well about projects and code - ""just for fun""."
+End of course,worked well for the Networking Activities s,"Talking with ""strangers"". Nice with your advice on sitting next to a person, you dont know. This makes it easier and less weird to do so. Good to learn from other peoples experience"
+End of course,worked well for the Networking Activities s,The Networking activities seems fine but I think it should be made in groups (Walk & Talk) in such a way where the instructors can a part of each group and move the discussion to another level.
+End of course,worked well for the Networking Activities s,The new tables/groups every day --> getting to know more people
+End of course,worked well for the Networking Activities s,nice to talk about expectations and how others understand coding and how they do it/use it
+End of course,worked well for the Networking Activities s,walking in a fresh air and getting to know other people were nice

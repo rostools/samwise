@@ -1,142 +1,142 @@
-session_name,question,response,course_name
-"Day 2, afternoon",worked well for,Very nice and well structured with good pacing,Introductory
-"Day 2, afternoon",worked well for,Good session,Introductory
-"Day 2, afternoon",could be improved for,It worked well,Introductory
-"Day 2, afternoon",worked well for,Very good - nice with more exercises.,Introductory
-"Day 2, afternoon",could be improved for,Don't know,Introductory
-"Day 2, afternoon",worked well for,It was nice seeing that you can easily do some tables with summary statistics,Introductory
-"Day 2, afternoon",could be improved for,It would have been nice to see if you could have the mean + SD besides each other in a table (I know this is not the topic),Introductory
-"Day 2, afternoon",worked well for,The exercises,Introductory
-"Day 2, afternoon",could be improved for,More exercises,Introductory
-"Day 2, morning",worked well for,i did not understand the speaker well though she was super skilled,Introductory
-"Day 2, morning",could be improved for,it was a good session,Introductory
-"Day 2, afternoon",worked well for,Everything :),Introductory
-"Day 2, afternoon",could be improved for,I think the session was adequate.,Introductory
-"Day 2, afternoon",worked well for,It was clear what the elements were meant to teach us. Very good. Great with exercises!,Introductory
-"Day 2, afternoon",could be improved for,I thought it was great. Maybe more exercises e.g. for individual work while others are getting help? Don't know if that would work.,Introductory
-"Day 2, afternoon",worked well for,"A lot of interesting tools. Good walkthrough, and nice with personal excercises.",Introductory
-"Day 2, afternoon",could be improved for,"We didn't get a proper motivation on why Quarto was nice. I didn't understand through most of the session, why this would be useful for me to learn, which affected my motivation in this session negatively.",Introductory
-"Day 2, afternoon",worked well for,Practical exercises where we got to try and code by ourself.,Introductory
-"Day 2, afternoon",could be improved for,"Maybe group a bit more of the reading/theoretical together and afterwards group the exercises together, so that there is not so many breaks in the session.",Introductory
-"Day 2, afternoon",worked well for,The session was very practical and great,Introductory
-"Day 2, afternoon",could be improved for,Sometimes the instructor was a bit too fast,Introductory
-"Day 2, afternoon",worked well for,Good introduction to a new concept with practice.,Introductory
-"Day 2, afternoon",could be improved for,I would prefer to do the exercise again on the big screen with the instructor after doing the task on our own,Introductory
-"Day 2, afternoon",worked well for,The tempo was working quite well. The fact that we got to sit and type in quarto and try some different stuff was quite nice. Especially the features of tabels and pictures.,Introductory
-"Day 2, afternoon",could be improved for,Maybe a few visual examples for what Quarto documents can be used for.,Introductory
-"Day 2, afternoon",worked well for,"Very nice to learn about quarto - good pace.  Good explanations in the online material (and also fine, that you can learn more if you want (and have fun with it), but we are taught the most important things to get started)",Introductory
-"Day 2, afternoon",worked well for,"it was intresting part, a lot of new info for me, thank you",Introductory
-"Day 2, afternoon",could be improved for,only to check together results of exersice,Introductory
-"Day 2, afternoon",worked well for,speakear was clear and understandable,Introductory
-"Day 2, afternoon",could be improved for,too fast it was for me,Introductory
-"Day 2, afternoon",worked well for,"clear communication, patient teachers :-)",Introductory
-"Day 2, afternoon",worked well for,Code along part was nice,Introductory
-"Day 2, afternoon",could be improved for,"Maybe speak more clear about function: ""i tell R to use this function in this package"" by writing this. It dosen't work if i were to write X because R would read it as ...",Introductory
-"Day 2, afternoon",worked well for,nice intro to quarto and all the exercises worked really well. I am already using Markdown for a project with a collaborator and it was so useful to know how to make tables and make the text more readable.,Introductory
-"Day 2, afternoon",could be improved for,"perhaps, all quarto session could have been done in the same day.",Introductory
-"Day 2, afternoon",worked well for,Great introduction to Quarto. One of those sessions where i really learned something COMPLETELY new.,Introductory
-"Day 2, afternoon",could be improved for,"More in detail in the start, why quarto is something you would recommend us to use.",Introductory
-"Day 2, afternoon",worked well for,Very good presentation and communication - loud and clear speaker. Nice and good tempo.,Introductory
-"Day 2, afternoon",could be improved for,none,Introductory
-"Day 2, afternoon",worked well for,That there was a lot of coding along with the instructor and more exercises.,Introductory
-"Day 2, afternoon",could be improved for,"I'd prefer more teaching and less reading for ourselves, although it is very nice to have access to the material on the home page for later use.",Introductory
-"Day 2, afternoon",worked well for,"very nice and progressive learning session, good alignment between theory and hands on",Introductory
-"Day 2, afternoon",could be improved for,we could have reading sessions in the breaks and code more simultaneously with the teacher,Introductory
-"Day 2, afternoon",worked well for,The communication was pretty clear.,Introductory
-"Day 2, afternoon",could be improved for,Maybe some more words on what is the YAMl header and other new things in the reading assignments,Introductory
-"Day 2, afternoon",worked well for,Exercises on a Quatro doc.,Introductory
-"Day 2, afternoon",could be improved for,"The text in 8.9 could be a bit more deductive, especially the image reference bit.",Introductory
-"Day 2, afternoon",worked well for,"Nice topics with well elaborated tasks, but it went a bit slow (understandable)",Introductory
-"Day 2, afternoon",could be improved for,No comments,Introductory
-"Day 3, morning",worked well for,graphing is cool,Introductory
-"Day 3, morning",could be improved for,a bit fast for me,Introductory
-"Day 3, morning",worked well for,"Nice balance between exercises, talk and reading",Introductory
-"Day 3, morning",could be improved for,Nothing,Introductory
-"Day 3, morning",worked well for,Very nice explanations.,Introductory
-"Day 3, morning",could be improved for,"Don't no, work great.",Introductory
-"Day 3, morning",worked well for,It was really nice seeing how visualize data,Introductory
-"Day 3, morning",could be improved for,Don't know,Introductory
-"Day 3, morning",worked well for,everything :),Introductory
-"Day 3, morning",could be improved for,"I think it's just that I am a bit familiar with R, so this bit was a bit too easy, but anyways, I think it is adequate based on my peers questions during class.",Introductory
-"Day 3, morning",worked well for,"Good tempo, a bit faster than earlier. Nive that we created a lot of plots (and code), to be inspired from in the future.",Introductory
-"Day 3, morning",worked well for,Going through the different ways/features in the ggplot functions. Provided a very nice overview of the package.,Introductory
-"Day 3, morning",could be improved for,"Nothing specific, other than a type of cheatsheet would be awesome.",Introductory
-"Day 3, morning",worked well for,"was great, easy to follow, speaker was very clear",Introductory
-"Day 3, morning",could be improved for,The instructor just has to remember to show us the code more rather than the figures.,Introductory
-"Day 3, morning",worked well for,"Clear and good, nice to do something more in are and keep learning to use quarto",Introductory
-"Day 3, morning",worked well for,Excellent presentation of the different plots with varying variable. LEARNED so much! Many useful tools for the future.,Introductory
-"Day 3, morning",could be improved for,None,Introductory
-"Day 3, morning",worked well for,"Very good and clear instructions, step by step. The tempo was good. Nice with the exercises so you could play around with it on your own.",Introductory
-"Day 3, morning",could be improved for,Nothing comes to mind,Introductory
-"Day 3, morning",worked well for,"Code along part, lots of plots and codning. Lound and clear teachning.",Introductory
-"Day 3, morning",could be improved for,Talk about the individual codes and what you are telling R to do.,Introductory
-"Day 3, morning",worked well for,intro to ggplot was super nice.,Introductory
-"Day 3, morning",could be improved for,more time could have been spent for this session and perhaps including even more examples :),Introductory
-"Day 3, morning",worked well for,Exercises were  very good to practice plotting with R,Introductory
-"Day 3, morning",could be improved for,No further comments,Introductory
-"Day 3, morning",worked well for,A lot of practical exercise and coding. Good illustration of how you can change the visual appearance of graphs etc. Very good that we create a document with the codes and the figures to illustrate how the figures look with the specific code.,Introductory
-"Day 3, morning",could be improved for,No suggestions :-),Introductory
-"Day 3, morning",worked well for,"we have a lot of practice, what is so helpfull",Introductory
-"Day 3, morning",could be improved for,nothing,Introductory
-"Day 3, morning",worked well for,Very very good presentation og communication. The instructor was very much aware of meta-communication making sure we knew why and what we were doing.,Introductory
-"Day 3, morning",could be improved for,none,Introductory
-"Day 3, morning",worked well for,"excellent walking thru the code and hands on, steep learning curve, excellent teaching material!",Introductory
-"Day 3, morning",could be improved for,little bit more time for exploring further possibilities on-site for adapting the visualisation preferences for plots,Introductory
-"Day 3, morning",worked well for,A lot of useful tools - maybe the best session of all the days.,Introductory
-"Day 3, morning",could be improved for,A little fewer plots ( e.g. remove the violin plot) and spend more time on the options like axis-editing and so on.,Introductory
-"Day 3, morning",worked well for,"It was really nice to kinda repeat the same code so many times, so it's easy to remember how it's all built up. And going through all the different adjustments you can make to a plot.",Introductory
-"Day 3, morning",could be improved for,Nothing.,Introductory
-"Day 3, morning",worked well for,Section 9 has a nice structure and good examples.,Introductory
-"Day 3, morning",could be improved for,All good.,Introductory
-"Day 3, morning",worked well for,A lot of hands-on.,Introductory
-"Day 3, morning",could be improved for,No suggestions.,Introductory
-"Day 3, morning",worked well for,"clear communation, a lot of hands on",Introductory
-"Day 3, morning",could be improved for,maybe a little more practice on our ownit's easy to just copy the codes/what you're doing on the screen but no so easy to do by yourself,Introductory
-"Day 3, afternoon",worked well for,The common assignments were fun!,Introductory
-"Day 3, afternoon",could be improved for,Nothing,Introductory
-"Day 3, morning",worked well for,Super good - nice to try a lot of different plots,Introductory
-"Day 3, afternoon",worked well for,Very nice try it out ourselves,Introductory
-"Day 3, afternoon",could be improved for,Maybe just a bit more time,Introductory
-"Day 3, afternoon",worked well for,"Working 2 and 2 worked really well. You got to do a lot of the work, and it was WAY less stressful than I imagined it would be.",Introductory
-"Day 3, afternoon",could be improved for,"Maybe set aside more time for doing the project, so that you don't rush through doing the project.",Introductory
-End of course,worked well for the Networking Activities s,"It was networking, which was fine. And a good idea to discuss proplems, concerns etc.",Introductory
-End of course,could be improved for the Networking Activities s,"The time was sparse, so it was difficult to go outside ect.",Introductory
-End of course,worked well for the Networking Activities s,Nice to have a small break and some free time to talk,Introductory
-End of course,could be improved for the Networking Activities s,Maybe some non R-related stuff. There are not that many breaks.,Introductory
-"Day 3, afternoon",worked well for,it was easy to get help. good that it was small groups of 2,Introductory
-"Day 3, afternoon",worked well for,The group working project was really good,Introductory
-"Day 3, afternoon",could be improved for,Show how change titles on the plot not only the .qmd,Introductory
-End of course,worked well for the Networking Activities s,They were not really enforced. I guess because most people just felt natural to talk to each other,Introductory
-End of course,could be improved for the Networking Activities s,Would be nicer with a real activity and not just sharing research/analyses experiences,Introductory
-End of course,worked well for the Networking Activities s,"Well, we did not do much. Just chatted with others randomly. I do not think we have discussed what was planned for the social activity sessions; but still, that was pretty fun.",Introductory
-End of course,could be improved for the Networking Activities s,"I am not sure I have good ideas on this, but maybe putting up the prompt on the screen would help us be focused on the task.",Introductory
-End of course,worked well for the Networking Activities s,Nice themes for discussion.,Introductory
-End of course,could be improved for the Networking Activities s,None,Introductory
-End of course,worked well for the Networking Activities s,They were leading up to the session after.,Introductory
-End of course,could be improved for the Networking Activities s,People forgot to do them.,Introductory
-"Day 3, afternoon",worked well for,The working in pairs of two,Introductory
-"Day 3, afternoon",could be improved for,Would have been nice with more specific tasks and datasets with clear column names (that can actually be interpreted),Introductory
-End of course,worked well for the Networking Activities s,"Im not sure that they did. I got a lot of networking done, but not in those sessions.",Introductory
-End of course,could be improved for the Networking Activities s,"Is felt kind of rushed. You were encouraged to go for a walk outside, but the questions were so long, that no one in the group could actually remember the course. Maybe the conversation shouldn't be fixed, but instead the time could be set aside for a walk, or just simply social time with your tables mates.",Introductory
-End of course,worked well for the Networking Activities s,Being able to walk outside,Introductory
-End of course,could be improved for the Networking Activities s,More time to socialise,Introductory
-End of course,worked well for the Networking Activities s,"we did not have so musch experience with version controls and stuff, but we had a great discussion about git",Introductory
-End of course,worked well for the Networking Activities s,good to meet fellow students,Introductory
-End of course,could be improved for the Networking Activities s,I have no good ideas,Introductory
-End of course,worked well for the Networking Activities s,Great to have some specific topics to talk about. The evenings were nice as well. Good that the restaurants were close to the hotel. Good food!,Introductory
-End of course,worked well for the Networking Activities s,"""Networking Activities"" session on day 1 worked well, it was a good primer for the afternoon learning session.",Introductory
-End of course,could be improved for the Networking Activities s,There was not enough time for those.,Introductory
-End of course,worked well for the Networking Activities s,We had much time to talk amongst ourselves and discuss more.,Introductory
-End of course,could be improved for the Networking Activities s,some of the breaks for networking most participants hanged with their colleagues,Introductory
-"Day 3, afternoon",worked well for,Good with some practice,Introductory
-"Day 3, afternoon",could be improved for,Not a lot of time for beginners,Introductory
-"Day 3, afternoon",worked well for,interesting task,Introductory
-"Day 3, afternoon",could be improved for,a little bit more time for finishing exercise,Introductory
-End of course,worked well for the Networking Activities s,No comment.,Introductory
-End of course,could be improved for the Networking Activities s,"Either there weren't enough time, or people didn't really commit to it.",Introductory
-End of course,worked well for the Networking Activities s,it was nice to sit with different people almost everyday and share our experiences.,Introductory
-End of course,could be improved for the Networking Activities s,don't know.,Introductory
-"Day 3, afternoon",worked well for,"I liked everything, thank you",Introductory
-"Day 3, afternoon",could be improved for,nothing,Introductory
-End of course,worked well for the Networking Activities s,"interestingly prepared tasks for the ""Neyworking Activities"", and changing the table every day works well and significantly contributes to communication.",Introductory
-End of course,could be improved for the Networking Activities s,"in order to be able to introduce each participant, it is possible to start the course so that everyone says a few words about themselves",Introductory
+session_name,question,response
+"Day 2, afternoon",could be improved for,Don't know
+"Day 2, afternoon",could be improved for,I think the session was adequate.
+"Day 2, afternoon",could be improved for,I thought it was great. Maybe more exercises e.g. for individual work while others are getting help? Don't know if that would work.
+"Day 2, afternoon",could be improved for,I would prefer to do the exercise again on the big screen with the instructor after doing the task on our own
+"Day 2, afternoon",could be improved for,"I'd prefer more teaching and less reading for ourselves, although it is very nice to have access to the material on the home page for later use."
+"Day 2, afternoon",could be improved for,It worked well
+"Day 2, afternoon",could be improved for,It would have been nice to see if you could have the mean + SD besides each other in a table (I know this is not the topic)
+"Day 2, afternoon",could be improved for,Maybe a few visual examples for what Quarto documents can be used for.
+"Day 2, afternoon",could be improved for,"Maybe group a bit more of the reading/theoretical together and afterwards group the exercises together, so that there is not so many breaks in the session."
+"Day 2, afternoon",could be improved for,Maybe some more words on what is the YAMl header and other new things in the reading assignments
+"Day 2, afternoon",could be improved for,"Maybe speak more clear about function: ""i tell R to use this function in this package"" by writing this. It dosen't work if i were to write X because R would read it as ..."
+"Day 2, afternoon",could be improved for,More exercises
+"Day 2, afternoon",could be improved for,"More in detail in the start, why quarto is something you would recommend us to use."
+"Day 2, afternoon",could be improved for,No comments
+"Day 2, afternoon",could be improved for,Sometimes the instructor was a bit too fast
+"Day 2, afternoon",could be improved for,"The text in 8.9 could be a bit more deductive, especially the image reference bit."
+"Day 2, afternoon",could be improved for,"We didn't get a proper motivation on why Quarto was nice. I didn't understand through most of the session, why this would be useful for me to learn, which affected my motivation in this session negatively."
+"Day 2, afternoon",could be improved for,none
+"Day 2, afternoon",could be improved for,only to check together results of exersice
+"Day 2, afternoon",could be improved for,"perhaps, all quarto session could have been done in the same day."
+"Day 2, afternoon",could be improved for,too fast it was for me
+"Day 2, afternoon",could be improved for,we could have reading sessions in the breaks and code more simultaneously with the teacher
+"Day 2, afternoon",worked well for,"A lot of interesting tools. Good walkthrough, and nice with personal excercises."
+"Day 2, afternoon",worked well for,Code along part was nice
+"Day 2, afternoon",worked well for,Everything :)
+"Day 2, afternoon",worked well for,Exercises on a Quatro doc.
+"Day 2, afternoon",worked well for,Good introduction to a new concept with practice.
+"Day 2, afternoon",worked well for,Good session
+"Day 2, afternoon",worked well for,Great introduction to Quarto. One of those sessions where i really learned something COMPLETELY new.
+"Day 2, afternoon",worked well for,It was clear what the elements were meant to teach us. Very good. Great with exercises!
+"Day 2, afternoon",worked well for,It was nice seeing that you can easily do some tables with summary statistics
+"Day 2, afternoon",worked well for,"Nice topics with well elaborated tasks, but it went a bit slow (understandable)"
+"Day 2, afternoon",worked well for,Practical exercises where we got to try and code by ourself.
+"Day 2, afternoon",worked well for,That there was a lot of coding along with the instructor and more exercises.
+"Day 2, afternoon",worked well for,The communication was pretty clear.
+"Day 2, afternoon",worked well for,The exercises
+"Day 2, afternoon",worked well for,The session was very practical and great
+"Day 2, afternoon",worked well for,The tempo was working quite well. The fact that we got to sit and type in quarto and try some different stuff was quite nice. Especially the features of tabels and pictures.
+"Day 2, afternoon",worked well for,Very good - nice with more exercises.
+"Day 2, afternoon",worked well for,Very good presentation and communication - loud and clear speaker. Nice and good tempo.
+"Day 2, afternoon",worked well for,Very nice and well structured with good pacing
+"Day 2, afternoon",worked well for,"Very nice to learn about quarto - good pace.  Good explanations in the online material (and also fine, that you can learn more if you want (and have fun with it), but we are taught the most important things to get started)"
+"Day 2, afternoon",worked well for,"clear communication, patient teachers :-)"
+"Day 2, afternoon",worked well for,"it was intresting part, a lot of new info for me, thank you"
+"Day 2, afternoon",worked well for,nice intro to quarto and all the exercises worked really well. I am already using Markdown for a project with a collaborator and it was so useful to know how to make tables and make the text more readable.
+"Day 2, afternoon",worked well for,speakear was clear and understandable
+"Day 2, afternoon",worked well for,"very nice and progressive learning session, good alignment between theory and hands on"
+"Day 2, morning",could be improved for,it was a good session
+"Day 2, morning",worked well for,i did not understand the speaker well though she was super skilled
+"Day 3, afternoon",could be improved for,Maybe just a bit more time
+"Day 3, afternoon",could be improved for,"Maybe set aside more time for doing the project, so that you don't rush through doing the project."
+"Day 3, afternoon",could be improved for,Not a lot of time for beginners
+"Day 3, afternoon",could be improved for,Nothing
+"Day 3, afternoon",could be improved for,Show how change titles on the plot not only the .qmd
+"Day 3, afternoon",could be improved for,Would have been nice with more specific tasks and datasets with clear column names (that can actually be interpreted)
+"Day 3, afternoon",could be improved for,a little bit more time for finishing exercise
+"Day 3, afternoon",could be improved for,nothing
+"Day 3, afternoon",worked well for,Good with some practice
+"Day 3, afternoon",worked well for,"I liked everything, thank you"
+"Day 3, afternoon",worked well for,The common assignments were fun!
+"Day 3, afternoon",worked well for,The group working project was really good
+"Day 3, afternoon",worked well for,The working in pairs of two
+"Day 3, afternoon",worked well for,Very nice try it out ourselves
+"Day 3, afternoon",worked well for,"Working 2 and 2 worked really well. You got to do a lot of the work, and it was WAY less stressful than I imagined it would be."
+"Day 3, afternoon",worked well for,interesting task
+"Day 3, afternoon",worked well for,it was easy to get help. good that it was small groups of 2
+"Day 3, morning",could be improved for,A little fewer plots ( e.g. remove the violin plot) and spend more time on the options like axis-editing and so on.
+"Day 3, morning",could be improved for,All good.
+"Day 3, morning",could be improved for,Don't know
+"Day 3, morning",could be improved for,"Don't no, work great."
+"Day 3, morning",could be improved for,"I think it's just that I am a bit familiar with R, so this bit was a bit too easy, but anyways, I think it is adequate based on my peers questions during class."
+"Day 3, morning",could be improved for,No further comments
+"Day 3, morning",could be improved for,No suggestions :-)
+"Day 3, morning",could be improved for,No suggestions.
+"Day 3, morning",could be improved for,None
+"Day 3, morning",could be improved for,Nothing
+"Day 3, morning",could be improved for,Nothing comes to mind
+"Day 3, morning",could be improved for,"Nothing specific, other than a type of cheatsheet would be awesome."
+"Day 3, morning",could be improved for,Nothing.
+"Day 3, morning",could be improved for,Talk about the individual codes and what you are telling R to do.
+"Day 3, morning",could be improved for,The instructor just has to remember to show us the code more rather than the figures.
+"Day 3, morning",could be improved for,a bit fast for me
+"Day 3, morning",could be improved for,little bit more time for exploring further possibilities on-site for adapting the visualisation preferences for plots
+"Day 3, morning",could be improved for,maybe a little more practice on our ownit's easy to just copy the codes/what you're doing on the screen but no so easy to do by yourself
+"Day 3, morning",could be improved for,more time could have been spent for this session and perhaps including even more examples :)
+"Day 3, morning",could be improved for,none
+"Day 3, morning",could be improved for,nothing
+"Day 3, morning",worked well for,A lot of hands-on.
+"Day 3, morning",worked well for,A lot of practical exercise and coding. Good illustration of how you can change the visual appearance of graphs etc. Very good that we create a document with the codes and the figures to illustrate how the figures look with the specific code.
+"Day 3, morning",worked well for,A lot of useful tools - maybe the best session of all the days.
+"Day 3, morning",worked well for,"Clear and good, nice to do something more in are and keep learning to use quarto"
+"Day 3, morning",worked well for,"Code along part, lots of plots and codning. Lound and clear teachning."
+"Day 3, morning",worked well for,Excellent presentation of the different plots with varying variable. LEARNED so much! Many useful tools for the future.
+"Day 3, morning",worked well for,Exercises were  very good to practice plotting with R
+"Day 3, morning",worked well for,Going through the different ways/features in the ggplot functions. Provided a very nice overview of the package.
+"Day 3, morning",worked well for,"Good tempo, a bit faster than earlier. Nive that we created a lot of plots (and code), to be inspired from in the future."
+"Day 3, morning",worked well for,It was really nice seeing how visualize data
+"Day 3, morning",worked well for,"It was really nice to kinda repeat the same code so many times, so it's easy to remember how it's all built up. And going through all the different adjustments you can make to a plot."
+"Day 3, morning",worked well for,"Nice balance between exercises, talk and reading"
+"Day 3, morning",worked well for,Section 9 has a nice structure and good examples.
+"Day 3, morning",worked well for,Super good - nice to try a lot of different plots
+"Day 3, morning",worked well for,"Very good and clear instructions, step by step. The tempo was good. Nice with the exercises so you could play around with it on your own."
+"Day 3, morning",worked well for,Very nice explanations.
+"Day 3, morning",worked well for,Very very good presentation og communication. The instructor was very much aware of meta-communication making sure we knew why and what we were doing.
+"Day 3, morning",worked well for,"clear communation, a lot of hands on"
+"Day 3, morning",worked well for,everything :)
+"Day 3, morning",worked well for,"excellent walking thru the code and hands on, steep learning curve, excellent teaching material!"
+"Day 3, morning",worked well for,graphing is cool
+"Day 3, morning",worked well for,intro to ggplot was super nice.
+"Day 3, morning",worked well for,"was great, easy to follow, speaker was very clear"
+"Day 3, morning",worked well for,"we have a lot of practice, what is so helpfull"
+End of course,could be improved for the Networking Activities s,"Either there weren't enough time, or people didn't really commit to it."
+End of course,could be improved for the Networking Activities s,"I am not sure I have good ideas on this, but maybe putting up the prompt on the screen would help us be focused on the task."
+End of course,could be improved for the Networking Activities s,I have no good ideas
+End of course,could be improved for the Networking Activities s,"Is felt kind of rushed. You were encouraged to go for a walk outside, but the questions were so long, that no one in the group could actually remember the course. Maybe the conversation shouldn't be fixed, but instead the time could be set aside for a walk, or just simply social time with your tables mates."
+End of course,could be improved for the Networking Activities s,Maybe some non R-related stuff. There are not that many breaks.
+End of course,could be improved for the Networking Activities s,More time to socialise
+End of course,could be improved for the Networking Activities s,None
+End of course,could be improved for the Networking Activities s,People forgot to do them.
+End of course,could be improved for the Networking Activities s,"The time was sparse, so it was difficult to go outside ect."
+End of course,could be improved for the Networking Activities s,There was not enough time for those.
+End of course,could be improved for the Networking Activities s,Would be nicer with a real activity and not just sharing research/analyses experiences
+End of course,could be improved for the Networking Activities s,don't know.
+End of course,could be improved for the Networking Activities s,"in order to be able to introduce each participant, it is possible to start the course so that everyone says a few words about themselves"
+End of course,could be improved for the Networking Activities s,some of the breaks for networking most participants hanged with their colleagues
+End of course,worked well for the Networking Activities s,"""Networking Activities"" session on day 1 worked well, it was a good primer for the afternoon learning session."
+End of course,worked well for the Networking Activities s,Being able to walk outside
+End of course,worked well for the Networking Activities s,Great to have some specific topics to talk about. The evenings were nice as well. Good that the restaurants were close to the hotel. Good food!
+End of course,worked well for the Networking Activities s,"Im not sure that they did. I got a lot of networking done, but not in those sessions."
+End of course,worked well for the Networking Activities s,"It was networking, which was fine. And a good idea to discuss proplems, concerns etc."
+End of course,worked well for the Networking Activities s,Nice themes for discussion.
+End of course,worked well for the Networking Activities s,Nice to have a small break and some free time to talk
+End of course,worked well for the Networking Activities s,No comment.
+End of course,worked well for the Networking Activities s,They were leading up to the session after.
+End of course,worked well for the Networking Activities s,They were not really enforced. I guess because most people just felt natural to talk to each other
+End of course,worked well for the Networking Activities s,We had much time to talk amongst ourselves and discuss more.
+End of course,worked well for the Networking Activities s,"Well, we did not do much. Just chatted with others randomly. I do not think we have discussed what was planned for the social activity sessions; but still, that was pretty fun."
+End of course,worked well for the Networking Activities s,good to meet fellow students
+End of course,worked well for the Networking Activities s,"interestingly prepared tasks for the ""Neyworking Activities"", and changing the table every day works well and significantly contributes to communication."
+End of course,worked well for the Networking Activities s,it was nice to sit with different people almost everyday and share our experiences.
+End of course,worked well for the Networking Activities s,"we did not have so musch experience with version controls and stuff, but we had a great discussion about git"

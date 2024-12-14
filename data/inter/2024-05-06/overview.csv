@@ -1,16 +1,17 @@
 questions,responses,count
-What is your formal position?,Other,1
+What is your formal position?,Lægevikar,1
 What is your formal position?,PhD student,24
 What is your formal position?,Postdoc,2
 What is your formal position?,Research assistant,3
-What is your formal position?,Researcher,3
+What is your formal position?,Researcher,2
+What is your formal position?,Scientist,1
 What city do you work in or nearest to?,Aalborg,1
 What city do you work in or nearest to?,Aarhus,12
 What city do you work in or nearest to?,Copenhagen,8
-What city do you work in or nearest to?,"Graz, Austria",1
+What city do you work in or nearest to?,Graz (Austria),1
 What city do you work in or nearest to?,Hjørring,1
 What city do you work in or nearest to?,Odense,9
-What city do you work in or nearest to?,"Riga, Latvia",1
+What city do you work in or nearest to?,Riga,1
 How do you perceive your skill/knowledge of... [using R?],Beginner,6
 How do you perceive your skill/knowledge of... [using R?],Beginner-Intermediate,15
 How do you perceive your skill/knowledge of... [using R?],Intermediate,7

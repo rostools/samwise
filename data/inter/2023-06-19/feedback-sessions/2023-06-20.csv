@@ -1,53 +1,53 @@
-session_name,question,response,course_name
-Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",This was a great session and I understood a bit better the functions possibilities and how to use it.,NA
-Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",very easy to follow,NA
-Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",Can go a bit faster,NA
-Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",answered yesterday,NA
-Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s",answered yesterday,NA
-Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",inspired me to do many stuff that i do manually so far,NA
-Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",more practical examples than importing the data files,NA
-Day 1,"worked well for the Save time, don’t repeat yourself: Making functions","Functions were clearly explained, dependencies on packages and so were also good to learn about. Also Roxygen",NA
-Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions","All functions made were on the same thing, which can give the wrong impression to people that are not familiar with functions. We could try doing 1 function for data import, 1 function for plotting, 1 function for something else.",NA
-Day 1,"worked well for the Save time, don’t repeat yourself: Making functions","Well explained, good documentation and everything went smooth",NA
-Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",Provide other examples on function uses other than importing data,NA
-Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",Yesterday,NA
-Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s",Yesterday,NA
-Day 1,"worked well for the Save time, don’t repeat yourself: Making functions","Good instructions and good exercises to practice,",NA
-Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",No suggestions,NA
-Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",To keep all at the same track,NA
-Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",Maybe provide information of where to get information of working with functions on a more advanced level,NA
-Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",It was so useful.,NA
-Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s",I am happy with the program flow.,NA
-Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",I am so impressed from the functions properties. We started from very basic/beginning and write 4 different functions. I super enjoyed.,NA
-Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions","Honestly, don't have much idea since I am a beginner.",NA
-Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",very useful info,NA
-Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s",I think before starting coding we can give a general overview of the objective that we are trying to do with the steps we are performing in the code.,NA
-Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",I like this session we code much more. Really nice to see how easy it is to make a function,NA
-Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",Variety in the examples of what we can do with functions.,NA
-Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s",One thing that come also for the beginner course is to have the name of the package (package::) in front of every function. The problem with not knowing the name of the package is that it is more difficult to know what could be done with other functions in the same package. I had trouble to find info for my own coding at least.,NA
-Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",Good exercises to practice on my own,NA
-Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",Some code along parts were a bit fast as my own project was not set exactly as the presenter (example: no file functions.R created),NA
-Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",It is very useful and could save a lot of time if you make the function more advanced. The explanations were easy to follow,NA
-Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions","maybe better than the same function 4 times, we could practise with 2 or 3 functions ( Maybe one for importing, one for joining dataframes, one for plotting).",NA
-Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals","Functions  section works very good, I enjoyed this pace a lot better",NA
-Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals",All good!,NA
-Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",It was clearly presented and we got good support,NA
-Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals",It was well organized,NA
-Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",It work well it was clear and useful,NA
-Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals","It work well it was clear and useful, good discussion",NA
-Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",Good amount of info given,NA
-Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",Could be a bit more detailed (and in simpler terms) explanation of each of the parts of the function,NA
-Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",all of it,NA
-Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals",a bit higher tempo or additional exercises for advanced users,NA
-Day 2,worked well for the Processing and joining datasets for cleaning,Na,NA
-Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",It was really useful information and the code alongs parts were really useful.,NA
-Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals","More examples on how to use map, maybe discussing more how it can be used in common settings like linear models, etc.",NA
-Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",Good instructions,NA
-Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals",A bit to short of time sometimes for exercises. A bit to short of time if something isnt working.,NA
-Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals","I think it is pretty useful but I can not say I am completely get into that. I need to repeat and study on my own, prior to ask questions to you :) Thanks.",NA
-Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals",Not for your improvement but I need to repeat myself to digest some of the issues.,NA
-Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",Everything (including a bit more complex excercises which were very much fun to go through),NA
-Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals",Nothing,NA
-Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",Interesting topic and easy to get into.,NA
-Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",It was nice to learn this and actually reflect on loops.,NA
-Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals","I lost a bit the description of way of thinking when we develop the code. It was more a reading of what we should write. It was very neat today but I have less ideas on how I can improve my own code (for instance, actually transforming a for loop into functional)",NA
+session_name,question,response
+Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s",I am happy with the program flow.
+Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s",I think before starting coding we can give a general overview of the objective that we are trying to do with the steps we are performing in the code.
+Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s",One thing that come also for the beginner course is to have the name of the package (package::) in front of every function. The problem with not knowing the name of the package is that it is more difficult to know what could be done with other functions in the same package. I had trouble to find info for my own coding at least.
+Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s",Yesterday
+Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s",answered yesterday
+Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions","All functions made were on the same thing, which can give the wrong impression to people that are not familiar with functions. We could try doing 1 function for data import, 1 function for plotting, 1 function for something else."
+Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",Can go a bit faster
+Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",Could be a bit more detailed (and in simpler terms) explanation of each of the parts of the function
+Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions","Honestly, don't have much idea since I am a beginner."
+Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",Maybe provide information of where to get information of working with functions on a more advanced level
+Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",No suggestions
+Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",Provide other examples on function uses other than importing data
+Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",Some code along parts were a bit fast as my own project was not set exactly as the presenter (example: no file functions.R created)
+Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",This was a great session and I understood a bit better the functions possibilities and how to use it.
+Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",Variety in the examples of what we can do with functions.
+Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions","maybe better than the same function 4 times, we could practise with 2 or 3 functions ( Maybe one for importing, one for joining dataframes, one for plotting)."
+Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",more practical examples than importing the data files
+Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",It was so useful.
+Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",Yesterday
+Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",answered yesterday
+Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",very useful info
+Day 1,"worked well for the Save time, don’t repeat yourself: Making functions","Functions were clearly explained, dependencies on packages and so were also good to learn about. Also Roxygen"
+Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",Good amount of info given
+Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",Good exercises to practice on my own
+Day 1,"worked well for the Save time, don’t repeat yourself: Making functions","Good instructions and good exercises to practice,"
+Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",I am so impressed from the functions properties. We started from very basic/beginning and write 4 different functions. I super enjoyed.
+Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",I like this session we code much more. Really nice to see how easy it is to make a function
+Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",It is very useful and could save a lot of time if you make the function more advanced. The explanations were easy to follow
+Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",To keep all at the same track
+Day 1,"worked well for the Save time, don’t repeat yourself: Making functions","Well explained, good documentation and everything went smooth"
+Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",inspired me to do many stuff that i do manually so far
+Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",very easy to follow
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals",A bit to short of time sometimes for exercises. A bit to short of time if something isnt working.
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals",All good!
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals","I lost a bit the description of way of thinking when we develop the code. It was more a reading of what we should write. It was very neat today but I have less ideas on how I can improve my own code (for instance, actually transforming a for loop into functional)"
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals",It was well organized
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals","It work well it was clear and useful, good discussion"
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals","More examples on how to use map, maybe discussing more how it can be used in common settings like linear models, etc."
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals",Not for your improvement but I need to repeat myself to digest some of the issues.
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals",Nothing
+Day 2,"could be improved for the Save time, don’t repeat yourself: Using functionals",a bit higher tempo or additional exercises for advanced users
+Day 2,worked well for the Processing and joining datasets for cleaning,Na
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",Everything (including a bit more complex excercises which were very much fun to go through)
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals","Functions  section works very good, I enjoyed this pace a lot better"
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",Good instructions
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals","I think it is pretty useful but I can not say I am completely get into that. I need to repeat and study on my own, prior to ask questions to you :) Thanks."
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",Interesting topic and easy to get into.
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",It was clearly presented and we got good support
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",It was nice to learn this and actually reflect on loops.
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",It was really useful information and the code alongs parts were really useful.
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",It work well it was clear and useful
+Day 2,"worked well for the Save time, don’t repeat yourself: Using functionals",all of it

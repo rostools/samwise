@@ -1,69 +1,69 @@
-session_name,question,response,course_name
-"Day 2, morning",worked well for,I learned a lot. It was well put together,Advanced
-"Day 2, morning",could be improved for,Maybe a bit quicker progression if possible,Advanced
-"Day 2, morning",worked well for,interactive sessions,Advanced
-"Day 2, morning",could be improved for,a few more breaks are needed!,Advanced
-"Day 2, morning",worked well for,"I think overall the session worked quite well, and the concepts and use of targets was fairly well explained",Advanced
-"Day 2, morning",could be improved for,Nothing,Advanced
-"Day 2, morning",worked well for,code along,Advanced
-"Day 2, morning",could be improved for,"take more time to explain: what we are going to do and why we do it, as we move on from each section",Advanced
-"Day 2, morning",worked well for,Very useful workflow!Changed my view on how to construct my analysis pipelines.,Advanced
-"Day 2, morning",could be improved for,Nothing in my opinion.,Advanced
-"Day 2, morning",worked well for,very cool introduction for targets,Advanced
-"Day 2, morning",could be improved for,"not really, but maybe specify that R studio should be a version released > 2023",Advanced
-"Day 2, morning",worked well for,The visualization with tar_visnetwork() to show how target works,Advanced
-"Day 2, morning",worked well for,"Learning about targets package, creating pipelines and understanding how efficient these pipelines could be",Advanced
-"Day 2, morning",could be improved for,nothing really,Advanced
-"Day 2, morning",worked well for,"Roger is engaging and fun and moves at a good pace, and stays calm when something goes wrong.",Advanced
-"Day 2, morning",could be improved for,A little confusing that packages were not always loaded and installed (but also a learning opportunity I guess),Advanced
-"Day 2, morning",worked well for,"I really liked the structure of this session, and how we narrowed it down gradually!",Advanced
-"Day 2, morning",could be improved for,I think the example of how Targets works were kinda confusing..,Advanced
-"Day 2, morning",worked well for,The topic that we covered was very interesting!The instructor did a great job and was engaging during all the session.,Advanced
-"Day 2, morning",could be improved for,The session felt a bit slow with some long waiting times.,Advanced
-"Day 2, morning",worked well for,"It was all very good. Especially the end, where I understood how it worked and what it does.",Advanced
-"Day 2, morning",could be improved for,"It took me a long time to understand that there was no output for the _targets.R untill we asked it to read them in the qmd file. This would have been nice to know from the begining, to know what I was looking for during all the way until we did the tar_read funciton.",Advanced
-"Day 2, morning",worked well for,targets worked nice when it finally worked.,Advanced
-"Day 2, morning",could be improved for,"Code-a-longs can be prone to a lot of spelling errors. It is hard to program when ""auto complete"" does not work.",Advanced
-"Day 2, morning",worked well for,"Once we are able to visualize the network, the rationale for using targets really made sense to me.",Advanced
-"Day 2, morning",could be improved for,"It was initially unclear to me why we needed to add: tar_target(        name = file,        command = ""data/lipidomics.csv"",        format = ""file""    ),to the pipeline until it was discussed further. Maybe a better description of what this is actually doing would clarify this.",Advanced
-"Day 2, morning",worked well for,The repetition of making functions.,Advanced
-"Day 2, morning",could be improved for,"The targets concept is quite complicated. If time is left, maybe re-reiterate the concepts. Especially I gpt a bit lost in the thinking behind the codes that link the targets script to the quarto doc.",Advanced
-"Day 2, morning",worked well for,The coding along is always very helpful and the reading taks as well,Advanced
-"Day 2, morning",could be improved for,sometimes it was not very easy to follow *why* we were doing what we were doing instead just following the instructions,Advanced
-"Day 2, morning",worked well for,Fine instructions,Advanced
-"Day 2, morning",could be improved for,A few problems related to package installing and typoes making the session feel not very effecient.,Advanced
-"Day 2, morning",worked well for,"good pace. Great to see the end. A ""la reveal magnifico""",Advanced
-"Day 2, morning",could be improved for,would be cool to see an example of a bigger project that have used targets,Advanced
-"Day 2, afternoon",worked well for,All the small steps. A lot happens and good to get it one thing at a time.,Advanced
-"Day 2, afternoon",could be improved for,"Would be nice to get an overview of what we want to do in the end with our analysis. It is also likely I missed it - if so, disregard.",Advanced
-"Day 2, afternoon",worked well for,creating model workflows was quite informative,Advanced
-"Day 2, afternoon",could be improved for,not much,Advanced
-"Day 2, afternoon",worked well for,Nice to learn the tidy way to do models,Advanced
-"Day 2, afternoon",could be improved for,This was a long day.,Advanced
-"Day 2, afternoon",worked well for,the flow work well,Advanced
-"Day 2, afternoon",could be improved for,a bit of more time projecting the functions before execution,Advanced
-"Day 2, afternoon",worked well for,Coding along was definetly a great help,Advanced
-"Day 2, afternoon",could be improved for,no comments,Advanced
-"Day 2, afternoon",worked well for,It all worked well,Advanced
-"Day 2, afternoon",could be improved for,"Nothing. I still need to figure out how to apply this to my own data, but I guess that is just time and going home and looking at my own data",Advanced
-"Day 2, afternoon",worked well for,"good, really good!",Advanced
-"Day 2, afternoon",could be improved for,"it was a liitle littlebit insane with the piping inside the function, but I guess it works!",Advanced
-"Day 2, afternoon",worked well for,I think the content is extremely useful.,Advanced
-"Day 2, afternoon",could be improved for,The code-along is a little slow for me and I was very far ahead.,Advanced
-"Day 2, afternoon",worked well for,Good pace,Advanced
-"Day 2, afternoon",could be improved for,"I think it was so very confusing, repetitive and to some degree hard to follow why we did things. It was also kinda unstructured, as we did stuff we previously haven't done..",Advanced
-"Day 2, afternoon",worked well for,I think the session was kept on time which I can appreciate,Advanced
-"Day 2, afternoon",could be improved for,"I think this session moved a bit too fast, and there were very few instances where I was allowed to catch up after an error. Additionally I think this module was mabye a bit to spesific, and I didnt feel like it introduced general principles on how produce reproducible pipelines in R!",Advanced
-"Day 2, afternoon",worked well for,the figure flows were informative together with the instructions,Advanced
-"Day 2, afternoon",could be improved for,a lot of type along,Advanced
-"Day 2, afternoon",worked well for,I think the concept of running the models in a pipeline is good.,Advanced
-"Day 2, afternoon",could be improved for,"It wasn't obvious to me how to access the model object itself to use it further (e.g., get estimated means)",Advanced
-"Day 2, afternoon",worked well for,Code along - explaining what we do and why we do it,Advanced
-"Day 2, afternoon",could be improved for,"sometimes it went a bit fast - we went abit back and forth with creating the lipidomics_wide dataframes for analysis, and creating functions for the for the analysis, so that was a bit confusing",Advanced
-"Day 2, afternoon",worked well for,The pace,Advanced
-"Day 2, afternoon",worked well for,I think it was a very relevant example of a workflow,Advanced
-"Day 2, afternoon",could be improved for,"It went a little too fast to properly understand what we were doing - we seemed to do several things twice? Maybe more time for this session would be good, as this is definately so usable and it's really a shame to miss out on the understanding because the tempo is a little fast. Also, maybe some more assignments to compliment the code-along?",Advanced
-"Day 2, afternoon",worked well for,"The topic covered was very interesting and useful, also very well explained.",Advanced
-"Day 2, afternoon",could be improved for,Tidymodels is initially complex to understand for people that never used it. I think it might help to share some figures/flow-chart to have an overview of how it works.,Advanced
-"Day 2, afternoon",worked well for,Kinda got an understanding of how workflows can be used. Less issues with missing packages than previous session.,Advanced
-"Day 2, afternoon",could be improved for,"It would have been nice with a better visual overview of what we were doing, to be able to refer to where in the process we were. Especially when the session is in the afternoon. Very confusing to keep writing the code in the qmd and then converting to function in functions.R, then testing function in qmd, because it happened so many times. Is it needed to keep writing the code in the qmd before converting to a function every time? Was it done to show the ""standard"" workflow, or is this a requirement before writing a function? I lost track of the overall goal and felt like I was going in circles.",Advanced
+session_name,question,response
+"Day 2, afternoon",could be improved for,"I think it was so very confusing, repetitive and to some degree hard to follow why we did things. It was also kinda unstructured, as we did stuff we previously haven't done.."
+"Day 2, afternoon",could be improved for,"I think this session moved a bit too fast, and there were very few instances where I was allowed to catch up after an error. Additionally I think this module was mabye a bit to spesific, and I didnt feel like it introduced general principles on how produce reproducible pipelines in R!"
+"Day 2, afternoon",could be improved for,"It wasn't obvious to me how to access the model object itself to use it further (e.g., get estimated means)"
+"Day 2, afternoon",could be improved for,"It went a little too fast to properly understand what we were doing - we seemed to do several things twice? Maybe more time for this session would be good, as this is definately so usable and it's really a shame to miss out on the understanding because the tempo is a little fast. Also, maybe some more assignments to compliment the code-along?"
+"Day 2, afternoon",could be improved for,"It would have been nice with a better visual overview of what we were doing, to be able to refer to where in the process we were. Especially when the session is in the afternoon. Very confusing to keep writing the code in the qmd and then converting to function in functions.R, then testing function in qmd, because it happened so many times. Is it needed to keep writing the code in the qmd before converting to a function every time? Was it done to show the ""standard"" workflow, or is this a requirement before writing a function? I lost track of the overall goal and felt like I was going in circles."
+"Day 2, afternoon",could be improved for,"Nothing. I still need to figure out how to apply this to my own data, but I guess that is just time and going home and looking at my own data"
+"Day 2, afternoon",could be improved for,The code-along is a little slow for me and I was very far ahead.
+"Day 2, afternoon",could be improved for,This was a long day.
+"Day 2, afternoon",could be improved for,Tidymodels is initially complex to understand for people that never used it. I think it might help to share some figures/flow-chart to have an overview of how it works.
+"Day 2, afternoon",could be improved for,"Would be nice to get an overview of what we want to do in the end with our analysis. It is also likely I missed it - if so, disregard."
+"Day 2, afternoon",could be improved for,a bit of more time projecting the functions before execution
+"Day 2, afternoon",could be improved for,a lot of type along
+"Day 2, afternoon",could be improved for,"it was a liitle littlebit insane with the piping inside the function, but I guess it works!"
+"Day 2, afternoon",could be improved for,no comments
+"Day 2, afternoon",could be improved for,not much
+"Day 2, afternoon",could be improved for,"sometimes it went a bit fast - we went abit back and forth with creating the lipidomics_wide dataframes for analysis, and creating functions for the for the analysis, so that was a bit confusing"
+"Day 2, afternoon",worked well for,All the small steps. A lot happens and good to get it one thing at a time.
+"Day 2, afternoon",worked well for,Code along - explaining what we do and why we do it
+"Day 2, afternoon",worked well for,Coding along was definetly a great help
+"Day 2, afternoon",worked well for,Good pace
+"Day 2, afternoon",worked well for,I think it was a very relevant example of a workflow
+"Day 2, afternoon",worked well for,I think the concept of running the models in a pipeline is good.
+"Day 2, afternoon",worked well for,I think the content is extremely useful.
+"Day 2, afternoon",worked well for,I think the session was kept on time which I can appreciate
+"Day 2, afternoon",worked well for,It all worked well
+"Day 2, afternoon",worked well for,Kinda got an understanding of how workflows can be used. Less issues with missing packages than previous session.
+"Day 2, afternoon",worked well for,Nice to learn the tidy way to do models
+"Day 2, afternoon",worked well for,The pace
+"Day 2, afternoon",worked well for,"The topic covered was very interesting and useful, also very well explained."
+"Day 2, afternoon",worked well for,creating model workflows was quite informative
+"Day 2, afternoon",worked well for,"good, really good!"
+"Day 2, afternoon",worked well for,the figure flows were informative together with the instructions
+"Day 2, afternoon",worked well for,the flow work well
+"Day 2, morning",could be improved for,A few problems related to package installing and typoes making the session feel not very effecient.
+"Day 2, morning",could be improved for,A little confusing that packages were not always loaded and installed (but also a learning opportunity I guess)
+"Day 2, morning",could be improved for,"Code-a-longs can be prone to a lot of spelling errors. It is hard to program when ""auto complete"" does not work."
+"Day 2, morning",could be improved for,I think the example of how Targets works were kinda confusing..
+"Day 2, morning",could be improved for,"It took me a long time to understand that there was no output for the _targets.R untill we asked it to read them in the qmd file. This would have been nice to know from the begining, to know what I was looking for during all the way until we did the tar_read funciton."
+"Day 2, morning",could be improved for,"It was initially unclear to me why we needed to add: tar_target(        name = file,        command = ""data/lipidomics.csv"",        format = ""file""    ),to the pipeline until it was discussed further. Maybe a better description of what this is actually doing would clarify this."
+"Day 2, morning",could be improved for,Maybe a bit quicker progression if possible
+"Day 2, morning",could be improved for,Nothing
+"Day 2, morning",could be improved for,Nothing in my opinion.
+"Day 2, morning",could be improved for,The session felt a bit slow with some long waiting times.
+"Day 2, morning",could be improved for,"The targets concept is quite complicated. If time is left, maybe re-reiterate the concepts. Especially I gpt a bit lost in the thinking behind the codes that link the targets script to the quarto doc."
+"Day 2, morning",could be improved for,a few more breaks are needed!
+"Day 2, morning",could be improved for,"not really, but maybe specify that R studio should be a version released > 2023"
+"Day 2, morning",could be improved for,nothing really
+"Day 2, morning",could be improved for,sometimes it was not very easy to follow *why* we were doing what we were doing instead just following the instructions
+"Day 2, morning",could be improved for,"take more time to explain: what we are going to do and why we do it, as we move on from each section"
+"Day 2, morning",could be improved for,would be cool to see an example of a bigger project that have used targets
+"Day 2, morning",worked well for,Fine instructions
+"Day 2, morning",worked well for,I learned a lot. It was well put together
+"Day 2, morning",worked well for,"I really liked the structure of this session, and how we narrowed it down gradually!"
+"Day 2, morning",worked well for,"I think overall the session worked quite well, and the concepts and use of targets was fairly well explained"
+"Day 2, morning",worked well for,"It was all very good. Especially the end, where I understood how it worked and what it does."
+"Day 2, morning",worked well for,"Learning about targets package, creating pipelines and understanding how efficient these pipelines could be"
+"Day 2, morning",worked well for,"Once we are able to visualize the network, the rationale for using targets really made sense to me."
+"Day 2, morning",worked well for,"Roger is engaging and fun and moves at a good pace, and stays calm when something goes wrong."
+"Day 2, morning",worked well for,The coding along is always very helpful and the reading taks as well
+"Day 2, morning",worked well for,The repetition of making functions.
+"Day 2, morning",worked well for,The topic that we covered was very interesting!The instructor did a great job and was engaging during all the session.
+"Day 2, morning",worked well for,The visualization with tar_visnetwork() to show how target works
+"Day 2, morning",worked well for,Very useful workflow!Changed my view on how to construct my analysis pipelines.
+"Day 2, morning",worked well for,code along
+"Day 2, morning",worked well for,"good pace. Great to see the end. A ""la reveal magnifico"""
+"Day 2, morning",worked well for,interactive sessions
+"Day 2, morning",worked well for,targets worked nice when it finally worked.
+"Day 2, morning",worked well for,very cool introduction for targets

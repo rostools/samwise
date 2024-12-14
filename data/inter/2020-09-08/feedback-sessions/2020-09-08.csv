@@ -1,71 +1,71 @@
-session_name,question,response,course_name
-Day 1,"worked well for the Basic setup and workflow and Importing data, fast s","Easy to follow, works very well with all the code in the online material.",NA
-Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s","For me it was a bit too slow in the way that importing data is more ""boring"" than writing functions, which we did not get to until around 13.30-14. Maybe copy-paste code from online material instead of writing everything?",NA
-Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",Easy to follow.,NA
-Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions","It might be difficult to apply to own data because of little explanation of different packages and functions. But then again, very small thing considering that it is probably easier to understand these things when reading it for yourself.",NA
-Day 1,"worked well for the Basic setup and workflow and Importing data, fast s","It was a super great introduction, it really made a deep and good understanding, and the code along was excellent",NA
-Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s",The room made it difficult to listen to the lectures while people got help.,NA
-Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",It was SO great to learn to do the functions!,NA
-Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",It was a bit hardcore for the afternoon session.,NA
-Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",The coding along makes much more easier to understand the teaching received,NA
-Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s","I think it would be nice to reduce the dependency on external (or extra) packages, trying to increase the utilities included in R already (utils, base, stats packages)",NA
-Day 1,"worked well for the Save time, don’t repeat yourself: Making functions","Hands-on with real data, simple code, fast, clear.",NA
-Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions","Again, maybe try to use basics R functions instead of package-derived, for reproducibility",NA
-Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",Coding along while everyting is demonstrated on screen is helpful to understand how things work.,NA
-Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s","In general, not just for ""Basic setup and workflow"" it might be helpful if the keyboard shortcuts for macbooks could be mentioned as they seem to be different - but that's a minor thing, one can of course find out by going to the correct buttons to look it up or just by trying it out",NA
-Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",It was nice to learn about the function and map functions. Exercises are good to practise the theory.,NA
-Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",Maybe more exercises with less explicit help in the text would be useful as a next step to further practise using the code just learned,NA
-Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",The pace was really good and easy to follow. I did not feel like I got lost a single time,NA
-Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s",Maybe some optional exercises if you finish early? I had some time to spare and got a little bored,NA
-Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",It highlighted the interplay between the markdown and the scripts really well and showed how useful it can be,NA
-Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions","Exercises got a little repetetive, I did not feel it was necessary to do it for all four data sets.",NA
-Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",Everything worked well :),NA
-Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s",It was good,NA
-Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",Everything worked well :),NA
-Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",More reading materials for pre-course tasks,NA
-Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",The setup and the workflow was pretty clear,NA
-Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s",Nothing that I can think of right now.,NA
-Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",The examples and explanations were clear and the corresponding exercises were helpful.,NA
-Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",Nothing that I can think of right now.,NA
-Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",We went nice and slowly most of the time.,NA
-Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s",Nothing,NA
-Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",We got exposure to many packages/functions etc. so it was great to see what is possible in R Studio,NA
-Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions","The second half went really fast and I got a little bit lost, plus it felt like a big jump between the content taught and our final exercise but maybe that just reflects a decent challenge/learning",NA
-Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",a lot of hands-on,NA
-Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s",I'm sometimes missing the point of certain steps and just copy the code and see that it works… so maybe some explanation?,NA
-Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",same as above,NA
-Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",same as above. Especially the end of the session was difficult and the late hour made me quite unfocused,NA
-Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",Coding along sessions worked very well with the help of instructors,NA
-Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s",It was OK,NA
-Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",Writing functions was very motivating  and I really liked to see that I can write my own functions for a particular analysis.,NA
-Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",The most intense part was at the end of the day so we were a bit tired. It would be better if there would be a way to do these exercises with fresher minds .,NA
-Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",Mix between introduction and exercises,NA
-Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",Mix between introduction and exercises,NA
-Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",It has been great,NA
-Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s",it has been great,NA
-Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",everything and especially the excercises,NA
-Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",In general this has been great. One thing that could be improved: I would have liked the functions was related to not importing data but rather data cleaning problems.,NA
-Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",Nice with the code-along. Easy to get help when needed.,NA
-Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s","The room is not great (it easily gets a bit loud when instructors help while one is presenting) - this has nothing to do with the course itself, but more the surroundings.",NA
-Day 1,"worked well for the Save time, don’t repeat yourself: Making functions","Great that we can find all the code online. Makes it faster and easier to code-along, and check you own coding.",NA
-Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions","It's a bit tricky getting an overview of the main functions of the different packages, when you have never heard about them before - but don't think this necessarily can be changed.",NA
-Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",Having the detailed code along and exercises to then test what we just learned.,NA
-Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s","Nothing, I think it worked ver nicely.",NA
-Day 1,"worked well for the Save time, don’t repeat yourself: Making functions","Learning how to make functions then functionals, as well as map",NA
-Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions","Nothing, I think it works well",NA
-Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",The code-alongs are a good format,NA
-Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s",I think I need a bit more information on why each of the steps are important/useful,NA
-Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",The exercises were good to practice the skills independently,NA
-Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions","I am still finding it difficult to understand how all of this information fits together (e.g., packages, functions, arguments), so I could use a bit more of an overview or more context-setting before we jump into the code-alongs",NA
-Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",Post-its for help worked well,NA
-Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s","Some technical problems, but other than that all good",NA
-Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",Worked well. Good skills to have for the future.,NA
-Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",Nothing to report.,NA
-Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",It worked well that every code was written on the big screen so that it was possible to follow along,NA
-Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s","It would be nice with a small introduction before each new subject so we get the bigger picture / purpose of the coding. Moreover, it would be nice with a general explanation of git. I have difficulties in understanding the concept even after reading material from intro-course.",NA
-Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",The same as above,NA
-Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",The same as above,NA
-Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",Nice step-by-step walk-through,NA
-Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s","I can't think right now, my brain is fried",NA
-Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",Nice step-by-step walk-through,NA
-Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",The last exercise was tough with a fried brain! Maybe better to give a little more help OR wait for next morning to recap with a fresh brain,NA
+session_name,question,response
+Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s","For me it was a bit too slow in the way that importing data is more ""boring"" than writing functions, which we did not get to until around 13.30-14. Maybe copy-paste code from online material instead of writing everything?"
+Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s","I can't think right now, my brain is fried"
+Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s",I think I need a bit more information on why each of the steps are important/useful
+Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s","I think it would be nice to reduce the dependency on external (or extra) packages, trying to increase the utilities included in R already (utils, base, stats packages)"
+Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s",I'm sometimes missing the point of certain steps and just copy the code and see that it works… so maybe some explanation?
+Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s","In general, not just for ""Basic setup and workflow"" it might be helpful if the keyboard shortcuts for macbooks could be mentioned as they seem to be different - but that's a minor thing, one can of course find out by going to the correct buttons to look it up or just by trying it out"
+Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s",It was OK
+Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s",It was good
+Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s","It would be nice with a small introduction before each new subject so we get the bigger picture / purpose of the coding. Moreover, it would be nice with a general explanation of git. I have difficulties in understanding the concept even after reading material from intro-course."
+Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s",Maybe some optional exercises if you finish early? I had some time to spare and got a little bored
+Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s",Nothing
+Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s",Nothing that I can think of right now.
+Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s","Nothing, I think it worked ver nicely."
+Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s","Some technical problems, but other than that all good"
+Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s","The room is not great (it easily gets a bit loud when instructors help while one is presenting) - this has nothing to do with the course itself, but more the surroundings."
+Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s",The room made it difficult to listen to the lectures while people got help.
+Day 1,"could be improved for the Basic setup and workflow and Importing data, fast s",it has been great
+Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions","Again, maybe try to use basics R functions instead of package-derived, for reproducibility"
+Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions","Exercises got a little repetetive, I did not feel it was necessary to do it for all four data sets."
+Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions","I am still finding it difficult to understand how all of this information fits together (e.g., packages, functions, arguments), so I could use a bit more of an overview or more context-setting before we jump into the code-alongs"
+Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",In general this has been great. One thing that could be improved: I would have liked the functions was related to not importing data but rather data cleaning problems.
+Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions","It might be difficult to apply to own data because of little explanation of different packages and functions. But then again, very small thing considering that it is probably easier to understand these things when reading it for yourself."
+Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",It was a bit hardcore for the afternoon session.
+Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions","It's a bit tricky getting an overview of the main functions of the different packages, when you have never heard about them before - but don't think this necessarily can be changed."
+Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",Maybe more exercises with less explicit help in the text would be useful as a next step to further practise using the code just learned
+Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",More reading materials for pre-course tasks
+Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",Nothing that I can think of right now.
+Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",Nothing to report.
+Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions","Nothing, I think it works well"
+Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",The last exercise was tough with a fried brain! Maybe better to give a little more help OR wait for next morning to recap with a fresh brain
+Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",The most intense part was at the end of the day so we were a bit tired. It would be better if there would be a way to do these exercises with fresher minds .
+Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",The same as above
+Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions","The second half went really fast and I got a little bit lost, plus it felt like a big jump between the content taught and our final exercise but maybe that just reflects a decent challenge/learning"
+Day 1,"could be improved for the Save time, don’t repeat yourself: Making functions",same as above. Especially the end of the session was difficult and the late hour made me quite unfocused
+Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",Coding along sessions worked very well with the help of instructors
+Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",Coding along while everyting is demonstrated on screen is helpful to understand how things work.
+Day 1,"worked well for the Basic setup and workflow and Importing data, fast s","Easy to follow, works very well with all the code in the online material."
+Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",Everything worked well :)
+Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",Having the detailed code along and exercises to then test what we just learned.
+Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",It has been great
+Day 1,"worked well for the Basic setup and workflow and Importing data, fast s","It was a super great introduction, it really made a deep and good understanding, and the code along was excellent"
+Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",It worked well that every code was written on the big screen so that it was possible to follow along
+Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",Mix between introduction and exercises
+Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",Nice step-by-step walk-through
+Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",Nice with the code-along. Easy to get help when needed.
+Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",Post-its for help worked well
+Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",The code-alongs are a good format
+Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",The coding along makes much more easier to understand the teaching received
+Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",The pace was really good and easy to follow. I did not feel like I got lost a single time
+Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",The setup and the workflow was pretty clear
+Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",We went nice and slowly most of the time.
+Day 1,"worked well for the Basic setup and workflow and Importing data, fast s",a lot of hands-on
+Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",Easy to follow.
+Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",Everything worked well :)
+Day 1,"worked well for the Save time, don’t repeat yourself: Making functions","Great that we can find all the code online. Makes it faster and easier to code-along, and check you own coding."
+Day 1,"worked well for the Save time, don’t repeat yourself: Making functions","Hands-on with real data, simple code, fast, clear."
+Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",It highlighted the interplay between the markdown and the scripts really well and showed how useful it can be
+Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",It was SO great to learn to do the functions!
+Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",It was nice to learn about the function and map functions. Exercises are good to practise the theory.
+Day 1,"worked well for the Save time, don’t repeat yourself: Making functions","Learning how to make functions then functionals, as well as map"
+Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",Mix between introduction and exercises
+Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",Nice step-by-step walk-through
+Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",The examples and explanations were clear and the corresponding exercises were helpful.
+Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",The exercises were good to practice the skills independently
+Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",The same as above
+Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",We got exposure to many packages/functions etc. so it was great to see what is possible in R Studio
+Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",Worked well. Good skills to have for the future.
+Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",Writing functions was very motivating  and I really liked to see that I can write my own functions for a particular analysis.
+Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",everything and especially the excercises
+Day 1,"worked well for the Save time, don’t repeat yourself: Making functions",same as above
