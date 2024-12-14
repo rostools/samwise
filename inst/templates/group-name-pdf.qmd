@@ -8,7 +8,7 @@ format:
       - top=3cm
       - landscape
 params:
-  team_name: "placeholder.testing.name"
+  team_name: "placeholder testing name"
 ---
 
 ```{r}
@@ -19,5 +19,3 @@ params:
 ## Group:
 
 ### `r params$team_name`
-
-Write your group name into the site what3words to see where you are!

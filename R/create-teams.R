@@ -1,7 +1,4 @@
-#' Create randomly generated group names based on city coordinating from what3words.
-#'
-#' From all cities globally, get the [what3words](https://what3words.com/)
-#' coordinates to use as fun group names.
+#' Create randomly generated group names.
 #'
 #' @param number_groups The number of group names to create.
 #'
@@ -10,20 +7,25 @@
 #'
 #' @examples
 #' \dontrun{
-#' create_group_names(20)
+#' create_group_names(26)
 #' }
 create_group_names <- function(number_groups) {
-  if (Sys.getenv("WTW_API_KEY") == "") {
-    cli::cli_abort("You need to add the WTW API key in the {.val .Renviron} file to use this function.")
-  }
-  random_cities <- maps::world.cities |>
-    tibble::as_tibble() |>
-    dplyr::sample_n(number_groups)
+  adjective <- codename::adjectives |>
+    subset_words(number_groups)
 
-  whatthreewords::words_from_coords(
-    lat = random_cities$lat,
-    lon = random_cities$long
-  )
+  animal <- codename::animals |>
+    subset_words(number_groups)
+
+  glue::glue("{adjective}-{animal}")
+}
+
+subset_words <- function(words, n, min = 4, max = 7) {
+  words |>
+    unique() |>
+    tibble::as_tibble() |>
+    dplyr::filter(dplyr::between(nchar(value), min, max)) |>
+    dplyr::sample_n(n) |>
+    dplyr::pull(value)
 }
 
 group_names_to_one_pdf <- function(group_names, output_dir = here::here("_ignore/group-names")) {
