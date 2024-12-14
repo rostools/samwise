@@ -27,7 +27,7 @@ style:
   styler::style_pkg()
 
 # Run the targets pipeline
-run-targets: build
+run-targets:
   #!/usr/bin/Rscript
   targets::tar_make()
 
@@ -60,3 +60,4 @@ create-group-names:
   group_names_to_one_pdf(group_names)
   Sys.sleep(1.5)
   group_names_as_strips_html(group_names, number_participants = even_number_people)
+

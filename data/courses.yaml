@@ -151,6 +151,7 @@ course:
         instructors:
           - ref: lwj
           - ref: aa
+          - ref: skb
 
   - id: adv
     name: Advanced
@@ -161,6 +162,8 @@ course:
       - ref: aa
       - ref: md
       - ref: lb
+      - ref: skb
+      - ref: ivse
     events:
       - date: 2022-12-07
         host: Danish Diabetes Academy
@@ -183,5 +186,4 @@ course:
         instructors:
           - ref: lwj
           - ref: aa
-          - ref: skb
           - ref: ivse
