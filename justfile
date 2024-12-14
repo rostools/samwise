@@ -49,13 +49,14 @@ create-upcoming-planning-issue: build
   )
 
 # Create the PDF and HTML files used for putting people into the groups
-create-group-names: run-targets
+create-group-names:
   #!/usr/bin/Rscript
   devtools::load_all()
   precourse <- targets::tar_read(upcoming_precourse_survey)
   number_groups <- ceiling(nrow(precourse) / 4)
   even_number_people <- round(nrow(precourse) + 0.5)
   group_names <- create_group_names(number_groups)
+  readr::write_lines(group_names, here::here("_ignore/group_names.txt"))
   group_names_to_one_pdf(group_names)
   Sys.sleep(1.5)
   group_names_as_strips_html(group_names, number_participants = even_number_people)
