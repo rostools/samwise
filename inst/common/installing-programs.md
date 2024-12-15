@@ -7,12 +7,13 @@ them.
 ### Windows
 
 1.  [R](https://cloud.r-project.org/bin/windows/base/): Any version
-    above `4.1.2`. If you have used R before, you can confirm the
-    version by running `R.version.string` in the Console.
+    above `r min(r3admin::get_allowed_r_versions())`. If you have used R
+    before, you can confirm the version by running `R.version.string` in
+    the Console.
 2.  [RStudio](https://www.rstudio.com/products/rstudio/download/#download):
-    Any version above `2023.06.2`. If you have installed it before,
-    check the current version by going to the menu
-    `Help -> About RStudio`.
+    Any version above `r r3admin::get_allowed_rstudio_versions()[1]`. If
+    you have installed it before, check the current version by going to
+    the menu `Help -> About RStudio`.
 3.  [Git](https://git-scm.com/download/win): Select the "Click here to
     download" link. Git is used throughout many sessions in the courses.
     When installing, it will ask for a selecting a "Text Editor" and
@@ -25,19 +26,19 @@ them.
 ### MacOS
 
 1.  [R](https://cloud.r-project.org/bin/macosx/): Any version above
-    `4.1.2`. If you have used R before, you can confirm the version by
-    running `R.version.string` in the Console. If you use
-    [Homebrew](https://brew.sh/), installing R is as easy as opening a
-    Terminal and running:
+    `r min(r3admin::get_allowed_r_versions())`. If you have used R
+    before, you can confirm the version by running `R.version.string` in
+    the Console. If you use [Homebrew](https://brew.sh/), installing R
+    is as easy as opening a Terminal and running:
 
     ``` bash
     brew install --cask r
     ```
 
 2.  [RStudio](https://www.rstudio.com/products/rstudio/download/#download):
-    Any version above `2023.06.2`. If you have installed it before,
-    check the current version by going to the menu
-    `Help -> About RStudio`. With Homebrew:
+    Any version above `r r3admin::get_allowed_rstudio_versions()[1]`. If
+    you have installed it before, check the current version by going to
+    the menu `Help -> About RStudio`. With Homebrew:
 
     ``` bash
     brew install --cask rstudio
@@ -53,17 +54,18 @@ them.
 ### Linux (Ubuntu)
 
 1.  [R](https://cloud.r-project.org/bin/linux/ubuntu/): Any version
-    above `4.1.2`. If you have used R before, you can confirm the
-    version by running `R.version.string` in the Console.
+    above `r min(r3admin::get_allowed_r_versions())`. If you have used R
+    before, you can confirm the version by running `R.version.string` in
+    the Console.
 
     ``` bash
     sudo apt -y install r-base
     ```
 
 2.  [RStudio](https://www.rstudio.com/products/rstudio/download/#download):
-    Any version above `2023.06.2`. If you have installed it before,
-    check the current version by going to the menu
-    `Help -> About RStudio`.
+    Any version above `r r3admin::get_allowed_rstudio_versions()[1]`. If
+    you have installed it before, check the current version by going to
+    the menu `Help -> About RStudio`.
 
 3.  [Git](https://git-scm.com/download/mac): Git is used throughout many
     sessions in the courses.
@@ -120,4 +122,3 @@ technical issues, you can use Posit Cloud (to use RStudio on the cloud)
 as a final solution in order to participate in the course. For help
 setting up Posit Cloud for this course, refer to the [Posit Cloud setup
 guide](https://guides.rostools.org/posit-cloud).
-
