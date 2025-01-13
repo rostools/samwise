@@ -14,19 +14,14 @@ knitr::opts_chunk$set(
 library(tidyverse)
 devtools::load_all()
 precourse <- targets::tar_read(upcoming_precourse_survey)
-```
 
-These are the constants used for later functions.
-
-```{r constants}
-get_upcoming_course_dates("intro")[1]
-course_date <- get_upcoming_course_dates("intro")[1]
-course_level <- "intro" # list_course_ids()
-course_name <- get_course_repo("intro")
-org_gh_course_name <- glue::glue("{course_name}-{str_sub(course_date, end = 7)}")
-```
-
-```{r}
+# Constants
+course_id <- "intro" # list_course_ids()
+# TODO: Convert this to fetch from the course data files
+instructors <- c("lwjohnst86", "AndersAskeland", "ZipingZ7", "olex2148")
+org_name <- create_github_org_name(course_id)
+# Run `just create-group-names` first
+team_names <- readr::read_lines(here::here("_ignore/group-names.txt"))
 ```
 
 # Pre-course admin tasks
@@ -97,7 +92,7 @@ problems %>%
 ### Setup of their projects
 
 ```{r, results='asis'}
-if (course_level %in% c("inter", "advanced")) {
+if (course_id %in% c("inter", "advanced")) {
   problems %>%
     check_project_setup() %>%
     cat()
@@ -129,135 +124,18 @@ problems %>%
 
 ### Assigning members to groups
 
-> Note: Intro course only.
-
 Now we need to assign the learners to the groups.
 
 ```{r}
-round_down_to_even <- function(x) {
-  if ((x %% 2) == 1) {
-    x <- x - 1
-  }
-  x
-}
-
-set.seed(12)
-teams <- tibble(
-  username = sample(usernames, length(usernames)),
-  team_names = sample(praise::praise_parts$adjective, length(usernames) / 2) |>
-    rep(times = 2) |>
-    sample() |>
-    str_c("-project")
-)
-count(teams, team_names)
-
-if (course_level %in% c("intro", "adv")) {
-  learners_in_groups <- assign_learners_to_groups(
-    precourse,
-    project_groups
-  )
-  count(learners_in_groups, team)
-}
-```
-
-## Creating the GitHub org and groups
-
-Follow the instructions on the [ghclass
-vignette](https://rundel.github.io/ghclass/articles/ghclass.html).
-First, you need to create the organization manually. Use the value in
-here as the name:
-
-```{r}
-create_github_org <- function(id) {
-  # course_date <- get_upcoming_course_dates(id)[1]
-  course_date <- "2024-12-10"
-  course_name <- get_course_repo(id)
-  org_name <- glue::glue("{course_name}-{str_sub(course_date, end = 7)}")
-
-  cli::cli_inform(c(
-    "Create a GitHub organization with this name: {.val {org_name}} ",
-    "*" = "Go to {.href https://github.com/account/organizations/new?plan=free}"
-  ))
-
-  continue <- yesno::yesno2("Have you finished creating the GitHub organization?")
-  if (!continue) {
-    cli::cli_abort("Organization wasn't created, stopping the function.")
-  }
-
-  ghclass::org_set_repo_permission(org_name, permission = "none")
-  org_name
-}
-```
-
-## Create projects to push to repos
-
-Setting up the repos to have all the folders and files.
-
-```{r, eval=FALSE}
-clone_team_repos(org_gh_course_name)
+# TODO: Include this as part of create_teams?
+gh_team_names <- expand_grid(team_names, num = 1:2) |>
+  glue::glue_data("{team_names}-{num}") |>
+  head(14)
+teams <- create_teams(precourse, gh_team_names)
+setup_team_projects(teams, org_name)
+create_gh_instructor_team(instructors, org_name)
 ```
 
 ```{r}
-setup_team_projects <- function(
-    data,
-    organization) {
-  checkmate::check_data_frame(data)
-  checkmate::check_names(
-    data,
-    permutation.of = c("username", "team_names")
-  )
-  #
-  # Invite to the org
-  ghclass::org_invite(organization, data$username)
-  #
-  # Create the teams
-  ghclass::team_create(
-    organization,
-    unique(data$team_names)
-  )
-  teams <- ghclass::org_teams(organization)
-  #
-  # Invite users to the team
-  ghclass::team_invite(
-    organization,
-    data$username,
-    data$team_names
-  )
-
-  gh_repos <- ghclass::repo_create(organization, data$team_names)
-  gh_repos <- ghclass::org_repos(organization)
-  ghclass::repo_add_team(sort(gh_repos), sort(unique(data$team_names)))
-  setup_team_repos(organization)
-}
-
-setup_team_projects(teams, "r-cubed-advanced-2024-12")
-```
-
-```{r}
-setup_instructor_team <- function(usernames, organization) {
-  ghclass::org_invite(organization, usernames)
-  ghclass::team_create(organization, "Helpers")
-  ghclass::team_invite(
-    organization,
-    usernames,
-    "Helpers"
-  )
-
-  ghclass::org_repos(organization) %>%
-    purrr::walk(~ {
-      ghclass::repo_team_permission(
-        repo = .x,
-        team = "Helpers",
-        permission = "admin"
-      )
-    })
-}
-
-ghclass::org_teams("rostools")
-ghclass::team_members("rostools", "Teaching")
-
-setup_instructor_team(
-  c("AndersAskeland", "Isabellvse", "lwjohnst86"),
-  "r-cubed-advanced-2024-12"
-)
+create_github_org(course_id)
 ```
