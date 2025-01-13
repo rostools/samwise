@@ -37,10 +37,6 @@ draft-reminder-email: run-targets
   participant_emails <- get_participant_emails()
   r3admin::create_draft_reminder_email()
 
-# Open up the webpage to create a GitHub organization account
-create-org-in-gh:
-  xdg-open https://github.com/account/organizations/new?plan=free
-
 # Create a GitHub issue for planning the next upcoming course
 create-upcoming-planning-issue: build
   #!/usr/bin/Rscript
