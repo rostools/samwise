@@ -20,11 +20,7 @@ create_team_project <- function(repo_path,
   )
   usethis::local_project(project_folder)
   rlang::catch_cnd(fs::file_delete(fs::path(project_folder, ".gitignore")))
-  tmp_proj_dir <- fs::path_temp(repo_path)
-  prodigenr::setup_project(tmp_proj_dir)
-  fs::dir_copy(tmp_proj_dir, project_folder, overwrite = TRUE)
-  rlang::catch_cnd(fs::file_delete(fs::path(project_folder, "doc/report.Rmd")))
-  usethis::use_blank_slate("project")
+  prodigenr::setup_project(project_folder)
   gert::git_status()$file %>%
     gert::git_add()
   gert::git_commit("Setup project")
