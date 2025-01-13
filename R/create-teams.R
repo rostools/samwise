@@ -57,35 +57,6 @@ group_name_to_pdf <- function(group_name, output_dir) {
   )
 }
 
-teams_with_members_to_one_pdf <- function(team_names_with_members, output_dir = here::here("_ignore/group-names")) {
-  lifecycle::deprecate_stop("Now", "teams_with_members_to_one_pdf()")
-  team_names_with_members %>%
-    dplyr::group_split(team_name) %>%
-    purrr::walk(~ {
-      teams_with_members_to_pdf(
-        team_name = unique(.x$team_name),
-        team_members = .x$team_members,
-        output_dir = output_dir
-      )
-    })
-  single_files <- fs::dir_ls(output_dir, glob = "*.pdf")
-  pdftools::pdf_combine(single_files, output = fs::path(output_dir, "_all-groups.pdf"))
-  fs::file_delete(single_files)
-}
-
-teams_with_members_to_pdf <- function(team_name, team_members, output_dir) {
-  withr::local_dir(output_dir)
-  quarto::quarto_render(
-    input = fs::path_package("r3admin", "templates", "teams-with-members-pdf.qmd"),
-    output_file = fs::path_ext_set(team_name, "pdf"),
-    execute_params = list(
-      team_name = team_name,
-      team_members = team_members
-    ),
-    quiet = TRUE
-  )
-}
-
 group_names_as_strips_html <-
   function(group_names,
            number_participants,
