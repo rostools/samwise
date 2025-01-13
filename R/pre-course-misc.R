@@ -72,10 +72,41 @@ pull_team_repos <- function(gh_org) {
 
 render_team_qmds <- function(gh_org, local_directory = fs::path("~", "Desktop")) {
   course_team_repos <- ghclass::org_repos(gh_org)
-  qmd_path <- fs::path("~", "Desktop", course_team_repos, "doc", "report.qmd")
+  qmd_path <- fs::path(local_directory, course_team_repos, "docs", "report.qmd")
   qmd_path |>
     purrr::walk(~ {
       cli::cli_inform("Using {.val {.x}}")
       quarto::quarto_render(.x, quiet = TRUE)
     })
+}
+
+setup_team_projects <- function(
+    data,
+    organization) {
+  checkmate::check_data_frame(data)
+  checkmate::check_names(
+    data,
+    permutation.of = c("username", "team_names")
+  )
+
+  # Invite to the org
+  ghclass::org_invite(organization, data$username)
+
+  # Create the teams
+  ghclass::team_create(
+    organization,
+    unique(data$team_names)
+  )
+
+  # Invite users to the team
+  ghclass::team_invite(
+    organization,
+    data$username,
+    data$team_names
+  )
+
+  gh_repos <- ghclass::repo_create(organization, data$team_names)
+  gh_repos <- ghclass::org_repos(organization)
+  ghclass::repo_add_team(sort(gh_repos), sort(unique(data$team_names)))
+  setup_team_repos(organization)
 }
