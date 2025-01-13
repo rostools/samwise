@@ -1,41 +1,50 @@
-#' Assign learners into groups.
+#' Create teams and assign learners to them.
 #'
 #' @param data Precourse survey data.
-#' @param group_names Character vector that has the names to group into.
+#' @param team_names Character vector that has the names to group into.
 #' @param score_cutoff Point at which to split persons into "low" vs "high" skill (completely arbitrary).
 #'
 #' @return A [tibble::tibble].
 #' @export
 #'
-assign_learners_to_groups <- function(data, group_names, score_cutoff = 3) {
+create_teams <- function(data, group_names, score_cutoff = 3) {
   data %>%
     dplyr::select(
-      full_name,
-      tidyselect::contains("github"),
+      tidyselect::contains("full_name"),
+      tidyselect::matches("user_?name"),
       tidyselect::matches("^perceived")
     ) %>%
     dplyr::rowwise() %>%
     dplyr::mutate(dplyr::across(tidyselect::starts_with("perceived"), as.numeric)) %>%
     dplyr::mutate(perceived_skill_score = sum(dplyr::c_across(tidyselect::starts_with("perceived")))) %>%
     dplyr::ungroup() %>%
-    dplyr::mutate(team = (perceived_skill_score >= score_cutoff) %>%
+    dplyr::mutate(team_names = (perceived_skill_score >= score_cutoff) %>%
       randomizr::block_ra(conditions = group_names) %>%
       as.character()) %>%
     dplyr::select(
-      team,
-      full_name,
-      tidyselect::contains("github"),
+      team_names,
+      tidyselect::contains("full_name"),
+      username = tidyselect::matches("user_?name"),
       perceived_skill_score
     ) %>%
-    dplyr::arrange(team, perceived_skill_score)
+    dplyr::arrange(team_names, perceived_skill_score)
 }
 
-assign_instructors_to_groups <- function(group_names, instructors) {
-  if (length(instructors) != length(instructors)) {
-    instructors <- rep(instructors, times = 2)
-  }
-  tibble::tibble(
-    team = group_names,
-    instructor = sample(instructors, length(group_names))
+create_gh_instructor_team <- function(usernames, organization) {
+  ghclass::org_invite(organization, usernames)
+  ghclass::team_create(organization, "Helpers")
+  ghclass::team_invite(
+    organization,
+    usernames,
+    "Helpers"
   )
+
+  ghclass::org_repos(organization) %>%
+    purrr::walk(~ {
+      ghclass::repo_team_permission(
+        repo = .x,
+        team = "Helpers",
+        permission = "admin"
+      )
+    })
 }
