@@ -127,6 +127,10 @@ problems %>%
 Now we need to assign the learners to the groups.
 
 ```{r}
+create_github_org(course_id)
+```
+
+```{r}
 # TODO: Include this as part of create_teams?
 gh_team_names <- expand_grid(team_names, num = 1:2) |>
   glue::glue_data("{team_names}-{num}") |>
@@ -137,5 +141,6 @@ create_gh_instructor_team(instructors, org_name)
 ```
 
 ```{r}
-create_github_org(course_id)
+clone_team_repos("r-cubed-intro-2025-01")
+pull_team_repos("r-cubed-intro-2025-01")
 ```
