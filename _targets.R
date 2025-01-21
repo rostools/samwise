@@ -98,28 +98,20 @@ list(
     pattern = map(precourse_surveys)
   ),
   tar_target(
-    name = course_ids_feedback,
-    command = c(list_course_ids(), "general")
-  ),
-  tar_target(
     name = feedback_survey,
-    command = get_feedback_survey(course_ids_feedback),
-    pattern = map(course_ids_feedback)
+    command = get_feedback_survey()
   ),
   tar_target(
     name = feedback_survey_overall,
-    command = extract_feedback_overall(feedback_survey),
-    pattern = map(feedback_survey)
+    command = extract_feedback_overall(feedback_survey)
   ),
   tar_target(
     name = feedback_survey_quantitative,
-    command = extract_feedback_quantitative(feedback_survey),
-    pattern = map(feedback_survey)
+    command = extract_feedback_quantitative(feedback_survey)
   ),
   tar_target(
     name = feedback_survey_sessions,
-    command = extract_feedback_sessions(feedback_survey),
-    pattern = map(feedback_survey)
+    command = extract_feedback_sessions(feedback_survey)
   ),
 
   # Save to file -----------------------------------------------------------
