@@ -8,7 +8,7 @@
 #' @examples
 #' \dontrun{
 #' survey <- get_precourse_survey("intro")
-#' extract_precourse_feedback(survey, "intro")
+#' extract_precourse_feedback(survey)
 #' }
 extract_precourse_feedback <- function(data) {
   data |>

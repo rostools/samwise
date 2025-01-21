@@ -7,8 +7,8 @@
 #'
 #' @examples
 #' \dontrun{
-#' survey <- get_precourse_survey("intro")
-#' extract_participant_overview(survey, "intro")
+#' survey <- get_precourse_survey("inter")
+#' extract_participant_overview(survey)
 #' }
 extract_participant_overview <- function(data) {
   data |>
