@@ -87,7 +87,7 @@ course:
           - ref: lwj
           - ref: aa
           - ref: zzh
-          - ref: jfi
+          - ref: osh
 
   - id: inter
     name: Intermediate

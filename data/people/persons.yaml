@@ -181,8 +181,8 @@ person:
       - ref: au
     orcid: ""
 
-  - id: jfi
-    name: "Jo Frøkjær Iversen"
+  - id: osh
+    name: "Ole Sahlholdt Hansen"
     affiliation:
-      - ref: ku
+      - ref: au
     orcid: ""
