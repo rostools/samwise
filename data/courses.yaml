@@ -152,6 +152,13 @@ course:
           - ref: lwj
           - ref: aa
           - ref: skb
+      - date: 2025-05-06
+        host: Danish Diabetes and Endocrinology Academy
+        instructors:
+          - ref: lwj
+          - ref: aa
+          - ref: km
+          - ref: ivse
 
   - id: adv
     name: Advanced
