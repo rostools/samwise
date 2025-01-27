@@ -163,7 +163,7 @@ person:
       - ref: au
     orcid: ""
 
-  - id: kd
+  - id: km
     name: "Kaja Madsen"
     affiliation:
       - ref: sdu

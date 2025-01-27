@@ -79,7 +79,7 @@ course:
           - ref: lwj
           - ref: aa
           - ref: mab
-          - ref: kb
+          - ref: km
           - ref: zzh
       - date: 2025-01-14
         host: Danish Diabetes and Endocrinology Academy
