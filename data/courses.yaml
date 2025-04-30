@@ -159,6 +159,7 @@ course:
           - ref: aa
           - ref: km
           - ref: ivse
+          - ref: kdl
 
   - id: adv
     name: Advanced

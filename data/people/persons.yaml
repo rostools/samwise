@@ -3,6 +3,12 @@ person:
   #   name: ""
   #   affiliation: ""
   #   orcid: ""
+  - id: "kdl"
+    name: "Kristine de Leon"
+    affiliation:
+      - ref: sdu
+    orcid: ""
+
   - id: vv
     name: Vi Varga
     affiliation:
