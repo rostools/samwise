@@ -25,7 +25,7 @@ create_path_from_columns <- function(columns) {
   columns |>
     as.list() |>
     purrr::pmap(fs::path) |>
-    purrr::map_chr(~ usethis::proj_path("data", .x))
+    purrr::map_chr(~ usethis::proj_path("data", "surveys", .x))
 }
 
 save_responses_to_csv <- function(data, columns) {
@@ -33,7 +33,9 @@ save_responses_to_csv <- function(data, columns) {
     tidyr::nest(.by = {{ columns }}) |>
     dplyr::mutate(dplyr::across({{ columns }}, as.character)) |>
     dplyr::rowwise() |>
-    dplyr::mutate(path = create_path_from_columns(dplyr::c_across({{ columns }}))) |>
+    dplyr::mutate(
+      path = create_path_from_columns(dplyr::c_across({{ columns }}))
+    ) |>
     dplyr::ungroup() |>
     dplyr::select(data, path)
 
