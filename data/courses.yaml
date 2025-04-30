@@ -195,3 +195,9 @@ course:
           - ref: lwj
           - ref: aa
           - ref: ivse
+      - date: 2025-12-02
+        host: Danish Diabetes and Endocrinology Academy
+        instructors:
+          - ref: lwj
+          - ref: aa
+          - ref: ivse
