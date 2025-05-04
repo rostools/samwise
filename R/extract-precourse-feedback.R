@@ -11,6 +11,10 @@
 #' extract_precourse_feedback(survey)
 #' }
 extract_precourse_feedback <- function(data) {
+  if (nrow(data) == 0) {
+    cli::cli_warn("No data found in the pre-workshop survey.")
+    return(NULL)
+  }
   data |>
     anonymize_precourse() |>
     dplyr::select(

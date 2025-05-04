@@ -94,7 +94,7 @@ list(
   # Feedback ----------------------------------------------------------------
   tar_target(
     name = precourse_feedback,
-    command = extract_precourse_feedback(precourse_surveys),
+    command = if (!is.null(precourse_surveys)) {extract_precourse_feedback(precourse_surveys)},
     pattern = map(precourse_surveys)
   ),
   tar_target(
@@ -143,7 +143,9 @@ list(
   tar_target(
     name = saved_feedback_sessions_paths,
     command = combined_feedback |>
-      purrr::map(\(feedback) save_responses_to_csv(feedback$data, feedback$columns)) |>
+      purrr::map(
+        \(feedback) save_responses_to_csv(feedback$data, feedback$columns)
+      ) |>
       unlist(),
     pattern = map(combined_feedback),
     iteration = "list",

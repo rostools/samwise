@@ -7,10 +7,14 @@
 #'
 #' @examples
 #' \dontrun{
-#' survey <- get_precourse_survey("inter")
+#' survey <- get_precourse_survey("adv")
 #' extract_participant_overview(survey)
 #' }
 extract_participant_overview <- function(data) {
+  if (nrow(data) == 0) {
+    cli::cli_warn("No data found in the pre-workshop survey.")
+    return(NULL)
+  }
   data |>
     anonymize_precourse() |>
     dplyr::select(
