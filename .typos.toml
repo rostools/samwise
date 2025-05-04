@@ -1,0 +1,8 @@
+[files]
+extend-exclude = [
+  "data/surveys/*",
+  "_targets/meta/*"
+]
+
+[default.extend-words]
+Ziping = "Ziping"
