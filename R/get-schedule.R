@@ -25,10 +25,16 @@ get_schedule_sessions <- function(id) {
     rvest::html_table() |>
     purrr::set_names(days) |>
     purrr::list_rbind(names_to = "Days") |>
-    dplyr::filter(stringr::str_detect(`Session topic`, ignore, negate = TRUE)) |>
-    dplyr::mutate(`Session topic` = `Session topic` |>
-      stringr::str_remove("\\(with short break\\)|Short review;") |>
-      stringr::str_trim()) |>
+    dplyr::filter(stringr::str_detect(
+      `Session topic`,
+      ignore,
+      negate = TRUE
+    )) |>
+    dplyr::mutate(
+      `Session topic` = `Session topic` |>
+        stringr::str_remove("\\(with short break\\)|Short review;") |>
+        stringr::str_trim()
+    ) |>
     dplyr::select(-Time) |>
     dplyr::distinct()
 }

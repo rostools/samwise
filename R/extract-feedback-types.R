@@ -66,9 +66,11 @@ extract_feedback_sessions <- function(data) {
       question,
       "^(What could be improved|What worked well).*"
     )) %>%
-    dplyr::mutate(question = question %>%
-      stringr::str_remove_all("What|(this )?session|\"|\\?") %>%
-      stringr::str_trim()) %>%
+    dplyr::mutate(
+      question = question %>%
+        stringr::str_remove_all("What|(this )?session|\"|\\?") %>%
+        stringr::str_trim()
+    ) %>%
     # Drop any duplicate comments (like repeats of "great!")
     dplyr::distinct() |>
     dplyr::select(-dplyr::contains("course_name")) |>

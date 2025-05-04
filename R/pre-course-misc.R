@@ -11,8 +11,10 @@
 #'   pushing.
 #' @export
 #'
-create_team_project <- function(repo_path,
-                                clone_directory = fs::path("~", "Desktop")) {
+create_team_project <- function(
+  repo_path,
+  clone_directory = fs::path("~", "Desktop")
+) {
   project_folder <- fs::path(clone_directory, repo_path)
   ghclass::local_repo_clone(
     repo_path,
@@ -48,8 +50,10 @@ clone_team_repos <- function(gh_org) {
     purrr::walk(clone_project_repo)
 }
 
-clone_project_repo <- function(repo_path,
-                               clone_directory = fs::path("~", "Desktop")) {
+clone_project_repo <- function(
+  repo_path,
+  clone_directory = fs::path("~", "Desktop")
+) {
   project_folder <- fs::path(clone_directory, repo_path)
   ghclass::local_repo_clone(
     repo_path,
@@ -57,7 +61,10 @@ clone_project_repo <- function(repo_path,
   )
 }
 
-pull_project_repo <- function(repo_path, local_directory = fs::path("~", "Desktop")) {
+pull_project_repo <- function(
+  repo_path,
+  local_directory = fs::path("~", "Desktop")
+) {
   project_folder <- fs::path(local_directory, repo_path)
   ghclass::local_repo_pull(
     project_folder
@@ -70,19 +77,25 @@ pull_team_repos <- function(gh_org) {
     purrr::walk(pull_project_repo)
 }
 
-render_team_qmds <- function(gh_org, local_directory = fs::path("~", "Desktop")) {
+render_team_qmds <- function(
+  gh_org,
+  local_directory = fs::path("~", "Desktop")
+) {
   course_team_repos <- ghclass::org_repos(gh_org)
   qmd_path <- fs::path(local_directory, course_team_repos, "docs", "report.qmd")
   qmd_path |>
-    purrr::walk(~ {
-      cli::cli_inform("Using {.val {.x}}")
-      quarto::quarto_render(.x, quiet = TRUE)
-    })
+    purrr::walk(
+      ~ {
+        cli::cli_inform("Using {.val {.x}}")
+        quarto::quarto_render(.x, quiet = TRUE)
+      }
+    )
 }
 
 setup_team_projects <- function(
-    data,
-    organization) {
+  data,
+  organization
+) {
   checkmate::check_data_frame(data)
   checkmate::check_names(
     data,

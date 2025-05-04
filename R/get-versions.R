@@ -27,7 +27,11 @@ get_allowed_r_versions <- function() {
 #' @examples
 #' get_allowed_rstudio_versions()
 get_allowed_rstudio_versions <- function() {
-  versions <- gh::gh("/repos/:owner/:repo/tags", owner = "rstudio", repo = "rstudio") |>
+  versions <- gh::gh(
+    "/repos/:owner/:repo/tags",
+    owner = "rstudio",
+    repo = "rstudio"
+  ) |>
     purrr::map_chr("name") |>
     stringr::str_subset("\\d{4}\\.\\d{2}")
 

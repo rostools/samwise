@@ -13,7 +13,9 @@ create_github_org <- function(id) {
     "*" = "Go to {.href https://github.com/account/organizations/new?plan=free}"
   ))
 
-  continue <- yesno::yesno2("\nHave you finished creating the GitHub organization?")
+  continue <- yesno::yesno2(
+    "\nHave you finished creating the GitHub organization?"
+  )
   if (!continue) {
     cli::cli_abort("Organization wasn't created, stopping the function.")
   }

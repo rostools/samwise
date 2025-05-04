@@ -86,5 +86,8 @@ zen_creators_from_csv <- function(path) {
 }
 
 created_at_stamp <- function() {
-  lubridate::stamp("# Created on March 10, 1999 at 20:10.", quiet = TRUE)(lubridate::now())
+  lubridate::stamp(
+    "# Created on March 10, 1999 at 20:10.",
+    quiet = TRUE
+  )(lubridate::now())
 }

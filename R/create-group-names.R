@@ -28,7 +28,10 @@ subset_words <- function(words, n, min = 4, max = 7) {
     dplyr::pull(value)
 }
 
-group_names_to_one_pdf <- function(group_names, output_dir = here::here("_ignore/group-names")) {
+group_names_to_one_pdf <- function(
+  group_names,
+  output_dir = here::here("_ignore/group-names")
+) {
   group_names %>%
     purrr::walk(group_name_to_pdf, output_dir = output_dir)
   single_files <- fs::dir_ls(output_dir, glob = "*.pdf")
@@ -36,9 +39,13 @@ group_names_to_one_pdf <- function(group_names, output_dir = here::here("_ignore
   Sys.sleep(1)
   pdftools::pdf_combine(single_files, output = combined_pdf_file)
   if (!fs::file_exists(combined_pdf_file)) {
-    cli::cli_warn("The file {.path {fs::path_file(combined_pdf_file)}} wasn't actually created, try again?")
+    cli::cli_warn(
+      "The file {.path {fs::path_file(combined_pdf_file)}} wasn't actually created, try again?"
+    )
   } else {
-    cli::cli_alert_success("The group names PDF file ({.path {fs::path_file(combined_pdf_file)}}) was created!")
+    cli::cli_alert_success(
+      "The group names PDF file ({.path {fs::path_file(combined_pdf_file)}}) was created!"
+    )
   }
   fs::file_delete(single_files)
 }
@@ -58,9 +65,11 @@ group_name_to_pdf <- function(group_name, output_dir) {
 }
 
 group_names_as_strips_html <-
-  function(group_names,
-           number_participants,
-           output_dir = here::here("_ignore/group-names")) {
+  function(
+    group_names,
+    number_participants,
+    output_dir = here::here("_ignore/group-names")
+  ) {
     fs::dir_create(output_dir)
     withr::local_dir(output_dir)
     quarto::quarto_render(

@@ -33,12 +33,14 @@ assign_course_date_by_date <- function(date, metadata_dates) {
     lubridate::ymd()
 
   course_date <- date |>
-    purrr::map_chr(\(date)
-    if (date %in% metadata_dates) {
-      stringr::str_subset(metadata_dates, as.character(date))
-    } else {
-      metadata_dates[which(date %within% dates_between_courses)]
-    })
+    purrr::map_chr(
+      \(date)
+        if (date %in% metadata_dates) {
+          stringr::str_subset(metadata_dates, as.character(date))
+        } else {
+          metadata_dates[which(date %within% dates_between_courses)]
+        }
+    )
   if (length(course_date) == 0) {
     course_date <- NA_integer_
   }

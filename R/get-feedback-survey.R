@@ -21,7 +21,9 @@ get_feedback_survey_google_sheet <- function() {
   survey_id <- Sys.getenv("GENERAL_FEEDBACK_SURVEY_ID")
 
   if (survey_id == "") {
-    cli::cli_abort("{.fn Sys.genenv} can't find the Google Sheet ID, do you have an {.val .Renviron} set up with the ID?")
+    cli::cli_abort(
+      "{.fn Sys.genenv} can't find the Google Sheet ID, do you have an {.val .Renviron} set up with the ID?"
+    )
   }
 
   googledrive::drive_get(id = survey_id) %>%
@@ -37,20 +39,27 @@ get_feedback_survey_google_sheet <- function() {
 add_course_date <- function(data) {
   tibble::tibble(
     course_id = list_course_ids(),
-    course_name = purrr::map_chr(course_id, ~ get_course_metadata_field(.x, "name"))
+    course_name = purrr::map_chr(
+      course_id,
+      ~ get_course_metadata_field(.x, "name")
+    )
   ) |>
     dplyr::right_join(data, by = "course_name") |>
-    dplyr::mutate(course_date = purrr::map2_chr(
-      timestamp,
-      course_id,
-      ~ assign_course_date_by_date(
-        .x,
-        # In case people submit a few days afterwards.
-        lubridate::as_date(get_course_dates(.y)) + lubridate::days(3)
+    dplyr::mutate(
+      course_date = purrr::map2_chr(
+        timestamp,
+        course_id,
+        ~ assign_course_date_by_date(
+          .x,
+          # In case people submit a few days afterwards.
+          lubridate::as_date(get_course_dates(.y)) + lubridate::days(3)
+        )
       )
-    )) |>
+    ) |>
     # Correct the course date from the assigning function.
-    dplyr::mutate(course_date = lubridate::as_date(course_date) - lubridate::days(3)) |>
+    dplyr::mutate(
+      course_date = lubridate::as_date(course_date) - lubridate::days(3)
+    ) |>
     dplyr::relocate(course_id, course_date)
 }
 
@@ -66,10 +75,12 @@ convert_to_long <- function(data) {
       names_to = "question",
       values_to = "response"
     ) %>%
-    dplyr::mutate(question = stringr::str_remove_all(
-      question,
-      "\\.\\.\\.[0-9][0-9]?"
-    ))
+    dplyr::mutate(
+      question = stringr::str_remove_all(
+        question,
+        "\\.\\.\\.[0-9][0-9]?"
+      )
+    )
 }
 
 drop_missing_responses <- function(data) {

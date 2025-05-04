@@ -30,7 +30,13 @@ extract_participant_overview <- function(data) {
       values_to = "responses"
     ) |>
     remove_newlines("responses") |>
-    dplyr::count(course_id, course_date, questions, responses, name = "count") |>
+    dplyr::count(
+      course_id,
+      course_date,
+      questions,
+      responses,
+      name = "count"
+    ) |>
     dplyr::arrange(course_date, questions, responses, count) |>
     join_original_column_names(id = unique(data$course_id)) |>
     tidyr::drop_na() |>

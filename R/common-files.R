@@ -10,7 +10,9 @@ copy_common_file <- function(file) {
   common_path <- fs::path_package("r3admin", "common", file)
   header_text <- ""
   if (file == "_variables.yml") {
-    header_text <- glue::glue("# Automatically created by `r3admin::copy_common_file('{file}')` on {lubridate::today()}.")
+    header_text <- glue::glue(
+      "# Automatically created by `r3admin::copy_common_file('{file}')` on {lubridate::today()}."
+    )
   }
   if (rprojroot::is_rstudio_project$testfun[[1]](".")) {
     readr::write_lines(
@@ -74,9 +76,12 @@ read_common <- function(file) {
 #'
 #' @examples
 #' read_template_pkg_install("intro")
-read_template_pkg_install <- function(course_type = c("intro", "inter", "advanced")) {
+read_template_pkg_install <- function(
+  course_type = c("intro", "inter", "advanced")
+) {
   course_type <- rlang::arg_match(course_type)
-  course_install_fn <- switch(course_type,
+  course_install_fn <- switch(
+    course_type,
     intro = "install_packages_introduction()",
     inter = "install_packages_intermediate()",
     advanced = "install_packages_advanced()"

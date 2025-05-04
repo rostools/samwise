@@ -14,7 +14,11 @@ check_who_not_finish_survey <- function(data, participant_list) {
         dplyr::mutate(email_from_list = email),
       by = "email"
     ) %>%
-    dplyr::select(full_name, tidyselect::contains("name"), tidyselect::contains("email"))
+    dplyr::select(
+      full_name,
+      tidyselect::contains("name"),
+      tidyselect::contains("email")
+    )
 }
 
 copy_emails_for_reminder <- function(data) {
@@ -58,7 +62,9 @@ copy_names_with_problems <- function(full_name) {
 # Setup checks ------------------------------------------------------------
 
 pretty_code_checks <- function(name, email, check) {
-  glue::glue("\n#### {unique(name)}  ({unique(email)})\n\n```\n{check}\n```\n\n")
+  glue::glue(
+    "\n#### {unique(name)}  ({unique(email)})\n\n```\n{check}\n```\n\n"
+  )
 }
 
 pretty_text_checks <- function(name, email, check) {
@@ -73,28 +79,39 @@ check_setup <- function(data) {
       check_setup = copy_and_paste_the_results_of_your_r_3_check_setup_into_the_text_box_below
     ) |>
     dplyr::group_split(full_name) %>%
-    purrr::map_chr(~ pretty_code_checks(
-      .x$full_name,
-      .x$email,
-      .x$check_setup
-    )) %>%
+    purrr::map_chr(
+      ~ pretty_code_checks(
+        .x$full_name,
+        .x$email,
+        .x$check_setup
+      )
+    ) %>%
     stringr::str_c(collapse = "\n\n")
 }
 
 check_project_setup <- function(data) {
   data %>%
-    dplyr::rename_with(\(cols) stringr::str_replace(cols, "copy_and_paste_the_results_of_your_r_3_check_project_setup.*", "check_project_setup")) %>%
+    dplyr::rename_with(
+      \(cols)
+        stringr::str_replace(
+          cols,
+          "copy_and_paste_the_results_of_your_r_3_check_project_setup.*",
+          "check_project_setup"
+        )
+    ) %>%
     dplyr::select(
       full_name = what_is_your_full_name,
       email = email_address,
       check_project_setup
     ) |>
     dplyr::group_split(full_name) %>%
-    purrr::map_chr(~ pretty_code_checks(
-      .x$full_name,
-      .x$email,
-      .x$check_project_setup
-    )) %>%
+    purrr::map_chr(
+      ~ pretty_code_checks(
+        .x$full_name,
+        .x$email,
+        .x$check_project_setup
+      )
+    ) %>%
     stringr::str_c(collapse = "\n\n\n")
 }
 
@@ -107,10 +124,12 @@ check_problem_description <- function(data) {
       when_available_for_help = which_dates_would_you_be_available_for_a_video_call_to_help_with_the_problems
     ) |>
     dplyr::group_split(full_name) %>%
-    purrr::map_chr(~ pretty_text_checks(
-      .x$full_name,
-      .x$email,
-      paste0(.x$describe_problems, "\n\n", .x$when_available_for_help)
-    )) %>%
+    purrr::map_chr(
+      ~ pretty_text_checks(
+        .x$full_name,
+        .x$email,
+        paste0(.x$describe_problems, "\n\n", .x$when_available_for_help)
+      )
+    ) %>%
     stringr::str_c(collapse = "\n\n")
 }
