@@ -38,13 +38,13 @@ run-targets:
 draft-reminder-email: run-targets
   #!/usr/bin/Rscript
   participant_emails <- get_participant_emails()
-  r3admin::create_draft_reminder_email()
+  samwise::create_draft_reminder_email()
 
 # Create a GitHub issue for planning the next upcoming course
 create-upcoming-planning-issue: build
   #!/usr/bin/Rscript
-  r3admin::admin_create_planning_issue(
-    id = r3admin::get_upcoming_course()
+  samwise::admin_create_planning_issue(
+    id = samwise::get_upcoming_course()
   )
 
 # Create the PDF and HTML files used for putting people into the groups

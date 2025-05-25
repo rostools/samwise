@@ -55,7 +55,7 @@ group_name_to_pdf <- function(group_name, output_dir) {
   output_file <- stringr::str_replace_all(group_name, "\\.", "-")
   output_file <- fs::path_ext_set(output_file, "pdf")
   quarto::quarto_render(
-    input = fs::path_package("r3admin", "templates", "group-name-pdf.qmd"),
+    input = fs::path_package("samwise", "templates", "group-name-pdf.qmd"),
     output_file = output_file,
     execute_params = list(
       team_name = group_name
@@ -73,7 +73,7 @@ group_names_as_strips_html <-
     fs::dir_create(output_dir)
     withr::local_dir(output_dir)
     quarto::quarto_render(
-      input = fs::path_package("r3admin", "templates", "group-name-strips.qmd"),
+      input = fs::path_package("samwise", "templates", "group-name-strips.qmd"),
       output_file = "group-names-to-cut.html",
       execute_params = list(
         name = group_names,

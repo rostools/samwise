@@ -17,7 +17,7 @@ admin_create_planning_issue <- function(id) {
   }
 
   stamp_format <- lubridate::stamp_date("Mar. 1, 2021", quiet = TRUE)
-  template_path <- fs::path_package("r3admin", "templates", "planning-issue.md")
+  template_path <- fs::path_package("samwise", "templates", "planning-issue.md")
   issue_description <- whisker::whisker.render(
     # Skip the yaml metadata
     readr::read_lines(template_path, skip = 7),

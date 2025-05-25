@@ -29,7 +29,7 @@ copy_emails_for_reminder <- function(data) {
 }
 
 copy_reminder_email_text <- function() {
-  fs::path_package("r3admin", "templates", "email-reminder.txt") %>%
+  fs::path_package("samwise", "templates", "email-reminder.txt") %>%
     readr::read_lines() %>%
     clipr::write_clip()
 }

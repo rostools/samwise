@@ -7,11 +7,11 @@
 #'
 copy_common_file <- function(file) {
   file <- rlang::arg_match(file, fs::path_file(list_common_files()))
-  common_path <- fs::path_package("r3admin", "common", file)
+  common_path <- fs::path_package("samwise", "common", file)
   header_text <- ""
   if (file == "_variables.yml") {
     header_text <- glue::glue(
-      "# Automatically created by `r3admin::copy_common_file('{file}')` on {lubridate::today()}."
+      "# Automatically created by `samwise::copy_common_file('{file}')` on {lubridate::today()}."
     )
   }
   if (rprojroot::is_rstudio_project$testfun[[1]](".")) {
@@ -35,7 +35,7 @@ copy_common_file <- function(file) {
 #' @examples
 #' list_common_files("LICENSE.md")
 list_common_files <- function(regexp = NULL) {
-  fs::path_package("r3admin", "common") |>
+  fs::path_package("samwise", "common") |>
     fs::dir_ls(regexp = regexp)
 }
 
@@ -49,7 +49,7 @@ list_common_files <- function(regexp = NULL) {
 #' @examples
 #' list_template_files("planning-issue.md")
 list_template_files <- function(regexp = NULL) {
-  fs::path_package("r3admin", "templates") |>
+  fs::path_package("samwise", "templates") |>
     fs::dir_ls(regexp = regexp)
 }
 

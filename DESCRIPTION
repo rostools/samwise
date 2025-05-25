@@ -1,15 +1,15 @@
 Type: Package
-Package: r3admin
-Title: R-Cubed Teaching Helper Functions.
+Package: samwise
+Title: The Trusty Sidekick for Managing the Rostools Workshops
 Version: 0.0.1
 Authors@R: 
     person("Luke", "Johnston", , "lwjohnst@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-4169-2616"))
 Description: Contains functions to help with managing, running, and
-    developing the r-cubed courses.
+    developing the rostools workshops.
 License: MIT + file LICENSE
-URL: https://github.com/rostools/r3admin
-BugReports: https://github.com/rostools/r3admin/issues
+URL: https://github.com/rostools/samwise
+BugReports: https://github.com/rostools/samwise/issues
 Depends: 
     R (>= 2.10)
 Imports: 
