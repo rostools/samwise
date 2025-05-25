@@ -94,7 +94,9 @@ list(
   # Feedback ----------------------------------------------------------------
   tar_target(
     name = precourse_feedback,
-    command = if (!is.null(precourse_surveys)) {extract_precourse_feedback(precourse_surveys)},
+    command = if (!is.null(precourse_surveys)) {
+      extract_precourse_feedback(precourse_surveys)
+    },
     pattern = map(precourse_surveys)
   ),
   tar_target(
