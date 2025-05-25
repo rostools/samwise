@@ -9,6 +9,8 @@
 #'
 get_feedback_survey <- function() {
   get_feedback_survey_google_sheet() %>%
+    relocate_session_column() %>%
+    drop_empty_columns() %>%
     convert_to_long() %>%
     drop_missing_responses() %>%
     remove_newlines("response") %>%
@@ -35,6 +37,21 @@ get_feedback_survey_google_sheet <- function() {
 }
 
 # Helpers -----------------------------------------------------------------
+
+drop_empty_columns <- function(data) {
+  data %>%
+    dplyr::select(
+      tidyselect::where(\(x) !all(is.na(x)))
+    )
+}
+
+relocate_session_column <- function(data) {
+  data %>%
+    dplyr::relocate(
+      tidyselect::contains("session is feedback for"),
+      .after = tidyselect::contains("Which workshop is")
+    )
+}
 
 add_course_date <- function(data) {
   tibble::tibble(
@@ -66,15 +83,18 @@ add_course_date <- function(data) {
 convert_to_long <- function(data) {
   data %>%
     dplyr::rename(
-      course_name = "Which course is the feedback for?",
-      session_name = "Which session is the feedback for?",
+      course_name = "Which workshop is the feedback for?",
       timestamp = "Timestamp"
     ) |>
     tidyr::pivot_longer(
-      cols = -c(timestamp, date, course_name, session_name),
+      cols = -c(timestamp, date, course_name,
+                tidyselect::contains("session is the feedback for")),
       names_to = "question",
       values_to = "response"
     ) %>%
+    dplyr::rename_with(
+      \(col) dplyr::if_else(stringr::str_detect(col, "session is the feedback for"), "session_name", col),
+    ) |>
     dplyr::mutate(
       question = stringr::str_remove_all(
         question,
