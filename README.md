@@ -1,27 +1,17 @@
 
-# r3admin: Helper functions for managing the r-cubed courses
+# samwise: The trusty helper for managing the rostools workshops
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of r3admin is to help with teaching and general admin for developing
-and running the r-cubed courses.
+The goal of samwise is to help with teaching and general admin for developing
+and running the rostools workshops.
 
 ## Installation
 
-You can install the development version of r3admin like so:
+You can install the development version of samwise like so:
 
 ``` r
-# install.packages("remotes")
-remotes::install_github("rostools/r3admin")
+# install.packages("pak")
+pak::pak("rostools/samwise")
 ```
-
-## Example
-
-This is a basic example which shows you how to solve a common problem:
-
-``` r
-library(r3admin)
-## basic example code
-```
-

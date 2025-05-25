@@ -58,7 +58,7 @@ create_course_tag <- function(start_date, message) {
 #'
 #' @examples
 #' \dontrun{
-#' fs::path_package("r3admin", "extdata", "_people.csv") %>% zen_creators_from_csv()
+#' fs::path_package("samwise", "extdata", "_people.csv") %>% zen_creators_from_csv()
 #' }
 zen_creators_from_csv <- function(path) {
   # TODO: Need to update this.

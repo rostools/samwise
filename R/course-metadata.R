@@ -7,7 +7,7 @@
 #' @examples
 #' read_course_metadata()
 read_course_metadata <- function() {
-  courses_path <- fs::path_package(package = "r3admin", "data", "courses.yaml")
+  courses_path <- fs::path_package(package = "samwise", "data", "courses.yaml")
   yaml::read_yaml(courses_path)$course
 }
 

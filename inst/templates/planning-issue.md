@@ -21,7 +21,7 @@ Before the course, please review the CONTRIBUTING guide, Code of Conduct, and th
 
 ## To do before course
 
-Several of the below tasks (for the admin/lead instructor) can be done using the r3admin package.
+Several of the below tasks (for the admin/lead instructor) can be done using the samwise package.
 
 -   [ ] {{tasks_start_date}}: (Optional) Send an calendar invite to registered participants with link to pre-course tasks and website.
 -   [ ] {{instructors_precourse_meeting}}: Send a calendar invite to instructors/helpers for course location (with planning issue link), dinner locations, and post-course debrief.
@@ -43,9 +43,9 @@ Several of the below tasks (for the admin/lead instructor) can be done using the
 ## To do after course
 
 -   [ ] Close the Google Forms feedback survey
--   [ ] Update git tag and release it (`r3admin::create_course_tag()`)
--   [ ] Update course metadata in `r3admin/data/courses.yaml`
--   [ ] Update instructor/helper metadata in `r3admin/data/courses.yaml` and `r3admin/data/people/`
+-   [ ] Update git tag and release it (`samwise::create_course_tag()`)
+-   [ ] Update course metadata in `samwise/data/courses.yaml`
+-   [ ] Update instructor/helper metadata in `samwise/data/courses.yaml` and `samwise/data/people/`
 -   [ ] Update Zenodo DOI
 
 ## Other details
