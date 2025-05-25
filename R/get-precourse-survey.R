@@ -27,6 +27,7 @@ get_precourse_survey_google_sheet <- function(id, n_max = Inf) {
   # Get the Google Sheet ID from the environment variable via `Sys.getenv()`
   survey_id <- switch(
     id,
+    gh_intro = "GH_INTRO_PRE_SURVEY_ID",
     intro = "INTRO_PRE_SURVEY_ID",
     inter = "INTERMEDIATE_PRE_SURVEY_ID",
     adv = "ADVANCED_PRE_SURVEY_ID"
