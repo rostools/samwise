@@ -32,7 +32,7 @@ group_names_to_one_pdf <- function(
   group_names,
   output_dir = here::here("_ignore/group-names")
 ) {
-  group_names %>%
+  group_names |>
     purrr::walk(group_name_to_pdf, output_dir = output_dir)
   single_files <- fs::dir_ls(output_dir, glob = "*.pdf")
   combined_pdf_file <- fs::path(output_dir, "_all-groups.pdf")

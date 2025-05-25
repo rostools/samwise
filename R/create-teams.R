@@ -8,34 +8,34 @@
 #' @export
 #'
 create_teams <- function(data, group_names, score_cutoff = 3) {
-  data %>%
+  data |>
     dplyr::select(
       tidyselect::contains("full_name"),
       tidyselect::matches("user_?name"),
       tidyselect::matches("^perceived")
-    ) %>%
-    dplyr::rowwise() %>%
+    ) |>
+    dplyr::rowwise() |>
     dplyr::mutate(dplyr::across(
       tidyselect::starts_with("perceived"),
       as.numeric
-    )) %>%
+    )) |>
     dplyr::mutate(
       perceived_skill_score = sum(dplyr::c_across(tidyselect::starts_with(
         "perceived"
       )))
-    ) %>%
-    dplyr::ungroup() %>%
+    ) |>
+    dplyr::ungroup() |>
     dplyr::mutate(
-      team_names = (perceived_skill_score >= score_cutoff) %>%
-        randomizr::block_ra(conditions = group_names) %>%
+      team_names = (perceived_skill_score >= score_cutoff) |>
+        randomizr::block_ra(conditions = group_names) |>
         as.character()
-    ) %>%
+    ) |>
     dplyr::select(
       team_names,
       tidyselect::contains("full_name"),
       username = tidyselect::matches("user_?name"),
       perceived_skill_score
-    ) %>%
+    ) |>
     dplyr::arrange(team_names, perceived_skill_score)
 }
 
@@ -48,7 +48,7 @@ create_gh_instructor_team <- function(usernames, organization) {
     "Helpers"
   )
 
-  ghclass::org_repos(organization) %>%
+  ghclass::org_repos(organization) |>
     purrr::walk(
       ~ {
         ghclass::repo_team_permission(

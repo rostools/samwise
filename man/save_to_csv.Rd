@@ -20,7 +20,7 @@ Save data to CSV.
 \examples{
 
 library(dplyr)
-general_feedback <- get_feedback_survey("general")
+general_feedback <- get_feedback_survey()
 extract_feedback_quantitative(general_feedback)
 extract_feedback_sessions(general_feedback) |>
   save_feedback_to_csv(c("course_id", "course_date", "date"))

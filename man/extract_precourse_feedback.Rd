@@ -18,6 +18,6 @@ Extract and tidy up the pre-course feedback data.
 \examples{
 \dontrun{
 survey <- get_precourse_survey("intro")
-extract_precourse_feedback(survey, "intro")
+extract_precourse_feedback(survey)
 }
 }

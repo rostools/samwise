@@ -8,12 +8,12 @@
 #' }
 #'
 get_feedback_survey <- function() {
-  get_feedback_survey_google_sheet() %>%
-    relocate_session_column() %>%
-    drop_empty_columns() %>%
-    convert_to_long() %>%
-    drop_missing_responses() %>%
-    remove_newlines("response") %>%
+  get_feedback_survey_google_sheet() |>
+    relocate_session_column() |>
+    drop_empty_columns() |>
+    convert_to_long() |>
+    drop_missing_responses() |>
+    remove_newlines("response") |>
     add_course_date() |>
     dplyr::select(-timestamp)
 }
@@ -28,8 +28,8 @@ get_feedback_survey_google_sheet <- function() {
     )
   }
 
-  googledrive::drive_get(id = survey_id) %>%
-    googlesheets4::read_sheet(col_types = "c") %>%
+  googledrive::drive_get(id = survey_id) |>
+    googlesheets4::read_sheet(col_types = "c") |>
     dplyr::mutate(
       Timestamp = lubridate::mdy_hms(Timestamp),
       date = lubridate::as_date(Timestamp)
@@ -39,14 +39,14 @@ get_feedback_survey_google_sheet <- function() {
 # Helpers -----------------------------------------------------------------
 
 drop_empty_columns <- function(data) {
-  data %>%
+  data |>
     dplyr::select(
       tidyselect::where(\(x) !all(is.na(x)))
     )
 }
 
 relocate_session_column <- function(data) {
-  data %>%
+  data |>
     dplyr::relocate(
       tidyselect::contains("session is feedback for"),
       .after = tidyselect::contains("Which workshop is")
@@ -81,19 +81,28 @@ add_course_date <- function(data) {
 }
 
 convert_to_long <- function(data) {
-  data %>%
+  data |>
     dplyr::rename(
       course_name = "Which workshop is the feedback for?",
       timestamp = "Timestamp"
     ) |>
     tidyr::pivot_longer(
-      cols = -c(timestamp, date, course_name,
-                tidyselect::contains("session is the feedback for")),
+      cols = -c(
+        timestamp,
+        date,
+        course_name,
+        tidyselect::contains("session is the feedback for")
+      ),
       names_to = "question",
       values_to = "response"
-    ) %>%
+    ) |>
     dplyr::rename_with(
-      \(col) dplyr::if_else(stringr::str_detect(col, "session is the feedback for"), "session_name", col),
+      \(col)
+        dplyr::if_else(
+          stringr::str_detect(col, "session is the feedback for"),
+          "session_name",
+          col
+        ),
     ) |>
     dplyr::mutate(
       question = stringr::str_remove_all(
@@ -104,7 +113,7 @@ convert_to_long <- function(data) {
 }
 
 drop_missing_responses <- function(data) {
-  data %>%
+  data |>
     dplyr::filter(
       !is.na(response),
       !response %in% c("na", "NA", ".", "-", "?", "N/A", "Nil")
@@ -112,7 +121,7 @@ drop_missing_responses <- function(data) {
 }
 
 remove_newlines <- function(data, col) {
-  data %>%
+  data |>
     dplyr::mutate(dplyr::across(
       tidyselect::all_of(col),
       ~ stringr::str_remove_all(.x, pattern = "\n")

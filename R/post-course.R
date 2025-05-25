@@ -29,15 +29,15 @@ create_course_tag <- function(start_date, message) {
   gert::git_push()
   gert::git_tag_push(repo_version)
 
-  remote_host <- gert::git_remote_list() %>%
-    dplyr::filter(name == "origin") %>%
+  remote_host <- gert::git_remote_list() |>
+    dplyr::filter(name == "origin") |>
     dplyr::pull(url)
 
-  remote_host_name <- remote_host %>%
+  remote_host_name <- remote_host |>
     stringr::str_extract("github")
 
-  repo_name <- remote_host %>%
-    stringr::str_extract("github\\.com[:/](.*/.*)\\.git$", group = 1) %>%
+  repo_name <- remote_host |>
+    stringr::str_extract("github\\.com[:/](.*/.*)\\.git$", group = 1) |>
     stringr::str_remove_all(":|\\.git")
 
   url_release <- glue::glue("https://github.com/{repo_name}/releases/new")
@@ -58,7 +58,7 @@ create_course_tag <- function(start_date, message) {
 #'
 #' @examples
 #' \dontrun{
-#' fs::path_package("samwise", "extdata", "_people.csv") %>% zen_creators_from_csv()
+#' fs::path_package("samwise", "extdata", "_people.csv") |> zen_creators_from_csv()
 #' }
 zen_creators_from_csv <- function(path) {
   # TODO: Need to update this.
@@ -70,18 +70,18 @@ zen_creators_from_csv <- function(path) {
       orcid = readr::col_character(),
       contributor_role = readr::col_logical()
     )
-  ) %>%
-    dplyr::filter(contributor_role) %>%
+  ) |>
+    dplyr::filter(contributor_role) |>
     dplyr::mutate(
       family = stringr::word(full_name, -1),
       given = stringr::str_remove(full_name, glue::glue(" {family}"))
-    ) %>%
+    ) |>
     dplyr::transmute(
       name = glue::glue("{family}, {given}"),
       affiliation = primary_affiliation,
       orcid = orcid
-    ) %>%
-    dplyr::group_split(name) %>%
+    ) |>
+    dplyr::group_split(name) |>
     purrr::map(as.list)
 }
 

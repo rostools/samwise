@@ -34,7 +34,9 @@ save_responses_to_csv <- function(data, columns) {
     dplyr::mutate(dplyr::across(tidyselect::all_of(columns), as.character)) |>
     dplyr::rowwise() |>
     dplyr::mutate(
-      path = create_path_from_columns(dplyr::c_across(tidyselect::all_of(columns)))
+      path = create_path_from_columns(dplyr::c_across(tidyselect::all_of(
+        columns
+      )))
     ) |>
     dplyr::ungroup() |>
     dplyr::select(data, path)

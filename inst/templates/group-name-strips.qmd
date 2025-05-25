@@ -1,12 +1,12 @@
 ---
-format: 
+format:
   html:
     embed-resources: true
     minimal: true
-    theme: none 
+    theme: none
     fontsize: 24px
 params:
-  name: 
+  name:
     - "PLACEHOLDER_1"
     - "PLACEHOLDER_2"
   number_participants: 32
@@ -19,18 +19,18 @@ library(gt)
 persons_per_group <- ceiling(params$number_participants / length(params$name))
 matrix(rep(params$name, times = persons_per_group),
   ncol = persons_per_group
-) %>%
+) |>
   # This is for each day.
   # TODO: Figure some way to streamline this?
   {
     rbind(., ., .)
-  } %>%
-  as.data.frame() %>%
-  gt() %>%
+  } |>
+  as.data.frame() |>
+  gt() |>
   tab_style(
     style = cell_borders(color = "black"),
     locations = cells_body()
-  ) %>%
-  cols_label(V1 = "", V2 = "", V3 = "") %>%
+  ) |>
+  cols_label(V1 = "", V2 = "", V3 = "") |>
   tab_options(column_labels.hidden = TRUE)
 ```

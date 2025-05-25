@@ -33,19 +33,19 @@ useful_pkgs <- c(
   "knitr"
 )
 
-package_metadata <- useful_pkgs %>%
-  stringr::str_sort() %>%
+package_metadata <- useful_pkgs |>
+  stringr::str_sort() |>
   pkgsearch::cran_packages()
 
-useful_packages_list <- package_metadata %>%
-  select(Package, Title, Description, URL) %>%
+useful_packages_list <- package_metadata |>
+  select(Package, Title, Description, URL) |>
   mutate(
-    URL = str_remove(URL, ",[\\n]?.*$") %>%
-      str_remove(",.*$") %>%
+    URL = str_remove(URL, ",[\\n]?.*$") |>
+      str_remove(",.*$") |>
       str_replace("http:", "https:"),
     Package = glue::glue("[{Package}]({URL})"),
     Description = str_replace_all(Description, "\\n", " ")
-  ) %>%
+  ) |>
   select(-URL)
 
 usethis::use_data(useful_packages_list, overwrite = TRUE)
@@ -65,16 +65,16 @@ useful_learning_sites <- c(
 )
 
 extract_title <- function(content, link_name) {
-  page_title <- content %>%
-    html_node("title") %>%
+  page_title <- content |>
+    html_node("title") |>
     html_text()
   tibble(Site = as.character(glue::glue("[{page_title}]({link_name})")))
 }
 
-site_contents <- useful_learning_sites %>%
+site_contents <- useful_learning_sites |>
   map(read_html)
 
-useful_learning_sites_list <- site_contents %>%
+useful_learning_sites_list <- site_contents |>
   map2_dfr(
     useful_learning_sites,
     extract_title

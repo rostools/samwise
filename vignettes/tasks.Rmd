@@ -16,9 +16,9 @@ devtools::load_all()
 precourse <- targets::tar_read(upcoming_precourse_survey)
 
 # Constants
-course_id <- "intro" # list_course_ids()
+course_id <- "inter" # list_course_ids()
 # TODO: Convert this to fetch from the course data files
-instructors <- c("lwjohnst86", "AndersAskeland", "ZipingZ7", "olex2148")
+instructors <- c("lwjohnst86", "AndersAskeland")
 org_name <- create_github_org_name(course_id)
 # Run `just create-group-names` first
 team_names <- readr::read_lines(here::here("_ignore/group-names.txt"))
@@ -67,15 +67,15 @@ if (get_upcoming_course() %in% c("inter", "advanced")) {
 List those who have problems and print their setups.
 
 ```{r}
-problems <- precourse %>%
+problems <- precourse |>
   check_precourse_problems()
 ```
 
 ### Description of the problems
 
 ```{r, results='asis'}
-problems %>%
-  check_problem_description() %>%
+problems |>
+  check_problem_description() |>
   cat()
 ```
 
@@ -84,8 +84,8 @@ problems %>%
 <!-- TODO: Convert this in a way that it shows the setups and problems together? -->
 
 ```{r, results='asis'}
-problems %>%
-  check_setup() %>%
+problems |>
+  check_setup() |>
   cat()
 ```
 
@@ -93,8 +93,8 @@ problems %>%
 
 ```{r, results='asis'}
 if (course_id %in% c("inter", "advanced")) {
-  problems %>%
-    check_project_setup() %>%
+  problems |>
+    check_project_setup() |>
     cat()
 }
 ```
@@ -117,8 +117,8 @@ Copy the names of those who have problems so I can paste it to something
 like Telegram so I know who to seek out on the first day.
 
 ```{r, eval=FALSE}
-problems %>%
-  dplyr::pull(full_name) %>%
+problems |>
+  dplyr::pull(full_name) |>
   copy_names_with_problems()
 ```
 

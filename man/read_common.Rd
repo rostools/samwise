@@ -17,5 +17,4 @@ Read contents of a file in the common directory.
 }
 \examples{
 read_common("LICENSE.md")
-read_common("installing-programs.qmd")
 }

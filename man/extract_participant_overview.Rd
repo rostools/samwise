@@ -17,7 +17,7 @@ Extract participant overview data from pre-course survey.
 }
 \examples{
 \dontrun{
-survey <- get_precourse_survey("intro")
-extract_participant_overview(survey, "intro")
+survey <- get_precourse_survey("adv")
+extract_participant_overview(survey)
 }
 }

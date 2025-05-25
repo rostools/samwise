@@ -11,7 +11,7 @@ License: MIT + file LICENSE
 URL: https://github.com/rostools/samwise
 BugReports: https://github.com/rostools/samwise/issues
 Depends: 
-    R (>= 2.10)
+    R (>= 4.1.0)
 Imports: 
     checkmate,
     clipr,
@@ -31,7 +31,6 @@ Imports:
     ids,
     lifecycle,
     lubridate,
-    magrittr,
     pdftools,
     codename,
     purrr,

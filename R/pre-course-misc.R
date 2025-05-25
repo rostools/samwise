@@ -23,7 +23,7 @@ create_team_project <- function(
   usethis::local_project(project_folder)
   rlang::catch_cnd(fs::file_delete(fs::path(project_folder, ".gitignore")))
   prodigenr::setup_project(project_folder)
-  gert::git_status()$file %>%
+  gert::git_status()$file |>
     gert::git_add()
   gert::git_commit("Setup project")
   gert::git_push()
@@ -40,13 +40,13 @@ create_team_project <- function(
 #'
 setup_team_repos <- function(gh_org) {
   course_team_repos <- ghclass::org_repos(gh_org)
-  course_team_repos %>%
+  course_team_repos |>
     purrr::walk(create_team_project)
 }
 
 clone_team_repos <- function(gh_org) {
   course_team_repos <- ghclass::org_repos(gh_org)
-  course_team_repos %>%
+  course_team_repos |>
     purrr::walk(clone_project_repo)
 }
 
@@ -73,7 +73,7 @@ pull_project_repo <- function(
 
 pull_team_repos <- function(gh_org) {
   course_team_repos <- ghclass::org_repos(gh_org)
-  course_team_repos %>%
+  course_team_repos |>
     purrr::walk(pull_project_repo)
 }
 

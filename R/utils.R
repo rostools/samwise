@@ -28,8 +28,8 @@ assign_course_date_by_date <- function(date, metadata_dates) {
     c("2018-01-01", metadata_dates),
     c(metadata_dates, as.character(lubridate::today() + lubridate::weeks(4)))
   )
-  date <- date %>%
-    lubridate::as_date() %>%
+  date <- date |>
+    lubridate::as_date() |>
     lubridate::ymd()
 
   course_date <- date |>

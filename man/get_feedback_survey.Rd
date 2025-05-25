@@ -4,10 +4,7 @@
 \alias{get_feedback_survey}
 \title{Get the responses from the feedback survey.}
 \usage{
-get_feedback_survey(id = "general")
-}
-\arguments{
-\item{id}{The ID of the course, found by running \code{\link[=list_course_ids]{list_course_ids()}}.}
+get_feedback_survey()
 }
 \value{
 A \link[tibble:tibble]{tibble::tibble}.
@@ -17,8 +14,7 @@ Get the responses from the feedback survey.
 }
 \examples{
 \dontrun{
-get_feedback_survey("intro")
-get_feedback_survey("general")
+get_feedback_survey()
 }
 
 }
