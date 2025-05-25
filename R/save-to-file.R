@@ -30,11 +30,11 @@ create_path_from_columns <- function(columns) {
 
 save_responses_to_csv <- function(data, columns) {
   data_to_save <- data |>
-    tidyr::nest(.by = {{ columns }}) |>
-    dplyr::mutate(dplyr::across({{ columns }}, as.character)) |>
+    tidyr::nest(.by = tidyselect::all_of(columns)) |>
+    dplyr::mutate(dplyr::across(tidyselect::all_of(columns), as.character)) |>
     dplyr::rowwise() |>
     dplyr::mutate(
-      path = create_path_from_columns(dplyr::c_across({{ columns }}))
+      path = create_path_from_columns(dplyr::c_across(tidyselect::all_of(columns)))
     ) |>
     dplyr::ungroup() |>
     dplyr::select(data, path)
