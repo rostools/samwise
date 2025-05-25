@@ -1,7 +1,8 @@
 [files]
 extend-exclude = [
   "data/surveys/*",
-  "_targets/meta/*"
+  "_targets/meta/*",
+  "_targets/.gitignore"
 ]
 
 [default.extend-words]
