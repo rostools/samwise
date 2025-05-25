@@ -1,4 +1,18 @@
 course:
+  - id: gh_intro
+    name: Intro to GitHub
+    url: https://github-intro.rostools.org/
+    repo: github-intro
+    contributors:
+      - ref: lwj
+      - ref: skb
+    events:
+      - date: 2025-05-26
+        host: Steno Diabetes Center Aarhus
+        instructors:
+          - ref: lwj
+          - ref: skb
+
   - id: intro
     name: Introductory
     url: https://r-cubed-intro.rostools.org/
