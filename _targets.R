@@ -147,8 +147,6 @@ list(
         \(feedback) save_responses_to_csv(feedback$data, feedback$columns)
       ) |>
       unlist(),
-    pattern = map(combined_feedback),
-    iteration = "list",
     format = "file"
   )
 )
