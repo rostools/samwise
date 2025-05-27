@@ -23,6 +23,7 @@ extract_participant_overview <- function(data) {
       tidyselect::contains("perceive"),
       tidyselect::contains("currently_use"),
       tidyselect::contains("gender"),
+      tidyselect::contains("pronoun"),
       tidyselect::contains("position"),
       tidyselect::contains("city"),
       tidyselect::contains("programs"),
