@@ -8,7 +8,7 @@
 #' }
 #'
 get_feedback_survey <- function() {
-  get_feedback_survey_google_sheet() |>
+  feedback <- get_feedback_survey_google_sheet() |>
     relocate_session_column() |>
     drop_empty_columns() |>
     convert_to_long() |>
@@ -16,6 +16,13 @@ get_feedback_survey <- function() {
     remove_newlines("response") |>
     add_course_date() |>
     dplyr::select(-timestamp)
+
+  if (!"session_name" %in% names(feedback)) {
+    feedback <- feedback |>
+      dplyr::mutate(session_name = "End of course")
+  }
+
+  feedback
 }
 
 get_feedback_survey_google_sheet <- function() {
