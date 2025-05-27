@@ -1,6 +1,6 @@
 course:
   - id: gh_intro
-    name: Intro to GitHub
+    name: GitHub Intro
     url: https://github-intro.rostools.org/
     repo: github-intro
     contributors:
