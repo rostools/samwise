@@ -20,7 +20,10 @@ create_course_tag <- function(start_date, message) {
   desc_repo_version <- stringr::str_replace_all(start_date, "-", ".")
   repo_version <- stringr::str_c("v", desc_repo_version)
 
-  desc::desc_set_version(desc_repo_version)
+  if (fs::file_exists("DESCRIPTION")) {
+    desc::desc_set_version(desc_repo_version)
+  }
+
   version_tag <- gert::git_tag_create(
     name = repo_version,
     message = message
@@ -29,22 +32,13 @@ create_course_tag <- function(start_date, message) {
   gert::git_push()
   gert::git_tag_push(repo_version)
 
-  remote_host <- gert::git_remote_list() |>
-    dplyr::filter(name == "origin") |>
-    dplyr::pull(url)
+  repo_url <- gert::git_remote_info("origin")$url |>
+    stringr::str_remove("\\.git$")
 
-  remote_host_name <- remote_host |>
-    stringr::str_extract("github")
+  url_release <- glue::glue("{repo_url}/releases/new")
 
-  repo_name <- remote_host |>
-    stringr::str_extract("github\\.com[:/](.*/.*)\\.git$", group = 1) |>
-    stringr::str_remove_all(":|\\.git")
-
-  url_release <- glue::glue("https://github.com/{repo_name}/releases/new")
-
-  if (interactive()) {
-    browseURL(url_release)
-  }
+  browseURL(url_release)
+  invisible(version_tag)
 }
 
 # Update Zenodo -----------------------------------------------------------
