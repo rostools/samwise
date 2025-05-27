@@ -31,21 +31,21 @@ extract_participant_overview <- function(data) {
     ) |>
     tidyr::pivot_longer(
       -c(course_id, course_date),
-      names_to = "questions",
-      values_to = "responses"
+      names_to = "question",
+      values_to = "response"
     ) |>
-    remove_newlines("responses") |>
+    remove_newlines("response") |>
     dplyr::count(
       course_id,
       course_date,
-      questions,
-      responses,
+      question,
+      response,
       name = "count"
     ) |>
-    dplyr::arrange(course_date, questions, responses, count) |>
+    dplyr::arrange(course_date, question, response, count) |>
     join_original_column_names(id = unique(data$course_id)) |>
     tidyr::drop_na() |>
-    dplyr::relocate(course_id, course_date, questions, responses, count)
+    dplyr::relocate(course_id, course_date, question, response, count)
 }
 
 # Helpers -----------------------------------------------------------------
@@ -72,7 +72,7 @@ join_original_column_names <- function(data, id) {
   ) |>
     dplyr::right_join(
       data,
-      by = c("converted" = "questions")
+      by = c("converted" = "question")
     ) |>
-    dplyr::select(-converted, questions = original)
+    dplyr::select(-converted, question = original)
 }

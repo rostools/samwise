@@ -28,12 +28,13 @@ extract_precourse_feedback <- function(data) {
     ) |>
     tidyr::pivot_longer(
       -c(course_id, course_date),
-      names_to = "questions",
-      values_to = "responses"
+      names_to = "question",
+      values_to = "response"
     ) |>
-    remove_newlines("responses") |>
-    dplyr::arrange(course_date, questions, responses) |>
+    remove_newlines("response") |>
+    dplyr::arrange(course_date, question, response) |>
     join_original_column_names(id = unique(data$course_id)) |>
     tidyr::drop_na() |>
-    dplyr::relocate(course_id, course_date, questions, responses)
+    dplyr::relocate(course_id, course_date, question, response) |>
+    drop_missing_responses()
 }
