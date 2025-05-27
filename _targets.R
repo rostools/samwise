@@ -43,8 +43,13 @@ list(
   tar_force(
     name = upcoming_precourse_survey,
     command = if (!is.na(get_upcoming_course())) {
-      get_precourse_survey(get_upcoming_course()) |>
-        dplyr::filter(course_date == max(course_date))
+      survey <- get_upcoming_course() |>
+        get_precourse_survey()
+      if (nrow(survey) > 0) {
+        survey <- survey |>
+          dplyr::filter(course_date == max(course_date))
+      }
+      survey
     } else {
       NA
     },
@@ -76,19 +81,26 @@ list(
   tar_target(
     name = precourse_surveys,
     command = get_precourse_survey(course_ids),
-    pattern = map(course_ids)
+    pattern = map(course_ids),
+    iteration = "list"
   ),
   tar_target(
     name = participant_overview,
     command = extract_participant_overview(precourse_surveys),
-    pattern = map(precourse_surveys)
+    pattern = map(precourse_surveys),
+    iteration = "list"
   ),
   tar_target(
     name = saved_participant_overview,
-    command = participant_overview |>
-      dplyr::mutate(type = "overview") |>
-      save_responses_to_csv(c("course_id", "course_date", "type")),
-    format = "file"
+    command = {
+      if (!is.null(participant_overview)) {
+        participant_overview |>
+          dplyr::mutate(type = "overview") |>
+          save_responses_to_csv(c("course_id", "course_date", "type"))
+      }
+    },
+    format = "file",
+    pattern = map(participant_overview)
   ),
 
   # Feedback ----------------------------------------------------------------
@@ -97,7 +109,8 @@ list(
     command = if (!is.null(precourse_surveys)) {
       extract_precourse_feedback(precourse_surveys)
     },
-    pattern = map(precourse_surveys)
+    pattern = map(precourse_surveys),
+    iteration = "list"
   ),
   tar_target(
     name = feedback_survey,
@@ -134,11 +147,6 @@ list(
         data = feedback_survey_sessions |>
           dplyr::mutate(type = "feedback-sessions"),
         columns = c("course_id", "course_date", "type", "date")
-      ),
-      list(
-        data = precourse_feedback |>
-          dplyr::mutate(type = "feedback-precourse"),
-        columns = c("course_id", "course_date", "type")
       )
     )
   ),
@@ -150,5 +158,17 @@ list(
       ) |>
       unlist(),
     format = "file"
+  ),
+  tar_target(
+    name = saved_preworkshop_feedback_paths,
+    command = {
+      if (!is.null(precourse_feedback)) {
+        precourse_feedback |>
+          dplyr::mutate(type = "feedback-precourse") |>
+          save_responses_to_csv(c("course_id", "course_date", "type"))
+      }
+    },
+    format = "file",
+    pattern = map(precourse_feedback),
   )
 )
