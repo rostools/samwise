@@ -92,12 +92,13 @@ check_setup <- function(data) {
 check_project_setup <- function(data) {
   data |>
     dplyr::rename_with(
-      \(cols)
+      \(cols) {
         stringr::str_replace(
           cols,
           "copy_and_paste_the_results_of_your_r_3_check_project_setup.*",
           "check_project_setup"
         )
+      }
     ) |>
     dplyr::select(
       full_name = what_is_your_full_name,

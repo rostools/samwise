@@ -104,12 +104,13 @@ convert_to_long <- function(data) {
       values_to = "response"
     ) |>
     dplyr::rename_with(
-      \(col)
+      \(col) {
         dplyr::if_else(
           stringr::str_detect(col, "session is the feedback for"),
           "session_name",
           col
-        ),
+        )
+      },
     ) |>
     dplyr::mutate(
       question = stringr::str_remove_all(
@@ -123,7 +124,19 @@ drop_missing_responses <- function(data) {
   data |>
     dplyr::filter(
       !is.na(response),
-      !stringr::str_trim(response) %in% c("na", "NA", ".", "-", "?", "N/A", "Nil", "%", "no comment", "no comments")
+      !stringr::str_trim(response) %in%
+        c(
+          "na",
+          "NA",
+          ".",
+          "-",
+          "?",
+          "N/A",
+          "Nil",
+          "%",
+          "no comment",
+          "no comments"
+        )
     )
 }
 
