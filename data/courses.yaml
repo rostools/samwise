@@ -12,6 +12,11 @@ course:
         instructors:
           - ref: lwj
           - ref: skb
+      - date: 2025-09-09
+        host: Gather Town (virtual)
+        instructors:
+          - ref: lwj
+          - ref: skb
 
   - id: intro
     name: Introductory
