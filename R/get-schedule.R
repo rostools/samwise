@@ -8,10 +8,11 @@
 #' @examples
 #' get_schedule_sessions("intro")
 #' get_schedule_sessions("inter")
+#' get_schedule_sessions("adv")
 get_schedule_sessions <- function(id) {
   id <- rlang::arg_match(id, list_course_ids())
   base_url <- get_course_metadata_field(id = id, field = "url")
-  schedule_path <- "preamble/schedule"
+  schedule_path <- "overview/schedule"
   full_url <- glue::glue("{base_url}/{schedule_path}")
   scraped_page <- rvest::read_html(full_url)
 
