@@ -1,44 +1,3 @@
-#' Copy commonly used files for r-cubed courses.
-#'
-#' @param template Name of common file.
-#'
-#' @return Path to created common file.
-#' @export
-#'
-copy_common_file <- function(file) {
-  file <- rlang::arg_match(file, fs::path_file(list_common_files()))
-  common_path <- fs::path_package("samwise", "common", file)
-  header_text <- ""
-  if (file == "_variables.yml") {
-    header_text <- glue::glue(
-      "# Automatically created by `samwise::copy_common_file('{file}')` on {lubridate::today()}."
-    )
-  }
-  if (rprojroot::is_rstudio_project$testfun[[1]](".")) {
-    readr::write_lines(
-      x = c(header_text, readr::read_lines(common_path)),
-      file = file
-    )
-  } else {
-    rlang::abort("You aren't in an R Project.")
-  }
-  return(usethis::proj_path(file))
-}
-
-#' List files in the common directory.
-#'
-#' @param regexp Regular expression for the file path.
-#'
-#' @return Vector of file paths
-#' @export
-#'
-#' @examples
-#' list_common_files("LICENSE.md")
-list_common_files <- function(regexp = NULL) {
-  fs::path_package("samwise", "common") |>
-    fs::dir_ls(regexp = regexp)
-}
-
 #' List files in the template directory.
 #'
 #' @inheritParams list_common_files
@@ -51,20 +10,6 @@ list_common_files <- function(regexp = NULL) {
 list_template_files <- function(regexp = NULL) {
   fs::path_package("samwise", "templates") |>
     fs::dir_ls(regexp = regexp)
-}
-
-#' Read contents of a file in the common directory.
-#'
-#' @param file Name of file in the common directory.
-#'
-#' @return Character vector.
-#' @export
-#'
-#' @examples
-#' read_common("LICENSE.md")
-read_common <- function(file) {
-  file <- rlang::arg_match(file, fs::path_file(list_common_files()))
-  readr::read_lines(list_common_files(file))
 }
 
 #' Read the contents of the R package installation instructions template fiile.
