@@ -62,18 +62,12 @@ tidy_precourse <- function(data, metadata_dates) {
 }
 
 skills_df <- tibble::tribble(
-  ~number,
-  ~text,
-  "1",
-  "Beginner",
-  "2",
-  "Beginner-Intermediate",
-  "3",
-  "Intermediate",
-  "4",
-  "Intermediate-Advanced",
-  "5",
-  "Advanced"
+  ~number , ~text                   ,
+  "1"     , "Beginner"              ,
+  "2"     , "Beginner-Intermediate" ,
+  "3"     , "Intermediate"          ,
+  "4"     , "Intermediate-Advanced" ,
+  "5"     , "Advanced"
 )
 
 tidy_cols_skills_to_character <- function(x) {
