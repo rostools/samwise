@@ -123,7 +123,19 @@ drop_missing_responses <- function(data) {
   data |>
     dplyr::filter(
       !is.na(response),
-      !stringr::str_trim(response) %in% c("na", "NA", ".", "-", "?", "N/A", "Nil", "%", "no comment", "no comments")
+      !stringr::str_trim(response) %in%
+        c(
+          "na",
+          "NA",
+          ".",
+          "-",
+          "?",
+          "N/A",
+          "Nil",
+          "%",
+          "no comment",
+          "no comments"
+        )
     )
 }
 
