@@ -215,3 +215,5 @@ course:
           - ref: lwj
           - ref: aa
           - ref: ivse
+          - ref: bds
+          - ref: md

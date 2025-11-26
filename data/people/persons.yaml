@@ -3,6 +3,12 @@ person:
   #   name: ""
   #   affiliation: ""
   #   orcid: ""
+  - id: "bds"
+    name: "Birgitte Dige Semark"
+    affiliation:
+      - ref: au
+    orcid: ""
+
   - id: "kdl"
     name: "Kristine de Leon"
     affiliation:
