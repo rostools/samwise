@@ -5,6 +5,8 @@ editor:
     canonical: true
 ---
 
+Note: This issue is mostly for the lead instructor/organizer to keep track of planning tasks. The section about Instructors below is relevant to instructors/helpers.
+
 -   Location: [ADDRESS](GOOGLE%20LINK)
 -   Date: {{course_date}}
 -   Pre-course assignments dates (\~3-5 hrs to complete, suggest they dedicate a full day to it):
@@ -32,9 +34,9 @@ Several of the below tasks (for the admin/lead instructor) can be done using the
     -   (For intro course) Have all instructors/helpers give their GitHub user names.
 -   [ ] {{tasks_remind_date}}: Send a reminder to everyone to complete tasks.
 -   [ ] {{tasks_check_end_date}}: Check that all participants have completed pre-course material.
--   [ ] {{tasks_prep_end_date}}: Get participants into groups (\~3-4 people per group).
+-   [ ] {{tasks_prep_end_date}}: Get participants into groups (\~2 people per group).
 -   [ ] {{tasks_prep_end_date}}: Assign instructors to groups.
--   [ ] {{tasks_prep_end_date}}: Open up the Google Forms feedback survey
+-   [ ] {{tasks_prep_end_date}}: Open up the Google Forms feedback survey.
 
 ## To do during course
 
@@ -42,12 +44,11 @@ Several of the below tasks (for the admin/lead instructor) can be done using the
 
 ## To do after course
 
--   [ ] Close the Google Forms feedback survey
--   [ ] Update git tag and release it (`samwise::create_course_tag()`)
--   [ ] Update course metadata in `samwise/data/courses.yaml`
--   [ ] Update instructor/helper metadata in `samwise/data/courses.yaml` and `samwise/data/people/`
--   [ ] Update Zenodo DOI
+-   [ ] Close the Google Forms feedback survey.
+-   [ ] Review feedback survey results and add any relevant comments as issues in the repo.
+-   [ ] Update course metadata in `samwise/data/courses.yaml`.
+-   [ ] Update instructor/helper metadata in `samwise/data/courses.yaml` and `samwise/data/people/`.
 
 ## Other details
 
--   DDA will reimburse travel expenses [here](https://www.ddeacademy.dk/content/online-compensation-form-events)
+-   DDEA will reimburse travel expenses [here](https://www.ddeacademy.dk/content/online-compensation-form-events)

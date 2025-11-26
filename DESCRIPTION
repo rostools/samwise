@@ -2,7 +2,7 @@ Type: Package
 Package: samwise
 Title: The Trusty Sidekick for Managing the Rostools Workshops
 Version: 0.0.1
-Authors@R: 
+Authors@R:
     person("Luke", "Johnston", , "lwjohnst@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-4169-2616"))
 Description: Contains functions to help with managing, running, and
@@ -10,9 +10,9 @@ Description: Contains functions to help with managing, running, and
 License: MIT + file LICENSE
 URL: https://github.com/rostools/samwise
 BugReports: https://github.com/rostools/samwise/issues
-Depends: 
+Depends:
     R (>= 4.1.0)
-Imports: 
+Imports:
     checkmate,
     clipr,
     commonmark,
@@ -48,13 +48,14 @@ Imports:
     whisker,
     withr,
     xml2,
-    yaml
-Suggests: 
+    yaml,
+    quarto
+Suggests:
     gt,
     knitr,
     rmarkdown,
     tarchetypes
-VignetteBuilder: 
+VignetteBuilder:
     knitr
 Encoding: UTF-8
 LazyData: true
