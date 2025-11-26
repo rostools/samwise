@@ -104,12 +104,13 @@ convert_to_long <- function(data) {
       values_to = "response"
     ) |>
     dplyr::rename_with(
-      \(col)
+      \(col) {
         dplyr::if_else(
           stringr::str_detect(col, "session is the feedback for"),
           "session_name",
           col
-        ),
+        )
+      },
     ) |>
     dplyr::mutate(
       question = stringr::str_remove_all(
