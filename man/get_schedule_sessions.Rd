@@ -18,4 +18,5 @@ Get the session schedule for the course.
 \examples{
 get_schedule_sessions("intro")
 get_schedule_sessions("inter")
+get_schedule_sessions("adv")
 }

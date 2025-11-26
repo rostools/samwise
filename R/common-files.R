@@ -1,6 +1,6 @@
 #' List files in the template directory.
 #'
-#' @inheritParams list_common_files
+#' @param regexp Regular expression for the file path.
 #'
 #' @return Vector of file paths.
 #' @export
