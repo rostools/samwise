@@ -154,9 +154,16 @@ list(
     name = saved_feedback_sessions_paths,
     command = combined_feedback |>
       purrr::map(
-        \(feedback) save_responses_to_csv(feedback$data, feedback$columns)
+        \(feedback) {
+          if (nrow(feedback$data) > 0) {
+            save_responses_to_csv(feedback$data, feedback$columns)
+          } else {
+            NA
+          }
+        }
       ) |>
-      unlist(),
+      unlist() |>
+      na.omit(),
     format = "file"
   ),
   tar_target(
