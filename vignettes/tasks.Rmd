@@ -57,7 +57,7 @@ Quickly check whether everyone has their setups done correctly.
 ```{r}
 cat(check_setup(precourse), file = here::here("_ignore/setup.txt"))
 
-if (get_upcoming_course() %in% c("inter", "advanced")) {
+if (get_upcoming_course() %in% c("inter", "adv")) {
   cat(check_project_setup(precourse), file = here::here("_ignore/project-setup.txt"))
 }
 ```
