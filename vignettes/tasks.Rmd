@@ -92,7 +92,7 @@ problems |>
 ### Setup of their projects
 
 ```{r, results='asis'}
-if (course_id %in% c("inter", "advanced")) {
+if (course_id %in% c("inter", "adv")) {
   problems |>
     check_project_setup() |>
     cat()
