@@ -20,7 +20,7 @@ create_github_org <- function(id) {
     cli::cli_abort("Organization wasn't created, stopping the function.")
   }
 
-  ghclass::org_set_repo_permission(org_name, permission = "none")
+  ghclass::org_set_repo_permission(org_name, repo_permission = "none")
   org_name
 }
 
