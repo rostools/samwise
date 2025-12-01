@@ -4,7 +4,7 @@ title: "Admin tasks for the R courses"
 
 ```{r setup, include = FALSE}
 targets::tar_config_set(
-  store = here::here("_targets")
+  store = "../_targets"
 )
 knitr::opts_chunk$set(
   eval = FALSE,
