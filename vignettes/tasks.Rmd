@@ -132,9 +132,9 @@ create_github_org(course_id)
 
 ```{r}
 # TODO: Include this as part of create_teams?
+org_name <- "r-cubed-advanced-2025-12"
 gh_team_names <- expand_grid(team_names, num = 1:2) |>
-  glue::glue_data("{team_names}-{num}") |>
-  head(14)
+  glue::glue_data("{team_names}-{num}")
 teams <- create_teams(precourse, gh_team_names)
 setup_team_projects(teams, org_name)
 create_gh_instructor_team(instructors, org_name)
