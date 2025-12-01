@@ -107,6 +107,11 @@ course:
           - ref: aa
           - ref: zzh
           - ref: osh
+      - date: 2026-02-03
+        host: Danish Diabetes and Endocrinology Academy
+        instructors:
+          - ref: lwj
+          - ref: aa
 
   - id: inter
     name: Intermediate
