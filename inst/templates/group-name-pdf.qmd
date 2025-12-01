@@ -1,16 +1,14 @@
 ---
 format: 
-  pdf:
+  typst:
     papersize: a4
     fontsize: 48pt
-    pagestyle: empty
-    geometry: 
-      - top=3cm
-      - landscape
+    page-numbering: false
 params:
   team_name: "placeholder testing name"
 ---
 
+::: landscape
 ```{r}
 #| echo: false
 # To trigger use of R?
@@ -19,3 +17,4 @@ params:
 ## Group:
 
 ### `r params$team_name`
+:::
