@@ -25,6 +25,10 @@ document:
 style:
   air format .
 
+# Run linter
+lint:
+  jarl check .
+
 # Run spell checker
 check-spelling:
   uvx typos
