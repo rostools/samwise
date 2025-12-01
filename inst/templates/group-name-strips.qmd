@@ -6,7 +6,7 @@ format:
     theme: none
     fontsize: 24px
 params:
-  name:
+  group_names:
     - "PLACEHOLDER_1"
     - "PLACEHOLDER_2"
   number_participants: 32
@@ -16,15 +16,16 @@ params:
 #| echo: false
 #| warning: false
 library(gt)
-persons_per_group <- ceiling(params$number_participants / length(params$name))
-matrix(rep(params$name, times = persons_per_group),
+persons_per_group <- ceiling(params$number_participants / length(params$group_names))
+strips_per_day <- matrix(rep(params$group_names, times = persons_per_group),
   ncol = persons_per_group
+)
+# Strips for each day (3 total)
+rbind(
+  strips_per_day,
+  strips_per_day,
+  strips_per_day
 ) |>
-  # This is for each day.
-  # TODO: Figure some way to streamline this?
-  {
-    rbind(., ., .)
-  } |>
   as.data.frame() |>
   gt() |>
   tab_style(
