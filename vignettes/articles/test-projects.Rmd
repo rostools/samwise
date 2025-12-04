@@ -1,0 +1,107 @@
+---
+title: "test-projects"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+
+devtools::load_all()
+pull_team_repos("r-cubed-advanced-2025-12")
+```
+
+```{r}
+library(tidyverse)
+library(ghclass)
+
+org_name <- "r-cubed-advanced-2025-12"
+repos <- org_repos(org_name)
+repos
+
+clone_repo <- function(repo) {
+  ghclass::local_repo_clone(
+    repo,
+    fs::path("~/Desktop")
+  )
+}
+
+repos |>
+  walk(clone_repo)
+
+test_project <- function(path) {
+  withr::with_dir(
+    path,
+    {
+      pak::pak()
+      styler::style_dir()
+      targets::tar_make()
+      # browseURL("docs/report.html")
+    }
+  )
+}
+
+project_paths <- fs::dir_ls("~/Desktop/")
+project_paths
+
+project_paths[12] |>
+  walk(test_project)
+```
+
+```{r}
+
+team_repos <- tibble(
+  repos = repos,
+  teams = str_remove(repos, "^.*/")
+) |>
+  left_join(
+    tibble(
+      teams = ghclass::org_teams(org_name)
+    )
+  )
+
+walk2(
+    team_repos$repos,
+    team_repos$teams,
+    ghclass::repo_add_team
+  )
+
+```
+
+```{r}
+fix_repo_gitignore <- function(path) {
+  usethis::with_project(
+    path,
+    {
+      cli::cli_inform("Fixing {.val {basename(path)}}")
+      fs::dir_delete("_targets")
+      readr::write_lines("*", "_targets/.gitignore")
+      gert::git_commit_all("Ignore files in targets folder.")
+      gert::git_push()
+    }
+  )
+}
+
+fix_repo <- function(path) {
+  usethis::with_project(
+    path,
+    {
+      cli::cli_inform("Fixing {.val {basename(path)}}")
+      fs::file_delete("data-raw/README.md")
+      gert::git_rm("data-raw/README.md")
+      gert::git_commit("Remove data raw folder, not needed.")
+      usethis::use_git_ignore("_targets.yaml")
+      usethis::use_git_ignore("*_files")
+      usethis::use_git_ignore("*.html")
+      usethis::use_git_ignore("_targets/*")
+      gert::git_commit_all("Update .gitignore")
+      targets::use_targets(open = FALSE)
+      gert::git_add("_targets.R")
+      gert::git_commit("Add targets pipeline")
+      gert::git_push()
+    }
+  )
+}
+
+```
