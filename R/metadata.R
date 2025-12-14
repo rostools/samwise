@@ -7,7 +7,11 @@
 #' @examples
 #' read_course_metadata()
 read_course_metadata <- function() {
-  courses_path <- fs::path_package(package = "samwise", "extdata", "courses.yaml")
+  courses_path <- fs::path_package(
+    package = "samwise",
+    "extdata",
+    "workshops.yaml"
+  )
   yaml::read_yaml(courses_path)$course
 }
 
