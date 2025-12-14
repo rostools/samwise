@@ -1,3 +1,5 @@
+utils::globalVariables(".data")
+
 #' Within date range, from lubridate
 #'
 #' @name %within%
