@@ -10,7 +10,7 @@
 #' get_schedule_sessions("inter")
 #' get_schedule_sessions("adv")
 get_schedule_sessions <- function(id) {
-  id <- rlang::arg_match(id, list_course_ids())
+  id <- rlang::arg_match(id, list_workshop_ids())
   base_url <- get_course_metadata_field(id = id, field = "url")
   schedule_path <- "overview/schedule"
   full_url <- glue::glue("{base_url}/{schedule_path}")

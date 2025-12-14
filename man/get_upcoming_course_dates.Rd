@@ -7,7 +7,7 @@
 get_upcoming_course_dates(id)
 }
 \arguments{
-\item{id}{The ID of the course, found by running \code{\link[=list_course_ids]{list_course_ids()}}.}
+\item{id}{The ID of the course, found by running \code{\link[=list_workshop_ids]{list_workshop_ids()}}.}
 }
 \value{
 A character vector.

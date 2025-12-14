@@ -7,7 +7,7 @@
 admin_create_planning_issue(id)
 }
 \arguments{
-\item{id}{The ID of the course, found by running \code{\link[=list_course_ids]{list_course_ids()}}.}
+\item{id}{The ID of the course, found by running \code{\link[=list_workshop_ids]{list_workshop_ids()}}.}
 }
 \value{
 A GitHub API response. Used for the side effects of posting an issue.

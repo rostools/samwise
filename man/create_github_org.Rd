@@ -7,7 +7,7 @@
 create_github_org(id)
 }
 \arguments{
-\item{id}{The identifier of the course based on \code{\link[=list_course_ids]{list_course_ids()}}.}
+\item{id}{The identifier of the course based on \code{\link[=list_workshop_ids]{list_workshop_ids()}}.}
 }
 \value{
 A character scalar with the name of the organization.

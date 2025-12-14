@@ -16,7 +16,7 @@ devtools::load_all()
 precourse <- targets::tar_read(upcoming_precourse_survey)
 
 # Constants
-course_id <- "adv" # list_course_ids()
+course_id <- "adv" # list_workshop_ids()
 # TODO: Convert this to fetch from the course data files
 instructors <- c("lwjohnst86", "AndersAskeland")
 # Run `just create-group-names` first

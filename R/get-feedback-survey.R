@@ -62,7 +62,7 @@ relocate_session_column <- function(data) {
 
 add_course_date <- function(data) {
   tibble::tibble(
-    course_id = list_course_ids(),
+    course_id = list_workshop_ids(),
     course_name = purrr::map_chr(
       course_id,
       ~ get_course_metadata_field(.x, "name")

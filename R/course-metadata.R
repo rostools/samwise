@@ -17,8 +17,8 @@ read_course_metadata <- function() {
 #' @export
 #'
 #' @examples
-#' list_course_ids()
-list_course_ids <- function() {
+#' list_workshop_ids()
+list_workshop_ids <- function() {
   read_course_metadata() |>
     purrr::map_chr("id") |>
     sort()
@@ -57,7 +57,7 @@ get_course_dates <- function(id) {
 
 #' General purpose function
 #'
-#' @param id The ID of the course, found by running [list_course_ids()].
+#' @param id The ID of the course, found by running [list_workshop_ids()].
 #' @param field The "key" value (field) for the ID of the course, found by running [list_course_metadata_fields()].
 #'
 #' @return A (nested) list.
@@ -68,7 +68,7 @@ get_course_dates <- function(id) {
 #' get_course_metadata_field("intro", "events")
 #' get_course_metadata_field("intro", "date")
 get_course_metadata_field <- function(id, field) {
-  id <- rlang::arg_match(id, list_course_ids())
+  id <- rlang::arg_match(id, list_workshop_ids())
   field <- rlang::arg_match(field, list_course_metadata_fields())
   read_course_metadata() |>
     purrr::keep(~ .x$id == id) |>

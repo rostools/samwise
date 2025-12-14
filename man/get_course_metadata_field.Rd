@@ -7,7 +7,7 @@
 get_course_metadata_field(id, field)
 }
 \arguments{
-\item{id}{The ID of the course, found by running \code{\link[=list_course_ids]{list_course_ids()}}.}
+\item{id}{The ID of the course, found by running \code{\link[=list_workshop_ids]{list_workshop_ids()}}.}
 
 \item{field}{The "key" value (field) for the ID of the course, found by running \code{\link[=list_course_metadata_fields]{list_course_metadata_fields()}}.}
 }

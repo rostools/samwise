@@ -6,7 +6,7 @@
 #' @export
 #'
 admin_create_planning_issue <- function(id) {
-  id <- rlang::arg_match(id, list_course_ids())
+  id <- rlang::arg_match(id, list_workshop_ids())
   repo <- get_course_repo(id)
   course_date <- get_upcoming_course_dates(id)
 

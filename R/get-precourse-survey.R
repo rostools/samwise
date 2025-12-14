@@ -12,7 +12,7 @@
 #' get_precourse_survey("intro")
 #' }
 get_precourse_survey <- function(id) {
-  id <- rlang::arg_match(id, list_course_ids())
+  id <- rlang::arg_match(id, list_workshop_ids())
   id |>
     get_precourse_survey_google_sheet() |>
     tidy_precourse(get_course_dates(id)) |>
@@ -22,7 +22,7 @@ get_precourse_survey <- function(id) {
 # Get survey from Google --------------------------------------------------
 
 get_precourse_survey_google_sheet <- function(id, n_max = Inf) {
-  id <- rlang::arg_match(id, list_course_ids())
+  id <- rlang::arg_match(id, list_workshop_ids())
 
   # Get the Google Sheet ID from the environment variable via `Sys.getenv()`
   survey_id <- switch(

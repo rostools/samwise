@@ -1,6 +1,6 @@
 #' Create a GItHub organization for a course based on a naming pattern of the course's ID.
 #'
-#' @param id The identifier of the course based on [list_course_ids()].
+#' @param id The identifier of the course based on [list_workshop_ids()].
 #'
 #' @returns A character scalar with the name of the organization.
 #' @export

@@ -74,7 +74,7 @@ list(
   # ),
   tar_target(
     name = course_ids,
-    command = list_course_ids()
+    command = list_workshop_ids()
   ),
 
   # Pre-course survey -------------------------------------------------------
