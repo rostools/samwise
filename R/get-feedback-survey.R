@@ -14,12 +14,12 @@ get_feedback_survey <- function() {
     convert_to_long() |>
     drop_missing_responses() |>
     remove_newlines("response") |>
-    add_course_date() |>
+    add_workshop_date() |>
     dplyr::select(-timestamp)
 
   if (!"session_name" %in% names(feedback)) {
     feedback <- feedback |>
-      dplyr::mutate(session_name = "End of course")
+      dplyr::mutate(session_name = "End of workshop")
   }
 
   feedback
@@ -60,44 +60,44 @@ relocate_session_column <- function(data) {
     )
 }
 
-add_course_date <- function(data) {
+add_workshop_date <- function(data) {
   tibble::tibble(
-    course_id = list_workshop_ids(),
-    course_name = purrr::map_chr(
-      course_id,
-      ~ get_course_metadata_field(.x, "name")
+    workshop_id = list_workshop_ids(),
+    workshop_name = purrr::map_chr(
+      workshop_id,
+      ~ get_workshop_metadata_field(.x, "name")
     )
   ) |>
-    dplyr::right_join(data, by = "course_name") |>
+    dplyr::right_join(data, by = "workshop_name") |>
     dplyr::mutate(
-      course_date = purrr::map2_chr(
+      workshop_date = purrr::map2_chr(
         timestamp,
-        course_id,
-        ~ assign_course_date_by_date(
+        workshop_id,
+        ~ assign_workshop_date_by_date(
           .x,
           # In case people submit a few days afterwards.
-          lubridate::as_date(get_course_dates(.y)) + lubridate::days(3)
+          lubridate::as_date(get_workshop_dates(.y)) + lubridate::days(3)
         )
       )
     ) |>
-    # Correct the course date from the assigning function.
+    # Correct the workshop date from the assigning function.
     dplyr::mutate(
-      course_date = lubridate::as_date(course_date) - lubridate::days(3)
+      workshop_date = lubridate::as_date(workshop_date) - lubridate::days(3)
     ) |>
-    dplyr::relocate(course_id, course_date)
+    dplyr::relocate(workshop_id, workshop_date)
 }
 
 convert_to_long <- function(data) {
   data |>
     dplyr::rename(
-      course_name = "Which workshop is the feedback for?",
+      workshop_name = "Which workshop is the feedback for?",
       timestamp = "Timestamp"
     ) |>
     tidyr::pivot_longer(
       cols = -c(
         timestamp,
         date,
-        course_name,
+        workshop_name,
         tidyselect::contains("session is the feedback for")
       ),
       names_to = "question",

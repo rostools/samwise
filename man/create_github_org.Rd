@@ -2,16 +2,16 @@
 % Please edit documentation in R/create-github-org.R
 \name{create_github_org}
 \alias{create_github_org}
-\title{Create a GItHub organization for a course based on a naming pattern of the course's ID.}
+\title{Create a GitHub organization for a workshop.}
 \usage{
 create_github_org(id)
 }
 \arguments{
-\item{id}{The identifier of the course based on \code{\link[=list_workshop_ids]{list_workshop_ids()}}.}
+\item{id}{The identifier of the workshop based on \code{\link[=list_workshop_ids]{list_workshop_ids()}}.}
 }
 \value{
 A character scalar with the name of the organization.
 }
 \description{
-Create a GItHub organization for a course based on a naming pattern of the course's ID.
+Create a GitHub organization for a workshop.
 }

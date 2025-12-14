@@ -1,27 +1,27 @@
 # Import pre-survey data --------------------------------------------------
 
-#' Get the (slightly cleaned) pre-course survey from Google Sheets.
+#' Get the (slightly cleaned) pre-workshop survey from Google Sheets.
 #'
-#' @inheritParams get_course_metadata_field
+#' @inheritParams get_workshop_metadata_field
 #'
 #' @return A [tibble::tibble].
 #' @export
 #'
 #' @examples
 #' \dontrun{
-#' get_precourse_survey("intro")
+#' get_preworkshop_survey("intro")
 #' }
-get_precourse_survey <- function(id) {
+get_preworkshop_survey <- function(id) {
   id <- rlang::arg_match(id, list_workshop_ids())
   id |>
-    get_precourse_survey_google_sheet() |>
-    tidy_precourse(get_course_dates(id)) |>
-    dplyr::mutate(course_id = id, .before = tidyselect::everything())
+    get_preworkshop_survey_google_sheet() |>
+    tidy_preworkshop(get_workshop_dates(id)) |>
+    dplyr::mutate(workshop_id = id, .before = tidyselect::everything())
 }
 
 # Get survey from Google --------------------------------------------------
 
-get_precourse_survey_google_sheet <- function(id, n_max = Inf) {
+get_preworkshop_survey_google_sheet <- function(id, n_max = Inf) {
   id <- rlang::arg_match(id, list_workshop_ids())
 
   # Get the Google Sheet ID from the environment variable via `Sys.getenv()`
@@ -45,7 +45,7 @@ get_precourse_survey_google_sheet <- function(id, n_max = Inf) {
 
 # Tidy up the survey data -------------------------------------------------
 
-tidy_precourse <- function(data, metadata_dates) {
+tidy_preworkshop <- function(data, metadata_dates) {
   data |>
     dplyr::mutate(dplyr::across(
       tidyselect::where(is.list),
@@ -53,7 +53,7 @@ tidy_precourse <- function(data, metadata_dates) {
     )) |>
     dplyr::rename_with(snakecase::to_snake_case) |>
     dplyr::mutate(
-      course_date = assign_course_date_by_date(timestamp, metadata_dates)
+      workshop_date = assign_workshop_date_by_date(timestamp, metadata_dates)
     ) |>
     dplyr::mutate(dplyr::across(
       tidyselect::contains("_perceive_your_skill_"),

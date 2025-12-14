@@ -1,6 +1,6 @@
 #' Create teams and assign learners to them.
 #'
-#' @param data Precourse survey data.
+#' @param data Preworkshop survey data.
 #' @param team_names Character vector that has the names to group into.
 #' @param score_cutoff Point at which to split persons into "low" vs "high" skill (completely arbitrary).
 #'

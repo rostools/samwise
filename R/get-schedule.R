@@ -1,6 +1,6 @@
-#' Get the session schedule for the course.
+#' Get the session schedule for the workshop.
 #'
-#' @inheritParams get_course_metadata_field
+#' @inheritParams get_workshop_metadata_field
 #'
 #' @return A [tibble::tibble].
 #' @export
@@ -11,7 +11,7 @@
 #' get_schedule_sessions("adv")
 get_schedule_sessions <- function(id) {
   id <- rlang::arg_match(id, list_workshop_ids())
-  base_url <- get_course_metadata_field(id = id, field = "url")
+  base_url <- get_workshop_metadata_field(id = id, field = "url")
   schedule_path <- "overview/schedule"
   full_url <- glue::glue("{base_url}/{schedule_path}")
   scraped_page <- rvest::read_html(full_url)

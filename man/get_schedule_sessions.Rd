@@ -2,18 +2,18 @@
 % Please edit documentation in R/get-schedule.R
 \name{get_schedule_sessions}
 \alias{get_schedule_sessions}
-\title{Get the session schedule for the course.}
+\title{Get the session schedule for the workshop.}
 \usage{
 get_schedule_sessions(id)
 }
 \arguments{
-\item{id}{The ID of the course, found by running \code{\link[=list_workshop_ids]{list_workshop_ids()}}.}
+\item{id}{The ID of the workshop, found by running \code{\link[=list_workshop_ids]{list_workshop_ids()}}.}
 }
 \value{
 A \link[tibble:tibble]{tibble::tibble}.
 }
 \description{
-Get the session schedule for the course.
+Get the session schedule for the workshop.
 }
 \examples{
 get_schedule_sessions("intro")

@@ -2,22 +2,22 @@
 % Please edit documentation in R/extract-participant-overview.R
 \name{extract_participant_overview}
 \alias{extract_participant_overview}
-\title{Extract participant overview data from pre-course survey.}
+\title{Extract participant overview data from pre-workshop survey.}
 \usage{
 extract_participant_overview(data)
 }
 \arguments{
-\item{data}{Pre-course survey data.}
+\item{data}{Pre-workshop survey data.}
 }
 \value{
 A \link[tibble:tibble]{tibble::tibble}.
 }
 \description{
-Extract participant overview data from pre-course survey.
+Extract participant overview data from pre-workshop survey.
 }
 \examples{
 \dontrun{
-survey <- get_precourse_survey("adv")
+survey <- get_preworkshop_survey("adv")
 extract_participant_overview(survey)
 }
 }

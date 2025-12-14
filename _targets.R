@@ -19,15 +19,15 @@ tar_source()
 # Force re-running everything
 # targets::tar_destroy()
 
-run_if_course_month_away <- function() {
-  upcoming <- get_upcoming_course()
+run_if_workshop_month_away <- function() {
+  upcoming <- get_upcoming_workshop()
 
   if (is.na(upcoming)) {
     return(FALSE)
   }
 
   closest_date <- upcoming |>
-    get_upcoming_course_dates() |>
+    get_upcoming_workshop_dates() |>
     lubridate::ymd()
 
   dplyr::between(
@@ -41,19 +41,19 @@ run_if_course_month_away <- function() {
 list(
   # Upcoming (soonest) ------------------------------------------------------
   tar_force(
-    name = upcoming_precourse_survey,
-    command = if (!is.na(get_upcoming_course())) {
-      survey <- get_upcoming_course() |>
-        get_precourse_survey()
+    name = upcoming_preworkshop_survey,
+    command = if (!is.na(get_upcoming_workshop())) {
+      survey <- get_upcoming_workshop() |>
+        get_preworkshop_survey()
       if (nrow(survey) > 0) {
         survey <- survey |>
-          dplyr::filter(course_date == max(course_date))
+          dplyr::filter(workshop_date == max(workshop_date))
       }
       survey
     } else {
       NA
     },
-    force = run_if_course_month_away()
+    force = run_if_workshop_month_away()
   ),
   # tar_target(
   #   name = participants_not_complete_survey,
@@ -73,21 +73,21 @@ list(
   #   format = "file"
   # ),
   tar_target(
-    name = course_ids,
+    name = workshop_ids,
     command = list_workshop_ids()
   ),
 
-  # Pre-course survey -------------------------------------------------------
+  # Pre-workshop survey -------------------------------------------------------
   tar_target(
-    name = precourse_surveys,
-    command = get_precourse_survey(course_ids),
-    pattern = map(course_ids),
+    name = preworkshop_surveys,
+    command = get_preworkshop_survey(workshop_ids),
+    pattern = map(workshop_ids),
     iteration = "list"
   ),
   tar_target(
     name = participant_overview,
-    command = extract_participant_overview(precourse_surveys),
-    pattern = map(precourse_surveys),
+    command = extract_participant_overview(preworkshop_surveys),
+    pattern = map(preworkshop_surveys),
     iteration = "list"
   ),
   tar_target(
@@ -96,7 +96,7 @@ list(
       if (!is.null(participant_overview)) {
         participant_overview |>
           dplyr::mutate(type = "overview") |>
-          save_responses_to_csv(c("course_id", "course_date", "type"))
+          save_responses_to_csv(c("workshop_id", "workshop_date", "type"))
       }
     },
     format = "file",
@@ -105,11 +105,11 @@ list(
 
   # Feedback ----------------------------------------------------------------
   tar_target(
-    name = precourse_feedback,
-    command = if (!is.null(precourse_surveys)) {
-      extract_precourse_feedback(precourse_surveys)
+    name = preworkshop_feedback,
+    command = if (!is.null(preworkshop_surveys)) {
+      extract_preworkshop_feedback(preworkshop_surveys)
     },
-    pattern = map(precourse_surveys),
+    pattern = map(preworkshop_surveys),
     iteration = "list"
   ),
   tar_target(
@@ -136,17 +136,17 @@ list(
       list(
         data = feedback_survey_overall |>
           dplyr::mutate(type = "feedback-overall"),
-        columns = c("course_id", "course_date", "type")
+        columns = c("workshop_id", "workshop_date", "type")
       ),
       list(
         data = feedback_survey_quantitative |>
           dplyr::mutate(type = "feedback-quantitative"),
-        columns = c("course_id", "course_date", "type")
+        columns = c("workshop_id", "workshop_date", "type")
       ),
       list(
         data = feedback_survey_sessions |>
           dplyr::mutate(type = "feedback-sessions"),
-        columns = c("course_id", "course_date", "type", "date")
+        columns = c("workshop_id", "workshop_date", "type", "date")
       )
     )
   ),
@@ -169,13 +169,13 @@ list(
   tar_target(
     name = saved_preworkshop_feedback_paths,
     command = {
-      if (!is.null(precourse_feedback)) {
-        precourse_feedback |>
-          dplyr::mutate(type = "feedback-precourse") |>
-          save_responses_to_csv(c("course_id", "course_date", "type"))
+      if (!is.null(preworkshop_feedback)) {
+        preworkshop_feedback |>
+          dplyr::mutate(type = "feedback-preworkshop") |>
+          save_responses_to_csv(c("workshop_id", "workshop_date", "type"))
       }
     },
     format = "file",
-    pattern = map(precourse_feedback),
+    pattern = map(preworkshop_feedback),
   )
 )

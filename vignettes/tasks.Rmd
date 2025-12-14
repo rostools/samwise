@@ -1,5 +1,5 @@
 ---
-title: "Admin tasks for the R courses"
+title: "Admin tasks for the R workshops"
 ---
 
 ```{r setup, include = FALSE}
@@ -13,26 +13,26 @@ knitr::opts_chunk$set(
 )
 library(tidyverse)
 devtools::load_all()
-precourse <- targets::tar_read(upcoming_precourse_survey)
+preworkshop <- targets::tar_read(upcoming_preworkshop_survey)
 
 # Constants
-course_id <- "adv" # list_workshop_ids()
-# TODO: Convert this to fetch from the course data files
+workshop_id <- "adv" # list_workshop_ids()
+# TODO: Convert this to fetch from the workshop data files
 instructors <- c("lwjohnst86", "AndersAskeland")
 # Run `just create-group-names` first
 team_names <- readr::read_lines(here::here("_ignore/group-names.txt"))
 ```
 
-# Pre-course admin tasks
+# Pre-workshop admin tasks
 
 ## Who didn't finish survey
 
 Check those who didn't finish the survey yet. Do need the official list
-to compare with, which can be deleted after the course.
+to compare with, which can be deleted after the workshop.
 
 ```{r, eval=FALSE}
 participants <- check_who_not_finish_survey(
-  precourse,
+  preworkshop,
   readr::read_csv(here::here("_ignore/official-participant-list.csv"))
 )
 nrow(participants)
@@ -54,10 +54,10 @@ copy_reminder_email_text()
 Quickly check whether everyone has their setups done correctly.
 
 ```{r}
-cat(check_setup(precourse), file = here::here("_ignore/setup.txt"))
+cat(check_setup(preworkshop), file = here::here("_ignore/setup.txt"))
 
-if (get_upcoming_course() %in% c("inter", "adv")) {
-  cat(check_project_setup(precourse), file = here::here("_ignore/project-setup.txt"))
+if (get_upcoming_workshop() %in% c("inter", "adv")) {
+  cat(check_project_setup(preworkshop), file = here::here("_ignore/project-setup.txt"))
 }
 ```
 
@@ -66,8 +66,8 @@ if (get_upcoming_course() %in% c("inter", "adv")) {
 List those who have problems and print their setups.
 
 ```{r}
-problems <- precourse |>
-  check_precourse_problems()
+problems <- preworkshop |>
+  check_preworkshop_problems()
 ```
 
 ### Description of the problems
@@ -91,7 +91,7 @@ problems |>
 ### Setup of their projects
 
 ```{r, results='asis'}
-if (course_id %in% c("inter", "adv")) {
+if (workshop_id %in% c("inter", "adv")) {
   problems |>
     check_project_setup() |>
     cat()
@@ -99,7 +99,7 @@ if (course_id %in% c("inter", "adv")) {
 ```
 
 ```{r}
-precourse |>
+preworkshop |>
   select(contains(c("full_name", "city"))) |>
   rename_with(~ c("name", "city")) |>
   pwalk(\(name, city) {
@@ -126,7 +126,7 @@ problems |>
 Now we need to assign the learners to the groups.
 
 ```{r}
-create_github_org(course_id)
+create_github_org(workshop_id)
 ```
 
 ```{r}
@@ -134,7 +134,7 @@ create_github_org(course_id)
 org_name <- "r-cubed-advanced-2025-12"
 gh_team_names <- expand_grid(team_names, num = 1:2) |>
   glue::glue_data("{team_names}-{num}")
-teams <- create_teams(precourse, gh_team_names)
+teams <- create_teams(preworkshop, gh_team_names)
 setup_team_projects(teams, org_name)
 create_gh_instructor_team(instructors, org_name)
 ```

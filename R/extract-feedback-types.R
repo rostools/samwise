@@ -28,11 +28,14 @@ extract_feedback_quantitative <- function(data) {
   data |>
     dplyr::filter(stringr::str_detect(question, "Please complete these .*")) |>
     dplyr::mutate(
-      statement = stringr::str_remove(question, "Please .* course. ") |>
+      statement = stringr::str_remove(
+        question,
+        "Please .* (course|workshop). "
+      ) |>
         stringr::str_remove_all("\\[|\\]")
     ) |>
-    dplyr::count(course_id, course_date, statement, response) |>
-    dplyr::arrange(course_id, course_date)
+    dplyr::count(workshop_id, workshop_date, statement, response) |>
+    dplyr::arrange(workshop_id, workshop_date)
 }
 
 #' @describeIn extract_feedback Extract and tidy up the overall comments
@@ -42,13 +45,17 @@ extract_feedback_overall <- function(data) {
   data |>
     dplyr::rename_with(~ stringr::str_replace(.x, "^day$", "session_name")) |>
     dplyr::filter(
-      session_name %in% c("Day 3", "End of course"),
+      session_name %in% c("Day 3", "End of course", "End of workshop"),
       stringr::str_detect(
         question,
         ".*any other (general )?(comments or feedback|feedback or comments).*"
       )
     ) |>
-    dplyr::select(-question, -session_name, -dplyr::contains("course_name")) |>
+    dplyr::select(
+      -question,
+      -session_name,
+      -dplyr::contains("workshop_name")
+    ) |>
     dplyr::filter(stringr::str_detect(
       response,
       "^No$",
@@ -73,6 +80,6 @@ extract_feedback_sessions <- function(data) {
     ) |>
     # Drop any duplicate comments (like repeats of "great!")
     dplyr::distinct() |>
-    dplyr::select(-dplyr::contains("course_name")) |>
+    dplyr::select(-dplyr::contains("workshop_name")) |>
     dplyr::arrange(session_name, question, response)
 }

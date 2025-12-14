@@ -2,7 +2,7 @@
 % Please edit documentation in R/get-versions.R
 \name{get_allowed_rstudio_versions}
 \alias{get_allowed_rstudio_versions}
-\title{Get a list of the allowed RStudio versions for the rostools courses.}
+\title{Get a list of the allowed RStudio versions for the rostools workshops.}
 \usage{
 get_allowed_rstudio_versions()
 }

@@ -7,7 +7,7 @@
 create_teams(data, group_names, score_cutoff = 3)
 }
 \arguments{
-\item{data}{Precourse survey data.}
+\item{data}{Preworkshop survey data.}
 
 \item{score_cutoff}{Point at which to split persons into "low" vs "high" skill (completely arbitrary).}
 

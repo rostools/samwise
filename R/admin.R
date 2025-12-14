@@ -1,18 +1,18 @@
-#' Post a Course Planning issue on the course repo.
+#' Post a planning issue on the repo.
 #'
-#' @inheritParams get_course_metadata_field
+#' @inheritParams get_workshop_metadata_field
 #'
 #' @return A GitHub API response. Used for the side effects of posting an issue.
 #' @export
 #'
 admin_create_planning_issue <- function(id) {
   id <- rlang::arg_match(id, list_workshop_ids())
-  repo <- get_course_repo(id)
-  course_date <- get_upcoming_course_dates(id)
+  repo <- get_workshop_repo(id)
+  workshop_date <- get_upcoming_workshop_dates(id)
 
-  if (length(course_date) == 0) {
+  if (length(workshop_date) == 0) {
     cli::cli_abort(
-      "There are no upcoming dates for this course. Are you sure course {.val id} is the correct course and the metadata has been updated?"
+      "There are no upcoming dates for this workshop. Are you sure workshop {.val id} is the correct workshop and the metadata has been updated?"
     )
   }
 
@@ -23,19 +23,19 @@ admin_create_planning_issue <- function(id) {
     readr::read_lines(template_path, skip = 7),
     data = list(
       repo_name = repo,
-      course_date = course_date,
-      instructors_precourse_meeting = stamp_format(
-        as.Date(course_date) - lubridate::days(14)
+      workshop_date = workshop_date,
+      instructors_preworkshop_meeting = stamp_format(
+        as.Date(workshop_date) - lubridate::days(14)
       ),
-      tasks_start_date = stamp_format(as.Date(course_date) - months(1)),
+      tasks_start_date = stamp_format(as.Date(workshop_date) - months(1)),
       tasks_remind_date = stamp_format(
-        as.Date(course_date) - lubridate::days(8)
+        as.Date(workshop_date) - lubridate::days(8)
       ),
       tasks_check_end_date = stamp_format(
-        as.Date(course_date) - lubridate::days(5)
+        as.Date(workshop_date) - lubridate::days(5)
       ),
       tasks_prep_end_date = stamp_format(
-        as.Date(course_date) - lubridate::days(3)
+        as.Date(workshop_date) - lubridate::days(3)
       ),
       session_schedule_table = planning_issue_sessions_table(id) |>
         stringr::str_c(collapse = "\n")
@@ -44,11 +44,11 @@ admin_create_planning_issue <- function(id) {
 
   gh_api_results <- ghclass::issue_create(
     repo = paste0("rostools/", repo),
-    title = paste0("Course planning and details - ", course_date),
+    title = paste0("Workshop planning and details: ", workshop_date),
     body = paste0(issue_description, collapse = "\n")
   )
 
-  return(invisible(gh_api_results))
+  invisible(gh_api_results)
 }
 
 planning_issue_sessions_table <- function(id) {

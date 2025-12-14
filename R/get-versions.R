@@ -1,4 +1,4 @@
-#' Get a list of the allowed R versions for the rostools courses.
+#' Get a list of the allowed R versions for the rostools workshops.
 #'
 #' The allowed versions are those that are at maximum a year old from today,
 #' sorted by the oldest first.
@@ -16,7 +16,7 @@ get_allowed_r_versions <- function() {
     dplyr::pull(version)
 }
 
-#' Get a list of the allowed RStudio versions for the rostools courses.
+#' Get a list of the allowed RStudio versions for the rostools workshops.
 #'
 #' The versions are those that are at a maximum one year old from today,
 #' sorted by the oldest first.

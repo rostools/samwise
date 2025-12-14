@@ -36,10 +36,10 @@ copy_reminder_email_text <- function() {
 
 # Check who has problems --------------------------------------------------
 
-check_precourse_problems <- function(data) {
+check_preworkshop_problems <- function(data) {
   data |>
     dplyr::filter(
-      did_you_encounter_any_problems_during_the_pre_course_tasks == "Yes"
+      did_you_encounter_any_problems_during_the_pre_workshop_tasks == "Yes"
     ) |>
     dplyr::select(tidyselect::contains(c(
       "full_name",

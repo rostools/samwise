@@ -10,7 +10,7 @@
 #' @return A logical vector.
 NULL
 
-#' Assign the date of the course that the survey response comes from.
+#' Assign the date of the workshop that the survey response comes from.
 #'
 #' @param date The date of the survey response.
 #'
@@ -18,13 +18,13 @@ NULL
 #' @keywords internal
 #'
 #' @examples
-#' assign_course_date_by_date(
+#' assign_workshop_date_by_date(
 #'   c("2020-06-20", "2019-06-10", "2021-06-10"),
-#'   get_course_dates("intro")
+#'   get_workshop_dates("intro")
 #' )
-assign_course_date_by_date <- function(date, metadata_dates) {
+assign_workshop_date_by_date <- function(date, metadata_dates) {
   metadata_dates <- as.character(metadata_dates)
-  dates_between_courses <- lubridate::interval(
+  dates_between_workshops <- lubridate::interval(
     c("2018-01-01", metadata_dates),
     c(metadata_dates, as.character(lubridate::today() + lubridate::weeks(4)))
   )
@@ -32,18 +32,18 @@ assign_course_date_by_date <- function(date, metadata_dates) {
     lubridate::as_date() |>
     lubridate::ymd()
 
-  course_date <- date |>
+  date <- date |>
     purrr::map_chr(
       \(date) {
         if (date %in% metadata_dates) {
           stringr::str_subset(metadata_dates, as.character(date))
         } else {
-          metadata_dates[which(date %within% dates_between_courses)]
+          metadata_dates[which(date %within% dates_between_workshops)]
         }
       }
     )
-  if (length(course_date) == 0) {
-    course_date <- NA_integer_
+  if (length(date) == 0) {
+    date <- NA_character_
   }
-  course_date
+  date
 }

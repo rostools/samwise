@@ -1,4 +1,4 @@
-course:
+workshop:
   - id: gh_intro
     name: GitHub Intro
     url: https://github-intro.rostools.org/

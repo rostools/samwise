@@ -29,24 +29,15 @@ create_team_project <- function(
   gert::git_push()
 }
 
-#' Setup all team repositories to be ready for the assignment.
-#'
-#' @param gh_org The name of the course's GitHub organizaton, usually in the
-#'   form of `NAME-YYYY-MM`.
-#'
-#' @return Used for the side effect of selecting on all repos and setting up
-#'   projects for them.
-#' @export
-#'
 setup_team_repos <- function(gh_org) {
-  course_team_repos <- ghclass::org_repos(gh_org)
-  course_team_repos |>
+  team_repos <- ghclass::org_repos(gh_org)
+  team_repos |>
     purrr::walk(create_team_project)
 }
 
 clone_team_repos <- function(gh_org) {
-  course_team_repos <- ghclass::org_repos(gh_org)
-  course_team_repos |>
+  team_repos <- ghclass::org_repos(gh_org)
+  team_repos |>
     purrr::walk(clone_project_repo)
 }
 
@@ -72,8 +63,8 @@ pull_project_repo <- function(
 }
 
 pull_team_repos <- function(gh_org) {
-  course_team_repos <- ghclass::org_repos(gh_org)
-  course_team_repos |>
+  team_repos <- ghclass::org_repos(gh_org)
+  team_repos |>
     purrr::walk(pull_project_repo)
 }
 
@@ -81,8 +72,13 @@ render_team_qmds <- function(
   gh_org,
   local_directory = fs::path("~", "Desktop")
 ) {
-  course_team_repos <- ghclass::org_repos(gh_org)
-  qmd_path <- fs::path(local_directory, course_team_repos, "docs", "report.qmd")
+  team_repos <- ghclass::org_repos(gh_org)
+  qmd_path <- fs::path(
+    local_directory,
+    team_repos,
+    "docs",
+    "report.qmd"
+  )
   qmd_path |>
     purrr::walk(
       ~ {

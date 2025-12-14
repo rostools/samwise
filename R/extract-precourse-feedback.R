@@ -1,4 +1,4 @@
-#' Extract and tidy up the pre-course feedback data.
+#' Extract and tidy up the pre-workshop feedback data.
 #'
 #' @inheritParams extract_participant_overview
 #'
@@ -7,19 +7,19 @@
 #'
 #' @examples
 #' \dontrun{
-#' survey <- get_precourse_survey("intro")
-#' extract_precourse_feedback(survey)
+#' survey <- get_preworkshop_survey("intro")
+#' extract_preworkshop_feedback(survey)
 #' }
-extract_precourse_feedback <- function(data) {
+extract_preworkshop_feedback <- function(data) {
   if (nrow(data) == 0) {
     cli::cli_warn("No data found in the pre-workshop survey.")
     return(NULL)
   }
   data |>
-    anonymize_precourse() |>
+    anonymize_preworkshop() |>
     dplyr::select(
-      course_id,
-      course_date,
+      .data$workshop_id,
+      .data$workshop_date,
       tidyselect::matches("worked.*well"),
       tidyselect::matches("could.*improved"),
       tidyselect::matches("describe.*problems"),
@@ -27,14 +27,19 @@ extract_precourse_feedback <- function(data) {
       tidyselect::matches("why.*attend")
     ) |>
     tidyr::pivot_longer(
-      -c(course_id, course_date),
+      -c(.data$workshop_id, .data$workshop_date),
       names_to = "question",
       values_to = "response"
     ) |>
     remove_newlines("response") |>
-    dplyr::arrange(course_date, question, response) |>
-    join_original_column_names(id = unique(data$course_id)) |>
+    dplyr::arrange(.data$workshop_date, .data$question, .data$response) |>
+    join_original_column_names(id = unique(data$workshop_id)) |>
     tidyr::drop_na() |>
-    dplyr::relocate(course_id, course_date, question, response) |>
+    dplyr::relocate(
+      .data$workshop_id,
+      .data$workshop_date,
+      .data$question,
+      .data$response
+    ) |>
     drop_missing_responses()
 }

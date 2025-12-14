@@ -1,6 +1,6 @@
-#' Create a GItHub organization for a course based on a naming pattern of the course's ID.
+#' Create a GitHub organization for a workshop.
 #'
-#' @param id The identifier of the course based on [list_workshop_ids()].
+#' @param id The identifier of the workshop based on [list_workshop_ids()].
 #'
 #' @returns A character scalar with the name of the organization.
 #' @export
@@ -25,7 +25,7 @@ create_github_org <- function(id) {
 }
 
 create_github_org_name <- function(id) {
-  course_date <- get_upcoming_course_dates(id)[1]
-  course_name <- get_course_repo(id)
-  glue::glue("{course_name}-{stringr::str_sub(course_date, end = 7)}")
+  date <- get_upcoming_workshop_dates(id)[1]
+  name <- get_workshop_repo(id)
+  glue::glue("{name}-{stringr::str_sub(date, end = 7)}")
 }

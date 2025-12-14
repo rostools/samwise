@@ -1,13 +1,13 @@
-#' Extract participant overview data from pre-course survey.
+#' Extract participant overview data from pre-workshop survey.
 #'
-#' @param data Pre-course survey data.
+#' @param data Pre-workshop survey data.
 #'
 #' @return A [tibble::tibble].
 #' @export
 #'
 #' @examples
 #' \dontrun{
-#' survey <- get_precourse_survey("adv")
+#' survey <- get_preworkshop_survey("adv")
 #' extract_participant_overview(survey)
 #' }
 extract_participant_overview <- function(data) {
@@ -16,10 +16,10 @@ extract_participant_overview <- function(data) {
     return(NULL)
   }
   data |>
-    anonymize_precourse() |>
+    anonymize_preworkshop() |>
     dplyr::select(
-      course_id,
-      course_date,
+      workshop_id,
+      workshop_date,
       tidyselect::contains("perceive"),
       tidyselect::contains("currently_use"),
       tidyselect::contains("gender"),
@@ -30,27 +30,27 @@ extract_participant_overview <- function(data) {
       tidyselect::contains("code_of_conduct")
     ) |>
     tidyr::pivot_longer(
-      -c(course_id, course_date),
+      -c(workshop_id, workshop_date),
       names_to = "question",
       values_to = "response"
     ) |>
     remove_newlines("response") |>
     dplyr::count(
-      course_id,
-      course_date,
+      workshop_id,
+      workshop_date,
       question,
       response,
       name = "count"
     ) |>
-    dplyr::arrange(course_date, question, response, count) |>
-    join_original_column_names(id = unique(data$course_id)) |>
+    dplyr::arrange(workshop_date, question, response, count) |>
+    join_original_column_names(id = unique(data$workshop_id)) |>
     tidyr::drop_na() |>
-    dplyr::relocate(course_id, course_date, question, response, count)
+    dplyr::relocate(workshop_id, workshop_date, question, response, count)
 }
 
 # Helpers -----------------------------------------------------------------
 
-anonymize_precourse <- function(data) {
+anonymize_preworkshop <- function(data) {
   data |>
     dplyr::select(
       -tidyselect::contains("email"),
@@ -60,14 +60,14 @@ anonymize_precourse <- function(data) {
     )
 }
 
-get_precourse_survey_column_names <- function(id) {
-  column_names <- get_precourse_survey_google_sheet(id, n_max = 0)
+get_preworkshop_survey_column_names <- function(id) {
+  column_names <- get_preworkshop_survey_google_sheet(id, n_max = 0)
   names(column_names)
 }
 
 join_original_column_names <- function(data, id) {
   tibble::tibble(
-    original = get_precourse_survey_column_names(id),
+    original = get_preworkshop_survey_column_names(id),
     converted = snakecase::to_snake_case(original)
   ) |>
     dplyr::right_join(
