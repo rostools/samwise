@@ -25,7 +25,7 @@ create_path_from_columns <- function(columns) {
   columns |>
     as.list() |>
     purrr::pmap(fs::path) |>
-    purrr::map_chr(~ usethis::proj_path("data", "surveys", .x))
+    purrr::map_chr(~ usethis::proj_path("inst", "extdata", "surveys", .x))
 }
 
 save_responses_to_csv <- function(data, columns) {
