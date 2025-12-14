@@ -1,6 +1,6 @@
 [files]
 extend-exclude = [
-  "data/surveys/*",
+  "inst/extdata/surveys/*",
   "_targets/meta/*",
   "_targets/.gitignore"
 ]
