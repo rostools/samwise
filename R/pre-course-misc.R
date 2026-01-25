@@ -23,6 +23,11 @@ create_team_project <- function(
   usethis::local_project(project_folder)
   rlang::catch_cnd(fs::file_delete(fs::path(project_folder, ".gitignore")))
   prodigenr::setup_project(project_folder)
+  usethis::use_git_ignore("data/")
+  readr::read_lines("DESCRIPTION") |>
+    # To avoid merge conflicts, so set a fixed ProjectId
+    append("ProjectId: 7144761b-281f-458f-b7bf-44fd33c944ea") |>
+    readr::write_lines("DESCRIPTION")
   gert::git_status()$file |>
     gert::git_add()
   gert::git_commit("Setup project")
