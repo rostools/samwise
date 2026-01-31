@@ -43,7 +43,7 @@ extract_participant_overview <- function(data) {
       name = "count"
     ) |>
     dplyr::arrange(workshop_date, question, response, count) |>
-    join_original_column_names(id = unique(data$workshop_id)) |>
+    join_original_column_names() |>
     tidyr::drop_na() |>
     dplyr::relocate(workshop_id, workshop_date, question, response, count)
 }
@@ -60,14 +60,14 @@ anonymize_preworkshop <- function(data) {
     )
 }
 
-get_preworkshop_survey_column_names <- function(id) {
-  column_names <- get_preworkshop_survey_google_sheet(id, n_max = 0)
+get_preworkshop_survey_column_names <- function() {
+  column_names <- get_preworkshop_survey_google_sheet(n_max = 0)
   names(column_names)
 }
 
-join_original_column_names <- function(data, id) {
+join_original_column_names <- function(data) {
   tibble::tibble(
-    original = get_preworkshop_survey_column_names(id),
+    original = get_preworkshop_survey_column_names(),
     converted = snakecase::to_snake_case(original)
   ) |>
     dplyr::right_join(

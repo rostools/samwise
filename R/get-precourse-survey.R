@@ -2,37 +2,24 @@
 
 #' Get the (slightly cleaned) pre-workshop survey from Google Sheets.
 #'
-#' @inheritParams get_workshop_metadata_field
-#'
 #' @return A [tibble::tibble].
 #' @export
 #'
 #' @examples
 #' \dontrun{
-#' get_preworkshop_survey("intro")
+#' get_preworkshop_survey()
 #' }
-get_preworkshop_survey <- function(id) {
-  id <- rlang::arg_match(id, list_workshop_ids())
-  id |>
-    get_preworkshop_survey_google_sheet() |>
-    tidy_preworkshop(get_workshop_dates(id)) |>
-    dplyr::mutate(workshop_id = id, .before = tidyselect::everything())
+get_preworkshop_survey <- function() {
+  get_preworkshop_survey_google_sheet() |>
+    tidy_preworkshop()
 }
 
 # Get survey from Google --------------------------------------------------
 
-get_preworkshop_survey_google_sheet <- function(id, n_max = Inf) {
-  id <- rlang::arg_match(id, list_workshop_ids())
-
+get_preworkshop_survey_google_sheet <- function(n_max = Inf) {
   # Get the Google Sheet ID from the environment variable via `Sys.getenv()`
-  survey_id <- switch(
-    id,
-    gh_intro = "GH_INTRO_PRE_SURVEY_ID",
-    intro = "INTRO_PRE_SURVEY_ID",
-    inter = "INTERMEDIATE_PRE_SURVEY_ID",
-    adv = "ADVANCED_PRE_SURVEY_ID"
-  )
-  survey_id <- Sys.getenv(survey_id)
+  survey_id <- Sys.getenv("PREWORKSHOP_SURVEY_ID")
+
   if (survey_id == "") {
     cli::cli_abort(
       "{.fn Sys.genenv} can't find the Google Sheet ID, do you have an {.val .Renviron} set up with the ID?"
@@ -45,15 +32,36 @@ get_preworkshop_survey_google_sheet <- function(id, n_max = Inf) {
 
 # Tidy up the survey data -------------------------------------------------
 
-tidy_preworkshop <- function(data, metadata_dates) {
+tidy_preworkshop <- function(data) {
+  workshop_names <- tibble::tibble(
+    workshop_id = stringr::str_subset(
+      list_workshop_ids(),
+      negate = TRUE
+    ),
+    workshop_name = purrr::map_chr(
+      workshop_id,
+      ~ get_workshop_metadata_field(.x, "name")
+    )
+  )
+
   data |>
     dplyr::mutate(dplyr::across(
       tidyselect::where(is.list),
       ~ purrr::map_chr(.x, as.character)
     )) |>
+    dplyr::rename(workshop_name = "Which workshop is this for?") |>
     dplyr::rename_with(snakecase::to_snake_case) |>
+    dplyr::left_join(workshop_names, by = "workshop_name") |>
     dplyr::mutate(
-      workshop_date = assign_workshop_date_by_date(timestamp, metadata_dates)
+      workshop_date = purrr::map2_chr(
+        timestamp,
+        workshop_id,
+        ~ assign_workshop_date_by_date(
+          .x,
+          # In case people submit a few days afterwards.
+          lubridate::as_date(get_workshop_dates(.y)) + lubridate::days(10)
+        )
+      )
     ) |>
     dplyr::mutate(dplyr::across(
       tidyselect::contains("_perceive_your_skill_"),

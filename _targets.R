@@ -43,8 +43,7 @@ list(
   tar_force(
     name = upcoming_preworkshop_survey,
     command = if (!is.na(get_upcoming_workshop())) {
-      survey <- get_upcoming_workshop() |>
-        get_preworkshop_survey()
+      survey <- get_preworkshop_survey()
       if (nrow(survey) > 0) {
         survey <- survey |>
           dplyr::filter(workshop_date == max(workshop_date))
@@ -72,23 +71,15 @@ list(
   #   command = ,
   #   format = "file"
   # ),
-  tar_target(
-    name = workshop_ids,
-    command = list_workshop_ids()
-  ),
 
   # Pre-workshop survey -------------------------------------------------------
   tar_target(
     name = preworkshop_surveys,
-    command = get_preworkshop_survey(workshop_ids),
-    pattern = map(workshop_ids),
-    iteration = "list"
+    command = get_preworkshop_survey()
   ),
   tar_target(
     name = participant_overview,
-    command = extract_participant_overview(preworkshop_surveys),
-    pattern = map(preworkshop_surveys),
-    iteration = "list"
+    command = extract_participant_overview(preworkshop_surveys)
   ),
   tar_target(
     name = saved_participant_overview,
@@ -99,8 +90,7 @@ list(
           save_responses_to_csv(c("workshop_id", "workshop_date", "type"))
       }
     },
-    format = "file",
-    pattern = map(participant_overview)
+    format = "file"
   ),
 
   # Feedback ----------------------------------------------------------------
@@ -108,9 +98,7 @@ list(
     name = preworkshop_feedback,
     command = if (!is.null(preworkshop_surveys)) {
       extract_preworkshop_feedback(preworkshop_surveys)
-    },
-    pattern = map(preworkshop_surveys),
-    iteration = "list"
+    }
   ),
   tar_target(
     name = feedback_survey,
@@ -176,6 +164,6 @@ list(
       }
     },
     format = "file",
-    pattern = map(preworkshop_feedback),
+    pattern = map(preworkshop_feedback)
   )
 )

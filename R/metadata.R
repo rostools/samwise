@@ -25,7 +25,9 @@ read_workshop_metadata <- function() {
 list_workshop_ids <- function() {
   read_workshop_metadata() |>
     purrr::map_chr("id") |>
-    sort()
+    sort() |>
+    # TODO: Only need for now to pull from general pre-workshop survey
+    append("general")
 }
 
 #' List all the metadata fields available in the first-level for each workshop.

@@ -18,7 +18,7 @@ extract_preworkshop_feedback <- function(data) {
   data |>
     anonymize_preworkshop() |>
     dplyr::select(
-      .data$workshop_id,
+      "workshop_id",
       .data$workshop_date,
       tidyselect::matches("worked.*well"),
       tidyselect::matches("could.*improved"),
@@ -33,7 +33,7 @@ extract_preworkshop_feedback <- function(data) {
     ) |>
     remove_newlines("response") |>
     dplyr::arrange(.data$workshop_date, .data$question, .data$response) |>
-    join_original_column_names(id = unique(data$workshop_id)) |>
+    join_original_column_names() |>
     tidyr::drop_na() |>
     dplyr::relocate(
       .data$workshop_id,
