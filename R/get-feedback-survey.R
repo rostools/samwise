@@ -64,6 +64,7 @@ add_workshop_date <- function(data) {
   tibble::tibble(
     workshop_id = stringr::str_subset(
       list_workshop_ids(),
+      "general",
       negate = TRUE
     ),
     workshop_name = purrr::map_chr(

@@ -36,6 +36,7 @@ tidy_preworkshop <- function(data) {
   workshop_names <- tibble::tibble(
     workshop_id = stringr::str_subset(
       list_workshop_ids(),
+      "general",
       negate = TRUE
     ),
     workshop_name = purrr::map_chr(
@@ -70,12 +71,12 @@ tidy_preworkshop <- function(data) {
 }
 
 skills_df <- tibble::tribble(
-  ~number , ~text                   ,
-  "1"     , "Beginner"              ,
-  "2"     , "Beginner-Intermediate" ,
-  "3"     , "Intermediate"          ,
-  "4"     , "Intermediate-Advanced" ,
-  "5"     , "Advanced"
+  ~number, ~text,
+  "1", "Beginner",
+  "2", "Beginner-Intermediate",
+  "3", "Intermediate",
+  "4", "Intermediate-Advanced",
+  "5", "Advanced"
 )
 
 tidy_cols_skills_to_character <- function(x) {
