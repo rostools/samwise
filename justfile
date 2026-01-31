@@ -9,7 +9,7 @@ build: install-deps style check-spelling document install
 # Install package dependencies
 install-deps:
   #!/usr/bin/Rscript
-  pak::pak(ask = FALSE)
+  pak::pak(ask = FALSE, upgrade = TRUE)
 
 # Install the package and its dependencies
 install:
