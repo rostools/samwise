@@ -1,0 +1,93 @@
+session_name,question,response
+Dependency management for smoother collaboration,could be improved for,"A few of the questions were a bit unclear. E.g., updating of readme files in folders, as we haven't used these parts yet."
+Dependency management for smoother collaboration,could be improved for,A more comprehensive introduction to the pak package to ensure everyone follows the idea. Then again could be because i havn't attended the intermediate course first
+Dependency management for smoother collaboration,could be improved for,Clearer introduction to README.md in the different folders
+Dependency management for smoother collaboration,could be improved for,I don't have suggestions right now.
+Dependency management for smoother collaboration,could be improved for,I think this whole session (including intro) is taking a very large amount of time and could be faster maybe :)
+Dependency management for smoother collaboration,could be improved for,I was out of time for the last part of the session.
+Dependency management for smoother collaboration,could be improved for,I was satisfied overall. For now everything is optimal.
+Dependency management for smoother collaboration,could be improved for,"In order to turn back to these notes in the future, it would be nice to have a simplified block of code call with very brief description  of the code to replicate in future projects. Also, I would love the course website in PDF format."
+Dependency management for smoother collaboration,could be improved for,"It felt like a bit much to have to read through the 15.1 reading exercise again, when we also read it before the course"
+Dependency management for smoother collaboration,could be improved for,Kind-of repetitive with pre-workshop tasks
+Dependency management for smoother collaboration,could be improved for,"Mabye add to the info mail, that you should definitely bring you own headphones, so that you can lisen to the read through selections IF you are dyslexic : )"
+Dependency management for smoother collaboration,could be improved for,Nothing
+Dependency management for smoother collaboration,could be improved for,Nothing :)
+Dependency management for smoother collaboration,could be improved for,Nothing I have noted
+Dependency management for smoother collaboration,could be improved for,Nothing other than remembering the correct order of the tasks
+Dependency management for smoother collaboration,could be improved for,Nothing:)
+Dependency management for smoother collaboration,could be improved for,Quite a lot of repetition from previous courses
+Dependency management for smoother collaboration,could be improved for,Some exercises were a bit slow and required much less time than what was allocated.
+Dependency management for smoother collaboration,could be improved for,The Git-hub setup was problematic - perhaps state in the pre-workshop about the expired tokens for us having them before and who is not very techy to figure it out ourselves.
+Dependency management for smoother collaboration,could be improved for,"The editting of the readme files was slightly confusing. It would make sense to do for a projekt where I had an overview and knew the files. However, the conceptual idea is clear and well communicated. But the actual task was slightly arbitrary and didn't need to take long."
+Dependency management for smoother collaboration,could be improved for,To much repetition from last course
+Dependency management for smoother collaboration,could be improved for,a little more information about what the things we do in r means/does in the code along parts.
+Dependency management for smoother collaboration,could be improved for,maybe go through a 'template' project folder and subfolders to get to know these
+Dependency management for smoother collaboration,worked well for,Clear explanation of the gaps from the earlier courses
+Dependency management for smoother collaboration,worked well for,Codealongs
+Dependency management for smoother collaboration,worked well for,Following clearly each step in this session as well as understanding the importance of the material covered.
+Dependency management for smoother collaboration,worked well for,Good explanations and exercises - easy to follow and easy to get help when needed
+Dependency management for smoother collaboration,worked well for,"Good flow, easy to follow, help was provided when needed"
+Dependency management for smoother collaboration,worked well for,Good introduction and setting up R-project with dependencies and Github connection
+Dependency management for smoother collaboration,worked well for,Good to have everything setup properly before starting
+Dependency management for smoother collaboration,worked well for,I liked the excercises where we worked independently
+Dependency management for smoother collaboration,worked well for,I think everything worked well
+Dependency management for smoother collaboration,worked well for,Intro session with standing-up answers
+Dependency management for smoother collaboration,worked well for,It works very well with the instructors giving help and the hats system. It was also a good reading about the things before getting them explained. It was nice with the standing up excercise in the middle.
+Dependency management for smoother collaboration,worked well for,Love the hatsGood with the read through.
+Dependency management for smoother collaboration,worked well for,"Slow and efficient coding. Very easy to follow, good as a nice startup session."
+Dependency management for smoother collaboration,worked well for,The code along and explanaitions of what happens and why
+Dependency management for smoother collaboration,worked well for,"The combination of different learning styles, so there were small talks/lectures, reading, code-alongs and exercises. This breaks up the class really nicely as you don't end up falling asleep from doing the same thing over and over again."
+Dependency management for smoother collaboration,worked well for,"The content was on point, and the mix of reading, then speaking, then doing worked really well"
+Dependency management for smoother collaboration,worked well for,"The exercises and having the material online, so I could read through if there was something I didn't catch."
+Dependency management for smoother collaboration,worked well for,The focus on concepts rather than coding. The hats. The mix of talk and written materials
+Dependency management for smoother collaboration,worked well for,The reading and the conceptual ideas.
+Dependency management for smoother collaboration,worked well for,The session was dynamic and we got help very fast whenever we needed it.
+Dependency management for smoother collaboration,worked well for,The why are we even here presentation was niceThe hat system is really nice
+Dependency management for smoother collaboration,worked well for,Very detailed
+Dependency management for smoother collaboration,worked well for,nice with easy access to help and exercises
+Setting up automatic data analysis pipelines,could be improved for,"- having a code cheat sheet for all of the commands used that are not in the ""textbook"", especially those only referred to in the console- giving some more concrete examples of what a simple but complete pipeline will look like to we can picture the zoomed out version a bit more before diving into the minutia"
+Setting up automatic data analysis pipelines,could be improved for,"A bit (too) much talk, a little (too) little code-along"
+Setting up automatic data analysis pipelines,could be improved for,"For me it was a bit slow, and I wished for a more details why exactly targets its best to use and also cover things like efficiently, storage use etc."
+Setting up automatic data analysis pipelines,could be improved for,Hard to relate to how we will use it practically
+Setting up automatic data analysis pipelines,could be improved for,"I don't think it is up for improvement but I had to restart the R session a few time to make target work. Maybe you can put it as an advice if some people panic because it is not working right away : ""Restart your R session if doesn't work"""
+Setting up automatic data analysis pipelines,could be improved for,"I think it is a bit hard to understand when exactly target is smart, since it seems like a lot of work to build functions for everything"
+Setting up automatic data analysis pipelines,could be improved for,I think this session had a lot of questions that were hard to follow. I could have used more time on how applying the targets fit into the big picture ambitions presented prior to lunch.
+Setting up automatic data analysis pipelines,could be improved for,It is difficult to figure out how to use this framework for larger and more complex projects. I hope that it will become clear over the next sessions!
+Setting up automatic data analysis pipelines,could be improved for,"It is getting a bit late for me due to an early train ride, maybe fresh air"
+Setting up automatic data analysis pipelines,could be improved for,It is still a little difficult to visualise what's happening with the data but i think it is probably becoming more clear in the next session.
+Setting up automatic data analysis pipelines,could be improved for,"It was a bit fast paced, there could maybe be a few more examples with to what outdated means, how to update it and what this means for the project."
+Setting up automatic data analysis pipelines,could be improved for,"Just a difficult concept to understand, maybe even slower walk through"
+Setting up automatic data analysis pipelines,could be improved for,"More context on what targets is useful for, and more examples"
+Setting up automatic data analysis pipelines,could be improved for,More exercises/ examples of other types of targets that you can make or add
+Setting up automatic data analysis pipelines,could be improved for,More focus on when to use/when not to use? Maybe?
+Setting up automatic data analysis pipelines,could be improved for,Not really sure as i'm totally new to this
+Setting up automatic data analysis pipelines,could be improved for,Nothing to note.
+Setting up automatic data analysis pipelines,could be improved for,Perhaps include some more complex examples for those who are interested
+Setting up automatic data analysis pipelines,could be improved for,"Usage of targets is not very intuitive to me, I had a bit of trouble making myself a clear idea of how it works/how to use it."
+Setting up automatic data analysis pipelines,could be improved for,"We went through each step very slowly, especially for the code alongs"
+Setting up automatic data analysis pipelines,could be improved for,bit more coding done
+Setting up automatic data analysis pipelines,could be improved for,dont completely understand the technical bits yet - but feel like I will get it later...
+Setting up automatic data analysis pipelines,could be improved for,going through the workflow and explaining in detail before starting
+Setting up automatic data analysis pipelines,worked well for,All good!
+Setting up automatic data analysis pipelines,worked well for,"Generally the swiching between reading, lectures and code-alongs is a nice way to learn."
+Setting up automatic data analysis pipelines,worked well for,Good explanation and setting up the pipeline
+Setting up automatic data analysis pipelines,worked well for,Good teaching and reading tasks
+Setting up automatic data analysis pipelines,worked well for,Hands-on coding in many small steps
+Setting up automatic data analysis pipelines,worked well for,"I like that we get to code along. Also nice that the feedback survey is not longer called ""morning, part 1"" etc."
+Setting up automatic data analysis pipelines,worked well for,I like the time for explanation of the concept. I'm very new to this way of thinking so it helps conceptualize it for me that there is time so I can ask with base in my own situation
+Setting up automatic data analysis pipelines,worked well for,"It was good that the target pipelines were explained slowly and that we had the diagrams in the reading files. Again, impresive work of the instructors in helping the orange hats."
+Setting up automatic data analysis pipelines,worked well for,It was nice to conceptualize why and when targets should be applied
+Setting up automatic data analysis pipelines,worked well for,The code along part
+Setting up automatic data analysis pipelines,worked well for,The explanations and examples
+Setting up automatic data analysis pipelines,worked well for,The reading sections are super nice and very helpful! The walkthrough of the _target.R is super nice.
+Setting up automatic data analysis pipelines,worked well for,The step-by-step learning process and going slow
+Setting up automatic data analysis pipelines,worked well for,The tools described very appropriate and relevant
+Setting up automatic data analysis pipelines,worked well for,"The toy examples was very good and simple, so I could easily understand the targets structure"
+Setting up automatic data analysis pipelines,worked well for,Very relevant functionality with targets
+Setting up automatic data analysis pipelines,worked well for,Well detailed
+Setting up automatic data analysis pipelines,worked well for,"flow was good, flow charts in the course material are helpful to visualize."
+Setting up automatic data analysis pipelines,worked well for,initial discusion and code-along
+Setting up automatic data analysis pipelines,worked well for,it is nice to have the pictures of the pipelines for easier understanding
+Setting up automatic data analysis pipelines,worked well for,nice introductory setup of targets
+Setting up automatic data analysis pipelines,worked well for,step by step coding and explanations
+Setting up automatic data analysis pipelines,worked well for,the visualisation of the pipeline is easy to understand

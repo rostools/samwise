@@ -1,0 +1,121 @@
+session_name,question,response
+Design your analysis: Build up one model first,could be improved for,I understand why the flow is made as is but I (and probably others) want to jump the gun and adapt the function to work on all metabolites. So it feels like a bit of a slow progress when we know it has to be changed. I don't really know how to do it better though...
+Design your analysis: Build up one model first,could be improved for,I would have appreciated more time for understanding this better
+Design your analysis: Build up one model first,could be improved for,"It seemed difficult for some students to follow the conceptual idea. Maybe this is better explained by first doing and later explaining instead of trying to conceptualize first? But of course, that's not a natural way of doing it in real life."
+Design your analysis: Build up one model first,could be improved for,It seems like some students are hijacking the classroom by asking question about things that are part of later sections of the exercise. It would be nice if the instructors keep on the subject at hand.
+Design your analysis: Build up one model first,could be improved for,"It would have been nice if the teacher would have cut through at some point, when the class discussion got a little out of topic and scope."
+Design your analysis: Build up one model first,could be improved for,Just a little more time for the exercises!:)
+Design your analysis: Build up one model first,could be improved for,Maybe it was covered in intermediate/beginner but maybe briefly stating what estimate and intercept means for the data. State shortly which conclusions can be inferred.
+Design your analysis: Build up one model first,could be improved for,My brain was kinda in late of the day mode
+Design your analysis: Build up one model first,could be improved for,"The beginning was a bit slow, perhaps with too much discussion in the first question"
+Design your analysis: Build up one model first,could be improved for,There could be extra exercise to run for those who have time :)
+Design your analysis: Build up one model first,could be improved for,"This also accounts for earlier, but i just throught about it now: It is somewhat confusing that the columns in the dataset are called ""value"" and ""class"". E.g., ""what is the value of value?"" I think they should have less generic names to avoid confusion."
+Design your analysis: Build up one model first,could be improved for,"This session went too fast. Additionally, it would be super helpful if more comments in the code were there. Overall, we were missing a bit of the map of the greater process, and it felt like we were doing steps without knowing what they were for in the bigger picture.  Starting by stating the steps as a whole to understand the workflow first would be SUPER helpful."
+Design your analysis: Build up one model first,could be improved for,Using only Cholesterol in the create_model_results() doesn't make sense for me
+Design your analysis: Build up one model first,could be improved for,When stuff happens in the palette it can be difficult to follow along if you are not up to date - perhaps verbally say the steps with the names of the functions can help. When things are in the console it is easier to keep up
+Design your analysis: Build up one model first,could be improved for,"While I enjoyed the exercises very much, I have to admit that I had trouble following Birgittes teaching style. I never doubted her ability or expertise, but there were some very long pauses where my mind started to wander."
+Design your analysis: Build up one model first,could be improved for,"Would be nice to say a bit more out loud what is done, so that if we are coding/looking at our computer we are not lost because not looking at teacher's screen :)"
+Design your analysis: Build up one model first,could be improved for,maybe some reading tasks
+Design your analysis: Build up one model first,could be improved for,"the idea of designing the analysis/pipeline backwards (start at the end) is great, but I feel that in this section im not completely sure what were are building - so we are actually not working backwards but forward. For example I would normally have the function take two arguments data and metabolite so that I can run it for all metabolites - but clearly that is not what we are doing here, so I am curious what we are doing instead - but rather than be curious I would like to know where we are going from the beginning"
+Design your analysis: Build up one model first,worked well for,A good combination of code alongs and exercises.
+Design your analysis: Build up one model first,worked well for,Better Idea on how to build this pipeline
+Design your analysis: Build up one model first,worked well for,"Good exercises, enough time to complete them"
+Design your analysis: Build up one model first,worked well for,I like the code-along and the explanaitions of what happens in each step
+Design your analysis: Build up one model first,worked well for,"I liked the exercises at the end, altrough it would have been nice with a little more time for them."
+Design your analysis: Build up one model first,worked well for,I think this session really brought together the concept of functional coding with the targets approach. It was really a good session i that sense.
+Design your analysis: Build up one model first,worked well for,It is very nice to see how you can build in different elements into targets
+Design your analysis: Build up one model first,worked well for,It was fun towards the end seeing the end product
+Design your analysis: Build up one model first,worked well for,My brain was kinda in late of the day mode
+Design your analysis: Build up one model first,worked well for,Step by step is always nice
+Design your analysis: Build up one model first,worked well for,The conceptual idea and adding functions in the _target.R file was great.
+Design your analysis: Build up one model first,worked well for,The design of the exercises moving from testing the code to wrapping it in individual functions that have a distinct purpose
+Design your analysis: Build up one model first,worked well for,The exercises were good
+Design your analysis: Build up one model first,worked well for,The visuals in the textbook were super helpful
+Design your analysis: Build up one model first,worked well for,We got to build something that seems more like real life utilisation of the targets package
+Design your analysis: Build up one model first,worked well for,code-along and exercises
+Design your analysis: Build up one model first,worked well for,code-along and repetition of the workflow
+Design your analysis: Build up one model first,worked well for,great to make it clear that you can join different functions into one to make a clean pipeline rather than have each function be a target
+Design your analysis: Build up one model first,worked well for,practical session
+Design your analysis: Build up one model first,worked well for,well explained
+Using the pipeline to build up research output,could be improved for,"- Starting with more of a zoomed out perspective of what a Tar final product looks like, I felt like we learned the ""how"", before the what and why- Remind people to use the orange hats instead of asking lots of questions to the wider group =)- How to handle non-function related pipeline additions (like a small 1-off spelling error in df)"
+Using the pipeline to build up research output,could be improved for,:)
+Using the pipeline to build up research output,could be improved for,A bit slow and would be nice if you explain how to used targets in your own projects. Maybe show your own tar_visnetwork so we can see the possibilities.
+Using the pipeline to build up research output,could be improved for,"A more concise understanding of when which packages/functions should be specified. E.g. tidyverse the inner packages of  tidyverse (dplyr, ggplot2 etc.)"
+Using the pipeline to build up research output,could be improved for,Do not have suggestions right now.
+Using the pipeline to build up research output,could be improved for,"Flow was a little bit too fast, less easy to listen explanations and follow coding at the same time."
+Using the pipeline to build up research output,could be improved for,I think it is ok in general :)
+Using the pipeline to build up research output,could be improved for,I think the instructor were too fast during the code along parts of the session.
+Using the pipeline to build up research output,could be improved for,I understood everything very well and it was very clear
+Using the pipeline to build up research output,could be improved for,I would like more of an illustration on why targets is smart to use. Maybe illustrate that it is easier to change things along the pipeline or something like that? Maybe it comes later in the course :)
+Using the pipeline to build up research output,could be improved for,"I would really like to have an example of how to make it more generic with specifying e.g. function(data, colum for group_by, colum for stats) - that is what I am going to use and tried myself."
+Using the pipeline to build up research output,could be improved for,I'm maybe still a bit too rookie to understand the meaning of targets in your daily workflow
+Using the pipeline to build up research output,could be improved for,"Some fellow students lost track of the goal during the code-alongs. However, this was nicely included in the online material. Maybe just a matter of instructor emphasising this more."
+Using the pipeline to build up research output,could be improved for,"Some parts could be done faster, so that we would have more time to cover more examples on targets applications"
+Using the pipeline to build up research output,could be improved for,Went a little slow
+Using the pipeline to build up research output,could be improved for,"When we started discussing which was better to use, standard deviation or standard error. It doesn't seem like it's relevant for this course."
+Using the pipeline to build up research output,could be improved for,"because we worked on use_package before, would be easier to just say in the beginning which package we should add with use_package"
+Using the pipeline to build up research output,could be improved for,maybe too basic stats/plots
+Using the pipeline to build up research output,could be improved for,more focus on the interplay between the target package and the side scripts.
+Using the pipeline to build up research output,could be improved for,nothing I can think of
+Using the pipeline to build up research output,could be improved for,"sometimes the code-along was hard to follow, maybe because of styling and scrolling to quickly"
+Using the pipeline to build up research output,could be improved for,we spent way too much time on the table - I would expect that from an advanced course people do not need to go through the steps of using summarise. Could have just copy pasted the code and focus on the implementation in targets
+Using the pipeline to build up research output,worked well for,"Code and explanation worked well, finally some nice outputs"
+Using the pipeline to build up research output,worked well for,Great to see many examples of how targets get oudated/updated
+Using the pipeline to build up research output,worked well for,"I learned that a ""pipeline"" should be fully automatic, like a terminator robot 🤖"
+Using the pipeline to build up research output,worked well for,I liked the exercises were we tried things out for ourselves.
+Using the pipeline to build up research output,worked well for,"I really like the code-along and the explanaitions along. I also like the ""beginning"" of function body in the tasks so that doesn't take up the time. It's nice and makes it easier to get going."
+Using the pipeline to build up research output,worked well for,I really liked the interactive aspect of this session :)
+Using the pipeline to build up research output,worked well for,I think the theme for the exercises were very nice.
+Using the pipeline to build up research output,worked well for,"It was nice with more independent exercises, i feel like I learn more when i have to do it on my own. (I also know there is an exercise on the last day). I liked how the targets start making sense now."
+Using the pipeline to build up research output,worked well for,Many repeats of the same functionalities. Great discussion on how to use the different tidyverse functions
+Using the pipeline to build up research output,worked well for,Nice to see results/outputs
+Using the pipeline to build up research output,worked well for,"Step by step coding and explanations, the time for exercises, the pace"
+Using the pipeline to build up research output,worked well for,Super nice material! Clean and simple illustration
+Using the pipeline to build up research output,worked well for,The content and code-alongs worked well
+Using the pipeline to build up research output,worked well for,The examples were clear
+Using the pipeline to build up research output,worked well for,The excercises and code-along was really nice.
+Using the pipeline to build up research output,worked well for,"The speed of the code alongs was a bit higher than the previous session, which I liked"
+Using the pipeline to build up research output,worked well for,Very nice and relevant subject.
+Using the pipeline to build up research output,worked well for,We got to implement multiple things but by working on the same concepts. This was a really good way of learning by repetition
+Using the pipeline to build up research output,worked well for,clear goals
+Using the pipeline to build up research output,worked well for,going through targets step by step
+Using the pipeline to build up research output,worked well for,"great to use the visualisation tool throughout, especially with the extra exercises, it really sunk in (also just good to have extra exercises in general!)"
+Using the pipeline to build up research output,worked well for,same as usual : nicely detailed + I like that there is extra material to stay busy :)
+What are statistical models?,could be improved for,Could be more focused
+What are statistical models?,could be improved for,"Examples with actual numbers could be nice. E.g. difference in mean, SE and estimates"
+What are statistical models?,could be improved for,"I am not sure i understand why this session was needed, as it all seemed like basic university level statistics. Maybe i will understand in the next sessions :)"
+What are statistical models?,could be improved for,"I have a background teaching a lot of biostatistics, this means I didn't find this session paticularly helpful. I understand why it needs to be done though"
+What are statistical models?,could be improved for,I personally prefer the more code-along and exercises the better
+What are statistical models?,could be improved for,I think it could be either shorter in time or if the same amount of time is kept then more things on stat could be added :)
+What are statistical models?,could be improved for,I think it worked well.
+What are statistical models?,could be improved for,I understand the need to simplify the statistical content for the course but perhaps additional details or reading recommendations could be recommended in this section to avoid oversimplification
+What are statistical models?,could be improved for,"Maybe give some extra resources on packages for running different types of models? But overall, I think stats is clearly not the focus of this course so I think it's good that not that much time was spent on this, but just enough to know how to apply design thinking to running models."
+What are statistical models?,could be improved for,Ok!
+What are statistical models?,could be improved for,The first part of the session was too theoretical
+What are statistical models?,could be improved for,"There was quite a lot of reading and listening, and not so many exercises"
+What are statistical models?,could be improved for,This honestly felt unnecessary. I believe advanced R users should know this and we should not spent so much time on the basics.
+What are statistical models?,could be improved for,Would be good with some more details on the error term
+What are statistical models?,could be improved for,all exercises but 19.6 is to me not necessary. I would prefer to know more about target and functions
+What are statistical models?,could be improved for,discussion activities were a bit difficult
+What are statistical models?,could be improved for,maybe spent a bit too much time on this
+What are statistical models?,could be improved for,was good
+What are statistical models?,worked well for,:)
+What are statistical models?,worked well for,A good and reflective introduction to think about statistical models
+What are statistical models?,worked well for,Discussion session
+What are statistical models?,worked well for,Examples (using lipidomics data eg) useful to follow
+What are statistical models?,worked well for,Great to have high level discussions
+What are statistical models?,worked well for,"I liked the last discussion exercise, were we got to look a little more on the data"
+What are statistical models?,worked well for,It was easy to follow
+What are statistical models?,worked well for,It was nice to discuss these topics all the way back to the beginning.
+What are statistical models?,worked well for,It worked for people at all levels
+What are statistical models?,worked well for,More general explanation about statistics and idea behind everything
+What are statistical models?,worked well for,Nice to come to the realization that most models are some kind of variation of linear regression.
+What are statistical models?,worked well for,Text material and DAG
+What are statistical models?,worked well for,The design phase in the end
+What are statistical models?,worked well for,The last part about thinking about the analysis was dynamic and interesting
+What are statistical models?,worked well for,"To me, the 19.6 exercise was fine."
+What are statistical models?,worked well for,all good
+What are statistical models?,worked well for,details about models
+What are statistical models?,worked well for,good to have us all on the same page before starting
+What are statistical models?,worked well for,reading tasks and going through the material after
+What are statistical models?,worked well for,relevant

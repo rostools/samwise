@@ -1,0 +1,97 @@
+session_name,question,response
+Extend your analysis to run many models,could be improved for,Can't think of something right now
+Extend your analysis to run many models,could be improved for,Difficult to udnerstand the concepts and the code I write. Maybe it could be broken more down?  BUT you are good at helping
+Extend your analysis to run many models,could be improved for,Great delivery of the material. Nothing to improve.
+Extend your analysis to run many models,could be improved for,I feel there is an extra step here that is not helpful (at least not for me) with making the function only for cholesterol. I think the discussion this session about how to repeat it over several metabolites and models was really good and would have been better to have had yesterday
+Extend your analysis to run many models,could be improved for,I have no comments
+Extend your analysis to run many models,could be improved for,I like the exercises when there are enough help to get started. I had to read it over a few times to be honest to understand what exactly to do
+Extend your analysis to run many models,could be improved for,It was a great and engaging session :)
+Extend your analysis to run many models,could be improved for,"It would be helpful to have the ""learning"" Quarto document be split into 2, one ""learning/testing"" document, and another ""report"" document. That way we could keep track of our steps required to get to the final pipeline and report, without being confused about what should be deleted and presented in the final report."
+Extend your analysis to run many models,could be improved for,Litterally nothing
+Extend your analysis to run many models,could be improved for,More optional - extra exercise ^^
+Extend your analysis to run many models,could be improved for,Nothing
+Extend your analysis to run many models,could be improved for,Ok!
+Extend your analysis to run many models,could be improved for,The pace of the code-along was quite slow
+Extend your analysis to run many models,could be improved for,There could have been a more clear description of what we wanted to achieve
+Extend your analysis to run many models,could be improved for,a little more hints for the exercises
+Extend your analysis to run many models,could be improved for,maybe clearer instruction on when to do exercises.
+Extend your analysis to run many models,worked well for,Both code along and exercises works well
+Extend your analysis to run many models,worked well for,"Code-along into exercise, the pace"
+Extend your analysis to run many models,worked well for,Flow easy to follow
+Extend your analysis to run many models,worked well for,Fun session
+Extend your analysis to run many models,worked well for,Great overview and amazing visualizations.
+Extend your analysis to run many models,worked well for,I like the exercises
+Extend your analysis to run many models,worked well for,I really liked this session I think it was super interesting and relevant
+Extend your analysis to run many models,worked well for,Interesting build up on previous function used in this course and good introduction to map function
+Extend your analysis to run many models,worked well for,It was easy to follow and fun to build the knowledge learned in previous sessions.
+Extend your analysis to run many models,worked well for,The code alongs are really nice
+Extend your analysis to run many models,worked well for,The exercises were good
+Extend your analysis to run many models,worked well for,The reading first and reference back to the intermediate course was super helpful. Also the explanation of how functional programming applies to pipelines was very clear.
+Extend your analysis to run many models,worked well for,"This session was very well paced with a good actual balance between the different types of ""learning"""
+Extend your analysis to run many models,worked well for,"This was amazing - fun, easy to follow, complicated. I was so happy about this session. Would have taken the course just for this one"
+Extend your analysis to run many models,worked well for,Very pedagogical in structure
+Extend your analysis to run many models,worked well for,We had to do some exercises by ourselves and that helped me understand what was going on
+Extend your analysis to run many models,worked well for,"code-along, repetition and having to think a bit more for ourselves"
+Extend your analysis to run many models,worked well for,it is all coming together
+Extend your analysis to run many models,worked well for,nice phase in the code along
+Extend your analysis to run many models,worked well for,nice practical activities
+Team project work,could be improved for,A bit more time
+Team project work,could be improved for,I don't know tbh
+Team project work,could be improved for,I think it was a little intimidating that the projects should be run Infront of everyone.
+Team project work,could be improved for,"If possible, then expand this last section with maybe 30 min, so that we potentially could finish the whole targets pipeline"
+Team project work,could be improved for,"It was a little bit stressful, haha. But that was probably because we were too ambitious. Maybe emphasize to build something simple."
+Team project work,could be improved for,It was very challenging that you were supposed to collaborate and then at the same time working on different problems. Especially with the short amount of time
+Team project work,could be improved for,"Maybe have even fewer things we should complete. Also, how to work 2 at a time on github was not really explained."
+Team project work,could be improved for,Maybe some data analysis suggestions so it was doable in the short time! :)
+Team project work,could be improved for,More time was needed
+Team project work,could be improved for,"Perhaps specify even more that it should be simple wuestions in the design phase. I think, we spent (too much) time on that part because we tried to fit everything we learned"
+Team project work,could be improved for,The troubles with the metadata which gave merge conflicts.
+Team project work,could be improved for,the course website said to only choose one outcome per person and 1-2 predictors per person - but that made it kind of irrelevant to use purrr::map
+Team project work,could be improved for,maybe more time to complete the project ?
+Team project work,could be improved for,With the two different outcomes the idea of collab was a bit difficult and also for some it's a bit tricky to switch to another coding style
+Team project work,could be improved for,not much
+Team project work,worked well for,Great with pre-made repos and testing the repoducibility at the end!
+Team project work,worked well for,Playing around with targets
+Team project work,worked well for,".It was good that the we worked in small teams of 2. Good that the material was made a bit easier than last year, so that we managed to apply some(not all) og what was covered in the exercises"
+Team project work,worked well for,Fun with real data
+Team project work,worked well for,"I think it worked well to be in groups and trying to work with github in a group. The level of the exercise was, to me, much more appropriate than the one at the intermediate course. Nice that the R-project was set up."
+Team project work,worked well for,It was a fun challenge and nice to practice what we learned
+Team project work,worked well for,It was good to work again on everything that we previously saw on the other days to recap
+Team project work,worked well for,It was nice to start from the beginning and do a project all by ourselves.
+Team project work,worked well for,It was very much fun!
+Team project work,worked well for,"It worked well that the project was setup for us, so we didn't need to struggle with that before doing exercises. I think this exercise was much better than in the intermediate one, as we got to work with most of the material from the course."
+Team project work,worked well for,Super good to attempt using on our own
+Team project work,worked well for,"That the dataset was simple in order to get started. Also, that  just the goal was to get the target working"
+Team project work,worked well for,There were specified tasks and a lot of freedom.
+Team project work,worked well for,appropriate amount of work we were expected to do
+Team project work,worked well for,brainstorming
+Team project work,worked well for,"Dataset were interesting, it was helpful to go through all course once again (team project work course material is also helpful to follow). It was also great that we were not expected to build a full analysis with model etc. considering the time."
+Visualising the results of many models,could be improved for,All fine
+Visualising the results of many models,could be improved for,"However, as a dyslexia I did not manage to read both recaps in the given time"
+Visualising the results of many models,could be improved for,I think it worked well
+Visualising the results of many models,could be improved for,It was nice to see the model fitting into visual context because it gives a better understanding of the results
+Visualising the results of many models,could be improved for,No comment - worked super well
+Visualising the results of many models,could be improved for,No notes
+Visualising the results of many models,could be improved for,Not much
+Visualising the results of many models,could be improved for,Nothing :)
+Visualising the results of many models,could be improved for,Nothing to me
+Visualising the results of many models,could be improved for,"The code along was still a bit slow, however better than the last session"
+Visualising the results of many models,could be improved for,better datasets and proper statistical practices
+Visualising the results of many models,could be improved for,it was fine :)
+Visualising the results of many models,could be improved for,nothing
+Visualising the results of many models,could be improved for,using a data set that's easier to work with
+Visualising the results of many models,worked well for,Clear and nice code and conceptual idea.
+Visualising the results of many models,worked well for,"I liked that we also worked with visualization, as i think i will do this alot"
+Visualising the results of many models,worked well for,It was nice to see the model fitting into visual context because it gives a better understanding of the results
+Visualising the results of many models,worked well for,It was very informative and flowed nicely
+Visualising the results of many models,worked well for,Nice way to visualize the model results
+Visualising the results of many models,worked well for,Perfcet
+Visualising the results of many models,worked well for,She did a super good job of explaining the big picture and the basics steps required before diving into the specifics.  I think this approach should be taken for all of the lectures =)
+Visualising the results of many models,worked well for,The exercises were nice
+Visualising the results of many models,worked well for,Very good to do a recap of 8.3 and 10.2
+Visualising the results of many models,worked well for,"Well explained, easy to follow."
+Visualising the results of many models,worked well for,great instruction
+Visualising the results of many models,worked well for,i  like the step by step approach and that there is explained along what happens. It helps the understanding.
+Visualising the results of many models,worked well for,"making the plots step by step, and exercises"
+Visualising the results of many models,worked well for,nice phase in the code along part
+Visualising the results of many models,worked well for,plotting
