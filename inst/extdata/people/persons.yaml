@@ -3,11 +3,23 @@ person:
   #   name: ""
   #   affiliation: ""
   #   orcid: ""
+  - id: "dmj"
+    name: "Daniel Mazhari-Jensen"
+    affiliation:
+      - ref: aau
+    orcid: "0000-0003-1180-7734"
+
+  - id: "mv"
+    name: "Melina Vejlø"
+    affiliation:
+      - ref: au
+    orcid: ""
+
   - id: "bds"
     name: "Birgitte Dige Semark"
     affiliation:
       - ref: au
-    orcid: ""
+    orcid: "0000-0002-1250-7066"
 
   - id: "kdl"
     name: "Kristine de Leon"
@@ -142,7 +154,7 @@ person:
     name: Isabell Victoria Strandby Ernst
     affiliation:
       - ref: sdu
-    orcid: ""
+    orcid: "0000-0002-3276-4764"
 
   - id: sstin
     name: Sara Stinson
@@ -173,7 +185,7 @@ person:
     affiliation:
       - ref: sdca
       - ref: au
-    orcid: ""
+    orcid: "0009-0000-2208-7088"
 
   - id: km
     name: "Kaja Madsen"

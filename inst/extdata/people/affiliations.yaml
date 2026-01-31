@@ -13,6 +13,8 @@ affiliation:
     name: Steno Diabetes Center Copenhagen
   - id: aauh
     name: Aalborg University Hospital
+  - id: aau
+    name: Aalborg University
   - id: sdu
     name: University of Southern Denmark
   - id: ou

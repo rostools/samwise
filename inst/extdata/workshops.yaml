@@ -112,6 +112,10 @@ workshop:
         instructors:
           - ref: lwj
           - ref: aa
+          - ref: ivse
+          - ref: bds
+          - ref: dmj
+          - ref: mv
 
   - id: inter
     name: Intermediate
