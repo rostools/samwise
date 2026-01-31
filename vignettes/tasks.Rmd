@@ -16,7 +16,7 @@ devtools::load_all()
 preworkshop <- targets::tar_read(upcoming_preworkshop_survey)
 
 # Constants
-workshop_id <- "adv" # list_workshop_ids()
+workshop_id <- "intro" # list_workshop_ids()
 # TODO: Convert this to fetch from the workshop data files
 instructors <- c("lwjohnst86", "AndersAskeland")
 # Run `just create-group-names` first
@@ -131,7 +131,7 @@ create_github_org(workshop_id)
 
 ```{r}
 # TODO: Include this as part of create_teams?
-org_name <- "r-cubed-advanced-2025-12"
+org_name <- "r-cubed-intro-2026-02"
 gh_team_names <- expand_grid(team_names, num = 1:2) |>
   glue::glue_data("{team_names}-{num}")
 teams <- create_teams(preworkshop, gh_team_names)
