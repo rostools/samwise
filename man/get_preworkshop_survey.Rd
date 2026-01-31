@@ -4,10 +4,7 @@
 \alias{get_preworkshop_survey}
 \title{Get the (slightly cleaned) pre-workshop survey from Google Sheets.}
 \usage{
-get_preworkshop_survey(id)
-}
-\arguments{
-\item{id}{The ID of the workshop, found by running \code{\link[=list_workshop_ids]{list_workshop_ids()}}.}
+get_preworkshop_survey()
 }
 \value{
 A \link[tibble:tibble]{tibble::tibble}.
@@ -17,6 +14,6 @@ Get the (slightly cleaned) pre-workshop survey from Google Sheets.
 }
 \examples{
 \dontrun{
-get_preworkshop_survey("intro")
+get_preworkshop_survey()
 }
 }
