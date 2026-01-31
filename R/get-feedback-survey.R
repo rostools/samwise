@@ -79,13 +79,13 @@ add_workshop_date <- function(data) {
         ~ assign_workshop_date_by_date(
           .x,
           # In case people submit a few days afterwards.
-          lubridate::as_date(get_workshop_dates(.y)) + lubridate::days(3)
+          lubridate::as_date(get_workshop_dates(.y)) + lubridate::days(10)
         )
       )
     ) |>
     # Correct the workshop date from the assigning function.
     dplyr::mutate(
-      workshop_date = lubridate::as_date(workshop_date) - lubridate::days(3)
+      workshop_date = lubridate::as_date(workshop_date) - lubridate::days(10)
     ) |>
     dplyr::relocate(workshop_id, workshop_date)
 }
