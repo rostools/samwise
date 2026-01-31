@@ -54,6 +54,7 @@ Suggests:
     gt,
     knitr,
     rmarkdown,
+    roxygen2,
     tarchetypes
 VignetteBuilder:
     knitr
