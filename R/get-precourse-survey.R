@@ -22,7 +22,7 @@ get_preworkshop_survey_google_sheet <- function(n_max = Inf) {
 
   if (survey_id == "") {
     cli::cli_abort(
-      "{.fn Sys.genenv} can't find the Google Sheet ID, do you have an {.val .Renviron} set up with the ID?"
+      "{.fn Sys.getenv} can't find the Google Sheet ID, do you have an {.val .Renviron} set up with the ID?"
     )
   }
 
