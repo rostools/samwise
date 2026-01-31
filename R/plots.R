@@ -30,7 +30,13 @@ plot_feedback <- function(data) {
     ggplot2::labs(x = "Number of responses") +
     ggplot2::guides(fill = ggplot2::guide_legend("Responses")) +
     ggplot2::scale_fill_manual(
-      breaks = c("Strongly agree", "Agree", "Neutral", "Disagree", "Strongly disagree"),
+      breaks = c(
+        "Strongly agree",
+        "Agree",
+        "Neutral",
+        "Disagree",
+        "Strongly disagree"
+      ),
       values = viridis::viridis(5, option = "D"),
       drop = FALSE
     )
@@ -50,11 +56,13 @@ plot_overview <- function(data) {
       "[cC]ode of [cC]onduct",
       negate = TRUE
     )) |>
-    dplyr::mutate(question = dplyr::case_when(
-      stringr::str_detect(question, "pronoun") ~ "Preferred pronoun",
-      stringr::str_detect(question, "position") ~ "Formal position",
-      TRUE ~ question
-    )) |>
+    dplyr::mutate(
+      question = dplyr::case_when(
+        stringr::str_detect(question, "pronoun") ~ "Preferred pronoun",
+        stringr::str_detect(question, "position") ~ "Formal position",
+        TRUE ~ question
+      )
+    ) |>
     dplyr::mutate(
       response = dplyr::if_else(
         stringr::str_detect(.data$question, "position"),
