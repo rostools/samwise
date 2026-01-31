@@ -19,7 +19,7 @@ workshop:
           - ref: skb
 
   - id: intro
-    name: Introductory
+    name: Introductory R
     url: https://r-cubed-intro.rostools.org/
     repo: r-cubed-intro
     contributors:
@@ -186,7 +186,7 @@ workshop:
           - ref: kdl
 
   - id: adv
-    name: Advanced
+    name: Advanced R
     url: https://r-cubed-advanced.rostools.org/
     repo: r-cubed-advanced
     contributors:
