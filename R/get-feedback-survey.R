@@ -27,7 +27,7 @@ get_feedback_survey <- function() {
 
 get_feedback_survey_google_sheet <- function() {
   # Get the Google Sheet ID from the environment variable via `Sys.getenv()`
-  survey_id <- Sys.getenv("GENERAL_FEEDBACK_SURVEY_ID")
+  survey_id <- Sys.getenv("FEEDBACK_SURVEY_ID")
 
   if (survey_id == "") {
     cli::cli_abort(
