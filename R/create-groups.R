@@ -12,9 +12,9 @@ create_group_files <- function(number_participants) {
   number_groups <- ceiling(number_participants / 4)
   even_number_people <- round(number_participants + 0.5)
   group_names <- create_group_names(number_groups)
-  readr::write_lines(group_names, here::here("_ignore/group-names.txt"))
+  readr::write_lines(group_names, here::here("data-raw/group-names.txt"))
   cli::cli_alert_success(
-    "Created group names file at {.path _ignore/group-names.txt}"
+    "Created group names file at {.path data-raw/group-names.txt}"
   )
   cli::cli_alert_info(
     "Creating the group names as PDF in {.path _ignore/group-names/}"

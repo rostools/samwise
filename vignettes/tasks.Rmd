@@ -20,7 +20,7 @@ workshop_id <- "intro" # list_workshop_ids()
 # TODO: Convert this to fetch from the workshop data files
 instructors <- c("lwjohnst86", "AndersAskeland")
 # Run `just create-group-names` first
-team_names <- readr::read_lines(here::here("_ignore/group-names.txt"))
+team_names <- readr::read_lines(here::here("data-raw/group-names.txt"))
 ```
 
 # Pre-workshop admin tasks
