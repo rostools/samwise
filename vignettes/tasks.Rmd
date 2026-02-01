@@ -129,6 +129,13 @@ Now we need to assign the learners to the groups.
 create_github_org(workshop_id)
 ```
 
+You might need to set the token to have permissions:
+
+``` bash
+gh auth refresh -h github.com -s admin:org
+gh auth refresh -h github.com -s user:email
+```
+
 ```{r}
 # TODO: Include this as part of create_teams?
 org_name <- "r-cubed-intro-2026-02"
