@@ -1,3 +1,39 @@
+#' Create the necessary files for group names for a workshop.
+#'
+#' @param number_participants Number of participants in the workshop.
+#'
+#' @returns Invisibly returns TRUE. Side effect is to create a PDF file of each
+#'    group name to be printed for each table, an HTML file with name strips to
+#'    cut out for each participant for each day, as well as a text file with
+#'    the group names for use in other functions.
+#' @export
+#'
+create_group_files <- function(number_participants) {
+  number_groups <- ceiling(number_participants / 4)
+  even_number_people <- round(number_participants + 0.5)
+  group_names <- create_group_names(number_groups)
+  readr::write_lines(group_names, here::here("_ignore/group-names.txt"))
+  cli::cli_alert_success(
+    "Created group names file at {.path _ignore/group-names.txt}"
+  )
+  cli::cli_alert_info(
+    "Creating the group names as PDF in {.path _ignore/group-names/}"
+  )
+  group_names_to_one_pdf(group_names)
+  Sys.sleep(1.5)
+  cli::cli_alert_info(
+    "Creating the group names as HTML in {.path _ignore/group-names/}"
+  )
+  group_names_as_strips_html(
+    group_names,
+    number_participants = even_number_people
+  )
+  cli::cli_alert_success(
+    "Created the group names as HTML"
+  )
+  invisible(TRUE)
+}
+
 #' Create randomly generated group names.
 #'
 #' @param number_groups The number of group names to create.
@@ -36,7 +72,7 @@ group_names_to_one_pdf <- function(
   group_names |>
     purrr::walk(group_name_to_pdf, output_dir = output_dir)
   single_files <- fs::dir_ls(output_dir, glob = "*.pdf")
-  combined_pdf_file <- fs::path(output_dir, "_all-groups.pdf")
+  combined_pdf_file <- fs::path(output_dir, "all-groups.pdf")
   Sys.sleep(1)
   pdftools::pdf_combine(single_files, output = combined_pdf_file)
   if (!fs::file_exists(combined_pdf_file)) {
@@ -83,7 +119,7 @@ group_names_as_strips_html <-
         group_names = group_names,
         number_participants = number_participants
       ),
-      quiet = FALSE
+      quiet = TRUE
     )
     fs::file_move(
       fs::path_package("samwise", "templates", output_file),

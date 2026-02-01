@@ -3,6 +3,7 @@
 export("%within%")
 export(admin_create_planning_issue)
 export(create_github_org)
+export(create_group_files)
 export(create_group_names)
 export(create_team_project)
 export(create_teams)
