@@ -18,7 +18,11 @@ preworkshop <- targets::tar_read(upcoming_preworkshop_survey)
 # Constants
 workshop_id <- "intro" # list_workshop_ids()
 # TODO: Convert this to fetch from the workshop data files
-instructors <- c("lwjohnst86", "AndersAskeland")
+instructors <- c(
+  "lwjohnst86", "AndersAskeland",
+  "Isabellvse", "BDSemark", "Melina804", "DanMazJen"
+)
+
 # Run `just create-group-names` first
 team_names <- readr::read_lines(here::here("data-raw/group-names.txt"))
 ```
