@@ -136,7 +136,7 @@ list(
       list(
         data = feedback_survey_sessions |>
           dplyr::mutate(type = "feedback-sessions"),
-        columns = c("workshop_id", "workshop_date", "type", "date")
+        columns = c("workshop_id", "workshop_date", "type")
       )
     )
   ),
