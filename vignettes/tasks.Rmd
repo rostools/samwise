@@ -136,8 +136,8 @@ create_github_org(workshop_id)
 You might need to set the token to have permissions:
 
 ``` bash
-gh auth refresh -h github.com -s admin:org
-gh auth refresh -h github.com -s user:email
+gh auth refresh -h github.com -s admin:org,user:email
+gh auth refresh --reset-scopes
 ```
 
 ```{r}
