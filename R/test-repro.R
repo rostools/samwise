@@ -25,8 +25,13 @@ render_project_qmds <- function(dir) {
       \(path) {
         cli::cli_inform("Rendering {path}")
         # To allow rendering to continue even if there is an error with one.
-        rlang::catch_cnd(quarto::quarto_render(path))
-    })
+        rendered <- purrr::safely(quarto::quarto_render)(path, quiet = TRUE)
+        if (!is.null(rendered$error)) {
+          cli::cli_warn("Couldn't render {path}")
+        } else if (!is.null(rendered$result)) {
+          cli::cli_inform("Rendered {path}")
+        }
+      })
 }
 
 move_zen_file_to_project <- function(dir, path) {
