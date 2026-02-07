@@ -86,12 +86,14 @@ setup_team_projects <- function(
 
   # Invite to the org
   ghclass::org_invite(organization, data$username)
+  sleep(2)
 
   # Create the teams
   ghclass::team_create(
     organization,
     unique(data$team_names)
   )
+  sleep(2)
 
   # Invite users to the team
   ghclass::team_invite(
@@ -99,9 +101,15 @@ setup_team_projects <- function(
     data$username,
     data$team_names
   )
+  sleep(2)
 
   gh_repos <- ghclass::repo_create(organization, data$team_names)
   gh_repos <- ghclass::org_repos(organization)
-  ghclass::repo_add_team(sort(gh_repos), sort(unique(data$team_names)))
+  sleep(2)
+
+  team_names <- unique(data$team_names)
+  ghclass::repo_add_team(glue::glue("{organization}/{team_names}"), team_names)
+
+  sleep(2)
   setup_team_repos(organization)
 }
