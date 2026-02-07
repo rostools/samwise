@@ -73,9 +73,10 @@ list(
   # ),
 
   # Pre-workshop survey -------------------------------------------------------
-  tar_target(
+  tar_force(
     name = preworkshop_surveys,
-    command = get_preworkshop_survey()
+    command = get_preworkshop_survey(),
+    force = TRUE
   ),
   tar_target(
     name = participant_overview,
@@ -100,9 +101,10 @@ list(
       extract_preworkshop_feedback(preworkshop_surveys)
     }
   ),
-  tar_target(
+  tar_force(
     name = feedback_survey,
-    command = get_feedback_survey()
+    command = get_feedback_survey(),
+    force = TRUE
   ),
   tar_target(
     name = feedback_survey_overall,
