@@ -1,22 +1,26 @@
 person:
   # - id: ""
+  #   github: ""
   #   name: ""
   #   affiliation: ""
   #   orcid: ""
   - id: "dmj"
     name: "Daniel Mazhari-Jensen"
+    github: "DanMazJen"
     affiliation:
       - ref: aau
     orcid: "0000-0003-1180-7734"
 
   - id: "mv"
     name: "Melina Vejlø"
+    github: "Melina804"
     affiliation:
       - ref: au
     orcid: ""
 
   - id: "bds"
     name: "Birgitte Dige Semark"
+    github: "BDSemark"
     affiliation:
       - ref: au
     orcid: "0000-0002-1250-7066"
@@ -71,6 +75,7 @@ person:
 
   - id: lwj
     name: Luke W. Johnston
+    github: "lwjohnst86"
     affiliation:
       - ref: sdca
       - ref: au
@@ -140,6 +145,7 @@ person:
 
   - id: aa
     name: Anders Askeland
+    github: "AndersAskeland"
     affiliation:
       - ref: aauh
     orcid: 0000-0002-2996-129X
@@ -152,6 +158,7 @@ person:
 
   - id: ivse
     name: Isabell Victoria Strandby Ernst
+    github: "Isabellvse"
     affiliation:
       - ref: sdu
     orcid: "0000-0002-3276-4764"
