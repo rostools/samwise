@@ -151,6 +151,40 @@ create_gh_instructor_team(instructors, org_name)
 ```
 
 ```{r}
-clone_team_repos("r-cubed-intro-2025-01")
-pull_team_repos("r-cubed-intro-2025-01")
+clone_team_repos(org_name)
+pull_team_repos(org_name)
+```
+
+```{r}
+download_data <- function(path) {
+  fs::dir_create(fs::path(path, "data"))
+  data_file <- "SUA_CVDs_risk_factors.csv"
+  if (!fs::file_exists(fs::path(path, "data", data_file))) {
+    download.file(
+      url = "https://zenodo.org/records/8292712/files/SUA_CVDs_risk_factors.csv",
+      destfile = fs::path(path, "data", "SUA_CVDs_risk_factors.csv")
+    )
+  }
+}
+render_project_qmds <- function(path) {
+  qmd_paths <- fs::dir_ls(
+    fs::path(path, "docs"),
+    glob = "*.qmd"
+  )
+  qmd_paths |>
+    purrr::compact() |>
+    purrr::walk(
+      \(path) {
+        cli::cli_inform("Rendering {path}")
+        rlang::catch_cnd(quarto::quarto_render(path))
+    })
+}
+test_repro_team_projects <- function(dir = fs::path("~", "Desktop")) {
+  fs::dir_ls(dir, glob = "*.Rproj", recurse = TRUE) |>
+    fs::path_dir() |>
+    purrr::walk(download_data) |>
+    purrr::walk(styler::style_dir) |>
+    purrr::walk(render_project_qmds)
+}
+test_repro_team_projects()
 ```
