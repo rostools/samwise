@@ -51,14 +51,6 @@ check_preworkshop_problems <- function(data) {
     )))
 }
 
-copy_names_with_problems <- function(full_name) {
-  full_name |>
-    stringr::str_c("- ", ., collapse = "\n") |>
-    append("People with problems:", after = 0) |>
-    stringr::str_c(collapse = " \n") |>
-    clipr::write_clip()
-}
-
 # Setup checks ------------------------------------------------------------
 
 pretty_code_checks <- function(name, email, check) {
