@@ -74,26 +74,6 @@ pull_team_repos <- function(gh_org) {
     purrr::walk(pull_project_repo)
 }
 
-render_team_qmds <- function(
-  gh_org,
-  local_directory = fs::path("~", "Desktop")
-) {
-  team_repos <- ghclass::org_repos(gh_org)
-  qmd_path <- fs::path(
-    local_directory,
-    team_repos,
-    "docs",
-    "report.qmd"
-  )
-  qmd_path |>
-    purrr::walk(
-      ~ {
-        cli::cli_inform("Using {.val {.x}}")
-        quarto::quarto_render(.x, quiet = TRUE)
-      }
-    )
-}
-
 setup_team_projects <- function(
   data,
   organization
