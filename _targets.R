@@ -163,7 +163,6 @@ list(
           save_responses_to_csv(c("workshop_id", "workshop_date", "type"))
       }
     },
-    format = "file",
-    pattern = map(preworkshop_feedback)
+    format = "file"
   )
 )
