@@ -59,8 +59,7 @@ tidy_preworkshop <- function(data) {
         workshop_id,
         ~ assign_workshop_date_by_date(
           .x,
-          # In case people submit a few days afterwards.
-          lubridate::as_date(get_workshop_dates(.y)) + lubridate::days(10)
+          lubridate::as_date(get_workshop_dates(.y))
         )
       )
     ) |>
