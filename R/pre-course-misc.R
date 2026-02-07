@@ -23,7 +23,8 @@ create_team_project <- function(
   usethis::local_project(project_folder)
   rlang::catch_cnd(fs::file_delete(fs::path(project_folder, ".gitignore")))
   prodigenr::setup_project(project_folder)
-  usethis::use_git_ignore("data/")
+  usethis::use_git_ignore(c("data/*.csv", "*.html", "*_files"))
+  usethis::use_git_ignore("data/*.csv")
   readr::read_lines("DESCRIPTION") |>
     # To avoid merge conflicts, so set a fixed ProjectId
     append("ProjectId: 7144761b-281f-458f-b7bf-44fd33c944ea") |>
