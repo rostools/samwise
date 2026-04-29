@@ -23,7 +23,7 @@ document:
 
 # Run style formatter
 style:
-  air format .
+  uvx --from air-formatter air format .
 
 # Run linter
 lint:
