@@ -188,6 +188,15 @@ workshop:
           - ref: km
           - ref: ivse
           - ref: kdl
+      - date: 2026-05-05
+        host: Danish Diabetes and Endocrinology Academy
+        instructors:
+          - ref: lwj
+          - ref: aa
+          - ref: dmj
+          - ref: mv
+          - ref: ivse
+          - ref: md
 
   - id: adv
     name: Advanced R
