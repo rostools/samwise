@@ -7,3 +7,5 @@ _ignore
 .Renviron
 _targets.yaml
 .quarto
+/.quarto/
+**/*.quarto_ipynb
