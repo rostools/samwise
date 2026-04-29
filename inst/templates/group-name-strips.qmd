@@ -21,7 +21,7 @@ strips_per_day <- matrix(rep(params$group_names, times = persons_per_group),
   ncol = persons_per_group
 )
 # Strips for each day (3 total)
-rbind(
+cbind(
   strips_per_day,
   strips_per_day,
   strips_per_day
@@ -32,6 +32,6 @@ rbind(
     style = cell_borders(color = "black"),
     locations = cells_body()
   ) |>
-  cols_label(V1 = "", V2 = "", V3 = "") |>
+  cols_label(V1 = "", V2 = "") |>
   tab_options(column_labels.hidden = TRUE)
 ```
