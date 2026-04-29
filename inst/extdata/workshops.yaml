@@ -118,7 +118,7 @@ workshop:
           - ref: mv
 
   - id: inter
-    name: Intermediate
+    name: Intermediate R
     url: https://r-cubed-intermediate.rostools.org/
     repo: r-cubed-intermediate
     contributors:
