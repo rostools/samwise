@@ -27,7 +27,7 @@ style:
 
 # Run linter
 lint:
-  jarl check .
+  uvx --from jarl-linter jarl check .
 
 # Run spell checker
 check-spelling:
