@@ -57,3 +57,36 @@ test_repro_team_projects <- function(dir = fs::path("~", "Desktop")) {
     purrr::walk(styler::style_dir) |>
     purrr::walk(render_project_qmds)
 }
+
+clone_team_repos <- function(gh_org) {
+  team_repos <- ghclass::org_repos(gh_org)
+  team_repos |>
+    purrr::walk(clone_project_repo)
+}
+
+clone_project_repo <- function(
+  repo_path,
+  clone_directory = fs::path("~", "Desktop")
+) {
+  project_folder <- fs::path(clone_directory, repo_path)
+  ghclass::local_repo_clone(
+    repo_path,
+    fs::path_dir(project_folder)
+  )
+}
+
+pull_project_repo <- function(
+  repo_path,
+  local_directory = fs::path("~", "Desktop")
+) {
+  project_folder <- fs::path(local_directory, repo_path)
+  ghclass::local_repo_pull(
+    project_folder
+  )
+}
+
+pull_team_repos <- function(gh_org) {
+  team_repos <- ghclass::org_repos(gh_org)
+  team_repos |>
+    purrr::walk(pull_project_repo)
+}
