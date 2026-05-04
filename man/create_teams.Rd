@@ -4,12 +4,10 @@
 \alias{create_teams}
 \title{Create teams and assign learners to them.}
 \usage{
-create_teams(data, group_names, score_cutoff = 3)
+create_teams(data, group_names)
 }
 \arguments{
 \item{data}{Preworkshop survey data.}
-
-\item{score_cutoff}{Point at which to split persons into "low" vs "high" skill (completely arbitrary).}
 
 \item{team_names}{Character vector that has the names to group into.}
 }
