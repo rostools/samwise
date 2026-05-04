@@ -50,7 +50,7 @@ tidy_preworkshop <- function(data) {
       tidyselect::where(is.list),
       ~ purrr::map_chr(.x, as.character)
     )) |>
-    dplyr::rename(workshop_name = "Which workshop is this for?") |>
+    dplyr::rename(workshop_name = "Which workshop is this survey for?") |>
     dplyr::rename_with(snakecase::to_snake_case) |>
     dplyr::left_join(workshop_names, by = "workshop_name") |>
     dplyr::mutate(
