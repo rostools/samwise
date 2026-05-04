@@ -9,7 +9,7 @@
 #' @export
 #'
 create_group_files <- function(number_participants) {
-  number_groups <- ceiling(number_participants / 4)
+  number_groups <- ceiling(number_participants / 2)
   even_number_people <- round(number_participants + 0.5)
   group_names <- create_group_names(number_groups)
   readr::write_lines(group_names, here::here("data-raw/group-names.txt"))
