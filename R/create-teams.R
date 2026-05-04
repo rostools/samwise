@@ -2,27 +2,30 @@
 #'
 #' @param data Preworkshop survey data.
 #' @param team_names Character vector that has the names to group into.
-#' @param score_cutoff Point at which to split persons into "low" vs "high" skill (completely arbitrary).
 #'
 #' @return A [tibble::tibble].
 #' @export
 #'
-create_teams <- function(data, group_names, score_cutoff = 3) {
+create_teams <- function(data, group_names) {
   data |>
     dplyr::select(
       tidyselect::contains("full_name"),
       tidyselect::matches("user_?name"),
-      tidyselect::matches("^perceived")
+      tidyselect::contains("perceive")
     ) |>
     dplyr::rowwise() |>
     dplyr::mutate(dplyr::across(
-      tidyselect::starts_with("perceived"),
+      tidyselect::contains("perceive"),
       as.numeric
     )) |>
     dplyr::mutate(
-      perceived_skill_score = sum(dplyr::c_across(tidyselect::starts_with(
-        "perceived"
-      )))
+      perceived_skill_score = sum(
+        dplyr::c_across(tidyselect::contains(
+          "perceive"
+        )),
+        na.rm = TRUE
+      ),
+      score_cutoff = stats::median(perceived_skill_score, na.rm = TRUE)
     ) |>
     dplyr::ungroup() |>
     dplyr::mutate(
