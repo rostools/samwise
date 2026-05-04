@@ -44,11 +44,11 @@ create_teams <- function(data, group_names) {
 
 create_gh_instructor_team <- function(usernames, organization) {
   ghclass::org_invite(organization, usernames)
-  ghclass::team_create(organization, "Helpers")
+  ghclass::team_create(organization, "helpers")
   ghclass::team_invite(
     organization,
     usernames,
-    "Helpers"
+    "helpers"
   )
 
   ghclass::org_repos(organization) |>
@@ -56,7 +56,7 @@ create_gh_instructor_team <- function(usernames, organization) {
       ~ {
         ghclass::repo_team_permission(
           repo = .x,
-          team = "Helpers",
+          team = "helpers",
           permission = "admin"
         )
       }
