@@ -4,7 +4,7 @@ title: "Admin tasks for the R workshops"
 
 ```{r setup, include = FALSE}
 targets::tar_config_set(
-  store = "../_targets"
+  store = here::here("_targets")
 )
 knitr::opts_chunk$set(
   eval = FALSE,
@@ -16,11 +16,11 @@ devtools::load_all()
 preworkshop <- targets::tar_read(upcoming_preworkshop_survey)
 
 # Constants
-workshop_id <- "intro" # list_workshop_ids()
+workshop_id <- "inter" # list_workshop_ids()
 # TODO: Convert this to fetch from the workshop data files
 instructors <- c(
   "lwjohnst86", "AndersAskeland",
-  "Isabellvse", "BDSemark", "Melina804", "DanMazJen"
+  "Isabellvse", "Mortendall", "Melina804", "DanMazJen"
 )
 
 # Run `just create-group-names` first
@@ -142,14 +142,14 @@ gh auth refresh --reset-scopes
 
 ```{r}
 # TODO: Include this as part of create_teams?
-org_name <- "r-cubed-intro-2026-02"
-gh_team_names <- expand_grid(team_names, num = 1:2) |>
-  glue::glue_data("{team_names}-{num}")
-teams <- create_teams(preworkshop, gh_team_names)
-setup_team_projects(teams, org_name)
+org_name <- "r-cubed-intermediate-2026-05"
+set.seed(1234)
+teams <- create_teams(preworkshop, team_names)
+setup_github_teams(teams, org_name)
+
+create_github_team_repos(team_names, org_name)
 create_gh_instructor_team(instructors, org_name)
 ```
-
 ### Assess reproducibility
 
 ```{r}
