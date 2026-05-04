@@ -31,7 +31,8 @@ render_project_qmds <- function(dir) {
         } else if (!is.null(rendered$result)) {
           cli::cli_inform("Rendered {path}")
         }
-      })
+      }
+    )
 }
 
 move_zen_file_to_project <- function(dir, path) {
@@ -48,7 +49,7 @@ test_repro_team_projects <- function(dir = fs::path("~", "Desktop")) {
   data_filename <- "cvd_risk_factors.csv"
   download_zen_file_to_downloads(
     url = "https://zenodo.org/records/8292712/files/SUA_CVDs_risk_factors.csv",
-    filename = data_filename
+    path = data_filename
   )
   fs::dir_ls(dir, glob = "*.Rproj", recurse = TRUE) |>
     fs::path_dir() |>
