@@ -114,17 +114,6 @@ preworkshop |>
   })
 ```
 
-### Copy names to address in first day
-
-Copy the names of those who have problems so I can paste it to something
-like Telegram so I know who to seek out on the first day.
-
-```{r, eval=FALSE}
-problems |>
-  dplyr::pull(full_name) |>
-  copy_names_with_problems()
-```
-
 ### Assigning members to groups
 
 Now we need to assign the learners to the groups.
