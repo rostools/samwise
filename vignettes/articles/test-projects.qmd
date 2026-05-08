@@ -2,41 +2,29 @@
 title: "test-projects"
 ---
 
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
-
+```{r}
 devtools::load_all()
-pull_team_repos("r-cubed-advanced-2025-12")
+org_name <- "r-cubed-intermediate-2026-05"
+clone_team_repos(org_name)
+pull_team_repos(org_name)
+# Install all unique packages from repos
+list_repos_deps() |>
+    pak::pak()
 ```
 
 ```{r}
 library(tidyverse)
 library(ghclass)
 
-org_name <- "r-cubed-advanced-2025-12"
-repos <- org_repos(org_name)
-repos
-
-clone_repo <- function(repo) {
-  ghclass::local_repo_clone(
-    repo,
-    fs::path("~/Desktop")
-  )
-}
-
-repos |>
-  walk(clone_repo)
 
 test_project <- function(path) {
   withr::with_dir(
     path,
     {
-      pak::pak()
       styler::style_dir()
-      targets::tar_make()
+      render_project_qmds()
+      creates_csv <- fs::dir_ls("data", type = "file", glob = ".")
+
       # browseURL("docs/report.html")
     }
   )
