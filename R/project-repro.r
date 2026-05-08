@@ -90,3 +90,17 @@ pull_team_repos <- function(gh_org) {
   team_repos |>
     purrr::walk(pull_project_repo)
 }
+
+list_deps <- function(path) {
+  desc::desc_get_deps(path)$package |>
+    stringr::str_subset("^R$", negate = TRUE) |>
+    unique()
+}
+
+list_repos_deps <- function(dir = fs::path("~/Desktop")) {
+  fs::dir_ls(dir, recurse = TRUE, type = "file", regexp = "DESCRIPTION") |>
+    purrr::map(list_deps) |>
+    purrr::flatten() |>
+    unlist() |>
+    unique()
+}
