@@ -97,7 +97,7 @@ convert_to_long <- function(data) {
         timestamp,
         date,
         workshop_name,
-        tidyselect::contains("session is the feedback for")
+        tidyselect::matches("(session|workshop) is the feedback for")
       ),
       names_to = "question",
       values_to = "response"
@@ -105,7 +105,7 @@ convert_to_long <- function(data) {
     dplyr::rename_with(
       \(col) {
         dplyr::if_else(
-          stringr::str_detect(col, "session is the feedback for"),
+          stringr::str_detect(col, "(session|workshop) is the feedback for"),
           "session_name",
           col
         )

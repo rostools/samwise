@@ -71,11 +71,11 @@ extract_feedback_sessions <- function(data) {
     dplyr::rename_with(~ stringr::str_replace(.x, "^day$", "session_name")) |>
     dplyr::filter(stringr::str_detect(
       question,
-      "^(What could be improved|What worked well).*"
+      "^.*(could be improved|worked well).*"
     )) |>
     dplyr::mutate(
       question = question |>
-        stringr::str_remove_all("What|(this )?session|\"|\\?") |>
+        stringr::str_extract("improved|worked well") |>
         stringr::str_trim()
     ) |>
     # Drop any duplicate comments (like repeats of "great!")
