@@ -240,3 +240,12 @@ workshop:
           - ref: ivse
           - ref: bds
           - ref: md
+      - date: 2026-12-07
+        host: Danish Diabetes and Endocrinology Academy
+        instructors:
+          - ref: lwj
+          - ref: aa
+          - ref: skb
+          - ref: ivse
+          - ref: md
+          - ref: dmj
