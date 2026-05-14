@@ -134,6 +134,8 @@ drop_missing_responses <- function(data) {
           "Nil",
           "%",
           "no comment",
+          "Nothing",
+          "nothing",
           "no comments"
         )
     )
