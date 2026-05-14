@@ -4,7 +4,7 @@
   just --list --unsorted
 
 # Run build recipes and install the package
-build: install-deps style check-spelling document install
+build: install-deps format check-spelling document install
 
 # Install package dependencies
 install-deps:
@@ -21,8 +21,8 @@ document:
   #!/usr/bin/Rscript
   devtools::document()
 
-# Run style formatter
-style:
+# Format all R code
+format:
   uvx --from air-formatter air format .
 
 # Run linter
