@@ -1,0 +1,486 @@
+session_name,date,question,response
+Bundling code into functions,2026-05-05,improved,A bit slow for my taste but I understand that it is a nice pace for those who have not tried functions before
+Bundling code into functions,2026-05-05,improved,I do not have any comments
+Bundling code into functions,2026-05-05,improved,I dont know I think it was great
+Bundling code into functions,2026-05-05,improved,"I found myself a bit sleepy after lunch, maybe we could have done some small physical activity midway through, to stand up or talk to the person sitting next to us - that would have helped me concentrating"
+Bundling code into functions,2026-05-05,improved,"I found the concept of a function too abstract so would have liked for it to be more with examples of ""real life"" use of functions"
+Bundling code into functions,2026-05-05,improved,"I struggled a bit with understanding the exercise text? For me it wasnt so clear what was ment by this part: In the read() function, add a new argument called max_rows after the file_path argument inside function(). We’ll called it max_rows because that’s a more descriptive name for it than n_max.Inside the function body, replace the n_max = 100 with n_max = max_rows so that the function will use the value given in the max_rows argument when it is used.Since we’d like this argument to be optional, meaning that we don’t have to use it (like the first code example above), we have to give the argument a default value in function(). Since we are using 100 already, let’s use that value by putting max_rows = 100 in function()."
+Bundling code into functions,2026-05-05,improved,I think it was a good session
+Bundling code into functions,2026-05-05,improved,I was a little confused about what we were doing (but able to complete the tasks without problems)
+Bundling code into functions,2026-05-05,improved,I would have liked some specific examples during the lecture to make it more concrete and easier to remember.
+Bundling code into functions,2026-05-05,improved,"It was a bit hard to understand the single steps in the production of the function-code, because it is totally new. But it made sense when it was repeated after the exercise."
+Bundling code into functions,2026-05-05,improved,Maybe a bit more concrete and complex example of how functions can be used
+Bundling code into functions,2026-05-05,improved,Maybe make the extra assignments easier to find?
+Bundling code into functions,2026-05-05,improved,Maybe more examples of different functions?
+Bundling code into functions,2026-05-05,improved,Not
+Bundling code into functions,2026-05-05,improved,Nothing to add
+Bundling code into functions,2026-05-05,improved,Perhaps another exercise in creating a function for another purpose - but maybe we'll go through this in the following sessions?
+Bundling code into functions,2026-05-05,improved,Some of it maybe went a little fast
+Bundling code into functions,2026-05-05,improved,The session was a bit long - maybe it could be a bit shorter/faster
+Bundling code into functions,2026-05-05,improved,Would have liked to hear the ultimate goal of the function. An example of what we will have it look like in the end would make the different steps of it more relatable and clear to understand the purpose of it. Otherwise having to write the file-path out each time we use the read-function makes it close to as time-consuming as just copying the entire function and adjusting the file path.
+Bundling code into functions,2026-05-05,improved,clearly specifing the meaning of max_rows before exercise is started
+Bundling code into functions,2026-05-05,improved,if there was some reading material in the pre-workshop about functions.
+Bundling code into functions,2026-05-05,improved,more interaction with the attendees
+Bundling code into functions,2026-05-05,improved,perhaps some additional exercises for if you finished quickly
+Bundling code into functions,2026-05-05,improved,"the timings on the readings were off, and the instructor always repeated exactly what we read which was a bit redundant"
+Bundling code into functions,2026-05-05,improved,"was hard to follow in the beginning but its my fault, I am online"
+Bundling code into functions,2026-05-05,worked well,All of it
+Bundling code into functions,2026-05-05,worked well,Code a long
+Bundling code into functions,2026-05-05,worked well,Code along
+Bundling code into functions,2026-05-05,worked well,Code-along as always! And very calm instructor.
+Bundling code into functions,2026-05-05,worked well,"Code-along, good tempo, easy access to help, nice peaople"
+Bundling code into functions,2026-05-05,worked well,"Code-along, time for reading tasks."
+Bundling code into functions,2026-05-05,worked well,Excellent to learn how to make functions
+Bundling code into functions,2026-05-05,worked well,Good explanation but bit abstract to understand
+Bundling code into functions,2026-05-05,worked well,"I liked the code along, very thorugh and easy to follow"
+Bundling code into functions,2026-05-05,worked well,"I really like the mix of reading, lectures and excercises"
+Bundling code into functions,2026-05-05,worked well,"I think it was good that there was some explanation for everything, while we went through it and at the same time we produced a function that we would actually use later."
+Bundling code into functions,2026-05-05,worked well,Nice and clear presentation.
+Bundling code into functions,2026-05-05,worked well,Pace
+Bundling code into functions,2026-05-05,worked well,The coding-a-long part is great.
+Bundling code into functions,2026-05-05,worked well,The exercise and type-along was nice.
+Bundling code into functions,2026-05-05,worked well,"The pace is really good, and I am impressed how well written the reading material is. It is super complicated stuff."
+Bundling code into functions,2026-05-05,worked well,The same as for the previous session.
+Bundling code into functions,2026-05-05,worked well,To do it first all of us together
+Bundling code into functions,2026-05-05,worked well,"Very good overview of what a functions, how its build, I love the code alongs"
+Bundling code into functions,2026-05-05,worked well,Well balanced session between reading and exercises
+Bundling code into functions,2026-05-05,worked well,code along and excersise.
+Bundling code into functions,2026-05-05,worked well,code along. good exercise
+Bundling code into functions,2026-05-05,worked well,easy to follow and good mix of activities
+Bundling code into functions,2026-05-05,worked well,excellent walktrough
+Bundling code into functions,2026-05-05,worked well,good exercise
+Bundling code into functions,2026-05-05,worked well,good explanations from the teacher takin' it from skratch
+Bundling code into functions,2026-05-05,worked well,"good, easy to follow and useful"
+Bundling code into functions,2026-05-05,worked well,it all worked very well I loved the coding along.
+Bundling code into functions,2026-05-05,worked well,the code along and the explanations of what we did and why
+Doing many things at once with functionals,2026-05-06,improved,..
+Doing many things at once with functionals,2026-05-06,improved,"Even more explanation of why is it relevant, putting what we learn into context, when we import data."
+Doing many things at once with functionals,2026-05-06,improved,Exercise was a bit hard to understand
+Doing many things at once with functionals,2026-05-06,improved,"I found it quite difficult to understand the exercise. This part (se below) was maybe a bit to unspecific for me to understand (but I havent worked with functions before so maybe that is why): As you’ve already done in the previous sessions, convert this code into a function. You can always refer to the Chapter 16 and Chapter 17 sessions.Name the function read_all.Use the function() { ... } code to create a new functionInside function(), add an argument called filename.Paste the code into the function body.Rename hr_files to simply files.Rename hr_data to simply data.Include a return() at the end.Add package_name:: to the individual functions used. To find which package a function comes from, use ?functionname to see the help documentation (there is four functions to add :: to).Create and write Roxygen documentation to describe the new function by using Ctrl-Shift-Alt-RCtrl-Shift-Alt-R or with the Palette (Ctrl-Shift-PCtrl-Shift-P, then type “roxygen comment”).Run it and check that it works using the code shown above e.g. read_all(""HR.csv.gz"")."
+Doing many things at once with functionals,2026-05-06,improved,"I initially struggled a bit to translate the steps describing how to do the first function, and maybe comparing some of the parts to the elements of the read-function created in yesterday could have helped identify what the new elements of the read_all function were doing and where to put it in the function."
+Doing many things at once with functionals,2026-05-06,improved,I little more time for the exercise
+Doing many things at once with functionals,2026-05-06,improved,I think the reading exercise may have been longer and more complicated than it needed to - or maybe i just havnt had enough morning coffee yet :)
+Doing many things at once with functionals,2026-05-06,improved,"I was a bit confused during the execise, and did not understand the explanation of it. So that might be a bit more clear."
+Doing many things at once with functionals,2026-05-06,improved,Maybe further explanation/simpler so the exercise is easier to do
+Doing many things at once with functionals,2026-05-06,improved,More examples
+Doing many things at once with functionals,2026-05-06,improved,More time to be able to do more exercises
+Doing many things at once with functionals,2026-05-06,improved,"Still struggling with remembering the difference between functions, actions, etc etc"
+Doing many things at once with functionals,2026-05-06,improved,The extra exercise was nice also to learn and perhaps would have been good to also do/go through togehter
+Doing many things at once with functionals,2026-05-06,improved,"The extra exercises were a bit to hard for me to understand. I had time to do it, but didn't really understand the explanation. Perhaps you could describe how to do it a bit more (like the exerise 18.5)."
+Doing many things at once with functionals,2026-05-06,improved,"The session ended up being rushed with three excercises and the break, did not get to finish my own code."
+Doing many things at once with functionals,2026-05-06,improved,"The session was very good. Just a small thing that has nothing to do with the session. Maybe the survey button could automatically open a new tab, instead of redirecting the respondant from the learning site :-)"
+Doing many things at once with functionals,2026-05-06,improved,"The task was a little to difficult for me, so I had to cheat."
+Doing many things at once with functionals,2026-05-06,improved,"This is totally my own fault, but I did not have time for a break before the next session."
+Doing many things at once with functionals,2026-05-06,improved,Too little time in the end:-) There were many new things introduced
+Doing many things at once with functionals,2026-05-06,improved,"maybe a bit more about the ""function used in another function"" the excersice 18.6 was a little trickey"
+Doing many things at once with functionals,2026-05-06,improved,"the exercise was difficult to understand for me. the part about copying and changing the code before - i didn't understand if that was the skeleton provided, or the code chunk above that, or the code we wrote previously. i found it a very difficult exercise."
+Doing many things at once with functionals,2026-05-06,improved,"the read assignment was quite difficult to follow, a bit to blurry for me"
+Doing many things at once with functionals,2026-05-06,improved,x
+Doing many things at once with functionals,2026-05-06,worked well,Again nice with the code along and the extra exercises
+Doing many things at once with functionals,2026-05-06,worked well,"Daniel explanined everything very well to us. this was more advanced coding at least for me, but I felt that the helpers were a big help."
+Doing many things at once with functionals,2026-05-06,worked well,Easy start
+Doing many things at once with functionals,2026-05-06,worked well,Good explanation and tasks
+Doing many things at once with functionals,2026-05-06,worked well,Good teacher.
+Doing many things at once with functionals,2026-05-06,worked well,"Good teaching, easy access to help, good figures in the text, managed to make it understandable eventhough it was a bit difficult. Very good :-)"
+Doing many things at once with functionals,2026-05-06,worked well,I feel like it was explanied good during the code along
+Doing many things at once with functionals,2026-05-06,worked well,"It all went well, but maybe we didn't have enough time"
+Doing many things at once with functionals,2026-05-06,worked well,It was really nice to start of with a discussion and reading (and not lecture)
+Doing many things at once with functionals,2026-05-06,worked well,Nice explanations from the teacher
+Doing many things at once with functionals,2026-05-06,worked well,"Nice to recap on yesterdays key take aways, nice with extra exercise, which I unfortunately didn't have time to do"
+Doing many things at once with functionals,2026-05-06,worked well,"Really enjoyed this session, it was very easy to follow and to see how it then can be used in daily research projects"
+Doing many things at once with functionals,2026-05-06,worked well,Really nice to learn how to import many files at once
+Doing many things at once with functionals,2026-05-06,worked well,The additional exercises were nice.
+Doing many things at once with functionals,2026-05-06,worked well,"The exercise was slightly challenging, as I didn't understand that you can have 'separate' assignments inside the same function, but it turned out well with the right help - very learningful. And the transparent 'listing' of specific packages in front of each function also works well for understanding."
+Doing many things at once with functionals,2026-05-06,worked well,The goal of the workshop and great with the additional exercises!
+Doing many things at once with functionals,2026-05-06,worked well,The slow pase
+Doing many things at once with functionals,2026-05-06,worked well,The step-by-step guide is nice
+Doing many things at once with functionals,2026-05-06,worked well,To get to work with the code
+Doing many things at once with functionals,2026-05-06,worked well,"Very esciting lesson. I use a lot of for loops as I learned to program with macros in SAS, and I'm looking forward to try functionals!"
+Doing many things at once with functionals,2026-05-06,worked well,Very good instructor
+Doing many things at once with functionals,2026-05-06,worked well,code a long
+Doing many things at once with functionals,2026-05-06,worked well,code-along
+Doing many things at once with functionals,2026-05-06,worked well,"codealong, good explanation of a new topic"
+Doing many things at once with functionals,2026-05-06,worked well,exercises to practice and gain a better understanding
+Doing many things at once with functionals,2026-05-06,worked well,nice exercise and really nice with extra exercises
+Doing many things at once with functionals,2026-05-06,worked well,the reading was very clear
+Doing many things at once with functionals,2026-05-06,worked well,thoruogh walkthrough of a difficult topic. I also likes the exercises
+End of workshop,2026-05-07,improved,Can't think of anything. Hope to get a spot on the advanced course.
+End of workshop,2026-05-07,improved,I cant ome up with anything.
+End of workshop,2026-05-07,improved,"I think the presentations/code along could be speed a bit up, and the presentations following reading exercises felt a bit slow/redundant some times."
+End of workshop,2026-05-07,improved,Maybe more time for the group work
+End of workshop,2026-05-07,improved,More recap:-)
+End of workshop,2026-05-08,improved,Not much.
+End of workshop,2026-05-07,improved,"Not really anything, I think I would be able to understand more if I already had worked in R before taking the couse, but this comes back to me and not the couse."
+End of workshop,2026-05-07,improved,Please see at the bottom
+End of workshop,2026-05-07,improved,hmm I think we from time to time use a little too much time on the exercises but here I think it is brilliant with some extra exercises so u can just continue working and learning
+End of workshop,2026-05-07,improved,maybe smaller data set to decrease loading time
+End of workshop,2026-05-07,improved,"perhaps more time for the group work in the end? otherwise, honestly nothing!"
+End of workshop,2026-05-07,improved,social mingling time
+End of workshop,2026-05-07,improved,"the length of the group work, if it should actually be beneficial for recap of what was learned in the workshop"
+End of workshop,2026-05-07,improved,the tempo was quite slow at times
+End of workshop,2026-05-07,worked well,EVERYTHING!
+End of workshop,2026-05-07,worked well,I really like the material and the exercises where u get to test if u have understood what u have learned
+End of workshop,2026-05-07,worked well,Nice set-up. Nice helpers and surroundings. Nice course material
+End of workshop,2026-05-07,worked well,"The balance in the presentations between reading, listening, code alongs and finishing of with the exercises that mathed the presentations. I really like the social time, I feel that people are so good at talking to someone they dont know beforehand. I like that you don't skip breaks but instead catch up on the follwing day."
+End of workshop,2026-05-08,worked well,The code along mixed with the comprehensive website works really well.
+End of workshop,2026-05-07,worked well,"The material is really well written, and I love the illustrations. I also really enjoy that there is so many instructors and that they are som patient and really try their best to describe something that is difficult."
+End of workshop,2026-05-07,worked well,"The presentations were good, especially the code-along and exercises. Overall the course have been great."
+End of workshop,2026-05-07,worked well,"The presentations were good, the mix of learning methods, the venue, the teaching site,"
+End of workshop,2026-05-07,worked well,"Very very good course! Nice teachers - so helpfull, not judging, very friendly environment. Great with the code-along with explanations during it. Good shift between exercises, code-along, reading and teaching. Good location."
+End of workshop,2026-05-07,worked well,code a long and option to see solutions
+End of workshop,2026-05-07,worked well,"presentations, codealong. The website is very very good."
+End of workshop,2026-05-07,worked well,"presentations, exercises in every sessions and group work"
+End of workshop,2026-05-07,worked well,the co-along
+End of workshop,2026-05-07,worked well,the code alongs and the group work
+Joining data together,2026-05-07,improved,"A little slow session. That all the left_join, right_join and full_join gave the same results was a little unpedagogical."
+Joining data together,2026-05-07,improved,Again just a previous explanaition about the use and meaning of the cleaning-document. Further if we have to load the packages to this document or not to run all functions not from our own functions.
+Joining data together,2026-05-07,improved,"I am not quite sure why left_join is more useful, than full_join, which were used in the exercise."
+Joining data together,2026-05-07,improved,I found most of this slightly confusing. I did not get why there was no difference betwen left and right join in our data set. I was missing a lot of data in the cleaning qmd and functions. Maybe it would be a good idea to underline when these things need to be moved at the end of a session.
+Joining data together,2026-05-07,improved,I have no comment
+Joining data together,2026-05-07,improved,"I realized after all these steps and exercises, that I am not really familiar with the Raw data itself. I might have missed the instructions but perhaps it should be in the preparation work to study the different variables and get to know the data we are working with. then all of the join_left and right would make more sense. otherwise super great"
+Joining data together,2026-05-07,improved,I would have like extra exercises as I have used join functions a lot
+Joining data together,2026-05-07,improved,In the beginning of the session I found the pace a little to fast. I could use a sum up of what we have done until now as my documents and files are getting increasingly messy:-)
+Joining data together,2026-05-07,improved,"In the code along Morten could benefit from typing a bit slower and letting us see the code for a bit longer, because more than one time I and my table mate did not catch the end of a code and therefore ran into problems."
+Joining data together,2026-05-07,improved,It was good
+Joining data together,2026-05-07,improved,"It was hard to understand the left and right joining commands, so maybe it could be useful to have different clear examples to really understand the concept."
+Joining data together,2026-05-07,improved,"Maybe do the code-along part a little slower - it seemed a little stressful. You did too much scroling up and down along the way, so it was difficult to keep track and tag along. Maybe it gets better with practise."
+Joining data together,2026-05-07,improved,Maybe use a dataset that was a bit smaller so the rendering would be faster :)
+Joining data together,2026-05-07,improved,"Missed quite a lot of stuff in cleaning.qmd, functions.R, as did my neighbour.Maybe the excercise could be more explicite about when to move stuff."
+Joining data together,2026-05-07,improved,More go-through with the results
+Joining data together,2026-05-07,improved,Nothing sepcific
+Joining data together,2026-05-07,improved,donno
+Joining data together,2026-05-07,improved,"long loading/processing time for the data, a lot of waiting"
+Joining data together,2026-05-07,improved,long proccesing times
+Joining data together,2026-05-07,improved,"maybe use a smaller dataset, beause the computer gets slow, and also with Rendering it gets slow..."
+Joining data together,2026-05-07,improved,more details on why we are doing the things in the codes
+Joining data together,2026-05-07,improved,processing time was sooo long! too much data
+Joining data together,2026-05-07,worked well,Excellent idea to use a bit more time explaining why we get the same number of rows in our case but it much be different under other settings
+Joining data together,2026-05-07,worked well,Exercises were good because we use different working documents which help understanding the purpose of and interplay between each of them
+Joining data together,2026-05-07,worked well,Good explanation of the different types of join
+Joining data together,2026-05-07,worked well,Good explanation with visual drawings
+Joining data together,2026-05-07,worked well,Great interactive and easy to understand
+Joining data together,2026-05-07,worked well,I got the fact that left join is good practice
+Joining data together,2026-05-07,worked well,I think everything worked well
+Joining data together,2026-05-07,worked well,I think it worked very well
+Joining data together,2026-05-07,worked well,It was very useful to learn about joining data together
+Joining data together,2026-05-07,worked well,Nice seeing it all come together
+Joining data together,2026-05-07,worked well,"Nice session. It helps working between learning, cleaning and functions to understand the differences in these files."
+Joining data together,2026-05-07,worked well,"Really good introduction to the topic, nice to work with it in exercise. Very nice :-)"
+Joining data together,2026-05-07,worked well,The code along was nice
+Joining data together,2026-05-07,worked well,The exercises were really helpful to keep building our knowledge on how to join full data sets and be able to then save the document.
+Joining data together,2026-05-07,worked well,"The illustration that Daniel made on the left_join, right_join and full_join was very good and really made sense to me. I think you should include that in future courses. In the exercise a lot of problems occurred which were nice to get help solving and explained."
+Joining data together,2026-05-07,worked well,The step by step approach to joining and explaining the consequences of different ways to combine datasets.
+Joining data together,2026-05-07,worked well,These tools are very useful and very happy to learn how to save data into data-folder
+Joining data together,2026-05-07,worked well,Very well constructed session
+Joining data together,2026-05-07,worked well,co-along
+Joining data together,2026-05-07,worked well,code a long
+Joining data together,2026-05-07,worked well,easy to follow
+Joining data together,2026-05-07,worked well,exercises
+Joining data together,2026-05-07,worked well,figures were helpful
+Joining data together,2026-05-07,worked well,good explaination and nice exercises
+Joining data together,2026-05-07,worked well,nice exercises and helpers:-)
+Joining data together,2026-05-07,worked well,nice to see it all come together in a document
+Joining data together,2026-05-07,worked well,"well structured, went through all the steps efficiently"
+Making robust and general-purpose functions,2026-05-05,improved,"A bit hard to keep an overview of the document, when we delete and inactivate some codechunks and functions, but I understand why we do it. Maybe do a quick sum up of what we changed in the end of this session."
+Making robust and general-purpose functions,2026-05-05,improved,"A bit more explanation of why we're doing the things, whats smart about doing it this way."
+Making robust and general-purpose functions,2026-05-05,improved,Don't have anything to add for this session.
+Making robust and general-purpose functions,2026-05-05,improved,Don't know
+Making robust and general-purpose functions,2026-05-05,improved,I don't think it needs improvement
+Making robust and general-purpose functions,2026-05-05,improved,I think it was good have no suggestions for improvment... maybe have the eval: FALSE a little sooner
+Making robust and general-purpose functions,2026-05-05,improved,"I'm not sure it's something to improve or not, but it slightly annoys me (mostly my ego maybe) that more and more things just need to be 'accepted' because advanced code/explanation lies behind which is beyond this course... So maybe a little more explanation? But I suppose it's also omitted because it's not necessary and maybe even more confusing."
+Making robust and general-purpose functions,2026-05-05,improved,It was a bit difficult to understand the concepts of the different documents kind of working alongside each other. Perhaps this could be introduced in the pre-course reading task?
+Making robust and general-purpose functions,2026-05-05,improved,It was great
+Making robust and general-purpose functions,2026-05-05,improved,"It was the end of a very early day and morning and I was kind af tired - this is difficult to improve, but it helped that we skipped the last task."
+Making robust and general-purpose functions,2026-05-05,improved,"Maybe it would be nice to ensure that the to_snake_case code chunks were hidden before rendering, as it was a litte confusing. Sometimes I were a little confused when to type in the qmd and when to type in the consul."
+Making robust and general-purpose functions,2026-05-05,improved,Maybe talk a bit more on what happens when we put things into the roxygen skeleton
+Making robust and general-purpose functions,2026-05-05,improved,Maybe the description file and its use/value could be explained in more detail
+Making robust and general-purpose functions,2026-05-05,improved,More practical examples of the impact of the actual use of these concepts
+Making robust and general-purpose functions,2026-05-05,improved,No comments about that
+Making robust and general-purpose functions,2026-05-05,improved,"Nothing for now but hopefully by working more with it, I understand it more"
+Making robust and general-purpose functions,2026-05-05,improved,"Nothing, i liked it"
+Making robust and general-purpose functions,2026-05-05,improved,"Perhaps some kind of explanatory videos, that you can return to after ending the course, because you end up deleting steps, that you took along the way, so when you look into your files later on, you would probably not be able to understand completely. Of course you could read the instructions on the webpage, but a video would definitly make it easier. But it's a minor thing. Overall it's a really good course!"
+Making robust and general-purpose functions,2026-05-05,improved,"The Functions.R file seems essential, but the introduction to it came a bit out of the blue (or maybe I was getting tired)."
+Making robust and general-purpose functions,2026-05-06,improved,"The excercise was a bit too difficult. I had to ""cheat"" to get it"
+Making robust and general-purpose functions,2026-05-05,improved,"a bit blurry with the ""why"" question for some of the code along tasks"
+Making robust and general-purpose functions,2026-05-05,improved,can't mention anything
+Making robust and general-purpose functions,2026-05-05,improved,information overload in the end. I hope we can recap this again tomorrow
+Making robust and general-purpose functions,2026-05-05,improved,maybe more exercises
+Making robust and general-purpose functions,2026-05-05,improved,no feedback
+Making robust and general-purpose functions,2026-05-05,improved,nothing so far
+Making robust and general-purpose functions,2026-05-05,worked well,Coding along. clear presentation.
+Making robust and general-purpose functions,2026-05-05,worked well,Coding-a-long makes a lot of sense for this purpose.
+Making robust and general-purpose functions,2026-05-05,worked well,"Easy access to help, good tempo, nice teachers, all good :-)"
+Making robust and general-purpose functions,2026-05-05,worked well,"I generally think this day has been so educational. Very nice that help comes fast, the hat system works."
+Making robust and general-purpose functions,2026-05-05,worked well,I liked the code along
+Making robust and general-purpose functions,2026-05-05,worked well,"Introduced to new concepts, understandable"
+Making robust and general-purpose functions,2026-05-05,worked well,It all worked well
+Making robust and general-purpose functions,2026-05-05,worked well,"It was a good workshop, i think it was well explained."
+Making robust and general-purpose functions,2026-05-06,worked well,It was explained really well.
+Making robust and general-purpose functions,2026-05-05,worked well,Iterative exercises
+Making robust and general-purpose functions,2026-05-05,worked well,Nice step by step approach
+Making robust and general-purpose functions,2026-05-05,worked well,Really nice to learn these functions
+Making robust and general-purpose functions,2026-05-05,worked well,Same things as in my previous answers.
+Making robust and general-purpose functions,2026-05-05,worked well,"The code along and the time for questions and fixing problems - I felt like there were a lot of those in this session. In this session I felt like there were more time to talk to my table mate about the tasks and codes we made and that was nice. It was good to kick of the session with cake and coffee, it help on the level of energy."
+Making robust and general-purpose functions,2026-05-05,worked well,The code along worked great.
+Making robust and general-purpose functions,2026-05-05,worked well,The easy stepwise code along - arriving at the target.
+Making robust and general-purpose functions,2026-05-05,worked well,Very easy to follow and very well explained
+Making robust and general-purpose functions,2026-05-05,worked well,code a long
+Making robust and general-purpose functions,2026-05-05,worked well,code-along
+Making robust and general-purpose functions,2026-05-05,worked well,code-along!
+Making robust and general-purpose functions,2026-05-05,worked well,good explaination
+Making robust and general-purpose functions,2026-05-05,worked well,good with shorter tasks compared to earlier today
+Making robust and general-purpose functions,2026-05-05,worked well,it was a good pace and made easier to understand
+Making robust and general-purpose functions,2026-05-05,worked well,lots of hands-on activities
+Making robust and general-purpose functions,2026-05-05,worked well,really nice session
+Making robust and general-purpose functions,2026-05-05,worked well,the code along and thorough explanation of how how source functions
+Making robust and general-purpose functions,2026-05-05,worked well,very useful to learn how to convey to quarto to R scripts
+Pivoting your data between long and wide,2026-05-07,improved,"Do it all in once, without taking a break yesterday."
+Pivoting your data between long and wide,2026-05-07,improved,Figures for pivot understanding are useful
+Pivoting your data between long and wide,2026-05-07,improved,I have no comment
+Pivoting your data between long and wide,2026-05-07,improved,I needed a bit more information about where we were going. It makes it easier to understand if I know what the end goal is and that could be made a bit more explicit.
+Pivoting your data between long and wide,2026-05-07,improved,I think it could be nice to have some more very concrete examples to make it easier to understand. Sometimes it can be diffucult to understand completely in what situations I would make use of it.
+Pivoting your data between long and wide,2026-05-07,improved,I think the code-along could be speed up a bit
+Pivoting your data between long and wide,2026-05-07,improved,I thought it was a little diffucult to figure out what we did to the data when we did the code along
+Pivoting your data between long and wide,2026-05-07,improved,"I would have liked an introduction to the cleaning-document, even though we used it in a previous session. Just to understand exactly why this document is nice to have (I can only guess it is to run simple codes/funcitons that do the job of data processing instead of all the small steps to reach the functions)."
+Pivoting your data between long and wide,2026-05-07,improved,"In the first part of the exercise, it was a bit unclear to me that we had to make two funktions, so i started to make the pivoting function - maybe cause in the text of the exercise it said: ""Copy and paste the code we just wrote "".. This is a minor detail, but just fyi :)"
+Pivoting your data between long and wide,2026-05-07,improved,"It can be a bit confusing in the exercises, that you in the beginning show the final results, because then I tend to get confused about the recipe below and the steps in it. In the exercise for this session I think you should specify in exercise 21.4 that it is the first code we made and not the one we just worked on."
+Pivoting your data between long and wide,2026-05-06,improved,It went a bit quick by the end
+Pivoting your data between long and wide,2026-05-07,improved,Less time for the exercises
+Pivoting your data between long and wide,2026-05-07,improved,Maybe also work a bit with the wide version
+Pivoting your data between long and wide,2026-05-07,improved,Maybe the codealong would benefit from actually coding closer to the exercise. Sometimes i feel like the function code in the exercise has some elements that i did not catch in the code along
+Pivoting your data between long and wide,2026-05-07,improved,Nothing. Great course!
+Pivoting your data between long and wide,2026-05-07,improved,The first part of 21 could be slower when explaining what each part of the code does
+Pivoting your data between long and wide,2026-05-07,improved,"The goal of the tidying was a bit unclear to me, but it seems it will come more together in the next sessionI think it is a shame that we stopped the session halfway through yesterday instead of asking if everyone was okay with staying 30 minutes longer to finish."
+Pivoting your data between long and wide,2026-05-07,improved,i think this session is very useful to be able to do when working with data. It was a bit of a shame that it had to be divided.
+Pivoting your data between long and wide,2026-05-07,improved,"maybe if we could have had the session in one day, but I also understand it can be a struggle when running out of time =)"
+Pivoting your data between long and wide,2026-05-07,improved,"maybe we should do an exercise for the final part, if we are using it for the group work. It is a little bit difficult to work with something you haven't tried before."
+Pivoting your data between long and wide,2026-05-07,improved,nothing so far
+Pivoting your data between long and wide,2026-05-07,improved,"practice in the pivot_wider(), but sounds like we'll be using it later!"
+Pivoting your data between long and wide,2026-05-07,improved,"the long/wide format is hard to grasp, but the visuals were somewhat helpful"
+Pivoting your data between long and wide,2026-05-07,improved,to complete this theme during one day:-) I'm not sure I completely understand pivoting from these exercises.
+Pivoting your data between long and wide,2026-05-07,improved,would have been nice to try pivot_wide exercise as well together
+Pivoting your data between long and wide,2026-05-07,worked well,"Adding the work into the cleaning.qmd - rendering (or specifically errors when attempting rendering) made me realize I forgot to specify several packages in the functions.R document, so it helped a lot."
+Pivoting your data between long and wide,2026-05-07,worked well,"All of it. Good we continued the session today and not finished it yesterday,."
+Pivoting your data between long and wide,2026-05-07,worked well,"As for all the other sessions, it works well with the type along."
+Pivoting your data between long and wide,2026-05-07,worked well,Code along
+Pivoting your data between long and wide,2026-05-07,worked well,"Everything. Easy access to help, good tempo, good exercise etc"
+Pivoting your data between long and wide,2026-05-07,worked well,Ex. 21.4 could be clearer about it being the two previous code chunks we were using.
+Pivoting your data between long and wide,2026-05-07,worked well,Good overview of the pivot pipeline
+Pivoting your data between long and wide,2026-05-07,worked well,"Good ratio between exercise and reading tasks as well as explanation for why we do what, and what each part of the different code does - could be more clear/slower in the first part of 21."
+Pivoting your data between long and wide,2026-05-07,worked well,I like the exercises
+Pivoting your data between long and wide,2026-05-07,worked well,I liked the exercise
+Pivoting your data between long and wide,2026-05-07,worked well,I liked the visualisations of the pivot function!
+Pivoting your data between long and wide,2026-05-07,worked well,I really liked this session because it was very easy to follow and understand what we were doing from the beginning. It also helped me consolidate the knowledge learned in the previous days
+Pivoting your data between long and wide,2026-05-07,worked well,I think it was nice that isabell went through the results from the exercise.
+Pivoting your data between long and wide,2026-05-07,worked well,"I'm beginning to see the patterns in ""building functions"":-)"
+Pivoting your data between long and wide,2026-05-07,worked well,"It worked well that it was divided into two days, very good that you keep to the schedule. It works well that the programme and the breaks are withheld."
+Pivoting your data between long and wide,2026-05-07,worked well,Nice code along. Nice extra exercises
+Pivoting your data between long and wide,2026-05-07,worked well,"Nice to know about both pivots, and okay that you only cover one of them in the exercise"
+Pivoting your data between long and wide,2026-05-07,worked well,THe hands on part.
+Pivoting your data between long and wide,2026-05-07,worked well,That we got to work with it ourselves
+Pivoting your data between long and wide,2026-05-07,worked well,The exercises were nice
+Pivoting your data between long and wide,2026-05-07,worked well,The pace and information flow was good
+Pivoting your data between long and wide,2026-05-07,worked well,co-along and that they split it up between the days
+Pivoting your data between long and wide,2026-05-07,worked well,code a long
+Pivoting your data between long and wide,2026-05-07,worked well,everything was really good
+Pivoting your data between long and wide,2026-05-07,worked well,exercises
+Pivoting your data between long and wide,2026-05-07,worked well,good explanations of the code
+Pivoting your data between long and wide,2026-05-07,worked well,good session but.... (se below)
+Pivoting your data between long and wide,2026-05-06,worked well,most
+Pivoting your data between long and wide,2026-05-07,worked well,"probably one of the most important data wrangling lecture, really nice well structured"
+Pre-process data as you import it,2026-05-05,improved,"Could have used examples of why the specific functions are great for later datamanagement, just be sure of the reason for this use of functions when preimporting a dataset."
+Pre-process data as you import it,2026-05-05,improved,I don't know
+Pre-process data as you import it,2026-05-05,improved,I found everything was good.
+Pre-process data as you import it,2026-05-05,improved,I have no comments
+Pre-process data as you import it,2026-05-05,improved,I think it was all good
+Pre-process data as you import it,2026-05-05,improved,"Maybe an extra, just a tiny bit more difficult task"
+Pre-process data as you import it,2026-05-05,improved,Maybe more awareness of the difficulty sitting in the back watching the lower part of the screen
+Pre-process data as you import it,2026-05-05,improved,No suggestions atm
+Pre-process data as you import it,2026-05-05,improved,Nothing really
+Pre-process data as you import it,2026-05-05,improved,Nothing to add
+Pre-process data as you import it,2026-05-05,improved,Nothing!
+Pre-process data as you import it,2026-05-05,improved,"Nothing, I enjoyed it"
+Pre-process data as you import it,2026-05-05,improved,Quite basic but nice that we are all on the same page. You could consider to include more variations in reading in other datafiles.
+Pre-process data as you import it,2026-05-05,improved,"The classroom where the session took place made it hard to follow, as from some seats reading the screen was very difficult."
+Pre-process data as you import it,2026-05-05,improved,"The exercise was not really necessary, it could perhaps be updated where we could try other arguments than the ones we already used together"
+Pre-process data as you import it,2026-05-05,improved,The introduction felt a bit long as someone who have been at the introductory course. But i am sure it was nice for those who did not participate in the introductory course
+Pre-process data as you import it,2026-05-05,improved,can't think of anything
+Pre-process data as you import it,2026-05-05,improved,it went very fast during code along when git/ github was explained:-)
+Pre-process data as you import it,2026-05-05,improved,might a bit to repetitive with the coding to import data
+Pre-process data as you import it,2026-05-05,improved,nothing so far
+Pre-process data as you import it,2026-05-05,improved,regarding the content not much. for the room maybe a better way to see the screen. when u are sitting in the back it can be hard to see the button line
+Pre-process data as you import it,2026-05-05,improved,too much time for some of the exercises
+Pre-process data as you import it,2026-05-05,worked well,Both the code along and guidance when problems occured. And I liked the reading and the teachers recap of the most important stuff from the reading task. And the option to the task with the person sitting next to me. It was a good session.
+Pre-process data as you import it,2026-05-05,worked well,Code-along nice
+Pre-process data as you import it,2026-05-05,worked well,"Code-alongs, tempo was good, easy to understand,"
+Pre-process data as you import it,2026-05-05,worked well,"Coding along, sticky hats, great opportunity for healp. Good teacker, spoke loud and easy to understand."
+Pre-process data as you import it,2026-05-05,worked well,"Hats, different people doing the talking, sitting next to someone you don't know, mix of materials - listening, reading, coding, discussion. Nice to be at a course where everything is this thought through."
+Pre-process data as you import it,2026-05-05,worked well,I liked the combination of code along and exercises
+Pre-process data as you import it,2026-05-05,worked well,Introduction as well as reflection on why we do what + code along
+Pre-process data as you import it,2026-05-05,worked well,It all worked well - love to code-along part
+Pre-process data as you import it,2026-05-05,worked well,"It was really well taught, with really clear exercises and instructions."
+Pre-process data as you import it,2026-05-05,worked well,"It worked great everything, slow speech and it was easy to follow"
+Pre-process data as you import it,2026-05-05,worked well,"Most, except r3"
+Pre-process data as you import it,2026-05-05,worked well,Nice to code-along and to have enough time to read and then afterwards it is repeated by the teacher
+Pre-process data as you import it,2026-05-05,worked well,Super nice with instructions on the webpage!
+Pre-process data as you import it,2026-05-05,worked well,"The ""show and tell"" approach"
+Pre-process data as you import it,2026-05-05,worked well,The code along with the hats. That you get to try it yourself as well.
+Pre-process data as you import it,2026-05-05,worked well,The code-along was great.
+Pre-process data as you import it,2026-05-05,worked well,The code-along was nice
+Pre-process data as you import it,2026-05-05,worked well,"The mix of lecture, type along and excersice"
+Pre-process data as you import it,2026-05-05,worked well,"The speed. Not too fast, having time to recall everything from the intro course."
+Pre-process data as you import it,2026-05-05,worked well,"The tempo for this lecture was perfect, so it was easy to type alllong and listening, while also having the chance to ask all sorts of clarifying questions. Again, like with the introductory course, I really like the pedagogically aproach with the hats."
+Pre-process data as you import it,2026-05-05,worked well,code a long
+Pre-process data as you import it,2026-05-05,worked well,"code along, webpage"
+Pre-process data as you import it,2026-05-05,worked well,good introduction and it worked well with the hands-on exercise
+Pre-process data as you import it,2026-05-05,worked well,"mix of reading, code-along, and exercise"
+Pre-process data as you import it,2026-05-05,worked well,the code along and the efficient help when I needed it
+Pre-process data as you import it,2026-05-05,worked well,the exercise were nice to test if you could preformed what we learned
+Pre-process data as you import it,2026-05-05,worked well,"type along, pleanty of time for reading sessions"
+Pre-process data as you import it,2026-05-05,worked well,"very detailed, was easy to follow and useful"
+Pre-process data as you import it,2026-05-05,worked well,"very nice explanations in code along sessionenganging talk in the beginning nice ""stretching leg"" activityI had nice help to understand difference between commit to git/ push to github"
+Processing strings with regular expressions,2026-05-06,improved,A little more description for the exercise.
+Processing strings with regular expressions,2026-05-06,improved,Cool ses'
+Processing strings with regular expressions,2026-05-06,improved,Don't know
+Processing strings with regular expressions,2026-05-06,improved,Functions still seems a bit hard - maybe spend more time on the fuction topic prior to this?
+Processing strings with regular expressions,2026-05-06,improved,"I liked it, nothing!"
+Processing strings with regular expressions,2026-05-06,improved,It could be nice with an exercise to use regex (and not only extra)
+Processing strings with regular expressions,2026-05-06,improved,"It this point I feel a bit lost when doing the tasks, but the helpers again are great to help me get up to speed. Maybe I need a brush up of how to make functions at this point."
+Processing strings with regular expressions,2026-05-06,improved,Maybe a couple of more examples would be nice
+Processing strings with regular expressions,2026-05-06,improved,My learning document is getting increasingly messy - maby we could have some tips in plenum on how to clean it?
+Processing strings with regular expressions,2026-05-06,improved,None for this.
+Processing strings with regular expressions,2026-05-06,improved,"Not sure, it was good."
+Processing strings with regular expressions,2026-05-06,improved,Nothing specific
+Processing strings with regular expressions,2026-05-06,improved,"To do more examples or at least have to use other commands on the exercise part, not just what we have learned during the session"
+Processing strings with regular expressions,2026-05-06,improved,Walkthrough of the exercises!
+Processing strings with regular expressions,2026-05-06,improved,donno
+Processing strings with regular expressions,2026-05-06,improved,"maybe in a brief talk about the exercise in class, because it was a bit difficult"
+Processing strings with regular expressions,2026-05-06,improved,more exercises with regex
+Processing strings with regular expressions,2026-05-06,improved,no comment for this session
+Processing strings with regular expressions,2026-05-06,improved,not much
+Processing strings with regular expressions,2026-05-06,improved,nothing so far
+Processing strings with regular expressions,2026-05-06,improved,noting
+Processing strings with regular expressions,2026-05-06,improved,would be nice to go through multiple solutions for writing the regular expression
+Processing strings with regular expressions,2026-05-06,worked well,Co-along and the extra exercises
+Processing strings with regular expressions,2026-05-06,worked well,Code a long
+Processing strings with regular expressions,2026-05-06,worked well,Code along. Good exercises
+Processing strings with regular expressions,2026-05-06,worked well,Doing it along the way
+Processing strings with regular expressions,2026-05-06,worked well,"Everything is good :-) Great teachers, good help, appropriate amount of time for the exercises."
+Processing strings with regular expressions,2026-05-06,worked well,Exercise and code-along were great
+Processing strings with regular expressions,2026-05-06,worked well,Good explanation and relevant
+Processing strings with regular expressions,2026-05-06,worked well,Good time for trial-and-error exercises
+Processing strings with regular expressions,2026-05-06,worked well,I like the exercises
+Processing strings with regular expressions,2026-05-06,worked well,I really enjoyed this session as it was very easy to follow and to actually be able to do the exercises later
+Processing strings with regular expressions,2026-05-06,worked well,I think in general it worked really well with good explanations
+Processing strings with regular expressions,2026-05-06,worked well,I think it is nice being able to identify stuff in a data frame and in a string
+Processing strings with regular expressions,2026-05-06,worked well,"It all worked well, there wasn't too much explanation for the exercise, so it was a bit hard to tag along in the beginning, but good you gays were here to help"
+Processing strings with regular expressions,2026-05-06,worked well,"It it nice to practice making functions, as I realize this is the way to work with large dataset"
+Processing strings with regular expressions,2026-05-06,worked well,Long time for the exersise
+Processing strings with regular expressions,2026-05-06,worked well,Nice exercise with repetitions on how to make a function from code we build together
+Processing strings with regular expressions,2026-05-06,worked well,"Nice progress, excellent extra exercise that needs trial and error"
+Processing strings with regular expressions,2026-05-06,worked well,"Pacing of excercises, much better than morning session"
+Processing strings with regular expressions,2026-05-06,worked well,"Regular expressions seem difficult, but were taught in a good way."
+Processing strings with regular expressions,2026-05-06,worked well,Still enjoy the hands-on-exercises.
+Processing strings with regular expressions,2026-05-06,worked well,"Very nice function in R, great to learn about and the teacher did a very good job."
+Processing strings with regular expressions,2026-05-06,worked well,"Very nice session, I really liked it, i wasnt familiar with the stringr package"
+Processing strings with regular expressions,2026-05-06,worked well,"code along. Good exercises, nice to try and build many functions. Nice extra exercise"
+Processing strings with regular expressions,2026-05-06,worked well,extra exercise was good
+Processing strings with regular expressions,2026-05-06,worked well,good explaination and nice exercise
+Processing strings with regular expressions,2026-05-06,worked well,having to look up documentation for a package on our own was quite learningful
+Processing strings with regular expressions,2026-05-06,worked well,"well structured, easy to follow"
+Team project work,2026-05-07,improved,Emphasizing that we did not need to focus on the best scientific way to investigate the research questions. We used probably too much time going over the reasonable scientific way to sum results.
+Team project work,2026-05-07,improved,I could easily have spent a little more time working on it.
+Team project work,2026-05-07,improved,I felt a lost and lost courage. now i'm worried going home and doing R myself because I feel like I can't do anything.
+Team project work,2026-05-07,improved,I think maybe the exercise/assignments could be a bit more clear and specific to make it easier to get going
+Team project work,2026-05-07,improved,"I was a bit confused over what we actually should do with the data, i think me and my buddy used a lot of time just looking at the data and understanding it. I think it would be an advantages if you went through the data and maybe some basic stuff you could do or give more time for the workshop so you really had time to work with the data."
+Team project work,2026-05-07,improved,"It felt like too short time, as we only managed to do very little (we only finished importing of data)"
+Team project work,2026-05-07,improved,Maybe introduce a bit on the workflow for using github as teams. We got a lot of merge conflicts. :D
+Team project work,2026-05-07,improved,"Maybe some hints that you could open up, if (read: when) you are in trouble :-)"
+Team project work,2026-05-07,improved,"Maybe the task could have been a bit more specific in what steps to do. E.g. start with cleaning X, get ID in Y files, etc. In my group i think we ended up confusing our selves which ended up with a lot of time not well spend. However it was also a good learning experience."
+Team project work,2026-05-07,improved,"Maybe you could do a couple of ""check-ins"" during the team work to ensure that everyone was moving forward..?"
+Team project work,2026-05-07,improved,More time :-)
+Team project work,2026-05-07,improved,More time for team assignment
+Team project work,2026-05-07,improved,More time for this so we can complete the exercise
+Team project work,2026-05-07,improved,No idea for improvements:)
+Team project work,2026-05-07,improved,Tbh I would love if this was a bigger part of the course or if we could get the data earlier so if u finish an exercise quickly you could already start making some thoughts about it and apply it while learning
+Team project work,2026-05-07,improved,To have some more time to be able to finish the project
+Team project work,2026-05-07,improved,Very difficult. Maybe the exercise should be reduced to be less complex. Could be usefull if the teachers could go over what we have done through the course:-)
+Team project work,2026-05-07,improved,"We needed a bit more introduction and some small hints to what parts of the code we made earlier we were to revisit. It would also have been nice if you would introduce us to a good way of working in pairs, e.g. say that we should make a list of things to do and then divide it between us. We also ended up spending a lot of time with Git issues which was a shame."
+Team project work,2026-05-07,improved,a cheat sheet or solution page
+Team project work,2026-05-07,improved,"better description on data alignments, and perhaps shorter exercise, and more detailed description of the steps"
+Team project work,2026-05-07,improved,"difficult to get acquainted with the data and work with it in such a short time. this session could be useful if we had more time, or extended the work with the original (nurses-stress) dataset"
+Team project work,2026-05-07,improved,difficult to recall everything and be able to do it on your own
+Team project work,2026-05-07,improved,i think it would be nice to be 3 in a group.
+Team project work,2026-05-07,improved,more cake idk?
+Team project work,2026-05-07,improved,"to little time, actually very difficult to get going and do the task"
+Team project work,2026-05-07,worked well,Good idea with a workshop where we apply what we learned
+Team project work,2026-05-07,worked well,"Good to be able to practise, what we learned. Great that we were two working together."
+Team project work,2026-05-07,worked well,I liked that we had to think more ourselfes
+Team project work,2026-05-07,worked well,I love that we can talk about it and help each other during the workshop.
+Team project work,2026-05-07,worked well,I really enjoy that we get a chance to apply what we have learned through the course.
+Team project work,2026-05-07,worked well,"I really enjoyed this session, as it helps you really understand what you have learned during the course and how to do it when you are doing it with your own data. Its very nice to actually do it in a team as you then have the opportunity to discuss issues together and learn from your team mate."
+Team project work,2026-05-07,worked well,In the end we really started having a good flow and progressing fast
+Team project work,2026-05-07,worked well,It is nice to work with the function as we have learned
+Team project work,2026-05-07,worked well,It was fun to try to work with you own data
+Team project work,2026-05-07,worked well,"It was really nice to get to try to work with everything that we have learned. And I actually feel like i have learned something, even though it definitely requires that I spent a lot of time working with R when I get home."
+Team project work,2026-05-07,worked well,"It was so good to work with Clara, to experience that we both found it difficult and challenging. Very impressed with the teacher who were all able to help us even though the different groups were doing different things and having different questions."
+Team project work,2026-05-07,worked well,Nice to sit with data on your own
+Team project work,2026-05-07,worked well,Nice way to sum up what we have learned
+Team project work,2026-05-07,worked well,Not really much
+Team project work,2026-05-07,worked well,Quite tough
+Team project work,2026-05-07,worked well,Really fun working on your own and try to apply all the knowledge we have gotten through the course
+Team project work,2026-05-07,worked well,The fact that it exists.
+Team project work,2026-05-07,worked well,"The task was good, although very difficult for me"
+Team project work,2026-05-07,worked well,"Tying all the curriculum together and having to remember which functions we've used. It was super nice to be able to copy and modify functions we'd already made during the course sessions. It worked very well as a 'toolbox' during the project work, so we didn't have to make up completely new things. Also very nice to have someone to discuss and troubleshoot with! It's also very good learning having to find a solution, which can be done in multiple ways - it's interesting and inspiring to get another person's input."
+Team project work,2026-05-07,worked well,"Was nice with some time to try all the stuff we've learned ourselves, to see how well we actually have understood it."
+Team project work,2026-05-07,worked well,What worked well was the opportunity to draw similarities from prior workshops to our groupwork and see how prior work could be utilised.   It also worked well to have a small problem that we had to plan how we would handle and then work stepwise forward including the possibility to work together.
+Team project work,2026-05-07,worked well,Worked really well. But times fly. :D We tried.
+Team project work,2026-05-07,worked well,nice opportunity to apply all of the skills we learned
+Team project work,2026-05-07,worked well,to be able to work with what we learned
+Team project work,2026-05-07,worked well,"useful to put our learning into practice, enjoyed the process"
+Using split-apply-combine to help in processing,2026-05-06,improved,A bit slow tempo
+Using split-apply-combine to help in processing,2026-05-06,improved,"A general thing - perhaps more breaks and shorter sessions, especially during the afternoon sessions."
+Using split-apply-combine to help in processing,2026-05-06,improved,Don't know
+Using split-apply-combine to help in processing,2026-05-06,improved,I think the session could be speed up a bit
+Using split-apply-combine to help in processing,2026-05-06,improved,I think this session could have had a higher pace during the code along
+Using split-apply-combine to help in processing,2026-05-06,improved,It gets harder and harder  :-D
+Using split-apply-combine to help in processing,2026-05-06,improved,It went a bit slow in the beginning
+Using split-apply-combine to help in processing,2026-05-06,improved,Maybe some parts of the session could be done a bit faster
+Using split-apply-combine to help in processing,2026-05-06,improved,"Nothing, good exercises"
+Using split-apply-combine to help in processing,2026-05-06,improved,Nothing.
+Using split-apply-combine to help in processing,2026-05-06,improved,Nothing. It was a very very helpful session.
+Using split-apply-combine to help in processing,2026-05-06,improved,We could have worked more directly with the splitting and combinging as shown on the diagram
+Using split-apply-combine to help in processing,2026-05-06,improved,"difficult to follow along the coding, missed more details on why, not just how. A bit to many things within this session"
+Using split-apply-combine to help in processing,2026-05-06,improved,donno
+Using split-apply-combine to help in processing,2026-05-06,improved,i have no comment
+Using split-apply-combine to help in processing,2026-05-06,improved,ingenting
+Using split-apply-combine to help in processing,2026-05-06,improved,not sure
+Using split-apply-combine to help in processing,2026-05-06,improved,see above
+Using split-apply-combine to help in processing,2026-05-06,improved,the session felt very long
+Using split-apply-combine to help in processing,2026-05-06,improved,"went a bit slow, could have been going in a bit higher pace"
+Using split-apply-combine to help in processing,2026-05-06,worked well,"Det var godt at have lang tid til at side med det selv, for det gav mig nogle problemer, som var gode at få hjælp til at få styr på. Dejligt med en pause midtvejs. Dejligt at Anders forklarer ting, vi ikke rigtig behøver at vide meget kort og gør det tydeligt at det er en detaljegrad vi ikke behøver have styr på. Meget visuel session med hele tiden at se de nye tabeller, vi laver. Det fungerede godt."
+Using split-apply-combine to help in processing,2026-05-06,worked well,Everything worked for me
+Using split-apply-combine to help in processing,2026-05-06,worked well,Exercises
+Using split-apply-combine to help in processing,2026-05-06,worked well,Good code along. Nice with extra exercises and the repeated use of functions and arguments.
+Using split-apply-combine to help in processing,2026-05-06,worked well,Good pace
+Using split-apply-combine to help in processing,2026-05-06,worked well,"Good session! Nice with the exersice regarding the cleaning file, here it startet to make really good sense with the functions."
+Using split-apply-combine to help in processing,2026-05-06,worked well,"Good slow explanation, a lot of usefull tips"
+Using split-apply-combine to help in processing,2026-05-06,worked well,Great!
+Using split-apply-combine to help in processing,2026-05-06,worked well,I think everything worked well
+Using split-apply-combine to help in processing,2026-05-06,worked well,It was all good
+Using split-apply-combine to help in processing,2026-05-06,worked well,"It was very well explained and very easy to see how it can be useful later on when working on our own projects. Also, it was very useful to strenghten our function skills and understanding."
+Using split-apply-combine to help in processing,2026-05-06,worked well,Liked the exercise and that there are extra exercises
+Using split-apply-combine to help in processing,2026-05-06,worked well,Nice with more time to exercises and practicing
+Using split-apply-combine to help in processing,2026-05-06,worked well,Nice with the code along
+Using split-apply-combine to help in processing,2026-05-06,worked well,Nice with the extra exercises because this session went a bit slow with a bit too many repetitions
+Using split-apply-combine to help in processing,2026-05-06,worked well,The type-along worked great
+Using split-apply-combine to help in processing,2026-05-06,worked well,Very good introduction
+Using split-apply-combine to help in processing,2026-05-06,worked well,Was nice with some extra exercises (not that I finished - but it's nice to have some extra material to practice!)
+Using split-apply-combine to help in processing,2026-05-06,worked well,code a long
+Using split-apply-combine to help in processing,2026-05-06,worked well,code along. Extra exercises
+Using split-apply-combine to help in processing,2026-05-06,worked well,easy to follow instructions in exercises
+Using split-apply-combine to help in processing,2026-05-06,worked well,"everything was perfect, easy to follow"
+Using split-apply-combine to help in processing,2026-05-06,worked well,exercise
+Using split-apply-combine to help in processing,2026-05-06,worked well,good exercises and really good explaination in class
+Using split-apply-combine to help in processing,2026-05-06,worked well,lots of exercises were nice
+Using split-apply-combine to help in processing,2026-05-06,worked well,"that there is so many teachers/helper, that can help explain stuff that I had a hard time understanding."

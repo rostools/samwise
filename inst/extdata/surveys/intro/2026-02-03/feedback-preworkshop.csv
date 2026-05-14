@@ -95,7 +95,6 @@ What do you expect to learn and what would you like to be able to do with what y
 "In your opinion, what could be improved?",Too many repetitions
 "In your opinion, what could be improved?",The first email could include how much time is expected to finish the tasks before the course. There was a text referring to a video (in 9 in between install pak and pak::pak) which I could not find.It seems like completing 9 requires administrator rights on your computer. Maybe this should be mentioned in 7 (as administrator rights has a time limit on hospital owned computers).
 "In your opinion, what could be improved?","I could not use this ""pak::pak(""rostools/r3"", upgrade = TRUE)"" in R because the xml2 1.5.2 failed to be build - with the help from AI i got it to work by installing xml2 1.5.2 package separately. However, it might be good to be aware of."
-"In your opinion, what could be improved?",Nothing
 "In your opinion, what could be improved?","For R-tools, it could maybe specify that the version of Rtools and installed version of Rstudio must match"
 "In your opinion, what could be improved?",Maybe a bit clearer instructions on how to install the different things
 "In your opinion, what could be improved?","You could specify where to find the ""Tools"" and the ""Global Options"". Found in the menu line."
