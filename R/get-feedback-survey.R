@@ -17,11 +17,6 @@ get_feedback_survey <- function() {
     add_workshop_date() |>
     dplyr::select(-timestamp)
 
-  if (!"session_name" %in% names(feedback)) {
-    feedback <- feedback |>
-      dplyr::mutate(session_name = "End of workshop")
-  }
-
   feedback
 }
 
