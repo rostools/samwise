@@ -1,0 +1,22 @@
+---
+title: "Draft Quarto document"
+author: "Your Name"
+format: html
+---
+
+## Header 1
+
+```{r}
+#| label: setup
+#| include: false
+
+library(tidyverse)
+library(targets)
+tar_config_set(store = here::here("_targets"))
+```
+
+Can write normal text here.
+
+```{r}
+# Code chunk
+```

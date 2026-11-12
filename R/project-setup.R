@@ -1,15 +1,20 @@
-#' Create the team project for the intermediate workshop
+#' Create the repositories for thee team project work sessions.
 #'
+#' This is only for the intermediate and advanced workshops.
+#'
+#' @name create_team_project_repo
 #' @param path Path to where the project should be created. It will overwrite
 #'   any existing project.
 #'
 #' @returns Invisibly returns the path to the created project.
 #'
-#' @export
 #' @examples
 #' \dontrun{
 #' create_inter_project_repo("~/Desktop/dime-intermediate")
 #' }
+NULL
+
+#' @rdname create_team_project_repo
 create_inter_project_repo <- function(path) {
   if (fs::dir_exists(path)) {
     rlang::catch_cnd(fs::file_delete(fs::path(path, ".gitignore")))
@@ -36,6 +41,54 @@ create_inter_project_repo <- function(path) {
     # To avoid merge conflicts, so set a fixed ProjectId
     append("ProjectId: 7144761b-281f-458f-b7bf-44fd33c944ea") |>
     readr::write_lines("DESCRIPTION")
+  invisible(path)
+}
+
+#' @rdname create_team_project_repo
+create_adv_project_repo <- function(path) {
+  if (fs::dir_exists(path)) {
+    rlang::catch_cnd(fs::file_delete(fs::path(path, ".gitignore")))
+  }
+  prodigenr::setup_project(path)
+  usethis::local_project(path, quiet = TRUE)
+
+  # Git-specific changes
+  usethis::use_git_ignore(c(
+    "_targets/meta/meta",
+    "_targets.yaml",
+    "*.html",
+    "*_files"
+  ))
+
+  pkg_path <- fs::path_package("samwise", "templates", "adv"),
+  # Copy over the data script and data
+  fs::file_copy(
+    fs::path(pkg_path, "new-diabetes.R"),
+    fs::path("data-raw", "new-diabetes.R")
+  )
+
+  source(fs::path(pkg_path, "data-raw", "new-diabetes.R"))
+  Sys.sleep(0.5)
+
+  # Create the sandbox Quarto files.
+  fs::file_copy(
+    fs::path(pkg_path, "sandbox.qmd"),
+    fs::path(pkg_path, "sandbox-1.qmd")
+  )
+  fs::file_copy(
+    fs::path(pkg_path, "sandbox.qmd"),
+    fs::path(pkg_path, "sandbox-2.qmd")
+  )
+
+  # Create the function R scripts.
+  fs::file_create(fs::path("R", "functions-1.R"))
+  fs::file_create(fs::path("R", "functions-2.R"))
+
+  readr::read_lines("DESCRIPTION") |>
+    # To avoid merge conflicts, so set a fixed ProjectId
+    append("ProjectId: 7144761b-281f-458f-b7bf-44fd33c944ea") |>
+    readr::write_lines("DESCRIPTION")
+  desc::desc_set_dep("tidyverse", type = "Depends")
   invisible(path)
 }
 
