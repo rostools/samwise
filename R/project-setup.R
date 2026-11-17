@@ -60,7 +60,7 @@ create_adv_project_repo <- function(path) {
     "*_files"
   ))
 
-  pkg_path <- fs::path_package("samwise", "templates", "adv"),
+  pkg_path <- fs::path_package("samwise", "templates", "adv")
   # Copy over the data script and data
   fs::file_copy(
     fs::path(pkg_path, "new-diabetes.R"),
